@@ -1,0 +1,3 @@
+
+# R1: preserve supplied PDF bytes as binary artifacts.
+*.pdf binary

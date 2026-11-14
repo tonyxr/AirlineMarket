@@ -1,0 +1,170 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "A15_E3_fare_moments_v1",
+  "plan": "v2.0",
+  "plan_id": "A.11/A.15/V10",
+  "phase": "V",
+  "hypothesis": null,
+  "primary_contrast": "none; observed Market purchase moments and saved source-passenger conservation",
+  "budget_key": "A.15",
+  "implementation_revision": "E3_exact_decimal_fare_passenger_moments_v1",
+  "generator": "prepared_market_banks_only",
+  "task": "study:airline_market.experiments.event_fare_moment_study:run",
+  "design": "list",
+  "workers": 1,
+  "memory_budget_gb": 1,
+  "limits": {
+    "seconds": 7200,
+    "rss_gb": 1,
+    "reservation_gb": 1
+  },
+  "out": "results/Paper2_data/20261113_E3_fare_moments_v1",
+  "log_path": "EXPERIMENT_LOG.md",
+  "scientific_budget": null,
+  "cells": [
+    {
+      "plan_id": "A.11/A.15/V10",
+      "reservation_gb": 1,
+      "sources": [
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_01.parquet",
+          "year": 2026,
+          "month": 1,
+          "expected_rows": 2905886,
+          "expected_observed_passengers": 2905886.0,
+          "original_scoped_audit": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_01.json"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_02.parquet",
+          "year": 2026,
+          "month": 2,
+          "expected_rows": 3091634,
+          "expected_observed_passengers": 3091634.0,
+          "original_scoped_audit": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_02.json"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_03.parquet",
+          "year": 2026,
+          "month": 3,
+          "expected_rows": 3697418,
+          "expected_observed_passengers": 3697418.0,
+          "original_scoped_audit": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_03.json"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_04.parquet",
+          "year": 2026,
+          "month": 4,
+          "expected_rows": 3382367,
+          "expected_observed_passengers": 3382367.0,
+          "original_scoped_audit": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_04.json"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_05.parquet",
+          "year": 2026,
+          "month": 5,
+          "expected_rows": 3149252,
+          "expected_observed_passengers": 3149252.0,
+          "original_scoped_audit": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_05.json"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_06.parquet",
+          "year": 2026,
+          "month": 6,
+          "expected_rows": 2985019,
+          "expected_observed_passengers": 2985019.0,
+          "original_scoped_audit": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_06.json"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_07.parquet",
+          "year": 2026,
+          "month": 7,
+          "expected_rows": 3125966,
+          "expected_observed_passengers": 3125966.0,
+          "original_scoped_audit": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_07.json"
+        }
+      ],
+      "batch_rows": 32768,
+      "pinned_files": [
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/results.json",
+          "sha256": "0e3e93d165872b6cc443618aced0a80e2d82c4715b4761d423ebfd7e9fea76f8"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/COMPLETE.json",
+          "sha256": "818c484b712df498d0638ba2b21720487360051cf7605ba2c1b31c45d0f59ce8"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/stream_summary.json",
+          "sha256": "d745ef0910a222bd60bca46723e71ac9433a06f1b977f900c7533ef50559d00c"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/LOCAL_ARTIFACTS.json",
+          "sha256": "16254ffd863eb8873388a322017a972e432a348e1a7236292e1e67fbb84ec35a"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_01.parquet",
+          "sha256": "124e86c52ceb58813be8f75bb94cf893ae67f2240fd5da2d1f5eaa180b72af5a"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_01.json",
+          "sha256": "7da20be6899daee51b0372b5765950ff9beb8e3db61326e53763cc1939bc84bc"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_02.parquet",
+          "sha256": "437070bdaddb6f5852fd6ad088d601fbb568f0fc9479fed7a703c6dcaee7e244"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_02.json",
+          "sha256": "a2975c630584844f04862ed439aa9f32875af78b01e397a96ceba0370b2c24ce"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_03.parquet",
+          "sha256": "683a88352d5bb98ce9069e00adef6b5d0e2b6f13d9506a075a8e7c63a824e4fa"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_03.json",
+          "sha256": "3c1d5bb6de6a205087f6e2cf6a2a4b1ba42f28ed9027dd4c8db5642ba7dd14ac"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_04.parquet",
+          "sha256": "f6418511237d4200d00e687ed02165d1ba690c6f644facff74026daf5beeeb7f"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_04.json",
+          "sha256": "ecb69cb977fa666725b7d9b62205b3a1ed55af2f301c59e9b66f3506f22ebff6"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_05.parquet",
+          "sha256": "a5e64b4c5416b4485fff84422cdd628eac9711bec94b0b9a34c493c7535bc92e"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_05.json",
+          "sha256": "5c0c4cfc41da6cd3459218c79531611eefa8d1891b16c571d798b927ea89402c"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_06.parquet",
+          "sha256": "1e85c89f9e02d4aa53a7879193a57e94af1903e341f8a616cfc619d72428a19c"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_06.json",
+          "sha256": "42d934210e862d4593d55acff996f44a332dca4eb1d0b921c0c2ecfa8af08e13"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_07.parquet",
+          "sha256": "56ecae487003327dba935ec222b8a080260848f24d957b9a93c7ebf4f0eae925"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/db1c_2026_07.json",
+          "sha256": "f4dc4ce3df61bd9a53d18a855bfb9d4256a9a5211afd1e2e44b9c5cc9ef501b9"
+        }
+      ],
+      "input_hash_scope": "Current post-completion source snapshots, not retroactive original extraction seals",
+      "grouping": "All reporting/scheduled months, O&Ds, marketing codes/IDs, raw purchase windows/status, event partition, Nonstop and V_Yield; no filtering",
+      "weight_definition": "Raw Passengers and original explicit _sample_expansion; no new expansion estimate",
+      "money_definition": "MktAmount gross; MktTax distance-allocated source value; separate, no net-profit inference or cent rounding",
+      "decimal_precision": 100,
+      "scientific_budget": null,
+      "calibration_adopted": false
+    }
+  ]
+}

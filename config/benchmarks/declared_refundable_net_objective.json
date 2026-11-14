@@ -1,0 +1,429 @@
+{
+  "schema": "airline-declared-net-objective-problem/1",
+  "physical_spec": {
+    "schema_version": "airline-market-spec/1",
+    "name": "declared_refundable_net_objective_network",
+    "description": "Constructed native ledger accounting states with explicit refundable-fee objective; not empirical fee ownership.",
+    "horizon": {
+      "n_periods": 8,
+      "period_days": null,
+      "departure_date": null,
+      "booking_window_days": null
+    },
+    "airports": [
+      {
+        "code": "D",
+        "name": "",
+        "timezone": "UTC",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "code": "H",
+        "name": "",
+        "timezone": "UTC",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "code": "O",
+        "name": "",
+        "timezone": "UTC",
+        "lat": null,
+        "lon": null
+      }
+    ],
+    "carriers": [
+      {
+        "code": "A",
+        "name": "",
+        "kind": "network"
+      }
+    ],
+    "legs": [
+      {
+        "id": "A_0",
+        "carrier": "A",
+        "origin": "O",
+        "dest": "H",
+        "dep_time": null,
+        "arr_time": null,
+        "capacity": {
+          "support": [
+            3
+          ],
+          "probabilities": [
+            1.0
+          ],
+          "public": true
+        },
+        "distance_mi": null,
+        "cost_per_pax": 2
+      },
+      {
+        "id": "A_1",
+        "carrier": "A",
+        "origin": "H",
+        "dest": "D",
+        "dep_time": null,
+        "arr_time": null,
+        "capacity": {
+          "support": [
+            3
+          ],
+          "probabilities": [
+            1.0
+          ],
+          "public": true
+        },
+        "distance_mi": null,
+        "cost_per_pax": 3
+      }
+    ],
+    "capacity_priors": [],
+    "products": [
+      {
+        "id": "OH",
+        "carrier": "A",
+        "market": "OH",
+        "legs": [
+          "A_0"
+        ],
+        "service_cost": 4,
+        "fare_floor": 1,
+        "fare_cap": 140,
+        "reference_fare": 83,
+        "priority": 0,
+        "controlled": true,
+        "attributes": {}
+      },
+      {
+        "id": "HD",
+        "carrier": "A",
+        "market": "HD",
+        "legs": [
+          "A_1"
+        ],
+        "service_cost": 5,
+        "fare_floor": 1,
+        "fare_cap": 120,
+        "reference_fare": 101,
+        "priority": 1,
+        "controlled": true,
+        "attributes": {}
+      },
+      {
+        "id": "OD",
+        "carrier": "A",
+        "market": "OD",
+        "legs": [
+          "A_0",
+          "A_1"
+        ],
+        "service_cost": 7,
+        "fare_floor": 1,
+        "fare_cap": 230,
+        "reference_fare": 157,
+        "priority": 2,
+        "controlled": true,
+        "attributes": {}
+      }
+    ],
+    "markets": [
+      {
+        "id": "OH",
+        "origin": "O",
+        "dest": "H",
+        "in_segment": true,
+        "label": ""
+      },
+      {
+        "id": "HD",
+        "origin": "H",
+        "dest": "D",
+        "in_segment": true,
+        "label": ""
+      },
+      {
+        "id": "OD",
+        "origin": "O",
+        "dest": "D",
+        "in_segment": true,
+        "label": ""
+      }
+    ],
+    "segments": [
+      {
+        "id": "single",
+        "classes": [
+          {
+            "weight": 1.0,
+            "alpha": 0.025,
+            "carrier_pref": {
+              "A": 0.0
+            },
+            "market_value": {
+              "OH": 0.0,
+              "HD": 0.0,
+              "OD": 0.0
+            },
+            "connection_penalty": 0.0,
+            "product_shift": {},
+            "time_penalty_per_hour": 0.0,
+            "schedule_penalty_per_hour": 0.0,
+            "ideal_dep_hour": null
+          }
+        ],
+        "mixed": null
+      }
+    ],
+    "demand": {
+      "mode": "single_request_bernoulli",
+      "arrival_probability": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.0
+        ]
+      },
+      "arrival_probability_cap": 0.85,
+      "market_weights": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ]
+        ]
+      },
+      "intensity": null,
+      "segment_weights": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          [
+            1.0
+          ]
+        ]
+      },
+      "holiday_multiplier": 1.0,
+      "exogenous_multipliers": {},
+      "poisson_truncation": 3
+    },
+    "choice": {
+      "model": "latent_class_mnl",
+      "connection_penalty_rule": "per_connection",
+      "n_mixed_draws": 0
+    },
+    "exogenous": {
+      "states": [
+        {
+          "name": "normal",
+          "public": true,
+          "attributes": {}
+        }
+      ],
+      "initial": [
+        1.0
+      ],
+      "transitions": {},
+      "default_transition": null,
+      "forecasts": {}
+    },
+    "capacity_process": {
+      "events": []
+    },
+    "resolution": {
+      "rule": "fixed_priority_cancel_refund",
+      "refund": "full_original_fare",
+      "penalty_per_cancellation": 7,
+      "stranded_reentry": false
+    },
+    "quotes": {
+      "requests": []
+    },
+    "pricing": [
+      {
+        "carrier": "A",
+        "base": {
+          "OH": 83,
+          "HD": 101,
+          "OD": 157
+        },
+        "time_ramp": 0.0,
+        "fixed_features": [],
+        "controllable_features": [
+          {
+            "name": "intercept",
+            "params": {}
+          }
+        ],
+        "theta_bounds": [
+          [
+            -1.0,
+            1.0
+          ]
+        ],
+        "theta_grid": [
+          [
+            0.0
+          ]
+        ],
+        "sharing": "carrier",
+        "update_every": 1
+      }
+    ],
+    "controllers": [
+      {
+        "carrier": "A",
+        "controller": "external",
+        "params": {}
+      }
+    ],
+    "objectives": [
+      {
+        "carrier": "A",
+        "profit_scale": 1.0,
+        "share_weight": 0.0,
+        "share_markets": null,
+        "share_statistic": "realized_ratio"
+      }
+    ],
+    "information": [
+      {
+        "name": "direct",
+        "observer": "A",
+        "requests": [],
+        "privileged": false,
+        "derived": false
+      }
+    ],
+    "background": [],
+    "timing": {
+      "mode": "simultaneous",
+      "leaders": [],
+      "initial_previous_prices": {}
+    },
+    "metadata": {}
+  },
+  "initial_capacity": [
+    3,
+    3
+  ],
+  "capacity_interventions": [
+    [
+      3,
+      3
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "fee_plans": [
+    {
+      "name": "zero",
+      "rules": {
+        "OH": {
+          "rate": 0,
+          "flat_USD": 0
+        },
+        "HD": {
+          "rate": 0,
+          "flat_USD": 0
+        },
+        "OD": {
+          "rate": 0,
+          "flat_USD": 0
+        }
+      }
+    },
+    {
+      "name": "rate075_flat4",
+      "rules": {
+        "OH": {
+          "rate": 0.075,
+          "flat_USD": 4
+        },
+        "HD": {
+          "rate": 0.075,
+          "flat_USD": 4
+        },
+        "OD": {
+          "rate": 0.075,
+          "flat_USD": 4
+        }
+      }
+    },
+    {
+      "name": "rate15_flat12",
+      "rules": {
+        "OH": {
+          "rate": 0.15,
+          "flat_USD": 12
+        },
+        "HD": {
+          "rate": 0.15,
+          "flat_USD": 12
+        },
+        "OD": {
+          "rate": 0.15,
+          "flat_USD": 12
+        }
+      }
+    },
+    {
+      "name": "clipped_all_fare",
+      "rules": {
+        "OH": {
+          "rate": 0,
+          "flat_USD": 200
+        },
+        "HD": {
+          "rate": 0,
+          "flat_USD": 200
+        },
+        "OD": {
+          "rate": 0,
+          "flat_USD": 200
+        }
+      }
+    },
+    {
+      "name": "per_leg_flat",
+      "rules": {
+        "OH": {
+          "rate": 0.1,
+          "flat_USD": 3
+        },
+        "HD": {
+          "rate": 0.1,
+          "flat_USD": 3
+        },
+        "OD": {
+          "rate": 0.1,
+          "flat_USD": 6
+        }
+      }
+    }
+  ],
+  "quote_shift_USD": 29,
+  "fees_fully_refundable": true
+}

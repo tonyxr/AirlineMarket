@@ -1,0 +1,8 @@
+{
+  "spec": "config/games/toy_strategic_spec.json",
+  "seeds": [
+    100,
+    116
+  ],
+  "max_iters": 10
+}

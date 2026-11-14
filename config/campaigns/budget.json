@@ -1,0 +1,58 @@
+{
+  "schema": "airline-budget/1",
+  "status": "partially_measured_F8",
+  "hardware": {
+    "cpu": "Apple M1 Pro",
+    "physical_cores": 10,
+    "ram_gib": 16
+  },
+  "workers": 9,
+  "memory_budget_gb": 12,
+  "planning_master": 773,
+  "bootstrap_replicates": 2000,
+  "exact_scale": {
+    "T": null,
+    "grid": null
+  },
+  "particle_count": null,
+  "mpc": null,
+  "rl_budgets": null,
+  "primary_contrast_cohorts": null,
+  "core_hours": null,
+  "note": "Null means not yet measured. Phase 4 config expansion must not substitute a default for an unmeasured budget reference.",
+  "empirical_hub": {
+    "hub": "ORD",
+    "carriers": [
+      "UA",
+      "AA"
+    ],
+    "selection_period": "2022 Q2 departure cohorts only",
+    "evidence": "results/scoped_processing/20261111_ord_v1/F8_scope_summary.json",
+    "scope_definition": "16-airport pool; Q2-selected UA/AA local/one-connection ORD network, with all-carrier O&D alternatives retained"
+  },
+  "days_to_departure_bins": [
+    "60+",
+    "45-59",
+    "30-44",
+    "21-29",
+    "14-20",
+    "7-13",
+    "3-6",
+    "0-2"
+  ],
+  "simulator_largest_cell": {
+    "source": "results/F3/20261111_counted_sparse_v1/largest_criterion.json",
+    "n_cohorts": 64,
+    "spokes": 50,
+    "carriers": 3,
+    "periods": 60,
+    "mean_seconds_per_cohort": 17.80148793679723,
+    "median_seconds_per_cohort": 17.581713874500565,
+    "iqr_seconds_per_cohort": 1.4692671250013518,
+    "peak_rss_bytes": 414597120,
+    "threshold_seconds": 2.0,
+    "criterion": "failed",
+    "implementation_revision": "counted-sparse-v1",
+    "note": "Registered full criterion measured with concurrent host work; not an RL or MPC budget. Remaining grid continues. Further measured-stage optimization required before D2/D4."
+  }
+}

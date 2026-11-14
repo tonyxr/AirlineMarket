@@ -1,0 +1,33 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "P3_demand_identification",
+  "phase": 3,
+  "implementation_revision": "reference_offer_poisson_mnl_identification_v1",
+  "generator": "toy_hub",
+  "task": "study:airline_market.experiments.demand_identification_study:run",
+  "design": "list",
+  "cells": [
+    {
+      "source_spec": "results/P3/20261112_behavioral_initialization_v1/cells/17802509f93cff73/attempt-0001/spec.json",
+      "source_spec_sha256": "e02dfb1cbb910fcb18235d01e98906f22bf2b15667599c9e411320d14b915ee7",
+      "design_registration": "results/DemandIdent_tooling/design_registration.json",
+      "design_registration_sha256": "efc70c0073322cc59a560bdf92fae2d7ddbfed37d0e0724f3f8366c22c764578",
+      "arrival_multipliers": [
+        1.25,
+        2.0,
+        4.0
+      ],
+      "core_price_increment": 10.0,
+      "intensity_tolerance": 1e-10,
+      "rank_rtol": 1e-10
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1.0,
+  "limits": {
+    "seconds": 3600,
+    "rss_gb": 1.0,
+    "reservation_gb": 1.0
+  },
+  "out": "results/P3/20261113_reference_demand_identification_v1"
+}

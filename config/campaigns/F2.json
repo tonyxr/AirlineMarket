@@ -1,0 +1,396 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "F2_independent",
+  "phase": 1,
+  "implementation_revision": "poisson-catalog-reference-v1",
+  "task": "benchmark",
+  "design": "list",
+  "workers": 1,
+  "memory_budget_gb": 2,
+  "fixed": {
+    "warmup": 1,
+    "repeats": 5,
+    "n_scenarios": 256,
+    "reservation_gb": 2
+  },
+  "cells": [
+    {
+      "instance": "I0",
+      "generator": "toy_hub",
+      "instance_params": {},
+      "operations": [
+        "engine_cohort"
+      ]
+    },
+    {
+      "instance": "I0",
+      "generator": "toy_hub",
+      "instance_params": {},
+      "operations": [
+        "batch_sampler_cohort"
+      ]
+    },
+    {
+      "instance": "I0",
+      "generator": "toy_hub",
+      "instance_params": {},
+      "operations": [
+        "kernel_transition"
+      ]
+    },
+    {
+      "instance": "I0",
+      "generator": "toy_hub",
+      "instance_params": {},
+      "operations": [
+        "exact_belief_update"
+      ]
+    },
+    {
+      "instance": "I0",
+      "generator": "toy_hub",
+      "instance_params": {},
+      "operations": [
+        "particle_belief_update_2000"
+      ]
+    },
+    {
+      "instance": "I0",
+      "generator": "toy_hub",
+      "instance_params": {},
+      "operations": [
+        "particle_belief_update_5000"
+      ]
+    },
+    {
+      "instance": "I0",
+      "generator": "toy_hub",
+      "instance_params": {},
+      "operations": [
+        "particle_belief_update_20000"
+      ]
+    },
+    {
+      "instance": "I0",
+      "generator": "toy_hub",
+      "instance_params": {},
+      "operations": [
+        "factorized_belief_update"
+      ]
+    },
+    {
+      "instance": "I0",
+      "generator": "toy_hub",
+      "instance_params": {},
+      "operations": [
+        "mpc_decision"
+      ]
+    },
+    {
+      "instance": "I3",
+      "generator": "hub_feeder_small",
+      "instance_params": {},
+      "operations": [
+        "engine_cohort"
+      ]
+    },
+    {
+      "instance": "I3",
+      "generator": "hub_feeder_small",
+      "instance_params": {},
+      "operations": [
+        "batch_sampler_cohort"
+      ]
+    },
+    {
+      "instance": "I3",
+      "generator": "hub_feeder_small",
+      "instance_params": {},
+      "operations": [
+        "kernel_transition"
+      ]
+    },
+    {
+      "instance": "I3",
+      "generator": "hub_feeder_small",
+      "instance_params": {},
+      "operations": [
+        "exact_belief_update"
+      ]
+    },
+    {
+      "instance": "I3",
+      "generator": "hub_feeder_small",
+      "instance_params": {},
+      "operations": [
+        "particle_belief_update_2000"
+      ]
+    },
+    {
+      "instance": "I3",
+      "generator": "hub_feeder_small",
+      "instance_params": {},
+      "operations": [
+        "particle_belief_update_5000"
+      ]
+    },
+    {
+      "instance": "I3",
+      "generator": "hub_feeder_small",
+      "instance_params": {},
+      "operations": [
+        "particle_belief_update_20000"
+      ]
+    },
+    {
+      "instance": "I3",
+      "generator": "hub_feeder_small",
+      "instance_params": {},
+      "operations": [
+        "factorized_belief_update"
+      ]
+    },
+    {
+      "instance": "I3",
+      "generator": "hub_feeder_small",
+      "instance_params": {},
+      "operations": [
+        "mpc_decision"
+      ]
+    },
+    {
+      "instance": "I5",
+      "generator": "config/instances/I5.json",
+      "instance_params": {},
+      "operations": [
+        "engine_cohort"
+      ]
+    },
+    {
+      "instance": "I5",
+      "generator": "config/instances/I5.json",
+      "instance_params": {},
+      "operations": [
+        "batch_sampler_cohort"
+      ]
+    },
+    {
+      "instance": "I5",
+      "generator": "config/instances/I5.json",
+      "instance_params": {},
+      "operations": [
+        "kernel_transition"
+      ]
+    },
+    {
+      "instance": "I5",
+      "generator": "config/instances/I5.json",
+      "instance_params": {},
+      "operations": [
+        "exact_belief_update"
+      ]
+    },
+    {
+      "instance": "I5",
+      "generator": "config/instances/I5.json",
+      "instance_params": {},
+      "operations": [
+        "particle_belief_update_2000"
+      ]
+    },
+    {
+      "instance": "I5",
+      "generator": "config/instances/I5.json",
+      "instance_params": {},
+      "operations": [
+        "particle_belief_update_5000"
+      ]
+    },
+    {
+      "instance": "I5",
+      "generator": "config/instances/I5.json",
+      "instance_params": {},
+      "operations": [
+        "particle_belief_update_20000"
+      ]
+    },
+    {
+      "instance": "I5",
+      "generator": "config/instances/I5.json",
+      "instance_params": {},
+      "operations": [
+        "factorized_belief_update"
+      ]
+    },
+    {
+      "instance": "I5",
+      "generator": "config/instances/I5.json",
+      "instance_params": {},
+      "operations": [
+        "mpc_decision"
+      ]
+    },
+    {
+      "instance": "I6",
+      "generator": "config/instances/I6.json",
+      "instance_params": {},
+      "operations": [
+        "engine_cohort"
+      ]
+    },
+    {
+      "instance": "I6",
+      "generator": "config/instances/I6.json",
+      "instance_params": {},
+      "operations": [
+        "batch_sampler_cohort"
+      ]
+    },
+    {
+      "instance": "I6",
+      "generator": "config/instances/I6.json",
+      "instance_params": {},
+      "operations": [
+        "kernel_transition"
+      ]
+    },
+    {
+      "instance": "I6",
+      "generator": "config/instances/I6.json",
+      "instance_params": {},
+      "operations": [
+        "exact_belief_update"
+      ]
+    },
+    {
+      "instance": "I6",
+      "generator": "config/instances/I6.json",
+      "instance_params": {},
+      "operations": [
+        "particle_belief_update_2000"
+      ]
+    },
+    {
+      "instance": "I6",
+      "generator": "config/instances/I6.json",
+      "instance_params": {},
+      "operations": [
+        "particle_belief_update_5000"
+      ]
+    },
+    {
+      "instance": "I6",
+      "generator": "config/instances/I6.json",
+      "instance_params": {},
+      "operations": [
+        "particle_belief_update_20000"
+      ]
+    },
+    {
+      "instance": "I6",
+      "generator": "config/instances/I6.json",
+      "instance_params": {},
+      "operations": [
+        "factorized_belief_update"
+      ]
+    },
+    {
+      "instance": "I6",
+      "generator": "config/instances/I6.json",
+      "instance_params": {},
+      "operations": [
+        "mpc_decision"
+      ]
+    },
+    {
+      "instance": "I9_fixture",
+      "generator": "config/instances/I9_fixture.json",
+      "instance_params": {},
+      "operations": [
+        "engine_cohort"
+      ]
+    },
+    {
+      "instance": "I9_fixture",
+      "generator": "config/instances/I9_fixture.json",
+      "instance_params": {},
+      "operations": [
+        "batch_sampler_cohort"
+      ]
+    },
+    {
+      "instance": "I9_fixture",
+      "generator": "config/instances/I9_fixture.json",
+      "instance_params": {},
+      "operations": [
+        "kernel_transition"
+      ]
+    },
+    {
+      "instance": "I9_fixture",
+      "generator": "config/instances/I9_fixture.json",
+      "instance_params": {},
+      "operations": [
+        "exact_belief_update"
+      ]
+    },
+    {
+      "instance": "I9_fixture",
+      "generator": "config/instances/I9_fixture.json",
+      "instance_params": {},
+      "operations": [
+        "particle_belief_update_2000"
+      ]
+    },
+    {
+      "instance": "I9_fixture",
+      "generator": "config/instances/I9_fixture.json",
+      "instance_params": {},
+      "operations": [
+        "particle_belief_update_5000"
+      ]
+    },
+    {
+      "instance": "I9_fixture",
+      "generator": "config/instances/I9_fixture.json",
+      "instance_params": {},
+      "operations": [
+        "particle_belief_update_20000"
+      ]
+    },
+    {
+      "instance": "I9_fixture",
+      "generator": "config/instances/I9_fixture.json",
+      "instance_params": {},
+      "operations": [
+        "factorized_belief_update"
+      ]
+    },
+    {
+      "instance": "I9_fixture",
+      "generator": "config/instances/I9_fixture.json",
+      "instance_params": {},
+      "operations": [
+        "mpc_decision"
+      ]
+    }
+  ],
+  "limits": {
+    "seconds": 900,
+    "rss_gb": 2
+  },
+  "out": "results/F2/20261111_independent_reference_v1",
+  "note": "I4 exact-scale cells await F1 and are not counted complete. One isolated cell per operation preserves unsupported/limited operations without losing other timings. Large exact priors/Poisson enumeration may hit declared 15-minute/2-GiB measurement limits; these are not throughput estimates. Timing excludes setup and reports it separately. Existing batch sampler is Bernoulli-only; failures must be reported explicitly.",
+  "fixture": {
+    "spec_hash": "928b33260593181f5d4b06a4c29a2780ecd5376282133257e97af83ab8407782",
+    "calibrated": false,
+    "source_hashes": {
+      "t100": "a6beb6be152e0df12e6dabecc3c15c4d1dbfc96cac9469ffe32cbe8ac856e9d4",
+      "db1b": "72df6a0164bf348501dea5c59f66219696cdf7fa6f4966f5b28b71141a47184c",
+      "ontime": "e185616ad8c35b625635a53d31c9ae0b06cc9a08988902aa75588c1c363c123c",
+      "flightprices": "411c91f26c7299386fd7182f30e2d3401d38f923fc9681eed9b81fca52a68e9c",
+      "noaa": "c768460a019e26e471242f19a557dd62f087471046d4619939c875b4d6e9f2c7",
+      "coupon": "cf23596d885a050100431500147132b8071b1c840665f4074673e9b1c47d218e"
+    }
+  }
+}

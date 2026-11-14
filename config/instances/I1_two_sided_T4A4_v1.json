@@ -1,0 +1,874 @@
+{
+  "schema_version": "airline-market-spec/1",
+  "name": "I1_two_sided_T4A4_v1",
+  "description": "Exact encoding of the frozen prototype",
+  "horizon": {
+    "n_periods": 4,
+    "period_days": null,
+    "departure_date": null,
+    "booking_window_days": null
+  },
+  "airports": [
+    {
+      "code": "O",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "code": "H",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "code": "D",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    }
+  ],
+  "carriers": [
+    {
+      "code": "A",
+      "name": "",
+      "kind": "network"
+    },
+    {
+      "code": "B",
+      "name": "",
+      "kind": "network"
+    }
+  ],
+  "legs": [
+    {
+      "id": "A_OH",
+      "carrier": "A",
+      "origin": "O",
+      "dest": "H",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          2
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "A_HD",
+      "carrier": "A",
+      "origin": "H",
+      "dest": "D",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          2
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "B_OH",
+      "carrier": "B",
+      "origin": "O",
+      "dest": "H",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          2
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "B_HD",
+      "carrier": "B",
+      "origin": "H",
+      "dest": "D",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          1,
+          3
+        ],
+        "probabilities": [
+          0.5,
+          0.5
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    }
+  ],
+  "capacity_priors": [],
+  "products": [
+    {
+      "id": "A_OH",
+      "carrier": "A",
+      "market": "OH",
+      "legs": [
+        "A_OH"
+      ],
+      "service_cost": 15,
+      "fare_floor": 70,
+      "fare_cap": 300,
+      "reference_fare": 110,
+      "priority": 0,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD",
+      "carrier": "A",
+      "market": "OD",
+      "legs": [
+        "A_OH",
+        "A_HD"
+      ],
+      "service_cost": 30,
+      "fare_floor": 70,
+      "fare_cap": 300,
+      "reference_fare": 185,
+      "priority": 1,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OH",
+      "carrier": "B",
+      "market": "OH",
+      "legs": [
+        "B_OH"
+      ],
+      "service_cost": 15,
+      "fare_floor": 70,
+      "fare_cap": 300,
+      "reference_fare": 125,
+      "priority": 2,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_HD",
+      "carrier": "B",
+      "market": "HD",
+      "legs": [
+        "B_HD"
+      ],
+      "service_cost": 12,
+      "fare_floor": 70,
+      "fare_cap": 300,
+      "reference_fare": 85,
+      "priority": 3,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD",
+      "carrier": "B",
+      "market": "OD",
+      "legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "service_cost": 30,
+      "fare_floor": 70,
+      "fare_cap": 300,
+      "reference_fare": 170,
+      "priority": 4,
+      "controlled": true,
+      "attributes": {}
+    }
+  ],
+  "markets": [
+    {
+      "id": "OH",
+      "origin": "O",
+      "dest": "H",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "HD",
+      "origin": "H",
+      "dest": "D",
+      "in_segment": false,
+      "label": ""
+    },
+    {
+      "id": "OD",
+      "origin": "O",
+      "dest": "D",
+      "in_segment": true,
+      "label": ""
+    }
+  ],
+  "segments": [
+    {
+      "id": "leisure",
+      "classes": [
+        {
+          "weight": 1,
+          "alpha": 0.025,
+          "carrier_pref": {
+            "A": 0.0,
+            "B": 0.3
+          },
+          "market_value": {
+            "OH": 4.0,
+            "HD": 4.0,
+            "OD": 5.0
+          },
+          "connection_penalty": 0.0,
+          "product_shift": {},
+          "time_penalty_per_hour": 0.0,
+          "schedule_penalty_per_hour": 0.0,
+          "ideal_dep_hour": null
+        }
+      ],
+      "mixed": null
+    },
+    {
+      "id": "business",
+      "classes": [
+        {
+          "weight": 1,
+          "alpha": 0.012,
+          "carrier_pref": {
+            "A": 0.25,
+            "B": 0.0
+          },
+          "market_value": {
+            "OH": 3.5,
+            "HD": 3.5,
+            "OD": 4.5
+          },
+          "connection_penalty": 0.0,
+          "product_shift": {},
+          "time_penalty_per_hour": 0.0,
+          "schedule_penalty_per_hour": 0.0,
+          "ideal_dep_hour": null
+        }
+      ],
+      "mixed": null
+    }
+  ],
+  "demand": {
+    "mode": "single_request_bernoulli",
+    "arrival_probability": {
+      "breakpoints": [
+        0
+      ],
+      "values": [
+        0.9
+      ]
+    },
+    "arrival_probability_cap": 0.98,
+    "market_weights": {
+      "breakpoints": [
+        0,
+        2
+      ],
+      "values": [
+        [
+          0.55,
+          0.4,
+          0.05
+        ],
+        [
+          0.15,
+          0.15,
+          0.7
+        ]
+      ]
+    },
+    "intensity": null,
+    "segment_weights": {
+      "breakpoints": [
+        0,
+        2
+      ],
+      "values": [
+        [
+          0.8,
+          0.2
+        ],
+        [
+          0.30000000000000004,
+          0.7
+        ]
+      ]
+    },
+    "holiday_multiplier": 1.0,
+    "exogenous_multipliers": {
+      "disrupted": 0.7
+    },
+    "poisson_truncation": 3
+  },
+  "choice": {
+    "model": "latent_class_mnl",
+    "connection_penalty_rule": "legacy_market_od",
+    "n_mixed_draws": 0
+  },
+  "exogenous": {
+    "states": [
+      {
+        "name": "normal",
+        "public": true,
+        "attributes": {
+          "disrupted": 0
+        }
+      },
+      {
+        "name": "disrupted",
+        "public": true,
+        "attributes": {
+          "disrupted": 1
+        }
+      }
+    ],
+    "initial": [
+      1.0,
+      0.0
+    ],
+    "transitions": {
+      "2": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "default_transition": null,
+    "forecasts": {}
+  },
+  "capacity_process": {
+    "events": [
+      {
+        "trigger": {
+          "exo_transition": [
+            "normal",
+            "disrupted"
+          ]
+        },
+        "effects": [
+          [
+            "A_OH",
+            -1
+          ],
+          [
+            "B_HD",
+            -1
+          ]
+        ],
+        "once": true
+      }
+    ]
+  },
+  "resolution": {
+    "rule": "fixed_priority_cancel_refund",
+    "refund": "full_original_fare",
+    "penalty_per_cancellation": 25.0,
+    "stranded_reentry": false
+  },
+  "quotes": {
+    "requests": [
+      {
+        "id": "q_B_OH",
+        "observer": "A",
+        "target_products": [
+          "B_OH"
+        ],
+        "lag_periods": 0,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_OD",
+        "observer": "A",
+        "target_products": [
+          "B_OD"
+        ],
+        "lag_periods": 0,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_HD",
+        "observer": "A",
+        "target_products": [
+          "B_HD"
+        ],
+        "lag_periods": 0,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_XY",
+        "observer": "A",
+        "target_products": [
+          "XY"
+        ],
+        "lag_periods": 0,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_previous",
+        "observer": "B",
+        "target_products": [
+          "A_OH",
+          "A_OD"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      }
+    ]
+  },
+  "pricing": [
+    {
+      "carrier": "A",
+      "base": {
+        "A_OH": 110,
+        "A_OD": 185
+      },
+      "time_ramp": 15,
+      "fixed_features": [
+        [
+          {
+            "name": "direct_rival_gap",
+            "params": {
+              "targets": {
+                "A_OH": "B_OH",
+                "A_OD": "B_OD"
+              }
+            }
+          },
+          0.1
+        ]
+      ],
+      "controllable_features": [
+        {
+          "name": "intercept",
+          "params": {}
+        },
+        {
+          "name": "connection_indicator",
+          "params": {}
+        },
+        {
+          "name": "scarcity_sum",
+          "params": {}
+        }
+      ],
+      "theta_bounds": [
+        [
+          -30,
+          30
+        ],
+        [
+          -30,
+          30
+        ],
+        [
+          0,
+          15
+        ]
+      ],
+      "theta_grid": [
+        [
+          -30.0,
+          -30.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          -30.0,
+          15.0
+        ],
+        [
+          30.0,
+          30.0,
+          15.0
+        ]
+      ],
+      "sharing": "carrier",
+      "update_every": 1
+    },
+    {
+      "carrier": "B",
+      "base": {
+        "B_OH": 125,
+        "B_HD": 85,
+        "B_OD": 170
+      },
+      "time_ramp": 0.0,
+      "fixed_features": [],
+      "controllable_features": [
+        {
+          "name": "intercept",
+          "params": {}
+        },
+        {
+          "name": "connection_indicator",
+          "params": {}
+        },
+        {
+          "name": "scarcity_sum",
+          "params": {}
+        }
+      ],
+      "theta_bounds": [
+        [
+          -30,
+          30
+        ],
+        [
+          -30,
+          30
+        ],
+        [
+          0,
+          15
+        ]
+      ],
+      "theta_grid": [
+        [
+          -30.0,
+          -30.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          -30.0,
+          15.0
+        ],
+        [
+          30.0,
+          30.0,
+          15.0
+        ]
+      ],
+      "sharing": "carrier",
+      "update_every": 1
+    }
+  ],
+  "controllers": [
+    {
+      "carrier": "A",
+      "controller": "external",
+      "params": {}
+    },
+    {
+      "carrier": "B",
+      "controller": "threshold_linear_rule",
+      "params": {
+        "rules": {
+          "B_OH": {
+            "base": 125,
+            "scarcity": [
+              {
+                "leg": "B_OH",
+                "threshold": 1,
+                "coefficient": 15
+              }
+            ],
+            "responses": [
+              {
+                "product": "A_OH",
+                "reference": 110,
+                "coefficient": 0.1
+              }
+            ]
+          },
+          "B_HD": {
+            "base": 85,
+            "scarcity": [
+              {
+                "leg": "B_HD",
+                "threshold": 1,
+                "coefficient": 35.0
+              }
+            ]
+          },
+          "B_OD": {
+            "base": 170,
+            "responses": [
+              {
+                "product": "A_OD",
+                "reference": 185,
+                "coefficient": 0.1
+              }
+            ]
+          }
+        },
+        "arm": "B_direct"
+      }
+    }
+  ],
+  "objectives": [
+    {
+      "carrier": "A",
+      "profit_scale": 300.0,
+      "share_weight": 0.0,
+      "share_markets": [
+        "OH",
+        "OD"
+      ],
+      "share_statistic": "realized_ratio"
+    },
+    {
+      "carrier": "B",
+      "profit_scale": 300.0,
+      "share_weight": 0.0,
+      "share_markets": [
+        "OH",
+        "OD"
+      ],
+      "share_statistic": "realized_ratio"
+    }
+  ],
+  "information": [
+    {
+      "name": "direct",
+      "observer": "A",
+      "requests": [
+        "q_B_OH",
+        "q_B_OD"
+      ],
+      "privileged": false,
+      "derived": false
+    },
+    {
+      "name": "linked",
+      "observer": "A",
+      "requests": [
+        "q_B_OH",
+        "q_B_OD",
+        "q_B_HD"
+      ],
+      "privileged": false,
+      "derived": false
+    },
+    {
+      "name": "unrelated",
+      "observer": "A",
+      "requests": [
+        "q_B_OH",
+        "q_B_OD",
+        "q_XY"
+      ],
+      "privileged": false,
+      "derived": false
+    },
+    {
+      "name": "oracle",
+      "observer": "A",
+      "requests": [
+        "q_B_OH",
+        "q_B_OD"
+      ],
+      "privileged": true,
+      "derived": false
+    },
+    {
+      "name": "B_direct",
+      "observer": "B",
+      "requests": [
+        "q_A_previous"
+      ],
+      "privileged": false,
+      "derived": false
+    }
+  ],
+  "background": [
+    {
+      "id": "XY",
+      "carrier": "B",
+      "capacity": {
+        "support": [
+          1,
+          3
+        ],
+        "probabilities": [
+          0.5,
+          0.5
+        ],
+        "public": false
+      },
+      "quote_rule": {
+        "base": 85,
+        "scarcity_premium": 35,
+        "threshold": 1
+      },
+      "purchase": {
+        "max_prob": 0.7,
+        "intercept": 4.0,
+        "slope": 0.025
+      }
+    }
+  ],
+  "timing": {
+    "mode": "leader_follower",
+    "leaders": [
+      "B"
+    ],
+    "initial_previous_prices": {
+      "A_OH": 110.0,
+      "A_OD": 185.0
+    }
+  },
+  "metadata": {
+    "legacy_map": {
+      "Config": {
+        "source": "airline_market/legacy_toy/model.py",
+        "lines": [
+          27,
+          61
+        ]
+      },
+      "market_weights": {
+        "source": "airline_market/legacy_toy/model.py",
+        "lines": [
+          213,
+          214
+        ]
+      },
+      "taste_weights": {
+        "source": "airline_market/legacy_toy/model.py",
+        "lines": [
+          216,
+          218
+        ]
+      },
+      "rival_quotes": {
+        "source": "airline_market/legacy_toy/model.py",
+        "lines": [
+          220,
+          226
+        ]
+      },
+      "prices": {
+        "source": "airline_market/legacy_toy/model.py",
+        "lines": [
+          232,
+          244
+        ]
+      },
+      "utilities": {
+        "source": "airline_market/legacy_toy/model.py",
+        "lines": [
+          247,
+          260
+        ]
+      },
+      "step": {
+        "source": "airline_market/legacy_toy/model.py",
+        "lines": [
+          384,
+          387
+        ]
+      },
+      "metrics": {
+        "source": "airline_market/legacy_toy/model.py",
+        "lines": [
+          356,
+          364
+        ]
+      }
+    },
+    "legacy_config": {
+      "horizon": 4,
+      "own_capacity": [
+        2,
+        2
+      ],
+      "rival_oh_capacity": 2,
+      "rival_hd_capacities": [
+        1,
+        3
+      ],
+      "arrival_probability": 0.9,
+      "holiday_multiplier": 1.0,
+      "capacity_shock_probability": 0.0,
+      "shock_step": 3,
+      "disruption_penalty": 25.0,
+      "feeder_premium": 35.0,
+      "rival_response": 0.1,
+      "share_weight": 0.0,
+      "profit_scale": 300.0
+    },
+    "connection_penalties": {
+      "OD": 0.5
+    },
+    "nested_arms": [
+      [
+        "direct",
+        "linked"
+      ],
+      [
+        "direct",
+        "unrelated"
+      ]
+    ],
+    "F7_variant": "B receives the same generic intercept/connection/scarcity feature basis and four coefficient vectors as A; B own product bases retained; original I1 preserved. A direct and B lagged-direct information, original leader/follower timing."
+  }
+}

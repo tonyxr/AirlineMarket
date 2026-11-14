@@ -1,0 +1,164 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "V3_MR6_degenerate_demand",
+  "phase": 2,
+  "implementation_revision": "native_all_demand_and_normalized_outside_v1",
+  "generator": "toy_hub",
+  "task": "study:airline_market.experiments.degenerate_demand_study:run",
+  "design": "list",
+  "cells": [
+    {
+      "seed_start": 208848,
+      "n_cohorts": 256,
+      "groups": [
+        {
+          "id": "I0",
+          "kind": "zero",
+          "original_path": "airline_market/spec/library/toy_hub.json",
+          "original_sha256": "cd6f818b199bc7b79bde4449d25d066322daafe36ac18d61c1a05bbd5ca27270",
+          "models": [
+            {
+              "id": "I0_main_only_zero",
+              "path": "config/benchmarks/V3_MR6_I0_main_only_zero.json",
+              "sha256": "249e3564594014e36dbe3b2231aa382c8eaaad4d6a212f2e3b9e4cb9d22f2c47",
+              "spec_hash": "aee81a828c5e566f89278c91122aec3c143d6c5a3f016d3f6cd2653bee66c5d0",
+              "all_demand_zero": false
+            },
+            {
+              "id": "I0_all_zero",
+              "path": "config/benchmarks/V3_MR6_I0_all_zero.json",
+              "sha256": "4a667a8843029225da626a78b1978bcef7492f92c4d1ff9409fb2b372b2cdeb0",
+              "spec_hash": "1140610b5c466085a0dc919b03c5eaae34dc6bbc1714dc2dd56be1c6c2556351",
+              "all_demand_zero": true
+            }
+          ]
+        },
+        {
+          "id": "I3",
+          "kind": "zero",
+          "original_path": "airline_market/spec/library/hub_feeder_small.json",
+          "original_sha256": "3deb9ec4dc9f79cf68a9a71410711f037e8206cddd1b50169baa2c29ec1d41fb",
+          "models": [
+            {
+              "id": "I3_main_only_zero",
+              "path": "config/benchmarks/V3_MR6_I3_main_only_zero.json",
+              "sha256": "ea2c10c01e4dee8744b8c9f112021e988389866af6bdd35dded1459e6afc9e95",
+              "spec_hash": "df4ddcee053b3f4f8831d365c653d57cd6c074650882b22b86ff98b0aa4c4934",
+              "all_demand_zero": false
+            },
+            {
+              "id": "I3_all_zero",
+              "path": "config/benchmarks/V3_MR6_I3_all_zero.json",
+              "sha256": "ac1c01246db5415a372e4be889d06f9a62b58b2a3c0fcf05585f9d13108d3e05",
+              "spec_hash": "c5a435c169831fe2a819a8639cd6c9ea95e56dbcd5f9caca74bdfa9d468e09a8",
+              "all_demand_zero": true
+            }
+          ]
+        },
+        {
+          "id": "I4_low",
+          "kind": "zero",
+          "original_path": "results/F1_history_tooling/T5A4_source_specs/1c93f8e7752595c4.json",
+          "original_sha256": "1b014cb823980907b3148f44fa02ca7e2941957d7be3d66f707a0efc089aa9b6",
+          "models": [
+            {
+              "id": "I4_low_main_only_zero",
+              "path": "config/benchmarks/V3_MR6_I4_low_main_only_zero.json",
+              "sha256": "1fa830b9a7d51f2952306d9ab0abd8d28a5f620d1cb9851e9222e8a2d929706c",
+              "spec_hash": "c8b4959da3694ab63a25e04d50c467dcbbc9022e8f3ad9b5ac48fa8b376af475",
+              "all_demand_zero": false
+            },
+            {
+              "id": "I4_low_all_zero",
+              "path": "config/benchmarks/V3_MR6_I4_low_all_zero.json",
+              "sha256": "11362a93c90e51b0eab16930cc57ef456c72106523496b3a90f82817d1aed487",
+              "spec_hash": "9dd8e1331c366c173e78979a94306cd6c3cd0a6b8fc1068a5750c7abe00e40e5",
+              "all_demand_zero": true
+            }
+          ]
+        },
+        {
+          "id": "I4_high",
+          "kind": "zero",
+          "original_path": "results/F1_history_tooling/T5A4_source_specs/ce8d5b3e7d4930d5.json",
+          "original_sha256": "dfce988dec46b157d3cbef5190e634610dd41a846fcb330dae520db4e07279b5",
+          "models": [
+            {
+              "id": "I4_high_main_only_zero",
+              "path": "config/benchmarks/V3_MR6_I4_high_main_only_zero.json",
+              "sha256": "cc63421e6183d89ba3e5c4d3e9c9f1547554d0c6733fe392ad23d26e342b4288",
+              "spec_hash": "619f9fd43ae26d9297c2b33bbdba344d2ff4ae1326c91ea10289ad27acceb456",
+              "all_demand_zero": false
+            },
+            {
+              "id": "I4_high_all_zero",
+              "path": "config/benchmarks/V3_MR6_I4_high_all_zero.json",
+              "sha256": "555b1614464abdef556b096c764d74396240d000464280fcc0150d7a80c08e57",
+              "spec_hash": "635f43042d211f6bc23a8b909059f7e12422f044cfee606a2af6804ddd48e56b",
+              "all_demand_zero": true
+            }
+          ]
+        },
+        {
+          "id": "outside_limit",
+          "kind": "conversion",
+          "models": [
+            {
+              "id": "conversion_delta0",
+              "path": "config/benchmarks/V3_MR6_conversion_delta0.json",
+              "sha256": "23934d40b7e4388d32726925295393b50c33b08e6f25c5e78d76d6f55f1dbf11",
+              "spec_hash": "5ed6ac9803083730443016bffe9ed2555aca3888906017c1cabecb7f00a6b33a",
+              "inside_shift": 0
+            },
+            {
+              "id": "conversion_delta2",
+              "path": "config/benchmarks/V3_MR6_conversion_delta2.json",
+              "sha256": "17ff809f229f5116ead80ad34815cb58c693ea00e404e4fa6a23b919ef96a9e9",
+              "spec_hash": "99f3ec3ab9b8280258857ea045eb23ae522e0b33e61140274d9af157bff652ca",
+              "inside_shift": 2
+            },
+            {
+              "id": "conversion_delta5",
+              "path": "config/benchmarks/V3_MR6_conversion_delta5.json",
+              "sha256": "2af74d470e4d07dfb8bc266efd6daa430753127b9290fbcb3d38f36e15c88586",
+              "spec_hash": "a306a05ae3e3eaff37a1bc68476d241adef784d8217d08cc3405ec41130e540c",
+              "inside_shift": 5
+            },
+            {
+              "id": "conversion_delta10",
+              "path": "config/benchmarks/V3_MR6_conversion_delta10.json",
+              "sha256": "3d72d171ece758638ee542be84853b2af98c34822e4d006dcbd0b218e7ccde68",
+              "spec_hash": "c66f230ebf82aab109dc4b8bc488e26f75c4795f27faee5b6504620399ba056e",
+              "inside_shift": 10
+            },
+            {
+              "id": "conversion_delta20",
+              "path": "config/benchmarks/V3_MR6_conversion_delta20.json",
+              "sha256": "bd0337a0c23c3153784e9b2ebe10e8e95988eff3e6e08fe7f5ec4038b0048852",
+              "spec_hash": "59123a5dd0b750c931b5ddea10f5c3e92c6c98ef2da7fd39548eba8f5e914834",
+              "inside_shift": 20
+            },
+            {
+              "id": "conversion_delta50",
+              "path": "config/benchmarks/V3_MR6_conversion_delta50.json",
+              "sha256": "20bb725244c61ebac63b99a81cd4218555f80e1d12f3f1ff96c669c8aa02382b",
+              "spec_hash": "3a769d702149da56484e9f590e7040ae396cd6457970e421f6cdec8130d93ad7",
+              "inside_shift": 50
+            }
+          ]
+        }
+      ],
+      "design_registration": "results/MR6_tooling/design_registration.json",
+      "design_registration_sha256": "3f37c07d02d912aae8b10479659d2c53762480b567d7ed8908c453714cdd0a63"
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1.0,
+  "limits": {
+    "seconds": 14400,
+    "rss_gb": 1.0,
+    "max_nodes": 10000,
+    "reservation_gb": 1.0
+  },
+  "out": "results/V3_degenerate/20261113_zero_and_outside_limit_v1"
+}

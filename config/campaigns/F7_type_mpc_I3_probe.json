@@ -1,0 +1,93 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "F7_type_mpc_I3_probe",
+  "phase": 1,
+  "implementation_revision": "persistent-joint-type-native-mpc-v1",
+  "task": "study:airline_market.experiments.type_mpc_study:probe",
+  "design": "list",
+  "fixed": {
+    "source_spec": "config/instances/I3_two_sided_T4A18_v1.json",
+    "source_spec_sha256": "01c63aa2527b1783bf326c08c6aabab3890393fa415663f391a956392be3317f",
+    "n_cohorts": 1,
+    "seed_start": 200512,
+    "type_probabilities": [
+      0.5,
+      0.5
+    ],
+    "opponent_schedules": [
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          -30,
+          -30,
+          15
+        ],
+        [
+          -30,
+          -30,
+          15
+        ],
+        [
+          -30,
+          -30,
+          15
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          30,
+          30,
+          15
+        ],
+        [
+          30,
+          30,
+          15
+        ],
+        [
+          30,
+          30,
+          15
+        ]
+      ]
+    ],
+    "mpc": {
+      "n_scenarios": 32,
+      "n_reporting": 32,
+      "tail_index": 8,
+      "switch_standard_errors": 2.0,
+      "switch_absolute_margin": 0.0
+    },
+    "max_support": 20000,
+    "reservation_gb": 1
+  },
+  "cells": [
+    {
+      "focal": "A",
+      "arm": "direct",
+      "rival_arm": "B_own"
+    },
+    {
+      "focal": "B",
+      "arm": "B_own",
+      "rival_arm": "direct"
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1,
+  "limits": {
+    "seconds": 900,
+    "rss_gb": 1
+  },
+  "out": "results/F7_type_mpc/20261112_I3_native_probe_v1",
+  "note": "Two new full native one-cohort cost precursors, one per focal carrier, on explicitly two-sided T4/A18 I3 variant; original asymmetric reference unchanged. Opponent type drawn once from two declared schedules, first-period actions identical, later actions distinct. Joint exact type/state filter, native common-scenario one-step/fixed-tail MPC, independent reporting. Engineering fixed zero-vector tail index8, not tuned optimal tail. No terminal-unused belief update, PSRO iteration/convergence, exact deviation/Nash certificate, original-I3 result, empirical calibration, global particles/planner or game budget selection. One worker/1GiB/900s preliminary per cell; preserve limits/partial rows. Validation200512 only; final seeds closed."
+}

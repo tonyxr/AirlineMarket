@@ -1,0 +1,27 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "V4_Littlewood_100k",
+  "phase": 2,
+  "implementation_revision": "batch_admission_v1",
+  "generator": "toy_hub",
+  "task": "study:airline_market.experiments.littlewood_study:run",
+  "design": "list",
+  "cells": [
+    {
+      "problem": "config/benchmarks/V4_Littlewood_C8_binomial.json",
+      "problem_sha256": "484459a7763d7f08aea168f6a9bbc80eb6194610de352557fec210da2ecc2f92",
+      "design_registration": "results/Littlewood_tooling/design_registration.json",
+      "design_registration_sha256": "11e2c7ac8876416aa79f511118a3023824245aa39706332770abff90558100e9",
+      "cohorts": 100000,
+      "validation_seed_start": 200000
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1.0,
+  "limits": {
+    "seconds": 14400,
+    "rss_gb": 1.0,
+    "reservation_gb": 1.0
+  },
+  "out": "results/V4_Littlewood/20261113_full_100k_grid_v1"
+}

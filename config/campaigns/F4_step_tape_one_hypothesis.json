@@ -1,0 +1,46 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "F4_step_tape_one_hypothesis",
+  "phase": 1,
+  "implementation_revision": "exact-active-step-tape-v1",
+  "task": "study:airline_market.experiments.step_particle_study:compare",
+  "design": "list",
+  "fixed": {
+    "validation_seed": 200256,
+    "particles": 500,
+    "inner_draws": 128,
+    "reservation_gb": 1
+  },
+  "cells": [
+    {
+      "instance": "I5",
+      "source_spec": "config/instances/I5.json",
+      "source_spec_sha256": "0cd790a177cd2a6aa29c2c064beef0b0d310c07385bf83937a1a410a56b608cc",
+      "expected_prior_fingerprint": "cd70becf81ad9812b5c2a9ff5052420c5777503767cdf28887666962b1bddbc6",
+      "sealed_prior_results_sha256": "36db23235fe7d743471e9b2d651a5e39e1eda1cde8609a4626e1adae737c541c",
+      "execution_order": [
+        "original",
+        "step_tape"
+      ]
+    },
+    {
+      "instance": "I6",
+      "source_spec": "config/instances/I6.json",
+      "source_spec_sha256": "401b2b668c7fd02acc8bc55a7765e254aceb9c8d6a4117d986d573744370c90e",
+      "expected_prior_fingerprint": "58c04b175ba870fd2f0d78426c4ea53d0f6e7e363d2e67f6a0d655449d20d472",
+      "sealed_prior_results_sha256": "b9def2382265e6a46da6e3ae9e4102d65f1dddb906d8c44bf2601feb88bd5068",
+      "execution_order": [
+        "step_tape",
+        "original"
+      ]
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1,
+  "limits": {
+    "seconds": 900,
+    "rss_gb": 1
+  },
+  "out": "results/F4_step_tape/20261112_paired_one_hypothesis_v1",
+  "note": "New paired proposal operation: one fixed existing hidden hypothesis and128 unchanged draws/method per hub, prior setup and auxiliary buffer audit excluded from proposal timing. Alternate order across hubs; only1case each, no randomized-throughput estimate. Exact original active tape values/globalshape/currentmarks/nextquote fields; storedfuture taste rows absent. Not a fullN500update/64cohortNselection/100kaccuracy/F3pass. Original full-TV negative and all old limits remain. No matching completed timing or profile cell rerun."
+}

@@ -1,0 +1,801 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "F6_throughput",
+  "phase": 1,
+  "implementation_revision": "structured-training-v1",
+  "task": "study:airline_market.experiments.f6_study:run",
+  "design": "list",
+  "fixed": {
+    "network_seed": 0,
+    "n_validation": 64,
+    "arm": "direct",
+    "validate_every_cohorts": 2000,
+    "ppo": {
+      "hidden_dim": 128,
+      "update_epochs": 8,
+      "minibatch_episodes": 4,
+      "gamma": 1.0,
+      "gae_lambda": 0.95,
+      "clip_ratio": 0.2,
+      "entropy_coefficient": 0.01,
+      "reward_scale": 1.0
+    },
+    "credit": {
+      "fraction": 0.1,
+      "K": 4,
+      "H": 5,
+      "mix": 0.5
+    },
+    "aux_weight": 0.3
+  },
+  "cells": [
+    {
+      "instance": "I0",
+      "T": 10,
+      "learner": "ppo",
+      "stage": "throughput",
+      "cohorts_per_update": 64,
+      "n_train": 256,
+      "event_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "I0",
+      "T": 10,
+      "learner": "ppo",
+      "stage": "throughput",
+      "cohorts_per_update": 256,
+      "n_train": 1024,
+      "event_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "I0",
+      "T": 10,
+      "learner": "srl",
+      "stage": "throughput",
+      "cohorts_per_update": 64,
+      "n_train": 256,
+      "event_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "I0",
+      "T": 10,
+      "learner": "srl",
+      "stage": "throughput",
+      "cohorts_per_update": 256,
+      "n_train": 1024,
+      "event_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "I0",
+      "T": 10,
+      "learner": "srl_c",
+      "stage": "throughput",
+      "cohorts_per_update": 64,
+      "n_train": 256,
+      "event_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "I0",
+      "T": 10,
+      "learner": "srl_c",
+      "stage": "throughput",
+      "cohorts_per_update": 256,
+      "n_train": 1024,
+      "event_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "I0",
+      "T": 10,
+      "learner": "srl_ca",
+      "stage": "throughput",
+      "cohorts_per_update": 64,
+      "n_train": 256,
+      "event_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "I0",
+      "T": 10,
+      "learner": "srl_ca",
+      "stage": "throughput",
+      "cohorts_per_update": 256,
+      "n_train": 1024,
+      "event_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "I5",
+      "spec_file": "config/instances/I5.json",
+      "spec_sha256": "0cd790a177cd2a6aa29c2c064beef0b0d310c07385bf83937a1a410a56b608cc",
+      "learner": "ppo",
+      "stage": "throughput",
+      "cohorts_per_update": 64,
+      "n_train": 256,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "I5",
+      "spec_file": "config/instances/I5.json",
+      "spec_sha256": "0cd790a177cd2a6aa29c2c064beef0b0d310c07385bf83937a1a410a56b608cc",
+      "learner": "ppo",
+      "stage": "throughput",
+      "cohorts_per_update": 256,
+      "n_train": 1024,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "I5",
+      "spec_file": "config/instances/I5.json",
+      "spec_sha256": "0cd790a177cd2a6aa29c2c064beef0b0d310c07385bf83937a1a410a56b608cc",
+      "learner": "srl",
+      "stage": "throughput",
+      "cohorts_per_update": 64,
+      "n_train": 256,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "I5",
+      "spec_file": "config/instances/I5.json",
+      "spec_sha256": "0cd790a177cd2a6aa29c2c064beef0b0d310c07385bf83937a1a410a56b608cc",
+      "learner": "srl",
+      "stage": "throughput",
+      "cohorts_per_update": 256,
+      "n_train": 1024,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "I5",
+      "spec_file": "config/instances/I5.json",
+      "spec_sha256": "0cd790a177cd2a6aa29c2c064beef0b0d310c07385bf83937a1a410a56b608cc",
+      "learner": "srl_c",
+      "stage": "throughput",
+      "cohorts_per_update": 64,
+      "n_train": 256,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "I5",
+      "spec_file": "config/instances/I5.json",
+      "spec_sha256": "0cd790a177cd2a6aa29c2c064beef0b0d310c07385bf83937a1a410a56b608cc",
+      "learner": "srl_c",
+      "stage": "throughput",
+      "cohorts_per_update": 256,
+      "n_train": 1024,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "I5",
+      "spec_file": "config/instances/I5.json",
+      "spec_sha256": "0cd790a177cd2a6aa29c2c064beef0b0d310c07385bf83937a1a410a56b608cc",
+      "learner": "srl_ca",
+      "stage": "throughput",
+      "cohorts_per_update": 64,
+      "n_train": 256,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "I5",
+      "spec_file": "config/instances/I5.json",
+      "spec_sha256": "0cd790a177cd2a6aa29c2c064beef0b0d310c07385bf83937a1a410a56b608cc",
+      "learner": "srl_ca",
+      "stage": "throughput",
+      "cohorts_per_update": 256,
+      "n_train": 1024,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "I6",
+      "spec_file": "config/instances/I6.json",
+      "spec_sha256": "401b2b668c7fd02acc8bc55a7765e254aceb9c8d6a4117d986d573744370c90e",
+      "learner": "ppo",
+      "stage": "throughput",
+      "cohorts_per_update": 64,
+      "n_train": 256,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "I6",
+      "spec_file": "config/instances/I6.json",
+      "spec_sha256": "401b2b668c7fd02acc8bc55a7765e254aceb9c8d6a4117d986d573744370c90e",
+      "learner": "ppo",
+      "stage": "throughput",
+      "cohorts_per_update": 256,
+      "n_train": 1024,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "I6",
+      "spec_file": "config/instances/I6.json",
+      "spec_sha256": "401b2b668c7fd02acc8bc55a7765e254aceb9c8d6a4117d986d573744370c90e",
+      "learner": "srl",
+      "stage": "throughput",
+      "cohorts_per_update": 64,
+      "n_train": 256,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "I6",
+      "spec_file": "config/instances/I6.json",
+      "spec_sha256": "401b2b668c7fd02acc8bc55a7765e254aceb9c8d6a4117d986d573744370c90e",
+      "learner": "srl",
+      "stage": "throughput",
+      "cohorts_per_update": 256,
+      "n_train": 1024,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "I6",
+      "spec_file": "config/instances/I6.json",
+      "spec_sha256": "401b2b668c7fd02acc8bc55a7765e254aceb9c8d6a4117d986d573744370c90e",
+      "learner": "srl_c",
+      "stage": "throughput",
+      "cohorts_per_update": 64,
+      "n_train": 256,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "I6",
+      "spec_file": "config/instances/I6.json",
+      "spec_sha256": "401b2b668c7fd02acc8bc55a7765e254aceb9c8d6a4117d986d573744370c90e",
+      "learner": "srl_c",
+      "stage": "throughput",
+      "cohorts_per_update": 256,
+      "n_train": 1024,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "I6",
+      "spec_file": "config/instances/I6.json",
+      "spec_sha256": "401b2b668c7fd02acc8bc55a7765e254aceb9c8d6a4117d986d573744370c90e",
+      "learner": "srl_ca",
+      "stage": "throughput",
+      "cohorts_per_update": 64,
+      "n_train": 256,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "I6",
+      "spec_file": "config/instances/I6.json",
+      "spec_sha256": "401b2b668c7fd02acc8bc55a7765e254aceb9c8d6a4117d986d573744370c90e",
+      "learner": "srl_ca",
+      "stage": "throughput",
+      "cohorts_per_update": 256,
+      "n_train": 1024,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "grid_2",
+      "network": "scaling",
+      "network_params": {
+        "n_spokes": 2,
+        "n_carriers": 2,
+        "periods": 20
+      },
+      "learner": "ppo",
+      "stage": "throughput",
+      "cohorts_per_update": 64,
+      "n_train": 256,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "grid_2",
+      "network": "scaling",
+      "network_params": {
+        "n_spokes": 2,
+        "n_carriers": 2,
+        "periods": 20
+      },
+      "learner": "ppo",
+      "stage": "throughput",
+      "cohorts_per_update": 256,
+      "n_train": 1024,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "grid_2",
+      "network": "scaling",
+      "network_params": {
+        "n_spokes": 2,
+        "n_carriers": 2,
+        "periods": 20
+      },
+      "learner": "srl",
+      "stage": "throughput",
+      "cohorts_per_update": 64,
+      "n_train": 256,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "grid_2",
+      "network": "scaling",
+      "network_params": {
+        "n_spokes": 2,
+        "n_carriers": 2,
+        "periods": 20
+      },
+      "learner": "srl",
+      "stage": "throughput",
+      "cohorts_per_update": 256,
+      "n_train": 1024,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "grid_2",
+      "network": "scaling",
+      "network_params": {
+        "n_spokes": 2,
+        "n_carriers": 2,
+        "periods": 20
+      },
+      "learner": "srl_c",
+      "stage": "throughput",
+      "cohorts_per_update": 64,
+      "n_train": 256,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "grid_2",
+      "network": "scaling",
+      "network_params": {
+        "n_spokes": 2,
+        "n_carriers": 2,
+        "periods": 20
+      },
+      "learner": "srl_c",
+      "stage": "throughput",
+      "cohorts_per_update": 256,
+      "n_train": 1024,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "grid_2",
+      "network": "scaling",
+      "network_params": {
+        "n_spokes": 2,
+        "n_carriers": 2,
+        "periods": 20
+      },
+      "learner": "srl_ca",
+      "stage": "throughput",
+      "cohorts_per_update": 64,
+      "n_train": 256,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "grid_2",
+      "network": "scaling",
+      "network_params": {
+        "n_spokes": 2,
+        "n_carriers": 2,
+        "periods": 20
+      },
+      "learner": "srl_ca",
+      "stage": "throughput",
+      "cohorts_per_update": 256,
+      "n_train": 1024,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "grid_4",
+      "network": "scaling",
+      "network_params": {
+        "n_spokes": 4,
+        "n_carriers": 2,
+        "periods": 20
+      },
+      "learner": "ppo",
+      "stage": "throughput",
+      "cohorts_per_update": 64,
+      "n_train": 256,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "grid_4",
+      "network": "scaling",
+      "network_params": {
+        "n_spokes": 4,
+        "n_carriers": 2,
+        "periods": 20
+      },
+      "learner": "ppo",
+      "stage": "throughput",
+      "cohorts_per_update": 256,
+      "n_train": 1024,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "grid_4",
+      "network": "scaling",
+      "network_params": {
+        "n_spokes": 4,
+        "n_carriers": 2,
+        "periods": 20
+      },
+      "learner": "srl",
+      "stage": "throughput",
+      "cohorts_per_update": 64,
+      "n_train": 256,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "grid_4",
+      "network": "scaling",
+      "network_params": {
+        "n_spokes": 4,
+        "n_carriers": 2,
+        "periods": 20
+      },
+      "learner": "srl",
+      "stage": "throughput",
+      "cohorts_per_update": 256,
+      "n_train": 1024,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "grid_4",
+      "network": "scaling",
+      "network_params": {
+        "n_spokes": 4,
+        "n_carriers": 2,
+        "periods": 20
+      },
+      "learner": "srl_c",
+      "stage": "throughput",
+      "cohorts_per_update": 64,
+      "n_train": 256,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "grid_4",
+      "network": "scaling",
+      "network_params": {
+        "n_spokes": 4,
+        "n_carriers": 2,
+        "periods": 20
+      },
+      "learner": "srl_c",
+      "stage": "throughput",
+      "cohorts_per_update": 256,
+      "n_train": 1024,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "grid_4",
+      "network": "scaling",
+      "network_params": {
+        "n_spokes": 4,
+        "n_carriers": 2,
+        "periods": 20
+      },
+      "learner": "srl_ca",
+      "stage": "throughput",
+      "cohorts_per_update": 64,
+      "n_train": 256,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "grid_4",
+      "network": "scaling",
+      "network_params": {
+        "n_spokes": 4,
+        "n_carriers": 2,
+        "periods": 20
+      },
+      "learner": "srl_ca",
+      "stage": "throughput",
+      "cohorts_per_update": 256,
+      "n_train": 1024,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "grid_16",
+      "network": "scaling",
+      "network_params": {
+        "n_spokes": 16,
+        "n_carriers": 2,
+        "periods": 20
+      },
+      "learner": "ppo",
+      "stage": "throughput",
+      "cohorts_per_update": 64,
+      "n_train": 256,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "grid_16",
+      "network": "scaling",
+      "network_params": {
+        "n_spokes": 16,
+        "n_carriers": 2,
+        "periods": 20
+      },
+      "learner": "ppo",
+      "stage": "throughput",
+      "cohorts_per_update": 256,
+      "n_train": 1024,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "grid_16",
+      "network": "scaling",
+      "network_params": {
+        "n_spokes": 16,
+        "n_carriers": 2,
+        "periods": 20
+      },
+      "learner": "srl",
+      "stage": "throughput",
+      "cohorts_per_update": 64,
+      "n_train": 256,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "grid_16",
+      "network": "scaling",
+      "network_params": {
+        "n_spokes": 16,
+        "n_carriers": 2,
+        "periods": 20
+      },
+      "learner": "srl",
+      "stage": "throughput",
+      "cohorts_per_update": 256,
+      "n_train": 1024,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "grid_16",
+      "network": "scaling",
+      "network_params": {
+        "n_spokes": 16,
+        "n_carriers": 2,
+        "periods": 20
+      },
+      "learner": "srl_c",
+      "stage": "throughput",
+      "cohorts_per_update": 64,
+      "n_train": 256,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "grid_16",
+      "network": "scaling",
+      "network_params": {
+        "n_spokes": 16,
+        "n_carriers": 2,
+        "periods": 20
+      },
+      "learner": "srl_c",
+      "stage": "throughput",
+      "cohorts_per_update": 256,
+      "n_train": 1024,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "grid_16",
+      "network": "scaling",
+      "network_params": {
+        "n_spokes": 16,
+        "n_carriers": 2,
+        "periods": 20
+      },
+      "learner": "srl_ca",
+      "stage": "throughput",
+      "cohorts_per_update": 64,
+      "n_train": 256,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    },
+    {
+      "instance": "grid_16",
+      "network": "scaling",
+      "network_params": {
+        "n_spokes": 16,
+        "n_carriers": 2,
+        "periods": 20
+      },
+      "learner": "srl_ca",
+      "stage": "throughput",
+      "cohorts_per_update": 256,
+      "n_train": 1024,
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "reservation_gb": 1.5
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1.5,
+  "limits": {
+    "seconds": 86400,
+    "rss_gb": 1.5
+  },
+  "out": "results/F6/20261112_structured_throughput_v1",
+  "note": "Actual public flat PPO versus network-opportunity-cost SRL/SRL-C/SRL-CA. Four updates per factor: first warm-up, three measured;64 or256 cohorts/update. I5 is the 8-spoke2-carrierT20 grid cell, measured once and aliased to grid8. I6 is16-spoke3-carrierT30, distinct from grid16(2-carrierT20). Same immutable sparse/count-ledger physics as verified F3; branch credits and delayed t+1 joint-event labels are training only. No learned-performance or pilot-learning criterion is established by throughput. Full20k-cohort I0/I5 pilots, fitted-fixed comparisons and P2 belief-feature PPO remain separate work."
+}

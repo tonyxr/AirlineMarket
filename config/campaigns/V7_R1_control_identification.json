@@ -1,0 +1,97 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "V7_R1_control_identification",
+  "phase": 2,
+  "implementation_revision": "saved-control-map-DLP-units-v1",
+  "task": "study:airline_market.experiments.leg_identification_study:run",
+  "design": "list",
+  "fixed": {
+    "reservation_gb": 0.75
+  },
+  "cells": [
+    {
+      "source_label": "e5f1726036b6428b/comparisons.jsonl",
+      "source_receipt": "results/V7_credit/20261112_terminal_exact_Q_v1/cells/e5f1726036b6428b/attempt-0001/COMPLETE.json",
+      "source_results": "results/V7_credit/20261112_terminal_exact_Q_v1/cells/e5f1726036b6428b/attempt-0001/results.json",
+      "source_spec": "results/V7_credit/20261112_terminal_exact_Q_v1/cells/e5f1726036b6428b/attempt-0001/spec.json",
+      "source_rows": "results/V7_credit/20261112_terminal_exact_Q_v1/cells/e5f1726036b6428b/attempt-0001/comparisons.jsonl",
+      "compiled_spec_hash": "9a4a8992ae2b0af80effdbaa17f2553cd145e639d86f83666f6bf271dcef1b7f",
+      "kind": "terminal",
+      "observation_field": "observation",
+      "rows": 256,
+      "input_hashes": {
+        "results/V7_credit/20261112_terminal_exact_Q_v1/cells/e5f1726036b6428b/attempt-0001/config.json": "9e48f0288fa282abd0fd71c11b4f90d60d8829258973b8c4987f4535614a38b5",
+        "results/V7_credit/20261112_terminal_exact_Q_v1/cells/e5f1726036b6428b/attempt-0001/results.json": "b58cd03c8ebbd35f18ea63586ae4fdd8a4f752681f5d1f4160524bf5f4d50110",
+        "results/V7_credit/20261112_terminal_exact_Q_v1/cells/e5f1726036b6428b/attempt-0001/COMPLETE.json": "3c02b7db046c737a543172abaea51660878c9e4974317632364a212cc292e210",
+        "results/V7_credit/20261112_terminal_exact_Q_v1/cells/e5f1726036b6428b/attempt-0001/spec.json": "cd6f818b199bc7b79bde4449d25d066322daafe36ac18d61c1a05bbd5ca27270",
+        "results/V7_credit/20261112_terminal_exact_Q_v1/cells/e5f1726036b6428b/attempt-0001/comparisons.jsonl": "61ebb53f780bfe3b15c1282275f55e2e55607c901f29baefb17e19f5cb295074"
+      },
+      "registered_sequence_sha256": "86a3c05826c07115f2189ffed40bd026c41bd158996ee439f3b6451b7687314f"
+    },
+    {
+      "source_label": "5f66352657186cc7/comparisons.jsonl",
+      "source_receipt": "results/V7_credit/20261112_terminal_exact_Q_v1/cells/5f66352657186cc7/attempt-0001/COMPLETE.json",
+      "source_results": "results/V7_credit/20261112_terminal_exact_Q_v1/cells/5f66352657186cc7/attempt-0001/results.json",
+      "source_spec": "results/V7_credit/20261112_terminal_exact_Q_v1/cells/5f66352657186cc7/attempt-0001/spec.json",
+      "source_rows": "results/V7_credit/20261112_terminal_exact_Q_v1/cells/5f66352657186cc7/attempt-0001/comparisons.jsonl",
+      "compiled_spec_hash": "97874a5a096f281894856537c6dcf68ed407a75a3f967b2a6ab0a05906a0c6ea",
+      "kind": "terminal",
+      "observation_field": "observation",
+      "rows": 256,
+      "input_hashes": {
+        "results/V7_credit/20261112_terminal_exact_Q_v1/cells/5f66352657186cc7/attempt-0001/config.json": "f64c48dc6c849b452bd54d80fc3e4baec218ad11942b0482f15a5c9045265dc4",
+        "results/V7_credit/20261112_terminal_exact_Q_v1/cells/5f66352657186cc7/attempt-0001/results.json": "7db3c141d72fa2020e672b18aefdef64c01ed66c1c970f48c3b6dbc8211131da",
+        "results/V7_credit/20261112_terminal_exact_Q_v1/cells/5f66352657186cc7/attempt-0001/COMPLETE.json": "d138124b71055ae6879eb3d8e3085df0d703efd3d3797c11ef1265f3ef417a55",
+        "results/V7_credit/20261112_terminal_exact_Q_v1/cells/5f66352657186cc7/attempt-0001/spec.json": "cfa2a4762edee4de98b1023e3861446789edd30308f7534052cdb4b072cbd3b8",
+        "results/V7_credit/20261112_terminal_exact_Q_v1/cells/5f66352657186cc7/attempt-0001/comparisons.jsonl": "80efa5c6f9eed9078e4d69d10b497cc359de9e0fad672dc2fb22811e38d591f5"
+      },
+      "registered_sequence_sha256": "389521ac79c1367802f297b8323117146403ce485000d835b0ad25fa04c4efde"
+    },
+    {
+      "source_label": "68c0b728273b382f/predictions_initial.jsonl",
+      "source_receipt": "results/V7_event/20261112_I3_native_tplus1_v1/cells/68c0b728273b382f/attempt-0001/COMPLETE.json",
+      "source_results": "results/V7_event/20261112_I3_native_tplus1_v1/cells/68c0b728273b382f/attempt-0001/results.json",
+      "source_spec": "results/V7_event/20261112_I3_native_tplus1_v1/cells/68c0b728273b382f/attempt-0001/spec.json",
+      "source_rows": "results/V7_event/20261112_I3_native_tplus1_v1/cells/68c0b728273b382f/attempt-0001/predictions_initial.jsonl",
+      "compiled_spec_hash": "397030ef65595ced9d5e53aafe61ec571fc58e22955ea6c9810e6493e2d5b145",
+      "kind": "event",
+      "observation_field": "before_observation",
+      "rows": 1024,
+      "input_hashes": {
+        "results/V7_event/20261112_I3_native_tplus1_v1/cells/68c0b728273b382f/attempt-0001/config.json": "43d01017966ab682d00efcd6e6ccd793584edb90582b5b1a963ac4c7249cab55",
+        "results/V7_event/20261112_I3_native_tplus1_v1/cells/68c0b728273b382f/attempt-0001/results.json": "ee63c1a81f9fd32fad387759692ed4da16b62939e2ba27ebb7fc393b463f15bd",
+        "results/V7_event/20261112_I3_native_tplus1_v1/cells/68c0b728273b382f/attempt-0001/COMPLETE.json": "81632d30843311d052887e8240283bb5c42965d7af24e88eb887e7f81e425057",
+        "results/V7_event/20261112_I3_native_tplus1_v1/cells/68c0b728273b382f/attempt-0001/spec.json": "54686d3cce9a7b4a587ccddafbee3a8851937b1191dfcc6ab5f58e865fbee25b",
+        "results/V7_event/20261112_I3_native_tplus1_v1/cells/68c0b728273b382f/attempt-0001/predictions_initial.jsonl": "1cc0fbdda1ba7a90d890da1fd0b67cc0ea8001e2a0c6a5d3e2ec25e3468425fc"
+      },
+      "registered_sequence_sha256": "468f99a573247e0d46f6ebd04bd4c9b09ffa86fb19f4aec67d652818171676b8"
+    },
+    {
+      "source_label": "68c0b728273b382f/predictions_final.jsonl",
+      "source_receipt": "results/V7_event/20261112_I3_native_tplus1_v1/cells/68c0b728273b382f/attempt-0001/COMPLETE.json",
+      "source_results": "results/V7_event/20261112_I3_native_tplus1_v1/cells/68c0b728273b382f/attempt-0001/results.json",
+      "source_spec": "results/V7_event/20261112_I3_native_tplus1_v1/cells/68c0b728273b382f/attempt-0001/spec.json",
+      "source_rows": "results/V7_event/20261112_I3_native_tplus1_v1/cells/68c0b728273b382f/attempt-0001/predictions_final.jsonl",
+      "compiled_spec_hash": "397030ef65595ced9d5e53aafe61ec571fc58e22955ea6c9810e6493e2d5b145",
+      "kind": "event",
+      "observation_field": "before_observation",
+      "rows": 1024,
+      "input_hashes": {
+        "results/V7_event/20261112_I3_native_tplus1_v1/cells/68c0b728273b382f/attempt-0001/config.json": "43d01017966ab682d00efcd6e6ccd793584edb90582b5b1a963ac4c7249cab55",
+        "results/V7_event/20261112_I3_native_tplus1_v1/cells/68c0b728273b382f/attempt-0001/results.json": "ee63c1a81f9fd32fad387759692ed4da16b62939e2ba27ebb7fc393b463f15bd",
+        "results/V7_event/20261112_I3_native_tplus1_v1/cells/68c0b728273b382f/attempt-0001/COMPLETE.json": "81632d30843311d052887e8240283bb5c42965d7af24e88eb887e7f81e425057",
+        "results/V7_event/20261112_I3_native_tplus1_v1/cells/68c0b728273b382f/attempt-0001/spec.json": "54686d3cce9a7b4a587ccddafbee3a8851937b1191dfcc6ab5f58e865fbee25b",
+        "results/V7_event/20261112_I3_native_tplus1_v1/cells/68c0b728273b382f/attempt-0001/predictions_final.jsonl": "681d22aec356a97021f4130df5ea5b348d5eb4afbb1da6302afdd94ff42fc0f7"
+      },
+      "registered_sequence_sha256": "468f99a573247e0d46f6ebd04bd4c9b09ffa86fb19f4aec67d652818171676b8"
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 0.75,
+  "limits": {
+    "seconds": 1800,
+    "rss_gb": 0.75
+  },
+  "out": "results/V7_leg/20261112_saved_controls_v1",
+  "note": "NEWreadonlyauditofALL256I0terminal+256I1terminal+1024I3initial+1024I3final savednativecontrols/publicobservations. No newcohort/actorforward/kernel/training/fit, no change toanysourcecell. Originalnativepricefunction onengine-freepubliccontext; exactrationalincidence/featurebasis, legal\u00b1controlshiftcap1/min1e-8(amplitudesrecorded/no clipping/nudges/allrowsretained). Price-mapambiguityonly, NOTneuralGaussianpolicy/parameter/RNG/density equivalence. Originalreference-offerDLPdualsinnetdollars vsACTUALSAMPLEDlegvalues; stochasticmodelsnotV7deterministic-demandbenchmark. Undefinedzero/constanttargetmetricsstayNULL; no R1acceptance claim/budgetselection."
+}

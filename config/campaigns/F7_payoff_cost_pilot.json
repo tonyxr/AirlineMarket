@@ -1,0 +1,9 @@
+{
+  "id": "F7_payoff_cost_pilot",
+  "implementation_revision": "payoff-cost-analysis-v1",
+  "validation_seed_start": 200000,
+  "n_cohorts": 256,
+  "action_indices": [0, 8, 17],
+  "out": "results/F7/20261112_payoff_cost_pilot_v1",
+  "scope": "Predeclared three focal coefficient settings per I0/I3 against the original rule rival. Cold collection costs and projected target-SE n only; not PSRO or game-wide exploitability. Two-cohort exact native API comparison per profile. No final seeds."
+}

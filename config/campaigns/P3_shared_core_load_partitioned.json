@@ -1,0 +1,57 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "P3_shared_core_load_partitioned",
+  "phase": 3,
+  "implementation_revision": "shared-core-resource-load-v3-population-partition",
+  "task": "study:airline_market.experiments.shared_load_study:measure",
+  "design": "list",
+  "cells": [
+    {
+      "source_spec": "results/P3/20261112_behavioral_initialization_v1/cells/17802509f93cff73/attempt-0001/spec.json",
+      "source_spec_sha256": "e02dfb1cbb910fcb18235d01e98906f22bf2b15667599c9e411320d14b915ee7",
+      "source_patterns": "results/P3_background_partition/20261112_v1/patterns_external.json",
+      "source_patterns_sha256": "f561971bcbb87ea0513921bc8a67fd707d4717c44e221b23d5258674ee229b8d",
+      "core_carriers": [
+        "UA",
+        "AA"
+      ],
+      "outside_carrier": "OUTSIDE",
+      "quarter_days": 91,
+      "period_weights": null,
+      "seed": 400002,
+      "reservation_gb": 1.5,
+      "fraction": 0.5
+    },
+    {
+      "source_spec": "results/P3/20261112_behavioral_initialization_v1/cells/17802509f93cff73/attempt-0001/spec.json",
+      "source_spec_sha256": "e02dfb1cbb910fcb18235d01e98906f22bf2b15667599c9e411320d14b915ee7",
+      "source_patterns": "results/P3_background_partition/20261112_v1/patterns_external.json",
+      "source_patterns_sha256": "f561971bcbb87ea0513921bc8a67fd707d4717c44e221b23d5258674ee229b8d",
+      "core_carriers": [
+        "UA",
+        "AA"
+      ],
+      "outside_carrier": "OUTSIDE",
+      "quarter_days": 91,
+      "period_weights": null,
+      "seed": 400002,
+      "reservation_gb": 1.5,
+      "fraction": 1.0
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1.5,
+  "limits": {
+    "seconds": 900,
+    "rss_gb": 1.5,
+    "max_nodes": 1
+  },
+  "out": "results/P3/20261112_shared_core_load_partitioned_v3",
+  "note": "Partitioned external resource-footprint sensitivity: only off-pool and unselected O&Ds generate independent load. In-pool unrepresented core-leg use belongs to modeled OUTSIDE purchases and is deferred pending joint choice/resource integration. Same verified native modules; no code change. Two new nonzero-fraction cells share filtered event/physical tapes; disabled-load zero baseline is explicitly reused by sealed hash. No residual imputation, count fitting, legal-itinerary reconstruction, calibration, net profit or 512-cohort claim. Preserve original all-excluded v2 stress outputs.",
+  "baseline_reuse": {
+    "directory": "results/P3/20261112_shared_core_load_v2/cells/a1ff23226f2ca4b0/attempt-0001",
+    "results_sha256": "fbdb5188e8c7b90c5549208d80b4fb86dc81385d26419a5392eb048da0dc911e",
+    "reason": "Same augmented physical spec/seed and no admitted external load. Event-tape differences cannot affect a disabled-load baseline; reuse its physical results instead of rerunning."
+  },
+  "partition": "results/P3_background_partition/20261112_v1/partition.json"
+}

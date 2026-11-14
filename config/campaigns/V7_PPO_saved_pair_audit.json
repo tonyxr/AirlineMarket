@@ -1,0 +1,36 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "V7_PPO_saved_pair_audit",
+  "phase": 2,
+  "implementation_revision": "read-only-post-report-failure-audit-v1",
+  "task": "study:airline_market.experiments.checkpoint_pair_audit:run",
+  "design": "list",
+  "fixed": {},
+  "cells": [
+    {
+      "source_directory": "results/V7_ppo/20261112_frozen_last_1280_v1/cells/95da9941a6ee5e1e/attempt-0001",
+      "source_hashes": {
+        "results/V7_ppo/20261112_frozen_last_1280_v1/cells/95da9941a6ee5e1e/attempt-0001/COMPLETE.json": "9af6b55ce5a777dd5237900fce8eff481560a553776652d50e7fb59c0a8c7c80",
+        "results/V7_ppo/20261112_frozen_last_1280_v1/cells/95da9941a6ee5e1e/attempt-0001/results.json": "221ebe3cd10ab918cf225b01f04eb632db108763ae03152179f653752924760b",
+        "results/V7_ppo/20261112_frozen_last_1280_v1/cells/95da9941a6ee5e1e/attempt-0001/config.json": "d1762d923ec290bba9b43499fe79502908e02122a8fec72ab831488d3eb3ef66",
+        "results/V7_ppo/20261112_frozen_last_1280_v1/cells/95da9941a6ee5e1e/attempt-0001/spec.json": "cd6f818b199bc7b79bde4449d25d066322daafe36ac18d61c1a05bbd5ca27270",
+        "results/V7_ppo/20261112_frozen_last_1280_v1/cells/95da9941a6ee5e1e/attempt-0001/paired_summary.json": "7a510fab51d863084ef037664d1ee894ec5d88bbcc03c5b1e928127f18d56aac",
+        "results/V7_ppo/20261112_frozen_last_1280_v1/cells/95da9941a6ee5e1e/attempt-0001/pairs.jsonl": "54fb3cd6b0d12e32b9db8d82d0919e8a2b7fb376644c9a3124b774c2cda1e44e",
+        "results/V7_ppo/20261112_frozen_last_1280_v1/cells/95da9941a6ee5e1e/attempt-0001/run.log": "760349503d4c1fb1cdf60186f973b59a1e001ddac7b4072e8a151ae4deff2185",
+        "results/V7_ppo/20261112_frozen_last_1280_v1/cells/95da9941a6ee5e1e/attempt-0001/environment.json": "2844eb600cf0d1ebae5e8c90f794da63cf413212818e78235388ad34d44af131",
+        "results/V7_ppo/20261112_frozen_last_1280_v1/cells/95da9941a6ee5e1e/attempt-0001/progress.json": "a14d7e4ade0a734382964b017a996f1d6291e5bc1936abb64b7bdcf0ff6c211c"
+      },
+      "seed_start": 203008,
+      "n_cohorts": 1280,
+      "reservation_gb": 1.0
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1.0,
+  "limits": {
+    "seconds": 1800,
+    "rss_gb": 1.0
+  },
+  "out": "results/V7_ppo/20261112_saved_1280_pair_audit_v1",
+  "note": "NEW READ-ONLY audit of complete saved1280pairs after original reporting KeyError status; retain original FAILED receipt and valueNULL. Zero new physical cohorts or actor forwards. Not a rerun/relabel of original attempt."
+}

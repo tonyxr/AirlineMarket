@@ -1,0 +1,109 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "V3_MR5_money_scaling",
+  "phase": 2,
+  "implementation_revision": "native-cents-shadow-and-aligned-paths-v1",
+  "task": "study:airline_market.experiments.money_scaling_study:run",
+  "design": "list",
+  "fixed": {
+    "n_cohorts": 256,
+    "reservation_gb": 1.0,
+    "probability_tolerance": 1e-12,
+    "monetary_tolerance": 1e-08,
+    "design_registration": "results/V3_money_tooling/design_registration.json",
+    "design_registration_sha256": "878e0d840633e683a955f17900cf6fd959a5c8c80d7042e5275801d7b620875c"
+  },
+  "cells": [
+    {
+      "instance": "I0_original",
+      "source_spec": "results/F1/20261111-2232_2a95d844/cells/62cdded46487d789/attempt-0001/spec.json",
+      "source_spec_sha256": "cd6f818b199bc7b79bde4449d25d066322daafe36ac18d61c1a05bbd5ca27270",
+      "compiled_spec_hash": "9a4a8992ae2b0af80effdbaa17f2553cd145e639d86f83666f6bf271dcef1b7f",
+      "seed_start": 207568,
+      "scaled": [
+        {
+          "factor": 2,
+          "source_spec": "config/benchmarks/V3_MR5_I0_original_x2.json",
+          "source_spec_sha256": "8f342628bf1b7103829215e09bd584dac81ef6944232c56f16dc32c05134756a",
+          "compiled_spec_hash": "4b6453496536cc9a50f069f102179192eadba45339866d4d302973dd09e55c7b"
+        },
+        {
+          "factor": 4,
+          "source_spec": "config/benchmarks/V3_MR5_I0_original_x4.json",
+          "source_spec_sha256": "8fd3222171caeaddd93e76d81bb02782e8978aa6adbde61fddbc6f89ee3bdd3f",
+          "compiled_spec_hash": "82c98401a70907b70bb94da08cc87b85dd3aa10dab039c19b3655a2f4cd15075"
+        }
+      ]
+    },
+    {
+      "instance": "I3_original",
+      "source_spec": "results/F1/20261111-2232_2a95d844/cells/8a89607b84ce6e7e/attempt-0001/spec.json",
+      "source_spec_sha256": "54686d3cce9a7b4a587ccddafbee3a8851937b1191dfcc6ab5f58e865fbee25b",
+      "compiled_spec_hash": "397030ef65595ced9d5e53aafe61ec571fc58e22955ea6c9810e6493e2d5b145",
+      "seed_start": 207824,
+      "scaled": [
+        {
+          "factor": 2,
+          "source_spec": "config/benchmarks/V3_MR5_I3_original_x2.json",
+          "source_spec_sha256": "89b3b8d08f97a26748d4cbbf7256d4b00dac56d33bd55f15ec206acbc5775a2e",
+          "compiled_spec_hash": "c08396f22d9327faf823a959fb88b18eaaedf9f8328399c742b2cf162b71ecc1"
+        },
+        {
+          "factor": 4,
+          "source_spec": "config/benchmarks/V3_MR5_I3_original_x4.json",
+          "source_spec_sha256": "113927d9c54f5e8815bce8f8ea9ed7b6d97e19ecc7df9d6556ee1e553f524900",
+          "compiled_spec_hash": "0be6da1a13063f8276b8be8bd855f09c00bc5cb3f462a1da2fb559de08f3caeb"
+        }
+      ]
+    },
+    {
+      "instance": "I4_low_T5A4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/1c93f8e7752595c4.json",
+      "source_spec_sha256": "1b014cb823980907b3148f44fa02ca7e2941957d7be3d66f707a0efc089aa9b6",
+      "compiled_spec_hash": "9bdd2a76f707f847b87fe0195cedc9a675403e2f3d87cc63807c043c9ac82f95",
+      "seed_start": 208080,
+      "scaled": [
+        {
+          "factor": 2,
+          "source_spec": "config/benchmarks/V3_MR5_I4_low_T5A4_x2.json",
+          "source_spec_sha256": "444baaf6f31f94d7d0c2460acbabadb41af5d2b2b1ca3e4200768866a8a08d8a",
+          "compiled_spec_hash": "f7840b43de9aca808d0f18c9ab89c6c2c1788c63e959186cef837bd28c95df5a"
+        },
+        {
+          "factor": 4,
+          "source_spec": "config/benchmarks/V3_MR5_I4_low_T5A4_x4.json",
+          "source_spec_sha256": "7cb94f7e3631b18e53cef9389f43ec5fc208333281973fc7d002cec78b6aabed",
+          "compiled_spec_hash": "dcc67f16e96ac1566faae492cafc537d2b56ee46b3ec1403f51a518e0d2a9e44"
+        }
+      ]
+    },
+    {
+      "instance": "I4_high_T5A4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/ce8d5b3e7d4930d5.json",
+      "source_spec_sha256": "dfce988dec46b157d3cbef5190e634610dd41a846fcb330dae520db4e07279b5",
+      "compiled_spec_hash": "3857e8c74c4e3a76fd07413d0d3038b88f0fefaff789b3c1037431a1c5bd39b7",
+      "seed_start": 208336,
+      "scaled": [
+        {
+          "factor": 2,
+          "source_spec": "config/benchmarks/V3_MR5_I4_high_T5A4_x2.json",
+          "source_spec_sha256": "9ce0f59271b8a470dfab230ef126d046d86e8e0d2978c33897db6d95dc51f46a",
+          "compiled_spec_hash": "e21d9a4428a80f4fadb15550641eb65ba3092789b6d01695803f958582bfceec"
+        },
+        {
+          "factor": 4,
+          "source_spec": "config/benchmarks/V3_MR5_I4_high_T5A4_x4.json",
+          "source_spec_sha256": "cfd3830ece53ce57270c14bf69e02a254631301130fa955111a433be19aa06dc",
+          "compiled_spec_hash": "2beab8da9d27c7e2a7d65ac8ad06b367436ec4b1d8b529ddb7e2852cf66f9f14"
+        }
+      ]
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1.0,
+  "limits": {
+    "seconds": 14400,
+    "rss_gb": 1.0
+  },
+  "out": "results/V3_money/20261112_native_cent_scaling_v1"
+}

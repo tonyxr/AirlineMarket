@@ -1,0 +1,42 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "F1_reference",
+  "phase": 1,
+  "implementation_revision": "reference-check-v1",
+  "task": "exact_dp",
+  "generator": "toy_hub",
+  "design": "list",
+  "cells": [
+    {
+      "instance": "I0",
+      "T": 3,
+      "actions": 2,
+      "arm": "direct",
+      "backend": "reference",
+      "reservation_gb": 1,
+      "expected_compact_value": 0.34896353675515596,
+      "expected_spec_hash": "7f571d6b3aa71d713d5a4396a2fc0e2204ce72c36b9fdab5b16ec951ce19465a",
+      "compact_source_cell": "results/F1/20261111-2232_2a95d844/cells/ddd26788e43782d1/attempt-0001"
+    },
+    {
+      "instance": "I0",
+      "T": 3,
+      "actions": 2,
+      "arm": "linked",
+      "backend": "reference",
+      "reservation_gb": 1,
+      "expected_compact_value": 0.34896353675515596,
+      "expected_spec_hash": "7f571d6b3aa71d713d5a4396a2fc0e2204ce72c36b9fdab5b16ec951ce19465a",
+      "compact_source_cell": "results/F1/20261111-2232_2a95d844/cells/6c97a15d02a9bbf0/attempt-0001"
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 2,
+  "limits": {
+    "seconds": 3600,
+    "rss_gb": 2,
+    "max_nodes": 20000
+  },
+  "out": "results/F1_reference/20261111_micro_crosschecks_v1",
+  "note": "General-kernel cross-checks of two completed compact anchor cells. 20k node ceiling applies only to the reference check; primary F1 cells retain 20M."
+}

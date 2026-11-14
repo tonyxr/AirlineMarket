@@ -1,0 +1,4426 @@
+{
+  "plan_id": "R3/R4",
+  "source_commit": "3c769e20a312041bfe9568466525b96d869ab250",
+  "snapshot_scope": "current tracked source, tests with synthetic fixtures, configuration definitions, Python analysis tools, tracked scripts, packaging and reuse attribution",
+  "original_source_files": 735,
+  "original_source_bytes": 12617341,
+  "excluded": [
+    "results/",
+    "data/",
+    "research reports and paper artifacts",
+    "local process/execution state",
+    "all original Git commits and tags"
+  ],
+  "source_files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 69,
+      "sha256": "07a4ad36cbb5fd6a5df100cd8a3ec6d80bcce71bdba6909657d57139bc2ffcfa",
+      "source_git_blob": "786bf259386a9dd305b63f3725dab38fb928a331"
+    },
+    {
+      "path": "REUSE.md",
+      "bytes": 37155,
+      "sha256": "fc6bc4a32270dd5acf259a8cdea7feac8d00e3664ed4c94f0ad5f9886f7285bc",
+      "source_git_blob": "6e41576a28e35df18bdeb4d89799fdb8c8a269a6"
+    },
+    {
+      "path": "airline_market/__init__.py",
+      "bytes": 837,
+      "sha256": "5d57b65b51d624fdf3d23ffa7f041aa373af86dafbc667e70b8b67e1307bc93a",
+      "source_git_blob": "17682c0ad71eb8b2c64e40548212388378da314a"
+    },
+    {
+      "path": "airline_market/__main__.py",
+      "bytes": 35,
+      "sha256": "dcc221501f8090cc9dfdb55f34077357dcddfd7f3575bc973ce7ee72fc21276d",
+      "source_git_blob": "10dc644b054f550f21a9f9178832e6d0597ec17b"
+    },
+    {
+      "path": "airline_market/agents/__init__.py",
+      "bytes": 1549,
+      "sha256": "6a5caab2af054e6914a1c24077688715fca29b2b816a3c3edc4777699e8a5b87",
+      "source_git_blob": "a10ef2a40b9ae3cc71c3cdacdeed203383806e66"
+    },
+    {
+      "path": "airline_market/agents/adaptive.py",
+      "bytes": 4015,
+      "sha256": "85db8a674a7977457f0ecbacbb3c7332b9e6fdc1b0042a9fea841aae5c9b7779",
+      "source_git_blob": "3f50e51c60e2a2d9953e3180dbaff904f7db82b5"
+    },
+    {
+      "path": "airline_market/agents/base.py",
+      "bytes": 2644,
+      "sha256": "da7a758595838fb2e9e3a4cd3fc379dfb88f66ebcbe1b0af6906ee0d62a88e90",
+      "source_git_blob": "9651b1ad07750746a1cb7a0f7b90222b93e37d9c"
+    },
+    {
+      "path": "airline_market/agents/bidprice.py",
+      "bytes": 3510,
+      "sha256": "b31bfc10445611ef9bf05c12790dd2535bbf8170d738c5de45211ccef4002ac3",
+      "source_git_blob": "3c72d286f410fa08611f8266783d72874314e8fd"
+    },
+    {
+      "path": "airline_market/agents/emsr.py",
+      "bytes": 4678,
+      "sha256": "4921c056649fd606ef9ccbdddb158f1f052923f55de345ea3f62f5323220c382",
+      "source_git_blob": "e37a65ff96db71d726b31d9bcf0a0186add42f15"
+    },
+    {
+      "path": "airline_market/agents/external.py",
+      "bytes": 483,
+      "sha256": "6fee43b16fa7fca023e1d6d662ae35e33d12665692314abdb74125297ce45eda",
+      "source_git_blob": "1a8101fc1ad1129fd332943689bb9e51228762ef"
+    },
+    {
+      "path": "airline_market/agents/fixed.py",
+      "bytes": 709,
+      "sha256": "1469e32783f7fa250b80b5b92624882dad24874ffe0a9b1c1ed1b192ccdb0cd4",
+      "source_git_blob": "43301cb56fa96d2815d399a274c8b3eb86536914"
+    },
+    {
+      "path": "airline_market/agents/forecast.py",
+      "bytes": 3182,
+      "sha256": "1435d601198c963d9c43511c54be6e0d9f456bd5a433439df3c56f83ff1485ed",
+      "source_git_blob": "288178fcbefa7e74a8b1f6497ceed7721fa00015"
+    },
+    {
+      "path": "airline_market/agents/matching.py",
+      "bytes": 1581,
+      "sha256": "b2424d3807c21e0745adb6f9bc1b8ebddeba37f05104a8283cacf40927ee4977",
+      "source_git_blob": "25ddad69471eb2f871cb8c8f8de56fe5fe4e5457"
+    },
+    {
+      "path": "airline_market/agents/price_rule.py",
+      "bytes": 8663,
+      "sha256": "444759b9d41ee03b941fd17681c376eea648d4855a0a139ad98ba22a7c71c256",
+      "source_git_blob": "76b86c74e037dbff7733df061ed93912f3fc1a29"
+    },
+    {
+      "path": "airline_market/agents/random_coefficient.py",
+      "bytes": 1592,
+      "sha256": "eb127a625913392de363f309863e42ed07fa83c93683ee7014c5309eb96f90c9",
+      "source_git_blob": "f4b2fe72fde89a1ee4cd3f737ce95c2337a34857"
+    },
+    {
+      "path": "airline_market/agents/rule.py",
+      "bytes": 1723,
+      "sha256": "be722f7930b93d0b6e681038cb7ac0f7e31a66f72d3fef8fa985fb26a0fca6cc",
+      "source_git_blob": "c0084d29d7251d54b84d5c4d4e63d86cfcda9b3e"
+    },
+    {
+      "path": "airline_market/agents/schedule.py",
+      "bytes": 725,
+      "sha256": "e81939bfdc674a8a71d6231eb06b35d389bc112a7a4113f299f7fffff447d48a",
+      "source_git_blob": "6522ab54c1031fd764497053b6f8e6920db28d0e"
+    },
+    {
+      "path": "airline_market/belief/__init__.py",
+      "bytes": 189,
+      "sha256": "5532c345a580eedcc5ecedf02fe37c55e51c9ce6ef2dac999ca8d1bf3dd42d08",
+      "source_git_blob": "405b1900e9825b3d45d3054cbd1cd31776a8d7d9"
+    },
+    {
+      "path": "airline_market/belief/base.py",
+      "bytes": 3432,
+      "sha256": "a41d5109a62618b3c507268c3de2baf71385f1c5458e904f3fd056125ed6e3bc",
+      "source_git_blob": "555ae02fbdd95c58ca995ede1ef3b4dae739d689"
+    },
+    {
+      "path": "airline_market/belief/cached_prior.py",
+      "bytes": 2064,
+      "sha256": "382c5e3f64a5f7d95edf79c22951a906f9b4da8bc0ba685fe6fec28f5d22c810",
+      "source_git_blob": "5db6cdd805aad0600f71ce2ae17461209921a4c1"
+    },
+    {
+      "path": "airline_market/belief/events.py",
+      "bytes": 2746,
+      "sha256": "35ca69cdbc6b077d50e1a899fbebddb510d33b2ef13bc795c2aa590a3a1c0d41",
+      "source_git_blob": "a1c6948b7aa607d7052eec83cc0fe22bd7c47fcc"
+    },
+    {
+      "path": "airline_market/belief/exact.py",
+      "bytes": 9259,
+      "sha256": "c56ad72e38fd3971432f4f82c8107b38b14faff0837e21a97f6414642e592164",
+      "source_git_blob": "449c6ca3b91c6a3502c271355e44d6bb4ee619f1"
+    },
+    {
+      "path": "airline_market/belief/factorized.py",
+      "bytes": 8072,
+      "sha256": "72086428eee3b1e1ddc895505992d55366f6078f4788671942ed1308379cf107",
+      "source_git_blob": "deefb6ed99bfa521bba1f4fa39dcb5dcf2a810b7"
+    },
+    {
+      "path": "airline_market/belief/info.py",
+      "bytes": 3910,
+      "sha256": "016724c357138b6093c7a9e9a3d25f3a394ed4661ceaeb4c1b5667cecc009028",
+      "source_git_blob": "f87b31448c98990b472262c517d0faa307bb2929"
+    },
+    {
+      "path": "airline_market/belief/particle.py",
+      "bytes": 15011,
+      "sha256": "66a0da0de52788e8f3f8a10c5cfeb14ea70b756131d69ca6e241487f9c74cafa",
+      "source_git_blob": "d7dd047322df09035df5a783815196814903741e"
+    },
+    {
+      "path": "airline_market/belief/point.py",
+      "bytes": 3934,
+      "sha256": "0d362db4a0b167edb3f701502179ee3bf5f93a064512876da7fa971d36a25aee",
+      "source_git_blob": "4dab5b79bdf66a9de627c46577f4a1f3f790cdd9"
+    },
+    {
+      "path": "airline_market/belief/step_particle.py",
+      "bytes": 3364,
+      "sha256": "ac9c571bb64efe9f1d1af31ec28116c7dc611810b1f9b31b6b03b654b6cfe887",
+      "source_git_blob": "c788e0d851c27180e3d3c7bed34293df3ede9bc4"
+    },
+    {
+      "path": "airline_market/belief/template_particle.py",
+      "bytes": 7401,
+      "sha256": "cc0f5f87a2f25e2c34e1116e6e4ae134a71602ef86002bd45bf390cd6c790a14",
+      "source_git_blob": "944b13b904eb6ef4caab5f8d221a3dc94663ce21"
+    },
+    {
+      "path": "airline_market/bench/__init__.py",
+      "bytes": 72,
+      "sha256": "a26ee3e771b6906bc8f8664fffb3735b223bda274549af52888ad2c1d819d7f3",
+      "source_git_blob": "56fb44fc79d1124316523da92a70a5530bce6ff1"
+    },
+    {
+      "path": "airline_market/bench/cli.py",
+      "bytes": 1339,
+      "sha256": "f430bf459f0279132b682b1d3e9602f83d4d8867ea6d6cdb1c54c7127ec4b9b6",
+      "source_git_blob": "42a51f3aafbaf8bfb3ccd3f45e3ee42f6ca96ff6"
+    },
+    {
+      "path": "airline_market/bench/harness.py",
+      "bytes": 9442,
+      "sha256": "455e743f654589ea1acafe821c6ed2eabc678edaa18030903f192b3cb7fe4e75",
+      "source_git_blob": "4d2b7083a07ee08a47959caaa5334dd5cc8f9254"
+    },
+    {
+      "path": "airline_market/campaign/__init__.py",
+      "bytes": 184,
+      "sha256": "87d8e5ab8a35beed65232f4d6fd4eaf74ff6d6ca644c0e1ff92e073882fc6fb4",
+      "source_git_blob": "98d65ff29651e60db7dd712c5f5381fab04c5b46"
+    },
+    {
+      "path": "airline_market/campaign/artifacts.py",
+      "bytes": 3996,
+      "sha256": "6088befc568cceb9ea2f9371c5a3aee3aff070bdefad03d4839b2f33d70ab79f",
+      "source_git_blob": "ced34c7fbb8665308d2fc5d7268f4a06a217ff3c"
+    },
+    {
+      "path": "airline_market/campaign/cli.py",
+      "bytes": 1388,
+      "sha256": "2a0ae72ca7639cbba0a46ed17051210c314a631a664b715873a6665e70c885a4",
+      "source_git_blob": "438516cf40b66eec614857d532c92be4f72c965f"
+    },
+    {
+      "path": "airline_market/campaign/design.py",
+      "bytes": 4267,
+      "sha256": "c1922a319b51623741722391409bd8d8f9d52e11e280516924bddfb2dc343ce1",
+      "source_git_blob": "09fcf43c427a2cef1f5424d80c2d1e4ec2b442e7"
+    },
+    {
+      "path": "airline_market/campaign/instances.py",
+      "bytes": 2962,
+      "sha256": "1c354a07996f88fbb3bb5a68be36283e43305eaf1280438628b91532f2e2c22b",
+      "source_git_blob": "e06ca1903737eb2104a8a63ecc8b6de16928146a"
+    },
+    {
+      "path": "airline_market/campaign/runner.py",
+      "bytes": 18931,
+      "sha256": "4a9ce7a1a756b23c7c0d7f6d5aeaa3b3a5cffe59a002e6c9158836f4a2eb2f3f",
+      "source_git_blob": "2ebf3d57068c9048aca50341b274b528bfa42442"
+    },
+    {
+      "path": "airline_market/campaign/settled_runner.py",
+      "bytes": 10563,
+      "sha256": "4fd087cc0232bf95a8b3f24318eceef8a0431852c019833376be569a07774217",
+      "source_git_blob": "0ea824992902d3cddcd92f4ba3345ce693caf251"
+    },
+    {
+      "path": "airline_market/campaign/tasks.py",
+      "bytes": 6355,
+      "sha256": "e4db11b5fa9797fddaec91b1eecb4b93349bd2197853f2781069f9c64461cde7",
+      "source_git_blob": "758b10144a48b7acb3bfcf68b37e21126499c94b"
+    },
+    {
+      "path": "airline_market/campaign/worker.py",
+      "bytes": 4545,
+      "sha256": "6058a47575bb54f025515b361171a9b77fddbc497066015d7add8064ad783c57",
+      "source_git_blob": "f05e4bf009252da99f9c9a02cb76dfbeb18e4534"
+    },
+    {
+      "path": "airline_market/cli/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "airline_market/cli/main.py",
+      "bytes": 8448,
+      "sha256": "fc7e99463fd163e82aa08e5b16be14642fac4999cf46e9052cb9220c9fb5ce2e",
+      "source_git_blob": "8d9883cc067a6e0223362c32e4df1d53eb276a32"
+    },
+    {
+      "path": "airline_market/core/__init__.py",
+      "bytes": 78,
+      "sha256": "83f3dadc3b46fabb141f2dc4f9b4518edc60d2275bb363049cb25cb91f8fdf4a",
+      "source_git_blob": "dae47f44d81c9b63544aeded6b6ac8734d416008"
+    },
+    {
+      "path": "airline_market/core/errors.py",
+      "bytes": 1432,
+      "sha256": "99253a4ac1df0afd4f329bb26eebec03cb281ecd403396919b3d60d943197bdc",
+      "source_git_blob": "2346eb710a9537a965e79719701211fc17b86086"
+    },
+    {
+      "path": "airline_market/core/hashing.py",
+      "bytes": 1551,
+      "sha256": "4f6890477eba79ec3e99743e38482244e9a0c193ad24a49e42d8ab93a5416ec4",
+      "source_git_blob": "e3bb63596fe62b61890b6e9c93b5dfc82ae68e5b"
+    },
+    {
+      "path": "airline_market/core/journal.py",
+      "bytes": 8760,
+      "sha256": "82514733d5680d35ddae0f99c186542d6e77961ab37f30c9ff3dceec750e0605",
+      "source_git_blob": "6127d422f704d5a87f13be191b49e00353f212b0"
+    },
+    {
+      "path": "airline_market/core/money.py",
+      "bytes": 472,
+      "sha256": "59bab061baa7adea1c8588f51331c3e53af8c71979361ed3226582a895cfa434",
+      "source_git_blob": "8625464a77ecfb8c3b7e366c617130b4b47c548e"
+    },
+    {
+      "path": "airline_market/core/registry.py",
+      "bytes": 4637,
+      "sha256": "73f4f36e980e136930fe4f20c453483c1cc0e62fe645e1aeb21b0ec0e745c5ea",
+      "source_git_blob": "7f2a71e7cbb496eab04bf60f815aafce7265ba05"
+    },
+    {
+      "path": "airline_market/core/rng.py",
+      "bytes": 1490,
+      "sha256": "3dd4e283cba09822e05f709675ed12e9556065bf42337b6487dafe7110284f78",
+      "source_git_blob": "d2c5ccb4b35aa6019e4494ea919edbd5b4eebd29"
+    },
+    {
+      "path": "airline_market/core/snapshot.py",
+      "bytes": 2711,
+      "sha256": "e0717055c63ec6867d1c8b8ba9375753944ca8acc5f19dea3590fdb7edd60b2a",
+      "source_git_blob": "efc75e0678f4d73bb4e5f0ec6db5df60ae4810f8"
+    },
+    {
+      "path": "airline_market/core/types.py",
+      "bytes": 1811,
+      "sha256": "a00fd8b87aed8ad7dcfddf4612182c99010b612b4ddc52f6a3dfdcd06026151d",
+      "source_git_blob": "bf13f1dd12af4d3174dda79b8ee39d487f96f77f"
+    },
+    {
+      "path": "airline_market/eval/__init__.py",
+      "bytes": 83,
+      "sha256": "73b2add85f3514eb87863840916388586e23b2e78825b1a22786f4a0cb756cdb",
+      "source_git_blob": "bc770b5a0e3c93d6facc656bbe7df9c8ebb2d5c4"
+    },
+    {
+      "path": "airline_market/eval/backtest.py",
+      "bytes": 1187,
+      "sha256": "cfa7f9d261e4c200c65cc2f71eeeca52b602a23c252d9826d15a2d26dcb8d21f",
+      "source_git_blob": "707ee4eb40351fc6667b7595655ad6653bfa028b"
+    },
+    {
+      "path": "airline_market/eval/fare_panel.py",
+      "bytes": 16134,
+      "sha256": "3460eb250607e5fbfdb02f586413e792d39053809743dd76436a0d966c6a5cd2",
+      "source_git_blob": "479ac850e242f7d962ae95d336168e4253010dc7"
+    },
+    {
+      "path": "airline_market/eval/fare_panel_v2.py",
+      "bytes": 1448,
+      "sha256": "d50ce823c242d0a6cd44c92d5f403b24108d5a634f77b1106da0ac5abf3608ea",
+      "source_git_blob": "08dbce94ff321775fe95f0607bc74103fda3d856"
+    },
+    {
+      "path": "airline_market/eval/frontier.py",
+      "bytes": 1010,
+      "sha256": "f0da55921ed88269e62b737c0552389a443e12d012bdaebdd009a12b2e9f1805",
+      "source_git_blob": "f7799f3fcb2a7a963d03b25abdf566063d655339"
+    },
+    {
+      "path": "airline_market/eval/reports.py",
+      "bytes": 4405,
+      "sha256": "854f32e8d155ea9f25ebdc560f9ecbaad424a0c29426f2010dc9139f688a6806",
+      "source_git_blob": "564a4bdc4693e5fa2ad73d301f46a6edbbd55ab9"
+    },
+    {
+      "path": "airline_market/eval/runner.py",
+      "bytes": 12270,
+      "sha256": "58f621a7d852f6a8aafbcd236c2244feb479e5e4d7368b60336a0f5e80b53561",
+      "source_git_blob": "f1924f6d8c51f93a3689eccc879b7c027603219f"
+    },
+    {
+      "path": "airline_market/eval/sealing.py",
+      "bytes": 3586,
+      "sha256": "327ee6768b7e5070dc97a290af29f5c5b8a04a8fbfa4ee2f00cd9f30b8c82b96",
+      "source_git_blob": "6abba73b96ddb31d0cc49db11ad2190aec97bee6"
+    },
+    {
+      "path": "airline_market/eval/seeds.py",
+      "bytes": 1891,
+      "sha256": "1e4b8778e607de92f2f5c1ca4a9f928ff6971ee48ec83311a15aa0be7b714662",
+      "source_git_blob": "640e22b7d4e6dbe3ed5e42b0d7bc138ea45d265e"
+    },
+    {
+      "path": "airline_market/eval/spike_decomposition.py",
+      "bytes": 13684,
+      "sha256": "445f89fde26520039bee12037ace0d5116f1cc2cd19a06302410ddd627c03b32",
+      "source_git_blob": "fa5d19521d05782024adfdfb719bd5b5c7087e24"
+    },
+    {
+      "path": "airline_market/experiments/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "airline_market/experiments/availability_study.py",
+      "bytes": 1904,
+      "sha256": "088f883c3aba48056b2880b84f3313eba6f8ab95986107bb512fe65196dc6e25",
+      "source_git_blob": "d01820eadd19cc1c0255e30bcaa3cc6a80f9e964"
+    },
+    {
+      "path": "airline_market/experiments/background_coverage_study.py",
+      "bytes": 588,
+      "sha256": "c3f374f94624bc95df5efa2e4a5dbdbf6b59c9fc9ca0654a67d7bbdd2b74cb32",
+      "source_git_blob": "5d340ddad10273bf2d4aaf2d43dcf864a27284b3"
+    },
+    {
+      "path": "airline_market/experiments/belief_ppo_study.py",
+      "bytes": 6031,
+      "sha256": "6b9768cd073c337bcbe77950ea059c6cac567be536a4c25fc547e20594c1eb8f",
+      "source_git_blob": "5c979eb383787f843980fd7f6d057ea02697298f"
+    },
+    {
+      "path": "airline_market/experiments/booking_timing_study.py",
+      "bytes": 8607,
+      "sha256": "a0c35707d47e71b5305b02ecbdc7b705defe7dceb1ae1db5bf35d499b9e442d3",
+      "source_git_blob": "342cfae21d62858f722159396985e26354b3b38b"
+    },
+    {
+      "path": "airline_market/experiments/candidate_power_study.py",
+      "bytes": 10845,
+      "sha256": "8d068812f4343e30cf65fe89eae12bf4e02604f1f467ecff55dedacc033a1f81",
+      "source_git_blob": "086f674decd57b06cc3050b6a2408579666cdf99"
+    },
+    {
+      "path": "airline_market/experiments/checkpoint_pair_audit.py",
+      "bytes": 6548,
+      "sha256": "ed0d6e0e42b7701e3c4f31fda5b3893e95029400f8b5561c00187027ecd9b321",
+      "source_git_blob": "a264aa5abcc0f343d3054e7dd56302b0995010eb"
+    },
+    {
+      "path": "airline_market/experiments/checkpoint_pair_study.py",
+      "bytes": 11408,
+      "sha256": "76a3f3083a34a17649ef77e544b3cc408576859f629e9a604289d4e158578efb",
+      "source_git_blob": "288c2b6b798d071b20f6f1ea736f98d508355cce"
+    },
+    {
+      "path": "airline_market/experiments/conditional_tail_study.py",
+      "bytes": 3453,
+      "sha256": "36eaff1745dc7b4f20d4c094302d0b3422eb4599d80d93f688a5d00055be26b4",
+      "source_git_blob": "6470f64baee0d2b4400031038fc6e59caa3a6047"
+    },
+    {
+      "path": "airline_market/experiments/curriculum_study.py",
+      "bytes": 2333,
+      "sha256": "4b95741ffe8263ea3071d6a5a2cdc3671aabb01b4aa4a293d5aec529dde58d07",
+      "source_git_blob": "5538278e338356b6a78a41658717c7293fde72ca"
+    },
+    {
+      "path": "airline_market/experiments/degenerate_demand_study.py",
+      "bytes": 14022,
+      "sha256": "9cea7d54e997618f6827766db8b3b8a5179f8195cf665c910d0d3779bae782ac",
+      "source_git_blob": "b79f17a772dc13cd3f195b2f10fd1abc34886cf2"
+    },
+    {
+      "path": "airline_market/experiments/demand_identification_study.py",
+      "bytes": 10513,
+      "sha256": "3e3a071669b7c332497137a6ced5d4fe27f221ea3524ff6383da777dea97b459",
+      "source_git_blob": "42bcc1ab9510802e4cfb1381a95eae2c14d20381"
+    },
+    {
+      "path": "airline_market/experiments/dlp_dual_study.py",
+      "bytes": 8481,
+      "sha256": "78b88a2c178c0a264f23b9b92a6e709d31ae7d51df914659af3915d2f35bad2d",
+      "source_git_blob": "57cba117f469efd4958af471fab462da6cd19e35"
+    },
+    {
+      "path": "airline_market/experiments/duopoly_symmetry_study.py",
+      "bytes": 15090,
+      "sha256": "297c824c14d3d6f88c3fadcf3bd0b4332877e634b32ed713fc83888fedb4c85c",
+      "source_git_blob": "9692744c69ed1dd5483627c9f885adbeb92624bf"
+    },
+    {
+      "path": "airline_market/experiments/empirical_preflight.py",
+      "bytes": 7364,
+      "sha256": "d8255e669f99d61e2b2f27c98ddc6a8b6260fabf390510f8ffcf886d6365da5a",
+      "source_git_blob": "39ba9faf2e0352895c66c03eb8926c0a29c3f809"
+    },
+    {
+      "path": "airline_market/experiments/emsr_benchmark_study.py",
+      "bytes": 10192,
+      "sha256": "45511caf47978c0442a0d8d23fa6c933fa704f5885b3a3ae17e74018b94f825b",
+      "source_git_blob": "480d1f5f42704d502c979702c0c07dd625e1a59b"
+    },
+    {
+      "path": "airline_market/experiments/event_calibration_study.py",
+      "bytes": 16200,
+      "sha256": "d2e8309d9b06fda5a3bb3e1ca2bf37d04f031fa7beaf3f5e8216f7ce38fd8caf",
+      "source_git_blob": "07379517833dac7805b7bcbf9daa62dbe27a3443"
+    },
+    {
+      "path": "airline_market/experiments/event_data_study.py",
+      "bytes": 3466,
+      "sha256": "27c95fe24fc1367556ae1ff4634646336b45d6140cbe2d2a62421a9da0e1b1df",
+      "source_git_blob": "6afe115b65dd0476a6fcb1361c1e8525d9011d38"
+    },
+    {
+      "path": "airline_market/experiments/event_data_study_v2.py",
+      "bytes": 3474,
+      "sha256": "81b81ee651bb1c791f0623a818e2657539b1d2fe5b373ec0d8ed7afa24c91b26",
+      "source_git_blob": "249f473b604d32f93aa15a9ef4bb1614f9fbdff8"
+    },
+    {
+      "path": "airline_market/experiments/event_departure_trace_study.py",
+      "bytes": 1425,
+      "sha256": "20fc99672b40e86add2fbefb5343e8f6ffb669e090ebc06af03cd051ab644354",
+      "source_git_blob": "12b3a716f08ee759f96c90e49c786a2dd1ebd86c"
+    },
+    {
+      "path": "airline_market/experiments/event_fare_moment_study.py",
+      "bytes": 1186,
+      "sha256": "daa843c0816ee4f5404dcba24d561659501f76ca43d8f6426e6e1a2445df68f7",
+      "source_git_blob": "5b8ba5bc5ab00be85bd40927693baf0a565a017c"
+    },
+    {
+      "path": "airline_market/experiments/event_network_study.py",
+      "bytes": 1878,
+      "sha256": "fc7ee1eec7b00fed74fdf283f6597af0157841789e718a86871e904bab336477",
+      "source_git_blob": "a6f871fb5ce08dda7a0b954a1ee3511a189fbbbe"
+    },
+    {
+      "path": "airline_market/experiments/event_seats_study.py",
+      "bytes": 1752,
+      "sha256": "5f71b16d8aaa1d587fbbb18c6c35ab62cce45b32da0dcd95bebb7b78a475106b",
+      "source_git_blob": "0ff7b6a79ef809639e633eea6ad7f90ee8dcb026"
+    },
+    {
+      "path": "airline_market/experiments/exponential_study.py",
+      "bytes": 10454,
+      "sha256": "eba3ec3ce98d5646cb550151122dcc10d258e98517bede9bc26dd55deafc232c",
+      "source_git_blob": "4dd02c8cf203dc86589e841eb8b8b670942add18"
+    },
+    {
+      "path": "airline_market/experiments/f4_study.py",
+      "bytes": 9832,
+      "sha256": "f4e93d665d681e2197f403ebaebd4d132cc34c046c1ff6a99067573afcd17246",
+      "source_git_blob": "7c243c35900e5e269d012a5f0ff87928b1526282"
+    },
+    {
+      "path": "airline_market/experiments/f5_study.py",
+      "bytes": 14007,
+      "sha256": "40501d7550bf0e056614d63529ce88adb46c885ed3e8c96877e3547ab02d8257",
+      "source_git_blob": "fb889ea5c83dc49dda4d5be23ec517cb3e31624f"
+    },
+    {
+      "path": "airline_market/experiments/f6_study.py",
+      "bytes": 7857,
+      "sha256": "5bf7adb2a47ea9f05e28b1e3e6142f491f5a837388d664d79663ec6682949a3f",
+      "source_git_blob": "c03ed3d5d098c839dedb030819d87bcc8530041b"
+    },
+    {
+      "path": "airline_market/experiments/factorial.py",
+      "bytes": 4437,
+      "sha256": "7afe2a226da5453f056dd0302f98d2cc03f83d5411165fb375d120faac023023",
+      "source_git_blob": "e93cdbd30f46dd98918d3cab16dee76b18aa6c81"
+    },
+    {
+      "path": "airline_market/experiments/fixed_fare_study.py",
+      "bytes": 9095,
+      "sha256": "d2058791787d02ccce0686799945c888c77aefb6919a20efa5ce642abea68f2c",
+      "source_git_blob": "c56fc068594a7e162db70b54937ff342f88529f4"
+    },
+    {
+      "path": "airline_market/experiments/history_study.py",
+      "bytes": 5638,
+      "sha256": "1854678905a5994e5d307deecde9424c5b28e4da2e1c09abfb915b38f4ec08bd",
+      "source_git_blob": "12787758bf2700244dcbd836058243e2245a9d29"
+    },
+    {
+      "path": "airline_market/experiments/i4_particle_study.py",
+      "bytes": 12788,
+      "sha256": "34d97fbe66176a5b063fcf3da85c2cfdd1973575a519e4977aca96863926a33d",
+      "source_git_blob": "c84123f8404dd299a842c8e54507fe3227d07094"
+    },
+    {
+      "path": "airline_market/experiments/information_value.py",
+      "bytes": 1409,
+      "sha256": "553f5f7f5734c79c8165aaf5e2fb3ef07c20cd7356b431ba1fbfa8bedb84999d",
+      "source_git_blob": "08e946087a4edd466034423ebc1793536a140685"
+    },
+    {
+      "path": "airline_market/experiments/learning_pilot.py",
+      "bytes": 14227,
+      "sha256": "ec6dc037fce455b03cc72167b56f6bf5adbae51f5b1bb7509e00e4be80ed1c0f",
+      "source_git_blob": "eb4a154b92d74a28f907e95ce8c46aea45e969eb"
+    },
+    {
+      "path": "airline_market/experiments/leg_identification_study.py",
+      "bytes": 15018,
+      "sha256": "152196d4fa1a57176c89fa9beed8fb6ee5e4219fdfd3f3fbf8d907c7f6d20e95",
+      "source_git_blob": "082790f77b533e6f947ecaef9df5742c843940da"
+    },
+    {
+      "path": "airline_market/experiments/littlewood_study.py",
+      "bytes": 9228,
+      "sha256": "8b5a5504abba09a8f10dde316ce245a6fbccc0acb674ad4782808762cb82068e",
+      "source_git_blob": "67d808672ec89ba9d54da9c3a16ec1bae2d6079a"
+    },
+    {
+      "path": "airline_market/experiments/littlewood_worker_v2.py",
+      "bytes": 800,
+      "sha256": "724782880c1c1f42dfe9c45713230b3579e48c3afc85e27e5efe8cfb2616d007",
+      "source_git_blob": "fac90624b1f234408665f6c716d92d2cac52793a"
+    },
+    {
+      "path": "airline_market/experiments/logit_bertrand_study.py",
+      "bytes": 17671,
+      "sha256": "1be413f4081595f876b11b5fd223d29096521feeec7e6f4d96e718735534d27f",
+      "source_git_blob": "ed8561eb7eb1e27c792197fa090581ae8a40a7e8"
+    },
+    {
+      "path": "airline_market/experiments/money_scaling_evidence_study.py",
+      "bytes": 18771,
+      "sha256": "9fc3579f336159234a3d6a7d12986efdb847d89bcde3e03c4d6b536dbba944d9",
+      "source_git_blob": "5f4bdbf878ef272b907472263df476584a20361d"
+    },
+    {
+      "path": "airline_market/experiments/money_scaling_study.py",
+      "bytes": 16701,
+      "sha256": "bc490223954e985179b05ac8cafbeeed7bef7fe5b8f22b65708f2fd8ba4cb654",
+      "source_git_blob": "affa67ffc2855a76b7898ddcbfaa69f2e0d0ec4c"
+    },
+    {
+      "path": "airline_market/experiments/monitored_learning.py",
+      "bytes": 11797,
+      "sha256": "db37da1bba8f4d07a1aa006e48cec79c1860666da43585f254e5e38724db393a",
+      "source_git_blob": "431b6895f9051622c42f432cfff1e683be5d91f0"
+    },
+    {
+      "path": "airline_market/experiments/mpc_population_study.py",
+      "bytes": 3037,
+      "sha256": "bf4008d4e9412198f1c28ac6ea288c7ac7c0612a2bda28f99e41260fc144f3e0",
+      "source_git_blob": "1ef470b5558bc9d5d123cfbf64df9c25dcdca98b"
+    },
+    {
+      "path": "airline_market/experiments/net_objective_study.py",
+      "bytes": 9547,
+      "sha256": "3f71dfd0bc7fbcee0dd763cd44baff5967fe629fe733458f565f7ac0d64ed031",
+      "source_git_blob": "82e8c6e3b4e414e611bfb1897600ac29d29e3513"
+    },
+    {
+      "path": "airline_market/experiments/network_monopoly_study.py",
+      "bytes": 13565,
+      "sha256": "e515e344074fa260718b1d79b3cf039248fbcbd249b00ad6d4cf1f1a1ef811f9",
+      "source_git_blob": "008b57a1b95f95fc061abc7f29eab59c28d7773e"
+    },
+    {
+      "path": "airline_market/experiments/outside_coupling_study.py",
+      "bytes": 8044,
+      "sha256": "0ddee98dfc7ba4dac4ab5a255854686e96c5b8c7be18cc333172d4ce19e81f0b",
+      "source_git_blob": "5dcdacb4abb3e751ca794dfccc01d88f4d5cce58"
+    },
+    {
+      "path": "airline_market/experiments/price_monotonicity_study.py",
+      "bytes": 10090,
+      "sha256": "d2a23b7352e833fa72a1a358dbd670857bb6b45a18109e9ad56d4560244a1b02",
+      "source_git_blob": "a1adad9b1030c701501891b42b79343b65dae758"
+    },
+    {
+      "path": "airline_market/experiments/quote_exposure_study.py",
+      "bytes": 21142,
+      "sha256": "f4a2ba13151e0717029126ce4d987bdb7b3b37543a84ed7355cc8d12a3933774",
+      "source_git_blob": "dedbc9225d52bb6147a786da8cafef0b1376fc13"
+    },
+    {
+      "path": "airline_market/experiments/quote_route_study.py",
+      "bytes": 7135,
+      "sha256": "e457766dd860826fb26f2e2344a039b727f7254ac65e9e6ab836df27ed851218",
+      "source_git_blob": "3ee2f13d215dce0997e341209474b43eb21d4760"
+    },
+    {
+      "path": "airline_market/experiments/reference_study.py",
+      "bytes": 1253,
+      "sha256": "a6f2af43321c9926514ab75b18cb6497bf8fc3b48942873de64759ce9fd04423",
+      "source_git_blob": "bd002b834eb47752c77b3e4e4457725f08746d95"
+    },
+    {
+      "path": "airline_market/experiments/refund_accounting_study.py",
+      "bytes": 10691,
+      "sha256": "19a37b14b0a871d50eb55688aa2612689176386274d7a8baff86dedf8f4399fe",
+      "source_git_blob": "d33c0e7e7ef6c6cfbf4a775dc172498e8f300ea7"
+    },
+    {
+      "path": "airline_market/experiments/relabeling_study.py",
+      "bytes": 12044,
+      "sha256": "e97d0c7c59e66c7b30eba36a0791db2780ce9d0745674d1595d4ba29e5ba6139",
+      "source_git_blob": "f756a82c5e184022470d2547409b8453ef7dfbe0"
+    },
+    {
+      "path": "airline_market/experiments/scaling_counted.py",
+      "bytes": 4311,
+      "sha256": "ac906899915c1b2541d44ae820983566eb1237c60e7b0ae8fffe8f7fbd0c27dc",
+      "source_git_blob": "2bce799e9a18c2d28162577c26e0c1a4021a0c4a"
+    },
+    {
+      "path": "airline_market/experiments/scaling_sparse.py",
+      "bytes": 4663,
+      "sha256": "88b98c761ebf231480c60a2839067159ccce5f0240cd14b149ab44b1cac65fe4",
+      "source_git_blob": "76df80f88bf5b844903089f92f5ae0178246d0df"
+    },
+    {
+      "path": "airline_market/experiments/scaling_study.py",
+      "bytes": 20933,
+      "sha256": "a12461575ea06547978f4ccec7e8bf67a335c5efb05225b7ba15cd7fe92223bf",
+      "source_git_blob": "65f3ce1ecf3b59bf194b18b89e0ef25c2504811e"
+    },
+    {
+      "path": "airline_market/experiments/screen_analysis.py",
+      "bytes": 14694,
+      "sha256": "8805e3aa8cfb499c5b5384bde31c0ff5cd5acc50f1ffd023ab22f0c71af833c5",
+      "source_git_blob": "1d57c2a45bcc43923785873e669ab08450c25b76"
+    },
+    {
+      "path": "airline_market/experiments/screen_design.py",
+      "bytes": 1926,
+      "sha256": "ed864da603177db691938537f2713f3fdfc6466adc9a2c4bc76c27549a580216",
+      "source_git_blob": "88ba5145611ef7c6b4a808d1e3b598320596941d"
+    },
+    {
+      "path": "airline_market/experiments/screen_diagnostics.py",
+      "bytes": 6104,
+      "sha256": "831acf24855d343ff468b8f969619356b01e2820fa42e1020d74e2c8b2246b7d",
+      "source_git_blob": "c124e9b8d5c94a917949f5f43797a976adceaa03"
+    },
+    {
+      "path": "airline_market/experiments/screen_metrics_study.py",
+      "bytes": 4632,
+      "sha256": "a23aaf5bf7b78afc1bf9a0404fa03215ee7bb59d53b7119c8e880713001093f0",
+      "source_git_blob": "40e39ce983b108fcfc8adba65c00bd01070ae2eb"
+    },
+    {
+      "path": "airline_market/experiments/screen_metrics_study_v2.py",
+      "bytes": 1939,
+      "sha256": "ae1287f21e681ba122ea3f99e4dd5299133653d151c486a04ccc6c15dd07fdab",
+      "source_git_blob": "707b5c2b82b4df6769e1e84cafec3a5b9f435b06"
+    },
+    {
+      "path": "airline_market/experiments/screen_saved_metrics.py",
+      "bytes": 14458,
+      "sha256": "f6d744efe526b56d0fdce2bfac7e2cb6ba922ed95e7fbce1ed9782cb84f5eb8a",
+      "source_git_blob": "1508d4e06df285b34bfee32bb73ba20246659765"
+    },
+    {
+      "path": "airline_market/experiments/screen_study.py",
+      "bytes": 2715,
+      "sha256": "7749135fcbdb363bc6753d71a786f3ea7fb98167c3d79cc9ce967d2fd8b9cfa6",
+      "source_git_blob": "6c09b793ed62e35b4ddfef035c4f5738f19cfb80"
+    },
+    {
+      "path": "airline_market/experiments/settled_study_campaign.py",
+      "bytes": 2706,
+      "sha256": "18fd82cff46405a3732dd60253efc6fd57e440894f673192848cd3c27694a79a",
+      "source_git_blob": "8be71455d7b777150abb28047ba043f53518bfb5"
+    },
+    {
+      "path": "airline_market/experiments/shared_load_study.py",
+      "bytes": 5436,
+      "sha256": "1fae34b856ac9bc3dfd8e79010b341bf7ae9c8a122288b96641d1511b74223da",
+      "source_git_blob": "a5436c93926ea523b4375c7f9ca52f921c7ead60"
+    },
+    {
+      "path": "airline_market/experiments/single_leg_ppo_study.py",
+      "bytes": 22157,
+      "sha256": "653c0ee983af007939229b4225903f87df4088a66a2245dd53f7e50df32b5f28",
+      "source_git_blob": "09774589fde1dfc285ca395e5e8cac0d82b5f63e"
+    },
+    {
+      "path": "airline_market/experiments/step_particle_study.py",
+      "bytes": 6249,
+      "sha256": "4b1ecaea3294744562278514ab29eb5def22afe46d2535b04a292005cd2d2609",
+      "source_git_blob": "1b4ea59fe6c637a04f84bc1d04e404735dd6f148"
+    },
+    {
+      "path": "airline_market/experiments/study_campaign.py",
+      "bytes": 3739,
+      "sha256": "5db72d118368776abec76cfc3d5c7d8ef9d89694f743719a3b39da16a73ae81f",
+      "source_git_blob": "05a1543cfa9f069d9acd8ef7c623805eefba8712"
+    },
+    {
+      "path": "airline_market/experiments/template_particle_study.py",
+      "bytes": 7783,
+      "sha256": "f53509d347e15b86926ed81075470de047ff8f315b4422bbb74cff74c17eeb74",
+      "source_git_blob": "714068eeb1a4b6617b38595fbf1cd750329d32ae"
+    },
+    {
+      "path": "airline_market/experiments/terminal_credit_study.py",
+      "bytes": 11698,
+      "sha256": "f032cde975d17fc95b09f9c4288f02c1852d89246c8ae9d7b0ccaaf8714cdf90",
+      "source_git_blob": "1fc0a1a734628f168571f3b36854221ac06ec640"
+    },
+    {
+      "path": "airline_market/experiments/type_game_study.py",
+      "bytes": 4194,
+      "sha256": "1f7603b21a60a560bb11622bcd67c3b6e1bc2c95f36df8d2985a749b9a463898",
+      "source_git_blob": "a322c0d6a74934186f04ed5926fed8739581ecd0"
+    },
+    {
+      "path": "airline_market/experiments/type_game_study_keyed.py",
+      "bytes": 4196,
+      "sha256": "d71cdb5eb85ef7e7149423dd35ba4946c9dc542d1c3cd9c22454ff933b7c1a99",
+      "source_git_blob": "e489b60bc0bb024e129205fd78c85695d657acec"
+    },
+    {
+      "path": "airline_market/experiments/type_mpc_study.py",
+      "bytes": 4399,
+      "sha256": "9b42c7be306812c8773aecb9b8c90a434730accce79a3f0147a19c2dc9e79b65",
+      "source_git_blob": "7d3e3292fe9aa869a9c5feb4390bbc288af42710"
+    },
+    {
+      "path": "airline_market/experiments/verification_study.py",
+      "bytes": 3328,
+      "sha256": "93c4b78a061cd7a43951ea4f5df321e116da183095f9bc91910bbdb79d370d46",
+      "source_git_blob": "68122c8bb7b03756016dd99791f89bd33f4fa43f"
+    },
+    {
+      "path": "airline_market/game/__init__.py",
+      "bytes": 202,
+      "sha256": "bff0cba6ed2c2e0c21f8a2d55a8052056955bd70353225170022d0265c77bde9",
+      "source_git_blob": "9b50ec42e09922bed957e368aee808a89999db8f"
+    },
+    {
+      "path": "airline_market/game/cli.py",
+      "bytes": 1981,
+      "sha256": "f2cb810867ad587467f6557310063e57bba9faf4e894ae7484898db2df9ed027",
+      "source_git_blob": "a0414dd4371e0fd889ce2d3d6d31ac732b358151"
+    },
+    {
+      "path": "airline_market/game/exploitability.py",
+      "bytes": 977,
+      "sha256": "d683e2b75293cc481ec3080e25f934f0f935c016ec78deb0e403adcec86c6c14",
+      "source_git_blob": "c58ec03c689ab81659f9eef94b585660477345db"
+    },
+    {
+      "path": "airline_market/game/ibr.py",
+      "bytes": 1854,
+      "sha256": "d3462471d73d8cb9bb6aeb1880f9ec58f724bf2078bace5e9a8433c431e5af61",
+      "source_git_blob": "b44d4250300d35375c1a8a9a2aef2f589391a264"
+    },
+    {
+      "path": "airline_market/game/meta_solvers.py",
+      "bytes": 4626,
+      "sha256": "3a7b48902462dfe004a13cb272922558f005757624c3da48a836d204ba8438a2",
+      "source_git_blob": "065403b8b0478f6f9597e04ac52985a200988b5c"
+    },
+    {
+      "path": "airline_market/game/mpc_population.py",
+      "bytes": 15482,
+      "sha256": "35f26aedf5a63cbf8ec280454a936525a3cadd31141ca449c2c2aa71e4c83ef9",
+      "source_git_blob": "1b847d18e6f10f6c7fe5c5db770a0409409a5b75"
+    },
+    {
+      "path": "airline_market/game/payoffs.py",
+      "bytes": 9540,
+      "sha256": "0e630c0acf03924a654a5a346de7dfaeea398bf97eb1241758a81e801fa8d1eb",
+      "source_git_blob": "232150fd04f58a537f1f82c89adaa5ef7d16f6d6"
+    },
+    {
+      "path": "airline_market/game/psro.py",
+      "bytes": 3892,
+      "sha256": "20441af6cf666c174e53537dfddc744ac9e59742fd6507cb0ecc4f9a5453d8ed",
+      "source_git_blob": "19c35091c75a8aa8e5697e4e579f600769199a9a"
+    },
+    {
+      "path": "airline_market/game/responses.py",
+      "bytes": 5082,
+      "sha256": "f613b98d213878c968a395963255b9c44e4af979b4b7ccfb7463adb0c5ba78f6",
+      "source_git_blob": "95a4f836f615a02e0db406648ae0b26cf166ed2c"
+    },
+    {
+      "path": "airline_market/game/type_belief.py",
+      "bytes": 15391,
+      "sha256": "46b04974cecf8ec073f679daf0cd29b1b81c9416982161ac00c94ab53d8a54ef",
+      "source_git_blob": "5f4b1e23644d5b587e12db1ff7ff5f90bcbbc685"
+    },
+    {
+      "path": "airline_market/game/type_mpc.py",
+      "bytes": 11308,
+      "sha256": "18dbf9392fd4eacbba00c9ef47026438824daaa6a5cc8b9d67dd172848edef0d",
+      "source_git_blob": "a584fe06677bbc1649d088034429497e526058b0"
+    },
+    {
+      "path": "airline_market/game/type_psro.py",
+      "bytes": 6203,
+      "sha256": "84593919a760b0fffc8edf5341d09b264fee9e21cbe0ded6d4d19b3c576bfc48",
+      "source_git_blob": "63ec68c194bb87c42a0b5a3fb0944e9e1403a04e"
+    },
+    {
+      "path": "airline_market/game/type_psro_keyed.py",
+      "bytes": 7002,
+      "sha256": "f8ae8440ca1c934da4272babc733367d08ba62ac80f34f88ca00c0384797a8be",
+      "source_git_blob": "82c4620560499a3b3d2ed657d0ebd16445e43ae5"
+    },
+    {
+      "path": "airline_market/learn/__init__.py",
+      "bytes": 72,
+      "sha256": "f836b6ef9c1a03daa32c17fcfaa4c7774b4114928d6f82a6e5986e3c84435fcc",
+      "source_git_blob": "357696deb6ddc2909e9f6c5f2b8129e1971334b6"
+    },
+    {
+      "path": "airline_market/learn/adapters.py",
+      "bytes": 4459,
+      "sha256": "99db31c234105552fd3a8e9dcea9ff0f76c5c9c3b361c45cdaf259a4612785ca",
+      "source_git_blob": "88bd1fec92c28ed498c9f47a70854a3d32442cd3"
+    },
+    {
+      "path": "airline_market/learn/aux_belief.py",
+      "bytes": 2303,
+      "sha256": "77862f6db654a8473b04e8f1f5f2c0adb1106ebf6edf73bded39c6effd7dbfaf",
+      "source_git_blob": "d22cbe2c28ffea8d44e3818a37ef6856e8bc193c"
+    },
+    {
+      "path": "airline_market/learn/belief_ppo.py",
+      "bytes": 11788,
+      "sha256": "7fc802c1c25e9c65b20599b90ef15fc6224176868f4453fa4fe0b885c7fdae16",
+      "source_git_blob": "495ce9fb32bd6897cee9616a98ed9d82fc4e7f5c"
+    },
+    {
+      "path": "airline_market/learn/credit.py",
+      "bytes": 1397,
+      "sha256": "bfa0067fe8ee49a5d89ff00288032af0b0d7e5b9f3f8a37567f3b5268792cf64",
+      "source_git_blob": "1c3c6e8c2fff4d04d6c215e9bcab89cbb72bfccd"
+    },
+    {
+      "path": "airline_market/learn/curriculum_ppo.py",
+      "bytes": 17989,
+      "sha256": "c7ebe0f7453c3ed2cbc2496c094514a58561b3443ea95b896f2db265dd65b6e1",
+      "source_git_blob": "f7ebb6aa3966e62ad781028475ddc5478eaf66ae"
+    },
+    {
+      "path": "airline_market/learn/gradient_monitor.py",
+      "bytes": 10174,
+      "sha256": "4f24fc0ffb926acb66cae82639c778727a25742d677e2a2e6e93a853800e164b",
+      "source_git_blob": "7aa002e0b37ad7bc765eb4036682a22ebef6bc77"
+    },
+    {
+      "path": "airline_market/learn/ppo.py",
+      "bytes": 12771,
+      "sha256": "c4c8c7fdc0e126640ce195d46ef03c2b62fcd963ba8ef417a168931938a6d65d",
+      "source_git_blob": "e8b9277f2937e61a23442534d36cf7ad51b2fdf3"
+    },
+    {
+      "path": "airline_market/learn/structured.py",
+      "bytes": 2549,
+      "sha256": "e07950e0f26924380fb57af04aa94850972fe070816e7bab62854d395229ef9a",
+      "source_git_blob": "cc7ebc21585f31ed655e56c3430cc9ab4a181401"
+    },
+    {
+      "path": "airline_market/learn/structured_runtime.py",
+      "bytes": 14920,
+      "sha256": "259b9ab07fae899f369f212a7d9982c2db3bf28e0fac20bb0aceb47348101e56",
+      "source_git_blob": "26b3454e90e2add7f9363736a39faf9423a7d625"
+    },
+    {
+      "path": "airline_market/learn/structured_train.py",
+      "bytes": 15317,
+      "sha256": "4af839bfce2901a5b45ab75e4b82955a8372e8a63d27b4cfcbc05f2d853b5f3e",
+      "source_git_blob": "0465608069b38988486495d6403f91406766cb8c"
+    },
+    {
+      "path": "airline_market/legacy_toy/__init__.py",
+      "bytes": 58,
+      "sha256": "2a30e94f9f3bfbaa27db95caa0d4560b0c6aed180a5920b36cd2618c75127eb2",
+      "source_git_blob": "24e5d6b5628c2146afc99a1ef6ff114bc36ed327"
+    },
+    {
+      "path": "airline_market/legacy_toy/belief.py",
+      "bytes": 2770,
+      "sha256": "6ffcf7b238636a75dded3c112a953121bb50fbfba5674db6116f0cb4de8ba777",
+      "source_git_blob": "4581aac1c0d30bd51cb62d82a9b9956358c6cb31"
+    },
+    {
+      "path": "airline_market/legacy_toy/experiment.py",
+      "bytes": 12025,
+      "sha256": "ddd91027897dba020e6538a5a9dde01de338cd7b87d0eb955a8646f6f09ebeb9",
+      "source_git_blob": "68d6c61e3ea2df1de26ab4e58d642c0e0ddf9aac"
+    },
+    {
+      "path": "airline_market/legacy_toy/model.py",
+      "bytes": 18302,
+      "sha256": "e8955b5b9029d9574807c508d277f631ffbbf85756d94ed57d1f300adca8ae7f",
+      "source_git_blob": "f287a4759ee7ef2c6c7cffa17e2de3f3cf6f675d"
+    },
+    {
+      "path": "airline_market/legacy_toy/policies.py",
+      "bytes": 3173,
+      "sha256": "03648e3a0c4068a7285c22d59e232581c6e10482d6b0e61ec00eff92f11779c9",
+      "source_git_blob": "47555bcf8bbd9fdd6a9d00739418e5d226a0b86c"
+    },
+    {
+      "path": "airline_market/legacy_toy/ride_response.py",
+      "bytes": 1338,
+      "sha256": "c5f90bcc30fa9e62fc57ae450a789676dd55e8b604b7a4a2d6e909c319c982b8",
+      "source_git_blob": "321cf96f71f3b32d737a2bc441b26e0ee7ff5f03"
+    },
+    {
+      "path": "airline_market/pipeline/README.md",
+      "bytes": 10669,
+      "sha256": "9e28cbf7a9bdc3f33ae08e8c7cbcc14a75643edeaf82ff17ebcf7c9d7499891b",
+      "source_git_blob": "4299a3b1520e5d3d0215f816bdf15d75faaaeb8a"
+    },
+    {
+      "path": "airline_market/pipeline/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "airline_market/pipeline/artifacts.py",
+      "bytes": 587,
+      "sha256": "3fdc3ecfb228c3c3ec58d968ffc3085b1fea3ee0426c3d1ebb45c941121d2bf5",
+      "source_git_blob": "a819c0cabe7158a56c23acf9026ea98ea7ea1996"
+    },
+    {
+      "path": "airline_market/pipeline/background_load.py",
+      "bytes": 3675,
+      "sha256": "6808405407a7aa24b64553332e9b7bbc523ae353498128fdab7fa5cb42b47926",
+      "source_git_blob": "19d369517ea05888843c7b3c31931908bce0b0f3"
+    },
+    {
+      "path": "airline_market/pipeline/behavioral_network.py",
+      "bytes": 11486,
+      "sha256": "da37877d8fff71c23fa84175185b7f8a7b3b9859d95fc79134753e176d4d0ad4",
+      "source_git_blob": "997f7cf29dde1207b81464e9a94c7a8faf833bcf"
+    },
+    {
+      "path": "airline_market/pipeline/calibrate.py",
+      "bytes": 10966,
+      "sha256": "c926ecf7792fe6122d434120c5b20deb41986cd671f8f7817817064e54a9fbac",
+      "source_git_blob": "e28b8b29817c1ae9cd049b747d68555886004898"
+    },
+    {
+      "path": "airline_market/pipeline/catalog.py",
+      "bytes": 1715,
+      "sha256": "438ad14815c4e1b13a6631ec9a77c9cf6820e900788b518a0f3dc5b15e2f574f",
+      "source_git_blob": "e09a974dbe3016e73dedb54f23b197aec4cc1663"
+    },
+    {
+      "path": "airline_market/pipeline/compiler.py",
+      "bytes": 11982,
+      "sha256": "58fc6a1b70a603701346c5dc142e3564208123ba7fa921d5eaf59051d869c96a",
+      "source_git_blob": "7676bfeeb21143cfded3c3b3ffe176b17adc0ea4"
+    },
+    {
+      "path": "airline_market/pipeline/dated_network.py",
+      "bytes": 17644,
+      "sha256": "e0c971fe57ac55c6673c58da74c78efe08fa78e5b8bac4bd17d4b1346c8c9564",
+      "source_git_blob": "575b046a8423782847283f312c50e43c415baee0"
+    },
+    {
+      "path": "airline_market/pipeline/demand.py",
+      "bytes": 2003,
+      "sha256": "10333318baa189422419ca4f8c064f642466603f7ebab2ead8527456a11fbc91",
+      "source_git_blob": "dc5a2b841a1b6f52cc28c68e4ed552f89437f6af"
+    },
+    {
+      "path": "airline_market/pipeline/empirical_targets.py",
+      "bytes": 13013,
+      "sha256": "6f8aa14e38e80da100a2c79c5384b54e09699644b153bb4181a6c23446c4fdb8",
+      "source_git_blob": "7bda325de78188ee33bb55511980e3daf0ac2ead"
+    },
+    {
+      "path": "airline_market/pipeline/event_departure_trace.py",
+      "bytes": 8464,
+      "sha256": "1c1238366a60964adde8052258c6fefdd2129f3b8a5bd33249009030f58a2ee0",
+      "source_git_blob": "adcb456c542acd696a0f7be78c94dc50fabf977e"
+    },
+    {
+      "path": "airline_market/pipeline/event_fare_moments.py",
+      "bytes": 11787,
+      "sha256": "eadfad44fe39dbd823ba388eda13637808cb1508f47ca0bf4a2aa262f9a512b5",
+      "source_git_blob": "1f910aee92f51eab6d0dd51bd593ece742edd27b"
+    },
+    {
+      "path": "airline_market/pipeline/event_network.py",
+      "bytes": 22909,
+      "sha256": "88789a20defa60d91bce66dcc34184b95dceff229e20f7557572039e3a237e57",
+      "source_git_blob": "f55d47b91510daaf8b7b56fe91b41b2c4573be2d"
+    },
+    {
+      "path": "airline_market/pipeline/event_scope_v2.py",
+      "bytes": 6023,
+      "sha256": "d825db70cc4a4bc1d327dd46081ff5232b0bb37b85268e97a0c497258af9b285",
+      "source_git_blob": "2de96f946c7628dc373f3c58e6b146c91d51e86f"
+    },
+    {
+      "path": "airline_market/pipeline/event_seats.py",
+      "bytes": 15138,
+      "sha256": "a5fa08a92ffc439f102ce99cc58b2cc61cc9997afe595cc267ac73a6f663a1f2",
+      "source_git_blob": "599aec22de3632e8b914a2ff2d9e71f83f665370"
+    },
+    {
+      "path": "airline_market/pipeline/event_shock_counts.py",
+      "bytes": 11522,
+      "sha256": "654d3ace492476819bfe62bb525efd1c1cffd260fffeb7e95d8082def79d03e5",
+      "source_git_blob": "bc5ac4b2fe7b0114b24330e8bc26cc9b366bcc09"
+    },
+    {
+      "path": "airline_market/pipeline/events.py",
+      "bytes": 5444,
+      "sha256": "c7c2aa7e2503826ece5638322a60155d18e235962284a894c7e6919756aaed88",
+      "source_git_blob": "8e65b7e73136a1835c166432a085853cba04694c"
+    },
+    {
+      "path": "airline_market/pipeline/fieldmap.py",
+      "bytes": 4412,
+      "sha256": "8c238976ad7615868c791d5b5402b0f5c544b268de602a6091a31adaf8089777",
+      "source_git_blob": "681a89ec926badc2682b41a4ae264c55837cc95a"
+    },
+    {
+      "path": "airline_market/pipeline/generators.py",
+      "bytes": 8691,
+      "sha256": "3ccfa5847b0386ce4f469d51da65d1b805151a9ebc81e4c4a62ec59647a64ed4",
+      "source_git_blob": "421cb7ec45779f6f82c71cdd0caf3b70dcec0a76"
+    },
+    {
+      "path": "airline_market/pipeline/national_coverage.py",
+      "bytes": 10630,
+      "sha256": "7015898a92938494b34e419b04efe758fead02185c5c8d658eb41bc65a1f806f",
+      "source_git_blob": "3dda5607d9e790e903c53b46fbe55271ec05ce63"
+    },
+    {
+      "path": "airline_market/pipeline/observation_fit.py",
+      "bytes": 2092,
+      "sha256": "5187aff3bc43cb5b2f51101eb2ce48ba0588996bb57687bc20c341be5f7d6641",
+      "source_git_blob": "660237e00befaed5e781de2c13c87ae4287d57e7"
+    },
+    {
+      "path": "airline_market/pipeline/outside_footprints.py",
+      "bytes": 5686,
+      "sha256": "d343f1e7393e2c836894906f4b1930ce93ef76a2ef2ab80daf58c2999d109def",
+      "source_git_blob": "feddef1e4a2fc92307cbcddd8b2e0f6905fcf119"
+    },
+    {
+      "path": "airline_market/pipeline/quote_route_binding.py",
+      "bytes": 5949,
+      "sha256": "96041d752bc593350505acd4d41d1f120c7316e68df3aa51539a406350035da3",
+      "source_git_blob": "97b6086e339801934cb2127ef52e498ad2622d9a"
+    },
+    {
+      "path": "airline_market/pipeline/reconcile_departures.py",
+      "bytes": 10010,
+      "sha256": "a1b657ba1bbc7f59c2cec34cbb1100bb4fa2df6ba8a6b0aa91b36414b8bd9db8",
+      "source_git_blob": "03f66f9c68355d034e80d554668d00ffeda59462"
+    },
+    {
+      "path": "airline_market/pipeline/regional.py",
+      "bytes": 5906,
+      "sha256": "723b0796481d26a09a78256593cdd152c63fc3b651709d5a9ea5ecaaec9c3c1a",
+      "source_git_blob": "f3b0d611038c800f7bc5004f8b24a8c3068405d5"
+    },
+    {
+      "path": "airline_market/pipeline/scaling.py",
+      "bytes": 7858,
+      "sha256": "fda0016e4c1681d828139515a5413a5c0feb1166013e5b7178a05e8be46b1a75",
+      "source_git_blob": "78605c40be45ad0fcdd7d92de83a4db12c9a1fa6"
+    },
+    {
+      "path": "airline_market/pipeline/scoped_io.py",
+      "bytes": 3891,
+      "sha256": "678f3dae0efd4e165474cb450b57ede266efc0e1231ef6e49203a2d6ec39271e",
+      "source_git_blob": "49024d97d3ffc1bb810e4175857caf90b3928c94"
+    },
+    {
+      "path": "airline_market/pipeline/scoped_processing.py",
+      "bytes": 14680,
+      "sha256": "08227eff31d0f5c38f6ac63e22743ca11fea595ff3b7ffc1e446219ff2d2ef86",
+      "source_git_blob": "81477ece5ce757e4511a6b9a0be86fa557fc2baf"
+    },
+    {
+      "path": "airline_market/pipeline/scoped_quotes.py",
+      "bytes": 11573,
+      "sha256": "9e89c2567da966b061d01ac189ae1c3b1de8db37db93983d2599b95c72576e19",
+      "source_git_blob": "3baa617efc262ab92f72195279fc5e80c7cc3eb8"
+    },
+    {
+      "path": "airline_market/pipeline/scoped_tables.py",
+      "bytes": 16520,
+      "sha256": "37ace5c3a16deca6dc51211db3bb2bb789ad6ae04a1162f44f82b8234d26278f",
+      "source_git_blob": "a7ee8d7063cf51722cf258ac9d41e5c3973fa02f"
+    },
+    {
+      "path": "airline_market/pipeline/screen_generators.py",
+      "bytes": 2773,
+      "sha256": "ba3955d4b20ff3fe8b560c642ec99d040ef39d6f3ae9cb82b1ef944cbc6fc118",
+      "source_git_blob": "319270e260215dae73a955b72718725727dac19b"
+    },
+    {
+      "path": "airline_market/pipeline/sources/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "airline_market/pipeline/sources/calendar.py",
+      "bytes": 530,
+      "sha256": "23b66e795186679c22149de0b0b0f64d3d247d1b387118efa8eee21ed8ef270b",
+      "source_git_blob": "fcd53d566bb4732e7d6ae64ae19ebd71ca416ba0"
+    },
+    {
+      "path": "airline_market/pipeline/sources/common.py",
+      "bytes": 4627,
+      "sha256": "fca6c0e3d044e0faaffb9692dab219c249efa93ee34a1b5cb1b075ac56992ec6",
+      "source_git_blob": "04627ed1780ebf2bf0e568f802286e6dd569dd64"
+    },
+    {
+      "path": "airline_market/pipeline/sources/db1b.py",
+      "bytes": 2172,
+      "sha256": "79004a856040b3a7058dc4eb55834a8b5a50dcaa4297241c7ff02d16bbab194d",
+      "source_git_blob": "502cb80c3c9aa75301d8d82df0e27ec477c2060a"
+    },
+    {
+      "path": "airline_market/pipeline/sources/db1c.py",
+      "bytes": 9773,
+      "sha256": "5a475fbd2a7edc5c9c6184e1d1a09bd1e6a92a246b62156a17a69e59c07abe3e",
+      "source_git_blob": "6c8b2b6b743e5b5296d397541247061d4b5fbf67"
+    },
+    {
+      "path": "airline_market/pipeline/sources/flightprices.py",
+      "bytes": 938,
+      "sha256": "44a673dd1dbcfd83d01a363cc2b35e7dde1f91b35c0bdbcfc916dc34b78f5b0a",
+      "source_git_blob": "8a7d6e70bd1d7f3f0a7b751db3ede8a9357c73ab"
+    },
+    {
+      "path": "airline_market/pipeline/sources/noaa.py",
+      "bytes": 3632,
+      "sha256": "82a82d9521a31cdcef1f5b578f6da7625313018f6143469272965730c664bd03",
+      "source_git_blob": "ed4d4d5f99f7287c15986656c0e5f36cf7d1277d"
+    },
+    {
+      "path": "airline_market/pipeline/sources/ontime.py",
+      "bytes": 831,
+      "sha256": "f0cf47ee0475854f9d715440d6c1d5ccad3c39476734fc81ec0d8cba465a2e82",
+      "source_git_blob": "e6b16f7155bf430033ee4607b377b9c308c5755a"
+    },
+    {
+      "path": "airline_market/pipeline/sources/t100.py",
+      "bytes": 926,
+      "sha256": "7a806d0906f6762fb995111b5086e23950a6bac30761d4222c1df15799b367f0",
+      "source_git_blob": "13804f06225847b7cb6a436c9a4f143f127f47d8"
+    },
+    {
+      "path": "airline_market/pipeline/verify.py",
+      "bytes": 6380,
+      "sha256": "9caa75adbb6bda84b09cdc3ef3ad539a3d542a5168947ad0430db1bd8280d468",
+      "source_git_blob": "b24a27e8a13f78cae5525aa0582d43428ad3699e"
+    },
+    {
+      "path": "airline_market/policy/__init__.py",
+      "bytes": 61,
+      "sha256": "36f14387c407d54fb8853126ff81808d1de1bc9ed427008403534be83c455231",
+      "source_git_blob": "e205a03dad570c02f5e1a7891261dd503fb2ea1c"
+    },
+    {
+      "path": "airline_market/policy/allocation_comparison.py",
+      "bytes": 12821,
+      "sha256": "6ed2e1ba7179cfa2006c07b37c81bf2bccc35aea225ab4f9227ca6da52dfbfd8",
+      "source_git_blob": "c6bfb49e203c3727e0d8f34479e6301dd6d5d294"
+    },
+    {
+      "path": "airline_market/policy/cap_evidence.py",
+      "bytes": 8632,
+      "sha256": "a4498fdfc3fbae22cbf7f88b5206daaf14e143538a2e7ba5558ab89043d4d289",
+      "source_git_blob": "d2ae74e359bc7a6365c8cfa49001031c7fa584f7"
+    },
+    {
+      "path": "airline_market/policy/capacity_windows.py",
+      "bytes": 11475,
+      "sha256": "8fd500c5ecaf9dad25f2468be72583508d5569db70f18f7dcf057dc98956b457",
+      "source_git_blob": "511cd6d16fd2a8db644aedc92e8d47409074042e"
+    },
+    {
+      "path": "airline_market/policy/capacity_windows_v2.py",
+      "bytes": 6264,
+      "sha256": "1dd17f1e7e6f25b7e89f3acec3ec1b44505098a5af242d4ea5ed5a6617a55676",
+      "source_git_blob": "2f51285f166a6983f753e8b18c10bbe8cb4825f7"
+    },
+    {
+      "path": "airline_market/policy/dated_b1_family.py",
+      "bytes": 6134,
+      "sha256": "52ac2d38732843b8883d8e9f8d2c6f9284c370d599b4a931b06505bf3ff511bf",
+      "source_git_blob": "685c292c47091506f2220953ba53addc7508ca41"
+    },
+    {
+      "path": "airline_market/policy/dated_composition.py",
+      "bytes": 4502,
+      "sha256": "cc8a52ad62fc8ffdffd6d102fd03bd6ac66f4b554f2e7148bc6fb1796342864f",
+      "source_git_blob": "1ee652ba5c5d64f10e3767116df7003f84367c24"
+    },
+    {
+      "path": "airline_market/policy/dated_demand.py",
+      "bytes": 15574,
+      "sha256": "5f1b895f29f2d9a5054c9c0412dfbc3c424ae7fc41483751f24710a34da88052",
+      "source_git_blob": "d38455135dbaedfe6d3f3f3f8b52cfbedb034f54"
+    },
+    {
+      "path": "airline_market/policy/dated_order_admission.py",
+      "bytes": 10182,
+      "sha256": "b2a186edb62c86ce16b59eaaa69430da90db78ab770f57f5bf2d7c6d19097839",
+      "source_git_blob": "d6f4bf26d262ac0ac0506e2110dde44f200ac52b"
+    },
+    {
+      "path": "airline_market/policy/dated_rescue.py",
+      "bytes": 12241,
+      "sha256": "d4607ae5c4fdd0372b47e60d7f0fa079a8a8c8d5cd9251fae276226324dba39c",
+      "source_git_blob": "de4578f7d7d9939efb5aa104474014082f4b5a30"
+    },
+    {
+      "path": "airline_market/policy/dated_reserve.py",
+      "bytes": 9610,
+      "sha256": "a47f6d96a2bbc00879872739125de1f0687fd38e1d3ccf13fa149feb7ffa4ee6",
+      "source_git_blob": "8d92cfe35574eac0cd2dd7394812070fdc4d9f58"
+    },
+    {
+      "path": "airline_market/policy/dated_shocks.py",
+      "bytes": 13117,
+      "sha256": "4c4f3c91be1359a16ad0851ba08dd7c32dbd8715e8892b2ac85a840172b21eae",
+      "source_git_blob": "01ce3101fbfab76efc232090e5f717fca55d9070"
+    },
+    {
+      "path": "airline_market/policy/native_order_bound.py",
+      "bytes": 8823,
+      "sha256": "617ea94fd49cc6b9bb334eb6bca6e9353e21401b0df621ed40c7ff7b8abfb284",
+      "source_git_blob": "733959128068cd407dfd6b1dc3c0555eede9705c"
+    },
+    {
+      "path": "airline_market/policy/potential_lineage.py",
+      "bytes": 8348,
+      "sha256": "b1dec2108e330551f3e9e5bbc5f86bfdf57fc55f89de2b4b0f10fac078520e50",
+      "source_git_blob": "b0200d6deef16c6859f0ca497540eb07e6d2f41b"
+    },
+    {
+      "path": "airline_market/policy/rationed_native.py",
+      "bytes": 8729,
+      "sha256": "8e22f9416814c0943e7165a920e22b733d298dc32e648f4dd84c369d7bdc981a",
+      "source_git_blob": "eebf2d6739268aad102b14076ec3b27528d4192b"
+    },
+    {
+      "path": "airline_market/policy/rationing.py",
+      "bytes": 10812,
+      "sha256": "4b6f55e9f1f18119be6303f71d507095f04fb98fb26f24eafe3810646b71c657",
+      "source_git_blob": "c0634153da89940e6e31bd9dfa800963193c1953"
+    },
+    {
+      "path": "airline_market/policy/rationing_native.py",
+      "bytes": 10647,
+      "sha256": "eb637d4e6c88a76257cb1a97a020203a63c136260e8dafcc26c57ff65d4514c6",
+      "source_git_blob": "2fa1a6bd794abf30cd84e46ae9874799d4ecfaf3"
+    },
+    {
+      "path": "airline_market/policy/regulator.py",
+      "bytes": 8320,
+      "sha256": "dcf6de0c77bca3c75eef03e1d91b920d5c8ce97fe0083afc571dc7d11b317fa3",
+      "source_git_blob": "b189f441cc5fdf5ed057187cc66213b06d269b52"
+    },
+    {
+      "path": "airline_market/policy/rescue.py",
+      "bytes": 12723,
+      "sha256": "defd3e4b09b7516710768046cc5b377deb02d80a177f0ae6c14ff3e73ed06f3d",
+      "source_git_blob": "e20e1b7976778c95c456e98beae0f9bb4cbc1f04"
+    },
+    {
+      "path": "airline_market/policy/reserve.py",
+      "bytes": 14239,
+      "sha256": "b21c8e050617b77d4966e10c99c2e8bc40272f57836b3d2e464afe07654c2fce",
+      "source_git_blob": "82a491c3a95b4d181b773f0579b1f11561076d6f"
+    },
+    {
+      "path": "airline_market/policy/shared_demand.py",
+      "bytes": 7017,
+      "sha256": "843df4ea3f24928dae0452e45d8f20d8ca7440b58dbb44f5e6c8dc4b05a4bf1f",
+      "source_git_blob": "e946299906cd38b145e4837235bc4a9ab3bb49d1"
+    },
+    {
+      "path": "airline_market/policy/trigger.py",
+      "bytes": 15270,
+      "sha256": "a24ec7a0a98033282a7d5ce10c0a364130e9d22179a90cdb3ca5085e81f540eb",
+      "source_git_blob": "3486d37bad4546044a411b29711b74a244294d6a"
+    },
+    {
+      "path": "airline_market/policy/triggered_dated.py",
+      "bytes": 3095,
+      "sha256": "45dcae97e5aab9e3a75c3423a1560f4ace23d56d3297551eeb7f43fa6ce9dcbe",
+      "source_git_blob": "636afcd3e65526762b325caec573fa6dea3767bc"
+    },
+    {
+      "path": "airline_market/pomdp/__init__.py",
+      "bytes": 65,
+      "sha256": "2a0fd395d5bbd18332cff73df6c98021bccfbe1b773e1370eccc5d0cdade6d6e",
+      "source_git_blob": "dbc0b06e2c03fe67819c171152b7b3514390a23e"
+    },
+    {
+      "path": "airline_market/pomdp/env.py",
+      "bytes": 4685,
+      "sha256": "d67aac02d5cdb1e053fef99f25d7a256b870c1ec1fc52e36e070194f1bf5ac7a",
+      "source_git_blob": "749e256c7a072d4591a271ff52599abfe2ce9b72"
+    },
+    {
+      "path": "airline_market/pomdp/game.py",
+      "bytes": 3326,
+      "sha256": "6c87a3750ae8d2c5fe54355fc77b95706e14f842642aef444959c3e726514c27",
+      "source_git_blob": "74099b84b59334f7d01771bd40c56b6febd9886d"
+    },
+    {
+      "path": "airline_market/pomdp/objective.py",
+      "bytes": 1190,
+      "sha256": "08f32deb8d8a3f5d0c8c8625f9ce92d8eaeefb2f356b8f9214763f94e42f3dec",
+      "source_git_blob": "27239b75aeda6c7e59a8b60135ecfe7764798303"
+    },
+    {
+      "path": "airline_market/pomdp/observation.py",
+      "bytes": 7887,
+      "sha256": "ce9527edcce2abc03dd59617995f32657e6fdebfd5a0a3f0e1826096bb608928",
+      "source_git_blob": "411ee405231f78baad43b5752d1bae2ae03c4eb0"
+    },
+    {
+      "path": "airline_market/sim/__init__.py",
+      "bytes": 50,
+      "sha256": "d04f6a19a0a631e8787538809d70d4a3605eff22df6c26f8b8b3e5b16929630c",
+      "source_git_blob": "5d8df2c9a47fe3b69bf6099f1c8b2244c5d8f2e7"
+    },
+    {
+      "path": "airline_market/sim/accounting.py",
+      "bytes": 4447,
+      "sha256": "eb8cb5cd2cb1f6514b087b665208db79cafc6ddcce1ea839a4bf6f5b9b8fd61b",
+      "source_git_blob": "8268fcad8af9337af445ad9f90f6006bd6612f22"
+    },
+    {
+      "path": "airline_market/sim/arrivals.py",
+      "bytes": 2086,
+      "sha256": "91b3b8a3db1a20e72610048fcd67c3c8fc1ad19ae82c9dac2c7dcad066af4c95",
+      "source_git_blob": "cd706bb562e8baa27f85d27773d2ca03dc639d1b"
+    },
+    {
+      "path": "airline_market/sim/background.py",
+      "bytes": 1123,
+      "sha256": "771d1342959bacfc229e9f5e66f6917935146394415fc80be242f72aaed31109",
+      "source_git_blob": "4cdf22220efabd1f1550453d51ebaf0aca3c110d"
+    },
+    {
+      "path": "airline_market/sim/batch.py",
+      "bytes": 10687,
+      "sha256": "56213d9faf233dffac729481ecf801114e1add076f9080d1e8f635704a527cae",
+      "source_git_blob": "04c67abd3696208b776813bec33640d4dc7cac24"
+    },
+    {
+      "path": "airline_market/sim/batch_admission.py",
+      "bytes": 3539,
+      "sha256": "43bcb6ec13659a366efe705a61220c0211a182f48682a4864c8c832ba49fae28",
+      "source_git_blob": "9227f37750f474fac8f263b7558f4a5e04816f49"
+    },
+    {
+      "path": "airline_market/sim/capacity.py",
+      "bytes": 3085,
+      "sha256": "69aedd90e4e8b1c8810ab7de91a8a7b7a4f5144ff9530570c3bf850a9c9a0210",
+      "source_git_blob": "66a39752d0873934c610f0a8f6659c2a61ff9fd3"
+    },
+    {
+      "path": "airline_market/sim/choice.py",
+      "bytes": 3269,
+      "sha256": "1d8475acb13545ca17f3024c63234efe86047903cc9e46cca964e668a724ece1",
+      "source_git_blob": "da2cbd87b1f2d0d67caf78881f74e2d1b3666444"
+    },
+    {
+      "path": "airline_market/sim/count_ledger.py",
+      "bytes": 6125,
+      "sha256": "4f69d1f8ddc249f97b2c8fa590e59985a86a6f0444ccdabf5da202907dec15aa",
+      "source_git_blob": "81fb4afddb5e120c556f59f8f16d1f55e43090f0"
+    },
+    {
+      "path": "airline_market/sim/coupled_outside.py",
+      "bytes": 10944,
+      "sha256": "0b24263e19a11db60713894d23439a8b9f37f1fe67e6b083f8ba7f8d8691efe4",
+      "source_git_blob": "0e2edcbc31482fd35e4d338a06491a6baf36f7ad"
+    },
+    {
+      "path": "airline_market/sim/disruption.py",
+      "bytes": 12700,
+      "sha256": "e385b4f80a25a656673ee33d56a620a5a26e3f6faaade5eb074c1287a80a2854",
+      "source_git_blob": "d550008d4784308b0395eaeeff2240508048e3e7"
+    },
+    {
+      "path": "airline_market/sim/engine.py",
+      "bytes": 18418,
+      "sha256": "10156a9bfb0c03de07cd418518e4f6764f616d71a845fa34120829648a676485",
+      "source_git_blob": "be7d8629c3d0b2c230f6fc1c24bcab6186aca732"
+    },
+    {
+      "path": "airline_market/sim/exogenous.py",
+      "bytes": 1492,
+      "sha256": "7dc58b3cc79eaffea2652d5ec9dd461d3bdd30872f10648ca13e0948c602416d",
+      "source_git_blob": "501991917d42844688a8c8da203a96b3b37f71a3"
+    },
+    {
+      "path": "airline_market/sim/exponential_pricing.py",
+      "bytes": 4232,
+      "sha256": "ab6917abd52f8721ca94fdd1c415195969a161f85cbca4f7dc0ff1af3aeee1cd",
+      "source_git_blob": "71aa574f882afe49856b379e1561ac1a59d34195"
+    },
+    {
+      "path": "airline_market/sim/fast_kernel.py",
+      "bytes": 12989,
+      "sha256": "2a2866b9229ea003549b9ac0c2e7705e19000316dbe57bca8fb3c1d8d5623159",
+      "source_git_blob": "951a4ff7d2661f4405d4955caf50775c376d3488"
+    },
+    {
+      "path": "airline_market/sim/finite.py",
+      "bytes": 21134,
+      "sha256": "5a5bca8fbac3e658443bc89597fdf1e4492710853ab6bf1c726c2cef5b0e3427",
+      "source_git_blob": "c172054fd0931d71a7c3092143f11f4b22cb0664"
+    },
+    {
+      "path": "airline_market/sim/fixed_fare_admission.py",
+      "bytes": 6042,
+      "sha256": "50a14752292217655669ba119bd426c7479dfccd088a8f0f310e972149a92f40",
+      "source_git_blob": "db398e98f63b5755a15c87794b0e99710e1e9387"
+    },
+    {
+      "path": "airline_market/sim/invariants.py",
+      "bytes": 936,
+      "sha256": "0a0cfd0d146eaa4eae66024d729b5c3d7e20f8d563adf57aca83d1c732738d4e",
+      "source_git_blob": "18ed4d56c15790e69e18a575b00dc1288f9dab17"
+    },
+    {
+      "path": "airline_market/sim/kernel.py",
+      "bytes": 29768,
+      "sha256": "8e75259ecd09e7cdf757d4dbb61078b774840bd8cb89d38ff000071ec93fa0fa",
+      "source_git_blob": "86bb1bd72c9431e7074d9e12295bee03e355db93"
+    },
+    {
+      "path": "airline_market/sim/lagged_finite.py",
+      "bytes": 6479,
+      "sha256": "696bfca4c19fa944a84191ed85ddb1eda9a587e25b9c19f9054a8d607134059f",
+      "source_git_blob": "ca1d32e4dd71ec96ab3b5ae67ece4c62b3ddc2a0"
+    },
+    {
+      "path": "airline_market/sim/ledger.py",
+      "bytes": 2963,
+      "sha256": "3f47549ba6f4e2bcd1955f04c77627df6c053b889154ecf2fcd3286689d7dc40",
+      "source_git_blob": "655db6f8be888795e61c062a11c09dfc4b0d30e5"
+    },
+    {
+      "path": "airline_market/sim/market_local_tape.py",
+      "bytes": 4486,
+      "sha256": "65ca4464f14b568e8cb08b5c4fb6720ebaf1025f3fa82bc1c751ee9158a53867",
+      "source_git_blob": "d354988b0c10a4dfdedb8c9da0dcaca6a39ec24f"
+    },
+    {
+      "path": "airline_market/sim/ordered_reentry_logit.py",
+      "bytes": 9293,
+      "sha256": "db59139e98c4dc692cb36182b8652c234e469e71e4d6dd09ea563a47f5f6e9a3",
+      "source_git_blob": "c06a329eff6cf316005602818b9a170746cb2edd"
+    },
+    {
+      "path": "airline_market/sim/ordinary_cohort.py",
+      "bytes": 11576,
+      "sha256": "43c231c3ddb1f68c16994f9f4b88c557d4d9a5d85d34d64b4620cd2a4d5df57a",
+      "source_git_blob": "77704fb7e5cc52e87c06976b9a275c1140a3e5a8"
+    },
+    {
+      "path": "airline_market/sim/passenger_accounts.py",
+      "bytes": 14242,
+      "sha256": "3130e278c211314506e30f3113a173c3d9663a74df811ee078c9626668d8c307",
+      "source_git_blob": "d24057d3685c537210282154f72bc0a72226a1a7"
+    },
+    {
+      "path": "airline_market/sim/payoff_logit.py",
+      "bytes": 10525,
+      "sha256": "f630ec9837bcad6d3c99ba773a6daa3915b4805a039ab7b175c9ffd791476482",
+      "source_git_blob": "2fdf87438f36c4a292dcd9e95a1036365a3bbe1f"
+    },
+    {
+      "path": "airline_market/sim/poisson_forecast.py",
+      "bytes": 10583,
+      "sha256": "a003a4e7f8a0e7d1ba5fdd221be6a2e6cef66f21ec607480941701e0ddccb3b6",
+      "source_git_blob": "0c575e66e4abdbb4419253c8e80af5b1911f2bd6"
+    },
+    {
+      "path": "airline_market/sim/poisson_period.py",
+      "bytes": 11223,
+      "sha256": "00be3710745d1dc75042b7b32e1207fc9019357b72665972fec940262002c6bb",
+      "source_git_blob": "a7175565cb37045a2ac92eeaca3781e72ee13c78"
+    },
+    {
+      "path": "airline_market/sim/quotes.py",
+      "bytes": 5229,
+      "sha256": "173e1f2a42513600c47a187139b5ab509a03e5344eccbb20f1cdfb99d975d2af",
+      "source_git_blob": "99b77863d73f4630076b3b7d3645dee97d9ac83b"
+    },
+    {
+      "path": "airline_market/sim/rebooking.py",
+      "bytes": 16160,
+      "sha256": "e560ab296537f3b540934faad6b345c2ef5890ab9743275fbc796ff2d8209587",
+      "source_git_blob": "8e71eab1b63443e4f7970b04913ea6a229dd7943"
+    },
+    {
+      "path": "airline_market/sim/reentry_payoff.py",
+      "bytes": 15140,
+      "sha256": "7d72b39754dd643149c42dc621235d10c027cadcb8f8c4e1887627840e3bb408",
+      "source_git_blob": "538a28f7a02f3b6d91bd6e4adef929d31d312c87"
+    },
+    {
+      "path": "airline_market/sim/refundable_net_objective.py",
+      "bytes": 3410,
+      "sha256": "852d50e8648b58c058f0a95512b666a7ca568e2c73c8c73b227d34736ddacead",
+      "source_git_blob": "a8e4e2175ef6bc2e177fb02c65bb1ab30960680b"
+    },
+    {
+      "path": "airline_market/sim/reservation_census.py",
+      "bytes": 14153,
+      "sha256": "2dbace54a717c78bf6429732008c2605e67be52facd41e2739b1843b30cabac0",
+      "source_git_blob": "0098d32ac16b68a9bb68e117b013eb810feb4b83"
+    },
+    {
+      "path": "airline_market/sim/revenue_proxy.py",
+      "bytes": 2785,
+      "sha256": "a56e5bd029313e506d36eeab5c48a0d5955698ce80631385ffd1fdf630798ab9",
+      "source_git_blob": "c42d3fe18ea45cab9db111f7942d7d76de092310"
+    },
+    {
+      "path": "airline_market/sim/segmented_welfare.py",
+      "bytes": 7441,
+      "sha256": "f820c4018f4a9ad42e8f3a05908ac9ddbf8112af8f669d0c2ede738d9f0dc724",
+      "source_git_blob": "6c6200d75db2262e1add334bcb6188f560659296"
+    },
+    {
+      "path": "airline_market/sim/sellability_cache.py",
+      "bytes": 3090,
+      "sha256": "74364f97ebb332c713709ecbb88cd9716bef75e40eda15bc91e59679e87cd997",
+      "source_git_blob": "508446867b207bc8d9791da07f06f55336e4a1b8"
+    },
+    {
+      "path": "airline_market/sim/shared_background.py",
+      "bytes": 11204,
+      "sha256": "e680e6a5aae6fb49501992aa89469e468c0bffe246e1c4ace316cfec8f91ad93",
+      "source_git_blob": "bd7cf72368eee5adcd949f551629ccfcf4197080"
+    },
+    {
+      "path": "airline_market/sim/sparse_access.py",
+      "bytes": 5071,
+      "sha256": "1a9b8021bee7f5c4de4d327e47b3f5d591603d5d5e8e6e196c03306b5f8e48a8",
+      "source_git_blob": "77ee16a41efd8bc86174af045458b1c62da49674"
+    },
+    {
+      "path": "airline_market/sim/state.py",
+      "bytes": 2958,
+      "sha256": "50fe3544ae35a49b3315b710210cdecae0506824cbc90d8917a3a6ebaad9a029",
+      "source_git_blob": "449f7440591fc5e67ee85cf4e4f393942a1bd221"
+    },
+    {
+      "path": "airline_market/sim/step_tape.py",
+      "bytes": 4721,
+      "sha256": "3061c0c68b1479d456e4af299ea1070818f7ffaa3f1278bdc77d34cdb6715508",
+      "source_git_blob": "5c0bdfe91466c008ee43a10ac3b2790da4b3be0d"
+    },
+    {
+      "path": "airline_market/sim/tape.py",
+      "bytes": 6336,
+      "sha256": "8df7191e59df7e78b3cde608c3695fb8bf145a8990363da8b6c4649b663cf1b8",
+      "source_git_blob": "a66d5a1ce592914451ea0b40356a47accaac2fe6"
+    },
+    {
+      "path": "airline_market/sim/unreserved_spells.py",
+      "bytes": 13822,
+      "sha256": "12f9babbde3b3f4add9c9cf610e6d8b19ba6d250ee52861088967da48ab47bca",
+      "source_git_blob": "13fab64552daa6e5b9015e187db1dfe76912944f"
+    },
+    {
+      "path": "airline_market/solvers/__init__.py",
+      "bytes": 296,
+      "sha256": "a34328fbba650624f9ad8cfebb0e2f07922d7907f51de7441e903f7f0c76738f",
+      "source_git_blob": "a16fba104b854c6860383452b37d366627d4aa2f"
+    },
+    {
+      "path": "airline_market/solvers/brute_history.py",
+      "bytes": 8788,
+      "sha256": "ae8bc180882c67108b0ee2bff7294d0910089ba657cec545efe42735680b390b",
+      "source_git_blob": "49b621153619c3e5e53ae85d3fccb9234b1b1878"
+    },
+    {
+      "path": "airline_market/solvers/conditional_tail.py",
+      "bytes": 4378,
+      "sha256": "5308add252bea789b13532e1020ad7f99ddfaa166894fbd2f62c4c000eeda67a",
+      "source_git_blob": "5c239d115ad9020403c604b0d465b5dd485a8569"
+    },
+    {
+      "path": "airline_market/solvers/exact_dp.py",
+      "bytes": 15565,
+      "sha256": "2074efc46db51a665718ca6ce4fcb110db345b752b01971a4bdb0188b88139e5",
+      "source_git_blob": "a7628ebb8a5e6fcdc9b3d6a9de90449532a29b64"
+    },
+    {
+      "path": "airline_market/solvers/finite_dp.py",
+      "bytes": 8488,
+      "sha256": "d5471e3eab08e1de4b1301440be2a4d9b66b44dd2d99f5bf7e0a527e7ea12d2e",
+      "source_git_blob": "e1fc0636ca43516d18e43b076f07d76f4819de01"
+    },
+    {
+      "path": "airline_market/solvers/fixed_search.py",
+      "bytes": 4179,
+      "sha256": "fe2324da714f0ac4c71688427f4f39332cbcffd304efd39ba0f4698ebe06dbf4",
+      "source_git_blob": "4221d7bd4076ee7ac6c56b1576781ecb4fa996bc"
+    },
+    {
+      "path": "airline_market/solvers/lagged_dp.py",
+      "bytes": 1056,
+      "sha256": "f04cf43cb8fbba9b66a5cecb1cb2e93c67b3f44535a0cca83de09aad954f5652",
+      "source_git_blob": "7e51b1173e73808881cc709a1ec84bec1d44b32a"
+    },
+    {
+      "path": "airline_market/solvers/legacy_rollout.py",
+      "bytes": 4550,
+      "sha256": "8dace8b72dd54288837ba0911d9cec1ea5cfef5f2b30dcd060dce17817176160",
+      "source_git_blob": "0eb8af97214ad1b64c8d60077a8ce70046326b20"
+    },
+    {
+      "path": "airline_market/solvers/matched_mpc.py",
+      "bytes": 2342,
+      "sha256": "eb4ba0051b26c8ab0e2bc578d293b00216011dec688e3ef2fa806ecf6047d81e",
+      "source_git_blob": "788afee67f91d825117a68ab52bcf2405562bb99"
+    },
+    {
+      "path": "airline_market/solvers/mpc.py",
+      "bytes": 20140,
+      "sha256": "43616a8ff8c8ce461532264110715fa0166d28853c95781e23487c98fac8a4ff",
+      "source_git_blob": "9aed6875b4c8c315816cedc35d26fba3ae4127ee"
+    },
+    {
+      "path": "airline_market/solvers/oracle_dp.py",
+      "bytes": 1157,
+      "sha256": "04f61eb98d0db049696f6de9f1c0d1c6a1c796bb8819de2746c8d06391509889",
+      "source_git_blob": "8eab62b5502d3eb2dbbaf6bbc73521948511a2fe"
+    },
+    {
+      "path": "airline_market/spec/__init__.py",
+      "bytes": 164,
+      "sha256": "817702c28c032e2a6adbb45a38ed3139a26f9b53abcb7e396927c03c918968ed",
+      "source_git_blob": "197f96aad1be3c4b15c89477904ff9ff6c5664a6"
+    },
+    {
+      "path": "airline_market/spec/compiled.py",
+      "bytes": 3174,
+      "sha256": "10af64d258d292940c8313ad64c6a1dd43d6ee4f0a2d9623ef9364f38c7c7d3a",
+      "source_git_blob": "9fd3ceb6ceb1348ab98c7c85b6b963ee32ad30d0"
+    },
+    {
+      "path": "airline_market/spec/features.py",
+      "bytes": 1535,
+      "sha256": "4f5139386938e14b2626fc088dd18e14dcdcfa6445ef56634a21f7890bd44266",
+      "source_git_blob": "29b81fa07ebea8fa2ecd0e60df4fdeb36af4bd5c"
+    },
+    {
+      "path": "airline_market/spec/information.py",
+      "bytes": 4112,
+      "sha256": "31c101a935698fb9c34f016264e9002b4929e2360aa943d69dbd2413b7e6a78c",
+      "source_git_blob": "3a1ff225572889242a2c61e375da769ac32bb974"
+    },
+    {
+      "path": "airline_market/spec/io.py",
+      "bytes": 5399,
+      "sha256": "9ce96ca4c9086d5832bb489bef0ed6f0800ee7fda5f48958127443b72bdee681",
+      "source_git_blob": "ec37ff7eac4409435e0f06a67b3b2dbe4ea532d5"
+    },
+    {
+      "path": "airline_market/spec/library/cx_example_C.json",
+      "bytes": 8539,
+      "sha256": "073cb84a7038573971ce95b69b7a0c9e6dca915843e43a58e7ad3966b1ffd90a",
+      "source_git_blob": "dda56079e73ed5b61d71ba5f86a0c7776a7547c0"
+    },
+    {
+      "path": "airline_market/spec/library/cx_example_X.json",
+      "bytes": 8539,
+      "sha256": "af697ea6324d56fd3ea121ea2ea8227880c2d43b0fd13d17d597635290121f5e",
+      "source_git_blob": "066eb5c6755eb9534bda0ba2a75cc69d287de086"
+    },
+    {
+      "path": "airline_market/spec/library/hub_feeder_small.json",
+      "bytes": 21734,
+      "sha256": "3deb9ec4dc9f79cf68a9a71410711f037e8206cddd1b50169baa2c29ec1d41fb",
+      "source_git_blob": "53b1550fb22048cabc5dd0f43b86c263e2599870"
+    },
+    {
+      "path": "airline_market/spec/library/independent_legs.json",
+      "bytes": 17015,
+      "sha256": "ad0728a36a384aede69622e61bf3fec3e2f061373df9007c7a672c2def4abf09",
+      "source_git_blob": "8dc96afc2d0021c771eb2193830bf4529264229c"
+    },
+    {
+      "path": "airline_market/spec/library/toy_hub.json",
+      "bytes": 16318,
+      "sha256": "cd6f818b199bc7b79bde4449d25d066322daafe36ac18d61c1a05bbd5ca27270",
+      "source_git_blob": "759b80b0fc01129d7e6c2e7159d1fa7c3ade8a12"
+    },
+    {
+      "path": "airline_market/spec/library_builders.py",
+      "bytes": 13160,
+      "sha256": "55e27c936b6db6955d4729407feba8d30e7aadaf53a6846a1f0afa4256748fe9",
+      "source_git_blob": "a52d930038919ce1466c752f81e516f87fba9a93"
+    },
+    {
+      "path": "airline_market/spec/model.py",
+      "bytes": 10198,
+      "sha256": "318ac5a244b9b2b6e380f4e147801a79c70afa82fd70b24a32635b1c6c74dab4",
+      "source_git_blob": "fae03f7f409748a526f1d1f1535dcde2ccbcd8c5"
+    },
+    {
+      "path": "airline_market/spec/schedule.py",
+      "bytes": 2174,
+      "sha256": "e215e832bb3aaa01580a212b1f0ac6d737caba4f524b5b445b9e732c5f5ceb09",
+      "source_git_blob": "29f82deef46b62702d3b757715dba05c2be664b0"
+    },
+    {
+      "path": "airline_market/spec/validate.py",
+      "bytes": 16739,
+      "sha256": "3db55a2ff94436dcf52bc0b95b4ae13cab0f59ca13efa7e07f5a7007d566b42c",
+      "source_git_blob": "d683971e9eea052f9b4709b6fa0ff56983b48ece"
+    },
+    {
+      "path": "airline_market/vendor/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "airline_market/vendor/reuse_manifest.json",
+      "bytes": 3221,
+      "sha256": "e7c3856d81d526b92176f902390cd473030d2666ef2f27751b427a3ce325ff68",
+      "source_git_blob": "d7d84cda06ccdba876f1cc40d3f5f1e48722a452"
+    },
+    {
+      "path": "airline_market/vendor/ride_response/__init__.py",
+      "bytes": 76,
+      "sha256": "6f4facee29f8bdd89236e411d4da44294428e4b244cc292c35ea62d3a4c3d198",
+      "source_git_blob": "48582956f2822cddf2e7b7cc758bd5b6ef4b482d"
+    },
+    {
+      "path": "airline_market/vendor/ride_response/calendar.py",
+      "bytes": 774,
+      "sha256": "7d6e7f7c620c5dda587c66ed6b002c5864beba3ff01e65ceadd81b72ca03ba24",
+      "source_git_blob": "d60ddab469a23bf73a159d997bc064ec969096a5"
+    },
+    {
+      "path": "airline_market/vendor/ride_response/cem.py",
+      "bytes": 4453,
+      "sha256": "8652c7ebadadd532f561b3f020a01ba3cb2aee6f4e4a7b3e80c3dc574b162690",
+      "source_git_blob": "aff1bca5139ebf998c5ef4e12b14c499f4b4c3c6"
+    },
+    {
+      "path": "airline_market/vendor/ride_response/paired.py",
+      "bytes": 1919,
+      "sha256": "71f10e21c1b6cdfd5c9d8be1d5c1c83e624e84b5013640f250ba802c2fa0e3f3",
+      "source_git_blob": "e88324d1110f4b2fb35cb3ef084c8b2422468ac1"
+    },
+    {
+      "path": "airline_market/vendor/ride_response/recurrent/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "airline_market/vendor/ride_response/recurrent/common.py",
+      "bytes": 12309,
+      "sha256": "cd0035d45040dcf6381b40d49ed9b53ee3d2df7d532143bfc847fadc4a12508c",
+      "source_git_blob": "fd585523b10f0ffbdb0a46d5fcd4895cc1129ac0"
+    },
+    {
+      "path": "airline_market/vendor/ride_response/recurrent/ppo.py",
+      "bytes": 34521,
+      "sha256": "b3162d156ec94831ec34b2ce1bae2b2ce3f80f3feb04582bc253860e4d5ae552",
+      "source_git_blob": "5f4d5bbeea4ba22f369e1c8278ea06538fea369f"
+    },
+    {
+      "path": "airline_market/vendor/ride_response/strategic.py",
+      "bytes": 4775,
+      "sha256": "af7efd587668612e07c17d75a311656eb5c2bca0236cfbda3465a120c7d70ed5",
+      "source_git_blob": "1cd575206991606d5d6a35202f8ea99ac8f6c538"
+    },
+    {
+      "path": "airline_market/vendor/ride_response/weather.py",
+      "bytes": 4168,
+      "sha256": "98438ac744b0675f436174dc47a9b8a6a610b9304af5acf7e7d306fcbb4cf784",
+      "source_git_blob": "0dbcebe5d85a24eae1e66692fec12ae584b63114"
+    },
+    {
+      "path": "airline_market/version.py",
+      "bytes": 55,
+      "sha256": "651880c8bf714d1fb8aa7fad51fb5cb39007b699c8b5b371f41ae70879cc94f4",
+      "source_git_blob": "58f135bcecb1ab26ae6b8ae09d6e5c7bf831335e"
+    },
+    {
+      "path": "analysis/data/boarding_coverage.py",
+      "bytes": 2219,
+      "sha256": "f7f19d32551f82ff97e1781e504fdde74e26c67993d06923232d2dd0c0792fc2",
+      "source_git_blob": "c5ddf6c703affceb05c0c5d131d57935f29cd1b2"
+    },
+    {
+      "path": "analysis/data/market_sequence_audit.py",
+      "bytes": 5432,
+      "sha256": "64aa3d564782f593cc3a95a0f987848449439b5a7de96e1283b86f1330a67464",
+      "source_git_blob": "84728c683aa7827e1adca8ff23d627a8850d7c6f"
+    },
+    {
+      "path": "analysis/data/national_coverage_summary.py",
+      "bytes": 5072,
+      "sha256": "241bfcf65a4a3d31b1770abb57dfe5f38cfef0535703013b71b0541d0c8bf681",
+      "source_git_blob": "7816be047fa70e05550036a21af386dafdae6952"
+    },
+    {
+      "path": "analysis/data/outside_purchase_summary.py",
+      "bytes": 5263,
+      "sha256": "7c0828266594265beac95e46f489148f7e4a48456e210803aca5eb36f9efae06",
+      "source_git_blob": "7db27351e82ce2ba52153cc63005a857304ec244"
+    },
+    {
+      "path": "analysis/data/partition_background_populations.py",
+      "bytes": 1544,
+      "sha256": "c66c56a43f625cfe2789a673f7e4be550c11095df0696cc1b7b754db37adc134",
+      "source_git_blob": "7ecb7c984e46e8ec5f279a6379db52810dbe07cf"
+    },
+    {
+      "path": "analysis/data/shared_core_load_summary.py",
+      "bytes": 6847,
+      "sha256": "b400af1b7da4ce19248387253781f114af1b9a78188df900d601a90431b857f6",
+      "source_git_blob": "49ad20c31b1ab7296c07041201cf0312b5ba794d"
+    },
+    {
+      "path": "analysis/feasibility/belief_pilot_plot.py",
+      "bytes": 2230,
+      "sha256": "756b1918caebb06d53397e185fea552306da8922b847cc5729b5d0be5209610d",
+      "source_git_blob": "7f5711664e83edff24718c19afe00290799812cb"
+    },
+    {
+      "path": "analysis/feasibility/conditional_tail.py",
+      "bytes": 3435,
+      "sha256": "e426ef0ddf985a5bcf1060e4f733ca5bbb1543147ea9449e227b00d9c65ce4f3",
+      "source_git_blob": "6392923a7b04887be744ae11bea4513275eed664"
+    },
+    {
+      "path": "analysis/feasibility/crosschecks.py",
+      "bytes": 3575,
+      "sha256": "2a1ee3901be8c59defd4a9381199c1f20151a147827b35c8661f029ac90eac1c",
+      "source_git_blob": "73e7a399d36c365d2e34449c040dc4661d3e3c80"
+    },
+    {
+      "path": "analysis/feasibility/empirical_tape_budget.py",
+      "bytes": 3590,
+      "sha256": "fa8d6e90a5dbb80a89a88e693455b854a7f571ea6eb8aaf9fbec8a66bb6db57a",
+      "source_git_blob": "fc79f8325d1c3c728b0a3f3b18426da29edf221d"
+    },
+    {
+      "path": "analysis/feasibility/frontier.py",
+      "bytes": 8996,
+      "sha256": "a8bb94fe2b704516d4f1a16f2d56294358e1c7d59c8a6c9b867ae4fea62a5784",
+      "source_git_blob": "739ba147472f4556cdff3b2502b8d62a0157b368"
+    },
+    {
+      "path": "analysis/feasibility/game_payoff_pilot.py",
+      "bytes": 6763,
+      "sha256": "737e50ce7046fa8535d106a4b4b71a7b297bbe8491265cf1cba2115fcfcd34fa",
+      "source_git_blob": "6e55b3d8321edd28144be7565ca7563fa674e0f0"
+    },
+    {
+      "path": "analysis/feasibility/history.py",
+      "bytes": 3487,
+      "sha256": "e4385757d02bf6d549d0d7118e1969c59e79968a8dae8477df13051771f27e7e",
+      "source_git_blob": "decd02f9c900e6a055a53c28241dd778f0ac9039"
+    },
+    {
+      "path": "analysis/feasibility/history_frontier.py",
+      "bytes": 4838,
+      "sha256": "90b7c2df8d095bef3e5277a4cbd253047e2dba0f7a6de75ef34d0b0b85a30158",
+      "source_git_blob": "d50119e2daa54dde5e66f4b509dfc623ab48768e"
+    },
+    {
+      "path": "analysis/feasibility/i4_particles.py",
+      "bytes": 5628,
+      "sha256": "c46232f1ffc25e080966c248fa1019a1fe4134298e188ff9a7e77de57e0d6076",
+      "source_git_blob": "ef4d6dccc7011e1753dbc468b0400b4e1b332426"
+    },
+    {
+      "path": "analysis/feasibility/initial_capacity_tv.py",
+      "bytes": 11103,
+      "sha256": "8b31936a1635647a2b2c74e619d8b7afc32a78ffa651f5dd60f383eea0ce708d",
+      "source_git_blob": "33350f4164652450be09cfb8718feae4a2ae1762"
+    },
+    {
+      "path": "analysis/feasibility/initial_capacity_tv_v2.py",
+      "bytes": 11199,
+      "sha256": "f150be64abb86a50f3b1270f3b5ae12c0d252bba8b666e46036532134c656a4a",
+      "source_git_blob": "ac96c999db4895a03434bd3f18fae27ec1e60c5d"
+    },
+    {
+      "path": "analysis/feasibility/learners.py",
+      "bytes": 2918,
+      "sha256": "e4f3c8378fd2f2f39d1471324b4cf75d49d908885580e698512c091a7d266a50",
+      "source_git_blob": "d9b1bb5909c8490d788e8bd21ca91cc0c8b82845"
+    },
+    {
+      "path": "analysis/feasibility/multiscale_history_frontier.py",
+      "bytes": 4594,
+      "sha256": "b718848cdd9da60566885e7f8d0c4741bd60f12bd3bbbf8f8cd54ecfb08c24ad",
+      "source_git_blob": "698e6e687bdae85eb23e2c9f95a1f3e6bf70450d"
+    },
+    {
+      "path": "analysis/feasibility/particle_probes.py",
+      "bytes": 5873,
+      "sha256": "b11ac71c39652c17dfefe301916244e400f7e2f5e06a190e5d3bf29c6cddb9df",
+      "source_git_blob": "4ca260851fe22b127fc438fc261fe6fd6fa439a5"
+    },
+    {
+      "path": "analysis/feasibility/particles.py",
+      "bytes": 4023,
+      "sha256": "9a213ed38fca0e37e0e0d1c74c735e071c8e4e9c43818827649abe5d0e1a212a",
+      "source_git_blob": "52e10a246e7215bcb64a1e7f38f61cdcaaa28ad8"
+    },
+    {
+      "path": "analysis/feasibility/planner.py",
+      "bytes": 5523,
+      "sha256": "310ea6400a0ad443244327445b83c91c91cd0ecf97c21c598628f4b2fa687c73",
+      "source_git_blob": "bbc6b046c4f68addf1ead05b60e9272d77cf162e"
+    },
+    {
+      "path": "analysis/feasibility/prepare_common_price_lag.py",
+      "bytes": 5316,
+      "sha256": "588927ceb716152f1f5c876724b5b9ef623c9d798126e8faaa0d3db9d78ac6f2",
+      "source_git_blob": "e841e369c09732aa57a38a7d3cfedcfe39d850fb"
+    },
+    {
+      "path": "analysis/feasibility/profile_hub_filter.py",
+      "bytes": 10264,
+      "sha256": "8e2cae0a16b6ff92f5379217d6fb78fbe71d92b5b5d02643db0754c7fbaec04c",
+      "source_git_blob": "dfe051a4b62de5027d6d40ea266bc099887fc0da"
+    },
+    {
+      "path": "analysis/feasibility/rl_cost_projection.py",
+      "bytes": 2492,
+      "sha256": "8d90dfad7fc235057280c4da9fa5220418d3db4ec6d1a3d856604c846453afc8",
+      "source_git_blob": "32c07a663febd7fb4531c51c6d05d128bc147ee2"
+    },
+    {
+      "path": "analysis/feasibility/scaling_summary.py",
+      "bytes": 3450,
+      "sha256": "1bc4cd37fdf2f767fc4dffc40330977d1c08566782df1eb70954779b2129b9a0",
+      "source_git_blob": "37e2194f922dbd1a8a65f378e075149e99829a37"
+    },
+    {
+      "path": "analysis/feasibility/single_leg_saved_analysis.py",
+      "bytes": 12399,
+      "sha256": "80792f92ed0eb90e808528546827927e604c43f50f52e9a4bf814cdea66f9a06",
+      "source_git_blob": "4180ce873c402040dd0858114ad5d581b6d566c0"
+    },
+    {
+      "path": "analysis/feasibility/step_particle_probes.py",
+      "bytes": 3525,
+      "sha256": "4e0cfe0de65a70a94e6a094964b202fe4b3c3e65a810e1aaa204c36383b4e5ba",
+      "source_git_blob": "b68a4368223931e179970393ca41b29ff82d0860"
+    },
+    {
+      "path": "analysis/feasibility/throughput.py",
+      "bytes": 2674,
+      "sha256": "c8d5576b339e4937daeba7bf59ab429937d82805674be3348bbc2c8d0e311119",
+      "source_git_blob": "17525f16a34e791c0f328f5b1f58c594576c518b"
+    },
+    {
+      "path": "analysis/feasibility/type_games.py",
+      "bytes": 4662,
+      "sha256": "c4929e1f47650450a0f0fb75369a0a1967f4c3bbf8ad66b503510686c00718b1",
+      "source_git_blob": "e2701af0ec25a549a34502de74c14842e1693998"
+    },
+    {
+      "path": "analysis/validation/common_price_lag_audit.py",
+      "bytes": 2425,
+      "sha256": "f513c6bd316ef10adab8d530f14465f28d7420615540aab4d6be16337acd22e0",
+      "source_git_blob": "058b54233057cf0ed2360ef93e2b1c6ef1b792c5"
+    },
+    {
+      "path": "analysis/validation/departure_coverage.py",
+      "bytes": 3447,
+      "sha256": "080a016f53bb391aac38f215221a0532dbec755aabfd950289bc7c11788f962f",
+      "source_git_blob": "d3e2c70574e7b894c4a354c5e84440d6b45fb752"
+    },
+    {
+      "path": "config/benchmarks/R0.json",
+      "bytes": 102,
+      "sha256": "9dca00ad2e4c85283b3fa258d4fcd7918a9aeaaa95446f999b894e40839135c5",
+      "source_git_blob": "0d868d0e5198df2d0a501ba7ab602324eb1aca4a"
+    },
+    {
+      "path": "config/benchmarks/V3_MR10_full_refund_penalty0.json",
+      "bytes": 6304,
+      "sha256": "c9d908c5acb94b36d47a3afb23cff35e0b96742e65177c2571727a63f3ff1232",
+      "source_git_blob": "fc6282dfbe44129fae5f0eb89df6a89f80216e19"
+    },
+    {
+      "path": "config/benchmarks/V3_MR10_full_refund_penalty17.json",
+      "bytes": 6305,
+      "sha256": "311666827b3903c6a5935e5d6d26e740a1afb34eff06894bfa1f11f59274742c",
+      "source_git_blob": "3acda5f9c367e084f56d78a461b5fde5722c3b6d"
+    },
+    {
+      "path": "config/benchmarks/V3_MR3_cannibalization_permuted.json",
+      "bytes": 5947,
+      "sha256": "c53b97d07f4684245beff729d321f1cc9ea71d7d8a6ebaf90ab2e5626c711156",
+      "source_git_blob": "f35e32e5f43859fb03c70f00d6d460434fb4fc34"
+    },
+    {
+      "path": "config/benchmarks/V3_MR3_connection_permuted.json",
+      "bytes": 6045,
+      "sha256": "7f049903b194664816785ddfc99df6c229bda5dc20360d51bbd5efc4ff8d04b6",
+      "source_git_blob": "37d80f7b52f364bb582ac8347448ead56a85ea89"
+    },
+    {
+      "path": "config/benchmarks/V3_MR3_logit_asymmetric_permuted.json",
+      "bytes": 6008,
+      "sha256": "ca2a608cad0496cec0a1aca575e67ecd6bba94ef64b46262a79688ad49f74a7f",
+      "source_git_blob": "5a554f69e69d370e5af817207315c5006b5a9ab1"
+    },
+    {
+      "path": "config/benchmarks/V3_MR3_logit_symmetric_permuted.json",
+      "bytes": 6006,
+      "sha256": "cb14c5ce73ab7c41f7e9cf9f5c0251d64677293e5ed964969e819e3eb5d9902c",
+      "source_git_blob": "0f2ee70c4af8265fcde4e3b860e608db143f9e63"
+    },
+    {
+      "path": "config/benchmarks/V3_MR3_one_leg_permuted.json",
+      "bytes": 4645,
+      "sha256": "4e0be466810a231ac1aee608848a6f6169d778550aa3cc50473a90f9149fdc15",
+      "source_git_blob": "cbbe113a4cf80497c38640cfc6f08a0f8be6abfe"
+    },
+    {
+      "path": "config/benchmarks/V3_MR4_symmetric_policy_T4.json",
+      "bytes": 5948,
+      "sha256": "30a8843303e0109a97440b978b8cd4ee3c31791181b72268e3d3d0ac28ed38ec",
+      "source_git_blob": "c186626aa845009c3e04ace90b32bb68b274ae42"
+    },
+    {
+      "path": "config/benchmarks/V3_MR5_I0_original_x2.json",
+      "bytes": 16329,
+      "sha256": "8f342628bf1b7103829215e09bd584dac81ef6944232c56f16dc32c05134756a",
+      "source_git_blob": "4118091cae0ea47755b4261deef78c6c5b24e5ec"
+    },
+    {
+      "path": "config/benchmarks/V3_MR5_I0_original_x4.json",
+      "bytes": 16369,
+      "sha256": "8fd3222171caeaddd93e76d81bb02782e8978aa6adbde61fddbc6f89ee3bdd3f",
+      "source_git_blob": "119eea7f422d7414b7ef6626621dce2ffc8f436a"
+    },
+    {
+      "path": "config/benchmarks/V3_MR5_I3_original_x2.json",
+      "bytes": 20870,
+      "sha256": "89b3b8d08f97a26748d4cbbf7256d4b00dac56d33bd55f15ec206acbc5775a2e",
+      "source_git_blob": "665340b387fd36b08781b5fb09a8fff918c4faab"
+    },
+    {
+      "path": "config/benchmarks/V3_MR5_I3_original_x4.json",
+      "bytes": 20912,
+      "sha256": "113927d9c54f5e8815bce8f8ea9ed7b6d97e19ecc7df9d6556ee1e553f524900",
+      "source_git_blob": "5015c01a422fa42a00508a2426b6f060ac043a1d"
+    },
+    {
+      "path": "config/benchmarks/V3_MR5_I4_high_T5A4_x2.json",
+      "bytes": 21210,
+      "sha256": "9ce0f59271b8a470dfab230ef126d046d86e8e0d2978c33897db6d95dc51f46a",
+      "source_git_blob": "6506a9fd08791d705b892dad89cbfae8943aec37"
+    },
+    {
+      "path": "config/benchmarks/V3_MR5_I4_high_T5A4_x4.json",
+      "bytes": 21252,
+      "sha256": "cfd3830ece53ce57270c14bf69e02a254631301130fa955111a433be19aa06dc",
+      "source_git_blob": "47f2de9ce4db6806a14e3eb2c443eb0af5a26988"
+    },
+    {
+      "path": "config/benchmarks/V3_MR5_I4_low_T5A4_x2.json",
+      "bytes": 20995,
+      "sha256": "444baaf6f31f94d7d0c2460acbabadb41af5d2b2b1ca3e4200768866a8a08d8a",
+      "source_git_blob": "3b15584b4a10b4d53ae271ba8be41fa791206476"
+    },
+    {
+      "path": "config/benchmarks/V3_MR5_I4_low_T5A4_x4.json",
+      "bytes": 21037,
+      "sha256": "7cb94f7e3631b18e53cef9389f43ec5fc208333281973fc7d002cec78b6aabed",
+      "source_git_blob": "931e9f9a3a30a458b98efe26e3afe90323f2b7ef"
+    },
+    {
+      "path": "config/benchmarks/V3_MR6_I0_all_zero.json",
+      "bytes": 16318,
+      "sha256": "4a667a8843029225da626a78b1978bcef7492f92c4d1ff9409fb2b372b2cdeb0",
+      "source_git_blob": "28657d79d16e38f78da81e4b0b38df20a63da239"
+    },
+    {
+      "path": "config/benchmarks/V3_MR6_I0_main_only_zero.json",
+      "bytes": 16318,
+      "sha256": "249e3564594014e36dbe3b2231aa382c8eaaad4d6a212f2e3b9e4cb9d22f2c47",
+      "source_git_blob": "92cd700109afb83fce137986497186501f5eb254"
+    },
+    {
+      "path": "config/benchmarks/V3_MR6_I3_all_zero.json",
+      "bytes": 21733,
+      "sha256": "ac1c01246db5415a372e4be889d06f9a62b58b2a3c0fcf05585f9d13108d3e05",
+      "source_git_blob": "b1f1f4ab667ffb32259a08b882aa15e583b1c5d9"
+    },
+    {
+      "path": "config/benchmarks/V3_MR6_I3_main_only_zero.json",
+      "bytes": 21733,
+      "sha256": "ea2c10c01e4dee8744b8c9f112021e988389866af6bdd35dded1459e6afc9e95",
+      "source_git_blob": "5184b53b0321e851fdacb57512745d48dc95d4dc"
+    },
+    {
+      "path": "config/benchmarks/V3_MR6_I4_high_all_zero.json",
+      "bytes": 21184,
+      "sha256": "555b1614464abdef556b096c764d74396240d000464280fcc0150d7a80c08e57",
+      "source_git_blob": "99ffaeccad175004325d7f795fe06d7d3f6ca3dc"
+    },
+    {
+      "path": "config/benchmarks/V3_MR6_I4_high_main_only_zero.json",
+      "bytes": 21184,
+      "sha256": "cc63421e6183d89ba3e5c4d3e9c9f1547554d0c6733fe392ad23d26e342b4288",
+      "source_git_blob": "ce73cee0ad2223b8f6c6c809e629fef1b0955b28"
+    },
+    {
+      "path": "config/benchmarks/V3_MR6_I4_low_all_zero.json",
+      "bytes": 20969,
+      "sha256": "11362a93c90e51b0eab16930cc57ef456c72106523496b3a90f82817d1aed487",
+      "source_git_blob": "b5d5472616b02ce086e3615088b0a25595e49f01"
+    },
+    {
+      "path": "config/benchmarks/V3_MR6_I4_low_main_only_zero.json",
+      "bytes": 20969,
+      "sha256": "1fa830b9a7d51f2952306d9ab0abd8d28a5f620d1cb9851e9222e8a2d929706c",
+      "source_git_blob": "0c8897f41cfe695d722efd62b6768a0a7ac89dd4"
+    },
+    {
+      "path": "config/benchmarks/V3_MR6_conversion_delta0.json",
+      "bytes": 4287,
+      "sha256": "23934d40b7e4388d32726925295393b50c33b08e6f25c5e78d76d6f55f1dbf11",
+      "source_git_blob": "d542fd79f78ac32e29ed18e058ce5b450c19dfc8"
+    },
+    {
+      "path": "config/benchmarks/V3_MR6_conversion_delta10.json",
+      "bytes": 4288,
+      "sha256": "3d72d171ece758638ee542be84853b2af98c34822e4d006dcbd0b218e7ccde68",
+      "source_git_blob": "af051daa1192f7a9e7843cf4f7c14d1a73626bfd"
+    },
+    {
+      "path": "config/benchmarks/V3_MR6_conversion_delta2.json",
+      "bytes": 4287,
+      "sha256": "17ff809f229f5116ead80ad34815cb58c693ea00e404e4fa6a23b919ef96a9e9",
+      "source_git_blob": "f109a515a1ca32c630d31a9b1ea47258253d219b"
+    },
+    {
+      "path": "config/benchmarks/V3_MR6_conversion_delta20.json",
+      "bytes": 4288,
+      "sha256": "bd0337a0c23c3153784e9b2ebe10e8e95988eff3e6e08fe7f5ec4038b0048852",
+      "source_git_blob": "7a7e508fd8baed8618567a468e2b96c1f5ac8c27"
+    },
+    {
+      "path": "config/benchmarks/V3_MR6_conversion_delta5.json",
+      "bytes": 4287,
+      "sha256": "2af74d470e4d07dfb8bc266efd6daa430753127b9290fbcb3d38f36e15c88586",
+      "source_git_blob": "8b6914a7ab6baf111c3369738602a58154d14f46"
+    },
+    {
+      "path": "config/benchmarks/V3_MR6_conversion_delta50.json",
+      "bytes": 4288,
+      "sha256": "20bb725244c61ebac63b99a81cd4218555f80e1d12f3f1ff96c669c8aa02382b",
+      "source_git_blob": "b0ea7bb4caf71b77d3bf3a8c20736a53021b4cdb"
+    },
+    {
+      "path": "config/benchmarks/V3_network_finite_price_cannibalization_v0_monopoly.json",
+      "bytes": 5927,
+      "sha256": "6193e50e78dc762dc5c0a6640fa10edc4859ca32a92b7491f1024fb784ba2c45",
+      "source_git_blob": "51914848522b093e92d18c4d3e66e9825f6f6de0"
+    },
+    {
+      "path": "config/benchmarks/V3_network_finite_price_cannibalization_v0_unavailable_rival.json",
+      "bytes": 7450,
+      "sha256": "ed033235621b6807f4900840383cc450a0627c14aa5e68ad879cedec10f38b31",
+      "source_git_blob": "bd5002fdfde87d5beae26fbc1d9828331772d23c"
+    },
+    {
+      "path": "config/benchmarks/V3_network_finite_price_cannibalization_v1_monopoly.json",
+      "bytes": 5927,
+      "sha256": "0ac13358f13a186177df4614ea2ba28ee84cb713d470d8924dfb66024ec1c057",
+      "source_git_blob": "d09e96942ff395b4342941682fce44bb1817f41e"
+    },
+    {
+      "path": "config/benchmarks/V3_network_finite_price_cannibalization_v1_unavailable_rival.json",
+      "bytes": 7450,
+      "sha256": "bbe0c097e8aca5f96aae4f363e1da5cc16d0aeacfe61a6e139a0f075358836a5",
+      "source_git_blob": "f82b402355b5cdce8909f0af177b40a4944edb12"
+    },
+    {
+      "path": "config/benchmarks/V3_network_finite_price_cannibalization_v2_monopoly.json",
+      "bytes": 5927,
+      "sha256": "896140d6b5412e4be365c792bd7a0dc2c416dc4f0fc6daf9cef72210197fc42a",
+      "source_git_blob": "dd959cb27a5523cbe951e14b8260126c05cd2f45"
+    },
+    {
+      "path": "config/benchmarks/V3_network_finite_price_cannibalization_v2_unavailable_rival.json",
+      "bytes": 7450,
+      "sha256": "6940aec594fb5d9f6dd3eef20a331c1a9cdb47ff329adbc22fecdc78e8ecea5a",
+      "source_git_blob": "88b0c3fde68fc1fa40ee3ad1e054e7af6e044125"
+    },
+    {
+      "path": "config/benchmarks/V3_network_finite_price_cannibalization_v3_monopoly.json",
+      "bytes": 5927,
+      "sha256": "2e61aa51371acfc2ff867094f15ab66d59753360550c05e71d179be3c5e7fd42",
+      "source_git_blob": "8a82ece5f67616375e211a6d7405ca60f688cbb3"
+    },
+    {
+      "path": "config/benchmarks/V3_network_finite_price_cannibalization_v3_unavailable_rival.json",
+      "bytes": 7450,
+      "sha256": "ab613dcf787416f6fb121db07bbdce666c56396e414cf38c561d15576853934a",
+      "source_git_blob": "3030c4157629805c449dcc110fced59c6b2c3ced"
+    },
+    {
+      "path": "config/benchmarks/V3_network_finite_price_cannibalization_v4_monopoly.json",
+      "bytes": 5927,
+      "sha256": "480fdec96aaa0a5b0508937e120aedf9c4c8e5f0bee7bd56e2da282becfc1549",
+      "source_git_blob": "d4cf41d4560709b814dfb53674a12154b1786355"
+    },
+    {
+      "path": "config/benchmarks/V3_network_finite_price_cannibalization_v4_unavailable_rival.json",
+      "bytes": 7450,
+      "sha256": "d13ec2e427adc14d712582983fddaa1492dba50cf1e95aedbc537825bf252563",
+      "source_git_blob": "830d5d668ea9392ac679d0cf9f0f25d4d50a78ea"
+    },
+    {
+      "path": "config/benchmarks/V3_network_one_leg_quality_v0_monopoly.json",
+      "bytes": 4626,
+      "sha256": "544e27dc0919602bfbc08d05a4bea40121bc7e6a2145fbb46ffa744f0f8892d8",
+      "source_git_blob": "0ff97fcfd7056457d81ca7d7d934926be1923f01"
+    },
+    {
+      "path": "config/benchmarks/V3_network_one_leg_quality_v0_unavailable_rival.json",
+      "bytes": 6149,
+      "sha256": "9f3e8892384c91a98dd01b17a77e12d9fa677ca21266ff5823de8f726d590df4",
+      "source_git_blob": "584f13de4c47781aa26ebdab46145e73ad54ed64"
+    },
+    {
+      "path": "config/benchmarks/V3_network_one_leg_quality_v1_monopoly.json",
+      "bytes": 4626,
+      "sha256": "9f99d542d9d868ba2d596182fe01d52b79365460ac818535b28c3f736d19be4e",
+      "source_git_blob": "29fa4e447f65da1adb8a81b802ac3ae39d1942f3"
+    },
+    {
+      "path": "config/benchmarks/V3_network_one_leg_quality_v1_unavailable_rival.json",
+      "bytes": 6149,
+      "sha256": "81db101d5c2e34a65f5a66b440ae8d5f7214905142eb52193c4d3e7889bdd426",
+      "source_git_blob": "487f076599e322ddc224914ee4756880bf2b725f"
+    },
+    {
+      "path": "config/benchmarks/V3_network_two_leg_connection_v0_monopoly.json",
+      "bytes": 6019,
+      "sha256": "1eb660a273a1f7ecf7d6b3d015d79e066e7f9ed48fb7ca5e31abbc49c4b10d35",
+      "source_git_blob": "6e023eb0b726f7afa582330fd76e76a04f93baaa"
+    },
+    {
+      "path": "config/benchmarks/V3_network_two_leg_connection_v0_unavailable_rival.json",
+      "bytes": 7542,
+      "sha256": "35d75dba7c2062549d41e340c307062d3bcce69b55864f48cbf74c7501ba885b",
+      "source_git_blob": "4b6f9eeceef76cc4ad9bdaa9b8e5c5ee39289915"
+    },
+    {
+      "path": "config/benchmarks/V3_network_two_leg_connection_v1_monopoly.json",
+      "bytes": 6019,
+      "sha256": "a5fcefa471b6ae4bd64bdb268df561611721683562aed40ff47e44502251f2fd",
+      "source_git_blob": "ce84627bf8a8e65883fc1ec9f3125a2cf5acbe25"
+    },
+    {
+      "path": "config/benchmarks/V3_network_two_leg_connection_v1_unavailable_rival.json",
+      "bytes": 7542,
+      "sha256": "c143940c3476d0823968ca08ea2828bba4e7809f3df87408a1fe2cd992c14227",
+      "source_git_blob": "7e4382d8a5f72bfce66535e2e24ff3a82002f762"
+    },
+    {
+      "path": "config/benchmarks/V3_network_two_leg_connection_v2_monopoly.json",
+      "bytes": 6019,
+      "sha256": "9b21e3db39bae407b8519347bf78812428ed21f62cdce387cbc4e40eb0504ab0",
+      "source_git_blob": "723f2d6b991f8355442c80d97ee10a00f3e8e550"
+    },
+    {
+      "path": "config/benchmarks/V3_network_two_leg_connection_v2_unavailable_rival.json",
+      "bytes": 7542,
+      "sha256": "0a14e6e3ed6aa7dd0a1f5af087f679743ee8bada6cc4b50c23899e60f35091c9",
+      "source_git_blob": "574495f3b26c14b2c02eb4b8acc26fe8782e1ddd"
+    },
+    {
+      "path": "config/benchmarks/V4_EMSR_fourclass_C124.json",
+      "bytes": 4474,
+      "sha256": "e8b84613c4cc7a94fb5233198303d9bcbaea49c75fe603aea560e3b54e6297da",
+      "source_git_blob": "57144273d328cd71a65ae44fcf2fd99f48b804ea"
+    },
+    {
+      "path": "config/benchmarks/V4_EMSR_fourclass_C164.json",
+      "bytes": 4474,
+      "sha256": "9c7baa0c77458b26e21652a73fb95885aa6bfc817e63301c42097cc9546d573f",
+      "source_git_blob": "3379008d8ca5275f49ef390e49ceacdecbd9a2f4"
+    },
+    {
+      "path": "config/benchmarks/V4_Littlewood_C8_binomial.json",
+      "bytes": 5475,
+      "sha256": "484459a7763d7f08aea168f6a9bbc80eb6194610de352557fec210da2ecc2f92",
+      "source_git_blob": "51c7684204e50523d184310a8cb7ebeda87ab401"
+    },
+    {
+      "path": "config/benchmarks/V4_exponential_k1.json",
+      "bytes": 5094,
+      "sha256": "65c96bb66c0ae60d824011f46ef9c596a7ffb498de19505b329978f7129d12da",
+      "source_git_blob": "5d95ac1c83655f3457beb4f8d7e690836ec5867a"
+    },
+    {
+      "path": "config/benchmarks/V4_exponential_k16.json",
+      "bytes": 5099,
+      "sha256": "5d6c05813ebcf7c3faa73adb0c944f962604adf9a149be740a9ab02fa17c3f0a",
+      "source_git_blob": "8f2921131111245a92ec70e3517ff3f3a90d0ea9"
+    },
+    {
+      "path": "config/benchmarks/V4_exponential_k2.json",
+      "bytes": 5094,
+      "sha256": "6865edbd9941839a330f5fe5f57ad4bfaf07d32af96a3205db44dd89809e3fac",
+      "source_git_blob": "4e0511e8200a0e373979376a54b77fb183c072e0"
+    },
+    {
+      "path": "config/benchmarks/V4_exponential_k4.json",
+      "bytes": 5096,
+      "sha256": "6e2c1280ce55e212808ebd6a02cb7cd8297e4601bedf266c029f8622d1d8f11d",
+      "source_git_blob": "0d7922622802b5d34cb5f0da593c87c125d7f260"
+    },
+    {
+      "path": "config/benchmarks/V4_exponential_k8.json",
+      "bytes": 5097,
+      "sha256": "f5ff963f09b37ff17bb442ab46d59a5ab25730836fbb34c137100060ddbfe4f0",
+      "source_git_blob": "867f57793ff318bc2fb861666d4d3ac1368d3018"
+    },
+    {
+      "path": "config/benchmarks/V4_fixed_fare_reject_low_for_high.json",
+      "bytes": 5393,
+      "sha256": "4301ab1b8930ab24f9c420401ea5661affd2b4a2c9656be90ac267e7c6086596",
+      "source_git_blob": "e791badf5e99e3c5f071ab5287c9020dd14d87ce"
+    },
+    {
+      "path": "config/benchmarks/V4_fixed_fare_single_three_class.json",
+      "bytes": 5759,
+      "sha256": "fe4e36f4f8e278867c47cc9a259efa5caf769dec4802b66b9dd3a3165708f0d3",
+      "source_git_blob": "7c8aa97bcaf3aad7547629ec831c55b814e59553"
+    },
+    {
+      "path": "config/benchmarks/V4_fixed_fare_single_two_class.json",
+      "bytes": 5432,
+      "sha256": "c94d081d3719638d75f10da07c3857fb56530a56e139cc40fc2f05d4f980737f",
+      "source_git_blob": "f06feb54f89fb16d062adec77c859e28f19fe9be"
+    },
+    {
+      "path": "config/benchmarks/V4_fixed_fare_two_leg_network.json",
+      "bytes": 6664,
+      "sha256": "43e1afaa08a5ec9eefea374d0aa1ada2c6579ea75a8ce0aa57dba43d6ba896c6",
+      "source_git_blob": "d8eaa27e61bb115c82dcbe5c52f94ee0fe930171"
+    },
+    {
+      "path": "config/benchmarks/V4_logit_asymmetric_v1.json",
+      "bytes": 6000,
+      "sha256": "6853b058a3da0232b3e5afd1b3ea302df187181dd678f060e6a09a3a0d50584d",
+      "source_git_blob": "7d1b7c1e76e1522ec1c7d7da036c7340b8689144"
+    },
+    {
+      "path": "config/benchmarks/V4_logit_symmetric_v1.json",
+      "bytes": 5998,
+      "sha256": "77d8282750a6fb6fd8a7e9b2802a3bdc4bb49a59b763c4bd3b40caed85de07aa",
+      "source_git_blob": "3d32677a5bfcfb988f55b07f98b63c4c863f8ed9"
+    },
+    {
+      "path": "config/benchmarks/V7_single_leg_T5.json",
+      "bytes": 4602,
+      "sha256": "f0e7d41181e33b5ac71880191b31d3a5ec9e2919b634c4d8d61a23e954f68939",
+      "source_git_blob": "46a83209b45ae650daace51b232763885861cd66"
+    },
+    {
+      "path": "config/benchmarks/baseline.json",
+      "bytes": 22907,
+      "sha256": "5ab94abbb2b5e99ad933ad44d3b90a3109c4e97723fe42a8e8a461fc889c6bd0",
+      "source_git_blob": "71b719bc5ba44df2aefc7a8a30c166aa7abc09f0"
+    },
+    {
+      "path": "config/benchmarks/booking_timing/C1_H25_HHLL.json",
+      "bytes": 5587,
+      "sha256": "ab1ab2d31df04ecfeb7bb0ca54dd91fd3c9f0aa0211aa3ff44c7e497547293b3",
+      "source_git_blob": "e7686747ce4328da69ab5c40285acecb1b85fa23"
+    },
+    {
+      "path": "config/benchmarks/booking_timing/C1_H25_HLHL.json",
+      "bytes": 5587,
+      "sha256": "84a98845619fd783d6b4ba808b28d646fb4ca3950a9dc1e8e30f21cb6e428d35",
+      "source_git_blob": "c3b26caf82a88183e6a6239366d6d49a74bd4487"
+    },
+    {
+      "path": "config/benchmarks/booking_timing/C1_H25_HLLH.json",
+      "bytes": 5587,
+      "sha256": "f4c3362f08e2ba59e0d9d23cee259bcd5b8049d9f2f5cb66a9156cbf5d78e6b0",
+      "source_git_blob": "d2908be204282d32fc7227504efee65acfb0a009"
+    },
+    {
+      "path": "config/benchmarks/booking_timing/C1_H25_LHHL.json",
+      "bytes": 5587,
+      "sha256": "1fdddf072a6f87becb5cb04d32b164dfe2a02f5a259dd2f31f6a53ee2de86ee4",
+      "source_git_blob": "713b3657f0ebafe1b07abe44525ce9563d885c83"
+    },
+    {
+      "path": "config/benchmarks/booking_timing/C1_H25_LHLH.json",
+      "bytes": 5587,
+      "sha256": "2c6c733643eddeb04fbea70bfa2c9362fc1e5447999d0047797f526b9168e116",
+      "source_git_blob": "c080d44f13bea7fe3daa807c330a6b53676b8cc4"
+    },
+    {
+      "path": "config/benchmarks/booking_timing/C1_H25_LLHH.json",
+      "bytes": 5587,
+      "sha256": "f8ad2e0b28306c72dde1776446858b49097d6ff07460568c89c2ccc808f9afe5",
+      "source_git_blob": "a040554e9085f08106f81bad5ea8b61ebe05c5cb"
+    },
+    {
+      "path": "config/benchmarks/booking_timing/C1_H75_HHLL.json",
+      "bytes": 5587,
+      "sha256": "3afee57038600862de5afd70b5908803ef61a4bf99d0b2a622326cec74a2ac21",
+      "source_git_blob": "39f65880b34232ae713317b7ac61aae9f3c9cd56"
+    },
+    {
+      "path": "config/benchmarks/booking_timing/C1_H75_HLHL.json",
+      "bytes": 5587,
+      "sha256": "e1dc34be86f0e54ed158ed8a410dae67dd7fb0d868df44dc0b2df397fb4cbdc6",
+      "source_git_blob": "daf1e51b9f246ceab37591d75f22f6543a6c4466"
+    },
+    {
+      "path": "config/benchmarks/booking_timing/C1_H75_HLLH.json",
+      "bytes": 5587,
+      "sha256": "793e5d852e4680d814d393333e83cd2e9ab6a8fbe70751894516ddf71b54a049",
+      "source_git_blob": "a538b75264f525b40a622a302f12270e9202d156"
+    },
+    {
+      "path": "config/benchmarks/booking_timing/C1_H75_LHHL.json",
+      "bytes": 5587,
+      "sha256": "2045b2e7e802efd3ec8a27fe8d64b0b4e0420ab55bd1928f15bc701f1b5c7465",
+      "source_git_blob": "903704e80388ad13cb092a8431a675d66db27778"
+    },
+    {
+      "path": "config/benchmarks/booking_timing/C1_H75_LHLH.json",
+      "bytes": 5587,
+      "sha256": "bed1b339ac640592b93f78601f4bef5b55986df085b7fcc066e60d64e581473e",
+      "source_git_blob": "656cfa90cde3b7873d2bad54a1cbabcf530902e1"
+    },
+    {
+      "path": "config/benchmarks/booking_timing/C1_H75_LLHH.json",
+      "bytes": 5587,
+      "sha256": "4bcd11b22fb00d7580d74bb278350f8fc2f3dfa646d314c0a74eafedf3c66268",
+      "source_git_blob": "a603dceb1f736c7b9a3011700b894b32a0e96a80"
+    },
+    {
+      "path": "config/benchmarks/booking_timing/C2_H25_HHLL.json",
+      "bytes": 5587,
+      "sha256": "c6d6da784ef95b75297f0e60e29f9c4e24a87df78be65a475ea1f55c5cbf26a1",
+      "source_git_blob": "f93b314bd1edd222bbfd02ce8ba4e5809864f886"
+    },
+    {
+      "path": "config/benchmarks/booking_timing/C2_H25_HLHL.json",
+      "bytes": 5587,
+      "sha256": "0f3acdedf5e314fa3b44cce8d58fca5c5b9a84e1852ea9834803877908aaa70f",
+      "source_git_blob": "b13d68ee9f74fd8116cdf2ab3692c96f15f68e8a"
+    },
+    {
+      "path": "config/benchmarks/booking_timing/C2_H25_HLLH.json",
+      "bytes": 5587,
+      "sha256": "bd5c0afa53de41c9bd8cc1cd53b5fc76d682cdaf30c0b0c2fa52b831acbaa0d4",
+      "source_git_blob": "381184a2a4dd213bf96d81dc940b916ae110d867"
+    },
+    {
+      "path": "config/benchmarks/booking_timing/C2_H25_LHHL.json",
+      "bytes": 5587,
+      "sha256": "a83a11af58d2fbdcfc8110099e77a2b5f0799dfdc5789904b82bf8abfbd07e51",
+      "source_git_blob": "8ba22c53426af2b1109dfec048235f5a9f3872ce"
+    },
+    {
+      "path": "config/benchmarks/booking_timing/C2_H25_LHLH.json",
+      "bytes": 5587,
+      "sha256": "b5b8fe05f4d95fa491d698700181767e046a899f8428a2388aa5d963ba95b296",
+      "source_git_blob": "f310a89e105085c4fbfd1f24e33895f5f0b2bbb6"
+    },
+    {
+      "path": "config/benchmarks/booking_timing/C2_H25_LLHH.json",
+      "bytes": 5587,
+      "sha256": "f75c56f286c16949b96c39889e7d1bd188381309ecb83545ffb043e36199c8e7",
+      "source_git_blob": "0890765fca02cfb14e779d3e41c3edb3007b21dd"
+    },
+    {
+      "path": "config/benchmarks/booking_timing/C2_H75_HHLL.json",
+      "bytes": 5587,
+      "sha256": "0d7cd99029032b1e01fb9095cd0410d30bc6cc133324c8c5fd32c2b50ad52c4d",
+      "source_git_blob": "c326a85896c2d2b8ed672e7fbf0e00ec1cf82195"
+    },
+    {
+      "path": "config/benchmarks/booking_timing/C2_H75_HLHL.json",
+      "bytes": 5587,
+      "sha256": "fa5f401ff4dcfc4418437b9b5a976feb175dfd68ad477250bc205afd2705170d",
+      "source_git_blob": "f8bca64b92d277047c18bdce267b147466528b74"
+    },
+    {
+      "path": "config/benchmarks/booking_timing/C2_H75_HLLH.json",
+      "bytes": 5587,
+      "sha256": "78016c334ad3faf39b0060aa86107c0ef390cd8fa9cd660b443d8fcdf24ebf16",
+      "source_git_blob": "5638f00c37cda69d4b5d77f98a45159fcca48f9e"
+    },
+    {
+      "path": "config/benchmarks/booking_timing/C2_H75_LHHL.json",
+      "bytes": 5587,
+      "sha256": "b38846cdeeec0c59f1fbca33eefd2031aed251e9912fa3acffa60e3eac50d6df",
+      "source_git_blob": "0784289f4fd541f878fa0a1c952e57001a3f56ca"
+    },
+    {
+      "path": "config/benchmarks/booking_timing/C2_H75_LHLH.json",
+      "bytes": 5587,
+      "sha256": "931f897e68c75608d7e748b01fdd00d4d3e7d9604f35fe4316e956a166b7af19",
+      "source_git_blob": "40b7c75469521b91e51a288d37d4b0fd511ea61d"
+    },
+    {
+      "path": "config/benchmarks/booking_timing/C2_H75_LLHH.json",
+      "bytes": 5587,
+      "sha256": "1bf903fa96ca796b5a134e1965c79b49c8998794eedbc2a75bdb1847350b7f29",
+      "source_git_blob": "844fcda16e44b15d1e31878c6fbc6ed3ce42001d"
+    },
+    {
+      "path": "config/benchmarks/declared_refundable_net_objective.json",
+      "bytes": 8143,
+      "sha256": "d132267b665a954cd47d5616c393c62b07ebe1988bac67f1a70ad775e37cc580",
+      "source_git_blob": "b1bb1d4ae0ace62342fd504f8192b7dc4b976415"
+    },
+    {
+      "path": "config/campaigns/D4_gradient_monitor_continuation.json",
+      "bytes": 2957,
+      "sha256": "cca3aa6319bb52a772e05165012bc0a716679326f1ddc0f6f1d6e2811b4ae541",
+      "source_git_blob": "18d1fb79c832d85174103aed31f7d5d2b9d2b1e2"
+    },
+    {
+      "path": "config/campaigns/D4_gradient_monitor_continuation_v2.json",
+      "bytes": 3035,
+      "sha256": "ce7cae3046f2393fbcb3f9c3270d0a7cc2c8c5f4f71a3e60b69990f89cf176c1",
+      "source_git_blob": "634310f342d8dbb8d5d7937b1aed5efb609e2a60"
+    },
+    {
+      "path": "config/campaigns/F1.json",
+      "bytes": 177979,
+      "sha256": "194f6a6147cb468f14e4ac4a21db2990b9056423b526c6503bfd42c93a9585d1",
+      "source_git_blob": "57a0ef63a1e25c452dac0bbf4a221dc9e94474f7"
+    },
+    {
+      "path": "config/campaigns/F1_conditional_tail_pilot.json",
+      "bytes": 2725,
+      "sha256": "27aedeeffd1331bdf5913ee7cdc8f7cad8922ee3d7d09932f86ea5a48167e519",
+      "source_git_blob": "6174572940049d6ed4e9d98224fe93985c9d6f82"
+    },
+    {
+      "path": "config/campaigns/F1_history_T5A4.json",
+      "bytes": 23794,
+      "sha256": "ccd1ef87a4e848ffe996f7e5e279b17329c4a059b8bacd96471f67c3f7c363a6",
+      "source_git_blob": "35f619cf2da55b03488d9513be87d0b9054b57be"
+    },
+    {
+      "path": "config/campaigns/F1_history_anchors.json",
+      "bytes": 14954,
+      "sha256": "f182c1d306d71eaa841862dc26ebfd905855e37c170abef1be25346d206922d7",
+      "source_git_blob": "7c564a2a78b658abca646f71ffaae6ab299bd4cf"
+    },
+    {
+      "path": "config/campaigns/F1_history_microchecks.json",
+      "bytes": 760,
+      "sha256": "9215cef31cfcad128c856ce0b3cbcdf15029cee6e33949b1d4ae29e8883cd2b4",
+      "source_git_blob": "3518660e53b3985ab83f41eb49517ade86004775"
+    },
+    {
+      "path": "config/campaigns/F1_history_next_frontier.json",
+      "bytes": 51291,
+      "sha256": "db9630722d83cf54c21881ff16fc083f9b89375f284df13a553b55dca9faed7b",
+      "source_git_blob": "06c194570ba1aeedd3d9b8e02bd3a2234f598d43"
+    },
+    {
+      "path": "config/campaigns/F1_reference.json",
+      "bytes": 1360,
+      "sha256": "33d312268b795166080625158172f3e825c42eab7e6162766193f8c7cb293c06",
+      "source_git_blob": "3719630986159f3b040a261bd0dcc87cbaa62e53"
+    },
+    {
+      "path": "config/campaigns/F1_reference_new_anchors.json",
+      "bytes": 19940,
+      "sha256": "eb510b4602d26b6decd3d3ec7be9acdf8789bebc4cf8320a78e2000b0c15c57c",
+      "source_git_blob": "a68ad7c321346927a7aaa7702801a8f489ea2f7c"
+    },
+    {
+      "path": "config/campaigns/F1_reference_remaining.json",
+      "bytes": 3471,
+      "sha256": "12a468a1fb90f5e59b7287d80857e9bee78bae2e86d4940dc78811a7113e90d6",
+      "source_git_blob": "39abea82439a812bdca5e8504f620dcd5210efba"
+    },
+    {
+      "path": "config/campaigns/F2.json",
+      "bytes": 9331,
+      "sha256": "be581aa1c258bc580a8fa66fc8b9bc6b3b0a89b215801b79ae3043803c74b997",
+      "source_git_blob": "367cd8900ce5d4c9e32ad6d3a7d4a1ea5d539db5"
+    },
+    {
+      "path": "config/campaigns/F3.json",
+      "bytes": 6240,
+      "sha256": "e21eb2ef8b6729b50ea5d2c31ee7fef867625d963abf238558e2304221fabc30",
+      "source_git_blob": "7c2f0c12778b613f604a0ded745c9c08ac28ac36"
+    },
+    {
+      "path": "config/campaigns/F3_counted_pilot.json",
+      "bytes": 943,
+      "sha256": "f78eb78788b140b340e177518f6fd5db2f88961b47c09f3e6e9e624e2e7561e7",
+      "source_git_blob": "9c24283b65483eb5787847935075750c85ae5beb"
+    },
+    {
+      "path": "config/campaigns/F3_pilot.json",
+      "bytes": 887,
+      "sha256": "529977b799b2c27515779d61f1206a152b4ca90072474ee63b0d8f25e068bb15",
+      "source_git_blob": "1a67744915a6ab5657f8e9d34288c9a0a3283909"
+    },
+    {
+      "path": "config/campaigns/F3_sparse_full.json",
+      "bytes": 6622,
+      "sha256": "c304b588ad55b633fa2ef4ca17132ae13ef45cc2dae5bfba49b17904974bf264",
+      "source_git_blob": "cbc797a25eb6cda8b59f046d28a9e0504715b217"
+    },
+    {
+      "path": "config/campaigns/F3_sparse_pilot.json",
+      "bytes": 931,
+      "sha256": "efba1ab3ea4ec5fa910f7cc013252167cf9c107b206f1aab4d2b4364080a8724",
+      "source_git_blob": "6b6f6f5e80600e34d7e28ab4dce83f1e2bb7a8d3"
+    },
+    {
+      "path": "config/campaigns/F4_I4_frozen_T5A4.json",
+      "bytes": 20500,
+      "sha256": "43fb942143a0f19905dfe52e5017fca0ed4f0d1644e45a4effdc1b743dda8bc5",
+      "source_git_blob": "d0f3575e4d04a2a560fafd9870f41ac8129c6d0b"
+    },
+    {
+      "path": "config/campaigns/F4_I4_train_tails.json",
+      "bytes": 1597,
+      "sha256": "ecd9901ae172d69cf8f2e1f66c42fc2e4f45d18605fde63d2490cf0c1655998c",
+      "source_git_blob": "4663cff64c79926e975da917501d7e3b25a36e53"
+    },
+    {
+      "path": "config/campaigns/F4_hub_construction_probe.json",
+      "bytes": 6325,
+      "sha256": "ce636c528b26fa5cea67e7fb934595102555f12751fd9e4863072ef356d431fa",
+      "source_git_blob": "797d9d8712e970de4f64f3cdf2e998dea51d0fe3"
+    },
+    {
+      "path": "config/campaigns/F4_small_exact.json",
+      "bytes": 13304,
+      "sha256": "10e766334b5e60c4103ff344411fd413a22705600c309a54a3810ecb0d5bbfef",
+      "source_git_blob": "b23da5463cc9b7cd696559f31c0a6ac132e73a32"
+    },
+    {
+      "path": "config/campaigns/F4_step_tape_one_hypothesis.json",
+      "bytes": 2018,
+      "sha256": "ab896da3532b9c2f013df173131f25be506541b613d99ed10272a4b5ad0459cc",
+      "source_git_blob": "1cb732a55d6a52b180ba9d0a19f31a5c2f0f7e51"
+    },
+    {
+      "path": "config/campaigns/F5_full.json",
+      "bytes": 79065,
+      "sha256": "df861279bda838eac88960fc7aba17b216a68cbbdfaf81f36c9f1dc808663d9c",
+      "source_git_blob": "47813d1e77a5392a314ac7b4fd256888f3e07de2"
+    },
+    {
+      "path": "config/campaigns/F5_pilot.json",
+      "bytes": 12037,
+      "sha256": "57f01e587d9c9346ce6c54696e8f41bc46f13fef3753754127f0d94848413b67",
+      "source_git_blob": "cbdad9fad13893c12672c256ac0dc8dc0177326e"
+    },
+    {
+      "path": "config/campaigns/F5_train_tails.json",
+      "bytes": 976,
+      "sha256": "e32747c1f2b5b77e1311c9ca9ced65614ac39442fc3766a8100cd319b5e6e546",
+      "source_git_blob": "a9cb0c983b69dec8e1343c901c697be9269cde39"
+    },
+    {
+      "path": "config/campaigns/F6_learning_baselines.json",
+      "bytes": 1392,
+      "sha256": "81c2ef95630eff289bf81de38731ec460a9ed3c81aba6bb705cf2c0a7c387e5c",
+      "source_git_blob": "e0f0aae94a84b611ec964288f0313d60d70b7f91"
+    },
+    {
+      "path": "config/campaigns/F6_learning_pilots.json",
+      "bytes": 4850,
+      "sha256": "b0be80190e42915f58fe14114ece65ffbcc49d08aa38f18b0008f48d1f7b0f02",
+      "source_git_blob": "dbd06793c99848539e176d8172d956da74686dc9"
+    },
+    {
+      "path": "config/campaigns/F6_throughput.json",
+      "bytes": 18492,
+      "sha256": "746a8d9132bcbde859198fa7e55c22963503e8d79586a41e9098ba582a1c4a76",
+      "source_git_blob": "1ab98d736d0785ce7b2d2a0de839dfb65495075a"
+    },
+    {
+      "path": "config/campaigns/F7_I3_MPC_population.json",
+      "bytes": 2065,
+      "sha256": "9b55e712c53bb0774e3033f134fafea398f2a2dc18ff9802588702c201626aa8",
+      "source_git_blob": "5655c6fafd198de635c6ab01ced117cd786a2135"
+    },
+    {
+      "path": "config/campaigns/F7_episode_type_micro.json",
+      "bytes": 1666,
+      "sha256": "798acec8657496509f55c7b212bf1ee50ac7fc6d6ec6d7a383e27f51b9a04ba5",
+      "source_git_blob": "dc9cfcde78f9770d0a3ddd68b57a77f697d282ba"
+    },
+    {
+      "path": "config/campaigns/F7_payoff_cost_pilot.json",
+      "bytes": 493,
+      "sha256": "14bd02e51f5f93cfeb4ce9cb88a40dbeb8e86dfd49bc946091577fa1696e961b",
+      "source_git_blob": "dcf653ccb7b6d2f9c9377c91c527ba79055975d0"
+    },
+    {
+      "path": "config/campaigns/F7_two_sided_I1.json",
+      "bytes": 1204,
+      "sha256": "cfa446aabe4f997fe6a923bd28283a1a1fdb2e139bbea5009f7d05da5a5b33e2",
+      "source_git_blob": "e5c2d1569e8854b1978a240b84aca94ad1df4847"
+    },
+    {
+      "path": "config/campaigns/F7_two_sided_I1_keyed.json",
+      "bytes": 1459,
+      "sha256": "cf9102e79e0b5dc87120e9ccc1c30435af3572a2486489a965c82c0f13d61a80",
+      "source_git_blob": "464537cb04235da68a256579cf8041df775d218b"
+    },
+    {
+      "path": "config/campaigns/F7_type_mpc_I3_probe.json",
+      "bytes": 2388,
+      "sha256": "6466fdf02c039736e6777d6c5c660426af83255b2b92fb5759b3e1413678d7cd",
+      "source_git_blob": "0ebff92a83496579ddbf242588c758da4d36b56f"
+    },
+    {
+      "path": "config/campaigns/F9_F5_candidate_power.json",
+      "bytes": 1450,
+      "sha256": "8cd63276b64ede92d97fd2ebe93d4e58621367236d623384a3b468e3f4b501df",
+      "source_git_blob": "ab9d1ab8dceb179bc83432dbe456b0f4b7626f6f"
+    },
+    {
+      "path": "config/campaigns/P2_belief_exact_pilot.json",
+      "bytes": 2231,
+      "sha256": "25d2c0acc202604bcb5792169f73c6ddda99668126633e4430c3a440dfd98ba4",
+      "source_git_blob": "2e9657603e6f406053e0cc63a2c96b23e4fa2854"
+    },
+    {
+      "path": "config/campaigns/P3_behavioral_prepare.json",
+      "bytes": 867,
+      "sha256": "bbfd568cbc1d929c23a05578c1761a6d85f9bcdda1918ffe4d49d9793dfff450",
+      "source_git_blob": "7f304ad7ce3193f71a142647f29677659f482671"
+    },
+    {
+      "path": "config/campaigns/P3_booking_timing_identification.json",
+      "bytes": 5072,
+      "sha256": "49ce4b3657b83dbceecafc8ae6cd7db34ed20e0f37b96729390c914b1322eef9",
+      "source_git_blob": "e89f868eea93faefae73579b6839868013002c79"
+    },
+    {
+      "path": "config/campaigns/P3_cached_availability.json",
+      "bytes": 1559,
+      "sha256": "fedfd67138007d8fa3deabea1412b434507f4c4c1526af94fbc6ca853cf1796c",
+      "source_git_blob": "7d978e706266ee8cf8ab08409f3f5d2dac4be644"
+    },
+    {
+      "path": "config/campaigns/P3_declared_net_objective.json",
+      "bytes": 897,
+      "sha256": "97beef51087662e1c7acd195cee2ddf7d1ec5aab114c4886b96464f124ec7b33",
+      "source_git_blob": "d7cd80316eb5e2938ade1470bd7d4c575874f40c"
+    },
+    {
+      "path": "config/campaigns/P3_demand_identification.json",
+      "bytes": 1094,
+      "sha256": "04d0565428286875d17a52cbd37edb86c2d92f9295be0a389be437557835c2ab",
+      "source_git_blob": "bd6928feba2c6754d37a4669c461870512ab4f8f"
+    },
+    {
+      "path": "config/campaigns/P3_national_coverage.json",
+      "bytes": 845,
+      "sha256": "67eb27182db8eba5ec6d228f8a0e1cf80307097f0d1ff83412c1e9b69a975cc6",
+      "source_git_blob": "18e0fa7d37bce69cbd6f35a296dfe7f1a976a38e"
+    },
+    {
+      "path": "config/campaigns/P3_outside_purchase_coupling.json",
+      "bytes": 2523,
+      "sha256": "40188f6ad7bfcba61adea6033e403a3a67dc0aa443ce73dae916348456068a2f",
+      "source_git_blob": "692b05faf0c980bd4e3dfba3509b39d9c27aba66"
+    },
+    {
+      "path": "config/campaigns/P3_profile.json",
+      "bytes": 1206,
+      "sha256": "074e89d0c23f6f99e63c4aaf1de17b258cab68f0af14b66e0d223725a0a032c9",
+      "source_git_blob": "8812ebd0185ef4b11e63d2c1e76f2313793fcbb2"
+    },
+    {
+      "path": "config/campaigns/P3_quote_route_binding.json",
+      "bytes": 1436,
+      "sha256": "665d4dd7b7295cf4dced6dc66d0d2ba84e799bde72a2a9c5ceeb721d707273d2",
+      "source_git_blob": "692ff6ee542da5f8eb985f57dfa485acdb79d610"
+    },
+    {
+      "path": "config/campaigns/P3_resource_probe.json",
+      "bytes": 1364,
+      "sha256": "e713e23f12bf08e69dd8f5c567e6152e4374d24d726b50b3bbfb75f7a33e77b6",
+      "source_git_blob": "6cba77b15fc07be2b409d25ee14a066167450969"
+    },
+    {
+      "path": "config/campaigns/P3_shared_core_load.json",
+      "bytes": 3264,
+      "sha256": "77c5f105d991233d004ed1c3f4ac4f8644355d3a2b6f4698043334450362e4e7",
+      "source_git_blob": "7b931557a12ddd3c026b547a9188c15cbbfe5d5a"
+    },
+    {
+      "path": "config/campaigns/P3_shared_core_load_partitioned.json",
+      "bytes": 2853,
+      "sha256": "6f6957567c8010c54664c4200fc7f2f3357b51f4221d2f358fcc86177f4c9389",
+      "source_git_blob": "e8b9a7260f3b0cf76ee00c0a41b82b6e5c89ea5c"
+    },
+    {
+      "path": "config/campaigns/R0_exact_smoke.json",
+      "bytes": 779,
+      "sha256": "b938bb9eee0e087e517c0e8618c76949b86b13b6a1503ef2693b9c9ba66bb861",
+      "source_git_blob": "e6fe6ba7f978b7e327575e906d1deef3d81ae43c"
+    },
+    {
+      "path": "config/campaigns/R0_simulation_smoke.json",
+      "bytes": 333,
+      "sha256": "e2e52a77bd06586bcdc75fce7c0da3058b60ef3eec2a81c1e9509025bba25caf",
+      "source_git_blob": "946d2eba664ecbf3e0375717bfa92530a640fab1"
+    },
+    {
+      "path": "config/campaigns/TR_three_stage_engineering.json",
+      "bytes": 1982,
+      "sha256": "077099f90d1f4b54b8a900f9933ab1d9c8ba80aae4af6efb79ab2db478654b21",
+      "source_git_blob": "7d40afc1afc88b3d879012f93e4f13610f341f35"
+    },
+    {
+      "path": "config/campaigns/V3_MR10_full_refund_accounting.json",
+      "bytes": 1542,
+      "sha256": "234f7f56c891a604000e4bf1173843a23127146d8105f4d73700354b899e9bc3",
+      "source_git_blob": "77a97ebf07a2911d1e2afa948c74d9d9709a47ae"
+    },
+    {
+      "path": "config/campaigns/V3_MR1_reachable_prices.json",
+      "bytes": 2154,
+      "sha256": "1fe6a2296525fc56caf316f6fab21ce0d0ed3bd9c7022a1de47286af673728ca",
+      "source_git_blob": "42e0734afdd76803935146c5a38aec19b25e7b5a"
+    },
+    {
+      "path": "config/campaigns/V3_MR3_relabeling.json",
+      "bytes": 12347,
+      "sha256": "a515b0c480e8f696a2ffd8785691ffbcbbf0504a7bd5dc76faa637d779df26b4",
+      "source_git_blob": "bbc72d27527d495d4904b6c37f0b8b212f16a6e9"
+    },
+    {
+      "path": "config/campaigns/V3_MR4_symmetric_policy.json",
+      "bytes": 1198,
+      "sha256": "ca55c78ff173a7c7616a7fdd06c4f105ed372f6be5a3915c02ced6f3a70c4104",
+      "source_git_blob": "3d44913298cc65f6747d7ea2f764e8acc41173e2"
+    },
+    {
+      "path": "config/campaigns/V3_MR5_money_scaling.json",
+      "bytes": 4828,
+      "sha256": "f1ac3bbca161cb0e4078adfa87d30d984dc72c85987a281204985a44704e7aec",
+      "source_git_blob": "34620b095ba12d097cc601666d6f61e208843cbf"
+    },
+    {
+      "path": "config/campaigns/V3_MR5_money_scaling_evidence.json",
+      "bytes": 4865,
+      "sha256": "5d1a5c083d67ca2ca4dbf3ecf6f21da602ea023391db73aed2ee0ec38ca24f54",
+      "source_git_blob": "108f8ab47524ab411ff29411966187ee37921d07"
+    },
+    {
+      "path": "config/campaigns/V3_MR6_degenerate_demand.json",
+      "bytes": 7179,
+      "sha256": "53f803107ee91bdb09aa81c73da5bedf3ad682d82c06176b30198edd7511a167",
+      "source_git_blob": "f02803cb0ebe61187dabf4548139c87b3a6c24ee"
+    },
+    {
+      "path": "config/campaigns/V3_common_price_lag.json",
+      "bytes": 19662,
+      "sha256": "2f2bda07195fff03646cb4f06e3ed4111a46b41e8fa9f44e69088aba7b2be447",
+      "source_git_blob": "962ad4381c71e2efd56b8b46d6230f0135cfe03b"
+    },
+    {
+      "path": "config/campaigns/V3_common_price_reference.json",
+      "bytes": 25663,
+      "sha256": "62b5d011fb9723a6bf81ce79927e1d6bc3c853d8f62377e48aff2beb5048b48c",
+      "source_git_blob": "5b2afba874c549503c2249c58ce5ef5538f9e4c9"
+    },
+    {
+      "path": "config/campaigns/V3_common_price_reference_frozen.json",
+      "bytes": 25523,
+      "sha256": "58efec986948ca5ed1a87be49609720f1d304c3296f068c5b1d2ba5bdc987d2b",
+      "source_git_blob": "abc66f678a4fd5cfced7a63d80751f1f43d66e8f"
+    },
+    {
+      "path": "config/campaigns/V3_network_MR2_MR8.json",
+      "bytes": 8868,
+      "sha256": "7b1fb5106bdff9c99571dce85196aa5c8775428c15b615cdaa55dc119f950e2e",
+      "source_git_blob": "459ab1946bb0c9bc9cb2896dc197ce3f96832999"
+    },
+    {
+      "path": "config/campaigns/V4_DLP_exact_duals.json",
+      "bytes": 2227,
+      "sha256": "31dd02dcebe2bffb78435955d77cd672176f11e9ee877f592377d7375fcd54bd",
+      "source_git_blob": "db2fed332e79a30c401374599c4f46ce0f334e9a"
+    },
+    {
+      "path": "config/campaigns/V4_EMSR_fourclass.json",
+      "bytes": 1706,
+      "sha256": "97ae62939d592efc6d69d826d43468695ce80d227aa678ac2fb0a346cbe3d9a1",
+      "source_git_blob": "7307d2cef06ced017d6ea9d9b2f4a057509735b4"
+    },
+    {
+      "path": "config/campaigns/V4_Littlewood_100k.json",
+      "bytes": 877,
+      "sha256": "21f56cec927be3e91fac960440f0a041f35f2938c0aeb4b8d1170146ad74759c",
+      "source_git_blob": "3782d630dd1ff5f05db55c607ae98d7544598c33"
+    },
+    {
+      "path": "config/campaigns/V4_Littlewood_100k_worker_v2.json",
+      "bytes": 917,
+      "sha256": "b10a98b8ef05601191aa9986056290a5d70c00e2554afdc8f1e85dc64da07083",
+      "source_git_blob": "be00ec491bc97d29f88b400fc676f379c76a66de"
+    },
+    {
+      "path": "config/campaigns/V4_exponential_scaling.json",
+      "bytes": 1663,
+      "sha256": "88458e04bdf94976b0a039d5fe519b4c9749a365b6103e0c66a031269b6901f9",
+      "source_git_blob": "bae418cdc6145aec3a638ca8693f4cc7efce1c79"
+    },
+    {
+      "path": "config/campaigns/V4_fixed_fare_admission.json",
+      "bytes": 2158,
+      "sha256": "70e2e938d365568f3ee9d386b7ad5036fe003f67162170797d0b3c8c40c2aac4",
+      "source_git_blob": "44ab75ca9feabc6f9538f1a5888e2523a777c4ce"
+    },
+    {
+      "path": "config/campaigns/V4_logit_Bertrand.json",
+      "bytes": 1482,
+      "sha256": "374fe306c3dc4a13d045a71c0ea5957c705ba684cc3757eadb53193f9c00d21c",
+      "source_git_blob": "cb548558530f9e4c6b298e656c4be6e68652aee8"
+    },
+    {
+      "path": "config/campaigns/V6_quote_exposure_display.json",
+      "bytes": 1815,
+      "sha256": "061cf1308d1120e152e6ba2f3cb84c732aca8dff6b0327925a35c01225b08c45",
+      "source_git_blob": "f7c2b826861d4c1ce839a3cc070721894ece1b8f"
+    },
+    {
+      "path": "config/campaigns/V7_PPO_frozen_pair.json",
+      "bytes": 4588,
+      "sha256": "6f91e99bd025f3f032978d069fd9fdea5e1032981f0c13d8d1eb51da5b7ee692",
+      "source_git_blob": "c05cea0335eb6130dc9b82e5ecb71419dd831312"
+    },
+    {
+      "path": "config/campaigns/V7_PPO_saved_pair_audit.json",
+      "bytes": 2464,
+      "sha256": "6b3f84648dd671f0249b2a2d8e2bb390d2c94a3ae730bd7a88f836c39e6ee1a5",
+      "source_git_blob": "be2f98f5d42c6235b1e93d19c40d8b18539eacd4"
+    },
+    {
+      "path": "config/campaigns/V7_R1_control_identification.json",
+      "bytes": 8206,
+      "sha256": "791366833868a650f3c39ccf3c181c10f3ad3f3c71241cb09601893a268d8b5e",
+      "source_git_blob": "30102179303f716dab126a08b1a4c2d65a73ad56"
+    },
+    {
+      "path": "config/campaigns/V7_R3_I3_default_pilot.json",
+      "bytes": 2372,
+      "sha256": "f2931842d71b07cb78351e52c50256dcf674f60c4da8e1fcd49aaf1d2a71a7df",
+      "source_git_blob": "db1f2efa41f7fe3e1a422c8d4625700212178479"
+    },
+    {
+      "path": "config/campaigns/V7_brute_history.json",
+      "bytes": 3643,
+      "sha256": "7d9800ae38c238a135a8a3e88c0bde330d117538a62844494dd74961b2ba8f8a",
+      "source_git_blob": "3b89bca30ec3834b7d044bb32362a337425eda9c"
+    },
+    {
+      "path": "config/campaigns/V7_single_leg_learning.json",
+      "bytes": 3691,
+      "sha256": "b3955afcfb588c288b8cb21e7cff71093dd140e2f568393a984ebf076307be2e",
+      "source_git_blob": "d828557a486fd2a9ddaa86979f7ecdc8766291bd"
+    },
+    {
+      "path": "config/campaigns/V7_single_leg_reference.json",
+      "bytes": 1045,
+      "sha256": "60b86678b78e7dab42238069ec317f0cc31c5179500ba47b47f663a0668208b8",
+      "source_git_blob": "1f82d63fd3f476a638a2853e1feb355d89ad9917"
+    },
+    {
+      "path": "config/campaigns/V7_terminal_credit.json",
+      "bytes": 2213,
+      "sha256": "de94f62bb2781f6b33fc3e902800da345f53e39ad9fe866095e546c355f9981b",
+      "source_git_blob": "4b5e05f365cd2de52ba68e7984281d20d570e5b5"
+    },
+    {
+      "path": "config/campaigns/budget.json",
+      "bytes": 1747,
+      "sha256": "3d99ed5385002d426a8c35c669ac8bdca5af12638f2448a48a6dd4f79f445805",
+      "source_git_blob": "5c1f6a91797b4065988e764f8605c43a67a6bf51"
+    },
+    {
+      "path": "config/campaigns/hypotheses.json",
+      "bytes": 2302,
+      "sha256": "641ff259c22f1c616dfbd5b0452945a1cd36ddd9e62a8edef385105ca340bbf6",
+      "source_git_blob": "2fd89482092a2038ecdf51868ba0fea5bfc821de"
+    },
+    {
+      "path": "config/campaigns/v2/S1-r1.json",
+      "bytes": 251334,
+      "sha256": "a5f1e84f36e91c24deeeb1006bcdf5d840cf24e2eb98f3997d4a69b0b4e853a7",
+      "source_git_blob": "86f43ae2b9520f9b92b553a93839d14485a35b2e"
+    },
+    {
+      "path": "config/campaigns/v2/S1_saved_metrics_batch1.json",
+      "bytes": 72348,
+      "sha256": "65454eccc5d2d24c417098e570311c32ab0f3f33ce5656558461d6f86f07bf0b",
+      "source_git_blob": "f4ac9fee10f8e29b0ebbcf746636854e6a4bb050"
+    },
+    {
+      "path": "config/campaigns/v2/S1_saved_metrics_batch2.json",
+      "bytes": 44086,
+      "sha256": "0b41d5d8cdeb2e60b8c66cd4ed88ae22d604e9b56004d39a0931346d8db64f76",
+      "source_git_blob": "60a63f92fdcba45dfc56e22351d0488dffdcac8f"
+    },
+    {
+      "path": "config/campaigns/v2/S1_saved_metrics_batch3.json",
+      "bytes": 34712,
+      "sha256": "761c94ced09768a7af5bf7ec3bdde900a19089940e5e97879bb73448d781983b",
+      "source_git_blob": "bbd984f00af18bf29f50019bdba49d29e145d9c3"
+    },
+    {
+      "path": "config/campaigns/v2/S1_saved_metrics_batch4.json",
+      "bytes": 20501,
+      "sha256": "078d6f8b38a64784c90341cf19f88b97edeb93d131c4da2fb82b835bd0ee448a",
+      "source_git_blob": "84d11afe5272078538674a983830e878c2af1118"
+    },
+    {
+      "path": "config/campaigns/v2/S1_saved_metrics_batch5.json",
+      "bytes": 34759,
+      "sha256": "65692bf62a5b78e93745394521f6705fffe96806c61c913defd5ff7ea206f7cb",
+      "source_git_blob": "ffcc46be7ce9bdd237e257748f907c0194983a60"
+    },
+    {
+      "path": "config/campaigns/v2/S1_saved_metrics_batch6.json",
+      "bytes": 20577,
+      "sha256": "408821d5ebe7773daea83d1071f8f0ca2d1ffe1b52065d1c50b9e05f8a3d5517",
+      "source_git_blob": "11e26128731bb1b4f39567d973b8449d8ed2c7e2"
+    },
+    {
+      "path": "config/campaigns/v2/S1_saved_metrics_batch7.json",
+      "bytes": 6395,
+      "sha256": "abfab9f99cd91fcb9584b0422344cd57109ec3f336ff3f8b1d75f2fc98cc07e2",
+      "source_git_blob": "49695040e05b98dfb9c11d49bafa27f75ea75680"
+    },
+    {
+      "path": "config/campaigns/v2/S1_saved_metrics_batch8.json",
+      "bytes": 15935,
+      "sha256": "1ae6c83bc09f6aa7bf0a113d436cbb91075492dc9266edebc2de2b8fa0100ef1",
+      "source_git_blob": "e1b4a3045b58f896d953dd4a2ca80316dc75d4a8"
+    },
+    {
+      "path": "config/campaigns/v2/S1_saved_metrics_batch9.json",
+      "bytes": 11243,
+      "sha256": "ce6649fd6a04ed3e4fae310994143a56d5a18ffe4423aeeb36d935613fac970c",
+      "source_git_blob": "da8c1a01bcd0596534307dfb70acc0fa67ef4f0a"
+    },
+    {
+      "path": "config/data/audit_national_core_q2_v1.json",
+      "bytes": 701,
+      "sha256": "675ab5870266e9f09ec70cf4d1309068c1ecd0d34b5827491611a2d79600e146",
+      "source_git_blob": "2358c009ca239162f633fd48ccbe70d60a0bdbe8"
+    },
+    {
+      "path": "config/data/build_ord_dated_network_v1.json",
+      "bytes": 1214,
+      "sha256": "f85b59df96f60a12b477754aee1fc732d59f46e5e313719e4e292fdb51bf7f59",
+      "source_git_blob": "22cfdb5e5293453105fd68910bfcbd2fab322282"
+    },
+    {
+      "path": "config/data/initialize_ord_behavioral_v1.json",
+      "bytes": 1923,
+      "sha256": "4d58449a40b1838702bba77fa49a1584b6e92b24d31cdae1814c1133d9ac19d3",
+      "source_git_blob": "118e933bdd4f396cbacac9dc14d705b8c016ce1d"
+    },
+    {
+      "path": "config/data/prepare_ord_q2_targets_v1.json",
+      "bytes": 444,
+      "sha256": "1f29cad4fce0cc3b95116b2c24dd6e23daeab771fa2083a92bece0050fb240f6",
+      "source_git_blob": "5cfd174f82564f3f5a9edc6d549b44c8a828d4d5"
+    },
+    {
+      "path": "config/data/primary_ord_2022.json",
+      "bytes": 4875,
+      "sha256": "dcea4c20f73af9170061a28275ad17b25a057a7965ad7507006d992a10d3dd73",
+      "source_git_blob": "dde21cf749a6b2dc2cadaedf76a6cd5c8d19dce3"
+    },
+    {
+      "path": "config/data/process_ord_2022_v1.json",
+      "bytes": 585,
+      "sha256": "be15b6790ff01f4e7e1c727b1828341ecf5846dc611b74343d965104a76d01fd",
+      "source_git_blob": "377f2a342f2023b6b760f7e77c15abbc4dd5f53b"
+    },
+    {
+      "path": "config/data/reconcile_departures_ord_v1.json",
+      "bytes": 605,
+      "sha256": "3c942db36ade8d870769f6d9a8cc4697655c3e0c90aff13bddb44aab32ba62ef",
+      "source_git_blob": "ff1dac6fe873a4d3fa3263acd59fd7ca89d6e40b"
+    },
+    {
+      "path": "config/data/v2/E3_airport_timezones_v1.json",
+      "bytes": 1794,
+      "sha256": "207ebc8be4c6f9ed5d79af0f93802b848160386f060642f809e00977eb859cc0",
+      "source_git_blob": "ca9128ed6a3d2ba5cd42fe09aab17463606225ae"
+    },
+    {
+      "path": "config/experiments/exact_tail_128.json",
+      "bytes": 1978,
+      "sha256": "a589af7adcb8f12c41ac101a8352958615fdd53e8cbf2a77550444085ad32eda",
+      "source_git_blob": "cb0a916cbf39996757b669966b2ff872ce2744e9"
+    },
+    {
+      "path": "config/experiments/information_factorial.json",
+      "bytes": 774,
+      "sha256": "285b2bc332c6087860296cd9960aa3bf4f7a0dbef4c18b1624fa8899d3bedfb0",
+      "source_git_blob": "e07fea809f0c26ebf574b4db70222c144c45248b"
+    },
+    {
+      "path": "config/experiments/protected_mpc_128.json",
+      "bytes": 1993,
+      "sha256": "dea6f02c9d745108953438ecf285ef1d792cbe39b1a64bb2ebb6b67cdda61f76",
+      "source_git_blob": "802142683d5138ab4089242f09ca59ee3f366778"
+    },
+    {
+      "path": "config/experiments/toy_information_value.json",
+      "bytes": 1422,
+      "sha256": "652dda7ca3a46b7d26edbfeacea562bf5b5fd3bf09ff1323014c2e7d8352c7c7",
+      "source_git_blob": "6d112bd7da574f10e1dba088bd7c8370d2f04b68"
+    },
+    {
+      "path": "config/experiments/toy_mpc_legacy_tapes_256.json",
+      "bytes": 1421,
+      "sha256": "3b7811b31637f1890d090583ef26fe1138707393c1fedf9ddb9cd756f8dfca30",
+      "source_git_blob": "f3a161faa7051bd5cb579744eeff641101e20c21"
+    },
+    {
+      "path": "config/experiments/v2/A15_E3_T100_comparison_v1.json",
+      "bytes": 2804,
+      "sha256": "78c260be0ae54d32b8c391e3b4ac2fb9b3c94974660636b5a7e93460128e707a",
+      "source_git_blob": "0d60bf82f33e906e00dea02895c1d7600c97cd5f"
+    },
+    {
+      "path": "config/experiments/v2/A15_E3_dated_service_v1.json",
+      "bytes": 4012,
+      "sha256": "3984c7a4cab02c93df0a6f7dc1f991fb5bec9287a2a77eb7e4f07a5d88e77c26",
+      "source_git_blob": "80d4788b493751300faf4113e0be448df5d904a0"
+    },
+    {
+      "path": "config/experiments/v2/A15_E3_departure_trace_v1.json",
+      "bytes": 2722,
+      "sha256": "a1232f7fd3fd48dc9648c1c81d4164a81415fbfeb164d496c4e8d4437df254a0",
+      "source_git_blob": "c42e25d0744832d132c1b5766a8c65aa7a767bfc"
+    },
+    {
+      "path": "config/experiments/v2/A15_E3_fare_moments_v1.json",
+      "bytes": 8666,
+      "sha256": "9fc1fee8c83e2344b43c295d5a72f5545c0b6a22bef92413bd21bd3202a66bcd",
+      "source_git_blob": "66e4773a57ac68e2acae5bc1153340c3717da0b6"
+    },
+    {
+      "path": "config/experiments/v2/A15_E3_scope.json",
+      "bytes": 4120,
+      "sha256": "85708af7040ec29ff1b5009c4dd443c2485af54ba9b65aa00212ea56aa59d03a",
+      "source_git_blob": "89fae446a973f0796320be704f2552c45590e209"
+    },
+    {
+      "path": "config/experiments/v2/A15_E3_scope_v2_dates.json",
+      "bytes": 4306,
+      "sha256": "4a00cfdd7cc39c6995f8bf89ffd54a41331adcd97730c6092e28ab3275cd2fa5",
+      "source_git_blob": "1b916d4b929f0787b83996013d4938aac6997569"
+    },
+    {
+      "path": "config/experiments/v2/B1_E3_reported_flight_counts_v1.json",
+      "bytes": 17081,
+      "sha256": "f1d4defeec40d251b576e0b416d8a64eeaf9cbbb4da4f01264e35cf3f8cd504e",
+      "source_git_blob": "81cf363226599d966e63de2bbfd062401f51f835"
+    },
+    {
+      "path": "config/games/toy_finite.json",
+      "bytes": 107,
+      "sha256": "be377b62ac91c96d382ef14e9cecba43dfd9d4716e253143fe5baebcdd5a5df5",
+      "source_git_blob": "df71638b343a6c10a6ffc61e9d7c95ac70f69ecd"
+    },
+    {
+      "path": "config/games/toy_strategic_spec.json",
+      "bytes": 14588,
+      "sha256": "b5ef9eafcc124bb86658c2c384c5a815df391cf8e14ee04caa252b3c6462428a",
+      "source_git_blob": "95edb27b9c56946a0e5ec2c70480e165199cf351"
+    },
+    {
+      "path": "config/instances/I1_two_sided_T4A4_v1.json",
+      "bytes": 16312,
+      "sha256": "be6794a0a801bca48bd3e487023f8b4d2fdeb5e8ef3c32deee680afc6db407b9",
+      "source_git_blob": "6489f19e51737e5293772922e87fc5ffe477c2bd"
+    },
+    {
+      "path": "config/instances/I3_two_sided_T4A18_v1.json",
+      "bytes": 23920,
+      "sha256": "01c63aa2527b1783bf326c08c6aabab3890393fa415663f391a956392be3317f",
+      "source_git_blob": "9eb59dc839825649b204c3f3864769b812ba826d"
+    },
+    {
+      "path": "config/instances/I5.json",
+      "bytes": 174062,
+      "sha256": "0cd790a177cd2a6aa29c2c064beef0b0d310c07385bf83937a1a410a56b608cc",
+      "source_git_blob": "6d4b24f47f000ed3de1dbfe6fe93f0cfea78e914"
+    },
+    {
+      "path": "config/instances/I6.json",
+      "bytes": 1213381,
+      "sha256": "401b2b668c7fd02acc8bc55a7765e254aceb9c8d6a4117d986d573744370c90e",
+      "source_git_blob": "8ddd7e0e526e8cb9cf6310d0b47b7cb8cadfa9f7"
+    },
+    {
+      "path": "config/instances/I9_fixture.json",
+      "bytes": 15273,
+      "sha256": "aefc810e0ae6dea9a7aeca7631228e5821725a882ada9341943e805127925552",
+      "source_git_blob": "be6a7b5ac040f3a41b28a0991166d0ae5178a033"
+    },
+    {
+      "path": "config/instances/scaling_catalog.json",
+      "bytes": 1029,
+      "sha256": "31d836f7ecdb4719b04ff0d827d45037fc9e85426160967e72006236be293ead",
+      "source_git_blob": "86e7195a301192ee5b84427c39d05625ed4263db"
+    },
+    {
+      "path": "config/market_catalog.json",
+      "bytes": 533,
+      "sha256": "90cdc324803765ea99b21be9167652acb6cceb13d96b472995f03ccb0750e696",
+      "source_git_blob": "16fbbf4369776c1ffb338c58f8cb37fcc43efe3a"
+    },
+    {
+      "path": "config/shocks/B1_dated_component_draft_index_v1.json",
+      "bytes": 1617,
+      "sha256": "99509603b98ded76a0c89887e0e3b7318b3da66b7a62a5432ad180b09694415c",
+      "source_git_blob": "cd04c9d5dfb424e888f174f4257ac40a5b84aaac"
+    },
+    {
+      "path": "config/shocks/B1_demand_surge_component_draft_v1.json",
+      "bytes": 1423,
+      "sha256": "344120ee7d9d1fa78e3ec562d3126ce4588dce90355a403ea10ac52f17f09c4b",
+      "source_git_blob": "c373124a381ad347eb40c2c9888b117435153fe5"
+    },
+    {
+      "path": "config/shocks/B1_hurricane_component_draft_v1.json",
+      "bytes": 1487,
+      "sha256": "84993336ba3606f2498ed81a2a6c541e632c3bcc081028b7019c5bfe31cf8d29",
+      "source_git_blob": "01c0756bee0a8225f9b3f9c0a75afa04bd46911c"
+    },
+    {
+      "path": "config/shocks/B1_rival_exit_component_draft_v1.json",
+      "bytes": 1419,
+      "sha256": "c4c6d4ecddea58da72444677a523a2de5e065ccb0395dcb7f77bb42006e26bfb",
+      "source_git_blob": "7865614e7fe6699da0c45807ebc454a3606e0f23"
+    },
+    {
+      "path": "config/shocks/B1_rival_outage_component_draft_v1.json",
+      "bytes": 1328,
+      "sha256": "4275184310c7bbbcea5acb771a2700d21daa8f536467f2a80fad72aee2dd051d",
+      "source_git_blob": "f7f3408c74a64993f6ec9b996719c1808090b4c3"
+    },
+    {
+      "path": "config/shocks/B1_weather_component_draft_v1.json",
+      "bytes": 1340,
+      "sha256": "cfdd10b935f403f257011b0cb5cd771ac5bacb9b13c5e580dbb3f4a36aac4f11",
+      "source_git_blob": "3d603764b1f2e8d5b7001ae1cf891a6074b23079"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 1023,
+      "sha256": "961c483059addea876afb1c9be8d9d492b23adbe6e6ba0b7e2a7aa5daee88fea",
+      "source_git_blob": "ef58073726594270ec3c2a8f97989537556ed008"
+    },
+    {
+      "path": "requirements-lock.txt",
+      "bytes": 670,
+      "sha256": "e7bf6d6524b31bb9ee0141c078e99ce85ef15c10bb20a6a36ea496c4d9f02ef1",
+      "source_git_blob": "6c782c96e461900ca0100c892e746984061057e1"
+    },
+    {
+      "path": "scripts/airline_market_a15_admit.py",
+      "bytes": 2805,
+      "sha256": "140c17ec736971d871ff6f63e2e94573fd2e783c016b1675742bc8e14913d638",
+      "source_git_blob": "ccf01862618ee5caf5e6a256dafd3ffc06a09627"
+    },
+    {
+      "path": "scripts/airline_market_s1_adaptive.py",
+      "bytes": 4526,
+      "sha256": "0095f9636ea9dd4240a6616ffa01a3ce6057a80fd739bd18d50c58a666f3c1c8",
+      "source_git_blob": "b0365fdc3c5f02a58171db9265c2bcc6f488c7c9"
+    },
+    {
+      "path": "scripts/check_validation.py",
+      "bytes": 2286,
+      "sha256": "f14b3ab167068354f7fc3a9d7c909af3ab5c1185015de3117876a7152b5eaf66",
+      "source_git_blob": "a5a5c8cecfb42850e47b2f385448c894b792dd87"
+    },
+    {
+      "path": "scripts/data_acquisition/download.py",
+      "bytes": 8227,
+      "sha256": "f0a1423ad8783fb3e01e692aa65bef58f67c51f2cc845f46b995b242bd0fce26",
+      "source_git_blob": "4355de4839e26ed91576ea83d5bbde6b5d3df22e"
+    },
+    {
+      "path": "scripts/data_acquisition/forms.py",
+      "bytes": 7389,
+      "sha256": "304f90e9a5db4f84b28d6e95a0ed11d99b778e9181c4193129947c74f703abcc",
+      "source_git_blob": "f575bd5548e856832153692ae6b52f120d502053"
+    },
+    {
+      "path": "scripts/data_acquisition/forms_extract.py",
+      "bytes": 7643,
+      "sha256": "ac0a29372219a139fa21167371d5a2c0bf2281a9f568edb33ab4adae6b41f455",
+      "source_git_blob": "6fe237ef1dc15a6e6371a6a6222432942b13f176"
+    },
+    {
+      "path": "scripts/data_acquisition/preflight_sizes.py",
+      "bytes": 2225,
+      "sha256": "def6726fd072e91887745945212ecd675d54b1f5661d1ff79a081e9d6e6a4a25",
+      "source_git_blob": "8b48f3eb2cd0e5f14577916c1fc304872f9e9796"
+    },
+    {
+      "path": "scripts/data_acquisition/primary_status.py",
+      "bytes": 2694,
+      "sha256": "dadca4cd9a32cd98f908ff4a14c69d6fc582c1fca339edcecfb3091f7c9d478a",
+      "source_git_blob": "79c4a12b2bd4f7e292ddef81403f3111db8bf2de"
+    },
+    {
+      "path": "scripts/data_acquisition/v2_followthrough.py",
+      "bytes": 1004,
+      "sha256": "d1b5814b49d6e06d96ec8aa9aedb5e0e1afa1d784b0083c33fa07b210415cd65",
+      "source_git_blob": "b54f59ae6e2ecf0929871228cfc6bd386f4e4cfb"
+    },
+    {
+      "path": "scripts/data_acquisition/verify_streams.py",
+      "bytes": 6552,
+      "sha256": "8ce01c1cf87af9100eaa2248360d4d752646687fac12306770041042e6c268e9",
+      "source_git_blob": "9b73f5431aeb8c9dc97db0836c8c2687f57f5d06"
+    },
+    {
+      "path": "scripts/drain_v2_legacy.py",
+      "bytes": 5977,
+      "sha256": "b5603793ff31548e5b45cc35e755c42df01270bd4ee7fe2648b7592ddeed0440",
+      "source_git_blob": "4b713313f2bc507700687cd69c20654d66aa29fe"
+    },
+    {
+      "path": "scripts/launch_a15_after_v2_drains.py",
+      "bytes": 2317,
+      "sha256": "2b3dbbd24361287f9f2532d759ec1efc956a771f5db0dcd2407c524ab9402826",
+      "source_git_blob": "011af7e1964d79d5a71a7e6002808c6165b99bf7"
+    },
+    {
+      "path": "scripts/launch_s1_after_v2_drains.py",
+      "bytes": 2319,
+      "sha256": "ead363da8399c24ced8c935b1dede32b0c4b2903bf6c00027b82644e06c96e06",
+      "source_git_blob": "bcfe9e4b2885e7e5814911becff81b4dfcd9d066"
+    },
+    {
+      "path": "scripts/prepare_f5_comparison.py",
+      "bytes": 4115,
+      "sha256": "3a3e7358e6a3865bb74d76b27e91a63d32278cea27cfa26976fbac06b5349005",
+      "source_git_blob": "486f2a8e76bf40563053fc08797666d6a44d2f1e"
+    },
+    {
+      "path": "scripts/prepare_scaling_catalog.py",
+      "bytes": 3601,
+      "sha256": "5de6af38d1ef13169cf6354922264891efc30d2936b01a2da8de8ed6f6691830",
+      "source_git_blob": "11cee0cdab3a9289db31614920df9931c88790cd"
+    },
+    {
+      "path": "scripts/prepare_throughput_catalog.py",
+      "bytes": 3367,
+      "sha256": "719d43bac665cd5582b0b9ed24981b1e73eeef6defd1b0496fa9424df876302a",
+      "source_git_blob": "544c8fa692cfcd68878f4e87a2dc7369502425e3"
+    },
+    {
+      "path": "scripts/prepare_validation_campaigns.py",
+      "bytes": 7504,
+      "sha256": "e3af47e84e73479ad3bd437397d0b9f5525cbca453e157d4125a5b1cc2e5a779",
+      "source_git_blob": "aa335baca4d14cee6c271812f41124b11f12a5da"
+    },
+    {
+      "path": "scripts/start_validation_campaign.py",
+      "bytes": 2361,
+      "sha256": "4ed398f048dd336b8f878bb31a9e62150f75115e25ae60fdca9414cff66e368e",
+      "source_git_blob": "5226df8df9c7db5085b091913e1996a07e0a3bc6"
+    },
+    {
+      "path": "scripts/status_v2.py",
+      "bytes": 15858,
+      "sha256": "59dcfac5dec115be66a8b44f2a3572d1696335aeade0eebf5236a58e9d7e28c0",
+      "source_git_blob": "aa4a35119d6fe03d058717319855bf62a439854f"
+    },
+    {
+      "path": "tests/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "tests/control/test_adaptive_v2_admission.py",
+      "bytes": 968,
+      "sha256": "7467d4bb5f8dc22cbf4de699512a8b097bbae0a9726e3bf247ad14a094efcd1e",
+      "source_git_blob": "a8a2968cf61646cedeaf465d26303c6618ba4789"
+    },
+    {
+      "path": "tests/control/test_s1_admission.py",
+      "bytes": 492,
+      "sha256": "58fd1df4078911b6e68835f7713124e612f70d74aded9c1b808c1011643f43d8",
+      "source_git_blob": "b580983a10ff5e1ceca297e24e1a29d2882e371b"
+    },
+    {
+      "path": "tests/control/test_v2_drain.py",
+      "bytes": 3088,
+      "sha256": "eb1174301705c85d5b36ef71a66e58343de862c2c4f245861603c00f809164bb",
+      "source_git_blob": "87e01d5ddc8340b2f84cbfaf3d12635c126d2d08"
+    },
+    {
+      "path": "tests/fixtures/coupon/tiny.csv",
+      "bytes": 198,
+      "sha256": "cf23596d885a050100431500147132b8071b1c840665f4074673e9b1c47d218e",
+      "source_git_blob": "fadee2d1e2f4a091d5b902bda9b88c7b8f3152d0"
+    },
+    {
+      "path": "tests/fixtures/db1b/official_header.csv",
+      "bytes": 581,
+      "sha256": "aa53631b4850c74e7f02327a2dba5764cb40865aa75c5bbb1f1db2b9d550cf9f",
+      "source_git_blob": "21d8d1be638d2f0faa037ecca82b35167aa7401c"
+    },
+    {
+      "path": "tests/fixtures/db1b/tiny.csv",
+      "bytes": 373,
+      "sha256": "72df6a0164bf348501dea5c59f66219696cdf7fa6f4966f5b28b71141a47184c",
+      "source_git_blob": "a410dd4b431beb748d22791dfd8ef3cb0674d983"
+    },
+    {
+      "path": "tests/fixtures/flightprices/tiny.csv",
+      "bytes": 977,
+      "sha256": "411c91f26c7299386fd7182f30e2d3401d38f923fc9681eed9b81fca52a68e9c",
+      "source_git_blob": "f8d60b73998c8fd62aed3756af20848957f3ef52"
+    },
+    {
+      "path": "tests/fixtures/noaa/tiny.csv",
+      "bytes": 136,
+      "sha256": "c768460a019e26e471242f19a557dd62f087471046d4619939c875b4d6e9f2c7",
+      "source_git_blob": "b5268a7733a7dd9e758b1283253a5e312b17b3ee"
+    },
+    {
+      "path": "tests/fixtures/ontime/official_header.csv",
+      "bytes": 1696,
+      "sha256": "fea778447bceba1afe5a99f0e455b43dbd06b59b7d5770f37f873d421c1c4000",
+      "source_git_blob": "a1b8898504f470205bf1ae1df785e17af5e5be99"
+    },
+    {
+      "path": "tests/fixtures/ontime/tiny.csv",
+      "bytes": 360,
+      "sha256": "e185616ad8c35b625635a53d31c9ae0b06cc9a08988902aa75588c1c363c123c",
+      "source_git_blob": "38e0de3110a50fef72831f2bb026fbb68272b9a1"
+    },
+    {
+      "path": "tests/fixtures/t100/official_header.csv",
+      "bytes": 106,
+      "sha256": "08b31e2403b672fe70613a9afacbfc5d9872d206bd024d9056226fa05a5b0ed5",
+      "source_git_blob": "0be6d84486c0044a7d0e2248306cc526e45d97d5"
+    },
+    {
+      "path": "tests/fixtures/t100/tiny.csv",
+      "bytes": 317,
+      "sha256": "a6beb6be152e0df12e6dabecc3c15c4d1dbfc96cac9469ffe32cbe8ac856e9d4",
+      "source_git_blob": "eeda02f0b3681220a760358d3a4fa9b6a3396d3a"
+    },
+    {
+      "path": "tests/golden/legacy_main.json",
+      "bytes": 5424674,
+      "sha256": "67f6070b692acaf62c023ee3a287f110ce839de93d8cd9623606b2312fe38709",
+      "source_git_blob": "cb614db5428b8eb6217ca7ce444763113fd02e0d"
+    },
+    {
+      "path": "tests/golden/legacy_quick.json",
+      "bytes": 99119,
+      "sha256": "6ca22126fb3eef078e53e453448ed4c654ed8ff01bb7ff19ff110f1e8def5c8d",
+      "source_git_blob": "90a798e22eed7921f2352b7d191723a7832309e3"
+    },
+    {
+      "path": "tests/integration/test_engine_identity.py",
+      "bytes": 2015,
+      "sha256": "265ad644b281715137e032ed40508369080f676ab597e1487fcd4d65784ea757",
+      "source_git_blob": "908967d373049c643889e86fc929b074ef042702"
+    },
+    {
+      "path": "tests/integration/test_evaluation.py",
+      "bytes": 1223,
+      "sha256": "ab6488556f5ce7fd4756ccd36848404e1a3ba906db140055c794064abf057395",
+      "source_git_blob": "e1a7d1faacf426592cb92fa7ee8ed67a89bbd1b7"
+    },
+    {
+      "path": "tests/integration/test_learning.py",
+      "bytes": 5144,
+      "sha256": "0118268768ba47ea1fe4859b5bcd633f26cdc84ae03ac85bec5ec49ccdeeff31",
+      "source_git_blob": "931e1339a1b96d57f6b66fe67e1ed860dd7791b3"
+    },
+    {
+      "path": "tests/integration/test_learning_pilot.py",
+      "bytes": 5284,
+      "sha256": "75789d61c2b7a4e18f54e779d2886d8cea73808e21718743280f44d9b2a3d93b",
+      "source_git_blob": "2fe0fb46ecb88224456fdde33661e1befa6d7640"
+    },
+    {
+      "path": "tests/integration/test_structured_training.py",
+      "bytes": 8631,
+      "sha256": "a5dfe05dde0fe9b6c6c7128d887b9c0217ca2fe81d493f60da1f24bacd5682cb",
+      "source_git_blob": "ac2a5caae639c09da1f076fee3bde26a5659b8ea"
+    },
+    {
+      "path": "tests/legacy/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "tests/legacy/test_golden.py",
+      "bytes": 2131,
+      "sha256": "6b33ce5db63ea74d4b47f0dbc4c32f2839124236ee5c2533ed9b1faf7b548c57",
+      "source_git_blob": "53de73b417f0458a09075ac51928cd5e47997359"
+    },
+    {
+      "path": "tests/legacy/test_prototype.py",
+      "bytes": 12662,
+      "sha256": "bf35c666583950ebf1c401d3e24ba0a3dab5f90eea98b25e5aee83be3dda3ddf",
+      "source_git_blob": "b14bbaa5eeb06c050783bea68b433f77c98b5aa2"
+    },
+    {
+      "path": "tests/meta/test_campaign.py",
+      "bytes": 6318,
+      "sha256": "79ad09f012cd846c473aa7283f881ad9dc2a510ff919079f7690ecc7694df7f7",
+      "source_git_blob": "8fd4fc86cccd3db32f008eb9e4025e8b036e56b1"
+    },
+    {
+      "path": "tests/meta/test_sealing.py",
+      "bytes": 1564,
+      "sha256": "38a703abe07aa008cc21b1d93e44a809100da51ec2f9f445abcdbb89e58e4416",
+      "source_git_blob": "851c2e90477cce169e1b8cb10c54bf52e6fd8d66"
+    },
+    {
+      "path": "tests/meta/test_settled_runner.py",
+      "bytes": 8884,
+      "sha256": "76421083fa8b188aa341e24218e1519b9cf8e0b642bd98902f0a9d36e76f33cc",
+      "source_git_blob": "cd972427d0cef71bc492ff91b1d63285f262244e"
+    },
+    {
+      "path": "tests/property/test_small_networks.py",
+      "bytes": 2144,
+      "sha256": "ab2e4bed9b3c5471bcc40076052cdfe79bab058e96457b0251f03e99fd016005",
+      "source_git_blob": "00051abb77075e86d4da8ba9e6afb2f24cc1a7d4"
+    },
+    {
+      "path": "tests/slow/test_legacy_main.py",
+      "bytes": 1182,
+      "sha256": "b1da7ab5999c570dd4baa02d7ebc03647e1291679c20ab0d56e75370c9b7b27c",
+      "source_git_blob": "41e5001e54332cf985439bdf157777ae64fd43e5"
+    },
+    {
+      "path": "tests/slow/test_particle_convergence.py",
+      "bytes": 2765,
+      "sha256": "93e25d0b49108430f747f220e6142bad59fed46b4d6554c17442382311f5ed2a",
+      "source_git_blob": "31c0347b103d1fc60ef572852def16f1f0dbbd4b"
+    },
+    {
+      "path": "tests/spec/test_screen_analysis.py",
+      "bytes": 7882,
+      "sha256": "960d4e17a82c4b79c51dc8f0b0b007646bb4f5d9f65cef3cbf19084b6437178f",
+      "source_git_blob": "ecd5515a2a961a7da0754e0565dd854b293425d7"
+    },
+    {
+      "path": "tests/spec/test_screen_metrics_rng_scope.py",
+      "bytes": 3121,
+      "sha256": "2e2e5d0a99fe15c88f301bf1f35554ed7bc107c335ab71a6b2d236f495292f35",
+      "source_git_blob": "efa2dd26bb1877e4ba40888ae39a353609938e74"
+    },
+    {
+      "path": "tests/spec/test_screen_metrics_study.py",
+      "bytes": 10028,
+      "sha256": "f0e11a81dba47453d80c04d6abeac5b41030edc8c8e44c1302b0ad7c6add7f2d",
+      "source_git_blob": "8fa75b21e1a84ace3388b9450368162f8b2b1325"
+    },
+    {
+      "path": "tests/spec/test_screen_params.py",
+      "bytes": 5299,
+      "sha256": "a094d36c4b7eccbd3f18c30cd2dc49a24af6674c0e8ba43f5bd95aa69fc06375",
+      "source_git_blob": "641414704e05a3a9c8f14bec8009dbc7ff10af9e"
+    },
+    {
+      "path": "tests/spec/test_screen_saved_metrics.py",
+      "bytes": 9546,
+      "sha256": "d719ea6877676c65ae611ba9c91f0ff1108d28ddddfee9846c0b077127ef8464",
+      "source_git_blob": "2c898b8e21fb98c292a661ea43748c4d71c8ff85"
+    },
+    {
+      "path": "tests/spec/test_screen_study.py",
+      "bytes": 1863,
+      "sha256": "86257330342c81cea0fbaaa4a76dfc5120a909e6a6518a0eba9521e14fe99402",
+      "source_git_blob": "b36b25bd1e374400853e5efafc2cc1e335c6c107"
+    },
+    {
+      "path": "tests/unit/pipeline/test_dated_network.py",
+      "bytes": 6768,
+      "sha256": "fc08d240f5e16b82bed2efa4b80a8f51c53b5ca6d931c86fabb3270bb750a9a6",
+      "source_git_blob": "49012a24386bd02923dc3c79cb755ce9cebd7389"
+    },
+    {
+      "path": "tests/unit/pipeline/test_departure_reconciliation.py",
+      "bytes": 4055,
+      "sha256": "70e45fd4123eafb0a98a1691bdbe8aa639c5320e8b5ed700cfdd9e178537d1bc",
+      "source_git_blob": "149e246138cc7c42735f99b25d6f0a4a10745f3a"
+    },
+    {
+      "path": "tests/unit/pipeline/test_empirical_targets.py",
+      "bytes": 5228,
+      "sha256": "07c36bc24c309316a998422b57e249cbc97fffe0bae88bef53d5d64d31a5e980",
+      "source_git_blob": "888dac17ec8f531f175f4a2c071ff4dfd8b5a7e3"
+    },
+    {
+      "path": "tests/unit/pipeline/test_pipeline.py",
+      "bytes": 5437,
+      "sha256": "f44709c85ec5f9b763e0e5bab48676c133071f32d18b90b3e3a54b88313264f5",
+      "source_git_blob": "416ffc38f8187e4e1dd23613a55001b63aaa5433"
+    },
+    {
+      "path": "tests/unit/pipeline/test_scoped_processing.py",
+      "bytes": 12642,
+      "sha256": "8c36eed91bb4a9ae06c91e2fd924e863e2307c6bacec07c922ca5912aca5bc57",
+      "source_git_blob": "fc95d505764bc278778a3c59e69b21dca4a8fda5"
+    },
+    {
+      "path": "tests/unit/test_allocation_comparison.py",
+      "bytes": 14535,
+      "sha256": "76b1a235a6a73ea997a79ebcbf37a694bc52c377827aaba0211fc73d58470a2c",
+      "source_git_blob": "34b53d88b3a49b317d829e2146a7b907418c4fd5"
+    },
+    {
+      "path": "tests/unit/test_backtest.py",
+      "bytes": 660,
+      "sha256": "6b25fbf3bf777af88efafcf6fc7b27038da7ed208a393d14ce9c4b1f65b497b1",
+      "source_git_blob": "f5f9f3368525f0d4121b0d18cc1a838f6ec7ac41"
+    },
+    {
+      "path": "tests/unit/test_batch.py",
+      "bytes": 1244,
+      "sha256": "9e79b51713961d12e012409e329f6fee2d9214c216160904cd8010f3f69401dd",
+      "source_git_blob": "ecd5cdd283da03dbf3c00713201ce81b576c926e"
+    },
+    {
+      "path": "tests/unit/test_behavioral_network.py",
+      "bytes": 10296,
+      "sha256": "211d0e7e2719ea48124429ef7399455a21a7b0cd5d9a70606a7fcff386cb931f",
+      "source_git_blob": "2edaefc16e47199126d93be29774df88c0b8d523"
+    },
+    {
+      "path": "tests/unit/test_belief_ppo.py",
+      "bytes": 8943,
+      "sha256": "fd71039114e8f2d6d278c9ca7babeb578c70a04cec0deaef482239c831e3f82c",
+      "source_git_blob": "cafcb82faf3796e7a43a483dbc3170cdaf715f72"
+    },
+    {
+      "path": "tests/unit/test_beliefs.py",
+      "bytes": 7935,
+      "sha256": "271cbf61006e6b00b925ad6d00bb888661f902d01c63db34cd62c15ba077d97a",
+      "source_git_blob": "41dc3b1d805906f9a4364598bf03bd6883d492e2"
+    },
+    {
+      "path": "tests/unit/test_booking_timing.py",
+      "bytes": 4772,
+      "sha256": "d720105d06d9f84b0a66b140b1b1325801a993ac93a6315dd1423acb253ce2e5",
+      "source_git_blob": "8f00b29a91ed8324ecf284c97dcf9c72410630fd"
+    },
+    {
+      "path": "tests/unit/test_brute_history.py",
+      "bytes": 2751,
+      "sha256": "8177278a61772c886850dbf99551b32b41187a3c4a8980f9e721aaf7f4a339a1",
+      "source_git_blob": "675a5c4acf1f7141a7fc567be637e6491f76f37f"
+    },
+    {
+      "path": "tests/unit/test_cached_prior.py",
+      "bytes": 4265,
+      "sha256": "9964d0cc5587bd77ce6f56dcfe5e1332322a1447342472d1ecfe46dc2110893d",
+      "source_git_blob": "42f10b6b4d3a071df3797441a9284c1f63d06738"
+    },
+    {
+      "path": "tests/unit/test_candidate_power.py",
+      "bytes": 8599,
+      "sha256": "2eb62f06d60697f793e7ea53bae40a9e8407de182d17494e612c7212ff04c41f",
+      "source_git_blob": "307c772ec1a5c0de83bd75bb9a2199ea63984528"
+    },
+    {
+      "path": "tests/unit/test_cap_evidence.py",
+      "bytes": 11760,
+      "sha256": "4ec39973ce4392626d8b23d8e41d5c93faf4b27ef7ec514d777a20af62acffd6",
+      "source_git_blob": "9536273b6b260e58757e1fedcc789901b1624594"
+    },
+    {
+      "path": "tests/unit/test_capacity_windows.py",
+      "bytes": 14171,
+      "sha256": "aed0f879083f53dda00a977a44e5cccaf93fbd22f1010c2d43d3e08e2aa63569",
+      "source_git_blob": "7cda0ceed596773f34f4e18f14e35a07373f36df"
+    },
+    {
+      "path": "tests/unit/test_capacity_windows_v2.py",
+      "bytes": 15801,
+      "sha256": "7bccd44f6ad1deff5c1ecb5d6a71a7e38eb823420c9c76e6616407b324c3d244",
+      "source_git_blob": "b3a917cd621b6257776954b661b3e686a32a0a5f"
+    },
+    {
+      "path": "tests/unit/test_checkpoint_pair.py",
+      "bytes": 6519,
+      "sha256": "3380e5ea9a287be7da5778a55914f579d930be7633cf7e3adc2d13cf1a302d98",
+      "source_git_blob": "46fb1c2868f256a63fcae3edc16b06a90bf8ebf5"
+    },
+    {
+      "path": "tests/unit/test_checkpoint_pair_audit.py",
+      "bytes": 4657,
+      "sha256": "2ead8ed8c7a2132be8fbbf05c85276c09425e09b236813322a966c1f68fb93ea",
+      "source_git_blob": "2226ff4be35adec0590159b55d9e15fc5e7b50df"
+    },
+    {
+      "path": "tests/unit/test_cli.py",
+      "bytes": 1770,
+      "sha256": "0ce3a1dfadb68bc22f0c2f9fe516ad1ee38cb1c78c817532d76714fe11d99726",
+      "source_git_blob": "a1544094dd729fb85d15979f8d0ee84b4c7d97f4"
+    },
+    {
+      "path": "tests/unit/test_conditional_tail.py",
+      "bytes": 4172,
+      "sha256": "0a57f03b0e7d0af87e7f1c4ff3dcfeae97c684f79bb10c07f4cd12c7617e8817",
+      "source_git_blob": "a9c45abf90961dc8f6481a5137a0364f837690f6"
+    },
+    {
+      "path": "tests/unit/test_controllers.py",
+      "bytes": 3716,
+      "sha256": "62f884160e89d5d6d6b567efbbc233be9674bb062246fa01bcac088c274e39f9",
+      "source_git_blob": "d0c92b0a668ba11813b518c7a0339ae75235038a"
+    },
+    {
+      "path": "tests/unit/test_core.py",
+      "bytes": 1957,
+      "sha256": "8e419c39cd5842a28ccc702357162b93856668536fa3432e0b91cfb04a565d14",
+      "source_git_blob": "ba8365e4bdc7a5d44ea4c9db1dc7b36392e684ac"
+    },
+    {
+      "path": "tests/unit/test_count_ledger.py",
+      "bytes": 5919,
+      "sha256": "32e815b8b4a8c3b3b933b1be9407430bda2f3e596cc068d3b976af21a6007001",
+      "source_git_blob": "d92845bfd94adb3a32c14ccdd0ccd5048289f6de"
+    },
+    {
+      "path": "tests/unit/test_coupled_outside.py",
+      "bytes": 12172,
+      "sha256": "35943beb43a56406294ed84870da55610d5b969be236fd40fcb18b24eaaf01ef",
+      "source_git_blob": "8d795c049f4dc7f5b5a05ee1d7ba9d62e0443429"
+    },
+    {
+      "path": "tests/unit/test_curriculum_ppo.py",
+      "bytes": 8636,
+      "sha256": "afae1fc7add68b6a778effff310465219a9328a35692e651ccbd351422a80bc1",
+      "source_git_blob": "ea6bf2296922050a97dc78c266cbfdb428a85cdc"
+    },
+    {
+      "path": "tests/unit/test_data_headers.py",
+      "bytes": 976,
+      "sha256": "82a6910d15efde4b536217676891bc3d1da56d8e6baae0ec36e55c808b98a31b",
+      "source_git_blob": "0dc56647fd186222195176aa67e8c43d87bbbbb8"
+    },
+    {
+      "path": "tests/unit/test_dated_b1_family.py",
+      "bytes": 11851,
+      "sha256": "c2dffa8b3851b1853701861595c4c54dfa47d5e82e41bb49465dd09336fb50d5",
+      "source_git_blob": "778b35598b0852864364286abbd2f3993ef0b276"
+    },
+    {
+      "path": "tests/unit/test_dated_composition.py",
+      "bytes": 15543,
+      "sha256": "ed5a09b1d49f67d8ece42336fb24b6936c65669ad2b6384a72a7976da4dc612b",
+      "source_git_blob": "869fe8f9c7381f878d6d890da1fd823b4395a782"
+    },
+    {
+      "path": "tests/unit/test_dated_demand.py",
+      "bytes": 19147,
+      "sha256": "a272392f7e11ee46b428d50a70941075b5b31087078fdfcc751b78ef97623956",
+      "source_git_blob": "4bebdc1541d8f0ae7bedd3752c90a16494fa432b"
+    },
+    {
+      "path": "tests/unit/test_dated_order_admission.py",
+      "bytes": 15349,
+      "sha256": "dc5d466f069a4872261e6ee681205541f0048d193c7c0fbe771a03998ff4513e",
+      "source_git_blob": "fdccd57fa68c360bd6132b8d57746126f3e5151f"
+    },
+    {
+      "path": "tests/unit/test_dated_rescue.py",
+      "bytes": 13903,
+      "sha256": "49060b48b227bf2974ba7c0d49c82ebfefb89a5c9cb084493b9600487c26f6cf",
+      "source_git_blob": "838e4fd1542b136f42e43c709b5323e452a065cc"
+    },
+    {
+      "path": "tests/unit/test_dated_reserve.py",
+      "bytes": 11798,
+      "sha256": "41b551530a5b6dd88de300e1d24d3119e7973efc541982aab33d41f64afff4aa",
+      "source_git_blob": "ff203840cc56d84bc88f8d5bb7778e7422495f85"
+    },
+    {
+      "path": "tests/unit/test_dated_shocks.py",
+      "bytes": 18204,
+      "sha256": "be922bb342bcae36dee2791519cd2f77b73a5cc036b95542a639229714f99a50",
+      "source_git_blob": "9e76b42efe3155343b00b42fd2785ad30dcef452"
+    },
+    {
+      "path": "tests/unit/test_db1c_events.py",
+      "bytes": 9275,
+      "sha256": "c08f554a0053c71e2d6a524e734bc5c975f6256bbc64df9bd182599a0b33860e",
+      "source_git_blob": "497708186bfef4764a271bd801df9e555f1f48cb"
+    },
+    {
+      "path": "tests/unit/test_degenerate_demand.py",
+      "bytes": 6098,
+      "sha256": "26db578984d86cd07ca55e9cd349dc2ec5c511b929c3d2c83605f4aadae56628",
+      "source_git_blob": "af92b496c030f29f08754f3a6469d29cbbd1311c"
+    },
+    {
+      "path": "tests/unit/test_demand_identification.py",
+      "bytes": 5836,
+      "sha256": "4e2078f69c8f43fdffd2add8b99e05f6d6cb7b0697a2c340a4c5717439da1b78",
+      "source_git_blob": "d5da94a443e10b39f024f8ae5ea501280e8e11cf"
+    },
+    {
+      "path": "tests/unit/test_disruption.py",
+      "bytes": 9839,
+      "sha256": "a2cf08e7c8114f27532c7f134675de6f27db4e3ece92caea27d4a840ede19b5d",
+      "source_git_blob": "213c06f6737aa9b0756143363e267ad19ff8eb78"
+    },
+    {
+      "path": "tests/unit/test_dlp_dual_study.py",
+      "bytes": 4645,
+      "sha256": "3689fdef06ae95fb932b57e5e93e3767d1e5d7f129727c55b537064b4fa851e6",
+      "source_git_blob": "2dd04cb37ee9c3e46a9bf2a13322844d4827d172"
+    },
+    {
+      "path": "tests/unit/test_duopoly_symmetry_study.py",
+      "bytes": 5917,
+      "sha256": "aee756492d11c2d4b5b13fae30a5e354542a3b3c14deadf04eda1a15bf9da8ef",
+      "source_git_blob": "b6fd800d8bd6f8c7bd72d97c188766246af898e2"
+    },
+    {
+      "path": "tests/unit/test_emsr_benchmark.py",
+      "bytes": 5888,
+      "sha256": "633d2a4a61f7f3f91f8ee7e39c59795f8fc313e8bab97b78601d5cd685bd96b9",
+      "source_git_blob": "89ea54c78c4b892e677c60fb9bcf6c7119267c5a"
+    },
+    {
+      "path": "tests/unit/test_engine.py",
+      "bytes": 3421,
+      "sha256": "eadfc14037639d636c37699e912732f92c266d31c753ac7bfa322c7381b251a7",
+      "source_git_blob": "60ab3ee4d2a3c941d7c0fb6fbb60ca82ff589cef"
+    },
+    {
+      "path": "tests/unit/test_episode_types.py",
+      "bytes": 11512,
+      "sha256": "6fe03a1d9e6cb31f439174277889c2d6cd9f3ebfa67e43279c94f6866460881e",
+      "source_git_blob": "7e92f9848e1508f6c680cf09d8742c7597342009"
+    },
+    {
+      "path": "tests/unit/test_episode_types_keyed.py",
+      "bytes": 2671,
+      "sha256": "9c2ebc09b3ebd9d90f081a44ff588f20daa9e574b3a7afb868a795572ce001a3",
+      "source_git_blob": "b88de304ddd1f233b85b5495fbf6f4b5e9ecc3d3"
+    },
+    {
+      "path": "tests/unit/test_event_calibration.py",
+      "bytes": 8691,
+      "sha256": "b2bc887380105e97a48dc5df374d053f6d4732b3e4fba205fd2c325226cc7eea",
+      "source_git_blob": "b0a167182425af0158ad3e21aacaaa22597dadad"
+    },
+    {
+      "path": "tests/unit/test_event_departure_trace.py",
+      "bytes": 7861,
+      "sha256": "ce271baf6ee8128b8e6abac4a2e168873f104e423fa106f3da0690fb4642f8b3",
+      "source_git_blob": "26ed26dbd0e2d6133975223493dfddb74b8ebc14"
+    },
+    {
+      "path": "tests/unit/test_event_fare_moments.py",
+      "bytes": 8377,
+      "sha256": "68d170c695708235e5b38afdf0f49f8055aea43bb25dc3f11022b5da62ae0367",
+      "source_git_blob": "b810e8b22f081bda84010b02db5865311a318889"
+    },
+    {
+      "path": "tests/unit/test_event_network.py",
+      "bytes": 11822,
+      "sha256": "eccb939a7b7e8fc5b8e86bbe11b1e7f3b9bcb394ab934192c9ec7ea1b8c0de83",
+      "source_git_blob": "0bec0f00b51397f3b3481d502ab4d0c025334412"
+    },
+    {
+      "path": "tests/unit/test_event_scope_v2.py",
+      "bytes": 4450,
+      "sha256": "02158be11584ff4aee38bf4b5f7aa11a7c7f749343fb5a145ecde8de3e28fd7c",
+      "source_git_blob": "a49ef928f323f4ffd0968e04f613f659807e2999"
+    },
+    {
+      "path": "tests/unit/test_event_seats.py",
+      "bytes": 9626,
+      "sha256": "57a7ee867f42109b25d3908fe8991bf7f0767560435491917f51c49059d352a7",
+      "source_git_blob": "9761f2902ce76980b2fbd20d5367f00416ada301"
+    },
+    {
+      "path": "tests/unit/test_event_shock_counts.py",
+      "bytes": 8811,
+      "sha256": "afc5052344c8c6632e1f8e8368625fff4e84cd98ba7fc5af248e242faa5c33fc",
+      "source_git_blob": "50351295e8fe13a3ec9dcb09b3e66e2c7c943b70"
+    },
+    {
+      "path": "tests/unit/test_exponential.py",
+      "bytes": 6363,
+      "sha256": "c959c7a933dd5b81a64f35e519bfc8510ce516ecd0517ef84986b37619eb6c6c",
+      "source_git_blob": "7d87e97c1cae4a221aefd779909a95a574dd57a2"
+    },
+    {
+      "path": "tests/unit/test_fare_panel.py",
+      "bytes": 19900,
+      "sha256": "3694029020fa9a6956fbd51a8cd7f515b04f35fd69317a067826e40315fb4169",
+      "source_git_blob": "42cf0d488ef17163a74f3d91e1feeb15d7d0defc"
+    },
+    {
+      "path": "tests/unit/test_fare_panel_v2.py",
+      "bytes": 3747,
+      "sha256": "8346d11624736d0088df98738c24897529f9f785e026454bd1364eed2a48c88a",
+      "source_git_blob": "f234f0b7b592589a198ea86592a5059b5e1558e7"
+    },
+    {
+      "path": "tests/unit/test_finite_model.py",
+      "bytes": 8573,
+      "sha256": "a385f9571bd2aa4f33ab8f91fb402d090b870a853da0d08605d7cf7e8ef09bd7",
+      "source_git_blob": "e59e85d3a51f8da5f89684e926c507c2993f3d36"
+    },
+    {
+      "path": "tests/unit/test_fixed_fare_admission.py",
+      "bytes": 8374,
+      "sha256": "a57091cd4361e9104860006b14a385b0d1db90519a8c805d0fc95d9cb7978ce3",
+      "source_git_blob": "c0d7ee54779bc13e3d2105fffc208a81f3f5fef7"
+    },
+    {
+      "path": "tests/unit/test_game.py",
+      "bytes": 2535,
+      "sha256": "58547e7fc6434cea7933859a6e7d426e6e4b6847cfced89e39f68da868a60a82",
+      "source_git_blob": "e172c2a28720c47d48ef49623d03229fd6146fd3"
+    },
+    {
+      "path": "tests/unit/test_generators.py",
+      "bytes": 1312,
+      "sha256": "960ede4e6ab5a12043f08815f198a6ca1714dec6a80bd4a1ef71e17eff1f2336",
+      "source_git_blob": "b850d59e29274b56eb06c0a73bd7230d735257d2"
+    },
+    {
+      "path": "tests/unit/test_gradient_monitor.py",
+      "bytes": 12767,
+      "sha256": "7ccbbb6c96532466d2d1a3541b3bce5d8f3d10aabd284664960f8335ace33ed5",
+      "source_git_blob": "60534b7bb08197bdd66d84f2ac8ff058154e8863"
+    },
+    {
+      "path": "tests/unit/test_hub_initial_diagnostic.py",
+      "bytes": 3339,
+      "sha256": "d338f4048cf7eb0201a4c94d1248511d5655be771f76d9dab7a66ea6057a58ee",
+      "source_git_blob": "afe57a9e00fd1741fa5205a3f78006776d93066c"
+    },
+    {
+      "path": "tests/unit/test_i4_particle_study.py",
+      "bytes": 6310,
+      "sha256": "4a8d0edbcfa1404d7ba6e9c67caabe099fe7acd29f5838d479f8c0c86d1980ee",
+      "source_git_blob": "59702c56979efeaa0f79234f96ab2f4232517909"
+    },
+    {
+      "path": "tests/unit/test_information_dp.py",
+      "bytes": 1141,
+      "sha256": "25783f069d946edb3e51408a528ff346751308cd3001482b15ffa397764443ac",
+      "source_git_blob": "6c88c46fd4aea29c9874ce8b5c1ac71d809960d2"
+    },
+    {
+      "path": "tests/unit/test_information_measures.py",
+      "bytes": 1259,
+      "sha256": "0633147aa947abf84b8c37d05a05e990a71ed574ee8fd4aafb955942f390bf40",
+      "source_git_blob": "ad833c56e5688d30720f6ee7b83f59775cd6ffb2"
+    },
+    {
+      "path": "tests/unit/test_kernel.py",
+      "bytes": 6483,
+      "sha256": "becf8b0647194b0a0cba52aedac4e31d8b61f22827e9f97b62658ccef26a7110",
+      "source_git_blob": "42e1c4ab03ef5aace04696051a8201677d5e6bbe"
+    },
+    {
+      "path": "tests/unit/test_lagged_finite.py",
+      "bytes": 8275,
+      "sha256": "b53751a5d6e25f7c945c215771786374fa622e5d33628ad0a2a3c3e4826a68a2",
+      "source_git_blob": "754ec117853e9e9d4dff8b9569e7825640a2723e"
+    },
+    {
+      "path": "tests/unit/test_leg_identification.py",
+      "bytes": 6897,
+      "sha256": "9ced5dc174b0f4a9fc7d0dab6d9a6dfb4871efc4f0b9c54c262dd89e078adbee",
+      "source_git_blob": "6a809a76eea8d1fec39a1ed9fe936d91d6bac4ac"
+    },
+    {
+      "path": "tests/unit/test_littlewood.py",
+      "bytes": 5916,
+      "sha256": "3470b79ba9aefeca7fd7e7723ec5a73a648a7a7934db4d91df4ab7154bf42d64",
+      "source_git_blob": "7472bcaefc4b275534966876b3ab45a4dfac9dbb"
+    },
+    {
+      "path": "tests/unit/test_littlewood_worker_v2.py",
+      "bytes": 2209,
+      "sha256": "98383b97cb9d378ad918b753dbfb24d79da3df9e3cc57b59bb21f503f9708f7b",
+      "source_git_blob": "c298ff4fb8573359f49da44a222fc2e42d1fab5e"
+    },
+    {
+      "path": "tests/unit/test_logit_bertrand.py",
+      "bytes": 6201,
+      "sha256": "92e2594bb766f3349fb40b9ecc3faac9d70d5c8994421ba3559655b302822212",
+      "source_git_blob": "60bcece5beda7fc4dd54f55c695be7098122cb64"
+    },
+    {
+      "path": "tests/unit/test_matched_mpc.py",
+      "bytes": 6258,
+      "sha256": "44fb1288f08f7360e12da3c68d65f1b129e2abeeaeeca0f127e401049fda7235",
+      "source_git_blob": "2ef9f357745f9b83b18485f7335b3e4307741224"
+    },
+    {
+      "path": "tests/unit/test_money_scaling_evidence_study.py",
+      "bytes": 8052,
+      "sha256": "713d6ce60d340b2a763db7bb6ed866af42b482c59fbde0bf49f1a186dd96ae76",
+      "source_git_blob": "fe2b1485fc2f98254052fc368d79480d9a6ca5f7"
+    },
+    {
+      "path": "tests/unit/test_money_scaling_study.py",
+      "bytes": 6607,
+      "sha256": "18d2b6abf60dfd85a2d29cb7aca9ab89346ecfd59b8f00ceab7492eac3bacbd0",
+      "source_git_blob": "430f0031bc0abe9819d3312e235f456fae84e7f3"
+    },
+    {
+      "path": "tests/unit/test_mpc_population.py",
+      "bytes": 10936,
+      "sha256": "4d29302ab7b13487b601a480491e78ed3e367ba0192b97052e219226e1343a52",
+      "source_git_blob": "31e648aa4520b062b2e9eb3baafb56a91cc280a5"
+    },
+    {
+      "path": "tests/unit/test_mpc_review.py",
+      "bytes": 4342,
+      "sha256": "d5e73c0694fdea570837241ff0ebf16a7e376e4cbb9856c99f9e889a0ed7e077",
+      "source_git_blob": "df5de86f36d662818b67df25b785c59de6fedd6d"
+    },
+    {
+      "path": "tests/unit/test_national_coverage.py",
+      "bytes": 4602,
+      "sha256": "38719175bb0db45bf489bc56238424d0f9f15ded1bd05f81a8a5ef7c93a9ec44",
+      "source_git_blob": "b9ecece95ba328f334fa5adf7aa00674b96a0530"
+    },
+    {
+      "path": "tests/unit/test_native_order_bound.py",
+      "bytes": 10320,
+      "sha256": "d968d981cc4dc7020e7602ee383a7c31baae19243a7782cb9a935d2e684d4961",
+      "source_git_blob": "2efd1d3d6df595ed3455edd4da387021eec26ab3"
+    },
+    {
+      "path": "tests/unit/test_network_monopoly_study.py",
+      "bytes": 5338,
+      "sha256": "69a8990a2ca2a325ce7b83d0caded1146d7df5fd7e7665d9b345c637c1097089",
+      "source_git_blob": "c20dd1c03910f0ad41ad03561c16ddba240690d2"
+    },
+    {
+      "path": "tests/unit/test_ordered_reentry_logit.py",
+      "bytes": 15462,
+      "sha256": "25e690dec60508af35f3dfebbbdf104609de000332b043a80cdd391c17512ce9",
+      "source_git_blob": "a605218a490c82c683b34be35f93d696b211134e"
+    },
+    {
+      "path": "tests/unit/test_ordinary_cohort.py",
+      "bytes": 12390,
+      "sha256": "0008c844e2b7d2f0937ed3989ab1d70a1eabc080df44b10ec06dbc0538f8c112",
+      "source_git_blob": "19bfd76461680dd02f7c50b31ef00bdd26031391"
+    },
+    {
+      "path": "tests/unit/test_passenger_accounts.py",
+      "bytes": 13694,
+      "sha256": "394ac9bbaf5f6094cf52b45e17a24d3208fa5c78534f1fd6744cb64e07f3346d",
+      "source_git_blob": "4b4538e3e5729545816aa9111a2b37d3ca1fed52"
+    },
+    {
+      "path": "tests/unit/test_payoff_logit.py",
+      "bytes": 10250,
+      "sha256": "187ca2689537eb55526b1621f861c4fe3b19760a92cd3e888583ea81fa33aff3",
+      "source_git_blob": "898f1586a6032e4b900cbe2acc7582543d5c9f5c"
+    },
+    {
+      "path": "tests/unit/test_poisson_forecast.py",
+      "bytes": 14459,
+      "sha256": "ef414ced93ee21db2ea78e5e9cfdb03b28b3de6d8ecc2b71492d1e63e92612d8",
+      "source_git_blob": "195605c154214cd0b052473b717a8b792b8f063a"
+    },
+    {
+      "path": "tests/unit/test_poisson_period.py",
+      "bytes": 11468,
+      "sha256": "32d125fb1c81f3761aa54c45d3158984db82c264ff1f360a290cf82269ad23c2",
+      "source_git_blob": "c8bf90ca9b274d6f507c076048d8ce11a7210d59"
+    },
+    {
+      "path": "tests/unit/test_potential_lineage.py",
+      "bytes": 11179,
+      "sha256": "c7b8bd60e15b201c945348739df040a5803c3fde9294f23277a71fde9dc473b5",
+      "source_git_blob": "4f546d31fe0fff5173773e580d7b34c4c7b0b5ec"
+    },
+    {
+      "path": "tests/unit/test_price_monotonicity_study.py",
+      "bytes": 5825,
+      "sha256": "c35e9af88f3b29c896a94712c58d17c3b09074da9bc1d747afba5b8088637353",
+      "source_git_blob": "92d243f8a55a508f2bf435add601da68075ae35e"
+    },
+    {
+      "path": "tests/unit/test_quote_exposure.py",
+      "bytes": 8598,
+      "sha256": "dc7d85a82621ceb77c2b3d6068309e9f3819aec07d13ad5e3930eb27868bbf68",
+      "source_git_blob": "199c38676135504e813fce8556c3f1a9f7741dfd"
+    },
+    {
+      "path": "tests/unit/test_quote_route_binding.py",
+      "bytes": 6625,
+      "sha256": "a7ffe0021464337c31886dbfb35cc2e756fa2d2fb99cc54b4e1adb82fafcd6e7",
+      "source_git_blob": "0586d8582bbc2dea5262021964c1cd268294937a"
+    },
+    {
+      "path": "tests/unit/test_rationed_native.py",
+      "bytes": 12332,
+      "sha256": "4117a2d664a441488005bdca8d991e7329a61ca67942fbf677e98f031e5f57ab",
+      "source_git_blob": "efa028a8b903e9da6baadb058f769871e97d5135"
+    },
+    {
+      "path": "tests/unit/test_rationing.py",
+      "bytes": 12999,
+      "sha256": "d829430aa7bec47d28402de3b54e7d7df33807213e5d30d1bb947674fa42df32",
+      "source_git_blob": "30cd62d9d5cc7ca50b1b5a97557ebb9aceb64f57"
+    },
+    {
+      "path": "tests/unit/test_rationing_native.py",
+      "bytes": 12938,
+      "sha256": "429f31920947753caa98855685b05935c5e4351043070517fb751bf38401a47b",
+      "source_git_blob": "8a6a94654659f7c5e9a673409b4e80517d969a0e"
+    },
+    {
+      "path": "tests/unit/test_rebooking.py",
+      "bytes": 10996,
+      "sha256": "70ee6b35c6fd028f2b8dcd024e188823ae63d9288b9de4cf7ed69fad44752d60",
+      "source_git_blob": "368ff7e2cf7614c7b4e9bf901021d144a11bd9dc"
+    },
+    {
+      "path": "tests/unit/test_reentry_payoff.py",
+      "bytes": 13454,
+      "sha256": "bce7f3f5dad00a754726998f2fda9ad9c16b5a0643adf6cdbc8ac969c6d75d3a",
+      "source_git_blob": "10e5d05bc64496033eed705818ed013bed40311f"
+    },
+    {
+      "path": "tests/unit/test_reference_study.py",
+      "bytes": 1773,
+      "sha256": "704296fc40042051bc3a347a7929c1a0bf93ddea118002d527aeb371314ac1fe",
+      "source_git_blob": "d2f18ebdb6bec334262d5065ccb77c1e8cd10093"
+    },
+    {
+      "path": "tests/unit/test_refund_accounting_study.py",
+      "bytes": 6856,
+      "sha256": "33b04e20bfd8081f0f2e2ab93dda111c203963f91f5a834f4813877af7df84e3",
+      "source_git_blob": "231562ec91ded57425b964d156aa6ff946d62860"
+    },
+    {
+      "path": "tests/unit/test_refundable_net_objective.py",
+      "bytes": 6438,
+      "sha256": "3ed7c7047791c46c974cd3b5db49596d0d2313ac4983d5eec6a73bec233eec46",
+      "source_git_blob": "8b988ebd794c9542e7c1f121ad2781bbfbf994c6"
+    },
+    {
+      "path": "tests/unit/test_regulator.py",
+      "bytes": 12719,
+      "sha256": "e0234aa2dfe6cec345d08b76ded1abbebd3058b29aad6b34230b956bc6b3ad9c",
+      "source_git_blob": "e3460d379a6a278d2f76c1ffe707a0f20e0f9694"
+    },
+    {
+      "path": "tests/unit/test_relabeling_study.py",
+      "bytes": 7823,
+      "sha256": "e7eb46c55840517a3cce3fb1ac918ae396afcbfc485773885f3d52c297af0b34",
+      "source_git_blob": "2ec341259d0e79d1a9386742dc1dc37c1f37ab38"
+    },
+    {
+      "path": "tests/unit/test_rescue.py",
+      "bytes": 13347,
+      "sha256": "21331e8c2c712f2b06f9d381f8ae86384283cb759d48db1efede40de93bc7858",
+      "source_git_blob": "b8adfdab017a48fd6a144fc0f37a75472306425e"
+    },
+    {
+      "path": "tests/unit/test_reservation_census.py",
+      "bytes": 15199,
+      "sha256": "473ad2ed454a0dc9462ffe80c30e747eac1145cbe60cda2258818eebff37b38a",
+      "source_git_blob": "189df78b1ef50a1b9ae04f62ae883ed02bbade92"
+    },
+    {
+      "path": "tests/unit/test_reserve.py",
+      "bytes": 12485,
+      "sha256": "4f7088307e43f63407b76f9c41ce950820fb6d0c768b45f5d1ca0682095ef852",
+      "source_git_blob": "84048b304db977fb9c9021150061797681fbe5d1"
+    },
+    {
+      "path": "tests/unit/test_scaling_catalog.py",
+      "bytes": 3289,
+      "sha256": "ea93dd4d98d426ad80ceb3b25506cdbbfab5df9f082906237e3b8a5bef70eab3",
+      "source_git_blob": "d926237c94ec754891c728637ff2a10af5a8dd77"
+    },
+    {
+      "path": "tests/unit/test_scaling_study.py",
+      "bytes": 2640,
+      "sha256": "93e97211d8dc2a530f0fab6ff8e5e3403de786f70b1896020dfaaa4690e0e525",
+      "source_git_blob": "24496718fde3a2166502132ad3dcc2ac59a41574"
+    },
+    {
+      "path": "tests/unit/test_segmented_welfare.py",
+      "bytes": 12833,
+      "sha256": "0f93b0bb1ad517e6457ed29cb61758f174bfe34512eeb32af04c38dcae6f7d98",
+      "source_git_blob": "c8aefa6ba9e94990cf46892b8b16c0a91008280f"
+    },
+    {
+      "path": "tests/unit/test_sellability_cache.py",
+      "bytes": 2955,
+      "sha256": "701a52bf36fb230c573fb25ea3d1768ad23c2cf6eab8eb1e7ec47a19f1e64da1",
+      "source_git_blob": "dc4dbf7594e8d86ced62f058847e52073c798ee3"
+    },
+    {
+      "path": "tests/unit/test_shared_background.py",
+      "bytes": 10532,
+      "sha256": "215fb220f7e80875ad490a96eb4ac26fc3bda277a37c75c745ab784bf01088e5",
+      "source_git_blob": "7e00f27263c237b408518cd744128ec46fa445df"
+    },
+    {
+      "path": "tests/unit/test_shared_demand.py",
+      "bytes": 10959,
+      "sha256": "83a7ae8b051308c092caf4abdf473a1ace38e277e8c1adfd42108401668eca21",
+      "source_git_blob": "f64e9bfba3d7758d57ede2c78f0217be87b7543e"
+    },
+    {
+      "path": "tests/unit/test_single_leg_ppo.py",
+      "bytes": 8906,
+      "sha256": "5d72dad29b14e26d93d377049dcd6feb20198c369cf8a1b9ad12e429a22704ec",
+      "source_git_blob": "68fab38748e6243708d21c48387f8c81d1aa6630"
+    },
+    {
+      "path": "tests/unit/test_solvers.py",
+      "bytes": 3318,
+      "sha256": "fa27bb17b8ea777b7ccac867996a8be34b68d7ab8fb92da78c995525b58fa87c",
+      "source_git_blob": "504f344b0b2e0aac338902b3e1b89cfb3de2db20"
+    },
+    {
+      "path": "tests/unit/test_sparse_access.py",
+      "bytes": 5699,
+      "sha256": "7b5354966aa15569cfa6e704c213f6e6a9c2cece15ce5a44c6ba0d9cfd40b22d",
+      "source_git_blob": "84d1700eb33590bbd5cca4042dad3b7ba201612d"
+    },
+    {
+      "path": "tests/unit/test_spec.py",
+      "bytes": 3906,
+      "sha256": "d7f58709c9b935106c8261a93328ecfc14a456bec4e847adf17e926183037b6d",
+      "source_git_blob": "9ee2dc694158bbf3e3dc9e864142f066a1982d69"
+    },
+    {
+      "path": "tests/unit/test_spike_decomposition.py",
+      "bytes": 15304,
+      "sha256": "487f6bfc96de2221eec3cdd20bbe463dd6c7ae4fc91e67f18571417d43754f07",
+      "source_git_blob": "cbb7b7a1e258a595b7804492e6439e6a41ab9a1e"
+    },
+    {
+      "path": "tests/unit/test_step_tape.py",
+      "bytes": 9926,
+      "sha256": "125f81cf3437c2cf84780d06ef940adaae52127c395120aa559a01741d2447b8",
+      "source_git_blob": "ce0468e4abc9ae9d140187a46a9245c94452d565"
+    },
+    {
+      "path": "tests/unit/test_template_particle.py",
+      "bytes": 7881,
+      "sha256": "9ffccdcd0ead8a7da146a20471a1849fb84ec7c170a9a0e91b1e20f418f1abf4",
+      "source_git_blob": "3f0b733dd4ed78e22c5e0f3cc5d4e6d9acf02c51"
+    },
+    {
+      "path": "tests/unit/test_terminal_credit.py",
+      "bytes": 6200,
+      "sha256": "1aa1779ab697d01438f4fa1e0f93a6375822e55b93be632db2da2e0548db644e",
+      "source_git_blob": "09551865c2afbf90fd1ef792567f20a8a0cfca11"
+    },
+    {
+      "path": "tests/unit/test_trigger.py",
+      "bytes": 15542,
+      "sha256": "8c64c78042a0dddf5668f83f4fd82f800a8ce6b4a5763281b3bb770b8f5d9ab9",
+      "source_git_blob": "b173a60b3f056aa5b6f41a7609236a8d04d992ce"
+    },
+    {
+      "path": "tests/unit/test_triggered_dated.py",
+      "bytes": 18321,
+      "sha256": "ed4722c1e3e079cf2ecd8d82fc09b021985ea296c853ea71106c30e9d686ffcb",
+      "source_git_blob": "ea1f081eb104024c4541ecf44789c776654373ed"
+    },
+    {
+      "path": "tests/unit/test_type_mpc.py",
+      "bytes": 13332,
+      "sha256": "14f04f11f765c142ef463a2cbaecced5ce81bb1ad4daab6312a467029cd122c4",
+      "source_git_blob": "24fdda8e37af5425da24bf203a964d170d26cb1f"
+    },
+    {
+      "path": "tests/unit/test_unreserved_spells.py",
+      "bytes": 15009,
+      "sha256": "1320c6c10050bf33e21a728012da0741433791340cb42e8e618c0e01365b7a47",
+      "source_git_blob": "abf8c8a397c3f1ef14c2dd961eaf3b58727721cf"
+    }
+  ]
+}

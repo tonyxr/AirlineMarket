@@ -1,0 +1,54 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "V7_terminal_credit",
+  "phase": 2,
+  "implementation_revision": "native-R2-terminal-exact-Q-v1",
+  "task": "study:airline_market.experiments.terminal_credit_study:run",
+  "design": "list",
+  "fixed": {
+    "seed_start": 202048,
+    "n_cohorts": 256,
+    "K": 4,
+    "H": 5,
+    "sign_tolerance": 1e-12,
+    "actor": {
+      "learner": "srl_c",
+      "network_seed": 0,
+      "focal": "A",
+      "arm": "direct",
+      "ppo": {
+        "hidden_dim": 128,
+        "update_epochs": 8,
+        "minibatch_episodes": 4,
+        "gamma": 1.0,
+        "gae_lambda": 0.95,
+        "clip_ratio": 0.2,
+        "entropy_coefficient": 0.01,
+        "reward_scale": 1.0
+      }
+    },
+    "reservation_gb": 1.0
+  },
+  "cells": [
+    {
+      "instance": "I0",
+      "source_spec": "results/F1/20261111-2232_2a95d844/cells/62cdded46487d789/attempt-0001/spec.json",
+      "source_spec_sha256": "cd6f818b199bc7b79bde4449d25d066322daafe36ac18d61c1a05bbd5ca27270",
+      "compiled_spec_hash": "9a4a8992ae2b0af80effdbaa17f2553cd145e639d86f83666f6bf271dcef1b7f"
+    },
+    {
+      "instance": "I1_T4A4",
+      "source_spec": "results/F1/20261111-2232_2a95d844/cells/38aa9e427d9cb6a9/attempt-0001/spec.json",
+      "source_spec_sha256": "cfa2a4762edee4de98b1023e3861446789edd30308f7534052cdb4b072cbd3b8",
+      "compiled_spec_hash": "97874a5a096f281894856537c6dcf68ed407a75a3f967b2a6ab0a05906a0c6ea"
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1.0,
+  "limits": {
+    "seconds": 1800,
+    "rss_gb": 1.0
+  },
+  "out": "results/V7_credit/20261112_terminal_exact_Q_v1",
+  "note": "Terminal-only native H5/K4 R2 verification with original saved I0T10/A18 and catalogI1T4/A4 physical bytes; I1source historically labeled I0T4A4 in F1. Initial default NNseed0 SRL-C actor, no training/retuning/parent evaluation rerun. Fresh256 common validation physicalIDs202048-202303 per model; 512model/profile rows not512 independent physicalIDs. Centered credit primary, hold-relative separate; exact physical state is training-label-only AFTER actor action. All numerical-zero and mismatched signs retained and nonzero denominator separately reported. No broad V7R2/learned-policy/F9/budget claim."
+}

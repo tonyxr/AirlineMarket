@@ -1,0 +1,615 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "S1_saved_metrics_batch5",
+  "plan": "v2.0",
+  "plan_id": "S1/R4",
+  "phase": "S",
+  "hypothesis": null,
+  "primary_contrast": "saved-policy pairwise MI and common-prefix first posted-fare divergence",
+  "budget_key": "S1_saved_metrics",
+  "implementation_revision": "saved_policy_metrics_adapter_v2_rng_scope",
+  "generator": "pinned_saved_policies",
+  "task": "study:airline_market.experiments.screen_metrics_study_v2:run",
+  "design": "list",
+  "cells": [
+    {
+      "plan_id": "S1/R4",
+      "source_root": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2",
+      "setting_id": "r1-09-rival-lag1",
+      "source_spec_sha256": "d3d3a82a0bdb89382c49188c9e84afe3bce5462adf49f56cd51b2fe02aa4502b",
+      "reservation_gb": 0.5,
+      "pinned_files": [
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/0f65a67d39f9a113/attempt-0001/COMPLETE.json",
+          "sha256": "f965ee8cbe1cbe68c1bcc3d723bfc91b439c756f3c914aabba445b85821341d9"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/0f65a67d39f9a113/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "5ec2586dbc131a978bb50cad700ec31b4e7d6c078deb4ef890be4703b53190c3"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/0f65a67d39f9a113/attempt-0001/results.json",
+          "sha256": "f73a5f0263190dd1a813c93aed9f78a7b84ec59a9d5c17ae2ac6ccc1d7bf1337"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/3b49d31c09ea3633/attempt-0001/COMPLETE.json",
+          "sha256": "0116a935b1c0509e0506fc235bb7b7057566c459605820d0800b07379847f956"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/3b49d31c09ea3633/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "0e5e582b7a10ef198029804bd8a4cf487ee7a57a44160c1e3352f177fa2cc579"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/3b49d31c09ea3633/attempt-0001/results.json",
+          "sha256": "27998dbbee4e1e879495e34f4349dd119f82900a7e62adcf540f505ce82100df"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/9e4739845a087911/attempt-0001/COMPLETE.json",
+          "sha256": "05e03334fff58e14f88a373152e5d08e1c59a9e2b5f098a14c1a4431b37299db"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/9e4739845a087911/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "05d0f7b0a33c0736f9802bd70c068a5609aeb155b04a1268b07d4b04ac6f021e"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/9e4739845a087911/attempt-0001/results.json",
+          "sha256": "04fb74f90175e8f17af0dbb131efc7fff9ec6017f02efc83c9f8001bc42f8289"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/c4060be41e0ef58f/attempt-0001/COMPLETE.json",
+          "sha256": "c31daea6538e229079f8918af3f56e63749c3ee9b9241ce0784fe3b65e84bae3"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/c4060be41e0ef58f/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "36734c9caad47dc7df3bfc5926d192c9d8806339557e655f0356e4c42829546e"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/c4060be41e0ef58f/attempt-0001/results.json",
+          "sha256": "476b3ed484a4209ddae095ef8d875e574f781b0a7d2b18d62424e638f937d473"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/fa0de420474f53b4/attempt-0001/COMPLETE.json",
+          "sha256": "e55679d7cdab73d015c97819058662b2f9732393dbf15c4deb822ccc8792546c"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/fa0de420474f53b4/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "ce1e479a4805f0d5fb78ca949b27ac8a3c1740e1611b8bbd6518f315c3d6170a"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/fa0de420474f53b4/attempt-0001/results.json",
+          "sha256": "0836536d20a7e1a0b016f39232ba5046f6308a604444b3df417bb0a87ba357ce"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells.json",
+          "sha256": "5f2c3adef779cf0edb1d08f614ee39609f2fc36371ff56b71f648de2745c8dcd"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/config.json",
+          "sha256": "a5f1e84f36e91c24deeeb1006bcdf5d840cf24e2eb98f3997d4a69b0b4e853a7"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/source_specs/r1-09-rival-lag1.json",
+          "sha256": "d3d3a82a0bdb89382c49188c9e84afe3bce5462adf49f56cd51b2fe02aa4502b"
+        }
+      ],
+      "policy_hash_scope": "post-completion snapshots, not original transitive seals"
+    },
+    {
+      "plan_id": "S1/R4",
+      "source_root": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2",
+      "setting_id": "r1-09-both-lag1",
+      "source_spec_sha256": "1c3904f8668d040640769e645a9c62c141905ba570eb785bde2462c69a3f8837",
+      "reservation_gb": 0.5,
+      "pinned_files": [
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/12c04a53a2176757/attempt-0001/COMPLETE.json",
+          "sha256": "079453c6392562f7ce1a1058a2d021815aa5ea07b67998fa9e083d570d5ce559"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/12c04a53a2176757/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "244d31a838fb7d80045769d3779cf7372585ee97d97da4c7c9f778e74eaa9752"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/12c04a53a2176757/attempt-0001/results.json",
+          "sha256": "775575b077139815082badbfd29a7851409377988b0c217aa1241d9777a4bad3"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/491df78c6405a53e/attempt-0001/COMPLETE.json",
+          "sha256": "a53945222cd9045beb7c088a84b0875df786191fdf9c6007786f35f72938f4bd"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/491df78c6405a53e/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "22fc4548873d49c16f988b6842b030bd857033fef5bffcfa72e995f8453ef895"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/491df78c6405a53e/attempt-0001/results.json",
+          "sha256": "5c20639b765db1f26e65de5512318582ff2a622050a7b910a4ce93f1765bc060"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/5188faf8e9dcd43c/attempt-0001/COMPLETE.json",
+          "sha256": "0106870f7fe66cb7d43751be2fa7386d5373f22adc260790d3907c4f24f45d21"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/5188faf8e9dcd43c/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "fc1cf98c4bff40d3aa7a89e1ec9b1f0e04650cbc8903771159daa1c651161e88"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/5188faf8e9dcd43c/attempt-0001/results.json",
+          "sha256": "9b345193f086859645bbc71a885725184c8563c5157bc14ece95eb7553badd08"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/e44f49c0ef7875f2/attempt-0001/COMPLETE.json",
+          "sha256": "e5e3a246bd4fedac883a828256365326930792e35f83bb8be68c5e1ffb1c2c22"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/e44f49c0ef7875f2/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "8246dabd797f7d49124ff521006cf50f2085a00a65354bf895262ea0ee4485af"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/e44f49c0ef7875f2/attempt-0001/results.json",
+          "sha256": "0cb039638b8f17b7b686a4a0f87e9c5509e720c0dda51858cae2ee365c87b688"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/fcb6b72321c2054c/attempt-0001/COMPLETE.json",
+          "sha256": "7a8d05db5a7587ab8453d4b594fc5351d31c4f75bc8c3bcf32e0c1eef89413ab"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/fcb6b72321c2054c/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "ae4e71fd4f88c55e642f66e870ff863e9271d88403594978be7997f46ddd1254"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/fcb6b72321c2054c/attempt-0001/results.json",
+          "sha256": "344aadcab512e6187d4196797575bdebb6f39ba4ece0a3f635b72a50d1ebd61a"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells.json",
+          "sha256": "5f2c3adef779cf0edb1d08f614ee39609f2fc36371ff56b71f648de2745c8dcd"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/config.json",
+          "sha256": "a5f1e84f36e91c24deeeb1006bcdf5d840cf24e2eb98f3997d4a69b0b4e853a7"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/source_specs/r1-09-both-lag1.json",
+          "sha256": "1c3904f8668d040640769e645a9c62c141905ba570eb785bde2462c69a3f8837"
+        }
+      ],
+      "policy_hash_scope": "post-completion snapshots, not original transitive seals"
+    },
+    {
+      "plan_id": "S1/R4",
+      "source_root": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2",
+      "setting_id": "r1-10-rival-lag1",
+      "source_spec_sha256": "80ea0609cd4d386b31bf61bc17bf3c1f353917000f86b54504a9adcddbd0ed9b",
+      "reservation_gb": 0.5,
+      "pinned_files": [
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/0f473e572781c405/attempt-0001/COMPLETE.json",
+          "sha256": "30f00e2d00b9f7124eadeec2ebe410b03861fe8b38ca1311d0b7e58c359d3f08"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/0f473e572781c405/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "0e80bbd2d5e5730ce3b20caa510f66efa8a76d55c864bd3868c2ef7733e1ac88"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/0f473e572781c405/attempt-0001/results.json",
+          "sha256": "3360ea4f0d3fed87e03136484d4625c76442f6dcd1cdeca09a48967c32d2aab1"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/58defd73fafaa517/attempt-0001/COMPLETE.json",
+          "sha256": "6e15b56c5b3cffa0f2d926ff9fd517e7de3d0e8efb646a68ebaf2f7d99be41cf"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/58defd73fafaa517/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "d2ff45b437f48b0e0e8f002c14d2730f6b948f090c21276fe6eabcb48a4a9d94"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/58defd73fafaa517/attempt-0001/results.json",
+          "sha256": "9dd7eb4fb1ae3812ef49f2e7600a9a346d06e67de931f34a5c3763bdda5173a1"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/72ae80b500deedde/attempt-0001/COMPLETE.json",
+          "sha256": "92e297e79a13bc19237878c1386073da5b25aed8e953894a28c2ff91f806bc10"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/72ae80b500deedde/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "3af1d480d23e5b48364810fa8eecc7c285de191341aedcfce48136d87c9ed05a"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/72ae80b500deedde/attempt-0001/results.json",
+          "sha256": "bde3013bd7445a7148fcf34d95cead7082ba82535278b7030c7bbfb08a80120c"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/98e7115abded8c1b/attempt-0001/COMPLETE.json",
+          "sha256": "39b85354d7a2a35265b523835ac440430da463d4dd0344f81799289ddca2b6dd"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/98e7115abded8c1b/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "b14bf37b8f569b8ec107752c849bf776d60ef1884b630ac891ae31835eebd2e9"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/98e7115abded8c1b/attempt-0001/results.json",
+          "sha256": "014fa7aea521ba88baa269a4f1a045059ae51532dafcdf276dfe0235ef151b5a"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/ee5b8c2e2fa219b5/attempt-0001/COMPLETE.json",
+          "sha256": "96fd694403713b6af0aede1609f644d3335c3b995e77afa73e5b811b39ff73f3"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/ee5b8c2e2fa219b5/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "8c71743034a06fa99208a0bbabfa4c8f585cf20be52bc59c4d0345046e38b961"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/ee5b8c2e2fa219b5/attempt-0001/results.json",
+          "sha256": "ca2f50954be7cefe8497b90bdbdd437e7174bca7b1644c2b162e360fde86543c"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells.json",
+          "sha256": "5f2c3adef779cf0edb1d08f614ee39609f2fc36371ff56b71f648de2745c8dcd"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/config.json",
+          "sha256": "a5f1e84f36e91c24deeeb1006bcdf5d840cf24e2eb98f3997d4a69b0b4e853a7"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/source_specs/r1-10-rival-lag1.json",
+          "sha256": "80ea0609cd4d386b31bf61bc17bf3c1f353917000f86b54504a9adcddbd0ed9b"
+        }
+      ],
+      "policy_hash_scope": "post-completion snapshots, not original transitive seals"
+    },
+    {
+      "plan_id": "S1/R4",
+      "source_root": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2",
+      "setting_id": "r1-10-both-lag0",
+      "source_spec_sha256": "997e0ce22c8d3cf61f409cefd78767cb342a6573b906b2d816b06940c640d6e0",
+      "reservation_gb": 0.5,
+      "pinned_files": [
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/2548f33069ca8503/attempt-0001/COMPLETE.json",
+          "sha256": "bb6b78db4199de68416d5829782801897becb7b85f1d3de1b446df7179033057"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/2548f33069ca8503/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "d4165dd769c7bbf5e89549c2a4f0d2e0c70816b9707bf5c37cfad91bd89318f7"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/2548f33069ca8503/attempt-0001/results.json",
+          "sha256": "6c1851b8f8510cca175a9dda9d4f225d0c237faf9bbecd2928dea2135f0d6351"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/8993a1b68d22a699/attempt-0001/COMPLETE.json",
+          "sha256": "ad8bf4d24a9a4df6749fe74c7ca55fb236d2493902405ef7145b36d0a3634329"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/8993a1b68d22a699/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "488ac0d83f0b540be645b068af8233c7f39d795d1c3a6de940aec2b8667a6857"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/8993a1b68d22a699/attempt-0001/results.json",
+          "sha256": "a7827f4143d091989116f1db2f0162b51031e9d037b40276a7dd7a6d04261c40"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/9e6ef5f270c9470a/attempt-0001/COMPLETE.json",
+          "sha256": "dd1501dd3ca68ba2c51210ac85b3da734ca9c01c0082e44dde814e5804103111"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/9e6ef5f270c9470a/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "819f830c9d3e68b09a411273c2c4c91f8ad6f85561adde705ac621ea19e9a726"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/9e6ef5f270c9470a/attempt-0001/results.json",
+          "sha256": "76c4b2ce1d28b58461c4beaa9c41a0385980affc2a18ada14554a72df7d2f520"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/bee2c3776f6b6c28/attempt-0001/COMPLETE.json",
+          "sha256": "500d86dcd66cfb81413adced3442f0785dfb793ff333c5eeab60420c143e2194"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/bee2c3776f6b6c28/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "8738a5bd4372cc58532793e09d56573f1c8a1d5008077b8d4396c45b0d444a02"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/bee2c3776f6b6c28/attempt-0001/results.json",
+          "sha256": "e3cdc3f7f665502c5d8483496d44af37ef543029d8296f153ce80cf2411efc0e"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/f3ed66f0e95c88d5/attempt-0001/COMPLETE.json",
+          "sha256": "a73744ca89bee7185ac0920e9e50675bbc19ca5952dd0d4f1430afcd10d735a0"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/f3ed66f0e95c88d5/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "bd85dac85d5f92507994e5b15fbc880f377da25d076786b723f4624d3d956fcf"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/f3ed66f0e95c88d5/attempt-0001/results.json",
+          "sha256": "478921651f1ede3beac81d9f4c5b486e686742e6e2e9b8e4e69541719701858a"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells.json",
+          "sha256": "5f2c3adef779cf0edb1d08f614ee39609f2fc36371ff56b71f648de2745c8dcd"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/config.json",
+          "sha256": "a5f1e84f36e91c24deeeb1006bcdf5d840cf24e2eb98f3997d4a69b0b4e853a7"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/source_specs/r1-10-both-lag0.json",
+          "sha256": "997e0ce22c8d3cf61f409cefd78767cb342a6573b906b2d816b06940c640d6e0"
+        }
+      ],
+      "policy_hash_scope": "post-completion snapshots, not original transitive seals"
+    },
+    {
+      "plan_id": "S1/R4",
+      "source_root": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2",
+      "setting_id": "r1-10-both-lag1",
+      "source_spec_sha256": "ddd3618f7b78475bb2300399e6249a991fb31c96c4cafdac840e4bf330407749",
+      "reservation_gb": 0.5,
+      "pinned_files": [
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/b931dd8a0618334a/attempt-0001/COMPLETE.json",
+          "sha256": "8b3cde70eddd71ea79f7b421279cbd8c56fea8b0fe377a9ee58355c2ab515295"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/b931dd8a0618334a/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "ad1b41ce11e19afc15c5d909e4035cbaabbe2c7d4f55a2990e51ac82ba2adb28"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/b931dd8a0618334a/attempt-0001/results.json",
+          "sha256": "4f38dcb4543d8f0f836255f8e996441f91672a11a7f45f7d86030280b33b70c3"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/d96d610e61c06e52/attempt-0001/COMPLETE.json",
+          "sha256": "87506520cf8027d27f9a5cac2675a40f832656f81bfd0648dcda45fc5ade70ac"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/d96d610e61c06e52/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "0c2da37cfba8c40dceae3c97ca94946d2bb8331b029a2f0db908c00e5ef6c256"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/d96d610e61c06e52/attempt-0001/results.json",
+          "sha256": "6622b56cd62b65902290d80dc1b50ba670a90af30a7397707916a8323cec61ea"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/db227fffa7b2c6a2/attempt-0001/COMPLETE.json",
+          "sha256": "bd582c29dc901a2e17805463fb1ffd02687f1c17eb7037b978b65ea28b09cb12"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/db227fffa7b2c6a2/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "d34751541925be1ea33d4cffbb85d718293222de3a80dcfbe4141f497eb4f1ed"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/db227fffa7b2c6a2/attempt-0001/results.json",
+          "sha256": "75233c0ccc1b621847acd60351eb530b8e50c5d5c920f6cbcaa1054c5329062d"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/e92c0a95ef144163/attempt-0001/COMPLETE.json",
+          "sha256": "5c98ab1e1893fdc043ee348f29dc71ddc95a94d0a2b735bb220f662c0ea6a5cd"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/e92c0a95ef144163/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "67c3e29be88453a23906fbb087b6a831f676fb35daa495c9109c38e42ac64d96"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/e92c0a95ef144163/attempt-0001/results.json",
+          "sha256": "f36209d2a45601123d55013e0f83da3a91ad9c1abcd5396ffb15d432a6c6b9e0"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/f0ce3e36838ed336/attempt-0001/COMPLETE.json",
+          "sha256": "46c49d905012062109bee1a4f51651fd9f001f6b6e910294620743ca7f7ceea7"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/f0ce3e36838ed336/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "15db5dbd3cfb9590fb71149691f6fee0234de3da7d0d0e81547e3bc3a088a50f"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/f0ce3e36838ed336/attempt-0001/results.json",
+          "sha256": "2520dfffa9035cc90d4a9aef20be141064a9d2da70af6d31263c73a531327820"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells.json",
+          "sha256": "5f2c3adef779cf0edb1d08f614ee39609f2fc36371ff56b71f648de2745c8dcd"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/config.json",
+          "sha256": "a5f1e84f36e91c24deeeb1006bcdf5d840cf24e2eb98f3997d4a69b0b4e853a7"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/source_specs/r1-10-both-lag1.json",
+          "sha256": "ddd3618f7b78475bb2300399e6249a991fb31c96c4cafdac840e4bf330407749"
+        }
+      ],
+      "policy_hash_scope": "post-completion snapshots, not original transitive seals"
+    },
+    {
+      "plan_id": "S1/R4",
+      "source_root": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2",
+      "setting_id": "r1-11-rival-lag0",
+      "source_spec_sha256": "00ec697beb4365e1165f802e812a9fb3872bc1ec897e309ac5808fbdcaddc758",
+      "reservation_gb": 0.5,
+      "pinned_files": [
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/26a26ef6788bab36/attempt-0001/COMPLETE.json",
+          "sha256": "2553223335291ddbf36dca53f0de28f213e676e8c31095b6032f7f57859fb6f0"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/26a26ef6788bab36/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "66839d4e6710fd439d77a02afab12fdcae1a73ccc3074bf4bf9f8886e6c51f02"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/26a26ef6788bab36/attempt-0001/results.json",
+          "sha256": "849c83dd4be71c9e9e0cc1779f9ce01ea4a1e3887a700cfe1e62b2aaf548310f"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/37b35df1f448326d/attempt-0001/COMPLETE.json",
+          "sha256": "6fb577bee6c5cbdebfcb10c783d1ba5fcb55ac7fbb05958496061dd6e13dd325"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/37b35df1f448326d/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "5dd50c74c034d5e1c37654ad6e55e7bbc786c5e29eba065dffa9aeabffe08ec8"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/37b35df1f448326d/attempt-0001/results.json",
+          "sha256": "cbb8dda2fcaae35fb59f6793d7793ce943eb42771cfd15f2dec757f9957741c1"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/9d2b1d6cf31118ce/attempt-0001/COMPLETE.json",
+          "sha256": "698a07f51b7b01afe8719705c7df2fa57176f9d71083e2831825c40fe8bfd084"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/9d2b1d6cf31118ce/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "543daff9c23b7e403d7bbc458040688ba65f6a397e05fde8dccb713aafb31a7b"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/9d2b1d6cf31118ce/attempt-0001/results.json",
+          "sha256": "3cbe6ae5d95d22966e68a9e7a7d178cd6d68a0cfba9a73d14c7075392a831768"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/cd1921dc3beab551/attempt-0001/COMPLETE.json",
+          "sha256": "a23b9dd5601af521b9e641413a7a518d864cb67d7fc8c8da126b7c72b8a55a4f"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/cd1921dc3beab551/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "ef2fadce583534ea6136edd19c65f45c3aabbd3f3e2665a0555c1e020c34567c"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/cd1921dc3beab551/attempt-0001/results.json",
+          "sha256": "b8b30c410af74b7670258b2d9a0194f457872d6ad1e91f632d23f6945ec2357d"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/dec203e0119d0fb0/attempt-0001/COMPLETE.json",
+          "sha256": "24eef755ee165d19ac33355b410075ad81ea38610fb5fb1ee1215fb8f34dc213"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/dec203e0119d0fb0/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "8d43e7ba031ae00c73e8079a4fc8e72fc0e20990b2b3ffba073a1dfd48dd022d"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/dec203e0119d0fb0/attempt-0001/results.json",
+          "sha256": "0e11abf8a349b93cf74eb8886b5564e72fff05399e0137a4cded235cfb6a3749"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells.json",
+          "sha256": "5f2c3adef779cf0edb1d08f614ee39609f2fc36371ff56b71f648de2745c8dcd"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/config.json",
+          "sha256": "a5f1e84f36e91c24deeeb1006bcdf5d840cf24e2eb98f3997d4a69b0b4e853a7"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/source_specs/r1-11-rival-lag0.json",
+          "sha256": "00ec697beb4365e1165f802e812a9fb3872bc1ec897e309ac5808fbdcaddc758"
+        }
+      ],
+      "policy_hash_scope": "post-completion snapshots, not original transitive seals"
+    },
+    {
+      "plan_id": "S1/R4",
+      "source_root": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2",
+      "setting_id": "r1-11-both-lag0",
+      "source_spec_sha256": "9a7d1f5e3f40423206498fdeeb90e4ad11f56b3b37e0f57d8127f1dfd04a0f2e",
+      "reservation_gb": 0.5,
+      "pinned_files": [
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/1104e776b1d791e3/attempt-0001/COMPLETE.json",
+          "sha256": "07f2f8dc634565ca66d48d2b0f3abc9632d7c2914503569b560dc282909fe5e3"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/1104e776b1d791e3/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "59137540c8329747bdb4992e7f01f88e2a4cf152bc98f73cec1947688a8897ae"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/1104e776b1d791e3/attempt-0001/results.json",
+          "sha256": "07b561507900fe43b440e0b73532e7d7359571d5e564e7075e7f3bf9d37c9da8"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/467eed058826a6e9/attempt-0001/COMPLETE.json",
+          "sha256": "f01fc562ee504d8d8e1d3518421d7507b29012a109695510e0c5591207a35b1c"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/467eed058826a6e9/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "697e44711908d279b3978a0963de7aee133de6ec92cbd6894ae17a6abaaacd36"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/467eed058826a6e9/attempt-0001/results.json",
+          "sha256": "46e7bdf3e5f0c5243a2f3b30bab80e3eb88419f8b3b6122b4f2a87f14b000304"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/943cf22c74906b0d/attempt-0001/COMPLETE.json",
+          "sha256": "df73a4d740d00d1819d1cff7949d28d3dbfa7ae1098c5df25a26dcb70d9a7945"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/943cf22c74906b0d/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "dfd620acb522cd947e037490b09c871a18f8d1504e8138383d5a874e1fb8cea9"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/943cf22c74906b0d/attempt-0001/results.json",
+          "sha256": "c842e6195c07a18e0ae759d0b644030b1f6e7280c6e485b320cd891e27faf040"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/94631150b634f4fb/attempt-0001/COMPLETE.json",
+          "sha256": "f60241ff62f4da4af850025ca979fee243749c20c5a98bb42ccf0fbbde3eb020"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/94631150b634f4fb/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "8f2102f769fde32e650e0e5e8ce78d666bb2096372c15858bb1e4dcae374280e"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/94631150b634f4fb/attempt-0001/results.json",
+          "sha256": "3ea7168bf13a77ee29c6e9585af429a8a05c41171992bd0101188a7985968a99"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/a273af6eff17ee75/attempt-0001/COMPLETE.json",
+          "sha256": "f62fd0c60e7075941887267c2ce4db0c6045f412f377531b57ae4da4b7ce3dfb"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/a273af6eff17ee75/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "8206136dfbeef4db536cee359efb2e6eabff8f890f827e1fe3454fd188b3b5bb"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/a273af6eff17ee75/attempt-0001/results.json",
+          "sha256": "4daf37d465274120577b3d68c76bcba3626e1b30cddf575da474ed5b34b7ca4d"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells.json",
+          "sha256": "5f2c3adef779cf0edb1d08f614ee39609f2fc36371ff56b71f648de2745c8dcd"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/config.json",
+          "sha256": "a5f1e84f36e91c24deeeb1006bcdf5d840cf24e2eb98f3997d4a69b0b4e853a7"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/source_specs/r1-11-both-lag0.json",
+          "sha256": "9a7d1f5e3f40423206498fdeeb90e4ad11f56b3b37e0f57d8127f1dfd04a0f2e"
+        }
+      ],
+      "policy_hash_scope": "post-completion snapshots, not original transitive seals"
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 0.5,
+  "limits": {
+    "seconds": 14400,
+    "rss_gb": 0.5,
+    "reservation_gb": 0.5
+  },
+  "out": "results/S1_policy_metrics/20261113_batch5_v2",
+  "log_path": "EXPERIMENT_LOG.md",
+  "scientific_budget": null,
+  "resource_scope": "Reuse released event/analysis slot .5 GiB; S1 source 10.5 GiB + F4 1 GiB + metrics .5 GiB =12 GiB. One worker.",
+  "count_scope": "All newly ready settings in source order; all 35 prior registered IDs excluded regardless of outcome",
+  "new_physical_seed_range": null,
+  "source_validation_seed_range": [
+    220000,
+    229999
+  ],
+  "provenance_scope": "Reference-constructor RNG explicit; raw RNG-call count null; no sampled physical cohorts/Bellman optimization",
+  "prior_batch": "results/S1_policy_metrics/20261113_batch1_v1",
+  "prior_batches": [
+    "results/S1_policy_metrics/20261113_batch1_v1",
+    "results/S1_policy_metrics/20261113_batch2_v2",
+    "results/S1_policy_metrics/20261113_batch3_v2",
+    "results/S1_policy_metrics/20261113_batch4_v2"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "airline-b1-component-draft/1",
+  "plan_id": "A.5/B0/B1/V9/R4",
+  "status": "DRAFT_COMPONENT_SUPPORT_NOT_AN_EXECUTABLE_GRID",
+  "kind": "hurricane",
+  "reveal_days": [
+    14,
+    7,
+    3,
+    1
+  ],
+  "plan_capacity_shares": [
+    "0.1",
+    "0.3",
+    "0.6"
+  ],
+  "plan_demand_fractional_increases": [
+    "0.3",
+    "1"
+  ],
+  "joint_magnitude_pairing": null,
+  "post_segment_weights": null,
+  "capacity_duration_assignment": null,
+  "demand_stop": null,
+  "requires_dated_stranded_reentry": true,
+  "module": "airline_market/policy/dated_demand.py",
+  "unresolved": [
+    "Explicit loss\u2013surge pairing and three magnitude-label mapping",
+    "Full mixture and independent capacity/demand stops",
+    "Public dated context and explicit stranded re-entry policy"
+  ],
+  "description_sentences": [
+    "The hurricane combines both-carrier weather loss, a declared demand surge and genuine stranded re-entry in one native world.",
+    "Capacity and demand use the same explicit reference reveal but retain independent recovery and demand-stop instants.",
+    "The joint magnitude mapping, mixture and duration choices remain unset in this draft rather than being inferred from a generic cell count."
+  ],
+  "component_source_sha256": "5f1b895f29f2d9a5054c9c0412dfbc3c424ae7fc41483751f24710a34da88052",
+  "grid_slot_assignment": null,
+  "training_or_heldout_assignment": null,
+  "scientific_run_config": null,
+  "scientific_budget": null,
+  "full_B1_adopted": false
+}

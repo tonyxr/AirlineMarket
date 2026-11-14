@@ -1,0 +1,218 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "V3_network_MR2_MR8",
+  "phase": 2,
+  "implementation_revision": "native-general-vs-classical-network-v1",
+  "task": "study:airline_market.experiments.network_monopoly_study:run",
+  "design": "list",
+  "fixed": {
+    "reservation_gb": 1.0,
+    "max_nodes": 100000,
+    "value_tolerance": 1e-10,
+    "monotonicity_tolerance": 1e-12,
+    "design_registration": "results/V3_network_tooling/design_registration.json",
+    "design_registration_sha256": "67f80a516b5349e2c9b2f2627a8be1774ecbc37e11d6c80dfba5e75d0a0856af"
+  },
+  "cells": [
+    {
+      "network": "one_leg_quality",
+      "variants": [
+        {
+          "changed_leg": null,
+          "capacity": [
+            1
+          ],
+          "monopoly": {
+            "path": "config/benchmarks/V3_network_one_leg_quality_v0_monopoly.json",
+            "sha256": "544e27dc0919602bfbc08d05a4bea40121bc7e6a2145fbb46ffa744f0f8892d8",
+            "compiled_spec_hash": "26940eb358364ecc2557b73a826369db36d4b51b23ab04b15ad1ca63dbc67caa"
+          },
+          "unavailable_rival": {
+            "path": "config/benchmarks/V3_network_one_leg_quality_v0_unavailable_rival.json",
+            "sha256": "9f3e8892384c91a98dd01b17a77e12d9fa677ca21266ff5823de8f726d590df4",
+            "compiled_spec_hash": "8ab628cc26b6c594213db5fd7ee718a1e233ef054a4bd40a061b07a10a77334d"
+          }
+        },
+        {
+          "changed_leg": "OH",
+          "capacity": [
+            2
+          ],
+          "monopoly": {
+            "path": "config/benchmarks/V3_network_one_leg_quality_v1_monopoly.json",
+            "sha256": "9f99d542d9d868ba2d596182fe01d52b79365460ac818535b28c3f736d19be4e",
+            "compiled_spec_hash": "c7b5dc36227fea976e4a55225edf60f964ffaaad2a1a4b91770eba7d37929c39"
+          },
+          "unavailable_rival": {
+            "path": "config/benchmarks/V3_network_one_leg_quality_v1_unavailable_rival.json",
+            "sha256": "81db101d5c2e34a65f5a66b440ae8d5f7214905142eb52193c4d3e7889bdd426",
+            "compiled_spec_hash": "4abdc60bf824d68b7c67244684136453910ade1931f875f8197a666f3eca5cc0"
+          }
+        }
+      ]
+    },
+    {
+      "network": "two_leg_connection",
+      "variants": [
+        {
+          "changed_leg": null,
+          "capacity": [
+            1,
+            1
+          ],
+          "monopoly": {
+            "path": "config/benchmarks/V3_network_two_leg_connection_v0_monopoly.json",
+            "sha256": "1eb660a273a1f7ecf7d6b3d015d79e066e7f9ed48fb7ca5e31abbc49c4b10d35",
+            "compiled_spec_hash": "0d83aebfffd2a0932091433f34a0c5699c6d673be6ab9e76064ea06d7dd89f8a"
+          },
+          "unavailable_rival": {
+            "path": "config/benchmarks/V3_network_two_leg_connection_v0_unavailable_rival.json",
+            "sha256": "35d75dba7c2062549d41e340c307062d3bcce69b55864f48cbf74c7501ba885b",
+            "compiled_spec_hash": "62ac2dc751fd02b26625e2ef4e4e4157551bd63cdd55663af6dedc467e27b50e"
+          }
+        },
+        {
+          "changed_leg": "OH",
+          "capacity": [
+            2,
+            1
+          ],
+          "monopoly": {
+            "path": "config/benchmarks/V3_network_two_leg_connection_v1_monopoly.json",
+            "sha256": "a5fcefa471b6ae4bd64bdb268df561611721683562aed40ff47e44502251f2fd",
+            "compiled_spec_hash": "424a8c4dc285e84722543b26cc5d9af6e8a01af940f8de5729a89d3e27ffa3ce"
+          },
+          "unavailable_rival": {
+            "path": "config/benchmarks/V3_network_two_leg_connection_v1_unavailable_rival.json",
+            "sha256": "c143940c3476d0823968ca08ea2828bba4e7809f3df87408a1fe2cd992c14227",
+            "compiled_spec_hash": "a4d9907f0b001f5e952df359b2c4b64f4ed362aa691e773d40a18f5415cf8c04"
+          }
+        },
+        {
+          "changed_leg": "HD",
+          "capacity": [
+            1,
+            2
+          ],
+          "monopoly": {
+            "path": "config/benchmarks/V3_network_two_leg_connection_v2_monopoly.json",
+            "sha256": "9b21e3db39bae407b8519347bf78812428ed21f62cdce387cbc4e40eb0504ab0",
+            "compiled_spec_hash": "b5f4c904a6f8c99433a6a278d7620faf9152a346401c84a3d8c4ddbac4da88ef"
+          },
+          "unavailable_rival": {
+            "path": "config/benchmarks/V3_network_two_leg_connection_v2_unavailable_rival.json",
+            "sha256": "0a14e6e3ed6aa7dd0a1f5af087f679743ee8bada6cc4b50c23899e60f35091c9",
+            "compiled_spec_hash": "1940ef8da319d93628a0aaa68c1930cf9c26069f3b7d2f0ceebb9a974a3b29de"
+          }
+        }
+      ]
+    },
+    {
+      "network": "finite_price_cannibalization",
+      "variants": [
+        {
+          "changed_leg": null,
+          "capacity": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "monopoly": {
+            "path": "config/benchmarks/V3_network_finite_price_cannibalization_v0_monopoly.json",
+            "sha256": "6193e50e78dc762dc5c0a6640fa10edc4859ca32a92b7491f1024fb784ba2c45",
+            "compiled_spec_hash": "ad88c40b9cbd56fb9a72d031e943ae010a79976c66b2cae0efba40a3727e3e85"
+          },
+          "unavailable_rival": {
+            "path": "config/benchmarks/V3_network_finite_price_cannibalization_v0_unavailable_rival.json",
+            "sha256": "ed033235621b6807f4900840383cc450a0627c14aa5e68ad879cedec10f38b31",
+            "compiled_spec_hash": "9d029c1da137ca6e14ec5539958478e5f45239488ce3457fd1521eb01d638679"
+          }
+        },
+        {
+          "changed_leg": "OH",
+          "capacity": [
+            2,
+            1,
+            0,
+            1
+          ],
+          "monopoly": {
+            "path": "config/benchmarks/V3_network_finite_price_cannibalization_v1_monopoly.json",
+            "sha256": "0ac13358f13a186177df4614ea2ba28ee84cb713d470d8924dfb66024ec1c057",
+            "compiled_spec_hash": "d542d35cf6fd33bb6c366a2fa1ad1a73872233d163721de272c8f4bf1dc82676"
+          },
+          "unavailable_rival": {
+            "path": "config/benchmarks/V3_network_finite_price_cannibalization_v1_unavailable_rival.json",
+            "sha256": "bbe0c097e8aca5f96aae4f363e1da5cc16d0aeacfe61a6e139a0f075358836a5",
+            "compiled_spec_hash": "db1fa0b07d88ed3ae01e845b4ecf43f1b9a2595a3b6cd42c4d724f47327f6752"
+          }
+        },
+        {
+          "changed_leg": "HD",
+          "capacity": [
+            1,
+            2,
+            0,
+            1
+          ],
+          "monopoly": {
+            "path": "config/benchmarks/V3_network_finite_price_cannibalization_v2_monopoly.json",
+            "sha256": "896140d6b5412e4be365c792bd7a0dc2c416dc4f0fc6daf9cef72210197fc42a",
+            "compiled_spec_hash": "06442802aa24abb692f0d0b3c8bdd97b9c71cd163600e5fd3723d67343a9f2ab"
+          },
+          "unavailable_rival": {
+            "path": "config/benchmarks/V3_network_finite_price_cannibalization_v2_unavailable_rival.json",
+            "sha256": "6940aec594fb5d9f6dd3eef20a331c1a9cdb47ff329adbc22fecdc78e8ecea5a",
+            "compiled_spec_hash": "bc0f7c617bb92eb5ca1a7d90c8c54c68608e0201e513006ab61ef863cf3c2409"
+          }
+        },
+        {
+          "changed_leg": "HX",
+          "capacity": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "monopoly": {
+            "path": "config/benchmarks/V3_network_finite_price_cannibalization_v3_monopoly.json",
+            "sha256": "2e61aa51371acfc2ff867094f15ab66d59753360550c05e71d179be3c5e7fd42",
+            "compiled_spec_hash": "376fad5f7fdab68c0da24ddedbd7995fbf65113a3473c5e1dd60fd6139e81963"
+          },
+          "unavailable_rival": {
+            "path": "config/benchmarks/V3_network_finite_price_cannibalization_v3_unavailable_rival.json",
+            "sha256": "ab613dcf787416f6fb121db07bbdce666c56396e414cf38c561d15576853934a",
+            "compiled_spec_hash": "502fd423c76140e7bb4f04a2e131c5fa7cd092f6ef60e23d71489414a12474f2"
+          }
+        },
+        {
+          "changed_leg": "XD",
+          "capacity": [
+            1,
+            1,
+            0,
+            2
+          ],
+          "monopoly": {
+            "path": "config/benchmarks/V3_network_finite_price_cannibalization_v4_monopoly.json",
+            "sha256": "480fdec96aaa0a5b0508937e120aedf9c4c8e5f0bee7bd56e2da282becfc1549",
+            "compiled_spec_hash": "33e1e93d273faf5d4c2f0a79e584f9366f609f0de8043fa60e88ff704d3a3546"
+          },
+          "unavailable_rival": {
+            "path": "config/benchmarks/V3_network_finite_price_cannibalization_v4_unavailable_rival.json",
+            "sha256": "d13ec2e427adc14d712582983fddaa1492dba50cf1e95aedbc537825bf252563",
+            "compiled_spec_hash": "5df58448394a740073f9da100aaab2a31373db5b776e9064a5d18b20b85e2d73"
+          }
+        }
+      ]
+    }
+  ],
+  "out": "results/V3_network/20261112_inventory_monopoly_v1",
+  "workers": 1,
+  "memory_budget_gb": 1.0,
+  "limits": {
+    "seconds": 14400,
+    "rss_gb": 1.0
+  }
+}

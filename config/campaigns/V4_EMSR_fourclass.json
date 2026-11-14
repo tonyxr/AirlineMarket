@@ -1,0 +1,60 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "V4_EMSR_fourclass",
+  "phase": 2,
+  "implementation_revision": "published-fourclass-native-thresholds-v1",
+  "task": "study:airline_market.experiments.emsr_benchmark_study:run",
+  "design": "list",
+  "fixed": {
+    "reservation_gb": 0.75,
+    "fares": [
+      1050.0,
+      567.0,
+      527.0,
+      350.0
+    ],
+    "means": [
+      17.3,
+      45.1,
+      73.6,
+      19.8
+    ],
+    "stds": [
+      5.8,
+      15.0,
+      17.4,
+      6.6
+    ],
+    "published_one_decimal_EMSR": [
+      16.7,
+      51.5,
+      131.4
+    ],
+    "design_registration": "results/V4_emsr_tooling/design_registration.json",
+    "design_registration_sha256": "b7e268e93332a487da061775c2c6a4334d53fb78e75e35cbed62ddb6d007d816",
+    "native_source": "airline_market/agents/emsr.py",
+    "native_source_sha256": "4921c056649fd606ef9ccbdddb158f1f052923f55de345ea3f62f5323220c382",
+    "tolerance": 1e-08
+  },
+  "cells": [
+    {
+      "capacity": 164,
+      "source_spec": "config/benchmarks/V4_EMSR_fourclass_C164.json",
+      "source_spec_sha256": "9c7baa0c77458b26e21652a73fb95885aa6bfc817e63301c42097cc9546d573f",
+      "compiled_spec_hash": "1bb249ace6fe29ffffae32885cee0fa125047c2c9e287da6ea4f6d0b85b2fede"
+    },
+    {
+      "capacity": 124,
+      "source_spec": "config/benchmarks/V4_EMSR_fourclass_C124.json",
+      "source_spec_sha256": "e8b84613c4cc7a94fb5233198303d9bcbaea49c75fe603aea560e3b54e6297da",
+      "compiled_spec_hash": "460870c77ba4ec55cc0cef6218f9a52ce0eede7cbc9a92afd2a7c01ae7a795b4"
+    }
+  ],
+  "out": "results/V4_EMSR/20261112_published_fourclass_v1",
+  "workers": 1,
+  "memory_budget_gb": 0.75,
+  "limits": {
+    "seconds": 1800,
+    "rss_gb": 0.75
+  }
+}

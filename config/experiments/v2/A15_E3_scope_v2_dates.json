@@ -1,0 +1,116 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "A15_E3_scope_v2_dates",
+  "plan": "v2.0",
+  "plan_id": "A.15/V10",
+  "phase": "V",
+  "hypothesis": null,
+  "primary_contrast": "none; scoped observed-data preparation",
+  "budget_key": "A.15",
+  "implementation_revision": "event_scope_market_stream_v2_dates",
+  "generator": "declared_data_inputs",
+  "task": "study:airline_market.experiments.event_data_study_v2:run",
+  "design": "list",
+  "cells": [
+    {
+      "plan_id": "A.15/V10",
+      "pre_event_marketing_sources": [
+        {
+          "id": "V2_ontime_mkt_2026_1",
+          "path": "data/raw/bts/ontime_mkt/zip/v2_ontime_mkt_2026_1.zip",
+          "sha256": "7cd6b613cc6b15f680b640646058bfdeded4f8cd3aed261fdb9d546778fd3fa3",
+          "year": 2026,
+          "month": 1
+        },
+        {
+          "id": "V2_ontime_mkt_2026_2",
+          "path": "data/raw/bts/ontime_mkt/zip/v2_ontime_mkt_2026_2.zip",
+          "sha256": "dd8f6b364a8800672826ac09088462ec4758263a8530e38025c3a416c402e4e1",
+          "year": 2026,
+          "month": 2
+        },
+        {
+          "id": "V2_ontime_mkt_2026_3",
+          "path": "data/raw/bts/ontime_mkt/zip/v2_ontime_mkt_2026_3.zip",
+          "sha256": "f34549671f697eb6624c2b920b7b9b40f1e0685d3f86521f0e5dbb4685a08a85",
+          "year": 2026,
+          "month": 3
+        },
+        {
+          "id": "V2_ontime_mkt_2026_4",
+          "path": "data/raw/bts/ontime_mkt/zip/v2_ontime_mkt_2026_4.zip",
+          "sha256": "06d280a45c22dc93730706108c26fc3c4f13867fd9ee636dba5f43b7ac6cbeb6",
+          "year": 2026,
+          "month": 4
+        }
+      ],
+      "db1c_sources": [
+        {
+          "id": "V2_DB1C_MARKET_202601_01JUN2026",
+          "path": "data/raw/bts/db1c/market/zip/DB1C.MARKET.202601.01JUN2026.zip",
+          "sha256": "2d5e5334df6ff7e43dabba81f1f6b45fd4caf200b21361c1c310b1a2e156c7f8",
+          "year": 2026,
+          "month": 1
+        },
+        {
+          "id": "V2_DB1C_MARKET_202602_02JUN2026",
+          "path": "data/raw/bts/db1c/market/zip/DB1C.MARKET.202602.02JUN2026.zip",
+          "sha256": "b9848616bdbbeea3d7f36d0b2517e7ee55b9af42139210dd32a1670a23072824",
+          "year": 2026,
+          "month": 2
+        },
+        {
+          "id": "V2_DB1C_MARKET_202603_02JUL2026",
+          "path": "data/raw/bts/db1c/market/zip/DB1C.MARKET.202603.02JUL2026.zip",
+          "sha256": "238db39ebe50726446c476ceb94cc34502b540e48a3857352290760e7a079798",
+          "year": 2026,
+          "month": 3
+        },
+        {
+          "id": "V2_DB1C_MARKET_202604_15JUL2026",
+          "path": "data/raw/bts/db1c/market/zip/DB1C.MARKET.202604.15JUL2026.zip",
+          "sha256": "cc3b360e03ae4d5d601d435e5ac69a655cd5cfa69c4b4281ebf6e25b71898599",
+          "year": 2026,
+          "month": 4
+        },
+        {
+          "id": "V2_DB1C_MARKET_202605_20AUG2026",
+          "path": "data/raw/bts/db1c/market/zip/DB1C.MARKET.202605.20AUG2026.zip",
+          "sha256": "a1a79160442399d5ba8ca9854610602a9c5d13c384506d54916ada17871a297c",
+          "year": 2026,
+          "month": 5
+        },
+        {
+          "id": "V2_DB1C_MARKET_202606_16SEP2026",
+          "path": "data/raw/bts/db1c/market/zip/DB1C.MARKET.202606.16SEP2026.zip",
+          "sha256": "2615a2ec24218fa1c2756933cd169ab94cd2551ece3982b8c7cb604d30c70e34",
+          "year": 2026,
+          "month": 6
+        },
+        {
+          "id": "V2fresh_DB1C_MARKET_202607_15OCT2026",
+          "path": "data/raw/bts/db1c/market/zip/V2fresh_DB1C.MARKET.202607.15OCT2026.zip",
+          "sha256": "35194b594c7d2d74247c2a718184bb398fb21cd6db086ab79b82c679956eee08",
+          "year": 2026,
+          "month": 7
+        }
+      ],
+      "sample_expansion": 2.5,
+      "batch_rows": 32768,
+      "reservation_gb": 0.5
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 0.5,
+  "limits": {
+    "seconds": 86400,
+    "rss_gb": 0.5,
+    "reservation_gb": 0.5
+  },
+  "out": "results/Paper2_data/20261113_E3_scoped_v2_dates",
+  "log_path": "EXPERIMENT_LOG.md",
+  "scientific_budget": null,
+  "resource_scope": "After R2 drain: S1 reserves10.5GiB,F4reserves1GiB,thisdataworker0.5GiB,total12GiB. No scientific count cut.",
+  "rerun_of": "results/Paper2_data/20261113_E3_scoped_v1",
+  "rerun_reason": "Fix published FL_DATE serialization parsing; no source/month/row/threshold change"
+}

@@ -1,0 +1,6 @@
+legId,searchDate,flightDate,startingAirport,destinationAirport,fareBasisCode,travelDuration,elapsedDays,isBasicEconomy,isRefundable,isNonStop,baseFare,totalFare,seatsRemaining,totalTravelDistance,segmentsDepartureTimeEpochSeconds,segmentsArrivalAirportCode,segmentsDepartureAirportCode,segmentsAirlineCode,segmentsCabinCode,segmentsDurationInSeconds,segmentsDistance
+1,2024-08-10,2024-08-14,PDX,LAX,Y,PT4H,0,False,False,False,180,200,9,1080,1||2,SEA||LAX,PDX||SEA,AS||AS,coach||coach,3600||7200,130||950
+1,2024-08-11,2024-08-14,PDX,LAX,Y,PT4H,0,False,False,False,190,210,9,1080,1||2,SEA||LAX,PDX||SEA,AS||AS,coach||coach,3600||7200,130||950
+1,2024-08-12,2024-08-14,PDX,LAX,Y,PT4H,0,False,False,False,190,210,4,1080,1||2,SEA||LAX,PDX||SEA,AS||AS,coach||coach,3600||7200,130||950
+2,2024-08-10,2024-08-14,SEA,LAX,Y,PT2H,0,False,False,True,170,190,9,950,1,LAX,SEA,DL,coach,7200,950
+2,2024-08-12,2024-08-14,SEA,LAX,Y,PT2H,0,False,False,True,170,190,,950,1,LAX,SEA,DL,coach,7200,950

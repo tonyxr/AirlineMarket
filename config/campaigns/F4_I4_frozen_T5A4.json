@@ -1,0 +1,557 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "F4_I4_frozen_T5A4",
+  "phase": 1,
+  "implementation_revision": "I4-frozen-physical-particles-v1",
+  "generator": "hub_feeder_family",
+  "task": "study:airline_market.experiments.i4_particle_study:compare",
+  "design": "list",
+  "fixed": {
+    "seed_start": 200320,
+    "n_cohorts": 64,
+    "planning_scenarios": 128,
+    "reservation_gb": 1
+  },
+  "cells": [
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/1c93f8e7752595c4.json",
+      "source_spec_sha256": "1b014cb823980907b3148f44fa02ca7e2941957d7be3d66f707a0efc089aa9b6",
+      "connecting_share": 0.1,
+      "rival_capacity_prior": "narrow",
+      "lag_periods": 0,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/3e61b0b2e56f8b4c/attempt-0001/tails.json",
+      "tails_sha256": "ae97b0ad3bcd53b967767fbc9aaa4da2301f873c3eb22e5da65d5a797cd2b4ea",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "direct",
+      "particles": 500
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/1c93f8e7752595c4.json",
+      "source_spec_sha256": "1b014cb823980907b3148f44fa02ca7e2941957d7be3d66f707a0efc089aa9b6",
+      "connecting_share": 0.1,
+      "rival_capacity_prior": "narrow",
+      "lag_periods": 0,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/3e61b0b2e56f8b4c/attempt-0001/tails.json",
+      "tails_sha256": "ae97b0ad3bcd53b967767fbc9aaa4da2301f873c3eb22e5da65d5a797cd2b4ea",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "linked",
+      "particles": 500
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/ce8d5b3e7d4930d5.json",
+      "source_spec_sha256": "dfce988dec46b157d3cbef5190e634610dd41a846fcb330dae520db4e07279b5",
+      "connecting_share": 0.7,
+      "rival_capacity_prior": "trimodal",
+      "lag_periods": 1,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/03579050a017ae38/attempt-0001/tails.json",
+      "tails_sha256": "f41256db9bea4c829d14c8a90c25ed65e0346bc7e476d128e7a115ba1bd4218d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "direct",
+      "particles": 500
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/ce8d5b3e7d4930d5.json",
+      "source_spec_sha256": "dfce988dec46b157d3cbef5190e634610dd41a846fcb330dae520db4e07279b5",
+      "connecting_share": 0.7,
+      "rival_capacity_prior": "trimodal",
+      "lag_periods": 1,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/03579050a017ae38/attempt-0001/tails.json",
+      "tails_sha256": "f41256db9bea4c829d14c8a90c25ed65e0346bc7e476d128e7a115ba1bd4218d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "linked",
+      "particles": 500
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/1c93f8e7752595c4.json",
+      "source_spec_sha256": "1b014cb823980907b3148f44fa02ca7e2941957d7be3d66f707a0efc089aa9b6",
+      "connecting_share": 0.1,
+      "rival_capacity_prior": "narrow",
+      "lag_periods": 0,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/3e61b0b2e56f8b4c/attempt-0001/tails.json",
+      "tails_sha256": "ae97b0ad3bcd53b967767fbc9aaa4da2301f873c3eb22e5da65d5a797cd2b4ea",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "direct",
+      "particles": 1000
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/1c93f8e7752595c4.json",
+      "source_spec_sha256": "1b014cb823980907b3148f44fa02ca7e2941957d7be3d66f707a0efc089aa9b6",
+      "connecting_share": 0.1,
+      "rival_capacity_prior": "narrow",
+      "lag_periods": 0,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/3e61b0b2e56f8b4c/attempt-0001/tails.json",
+      "tails_sha256": "ae97b0ad3bcd53b967767fbc9aaa4da2301f873c3eb22e5da65d5a797cd2b4ea",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "linked",
+      "particles": 1000
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/ce8d5b3e7d4930d5.json",
+      "source_spec_sha256": "dfce988dec46b157d3cbef5190e634610dd41a846fcb330dae520db4e07279b5",
+      "connecting_share": 0.7,
+      "rival_capacity_prior": "trimodal",
+      "lag_periods": 1,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/03579050a017ae38/attempt-0001/tails.json",
+      "tails_sha256": "f41256db9bea4c829d14c8a90c25ed65e0346bc7e476d128e7a115ba1bd4218d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "direct",
+      "particles": 1000
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/ce8d5b3e7d4930d5.json",
+      "source_spec_sha256": "dfce988dec46b157d3cbef5190e634610dd41a846fcb330dae520db4e07279b5",
+      "connecting_share": 0.7,
+      "rival_capacity_prior": "trimodal",
+      "lag_periods": 1,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/03579050a017ae38/attempt-0001/tails.json",
+      "tails_sha256": "f41256db9bea4c829d14c8a90c25ed65e0346bc7e476d128e7a115ba1bd4218d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "linked",
+      "particles": 1000
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/1c93f8e7752595c4.json",
+      "source_spec_sha256": "1b014cb823980907b3148f44fa02ca7e2941957d7be3d66f707a0efc089aa9b6",
+      "connecting_share": 0.1,
+      "rival_capacity_prior": "narrow",
+      "lag_periods": 0,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/3e61b0b2e56f8b4c/attempt-0001/tails.json",
+      "tails_sha256": "ae97b0ad3bcd53b967767fbc9aaa4da2301f873c3eb22e5da65d5a797cd2b4ea",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "direct",
+      "particles": 2000
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/1c93f8e7752595c4.json",
+      "source_spec_sha256": "1b014cb823980907b3148f44fa02ca7e2941957d7be3d66f707a0efc089aa9b6",
+      "connecting_share": 0.1,
+      "rival_capacity_prior": "narrow",
+      "lag_periods": 0,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/3e61b0b2e56f8b4c/attempt-0001/tails.json",
+      "tails_sha256": "ae97b0ad3bcd53b967767fbc9aaa4da2301f873c3eb22e5da65d5a797cd2b4ea",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "linked",
+      "particles": 2000
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/ce8d5b3e7d4930d5.json",
+      "source_spec_sha256": "dfce988dec46b157d3cbef5190e634610dd41a846fcb330dae520db4e07279b5",
+      "connecting_share": 0.7,
+      "rival_capacity_prior": "trimodal",
+      "lag_periods": 1,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/03579050a017ae38/attempt-0001/tails.json",
+      "tails_sha256": "f41256db9bea4c829d14c8a90c25ed65e0346bc7e476d128e7a115ba1bd4218d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "direct",
+      "particles": 2000
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/ce8d5b3e7d4930d5.json",
+      "source_spec_sha256": "dfce988dec46b157d3cbef5190e634610dd41a846fcb330dae520db4e07279b5",
+      "connecting_share": 0.7,
+      "rival_capacity_prior": "trimodal",
+      "lag_periods": 1,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/03579050a017ae38/attempt-0001/tails.json",
+      "tails_sha256": "f41256db9bea4c829d14c8a90c25ed65e0346bc7e476d128e7a115ba1bd4218d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "linked",
+      "particles": 2000
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/1c93f8e7752595c4.json",
+      "source_spec_sha256": "1b014cb823980907b3148f44fa02ca7e2941957d7be3d66f707a0efc089aa9b6",
+      "connecting_share": 0.1,
+      "rival_capacity_prior": "narrow",
+      "lag_periods": 0,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/3e61b0b2e56f8b4c/attempt-0001/tails.json",
+      "tails_sha256": "ae97b0ad3bcd53b967767fbc9aaa4da2301f873c3eb22e5da65d5a797cd2b4ea",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "direct",
+      "particles": 5000
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/1c93f8e7752595c4.json",
+      "source_spec_sha256": "1b014cb823980907b3148f44fa02ca7e2941957d7be3d66f707a0efc089aa9b6",
+      "connecting_share": 0.1,
+      "rival_capacity_prior": "narrow",
+      "lag_periods": 0,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/3e61b0b2e56f8b4c/attempt-0001/tails.json",
+      "tails_sha256": "ae97b0ad3bcd53b967767fbc9aaa4da2301f873c3eb22e5da65d5a797cd2b4ea",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "linked",
+      "particles": 5000
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/ce8d5b3e7d4930d5.json",
+      "source_spec_sha256": "dfce988dec46b157d3cbef5190e634610dd41a846fcb330dae520db4e07279b5",
+      "connecting_share": 0.7,
+      "rival_capacity_prior": "trimodal",
+      "lag_periods": 1,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/03579050a017ae38/attempt-0001/tails.json",
+      "tails_sha256": "f41256db9bea4c829d14c8a90c25ed65e0346bc7e476d128e7a115ba1bd4218d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "direct",
+      "particles": 5000
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/ce8d5b3e7d4930d5.json",
+      "source_spec_sha256": "dfce988dec46b157d3cbef5190e634610dd41a846fcb330dae520db4e07279b5",
+      "connecting_share": 0.7,
+      "rival_capacity_prior": "trimodal",
+      "lag_periods": 1,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/03579050a017ae38/attempt-0001/tails.json",
+      "tails_sha256": "f41256db9bea4c829d14c8a90c25ed65e0346bc7e476d128e7a115ba1bd4218d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "linked",
+      "particles": 5000
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/1c93f8e7752595c4.json",
+      "source_spec_sha256": "1b014cb823980907b3148f44fa02ca7e2941957d7be3d66f707a0efc089aa9b6",
+      "connecting_share": 0.1,
+      "rival_capacity_prior": "narrow",
+      "lag_periods": 0,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/3e61b0b2e56f8b4c/attempt-0001/tails.json",
+      "tails_sha256": "ae97b0ad3bcd53b967767fbc9aaa4da2301f873c3eb22e5da65d5a797cd2b4ea",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "direct",
+      "particles": 10000
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/1c93f8e7752595c4.json",
+      "source_spec_sha256": "1b014cb823980907b3148f44fa02ca7e2941957d7be3d66f707a0efc089aa9b6",
+      "connecting_share": 0.1,
+      "rival_capacity_prior": "narrow",
+      "lag_periods": 0,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/3e61b0b2e56f8b4c/attempt-0001/tails.json",
+      "tails_sha256": "ae97b0ad3bcd53b967767fbc9aaa4da2301f873c3eb22e5da65d5a797cd2b4ea",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "linked",
+      "particles": 10000
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/ce8d5b3e7d4930d5.json",
+      "source_spec_sha256": "dfce988dec46b157d3cbef5190e634610dd41a846fcb330dae520db4e07279b5",
+      "connecting_share": 0.7,
+      "rival_capacity_prior": "trimodal",
+      "lag_periods": 1,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/03579050a017ae38/attempt-0001/tails.json",
+      "tails_sha256": "f41256db9bea4c829d14c8a90c25ed65e0346bc7e476d128e7a115ba1bd4218d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "direct",
+      "particles": 10000
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/ce8d5b3e7d4930d5.json",
+      "source_spec_sha256": "dfce988dec46b157d3cbef5190e634610dd41a846fcb330dae520db4e07279b5",
+      "connecting_share": 0.7,
+      "rival_capacity_prior": "trimodal",
+      "lag_periods": 1,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/03579050a017ae38/attempt-0001/tails.json",
+      "tails_sha256": "f41256db9bea4c829d14c8a90c25ed65e0346bc7e476d128e7a115ba1bd4218d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "linked",
+      "particles": 10000
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/1c93f8e7752595c4.json",
+      "source_spec_sha256": "1b014cb823980907b3148f44fa02ca7e2941957d7be3d66f707a0efc089aa9b6",
+      "connecting_share": 0.1,
+      "rival_capacity_prior": "narrow",
+      "lag_periods": 0,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/3e61b0b2e56f8b4c/attempt-0001/tails.json",
+      "tails_sha256": "ae97b0ad3bcd53b967767fbc9aaa4da2301f873c3eb22e5da65d5a797cd2b4ea",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "direct",
+      "particles": 20000
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/1c93f8e7752595c4.json",
+      "source_spec_sha256": "1b014cb823980907b3148f44fa02ca7e2941957d7be3d66f707a0efc089aa9b6",
+      "connecting_share": 0.1,
+      "rival_capacity_prior": "narrow",
+      "lag_periods": 0,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/3e61b0b2e56f8b4c/attempt-0001/tails.json",
+      "tails_sha256": "ae97b0ad3bcd53b967767fbc9aaa4da2301f873c3eb22e5da65d5a797cd2b4ea",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "linked",
+      "particles": 20000
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/ce8d5b3e7d4930d5.json",
+      "source_spec_sha256": "dfce988dec46b157d3cbef5190e634610dd41a846fcb330dae520db4e07279b5",
+      "connecting_share": 0.7,
+      "rival_capacity_prior": "trimodal",
+      "lag_periods": 1,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/03579050a017ae38/attempt-0001/tails.json",
+      "tails_sha256": "f41256db9bea4c829d14c8a90c25ed65e0346bc7e476d128e7a115ba1bd4218d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "direct",
+      "particles": 20000
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/ce8d5b3e7d4930d5.json",
+      "source_spec_sha256": "dfce988dec46b157d3cbef5190e634610dd41a846fcb330dae520db4e07279b5",
+      "connecting_share": 0.7,
+      "rival_capacity_prior": "trimodal",
+      "lag_periods": 1,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/03579050a017ae38/attempt-0001/tails.json",
+      "tails_sha256": "f41256db9bea4c829d14c8a90c25ed65e0346bc7e476d128e7a115ba1bd4218d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "linked",
+      "particles": 20000
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/1c93f8e7752595c4.json",
+      "source_spec_sha256": "1b014cb823980907b3148f44fa02ca7e2941957d7be3d66f707a0efc089aa9b6",
+      "connecting_share": 0.1,
+      "rival_capacity_prior": "narrow",
+      "lag_periods": 0,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/3e61b0b2e56f8b4c/attempt-0001/tails.json",
+      "tails_sha256": "ae97b0ad3bcd53b967767fbc9aaa4da2301f873c3eb22e5da65d5a797cd2b4ea",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "direct",
+      "particles": 50000
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/1c93f8e7752595c4.json",
+      "source_spec_sha256": "1b014cb823980907b3148f44fa02ca7e2941957d7be3d66f707a0efc089aa9b6",
+      "connecting_share": 0.1,
+      "rival_capacity_prior": "narrow",
+      "lag_periods": 0,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/3e61b0b2e56f8b4c/attempt-0001/tails.json",
+      "tails_sha256": "ae97b0ad3bcd53b967767fbc9aaa4da2301f873c3eb22e5da65d5a797cd2b4ea",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "linked",
+      "particles": 50000
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/ce8d5b3e7d4930d5.json",
+      "source_spec_sha256": "dfce988dec46b157d3cbef5190e634610dd41a846fcb330dae520db4e07279b5",
+      "connecting_share": 0.7,
+      "rival_capacity_prior": "trimodal",
+      "lag_periods": 1,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/03579050a017ae38/attempt-0001/tails.json",
+      "tails_sha256": "f41256db9bea4c829d14c8a90c25ed65e0346bc7e476d128e7a115ba1bd4218d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "direct",
+      "particles": 50000
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/ce8d5b3e7d4930d5.json",
+      "source_spec_sha256": "dfce988dec46b157d3cbef5190e634610dd41a846fcb330dae520db4e07279b5",
+      "connecting_share": 0.7,
+      "rival_capacity_prior": "trimodal",
+      "lag_periods": 1,
+      "T": 5,
+      "actions": 4,
+      "tails_file": "results/F4_I4_tails/20261112_frozen_T5A4_v1/cells/03579050a017ae38/attempt-0001/tails.json",
+      "tails_sha256": "f41256db9bea4c829d14c8a90c25ed65e0346bc7e476d128e7a115ba1bd4218d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "arm": "linked",
+      "particles": 50000
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1,
+  "limits": {
+    "seconds": 14400,
+    "rss_gb": 1
+  },
+  "out": "results/F4_I4/20261112_frozen_T5A4_v1",
+  "note": "Complete declared7N x2prospective I4corners x2arms=28cells;64common validationcohorts/allperiods including initial/terminal. Training-only fixed tails sealed once and reused by hash. Unchanged strict exact/filter law, full-hiddenTV primary, actual update preESS and postESS separate; initialpreESSnull. Provisional indexedS128protectedk2 MPC, cent-price agreement primary. T5/A4 is feasible lower bound, not selected largestscale. GlobalN remainsnull pending largestscale/hub100k/finalF5 confirmations.1GiB preliminary resource ceiling does not establish12GiB failure. Preserve failures/limits, no matching oldsmall-block reruns."
+}

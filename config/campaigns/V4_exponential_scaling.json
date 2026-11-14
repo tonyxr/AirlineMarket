@@ -1,0 +1,48 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "V4_exponential_scaling",
+  "phase": 2,
+  "implementation_revision": "native_ledger_continuous_exponential_v1",
+  "generator": "toy_hub",
+  "task": "study:airline_market.experiments.exponential_study:run",
+  "design": "list",
+  "cells": [
+    {
+      "models": [
+        {
+          "path": "config/benchmarks/V4_exponential_k1.json",
+          "sha256": "65c96bb66c0ae60d824011f46ef9c596a7ffb498de19505b329978f7129d12da"
+        },
+        {
+          "path": "config/benchmarks/V4_exponential_k2.json",
+          "sha256": "6865edbd9941839a330f5fe5f57ad4bfaf07d32af96a3205db44dd89809e3fac"
+        },
+        {
+          "path": "config/benchmarks/V4_exponential_k4.json",
+          "sha256": "6e2c1280ce55e212808ebd6a02cb7cd8297e4601bedf266c029f8622d1d8f11d"
+        },
+        {
+          "path": "config/benchmarks/V4_exponential_k8.json",
+          "sha256": "f5ff963f09b37ff17bb442ab46d59a5ab25730836fbb34c137100060ddbfe4f0"
+        },
+        {
+          "path": "config/benchmarks/V4_exponential_k16.json",
+          "sha256": "5d6c05813ebcf7c3faa73adb0c944f962604adf9a149be740a9ab02fa17c3f0a"
+        }
+      ],
+      "design_registration": "results/Exponential_tooling/design_registration.json",
+      "design_registration_sha256": "a207f5d060b4e2bf881720d0ff0aa37cc5d19cb81aa3facbb2e3efd452a02000",
+      "cohorts": 256,
+      "validation_seed_start": 209104,
+      "HJB_tolerance_USD": 1e-08
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1.0,
+  "limits": {
+    "seconds": 14400,
+    "rss_gb": 1.0,
+    "reservation_gb": 1.0
+  },
+  "out": "results/V4_exponential/20261113_continuous_demand_scaling_v1"
+}

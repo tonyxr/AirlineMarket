@@ -1,0 +1,8496 @@
+{
+  "schema_version": "airline-market-spec/1",
+  "name": "hub_feeder_medium",
+  "description": "Synthetic asymmetric hub; Poisson demand and private rival feeder capacities; uncalibrated.",
+  "horizon": {
+    "n_periods": 20,
+    "period_days": null,
+    "departure_date": null,
+    "booking_window_days": null
+  },
+  "airports": [
+    {
+      "code": "H",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "code": "O0",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "code": "O1",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "code": "O2",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "code": "O3",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "code": "O4",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "code": "O5",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "code": "O6",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "code": "O7",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "code": "D0",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "code": "D1",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "code": "D2",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "code": "D3",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "code": "D4",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "code": "D5",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "code": "D6",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "code": "D7",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    }
+  ],
+  "carriers": [
+    {
+      "code": "A",
+      "name": "Synthetic carrier A",
+      "kind": "network"
+    },
+    {
+      "code": "B",
+      "name": "Synthetic carrier B",
+      "kind": "network"
+    }
+  ],
+  "legs": [
+    {
+      "id": "A_OH0",
+      "carrier": "A",
+      "origin": "O0",
+      "dest": "H",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "B_OH0",
+      "carrier": "B",
+      "origin": "O0",
+      "dest": "H",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "A_HD0",
+      "carrier": "A",
+      "origin": "H",
+      "dest": "D0",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "B_HD0",
+      "carrier": "B",
+      "origin": "H",
+      "dest": "D0",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          1,
+          3
+        ],
+        "probabilities": [
+          0.5,
+          0.5
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "A_OH1",
+      "carrier": "A",
+      "origin": "O1",
+      "dest": "H",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "B_OH1",
+      "carrier": "B",
+      "origin": "O1",
+      "dest": "H",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "A_HD1",
+      "carrier": "A",
+      "origin": "H",
+      "dest": "D1",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "B_HD1",
+      "carrier": "B",
+      "origin": "H",
+      "dest": "D1",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          1,
+          3
+        ],
+        "probabilities": [
+          0.5,
+          0.5
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "A_OH2",
+      "carrier": "A",
+      "origin": "O2",
+      "dest": "H",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "B_OH2",
+      "carrier": "B",
+      "origin": "O2",
+      "dest": "H",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "A_HD2",
+      "carrier": "A",
+      "origin": "H",
+      "dest": "D2",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "B_HD2",
+      "carrier": "B",
+      "origin": "H",
+      "dest": "D2",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          1,
+          3
+        ],
+        "probabilities": [
+          0.5,
+          0.5
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "A_OH3",
+      "carrier": "A",
+      "origin": "O3",
+      "dest": "H",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "B_OH3",
+      "carrier": "B",
+      "origin": "O3",
+      "dest": "H",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "A_HD3",
+      "carrier": "A",
+      "origin": "H",
+      "dest": "D3",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "B_HD3",
+      "carrier": "B",
+      "origin": "H",
+      "dest": "D3",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          1,
+          3
+        ],
+        "probabilities": [
+          0.5,
+          0.5
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "A_OH4",
+      "carrier": "A",
+      "origin": "O4",
+      "dest": "H",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "B_OH4",
+      "carrier": "B",
+      "origin": "O4",
+      "dest": "H",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "A_HD4",
+      "carrier": "A",
+      "origin": "H",
+      "dest": "D4",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "B_HD4",
+      "carrier": "B",
+      "origin": "H",
+      "dest": "D4",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          1,
+          3
+        ],
+        "probabilities": [
+          0.5,
+          0.5
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "A_OH5",
+      "carrier": "A",
+      "origin": "O5",
+      "dest": "H",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "B_OH5",
+      "carrier": "B",
+      "origin": "O5",
+      "dest": "H",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "A_HD5",
+      "carrier": "A",
+      "origin": "H",
+      "dest": "D5",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "B_HD5",
+      "carrier": "B",
+      "origin": "H",
+      "dest": "D5",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          1,
+          3
+        ],
+        "probabilities": [
+          0.5,
+          0.5
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "A_OH6",
+      "carrier": "A",
+      "origin": "O6",
+      "dest": "H",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "B_OH6",
+      "carrier": "B",
+      "origin": "O6",
+      "dest": "H",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "A_HD6",
+      "carrier": "A",
+      "origin": "H",
+      "dest": "D6",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "B_HD6",
+      "carrier": "B",
+      "origin": "H",
+      "dest": "D6",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          1,
+          3
+        ],
+        "probabilities": [
+          0.5,
+          0.5
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "A_OH7",
+      "carrier": "A",
+      "origin": "O7",
+      "dest": "H",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "B_OH7",
+      "carrier": "B",
+      "origin": "O7",
+      "dest": "H",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "A_HD7",
+      "carrier": "A",
+      "origin": "H",
+      "dest": "D7",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          3
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "B_HD7",
+      "carrier": "B",
+      "origin": "H",
+      "dest": "D7",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          1,
+          3
+        ],
+        "probabilities": [
+          0.5,
+          0.5
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    }
+  ],
+  "capacity_priors": [],
+  "products": [
+    {
+      "id": "A_OH0",
+      "carrier": "A",
+      "market": "OH0",
+      "legs": [
+        "A_OH0"
+      ],
+      "service_cost": 12,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 110,
+      "priority": 0,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OH0",
+      "carrier": "B",
+      "market": "OH0",
+      "legs": [
+        "B_OH0"
+      ],
+      "service_cost": 12,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 125,
+      "priority": 1,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_HD0",
+      "carrier": "B",
+      "market": "HD0",
+      "legs": [
+        "B_HD0"
+      ],
+      "service_cost": 12,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 85,
+      "priority": 2,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OH1",
+      "carrier": "A",
+      "market": "OH1",
+      "legs": [
+        "A_OH1"
+      ],
+      "service_cost": 12,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 110,
+      "priority": 3,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OH1",
+      "carrier": "B",
+      "market": "OH1",
+      "legs": [
+        "B_OH1"
+      ],
+      "service_cost": 12,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 125,
+      "priority": 4,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_HD1",
+      "carrier": "B",
+      "market": "HD1",
+      "legs": [
+        "B_HD1"
+      ],
+      "service_cost": 12,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 85,
+      "priority": 5,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OH2",
+      "carrier": "A",
+      "market": "OH2",
+      "legs": [
+        "A_OH2"
+      ],
+      "service_cost": 12,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 110,
+      "priority": 6,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OH2",
+      "carrier": "B",
+      "market": "OH2",
+      "legs": [
+        "B_OH2"
+      ],
+      "service_cost": 12,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 125,
+      "priority": 7,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_HD2",
+      "carrier": "B",
+      "market": "HD2",
+      "legs": [
+        "B_HD2"
+      ],
+      "service_cost": 12,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 85,
+      "priority": 8,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OH3",
+      "carrier": "A",
+      "market": "OH3",
+      "legs": [
+        "A_OH3"
+      ],
+      "service_cost": 12,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 110,
+      "priority": 9,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OH3",
+      "carrier": "B",
+      "market": "OH3",
+      "legs": [
+        "B_OH3"
+      ],
+      "service_cost": 12,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 125,
+      "priority": 10,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_HD3",
+      "carrier": "B",
+      "market": "HD3",
+      "legs": [
+        "B_HD3"
+      ],
+      "service_cost": 12,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 85,
+      "priority": 11,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OH4",
+      "carrier": "A",
+      "market": "OH4",
+      "legs": [
+        "A_OH4"
+      ],
+      "service_cost": 12,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 110,
+      "priority": 12,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OH4",
+      "carrier": "B",
+      "market": "OH4",
+      "legs": [
+        "B_OH4"
+      ],
+      "service_cost": 12,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 125,
+      "priority": 13,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_HD4",
+      "carrier": "B",
+      "market": "HD4",
+      "legs": [
+        "B_HD4"
+      ],
+      "service_cost": 12,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 85,
+      "priority": 14,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OH5",
+      "carrier": "A",
+      "market": "OH5",
+      "legs": [
+        "A_OH5"
+      ],
+      "service_cost": 12,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 110,
+      "priority": 15,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OH5",
+      "carrier": "B",
+      "market": "OH5",
+      "legs": [
+        "B_OH5"
+      ],
+      "service_cost": 12,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 125,
+      "priority": 16,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_HD5",
+      "carrier": "B",
+      "market": "HD5",
+      "legs": [
+        "B_HD5"
+      ],
+      "service_cost": 12,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 85,
+      "priority": 17,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OH6",
+      "carrier": "A",
+      "market": "OH6",
+      "legs": [
+        "A_OH6"
+      ],
+      "service_cost": 12,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 110,
+      "priority": 18,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OH6",
+      "carrier": "B",
+      "market": "OH6",
+      "legs": [
+        "B_OH6"
+      ],
+      "service_cost": 12,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 125,
+      "priority": 19,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_HD6",
+      "carrier": "B",
+      "market": "HD6",
+      "legs": [
+        "B_HD6"
+      ],
+      "service_cost": 12,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 85,
+      "priority": 20,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OH7",
+      "carrier": "A",
+      "market": "OH7",
+      "legs": [
+        "A_OH7"
+      ],
+      "service_cost": 12,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 110,
+      "priority": 21,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OH7",
+      "carrier": "B",
+      "market": "OH7",
+      "legs": [
+        "B_OH7"
+      ],
+      "service_cost": 12,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 125,
+      "priority": 22,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_HD7",
+      "carrier": "B",
+      "market": "HD7",
+      "legs": [
+        "B_HD7"
+      ],
+      "service_cost": 12,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 85,
+      "priority": 23,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD0_0",
+      "carrier": "A",
+      "market": "OD0_0",
+      "legs": [
+        "A_OH0",
+        "A_HD0"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 24,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD0_0",
+      "carrier": "B",
+      "market": "OD0_0",
+      "legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 25,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD0_1",
+      "carrier": "A",
+      "market": "OD0_1",
+      "legs": [
+        "A_OH0",
+        "A_HD1"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 26,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD0_1",
+      "carrier": "B",
+      "market": "OD0_1",
+      "legs": [
+        "B_OH0",
+        "B_HD1"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 27,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD0_2",
+      "carrier": "A",
+      "market": "OD0_2",
+      "legs": [
+        "A_OH0",
+        "A_HD2"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 28,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD0_2",
+      "carrier": "B",
+      "market": "OD0_2",
+      "legs": [
+        "B_OH0",
+        "B_HD2"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 29,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD0_3",
+      "carrier": "A",
+      "market": "OD0_3",
+      "legs": [
+        "A_OH0",
+        "A_HD3"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 30,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD0_3",
+      "carrier": "B",
+      "market": "OD0_3",
+      "legs": [
+        "B_OH0",
+        "B_HD3"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 31,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD0_4",
+      "carrier": "A",
+      "market": "OD0_4",
+      "legs": [
+        "A_OH0",
+        "A_HD4"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 32,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD0_4",
+      "carrier": "B",
+      "market": "OD0_4",
+      "legs": [
+        "B_OH0",
+        "B_HD4"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 33,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD0_5",
+      "carrier": "A",
+      "market": "OD0_5",
+      "legs": [
+        "A_OH0",
+        "A_HD5"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 34,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD0_5",
+      "carrier": "B",
+      "market": "OD0_5",
+      "legs": [
+        "B_OH0",
+        "B_HD5"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 35,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD0_6",
+      "carrier": "A",
+      "market": "OD0_6",
+      "legs": [
+        "A_OH0",
+        "A_HD6"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 36,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD0_6",
+      "carrier": "B",
+      "market": "OD0_6",
+      "legs": [
+        "B_OH0",
+        "B_HD6"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 37,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD0_7",
+      "carrier": "A",
+      "market": "OD0_7",
+      "legs": [
+        "A_OH0",
+        "A_HD7"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 38,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD0_7",
+      "carrier": "B",
+      "market": "OD0_7",
+      "legs": [
+        "B_OH0",
+        "B_HD7"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 39,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD1_0",
+      "carrier": "A",
+      "market": "OD1_0",
+      "legs": [
+        "A_OH1",
+        "A_HD0"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 40,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD1_0",
+      "carrier": "B",
+      "market": "OD1_0",
+      "legs": [
+        "B_OH1",
+        "B_HD0"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 41,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD1_1",
+      "carrier": "A",
+      "market": "OD1_1",
+      "legs": [
+        "A_OH1",
+        "A_HD1"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 42,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD1_1",
+      "carrier": "B",
+      "market": "OD1_1",
+      "legs": [
+        "B_OH1",
+        "B_HD1"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 43,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD1_2",
+      "carrier": "A",
+      "market": "OD1_2",
+      "legs": [
+        "A_OH1",
+        "A_HD2"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 44,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD1_2",
+      "carrier": "B",
+      "market": "OD1_2",
+      "legs": [
+        "B_OH1",
+        "B_HD2"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 45,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD1_3",
+      "carrier": "A",
+      "market": "OD1_3",
+      "legs": [
+        "A_OH1",
+        "A_HD3"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 46,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD1_3",
+      "carrier": "B",
+      "market": "OD1_3",
+      "legs": [
+        "B_OH1",
+        "B_HD3"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 47,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD1_4",
+      "carrier": "A",
+      "market": "OD1_4",
+      "legs": [
+        "A_OH1",
+        "A_HD4"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 48,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD1_4",
+      "carrier": "B",
+      "market": "OD1_4",
+      "legs": [
+        "B_OH1",
+        "B_HD4"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 49,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD1_5",
+      "carrier": "A",
+      "market": "OD1_5",
+      "legs": [
+        "A_OH1",
+        "A_HD5"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 50,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD1_5",
+      "carrier": "B",
+      "market": "OD1_5",
+      "legs": [
+        "B_OH1",
+        "B_HD5"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 51,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD1_6",
+      "carrier": "A",
+      "market": "OD1_6",
+      "legs": [
+        "A_OH1",
+        "A_HD6"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 52,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD1_6",
+      "carrier": "B",
+      "market": "OD1_6",
+      "legs": [
+        "B_OH1",
+        "B_HD6"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 53,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD1_7",
+      "carrier": "A",
+      "market": "OD1_7",
+      "legs": [
+        "A_OH1",
+        "A_HD7"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 54,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD1_7",
+      "carrier": "B",
+      "market": "OD1_7",
+      "legs": [
+        "B_OH1",
+        "B_HD7"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 55,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD2_0",
+      "carrier": "A",
+      "market": "OD2_0",
+      "legs": [
+        "A_OH2",
+        "A_HD0"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 56,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD2_0",
+      "carrier": "B",
+      "market": "OD2_0",
+      "legs": [
+        "B_OH2",
+        "B_HD0"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 57,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD2_1",
+      "carrier": "A",
+      "market": "OD2_1",
+      "legs": [
+        "A_OH2",
+        "A_HD1"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 58,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD2_1",
+      "carrier": "B",
+      "market": "OD2_1",
+      "legs": [
+        "B_OH2",
+        "B_HD1"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 59,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD2_2",
+      "carrier": "A",
+      "market": "OD2_2",
+      "legs": [
+        "A_OH2",
+        "A_HD2"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 60,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD2_2",
+      "carrier": "B",
+      "market": "OD2_2",
+      "legs": [
+        "B_OH2",
+        "B_HD2"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 61,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD2_3",
+      "carrier": "A",
+      "market": "OD2_3",
+      "legs": [
+        "A_OH2",
+        "A_HD3"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 62,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD2_3",
+      "carrier": "B",
+      "market": "OD2_3",
+      "legs": [
+        "B_OH2",
+        "B_HD3"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 63,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD2_4",
+      "carrier": "A",
+      "market": "OD2_4",
+      "legs": [
+        "A_OH2",
+        "A_HD4"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 64,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD2_4",
+      "carrier": "B",
+      "market": "OD2_4",
+      "legs": [
+        "B_OH2",
+        "B_HD4"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 65,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD2_5",
+      "carrier": "A",
+      "market": "OD2_5",
+      "legs": [
+        "A_OH2",
+        "A_HD5"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 66,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD2_5",
+      "carrier": "B",
+      "market": "OD2_5",
+      "legs": [
+        "B_OH2",
+        "B_HD5"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 67,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD2_6",
+      "carrier": "A",
+      "market": "OD2_6",
+      "legs": [
+        "A_OH2",
+        "A_HD6"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 68,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD2_6",
+      "carrier": "B",
+      "market": "OD2_6",
+      "legs": [
+        "B_OH2",
+        "B_HD6"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 69,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD2_7",
+      "carrier": "A",
+      "market": "OD2_7",
+      "legs": [
+        "A_OH2",
+        "A_HD7"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 70,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD2_7",
+      "carrier": "B",
+      "market": "OD2_7",
+      "legs": [
+        "B_OH2",
+        "B_HD7"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 71,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD3_0",
+      "carrier": "A",
+      "market": "OD3_0",
+      "legs": [
+        "A_OH3",
+        "A_HD0"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 72,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD3_0",
+      "carrier": "B",
+      "market": "OD3_0",
+      "legs": [
+        "B_OH3",
+        "B_HD0"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 73,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD3_1",
+      "carrier": "A",
+      "market": "OD3_1",
+      "legs": [
+        "A_OH3",
+        "A_HD1"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 74,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD3_1",
+      "carrier": "B",
+      "market": "OD3_1",
+      "legs": [
+        "B_OH3",
+        "B_HD1"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 75,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD3_2",
+      "carrier": "A",
+      "market": "OD3_2",
+      "legs": [
+        "A_OH3",
+        "A_HD2"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 76,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD3_2",
+      "carrier": "B",
+      "market": "OD3_2",
+      "legs": [
+        "B_OH3",
+        "B_HD2"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 77,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD3_3",
+      "carrier": "A",
+      "market": "OD3_3",
+      "legs": [
+        "A_OH3",
+        "A_HD3"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 78,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD3_3",
+      "carrier": "B",
+      "market": "OD3_3",
+      "legs": [
+        "B_OH3",
+        "B_HD3"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 79,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD3_4",
+      "carrier": "A",
+      "market": "OD3_4",
+      "legs": [
+        "A_OH3",
+        "A_HD4"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 80,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD3_4",
+      "carrier": "B",
+      "market": "OD3_4",
+      "legs": [
+        "B_OH3",
+        "B_HD4"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 81,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD3_5",
+      "carrier": "A",
+      "market": "OD3_5",
+      "legs": [
+        "A_OH3",
+        "A_HD5"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 82,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD3_5",
+      "carrier": "B",
+      "market": "OD3_5",
+      "legs": [
+        "B_OH3",
+        "B_HD5"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 83,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD3_6",
+      "carrier": "A",
+      "market": "OD3_6",
+      "legs": [
+        "A_OH3",
+        "A_HD6"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 84,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD3_6",
+      "carrier": "B",
+      "market": "OD3_6",
+      "legs": [
+        "B_OH3",
+        "B_HD6"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 85,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD3_7",
+      "carrier": "A",
+      "market": "OD3_7",
+      "legs": [
+        "A_OH3",
+        "A_HD7"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 86,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD3_7",
+      "carrier": "B",
+      "market": "OD3_7",
+      "legs": [
+        "B_OH3",
+        "B_HD7"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 87,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD4_0",
+      "carrier": "A",
+      "market": "OD4_0",
+      "legs": [
+        "A_OH4",
+        "A_HD0"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 88,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD4_0",
+      "carrier": "B",
+      "market": "OD4_0",
+      "legs": [
+        "B_OH4",
+        "B_HD0"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 89,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD4_1",
+      "carrier": "A",
+      "market": "OD4_1",
+      "legs": [
+        "A_OH4",
+        "A_HD1"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 90,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD4_1",
+      "carrier": "B",
+      "market": "OD4_1",
+      "legs": [
+        "B_OH4",
+        "B_HD1"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 91,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD4_2",
+      "carrier": "A",
+      "market": "OD4_2",
+      "legs": [
+        "A_OH4",
+        "A_HD2"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 92,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD4_2",
+      "carrier": "B",
+      "market": "OD4_2",
+      "legs": [
+        "B_OH4",
+        "B_HD2"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 93,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD4_3",
+      "carrier": "A",
+      "market": "OD4_3",
+      "legs": [
+        "A_OH4",
+        "A_HD3"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 94,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD4_3",
+      "carrier": "B",
+      "market": "OD4_3",
+      "legs": [
+        "B_OH4",
+        "B_HD3"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 95,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD4_4",
+      "carrier": "A",
+      "market": "OD4_4",
+      "legs": [
+        "A_OH4",
+        "A_HD4"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 96,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD4_4",
+      "carrier": "B",
+      "market": "OD4_4",
+      "legs": [
+        "B_OH4",
+        "B_HD4"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 97,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD4_5",
+      "carrier": "A",
+      "market": "OD4_5",
+      "legs": [
+        "A_OH4",
+        "A_HD5"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 98,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD4_5",
+      "carrier": "B",
+      "market": "OD4_5",
+      "legs": [
+        "B_OH4",
+        "B_HD5"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 99,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD4_6",
+      "carrier": "A",
+      "market": "OD4_6",
+      "legs": [
+        "A_OH4",
+        "A_HD6"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 100,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD4_6",
+      "carrier": "B",
+      "market": "OD4_6",
+      "legs": [
+        "B_OH4",
+        "B_HD6"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 101,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD4_7",
+      "carrier": "A",
+      "market": "OD4_7",
+      "legs": [
+        "A_OH4",
+        "A_HD7"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 102,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD4_7",
+      "carrier": "B",
+      "market": "OD4_7",
+      "legs": [
+        "B_OH4",
+        "B_HD7"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 103,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD5_0",
+      "carrier": "A",
+      "market": "OD5_0",
+      "legs": [
+        "A_OH5",
+        "A_HD0"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 104,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD5_0",
+      "carrier": "B",
+      "market": "OD5_0",
+      "legs": [
+        "B_OH5",
+        "B_HD0"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 105,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD5_1",
+      "carrier": "A",
+      "market": "OD5_1",
+      "legs": [
+        "A_OH5",
+        "A_HD1"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 106,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD5_1",
+      "carrier": "B",
+      "market": "OD5_1",
+      "legs": [
+        "B_OH5",
+        "B_HD1"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 107,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD5_2",
+      "carrier": "A",
+      "market": "OD5_2",
+      "legs": [
+        "A_OH5",
+        "A_HD2"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 108,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD5_2",
+      "carrier": "B",
+      "market": "OD5_2",
+      "legs": [
+        "B_OH5",
+        "B_HD2"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 109,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD5_3",
+      "carrier": "A",
+      "market": "OD5_3",
+      "legs": [
+        "A_OH5",
+        "A_HD3"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 110,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD5_3",
+      "carrier": "B",
+      "market": "OD5_3",
+      "legs": [
+        "B_OH5",
+        "B_HD3"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 111,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD5_4",
+      "carrier": "A",
+      "market": "OD5_4",
+      "legs": [
+        "A_OH5",
+        "A_HD4"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 112,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD5_4",
+      "carrier": "B",
+      "market": "OD5_4",
+      "legs": [
+        "B_OH5",
+        "B_HD4"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 113,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD5_5",
+      "carrier": "A",
+      "market": "OD5_5",
+      "legs": [
+        "A_OH5",
+        "A_HD5"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 114,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD5_5",
+      "carrier": "B",
+      "market": "OD5_5",
+      "legs": [
+        "B_OH5",
+        "B_HD5"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 115,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD5_6",
+      "carrier": "A",
+      "market": "OD5_6",
+      "legs": [
+        "A_OH5",
+        "A_HD6"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 116,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD5_6",
+      "carrier": "B",
+      "market": "OD5_6",
+      "legs": [
+        "B_OH5",
+        "B_HD6"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 117,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD5_7",
+      "carrier": "A",
+      "market": "OD5_7",
+      "legs": [
+        "A_OH5",
+        "A_HD7"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 118,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD5_7",
+      "carrier": "B",
+      "market": "OD5_7",
+      "legs": [
+        "B_OH5",
+        "B_HD7"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 119,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD6_0",
+      "carrier": "A",
+      "market": "OD6_0",
+      "legs": [
+        "A_OH6",
+        "A_HD0"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 120,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD6_0",
+      "carrier": "B",
+      "market": "OD6_0",
+      "legs": [
+        "B_OH6",
+        "B_HD0"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 121,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD6_1",
+      "carrier": "A",
+      "market": "OD6_1",
+      "legs": [
+        "A_OH6",
+        "A_HD1"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 122,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD6_1",
+      "carrier": "B",
+      "market": "OD6_1",
+      "legs": [
+        "B_OH6",
+        "B_HD1"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 123,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD6_2",
+      "carrier": "A",
+      "market": "OD6_2",
+      "legs": [
+        "A_OH6",
+        "A_HD2"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 124,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD6_2",
+      "carrier": "B",
+      "market": "OD6_2",
+      "legs": [
+        "B_OH6",
+        "B_HD2"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 125,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD6_3",
+      "carrier": "A",
+      "market": "OD6_3",
+      "legs": [
+        "A_OH6",
+        "A_HD3"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 126,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD6_3",
+      "carrier": "B",
+      "market": "OD6_3",
+      "legs": [
+        "B_OH6",
+        "B_HD3"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 127,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD6_4",
+      "carrier": "A",
+      "market": "OD6_4",
+      "legs": [
+        "A_OH6",
+        "A_HD4"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 128,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD6_4",
+      "carrier": "B",
+      "market": "OD6_4",
+      "legs": [
+        "B_OH6",
+        "B_HD4"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 129,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD6_5",
+      "carrier": "A",
+      "market": "OD6_5",
+      "legs": [
+        "A_OH6",
+        "A_HD5"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 130,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD6_5",
+      "carrier": "B",
+      "market": "OD6_5",
+      "legs": [
+        "B_OH6",
+        "B_HD5"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 131,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD6_6",
+      "carrier": "A",
+      "market": "OD6_6",
+      "legs": [
+        "A_OH6",
+        "A_HD6"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 132,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD6_6",
+      "carrier": "B",
+      "market": "OD6_6",
+      "legs": [
+        "B_OH6",
+        "B_HD6"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 133,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD6_7",
+      "carrier": "A",
+      "market": "OD6_7",
+      "legs": [
+        "A_OH6",
+        "A_HD7"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 134,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD6_7",
+      "carrier": "B",
+      "market": "OD6_7",
+      "legs": [
+        "B_OH6",
+        "B_HD7"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 135,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD7_0",
+      "carrier": "A",
+      "market": "OD7_0",
+      "legs": [
+        "A_OH7",
+        "A_HD0"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 136,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD7_0",
+      "carrier": "B",
+      "market": "OD7_0",
+      "legs": [
+        "B_OH7",
+        "B_HD0"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 137,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD7_1",
+      "carrier": "A",
+      "market": "OD7_1",
+      "legs": [
+        "A_OH7",
+        "A_HD1"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 138,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD7_1",
+      "carrier": "B",
+      "market": "OD7_1",
+      "legs": [
+        "B_OH7",
+        "B_HD1"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 139,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD7_2",
+      "carrier": "A",
+      "market": "OD7_2",
+      "legs": [
+        "A_OH7",
+        "A_HD2"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 140,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD7_2",
+      "carrier": "B",
+      "market": "OD7_2",
+      "legs": [
+        "B_OH7",
+        "B_HD2"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 141,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD7_3",
+      "carrier": "A",
+      "market": "OD7_3",
+      "legs": [
+        "A_OH7",
+        "A_HD3"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 142,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD7_3",
+      "carrier": "B",
+      "market": "OD7_3",
+      "legs": [
+        "B_OH7",
+        "B_HD3"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 143,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD7_4",
+      "carrier": "A",
+      "market": "OD7_4",
+      "legs": [
+        "A_OH7",
+        "A_HD4"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 144,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD7_4",
+      "carrier": "B",
+      "market": "OD7_4",
+      "legs": [
+        "B_OH7",
+        "B_HD4"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 145,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD7_5",
+      "carrier": "A",
+      "market": "OD7_5",
+      "legs": [
+        "A_OH7",
+        "A_HD5"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 146,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD7_5",
+      "carrier": "B",
+      "market": "OD7_5",
+      "legs": [
+        "B_OH7",
+        "B_HD5"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 147,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD7_6",
+      "carrier": "A",
+      "market": "OD7_6",
+      "legs": [
+        "A_OH7",
+        "A_HD6"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 148,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD7_6",
+      "carrier": "B",
+      "market": "OD7_6",
+      "legs": [
+        "B_OH7",
+        "B_HD6"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 149,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "A_OD7_7",
+      "carrier": "A",
+      "market": "OD7_7",
+      "legs": [
+        "A_OH7",
+        "A_HD7"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 185,
+      "priority": 150,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD7_7",
+      "carrier": "B",
+      "market": "OD7_7",
+      "legs": [
+        "B_OH7",
+        "B_HD7"
+      ],
+      "service_cost": 25,
+      "fare_floor": 50,
+      "fare_cap": 400,
+      "reference_fare": 170,
+      "priority": 151,
+      "controlled": true,
+      "attributes": {}
+    }
+  ],
+  "markets": [
+    {
+      "id": "OH0",
+      "origin": "O0",
+      "dest": "H",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "HD0",
+      "origin": "H",
+      "dest": "D0",
+      "in_segment": false,
+      "label": ""
+    },
+    {
+      "id": "OH1",
+      "origin": "O1",
+      "dest": "H",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "HD1",
+      "origin": "H",
+      "dest": "D1",
+      "in_segment": false,
+      "label": ""
+    },
+    {
+      "id": "OH2",
+      "origin": "O2",
+      "dest": "H",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "HD2",
+      "origin": "H",
+      "dest": "D2",
+      "in_segment": false,
+      "label": ""
+    },
+    {
+      "id": "OH3",
+      "origin": "O3",
+      "dest": "H",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "HD3",
+      "origin": "H",
+      "dest": "D3",
+      "in_segment": false,
+      "label": ""
+    },
+    {
+      "id": "OH4",
+      "origin": "O4",
+      "dest": "H",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "HD4",
+      "origin": "H",
+      "dest": "D4",
+      "in_segment": false,
+      "label": ""
+    },
+    {
+      "id": "OH5",
+      "origin": "O5",
+      "dest": "H",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "HD5",
+      "origin": "H",
+      "dest": "D5",
+      "in_segment": false,
+      "label": ""
+    },
+    {
+      "id": "OH6",
+      "origin": "O6",
+      "dest": "H",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "HD6",
+      "origin": "H",
+      "dest": "D6",
+      "in_segment": false,
+      "label": ""
+    },
+    {
+      "id": "OH7",
+      "origin": "O7",
+      "dest": "H",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "HD7",
+      "origin": "H",
+      "dest": "D7",
+      "in_segment": false,
+      "label": ""
+    },
+    {
+      "id": "OD0_0",
+      "origin": "O0",
+      "dest": "D0",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD0_1",
+      "origin": "O0",
+      "dest": "D1",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD0_2",
+      "origin": "O0",
+      "dest": "D2",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD0_3",
+      "origin": "O0",
+      "dest": "D3",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD0_4",
+      "origin": "O0",
+      "dest": "D4",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD0_5",
+      "origin": "O0",
+      "dest": "D5",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD0_6",
+      "origin": "O0",
+      "dest": "D6",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD0_7",
+      "origin": "O0",
+      "dest": "D7",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD1_0",
+      "origin": "O1",
+      "dest": "D0",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD1_1",
+      "origin": "O1",
+      "dest": "D1",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD1_2",
+      "origin": "O1",
+      "dest": "D2",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD1_3",
+      "origin": "O1",
+      "dest": "D3",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD1_4",
+      "origin": "O1",
+      "dest": "D4",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD1_5",
+      "origin": "O1",
+      "dest": "D5",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD1_6",
+      "origin": "O1",
+      "dest": "D6",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD1_7",
+      "origin": "O1",
+      "dest": "D7",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD2_0",
+      "origin": "O2",
+      "dest": "D0",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD2_1",
+      "origin": "O2",
+      "dest": "D1",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD2_2",
+      "origin": "O2",
+      "dest": "D2",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD2_3",
+      "origin": "O2",
+      "dest": "D3",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD2_4",
+      "origin": "O2",
+      "dest": "D4",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD2_5",
+      "origin": "O2",
+      "dest": "D5",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD2_6",
+      "origin": "O2",
+      "dest": "D6",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD2_7",
+      "origin": "O2",
+      "dest": "D7",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD3_0",
+      "origin": "O3",
+      "dest": "D0",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD3_1",
+      "origin": "O3",
+      "dest": "D1",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD3_2",
+      "origin": "O3",
+      "dest": "D2",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD3_3",
+      "origin": "O3",
+      "dest": "D3",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD3_4",
+      "origin": "O3",
+      "dest": "D4",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD3_5",
+      "origin": "O3",
+      "dest": "D5",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD3_6",
+      "origin": "O3",
+      "dest": "D6",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD3_7",
+      "origin": "O3",
+      "dest": "D7",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD4_0",
+      "origin": "O4",
+      "dest": "D0",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD4_1",
+      "origin": "O4",
+      "dest": "D1",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD4_2",
+      "origin": "O4",
+      "dest": "D2",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD4_3",
+      "origin": "O4",
+      "dest": "D3",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD4_4",
+      "origin": "O4",
+      "dest": "D4",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD4_5",
+      "origin": "O4",
+      "dest": "D5",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD4_6",
+      "origin": "O4",
+      "dest": "D6",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD4_7",
+      "origin": "O4",
+      "dest": "D7",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD5_0",
+      "origin": "O5",
+      "dest": "D0",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD5_1",
+      "origin": "O5",
+      "dest": "D1",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD5_2",
+      "origin": "O5",
+      "dest": "D2",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD5_3",
+      "origin": "O5",
+      "dest": "D3",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD5_4",
+      "origin": "O5",
+      "dest": "D4",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD5_5",
+      "origin": "O5",
+      "dest": "D5",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD5_6",
+      "origin": "O5",
+      "dest": "D6",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD5_7",
+      "origin": "O5",
+      "dest": "D7",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD6_0",
+      "origin": "O6",
+      "dest": "D0",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD6_1",
+      "origin": "O6",
+      "dest": "D1",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD6_2",
+      "origin": "O6",
+      "dest": "D2",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD6_3",
+      "origin": "O6",
+      "dest": "D3",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD6_4",
+      "origin": "O6",
+      "dest": "D4",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD6_5",
+      "origin": "O6",
+      "dest": "D5",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD6_6",
+      "origin": "O6",
+      "dest": "D6",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD6_7",
+      "origin": "O6",
+      "dest": "D7",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD7_0",
+      "origin": "O7",
+      "dest": "D0",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD7_1",
+      "origin": "O7",
+      "dest": "D1",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD7_2",
+      "origin": "O7",
+      "dest": "D2",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD7_3",
+      "origin": "O7",
+      "dest": "D3",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD7_4",
+      "origin": "O7",
+      "dest": "D4",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD7_5",
+      "origin": "O7",
+      "dest": "D5",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD7_6",
+      "origin": "O7",
+      "dest": "D6",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "OD7_7",
+      "origin": "O7",
+      "dest": "D7",
+      "in_segment": true,
+      "label": ""
+    }
+  ],
+  "segments": [
+    {
+      "id": "leisure",
+      "classes": [
+        {
+          "weight": 1,
+          "alpha": 0.025,
+          "carrier_pref": {
+            "A": 0.0,
+            "B": 0.3
+          },
+          "market_value": {
+            "*": 4.5
+          },
+          "connection_penalty": 0.5,
+          "product_shift": {},
+          "time_penalty_per_hour": 0.0,
+          "schedule_penalty_per_hour": 0.0,
+          "ideal_dep_hour": null
+        }
+      ],
+      "mixed": null
+    },
+    {
+      "id": "business",
+      "classes": [
+        {
+          "weight": 1,
+          "alpha": 0.012,
+          "carrier_pref": {
+            "A": 0.25,
+            "B": 0.0
+          },
+          "market_value": {
+            "*": 4.5
+          },
+          "connection_penalty": 0.5,
+          "product_shift": {},
+          "time_penalty_per_hour": 0.0,
+          "schedule_penalty_per_hour": 0.0,
+          "ideal_dep_hour": null
+        }
+      ],
+      "mixed": null
+    }
+  ],
+  "demand": {
+    "mode": "poisson",
+    "arrival_probability": null,
+    "arrival_probability_cap": 0.98,
+    "market_weights": null,
+    "intensity": {
+      "OH0": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.16499999999999998
+        ]
+      },
+      "HD0": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.16499999999999998
+        ]
+      },
+      "OH1": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.16499999999999998
+        ]
+      },
+      "HD1": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.16499999999999998
+        ]
+      },
+      "OH2": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.16499999999999998
+        ]
+      },
+      "HD2": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.16499999999999998
+        ]
+      },
+      "OH3": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.16499999999999998
+        ]
+      },
+      "HD3": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.16499999999999998
+        ]
+      },
+      "OH4": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.16499999999999998
+        ]
+      },
+      "HD4": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.16499999999999998
+        ]
+      },
+      "OH5": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.16499999999999998
+        ]
+      },
+      "HD5": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.16499999999999998
+        ]
+      },
+      "OH6": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.16499999999999998
+        ]
+      },
+      "HD6": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.16499999999999998
+        ]
+      },
+      "OH7": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.16499999999999998
+        ]
+      },
+      "HD7": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.16499999999999998
+        ]
+      },
+      "OD0_0": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD0_1": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD0_2": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD0_3": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD0_4": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD0_5": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD0_6": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD0_7": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD1_0": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD1_1": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD1_2": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD1_3": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD1_4": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD1_5": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD1_6": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD1_7": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD2_0": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD2_1": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD2_2": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD2_3": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD2_4": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD2_5": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD2_6": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD2_7": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD3_0": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD3_1": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD3_2": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD3_3": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD3_4": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD3_5": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD3_6": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD3_7": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD4_0": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD4_1": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD4_2": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD4_3": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD4_4": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD4_5": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD4_6": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD4_7": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD5_0": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD5_1": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD5_2": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD5_3": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD5_4": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD5_5": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD5_6": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD5_7": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD6_0": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD6_1": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD6_2": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD6_3": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD6_4": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD6_5": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD6_6": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD6_7": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD7_0": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD7_1": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD7_2": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD7_3": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD7_4": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD7_5": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD7_6": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      },
+      "OD7_7": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.041249999999999995
+        ]
+      }
+    },
+    "segment_weights": {
+      "breakpoints": [
+        0,
+        10
+      ],
+      "values": [
+        [
+          0.8,
+          0.2
+        ],
+        [
+          0.3,
+          0.7
+        ]
+      ]
+    },
+    "holiday_multiplier": 1.0,
+    "exogenous_multipliers": {},
+    "poisson_truncation": 3
+  },
+  "choice": {
+    "model": "latent_class_mnl",
+    "connection_penalty_rule": "per_connection",
+    "n_mixed_draws": 0
+  },
+  "exogenous": {
+    "states": [
+      {
+        "name": "normal",
+        "public": true,
+        "attributes": {}
+      }
+    ],
+    "initial": [
+      1.0
+    ],
+    "transitions": {},
+    "default_transition": null,
+    "forecasts": {}
+  },
+  "capacity_process": {
+    "events": []
+  },
+  "resolution": {
+    "rule": "fixed_priority_cancel_refund",
+    "refund": "full_original_fare",
+    "penalty_per_cancellation": 25.0,
+    "stranded_reentry": false
+  },
+  "quotes": {
+    "requests": [
+      {
+        "id": "q_A_B_OH0",
+        "observer": "A",
+        "target_products": [
+          "B_OH0"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OH1",
+        "observer": "A",
+        "target_products": [
+          "B_OH1"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OH2",
+        "observer": "A",
+        "target_products": [
+          "B_OH2"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OH3",
+        "observer": "A",
+        "target_products": [
+          "B_OH3"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OH4",
+        "observer": "A",
+        "target_products": [
+          "B_OH4"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OH5",
+        "observer": "A",
+        "target_products": [
+          "B_OH5"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OH6",
+        "observer": "A",
+        "target_products": [
+          "B_OH6"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OH7",
+        "observer": "A",
+        "target_products": [
+          "B_OH7"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD0_0",
+        "observer": "A",
+        "target_products": [
+          "B_OD0_0"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD0_1",
+        "observer": "A",
+        "target_products": [
+          "B_OD0_1"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD0_2",
+        "observer": "A",
+        "target_products": [
+          "B_OD0_2"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD0_3",
+        "observer": "A",
+        "target_products": [
+          "B_OD0_3"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD0_4",
+        "observer": "A",
+        "target_products": [
+          "B_OD0_4"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD0_5",
+        "observer": "A",
+        "target_products": [
+          "B_OD0_5"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD0_6",
+        "observer": "A",
+        "target_products": [
+          "B_OD0_6"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD0_7",
+        "observer": "A",
+        "target_products": [
+          "B_OD0_7"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD1_0",
+        "observer": "A",
+        "target_products": [
+          "B_OD1_0"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD1_1",
+        "observer": "A",
+        "target_products": [
+          "B_OD1_1"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD1_2",
+        "observer": "A",
+        "target_products": [
+          "B_OD1_2"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD1_3",
+        "observer": "A",
+        "target_products": [
+          "B_OD1_3"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD1_4",
+        "observer": "A",
+        "target_products": [
+          "B_OD1_4"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD1_5",
+        "observer": "A",
+        "target_products": [
+          "B_OD1_5"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD1_6",
+        "observer": "A",
+        "target_products": [
+          "B_OD1_6"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD1_7",
+        "observer": "A",
+        "target_products": [
+          "B_OD1_7"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD2_0",
+        "observer": "A",
+        "target_products": [
+          "B_OD2_0"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD2_1",
+        "observer": "A",
+        "target_products": [
+          "B_OD2_1"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD2_2",
+        "observer": "A",
+        "target_products": [
+          "B_OD2_2"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD2_3",
+        "observer": "A",
+        "target_products": [
+          "B_OD2_3"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD2_4",
+        "observer": "A",
+        "target_products": [
+          "B_OD2_4"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD2_5",
+        "observer": "A",
+        "target_products": [
+          "B_OD2_5"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD2_6",
+        "observer": "A",
+        "target_products": [
+          "B_OD2_6"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD2_7",
+        "observer": "A",
+        "target_products": [
+          "B_OD2_7"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD3_0",
+        "observer": "A",
+        "target_products": [
+          "B_OD3_0"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD3_1",
+        "observer": "A",
+        "target_products": [
+          "B_OD3_1"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD3_2",
+        "observer": "A",
+        "target_products": [
+          "B_OD3_2"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD3_3",
+        "observer": "A",
+        "target_products": [
+          "B_OD3_3"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD3_4",
+        "observer": "A",
+        "target_products": [
+          "B_OD3_4"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD3_5",
+        "observer": "A",
+        "target_products": [
+          "B_OD3_5"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD3_6",
+        "observer": "A",
+        "target_products": [
+          "B_OD3_6"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD3_7",
+        "observer": "A",
+        "target_products": [
+          "B_OD3_7"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD4_0",
+        "observer": "A",
+        "target_products": [
+          "B_OD4_0"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD4_1",
+        "observer": "A",
+        "target_products": [
+          "B_OD4_1"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD4_2",
+        "observer": "A",
+        "target_products": [
+          "B_OD4_2"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD4_3",
+        "observer": "A",
+        "target_products": [
+          "B_OD4_3"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD4_4",
+        "observer": "A",
+        "target_products": [
+          "B_OD4_4"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD4_5",
+        "observer": "A",
+        "target_products": [
+          "B_OD4_5"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD4_6",
+        "observer": "A",
+        "target_products": [
+          "B_OD4_6"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD4_7",
+        "observer": "A",
+        "target_products": [
+          "B_OD4_7"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD5_0",
+        "observer": "A",
+        "target_products": [
+          "B_OD5_0"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD5_1",
+        "observer": "A",
+        "target_products": [
+          "B_OD5_1"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD5_2",
+        "observer": "A",
+        "target_products": [
+          "B_OD5_2"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD5_3",
+        "observer": "A",
+        "target_products": [
+          "B_OD5_3"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD5_4",
+        "observer": "A",
+        "target_products": [
+          "B_OD5_4"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD5_5",
+        "observer": "A",
+        "target_products": [
+          "B_OD5_5"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD5_6",
+        "observer": "A",
+        "target_products": [
+          "B_OD5_6"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD5_7",
+        "observer": "A",
+        "target_products": [
+          "B_OD5_7"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD6_0",
+        "observer": "A",
+        "target_products": [
+          "B_OD6_0"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD6_1",
+        "observer": "A",
+        "target_products": [
+          "B_OD6_1"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD6_2",
+        "observer": "A",
+        "target_products": [
+          "B_OD6_2"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD6_3",
+        "observer": "A",
+        "target_products": [
+          "B_OD6_3"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD6_4",
+        "observer": "A",
+        "target_products": [
+          "B_OD6_4"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD6_5",
+        "observer": "A",
+        "target_products": [
+          "B_OD6_5"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD6_6",
+        "observer": "A",
+        "target_products": [
+          "B_OD6_6"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD6_7",
+        "observer": "A",
+        "target_products": [
+          "B_OD6_7"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD7_0",
+        "observer": "A",
+        "target_products": [
+          "B_OD7_0"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD7_1",
+        "observer": "A",
+        "target_products": [
+          "B_OD7_1"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD7_2",
+        "observer": "A",
+        "target_products": [
+          "B_OD7_2"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD7_3",
+        "observer": "A",
+        "target_products": [
+          "B_OD7_3"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD7_4",
+        "observer": "A",
+        "target_products": [
+          "B_OD7_4"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD7_5",
+        "observer": "A",
+        "target_products": [
+          "B_OD7_5"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD7_6",
+        "observer": "A",
+        "target_products": [
+          "B_OD7_6"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_OD7_7",
+        "observer": "A",
+        "target_products": [
+          "B_OD7_7"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_HD0",
+        "observer": "A",
+        "target_products": [
+          "B_HD0"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_HD1",
+        "observer": "A",
+        "target_products": [
+          "B_HD1"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_HD2",
+        "observer": "A",
+        "target_products": [
+          "B_HD2"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_HD3",
+        "observer": "A",
+        "target_products": [
+          "B_HD3"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_HD4",
+        "observer": "A",
+        "target_products": [
+          "B_HD4"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_HD5",
+        "observer": "A",
+        "target_products": [
+          "B_HD5"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_HD6",
+        "observer": "A",
+        "target_products": [
+          "B_HD6"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_B_HD7",
+        "observer": "A",
+        "target_products": [
+          "B_HD7"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_XY_B_0",
+        "observer": "A",
+        "target_products": [
+          "XY_B_0"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_XY_B_1",
+        "observer": "A",
+        "target_products": [
+          "XY_B_1"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_XY_B_2",
+        "observer": "A",
+        "target_products": [
+          "XY_B_2"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_XY_B_3",
+        "observer": "A",
+        "target_products": [
+          "XY_B_3"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_XY_B_4",
+        "observer": "A",
+        "target_products": [
+          "XY_B_4"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_XY_B_5",
+        "observer": "A",
+        "target_products": [
+          "XY_B_5"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_XY_B_6",
+        "observer": "A",
+        "target_products": [
+          "XY_B_6"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_A_XY_B_7",
+        "observer": "A",
+        "target_products": [
+          "XY_B_7"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OH0",
+        "observer": "B",
+        "target_products": [
+          "A_OH0"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OH1",
+        "observer": "B",
+        "target_products": [
+          "A_OH1"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OH2",
+        "observer": "B",
+        "target_products": [
+          "A_OH2"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OH3",
+        "observer": "B",
+        "target_products": [
+          "A_OH3"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OH4",
+        "observer": "B",
+        "target_products": [
+          "A_OH4"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OH5",
+        "observer": "B",
+        "target_products": [
+          "A_OH5"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OH6",
+        "observer": "B",
+        "target_products": [
+          "A_OH6"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OH7",
+        "observer": "B",
+        "target_products": [
+          "A_OH7"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD0_0",
+        "observer": "B",
+        "target_products": [
+          "A_OD0_0"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD0_1",
+        "observer": "B",
+        "target_products": [
+          "A_OD0_1"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD0_2",
+        "observer": "B",
+        "target_products": [
+          "A_OD0_2"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD0_3",
+        "observer": "B",
+        "target_products": [
+          "A_OD0_3"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD0_4",
+        "observer": "B",
+        "target_products": [
+          "A_OD0_4"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD0_5",
+        "observer": "B",
+        "target_products": [
+          "A_OD0_5"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD0_6",
+        "observer": "B",
+        "target_products": [
+          "A_OD0_6"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD0_7",
+        "observer": "B",
+        "target_products": [
+          "A_OD0_7"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD1_0",
+        "observer": "B",
+        "target_products": [
+          "A_OD1_0"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD1_1",
+        "observer": "B",
+        "target_products": [
+          "A_OD1_1"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD1_2",
+        "observer": "B",
+        "target_products": [
+          "A_OD1_2"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD1_3",
+        "observer": "B",
+        "target_products": [
+          "A_OD1_3"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD1_4",
+        "observer": "B",
+        "target_products": [
+          "A_OD1_4"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD1_5",
+        "observer": "B",
+        "target_products": [
+          "A_OD1_5"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD1_6",
+        "observer": "B",
+        "target_products": [
+          "A_OD1_6"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD1_7",
+        "observer": "B",
+        "target_products": [
+          "A_OD1_7"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD2_0",
+        "observer": "B",
+        "target_products": [
+          "A_OD2_0"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD2_1",
+        "observer": "B",
+        "target_products": [
+          "A_OD2_1"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD2_2",
+        "observer": "B",
+        "target_products": [
+          "A_OD2_2"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD2_3",
+        "observer": "B",
+        "target_products": [
+          "A_OD2_3"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD2_4",
+        "observer": "B",
+        "target_products": [
+          "A_OD2_4"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD2_5",
+        "observer": "B",
+        "target_products": [
+          "A_OD2_5"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD2_6",
+        "observer": "B",
+        "target_products": [
+          "A_OD2_6"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD2_7",
+        "observer": "B",
+        "target_products": [
+          "A_OD2_7"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD3_0",
+        "observer": "B",
+        "target_products": [
+          "A_OD3_0"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD3_1",
+        "observer": "B",
+        "target_products": [
+          "A_OD3_1"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD3_2",
+        "observer": "B",
+        "target_products": [
+          "A_OD3_2"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD3_3",
+        "observer": "B",
+        "target_products": [
+          "A_OD3_3"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD3_4",
+        "observer": "B",
+        "target_products": [
+          "A_OD3_4"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD3_5",
+        "observer": "B",
+        "target_products": [
+          "A_OD3_5"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD3_6",
+        "observer": "B",
+        "target_products": [
+          "A_OD3_6"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD3_7",
+        "observer": "B",
+        "target_products": [
+          "A_OD3_7"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD4_0",
+        "observer": "B",
+        "target_products": [
+          "A_OD4_0"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD4_1",
+        "observer": "B",
+        "target_products": [
+          "A_OD4_1"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD4_2",
+        "observer": "B",
+        "target_products": [
+          "A_OD4_2"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD4_3",
+        "observer": "B",
+        "target_products": [
+          "A_OD4_3"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD4_4",
+        "observer": "B",
+        "target_products": [
+          "A_OD4_4"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD4_5",
+        "observer": "B",
+        "target_products": [
+          "A_OD4_5"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD4_6",
+        "observer": "B",
+        "target_products": [
+          "A_OD4_6"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD4_7",
+        "observer": "B",
+        "target_products": [
+          "A_OD4_7"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD5_0",
+        "observer": "B",
+        "target_products": [
+          "A_OD5_0"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD5_1",
+        "observer": "B",
+        "target_products": [
+          "A_OD5_1"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD5_2",
+        "observer": "B",
+        "target_products": [
+          "A_OD5_2"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD5_3",
+        "observer": "B",
+        "target_products": [
+          "A_OD5_3"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD5_4",
+        "observer": "B",
+        "target_products": [
+          "A_OD5_4"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD5_5",
+        "observer": "B",
+        "target_products": [
+          "A_OD5_5"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD5_6",
+        "observer": "B",
+        "target_products": [
+          "A_OD5_6"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD5_7",
+        "observer": "B",
+        "target_products": [
+          "A_OD5_7"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD6_0",
+        "observer": "B",
+        "target_products": [
+          "A_OD6_0"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD6_1",
+        "observer": "B",
+        "target_products": [
+          "A_OD6_1"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD6_2",
+        "observer": "B",
+        "target_products": [
+          "A_OD6_2"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD6_3",
+        "observer": "B",
+        "target_products": [
+          "A_OD6_3"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD6_4",
+        "observer": "B",
+        "target_products": [
+          "A_OD6_4"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD6_5",
+        "observer": "B",
+        "target_products": [
+          "A_OD6_5"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD6_6",
+        "observer": "B",
+        "target_products": [
+          "A_OD6_6"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD6_7",
+        "observer": "B",
+        "target_products": [
+          "A_OD6_7"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD7_0",
+        "observer": "B",
+        "target_products": [
+          "A_OD7_0"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD7_1",
+        "observer": "B",
+        "target_products": [
+          "A_OD7_1"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD7_2",
+        "observer": "B",
+        "target_products": [
+          "A_OD7_2"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD7_3",
+        "observer": "B",
+        "target_products": [
+          "A_OD7_3"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD7_4",
+        "observer": "B",
+        "target_products": [
+          "A_OD7_4"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD7_5",
+        "observer": "B",
+        "target_products": [
+          "A_OD7_5"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD7_6",
+        "observer": "B",
+        "target_products": [
+          "A_OD7_6"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_B_A_OD7_7",
+        "observer": "B",
+        "target_products": [
+          "A_OD7_7"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      }
+    ]
+  },
+  "pricing": [
+    {
+      "carrier": "A",
+      "base": {
+        "A_OH0": 110,
+        "A_OH1": 110,
+        "A_OH2": 110,
+        "A_OH3": 110,
+        "A_OH4": 110,
+        "A_OH5": 110,
+        "A_OH6": 110,
+        "A_OH7": 110,
+        "A_OD0_0": 185,
+        "A_OD0_1": 185,
+        "A_OD0_2": 185,
+        "A_OD0_3": 185,
+        "A_OD0_4": 185,
+        "A_OD0_5": 185,
+        "A_OD0_6": 185,
+        "A_OD0_7": 185,
+        "A_OD1_0": 185,
+        "A_OD1_1": 185,
+        "A_OD1_2": 185,
+        "A_OD1_3": 185,
+        "A_OD1_4": 185,
+        "A_OD1_5": 185,
+        "A_OD1_6": 185,
+        "A_OD1_7": 185,
+        "A_OD2_0": 185,
+        "A_OD2_1": 185,
+        "A_OD2_2": 185,
+        "A_OD2_3": 185,
+        "A_OD2_4": 185,
+        "A_OD2_5": 185,
+        "A_OD2_6": 185,
+        "A_OD2_7": 185,
+        "A_OD3_0": 185,
+        "A_OD3_1": 185,
+        "A_OD3_2": 185,
+        "A_OD3_3": 185,
+        "A_OD3_4": 185,
+        "A_OD3_5": 185,
+        "A_OD3_6": 185,
+        "A_OD3_7": 185,
+        "A_OD4_0": 185,
+        "A_OD4_1": 185,
+        "A_OD4_2": 185,
+        "A_OD4_3": 185,
+        "A_OD4_4": 185,
+        "A_OD4_5": 185,
+        "A_OD4_6": 185,
+        "A_OD4_7": 185,
+        "A_OD5_0": 185,
+        "A_OD5_1": 185,
+        "A_OD5_2": 185,
+        "A_OD5_3": 185,
+        "A_OD5_4": 185,
+        "A_OD5_5": 185,
+        "A_OD5_6": 185,
+        "A_OD5_7": 185,
+        "A_OD6_0": 185,
+        "A_OD6_1": 185,
+        "A_OD6_2": 185,
+        "A_OD6_3": 185,
+        "A_OD6_4": 185,
+        "A_OD6_5": 185,
+        "A_OD6_6": 185,
+        "A_OD6_7": 185,
+        "A_OD7_0": 185,
+        "A_OD7_1": 185,
+        "A_OD7_2": 185,
+        "A_OD7_3": 185,
+        "A_OD7_4": 185,
+        "A_OD7_5": 185,
+        "A_OD7_6": 185,
+        "A_OD7_7": 185
+      },
+      "time_ramp": 15,
+      "fixed_features": [
+        [
+          {
+            "name": "direct_rival_gap",
+            "params": {
+              "targets": {
+                "A_OH0": "B_OH0",
+                "A_OH1": "B_OH1",
+                "A_OH2": "B_OH2",
+                "A_OH3": "B_OH3",
+                "A_OH4": "B_OH4",
+                "A_OH5": "B_OH5",
+                "A_OH6": "B_OH6",
+                "A_OH7": "B_OH7",
+                "A_OD0_0": "B_OD0_0",
+                "A_OD0_1": "B_OD0_1",
+                "A_OD0_2": "B_OD0_2",
+                "A_OD0_3": "B_OD0_3",
+                "A_OD0_4": "B_OD0_4",
+                "A_OD0_5": "B_OD0_5",
+                "A_OD0_6": "B_OD0_6",
+                "A_OD0_7": "B_OD0_7",
+                "A_OD1_0": "B_OD1_0",
+                "A_OD1_1": "B_OD1_1",
+                "A_OD1_2": "B_OD1_2",
+                "A_OD1_3": "B_OD1_3",
+                "A_OD1_4": "B_OD1_4",
+                "A_OD1_5": "B_OD1_5",
+                "A_OD1_6": "B_OD1_6",
+                "A_OD1_7": "B_OD1_7",
+                "A_OD2_0": "B_OD2_0",
+                "A_OD2_1": "B_OD2_1",
+                "A_OD2_2": "B_OD2_2",
+                "A_OD2_3": "B_OD2_3",
+                "A_OD2_4": "B_OD2_4",
+                "A_OD2_5": "B_OD2_5",
+                "A_OD2_6": "B_OD2_6",
+                "A_OD2_7": "B_OD2_7",
+                "A_OD3_0": "B_OD3_0",
+                "A_OD3_1": "B_OD3_1",
+                "A_OD3_2": "B_OD3_2",
+                "A_OD3_3": "B_OD3_3",
+                "A_OD3_4": "B_OD3_4",
+                "A_OD3_5": "B_OD3_5",
+                "A_OD3_6": "B_OD3_6",
+                "A_OD3_7": "B_OD3_7",
+                "A_OD4_0": "B_OD4_0",
+                "A_OD4_1": "B_OD4_1",
+                "A_OD4_2": "B_OD4_2",
+                "A_OD4_3": "B_OD4_3",
+                "A_OD4_4": "B_OD4_4",
+                "A_OD4_5": "B_OD4_5",
+                "A_OD4_6": "B_OD4_6",
+                "A_OD4_7": "B_OD4_7",
+                "A_OD5_0": "B_OD5_0",
+                "A_OD5_1": "B_OD5_1",
+                "A_OD5_2": "B_OD5_2",
+                "A_OD5_3": "B_OD5_3",
+                "A_OD5_4": "B_OD5_4",
+                "A_OD5_5": "B_OD5_5",
+                "A_OD5_6": "B_OD5_6",
+                "A_OD5_7": "B_OD5_7",
+                "A_OD6_0": "B_OD6_0",
+                "A_OD6_1": "B_OD6_1",
+                "A_OD6_2": "B_OD6_2",
+                "A_OD6_3": "B_OD6_3",
+                "A_OD6_4": "B_OD6_4",
+                "A_OD6_5": "B_OD6_5",
+                "A_OD6_6": "B_OD6_6",
+                "A_OD6_7": "B_OD6_7",
+                "A_OD7_0": "B_OD7_0",
+                "A_OD7_1": "B_OD7_1",
+                "A_OD7_2": "B_OD7_2",
+                "A_OD7_3": "B_OD7_3",
+                "A_OD7_4": "B_OD7_4",
+                "A_OD7_5": "B_OD7_5",
+                "A_OD7_6": "B_OD7_6",
+                "A_OD7_7": "B_OD7_7"
+              }
+            }
+          },
+          0.1
+        ]
+      ],
+      "controllable_features": [
+        {
+          "name": "intercept",
+          "params": {}
+        },
+        {
+          "name": "connection_indicator",
+          "params": {}
+        },
+        {
+          "name": "scarcity_sum",
+          "params": {}
+        }
+      ],
+      "theta_bounds": [
+        [
+          -30,
+          30
+        ],
+        [
+          -30,
+          30
+        ],
+        [
+          0,
+          15
+        ]
+      ],
+      "theta_grid": [
+        [
+          -30.0,
+          -30.0,
+          0.0
+        ],
+        [
+          -30.0,
+          -30.0,
+          15.0
+        ],
+        [
+          -30.0,
+          0.0,
+          0.0
+        ],
+        [
+          -30.0,
+          0.0,
+          15.0
+        ],
+        [
+          -30.0,
+          30.0,
+          0.0
+        ],
+        [
+          -30.0,
+          30.0,
+          15.0
+        ],
+        [
+          0.0,
+          -30.0,
+          0.0
+        ],
+        [
+          0.0,
+          -30.0,
+          15.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          15.0
+        ],
+        [
+          0.0,
+          30.0,
+          0.0
+        ],
+        [
+          0.0,
+          30.0,
+          15.0
+        ],
+        [
+          30.0,
+          -30.0,
+          0.0
+        ],
+        [
+          30.0,
+          -30.0,
+          15.0
+        ],
+        [
+          30.0,
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          0.0,
+          15.0
+        ],
+        [
+          30.0,
+          30.0,
+          0.0
+        ],
+        [
+          30.0,
+          30.0,
+          15.0
+        ]
+      ],
+      "sharing": "carrier",
+      "update_every": 1
+    },
+    {
+      "carrier": "B",
+      "base": {
+        "B_OH0": 125,
+        "B_HD0": 85,
+        "B_OH1": 125,
+        "B_HD1": 85,
+        "B_OH2": 125,
+        "B_HD2": 85,
+        "B_OH3": 125,
+        "B_HD3": 85,
+        "B_OH4": 125,
+        "B_HD4": 85,
+        "B_OH5": 125,
+        "B_HD5": 85,
+        "B_OH6": 125,
+        "B_HD6": 85,
+        "B_OH7": 125,
+        "B_HD7": 85,
+        "B_OD0_0": 170,
+        "B_OD0_1": 170,
+        "B_OD0_2": 170,
+        "B_OD0_3": 170,
+        "B_OD0_4": 170,
+        "B_OD0_5": 170,
+        "B_OD0_6": 170,
+        "B_OD0_7": 170,
+        "B_OD1_0": 170,
+        "B_OD1_1": 170,
+        "B_OD1_2": 170,
+        "B_OD1_3": 170,
+        "B_OD1_4": 170,
+        "B_OD1_5": 170,
+        "B_OD1_6": 170,
+        "B_OD1_7": 170,
+        "B_OD2_0": 170,
+        "B_OD2_1": 170,
+        "B_OD2_2": 170,
+        "B_OD2_3": 170,
+        "B_OD2_4": 170,
+        "B_OD2_5": 170,
+        "B_OD2_6": 170,
+        "B_OD2_7": 170,
+        "B_OD3_0": 170,
+        "B_OD3_1": 170,
+        "B_OD3_2": 170,
+        "B_OD3_3": 170,
+        "B_OD3_4": 170,
+        "B_OD3_5": 170,
+        "B_OD3_6": 170,
+        "B_OD3_7": 170,
+        "B_OD4_0": 170,
+        "B_OD4_1": 170,
+        "B_OD4_2": 170,
+        "B_OD4_3": 170,
+        "B_OD4_4": 170,
+        "B_OD4_5": 170,
+        "B_OD4_6": 170,
+        "B_OD4_7": 170,
+        "B_OD5_0": 170,
+        "B_OD5_1": 170,
+        "B_OD5_2": 170,
+        "B_OD5_3": 170,
+        "B_OD5_4": 170,
+        "B_OD5_5": 170,
+        "B_OD5_6": 170,
+        "B_OD5_7": 170,
+        "B_OD6_0": 170,
+        "B_OD6_1": 170,
+        "B_OD6_2": 170,
+        "B_OD6_3": 170,
+        "B_OD6_4": 170,
+        "B_OD6_5": 170,
+        "B_OD6_6": 170,
+        "B_OD6_7": 170,
+        "B_OD7_0": 170,
+        "B_OD7_1": 170,
+        "B_OD7_2": 170,
+        "B_OD7_3": 170,
+        "B_OD7_4": 170,
+        "B_OD7_5": 170,
+        "B_OD7_6": 170,
+        "B_OD7_7": 170
+      },
+      "time_ramp": 0.0,
+      "fixed_features": [],
+      "controllable_features": [
+        {
+          "name": "intercept",
+          "params": {}
+        },
+        {
+          "name": "connection_indicator",
+          "params": {}
+        },
+        {
+          "name": "scarcity_sum",
+          "params": {}
+        }
+      ],
+      "theta_bounds": [
+        [
+          -30,
+          30
+        ],
+        [
+          -30,
+          30
+        ],
+        [
+          0,
+          15
+        ]
+      ],
+      "theta_grid": [
+        [
+          -30.0,
+          -30.0,
+          0.0
+        ],
+        [
+          -30.0,
+          -30.0,
+          15.0
+        ],
+        [
+          -30.0,
+          0.0,
+          0.0
+        ],
+        [
+          -30.0,
+          0.0,
+          15.0
+        ],
+        [
+          -30.0,
+          30.0,
+          0.0
+        ],
+        [
+          -30.0,
+          30.0,
+          15.0
+        ],
+        [
+          0.0,
+          -30.0,
+          0.0
+        ],
+        [
+          0.0,
+          -30.0,
+          15.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          15.0
+        ],
+        [
+          0.0,
+          30.0,
+          0.0
+        ],
+        [
+          0.0,
+          30.0,
+          15.0
+        ],
+        [
+          30.0,
+          -30.0,
+          0.0
+        ],
+        [
+          30.0,
+          -30.0,
+          15.0
+        ],
+        [
+          30.0,
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          0.0,
+          15.0
+        ],
+        [
+          30.0,
+          30.0,
+          0.0
+        ],
+        [
+          30.0,
+          30.0,
+          15.0
+        ]
+      ],
+      "sharing": "carrier",
+      "update_every": 1
+    }
+  ],
+  "controllers": [
+    {
+      "carrier": "A",
+      "controller": "external",
+      "params": {}
+    },
+    {
+      "carrier": "B",
+      "controller": "threshold_linear_rule",
+      "params": {
+        "rules": {
+          "B_OH0": {
+            "base": 125,
+            "scarcity": [
+              {
+                "leg": "B_OH0",
+                "threshold": 1,
+                "coefficient": 35
+              }
+            ]
+          },
+          "B_HD0": {
+            "base": 85,
+            "scarcity": [
+              {
+                "leg": "B_HD0",
+                "threshold": 1,
+                "coefficient": 35
+              }
+            ]
+          },
+          "B_OH1": {
+            "base": 125,
+            "scarcity": [
+              {
+                "leg": "B_OH1",
+                "threshold": 1,
+                "coefficient": 35
+              }
+            ]
+          },
+          "B_HD1": {
+            "base": 85,
+            "scarcity": [
+              {
+                "leg": "B_HD1",
+                "threshold": 1,
+                "coefficient": 35
+              }
+            ]
+          },
+          "B_OH2": {
+            "base": 125,
+            "scarcity": [
+              {
+                "leg": "B_OH2",
+                "threshold": 1,
+                "coefficient": 35
+              }
+            ]
+          },
+          "B_HD2": {
+            "base": 85,
+            "scarcity": [
+              {
+                "leg": "B_HD2",
+                "threshold": 1,
+                "coefficient": 35
+              }
+            ]
+          },
+          "B_OH3": {
+            "base": 125,
+            "scarcity": [
+              {
+                "leg": "B_OH3",
+                "threshold": 1,
+                "coefficient": 35
+              }
+            ]
+          },
+          "B_HD3": {
+            "base": 85,
+            "scarcity": [
+              {
+                "leg": "B_HD3",
+                "threshold": 1,
+                "coefficient": 35
+              }
+            ]
+          },
+          "B_OH4": {
+            "base": 125,
+            "scarcity": [
+              {
+                "leg": "B_OH4",
+                "threshold": 1,
+                "coefficient": 35
+              }
+            ]
+          },
+          "B_HD4": {
+            "base": 85,
+            "scarcity": [
+              {
+                "leg": "B_HD4",
+                "threshold": 1,
+                "coefficient": 35
+              }
+            ]
+          },
+          "B_OH5": {
+            "base": 125,
+            "scarcity": [
+              {
+                "leg": "B_OH5",
+                "threshold": 1,
+                "coefficient": 35
+              }
+            ]
+          },
+          "B_HD5": {
+            "base": 85,
+            "scarcity": [
+              {
+                "leg": "B_HD5",
+                "threshold": 1,
+                "coefficient": 35
+              }
+            ]
+          },
+          "B_OH6": {
+            "base": 125,
+            "scarcity": [
+              {
+                "leg": "B_OH6",
+                "threshold": 1,
+                "coefficient": 35
+              }
+            ]
+          },
+          "B_HD6": {
+            "base": 85,
+            "scarcity": [
+              {
+                "leg": "B_HD6",
+                "threshold": 1,
+                "coefficient": 35
+              }
+            ]
+          },
+          "B_OH7": {
+            "base": 125,
+            "scarcity": [
+              {
+                "leg": "B_OH7",
+                "threshold": 1,
+                "coefficient": 35
+              }
+            ]
+          },
+          "B_HD7": {
+            "base": 85,
+            "scarcity": [
+              {
+                "leg": "B_HD7",
+                "threshold": 1,
+                "coefficient": 35
+              }
+            ]
+          },
+          "B_OD0_0": {
+            "base": 170
+          },
+          "B_OD0_1": {
+            "base": 170
+          },
+          "B_OD0_2": {
+            "base": 170
+          },
+          "B_OD0_3": {
+            "base": 170
+          },
+          "B_OD0_4": {
+            "base": 170
+          },
+          "B_OD0_5": {
+            "base": 170
+          },
+          "B_OD0_6": {
+            "base": 170
+          },
+          "B_OD0_7": {
+            "base": 170
+          },
+          "B_OD1_0": {
+            "base": 170
+          },
+          "B_OD1_1": {
+            "base": 170
+          },
+          "B_OD1_2": {
+            "base": 170
+          },
+          "B_OD1_3": {
+            "base": 170
+          },
+          "B_OD1_4": {
+            "base": 170
+          },
+          "B_OD1_5": {
+            "base": 170
+          },
+          "B_OD1_6": {
+            "base": 170
+          },
+          "B_OD1_7": {
+            "base": 170
+          },
+          "B_OD2_0": {
+            "base": 170
+          },
+          "B_OD2_1": {
+            "base": 170
+          },
+          "B_OD2_2": {
+            "base": 170
+          },
+          "B_OD2_3": {
+            "base": 170
+          },
+          "B_OD2_4": {
+            "base": 170
+          },
+          "B_OD2_5": {
+            "base": 170
+          },
+          "B_OD2_6": {
+            "base": 170
+          },
+          "B_OD2_7": {
+            "base": 170
+          },
+          "B_OD3_0": {
+            "base": 170
+          },
+          "B_OD3_1": {
+            "base": 170
+          },
+          "B_OD3_2": {
+            "base": 170
+          },
+          "B_OD3_3": {
+            "base": 170
+          },
+          "B_OD3_4": {
+            "base": 170
+          },
+          "B_OD3_5": {
+            "base": 170
+          },
+          "B_OD3_6": {
+            "base": 170
+          },
+          "B_OD3_7": {
+            "base": 170
+          },
+          "B_OD4_0": {
+            "base": 170
+          },
+          "B_OD4_1": {
+            "base": 170
+          },
+          "B_OD4_2": {
+            "base": 170
+          },
+          "B_OD4_3": {
+            "base": 170
+          },
+          "B_OD4_4": {
+            "base": 170
+          },
+          "B_OD4_5": {
+            "base": 170
+          },
+          "B_OD4_6": {
+            "base": 170
+          },
+          "B_OD4_7": {
+            "base": 170
+          },
+          "B_OD5_0": {
+            "base": 170
+          },
+          "B_OD5_1": {
+            "base": 170
+          },
+          "B_OD5_2": {
+            "base": 170
+          },
+          "B_OD5_3": {
+            "base": 170
+          },
+          "B_OD5_4": {
+            "base": 170
+          },
+          "B_OD5_5": {
+            "base": 170
+          },
+          "B_OD5_6": {
+            "base": 170
+          },
+          "B_OD5_7": {
+            "base": 170
+          },
+          "B_OD6_0": {
+            "base": 170
+          },
+          "B_OD6_1": {
+            "base": 170
+          },
+          "B_OD6_2": {
+            "base": 170
+          },
+          "B_OD6_3": {
+            "base": 170
+          },
+          "B_OD6_4": {
+            "base": 170
+          },
+          "B_OD6_5": {
+            "base": 170
+          },
+          "B_OD6_6": {
+            "base": 170
+          },
+          "B_OD6_7": {
+            "base": 170
+          },
+          "B_OD7_0": {
+            "base": 170
+          },
+          "B_OD7_1": {
+            "base": 170
+          },
+          "B_OD7_2": {
+            "base": 170
+          },
+          "B_OD7_3": {
+            "base": 170
+          },
+          "B_OD7_4": {
+            "base": 170
+          },
+          "B_OD7_5": {
+            "base": 170
+          },
+          "B_OD7_6": {
+            "base": 170
+          },
+          "B_OD7_7": {
+            "base": 170
+          }
+        }
+      }
+    }
+  ],
+  "objectives": [
+    {
+      "carrier": "A",
+      "profit_scale": 1000.0,
+      "share_weight": 0.0,
+      "share_markets": null,
+      "share_statistic": "realized_ratio"
+    },
+    {
+      "carrier": "B",
+      "profit_scale": 1000.0,
+      "share_weight": 0.0,
+      "share_markets": null,
+      "share_statistic": "realized_ratio"
+    }
+  ],
+  "information": [
+    {
+      "name": "direct",
+      "observer": "A",
+      "requests": [
+        "q_A_B_OH0",
+        "q_A_B_OH1",
+        "q_A_B_OH2",
+        "q_A_B_OH3",
+        "q_A_B_OH4",
+        "q_A_B_OH5",
+        "q_A_B_OH6",
+        "q_A_B_OH7",
+        "q_A_B_OD0_0",
+        "q_A_B_OD0_1",
+        "q_A_B_OD0_2",
+        "q_A_B_OD0_3",
+        "q_A_B_OD0_4",
+        "q_A_B_OD0_5",
+        "q_A_B_OD0_6",
+        "q_A_B_OD0_7",
+        "q_A_B_OD1_0",
+        "q_A_B_OD1_1",
+        "q_A_B_OD1_2",
+        "q_A_B_OD1_3",
+        "q_A_B_OD1_4",
+        "q_A_B_OD1_5",
+        "q_A_B_OD1_6",
+        "q_A_B_OD1_7",
+        "q_A_B_OD2_0",
+        "q_A_B_OD2_1",
+        "q_A_B_OD2_2",
+        "q_A_B_OD2_3",
+        "q_A_B_OD2_4",
+        "q_A_B_OD2_5",
+        "q_A_B_OD2_6",
+        "q_A_B_OD2_7",
+        "q_A_B_OD3_0",
+        "q_A_B_OD3_1",
+        "q_A_B_OD3_2",
+        "q_A_B_OD3_3",
+        "q_A_B_OD3_4",
+        "q_A_B_OD3_5",
+        "q_A_B_OD3_6",
+        "q_A_B_OD3_7",
+        "q_A_B_OD4_0",
+        "q_A_B_OD4_1",
+        "q_A_B_OD4_2",
+        "q_A_B_OD4_3",
+        "q_A_B_OD4_4",
+        "q_A_B_OD4_5",
+        "q_A_B_OD4_6",
+        "q_A_B_OD4_7",
+        "q_A_B_OD5_0",
+        "q_A_B_OD5_1",
+        "q_A_B_OD5_2",
+        "q_A_B_OD5_3",
+        "q_A_B_OD5_4",
+        "q_A_B_OD5_5",
+        "q_A_B_OD5_6",
+        "q_A_B_OD5_7",
+        "q_A_B_OD6_0",
+        "q_A_B_OD6_1",
+        "q_A_B_OD6_2",
+        "q_A_B_OD6_3",
+        "q_A_B_OD6_4",
+        "q_A_B_OD6_5",
+        "q_A_B_OD6_6",
+        "q_A_B_OD6_7",
+        "q_A_B_OD7_0",
+        "q_A_B_OD7_1",
+        "q_A_B_OD7_2",
+        "q_A_B_OD7_3",
+        "q_A_B_OD7_4",
+        "q_A_B_OD7_5",
+        "q_A_B_OD7_6",
+        "q_A_B_OD7_7"
+      ],
+      "privileged": false,
+      "derived": true
+    },
+    {
+      "name": "linked",
+      "observer": "A",
+      "requests": [
+        "q_A_B_OH0",
+        "q_A_B_OH1",
+        "q_A_B_OH2",
+        "q_A_B_OH3",
+        "q_A_B_OH4",
+        "q_A_B_OH5",
+        "q_A_B_OH6",
+        "q_A_B_OH7",
+        "q_A_B_OD0_0",
+        "q_A_B_OD0_1",
+        "q_A_B_OD0_2",
+        "q_A_B_OD0_3",
+        "q_A_B_OD0_4",
+        "q_A_B_OD0_5",
+        "q_A_B_OD0_6",
+        "q_A_B_OD0_7",
+        "q_A_B_OD1_0",
+        "q_A_B_OD1_1",
+        "q_A_B_OD1_2",
+        "q_A_B_OD1_3",
+        "q_A_B_OD1_4",
+        "q_A_B_OD1_5",
+        "q_A_B_OD1_6",
+        "q_A_B_OD1_7",
+        "q_A_B_OD2_0",
+        "q_A_B_OD2_1",
+        "q_A_B_OD2_2",
+        "q_A_B_OD2_3",
+        "q_A_B_OD2_4",
+        "q_A_B_OD2_5",
+        "q_A_B_OD2_6",
+        "q_A_B_OD2_7",
+        "q_A_B_OD3_0",
+        "q_A_B_OD3_1",
+        "q_A_B_OD3_2",
+        "q_A_B_OD3_3",
+        "q_A_B_OD3_4",
+        "q_A_B_OD3_5",
+        "q_A_B_OD3_6",
+        "q_A_B_OD3_7",
+        "q_A_B_OD4_0",
+        "q_A_B_OD4_1",
+        "q_A_B_OD4_2",
+        "q_A_B_OD4_3",
+        "q_A_B_OD4_4",
+        "q_A_B_OD4_5",
+        "q_A_B_OD4_6",
+        "q_A_B_OD4_7",
+        "q_A_B_OD5_0",
+        "q_A_B_OD5_1",
+        "q_A_B_OD5_2",
+        "q_A_B_OD5_3",
+        "q_A_B_OD5_4",
+        "q_A_B_OD5_5",
+        "q_A_B_OD5_6",
+        "q_A_B_OD5_7",
+        "q_A_B_OD6_0",
+        "q_A_B_OD6_1",
+        "q_A_B_OD6_2",
+        "q_A_B_OD6_3",
+        "q_A_B_OD6_4",
+        "q_A_B_OD6_5",
+        "q_A_B_OD6_6",
+        "q_A_B_OD6_7",
+        "q_A_B_OD7_0",
+        "q_A_B_OD7_1",
+        "q_A_B_OD7_2",
+        "q_A_B_OD7_3",
+        "q_A_B_OD7_4",
+        "q_A_B_OD7_5",
+        "q_A_B_OD7_6",
+        "q_A_B_OD7_7",
+        "q_A_B_HD0",
+        "q_A_B_HD1",
+        "q_A_B_HD2",
+        "q_A_B_HD3",
+        "q_A_B_HD4",
+        "q_A_B_HD5",
+        "q_A_B_HD6",
+        "q_A_B_HD7"
+      ],
+      "privileged": false,
+      "derived": true
+    },
+    {
+      "name": "unrelated",
+      "observer": "A",
+      "requests": [
+        "q_A_B_OH0",
+        "q_A_B_OH1",
+        "q_A_B_OH2",
+        "q_A_B_OH3",
+        "q_A_B_OH4",
+        "q_A_B_OH5",
+        "q_A_B_OH6",
+        "q_A_B_OH7",
+        "q_A_B_OD0_0",
+        "q_A_B_OD0_1",
+        "q_A_B_OD0_2",
+        "q_A_B_OD0_3",
+        "q_A_B_OD0_4",
+        "q_A_B_OD0_5",
+        "q_A_B_OD0_6",
+        "q_A_B_OD0_7",
+        "q_A_B_OD1_0",
+        "q_A_B_OD1_1",
+        "q_A_B_OD1_2",
+        "q_A_B_OD1_3",
+        "q_A_B_OD1_4",
+        "q_A_B_OD1_5",
+        "q_A_B_OD1_6",
+        "q_A_B_OD1_7",
+        "q_A_B_OD2_0",
+        "q_A_B_OD2_1",
+        "q_A_B_OD2_2",
+        "q_A_B_OD2_3",
+        "q_A_B_OD2_4",
+        "q_A_B_OD2_5",
+        "q_A_B_OD2_6",
+        "q_A_B_OD2_7",
+        "q_A_B_OD3_0",
+        "q_A_B_OD3_1",
+        "q_A_B_OD3_2",
+        "q_A_B_OD3_3",
+        "q_A_B_OD3_4",
+        "q_A_B_OD3_5",
+        "q_A_B_OD3_6",
+        "q_A_B_OD3_7",
+        "q_A_B_OD4_0",
+        "q_A_B_OD4_1",
+        "q_A_B_OD4_2",
+        "q_A_B_OD4_3",
+        "q_A_B_OD4_4",
+        "q_A_B_OD4_5",
+        "q_A_B_OD4_6",
+        "q_A_B_OD4_7",
+        "q_A_B_OD5_0",
+        "q_A_B_OD5_1",
+        "q_A_B_OD5_2",
+        "q_A_B_OD5_3",
+        "q_A_B_OD5_4",
+        "q_A_B_OD5_5",
+        "q_A_B_OD5_6",
+        "q_A_B_OD5_7",
+        "q_A_B_OD6_0",
+        "q_A_B_OD6_1",
+        "q_A_B_OD6_2",
+        "q_A_B_OD6_3",
+        "q_A_B_OD6_4",
+        "q_A_B_OD6_5",
+        "q_A_B_OD6_6",
+        "q_A_B_OD6_7",
+        "q_A_B_OD7_0",
+        "q_A_B_OD7_1",
+        "q_A_B_OD7_2",
+        "q_A_B_OD7_3",
+        "q_A_B_OD7_4",
+        "q_A_B_OD7_5",
+        "q_A_B_OD7_6",
+        "q_A_B_OD7_7",
+        "q_A_XY_B_0",
+        "q_A_XY_B_1",
+        "q_A_XY_B_2",
+        "q_A_XY_B_3",
+        "q_A_XY_B_4",
+        "q_A_XY_B_5",
+        "q_A_XY_B_6",
+        "q_A_XY_B_7"
+      ],
+      "privileged": false,
+      "derived": true
+    },
+    {
+      "name": "oracle",
+      "observer": "A",
+      "requests": [
+        "q_A_B_OH0",
+        "q_A_B_OH1",
+        "q_A_B_OH2",
+        "q_A_B_OH3",
+        "q_A_B_OH4",
+        "q_A_B_OH5",
+        "q_A_B_OH6",
+        "q_A_B_OH7",
+        "q_A_B_OD0_0",
+        "q_A_B_OD0_1",
+        "q_A_B_OD0_2",
+        "q_A_B_OD0_3",
+        "q_A_B_OD0_4",
+        "q_A_B_OD0_5",
+        "q_A_B_OD0_6",
+        "q_A_B_OD0_7",
+        "q_A_B_OD1_0",
+        "q_A_B_OD1_1",
+        "q_A_B_OD1_2",
+        "q_A_B_OD1_3",
+        "q_A_B_OD1_4",
+        "q_A_B_OD1_5",
+        "q_A_B_OD1_6",
+        "q_A_B_OD1_7",
+        "q_A_B_OD2_0",
+        "q_A_B_OD2_1",
+        "q_A_B_OD2_2",
+        "q_A_B_OD2_3",
+        "q_A_B_OD2_4",
+        "q_A_B_OD2_5",
+        "q_A_B_OD2_6",
+        "q_A_B_OD2_7",
+        "q_A_B_OD3_0",
+        "q_A_B_OD3_1",
+        "q_A_B_OD3_2",
+        "q_A_B_OD3_3",
+        "q_A_B_OD3_4",
+        "q_A_B_OD3_5",
+        "q_A_B_OD3_6",
+        "q_A_B_OD3_7",
+        "q_A_B_OD4_0",
+        "q_A_B_OD4_1",
+        "q_A_B_OD4_2",
+        "q_A_B_OD4_3",
+        "q_A_B_OD4_4",
+        "q_A_B_OD4_5",
+        "q_A_B_OD4_6",
+        "q_A_B_OD4_7",
+        "q_A_B_OD5_0",
+        "q_A_B_OD5_1",
+        "q_A_B_OD5_2",
+        "q_A_B_OD5_3",
+        "q_A_B_OD5_4",
+        "q_A_B_OD5_5",
+        "q_A_B_OD5_6",
+        "q_A_B_OD5_7",
+        "q_A_B_OD6_0",
+        "q_A_B_OD6_1",
+        "q_A_B_OD6_2",
+        "q_A_B_OD6_3",
+        "q_A_B_OD6_4",
+        "q_A_B_OD6_5",
+        "q_A_B_OD6_6",
+        "q_A_B_OD6_7",
+        "q_A_B_OD7_0",
+        "q_A_B_OD7_1",
+        "q_A_B_OD7_2",
+        "q_A_B_OD7_3",
+        "q_A_B_OD7_4",
+        "q_A_B_OD7_5",
+        "q_A_B_OD7_6",
+        "q_A_B_OD7_7"
+      ],
+      "privileged": true,
+      "derived": true
+    },
+    {
+      "name": "direct",
+      "observer": "B",
+      "requests": [
+        "q_B_A_OH0",
+        "q_B_A_OH1",
+        "q_B_A_OH2",
+        "q_B_A_OH3",
+        "q_B_A_OH4",
+        "q_B_A_OH5",
+        "q_B_A_OH6",
+        "q_B_A_OH7",
+        "q_B_A_OD0_0",
+        "q_B_A_OD0_1",
+        "q_B_A_OD0_2",
+        "q_B_A_OD0_3",
+        "q_B_A_OD0_4",
+        "q_B_A_OD0_5",
+        "q_B_A_OD0_6",
+        "q_B_A_OD0_7",
+        "q_B_A_OD1_0",
+        "q_B_A_OD1_1",
+        "q_B_A_OD1_2",
+        "q_B_A_OD1_3",
+        "q_B_A_OD1_4",
+        "q_B_A_OD1_5",
+        "q_B_A_OD1_6",
+        "q_B_A_OD1_7",
+        "q_B_A_OD2_0",
+        "q_B_A_OD2_1",
+        "q_B_A_OD2_2",
+        "q_B_A_OD2_3",
+        "q_B_A_OD2_4",
+        "q_B_A_OD2_5",
+        "q_B_A_OD2_6",
+        "q_B_A_OD2_7",
+        "q_B_A_OD3_0",
+        "q_B_A_OD3_1",
+        "q_B_A_OD3_2",
+        "q_B_A_OD3_3",
+        "q_B_A_OD3_4",
+        "q_B_A_OD3_5",
+        "q_B_A_OD3_6",
+        "q_B_A_OD3_7",
+        "q_B_A_OD4_0",
+        "q_B_A_OD4_1",
+        "q_B_A_OD4_2",
+        "q_B_A_OD4_3",
+        "q_B_A_OD4_4",
+        "q_B_A_OD4_5",
+        "q_B_A_OD4_6",
+        "q_B_A_OD4_7",
+        "q_B_A_OD5_0",
+        "q_B_A_OD5_1",
+        "q_B_A_OD5_2",
+        "q_B_A_OD5_3",
+        "q_B_A_OD5_4",
+        "q_B_A_OD5_5",
+        "q_B_A_OD5_6",
+        "q_B_A_OD5_7",
+        "q_B_A_OD6_0",
+        "q_B_A_OD6_1",
+        "q_B_A_OD6_2",
+        "q_B_A_OD6_3",
+        "q_B_A_OD6_4",
+        "q_B_A_OD6_5",
+        "q_B_A_OD6_6",
+        "q_B_A_OD6_7",
+        "q_B_A_OD7_0",
+        "q_B_A_OD7_1",
+        "q_B_A_OD7_2",
+        "q_B_A_OD7_3",
+        "q_B_A_OD7_4",
+        "q_B_A_OD7_5",
+        "q_B_A_OD7_6",
+        "q_B_A_OD7_7"
+      ],
+      "privileged": false,
+      "derived": true
+    },
+    {
+      "name": "linked",
+      "observer": "B",
+      "requests": [
+        "q_B_A_OH0",
+        "q_B_A_OH1",
+        "q_B_A_OH2",
+        "q_B_A_OH3",
+        "q_B_A_OH4",
+        "q_B_A_OH5",
+        "q_B_A_OH6",
+        "q_B_A_OH7",
+        "q_B_A_OD0_0",
+        "q_B_A_OD0_1",
+        "q_B_A_OD0_2",
+        "q_B_A_OD0_3",
+        "q_B_A_OD0_4",
+        "q_B_A_OD0_5",
+        "q_B_A_OD0_6",
+        "q_B_A_OD0_7",
+        "q_B_A_OD1_0",
+        "q_B_A_OD1_1",
+        "q_B_A_OD1_2",
+        "q_B_A_OD1_3",
+        "q_B_A_OD1_4",
+        "q_B_A_OD1_5",
+        "q_B_A_OD1_6",
+        "q_B_A_OD1_7",
+        "q_B_A_OD2_0",
+        "q_B_A_OD2_1",
+        "q_B_A_OD2_2",
+        "q_B_A_OD2_3",
+        "q_B_A_OD2_4",
+        "q_B_A_OD2_5",
+        "q_B_A_OD2_6",
+        "q_B_A_OD2_7",
+        "q_B_A_OD3_0",
+        "q_B_A_OD3_1",
+        "q_B_A_OD3_2",
+        "q_B_A_OD3_3",
+        "q_B_A_OD3_4",
+        "q_B_A_OD3_5",
+        "q_B_A_OD3_6",
+        "q_B_A_OD3_7",
+        "q_B_A_OD4_0",
+        "q_B_A_OD4_1",
+        "q_B_A_OD4_2",
+        "q_B_A_OD4_3",
+        "q_B_A_OD4_4",
+        "q_B_A_OD4_5",
+        "q_B_A_OD4_6",
+        "q_B_A_OD4_7",
+        "q_B_A_OD5_0",
+        "q_B_A_OD5_1",
+        "q_B_A_OD5_2",
+        "q_B_A_OD5_3",
+        "q_B_A_OD5_4",
+        "q_B_A_OD5_5",
+        "q_B_A_OD5_6",
+        "q_B_A_OD5_7",
+        "q_B_A_OD6_0",
+        "q_B_A_OD6_1",
+        "q_B_A_OD6_2",
+        "q_B_A_OD6_3",
+        "q_B_A_OD6_4",
+        "q_B_A_OD6_5",
+        "q_B_A_OD6_6",
+        "q_B_A_OD6_7",
+        "q_B_A_OD7_0",
+        "q_B_A_OD7_1",
+        "q_B_A_OD7_2",
+        "q_B_A_OD7_3",
+        "q_B_A_OD7_4",
+        "q_B_A_OD7_5",
+        "q_B_A_OD7_6",
+        "q_B_A_OD7_7"
+      ],
+      "privileged": false,
+      "derived": true
+    },
+    {
+      "name": "unrelated",
+      "observer": "B",
+      "requests": [
+        "q_B_A_OH0",
+        "q_B_A_OH1",
+        "q_B_A_OH2",
+        "q_B_A_OH3",
+        "q_B_A_OH4",
+        "q_B_A_OH5",
+        "q_B_A_OH6",
+        "q_B_A_OH7",
+        "q_B_A_OD0_0",
+        "q_B_A_OD0_1",
+        "q_B_A_OD0_2",
+        "q_B_A_OD0_3",
+        "q_B_A_OD0_4",
+        "q_B_A_OD0_5",
+        "q_B_A_OD0_6",
+        "q_B_A_OD0_7",
+        "q_B_A_OD1_0",
+        "q_B_A_OD1_1",
+        "q_B_A_OD1_2",
+        "q_B_A_OD1_3",
+        "q_B_A_OD1_4",
+        "q_B_A_OD1_5",
+        "q_B_A_OD1_6",
+        "q_B_A_OD1_7",
+        "q_B_A_OD2_0",
+        "q_B_A_OD2_1",
+        "q_B_A_OD2_2",
+        "q_B_A_OD2_3",
+        "q_B_A_OD2_4",
+        "q_B_A_OD2_5",
+        "q_B_A_OD2_6",
+        "q_B_A_OD2_7",
+        "q_B_A_OD3_0",
+        "q_B_A_OD3_1",
+        "q_B_A_OD3_2",
+        "q_B_A_OD3_3",
+        "q_B_A_OD3_4",
+        "q_B_A_OD3_5",
+        "q_B_A_OD3_6",
+        "q_B_A_OD3_7",
+        "q_B_A_OD4_0",
+        "q_B_A_OD4_1",
+        "q_B_A_OD4_2",
+        "q_B_A_OD4_3",
+        "q_B_A_OD4_4",
+        "q_B_A_OD4_5",
+        "q_B_A_OD4_6",
+        "q_B_A_OD4_7",
+        "q_B_A_OD5_0",
+        "q_B_A_OD5_1",
+        "q_B_A_OD5_2",
+        "q_B_A_OD5_3",
+        "q_B_A_OD5_4",
+        "q_B_A_OD5_5",
+        "q_B_A_OD5_6",
+        "q_B_A_OD5_7",
+        "q_B_A_OD6_0",
+        "q_B_A_OD6_1",
+        "q_B_A_OD6_2",
+        "q_B_A_OD6_3",
+        "q_B_A_OD6_4",
+        "q_B_A_OD6_5",
+        "q_B_A_OD6_6",
+        "q_B_A_OD6_7",
+        "q_B_A_OD7_0",
+        "q_B_A_OD7_1",
+        "q_B_A_OD7_2",
+        "q_B_A_OD7_3",
+        "q_B_A_OD7_4",
+        "q_B_A_OD7_5",
+        "q_B_A_OD7_6",
+        "q_B_A_OD7_7"
+      ],
+      "privileged": false,
+      "derived": true
+    },
+    {
+      "name": "oracle",
+      "observer": "B",
+      "requests": [
+        "q_B_A_OH0",
+        "q_B_A_OH1",
+        "q_B_A_OH2",
+        "q_B_A_OH3",
+        "q_B_A_OH4",
+        "q_B_A_OH5",
+        "q_B_A_OH6",
+        "q_B_A_OH7",
+        "q_B_A_OD0_0",
+        "q_B_A_OD0_1",
+        "q_B_A_OD0_2",
+        "q_B_A_OD0_3",
+        "q_B_A_OD0_4",
+        "q_B_A_OD0_5",
+        "q_B_A_OD0_6",
+        "q_B_A_OD0_7",
+        "q_B_A_OD1_0",
+        "q_B_A_OD1_1",
+        "q_B_A_OD1_2",
+        "q_B_A_OD1_3",
+        "q_B_A_OD1_4",
+        "q_B_A_OD1_5",
+        "q_B_A_OD1_6",
+        "q_B_A_OD1_7",
+        "q_B_A_OD2_0",
+        "q_B_A_OD2_1",
+        "q_B_A_OD2_2",
+        "q_B_A_OD2_3",
+        "q_B_A_OD2_4",
+        "q_B_A_OD2_5",
+        "q_B_A_OD2_6",
+        "q_B_A_OD2_7",
+        "q_B_A_OD3_0",
+        "q_B_A_OD3_1",
+        "q_B_A_OD3_2",
+        "q_B_A_OD3_3",
+        "q_B_A_OD3_4",
+        "q_B_A_OD3_5",
+        "q_B_A_OD3_6",
+        "q_B_A_OD3_7",
+        "q_B_A_OD4_0",
+        "q_B_A_OD4_1",
+        "q_B_A_OD4_2",
+        "q_B_A_OD4_3",
+        "q_B_A_OD4_4",
+        "q_B_A_OD4_5",
+        "q_B_A_OD4_6",
+        "q_B_A_OD4_7",
+        "q_B_A_OD5_0",
+        "q_B_A_OD5_1",
+        "q_B_A_OD5_2",
+        "q_B_A_OD5_3",
+        "q_B_A_OD5_4",
+        "q_B_A_OD5_5",
+        "q_B_A_OD5_6",
+        "q_B_A_OD5_7",
+        "q_B_A_OD6_0",
+        "q_B_A_OD6_1",
+        "q_B_A_OD6_2",
+        "q_B_A_OD6_3",
+        "q_B_A_OD6_4",
+        "q_B_A_OD6_5",
+        "q_B_A_OD6_6",
+        "q_B_A_OD6_7",
+        "q_B_A_OD7_0",
+        "q_B_A_OD7_1",
+        "q_B_A_OD7_2",
+        "q_B_A_OD7_3",
+        "q_B_A_OD7_4",
+        "q_B_A_OD7_5",
+        "q_B_A_OD7_6",
+        "q_B_A_OD7_7"
+      ],
+      "privileged": true,
+      "derived": true
+    }
+  ],
+  "background": [
+    {
+      "id": "XY_B_0",
+      "carrier": "B",
+      "capacity": {
+        "support": [
+          1,
+          3
+        ],
+        "probabilities": [
+          0.5,
+          0.5
+        ],
+        "public": false
+      },
+      "quote_rule": {
+        "base": 85,
+        "scarcity_premium": 35,
+        "threshold": 1
+      },
+      "purchase": {
+        "max_prob": 0.7,
+        "intercept": 4.0,
+        "slope": 0.025
+      }
+    },
+    {
+      "id": "XY_B_1",
+      "carrier": "B",
+      "capacity": {
+        "support": [
+          1,
+          3
+        ],
+        "probabilities": [
+          0.5,
+          0.5
+        ],
+        "public": false
+      },
+      "quote_rule": {
+        "base": 85,
+        "scarcity_premium": 35,
+        "threshold": 1
+      },
+      "purchase": {
+        "max_prob": 0.7,
+        "intercept": 4.0,
+        "slope": 0.025
+      }
+    },
+    {
+      "id": "XY_B_2",
+      "carrier": "B",
+      "capacity": {
+        "support": [
+          1,
+          3
+        ],
+        "probabilities": [
+          0.5,
+          0.5
+        ],
+        "public": false
+      },
+      "quote_rule": {
+        "base": 85,
+        "scarcity_premium": 35,
+        "threshold": 1
+      },
+      "purchase": {
+        "max_prob": 0.7,
+        "intercept": 4.0,
+        "slope": 0.025
+      }
+    },
+    {
+      "id": "XY_B_3",
+      "carrier": "B",
+      "capacity": {
+        "support": [
+          1,
+          3
+        ],
+        "probabilities": [
+          0.5,
+          0.5
+        ],
+        "public": false
+      },
+      "quote_rule": {
+        "base": 85,
+        "scarcity_premium": 35,
+        "threshold": 1
+      },
+      "purchase": {
+        "max_prob": 0.7,
+        "intercept": 4.0,
+        "slope": 0.025
+      }
+    },
+    {
+      "id": "XY_B_4",
+      "carrier": "B",
+      "capacity": {
+        "support": [
+          1,
+          3
+        ],
+        "probabilities": [
+          0.5,
+          0.5
+        ],
+        "public": false
+      },
+      "quote_rule": {
+        "base": 85,
+        "scarcity_premium": 35,
+        "threshold": 1
+      },
+      "purchase": {
+        "max_prob": 0.7,
+        "intercept": 4.0,
+        "slope": 0.025
+      }
+    },
+    {
+      "id": "XY_B_5",
+      "carrier": "B",
+      "capacity": {
+        "support": [
+          1,
+          3
+        ],
+        "probabilities": [
+          0.5,
+          0.5
+        ],
+        "public": false
+      },
+      "quote_rule": {
+        "base": 85,
+        "scarcity_premium": 35,
+        "threshold": 1
+      },
+      "purchase": {
+        "max_prob": 0.7,
+        "intercept": 4.0,
+        "slope": 0.025
+      }
+    },
+    {
+      "id": "XY_B_6",
+      "carrier": "B",
+      "capacity": {
+        "support": [
+          1,
+          3
+        ],
+        "probabilities": [
+          0.5,
+          0.5
+        ],
+        "public": false
+      },
+      "quote_rule": {
+        "base": 85,
+        "scarcity_premium": 35,
+        "threshold": 1
+      },
+      "purchase": {
+        "max_prob": 0.7,
+        "intercept": 4.0,
+        "slope": 0.025
+      }
+    },
+    {
+      "id": "XY_B_7",
+      "carrier": "B",
+      "capacity": {
+        "support": [
+          1,
+          3
+        ],
+        "probabilities": [
+          0.5,
+          0.5
+        ],
+        "public": false
+      },
+      "quote_rule": {
+        "base": 85,
+        "scarcity_premium": 35,
+        "threshold": 1
+      },
+      "purchase": {
+        "max_prob": 0.7,
+        "intercept": 4.0,
+        "slope": 0.025
+      }
+    }
+  ],
+  "timing": {
+    "mode": "simultaneous",
+    "leaders": [],
+    "initial_previous_prices": {}
+  },
+  "metadata": {
+    "generator": {
+      "name": "scaling_network",
+      "params": {
+        "n_spokes": 8,
+        "n_carriers": 2,
+        "periods": 20,
+        "name": "hub_feeder_medium"
+      }
+    },
+    "assumptions": {
+      "calibrated": false,
+      "preferences_and_price_sensitivity": "Inherited synthetic two-segment tastes; additional rivals inherit B's preferences.",
+      "arrival_scale": "Potential requests per prior-expected initial seat; independent of realized private capacity.",
+      "requests_per_initial_seat": 1.2,
+      "expected_initial_seats": 88.0,
+      "expected_requests_per_cohort": 105.6,
+      "capacity": "Fixed during each cohort; private stochastic initial rival feeder seats."
+    },
+    "placebo_shortfall_by_observer": {
+      "A": 0,
+      "B": 0
+    }
+  }
+}

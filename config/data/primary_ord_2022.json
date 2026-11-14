@@ -1,0 +1,138 @@
+{
+  "schema": "airline-model-data-requirements/1",
+  "updated_at": "2026-11-12T00:10:40.209044+00:00",
+  "status": "dependency_review_complete_coverage_and_loader_work_pending",
+  "hub_candidate": "ORD",
+  "carriers": [
+    "UA",
+    "AA"
+  ],
+  "airport_pool": [
+    "ATL",
+    "BOS",
+    "CLT",
+    "DEN",
+    "DFW",
+    "DTW",
+    "EWR",
+    "IAD",
+    "JFK",
+    "LAX",
+    "LGA",
+    "MIA",
+    "OAK",
+    "ORD",
+    "PHL",
+    "SFO"
+  ],
+  "calibration_departure_dates": [
+    "2022-04-01",
+    "2022-06-30"
+  ],
+  "validation_departure_dates": [
+    "2022-07-01",
+    "2022-09-30"
+  ],
+  "quote_search_coverage": [
+    "2022-04-16",
+    "2022-10-05"
+  ],
+  "requirements": [
+    {
+      "source": "T100 Domestic Segment",
+      "period": "2022; retained annual file supplies Apr-Sep plus annual scaling",
+      "role": "Physical leg capacity, departures and load factors",
+      "ids": [
+        "t100_segment_2022"
+      ],
+      "code": "airline_market/pipeline/compiler.py:23"
+    },
+    {
+      "source": "DB1B Market",
+      "period": "2022 Q2 and Q3 only",
+      "role": "Directional fares, passengers, connections and market shares",
+      "ids": [
+        "DB1BMarket_2022_2",
+        "DB1BMarket_2022_3"
+      ],
+      "code": "airline_market/pipeline/sources/db1b.py:5"
+    },
+    {
+      "source": "Marketing Carrier On-Time",
+      "period": "Apr-Sep 2022 only",
+      "role": "Dated schedule; regional marketing/operator attribution; cancellation and delay statistics",
+      "ids": [
+        "ontime_mkt_2022_4",
+        "ontime_mkt_2022_5",
+        "ontime_mkt_2022_6",
+        "ontime_mkt_2022_7",
+        "ontime_mkt_2022_8",
+        "ontime_mkt_2022_9"
+      ],
+      "loader_correction": "Select marketing network and retain operator; current operating-carrier scope filter is unsuitable for ORD regional flying."
+    },
+    {
+      "source": "FlightPrices original v1",
+      "period": "Existing full archive, scope by departure cohort and connected markets before materializing model tables",
+      "role": "Quote trajectories, advance-purchase fare moments, censored availability observation model",
+      "ids": [
+        "flightprices_v1"
+      ],
+      "code": "airline_market/pipeline/observation_fit.py:32"
+    },
+    {
+      "source": "NOAA Daily",
+      "period": "ORD Apr-Sep 2022, reuse already downloaded small 2022 station file",
+      "role": "Daily weather/cancellation association; optional to simulation, needed when empirical weather mechanism is claimed",
+      "ids": [
+        "noaa_daily_2022",
+        "ghcnd_stations"
+      ]
+    }
+  ],
+  "existing_small_auxiliaries": [
+    {
+      "id": "b43_2022",
+      "role": "Optional per-tail seat validation"
+    },
+    {
+      "id": "p52_2022",
+      "role": "Optional cost-prior sensitivity, not passenger marginal cost identification"
+    },
+    {
+      "id": "t100_market_2022",
+      "role": "Optional independent traffic reconciliation"
+    }
+  ],
+  "deferred": [
+    "DB1C all months and four tables",
+    "2011-2018 and 2023-2026 merger/exit histories",
+    "DB1B Q1/Q4, Ticket and Coupon as blanket downloads",
+    "2026 On-Time, December 2022 meltdown and Ian-specific expansion",
+    "Duplicate reporting-carrier schedules where marketing file suffices",
+    "FAA entire registry, multi-year Census and FRED series as runtime prerequisites"
+  ],
+  "scope_rules": [
+    "Define O&D scope from ORD local routes and observed connecting paths, including endpoints other than ORD.",
+    "Retain all competing carrier offers/traffic in selected O&D markets when constructing shares/outside-airline controls.",
+    "Retain marketed UA/AA regional operations and linked resource/market closure before filtering.",
+    "Use AirportGroup and ordered TkCarrierGroup/OpCarrierGroup in DB1B Market to verify hub connections; fetch a scoped Coupon supplement only if those sequences prove insufficient.",
+    "Split empirical calibration/validation by departure cohort; a Q3 departure can have Q2 search dates.",
+    "Flag left-truncated booking windows near Apr16; do not treat earlier unobserved quotes as zero demand."
+  ],
+  "identification_limits": [
+    "Passenger preference, price sensitivity and outside/nonpurchase conversion are not jointly identified by aggregate traffic and posted quotes alone.",
+    "Physical seats and capped seatsRemaining do not observe true rival residual inventory.",
+    "Current compile_scope does not itself fit weather transitions or load FlightPrices; those are separate calibration/observation tasks."
+  ],
+  "estimated_download_budget": {
+    "units": "GiB",
+    "range": [
+      5.8,
+      6.5
+    ],
+    "status": "approximate, not a processed-table size",
+    "measured_three_largest_archives_bytes": 6113996121,
+    "note": "Dominated by the already downloaded 5.514 GiB FlightPrices ZIP. No extracted 31GB duplicate is required."
+  }
+}

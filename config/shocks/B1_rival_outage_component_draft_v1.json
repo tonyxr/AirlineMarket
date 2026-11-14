@@ -1,0 +1,40 @@
+{
+  "schema": "airline-b1-component-draft/1",
+  "plan_id": "A.5/B0/B1/V9/R4",
+  "status": "DRAFT_COMPONENT_SUPPORT_NOT_AN_EXECUTABLE_GRID",
+  "kind": "rival_outage",
+  "reveal_days": [
+    14,
+    7,
+    3,
+    1
+  ],
+  "plan_shares": [
+    "0.3",
+    "0.6",
+    "0.9"
+  ],
+  "plan_duration_days": null,
+  "component_duration_days": [
+    1,
+    2,
+    3
+  ],
+  "module": "airline_market/policy/dated_shocks.py",
+  "unresolved": [
+    "Named rival and reference leg",
+    "Concrete temporary duration assignment; the card states temporary but no outage-duration mapping",
+    "Full public clock/departure context and explicitly supplied dated re-entry policy"
+  ],
+  "description_sentences": [
+    "A temporary outage removes an explicitly named rival's installed-seat share.",
+    "The registered loss shares are 30%, 60% and 90%, with reveal 14, 7, 3 or 1 days before an explicit reference-leg departure.",
+    "Execution uses native whole-itinerary resolution and any explicitly supplied dated re-entry policy; the concrete duration remains a draft choice."
+  ],
+  "component_source_sha256": "4c4f3c91be1359a16ad0851ba08dd7c32dbd8715e8892b2ac85a840172b21eae",
+  "grid_slot_assignment": null,
+  "training_or_heldout_assignment": null,
+  "scientific_run_config": null,
+  "scientific_budget": null,
+  "full_B1_adopted": false
+}

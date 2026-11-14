@@ -1,0 +1,488 @@
+{
+  "schema_version": "airline-market-spec/1",
+  "name": "cx_example_C",
+  "description": "C/X belief compression diagnostic, synthetic",
+  "horizon": {
+    "n_periods": 4,
+    "period_days": null,
+    "departure_date": null,
+    "booking_window_days": null
+  },
+  "airports": [
+    {
+      "code": "O",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "code": "H",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "code": "D",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    }
+  ],
+  "carriers": [
+    {
+      "code": "F",
+      "name": "",
+      "kind": "network"
+    },
+    {
+      "code": "R",
+      "name": "",
+      "kind": "network"
+    }
+  ],
+  "legs": [
+    {
+      "id": "F1",
+      "carrier": "F",
+      "origin": "O",
+      "dest": "H",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          1
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "F2",
+      "carrier": "F",
+      "origin": "H",
+      "dest": "D",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          1
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "R1",
+      "carrier": "R",
+      "origin": "O",
+      "dest": "H",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          1,
+          2
+        ],
+        "probabilities": [
+          0.5,
+          0.5
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "R2",
+      "carrier": "R",
+      "origin": "H",
+      "dest": "D",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          1,
+          2
+        ],
+        "probabilities": [
+          0.5,
+          0.5
+        ],
+        "public": false
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    }
+  ],
+  "capacity_priors": [
+    {
+      "legs": [
+        "R1",
+        "R2"
+      ],
+      "support": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "probabilities": [
+        0.5,
+        0.5
+      ],
+      "public": false
+    }
+  ],
+  "products": [
+    {
+      "id": "F_L1",
+      "carrier": "F",
+      "market": "L1",
+      "legs": [
+        "F1"
+      ],
+      "service_cost": 0,
+      "fare_floor": 1,
+      "fare_cap": 10000,
+      "reference_fare": 150,
+      "priority": 0,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "F_CON",
+      "carrier": "F",
+      "market": "CON",
+      "legs": [
+        "F1",
+        "F2"
+      ],
+      "service_cost": 0,
+      "fare_floor": 1,
+      "fare_cap": 10000,
+      "reference_fare": 200,
+      "priority": 1,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "R_L1",
+      "carrier": "R",
+      "market": "RL1",
+      "legs": [
+        "R1"
+      ],
+      "service_cost": 0,
+      "fare_floor": 1,
+      "fare_cap": 10000,
+      "reference_fare": 100,
+      "priority": 2,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "R_L2",
+      "carrier": "R",
+      "market": "RL2",
+      "legs": [
+        "R2"
+      ],
+      "service_cost": 0,
+      "fare_floor": 1,
+      "fare_cap": 10000,
+      "reference_fare": 100,
+      "priority": 3,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "R_CON",
+      "carrier": "R",
+      "market": "CON",
+      "legs": [
+        "R1",
+        "R2"
+      ],
+      "service_cost": 0,
+      "fare_floor": 1,
+      "fare_cap": 10000,
+      "reference_fare": 190,
+      "priority": 4,
+      "controlled": true,
+      "attributes": {}
+    }
+  ],
+  "markets": [
+    {
+      "id": "L1",
+      "origin": "O",
+      "dest": "H",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "RL1",
+      "origin": "O",
+      "dest": "H",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "RL2",
+      "origin": "H",
+      "dest": "D",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "CON",
+      "origin": "O",
+      "dest": "D",
+      "in_segment": true,
+      "label": ""
+    }
+  ],
+  "segments": [
+    {
+      "id": "captive",
+      "classes": [
+        {
+          "weight": 1,
+          "alpha": 0.2,
+          "carrier_pref": {
+            "R": 50.0,
+            "F": 0.0
+          },
+          "market_value": {
+            "*": 1000.0
+          },
+          "connection_penalty": 0.0,
+          "product_shift": {},
+          "time_penalty_per_hour": 0.0,
+          "schedule_penalty_per_hour": 0.0,
+          "ideal_dep_hour": null
+        }
+      ],
+      "mixed": null
+    }
+  ],
+  "demand": {
+    "mode": "single_request_bernoulli",
+    "arrival_probability": {
+      "breakpoints": [
+        0
+      ],
+      "values": [
+        1.0
+      ]
+    },
+    "arrival_probability_cap": 1.0,
+    "market_weights": {
+      "breakpoints": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "values": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "intensity": null,
+    "segment_weights": {
+      "breakpoints": [
+        0
+      ],
+      "values": [
+        [
+          1.0
+        ]
+      ]
+    },
+    "holiday_multiplier": 1.0,
+    "exogenous_multipliers": {},
+    "poisson_truncation": 3
+  },
+  "choice": {
+    "model": "latent_class_mnl",
+    "connection_penalty_rule": "per_connection",
+    "n_mixed_draws": 0
+  },
+  "exogenous": {
+    "states": [
+      {
+        "name": "normal",
+        "public": true,
+        "attributes": {}
+      }
+    ],
+    "initial": [
+      1.0
+    ],
+    "transitions": {},
+    "default_transition": null,
+    "forecasts": {}
+  },
+  "capacity_process": {
+    "events": []
+  },
+  "resolution": {
+    "rule": "fixed_priority_cancel_refund",
+    "refund": "full_original_fare",
+    "penalty_per_cancellation": 0.0,
+    "stranded_reentry": false
+  },
+  "quotes": {
+    "requests": []
+  },
+  "pricing": [
+    {
+      "carrier": "F",
+      "base": {
+        "F_L1": 150,
+        "F_CON": 200
+      },
+      "time_ramp": 0.0,
+      "fixed_features": [],
+      "controllable_features": [
+        {
+          "name": "product_indicator",
+          "params": {
+            "products": [
+              "F_L1"
+            ]
+          }
+        }
+      ],
+      "theta_bounds": [
+        [
+          0,
+          9850
+        ]
+      ],
+      "theta_grid": [
+        [
+          0
+        ],
+        [
+          9850
+        ]
+      ],
+      "sharing": "carrier",
+      "update_every": 1
+    },
+    {
+      "carrier": "R",
+      "base": {
+        "R_L1": 100,
+        "R_L2": 100,
+        "R_CON": 190
+      },
+      "time_ramp": 0.0,
+      "fixed_features": [],
+      "controllable_features": [],
+      "theta_bounds": [],
+      "theta_grid": null,
+      "sharing": "carrier",
+      "update_every": 1
+    }
+  ],
+  "controllers": [
+    {
+      "carrier": "F",
+      "controller": "external",
+      "params": {}
+    },
+    {
+      "carrier": "R",
+      "controller": "threshold_linear_rule",
+      "params": {
+        "rules": {
+          "R_L1": {
+            "base": 100
+          },
+          "R_L2": {
+            "base": 100
+          },
+          "R_CON": {
+            "base": 190
+          }
+        }
+      }
+    }
+  ],
+  "objectives": [
+    {
+      "carrier": "F",
+      "profit_scale": 1.0,
+      "share_weight": 0.0,
+      "share_markets": null,
+      "share_statistic": "realized_ratio"
+    },
+    {
+      "carrier": "R",
+      "profit_scale": 1.0,
+      "share_weight": 0.0,
+      "share_markets": null,
+      "share_statistic": "realized_ratio"
+    }
+  ],
+  "information": [
+    {
+      "name": "empty",
+      "observer": "F",
+      "requests": [],
+      "privileged": false,
+      "derived": false
+    }
+  ],
+  "background": [],
+  "timing": {
+    "mode": "leader_follower",
+    "leaders": [
+      "R"
+    ],
+    "initial_previous_prices": {}
+  },
+  "metadata": {
+    "example": "C"
+  }
+}

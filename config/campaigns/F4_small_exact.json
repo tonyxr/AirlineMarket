@@ -1,0 +1,443 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "F4_small_exact",
+  "phase": 1,
+  "implementation_revision": "f4-cached-prior-v1",
+  "task": "study:airline_market.experiments.f4_study:compare",
+  "design": "list",
+  "fixed": {
+    "seed_start": 200000,
+    "n_cohorts": 64,
+    "planning_scenarios": 128
+  },
+  "cells": [
+    {
+      "instance": "I0",
+      "instance_generator": "toy_hub",
+      "T": 10,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/8d21618632b2af6c/attempt-0001/tails.json",
+      "tails_sha256": "df810e10674b0d3e6c8ef2e2075ee1062745a92557fea2aea816a19ccf39116d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "arm": "direct",
+      "particles": 500
+    },
+    {
+      "instance": "I0",
+      "instance_generator": "toy_hub",
+      "T": 10,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/8d21618632b2af6c/attempt-0001/tails.json",
+      "tails_sha256": "df810e10674b0d3e6c8ef2e2075ee1062745a92557fea2aea816a19ccf39116d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "arm": "direct",
+      "particles": 1000
+    },
+    {
+      "instance": "I0",
+      "instance_generator": "toy_hub",
+      "T": 10,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/8d21618632b2af6c/attempt-0001/tails.json",
+      "tails_sha256": "df810e10674b0d3e6c8ef2e2075ee1062745a92557fea2aea816a19ccf39116d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "arm": "direct",
+      "particles": 2000
+    },
+    {
+      "instance": "I0",
+      "instance_generator": "toy_hub",
+      "T": 10,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/8d21618632b2af6c/attempt-0001/tails.json",
+      "tails_sha256": "df810e10674b0d3e6c8ef2e2075ee1062745a92557fea2aea816a19ccf39116d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "arm": "direct",
+      "particles": 5000
+    },
+    {
+      "instance": "I0",
+      "instance_generator": "toy_hub",
+      "T": 10,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/8d21618632b2af6c/attempt-0001/tails.json",
+      "tails_sha256": "df810e10674b0d3e6c8ef2e2075ee1062745a92557fea2aea816a19ccf39116d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "arm": "direct",
+      "particles": 10000
+    },
+    {
+      "instance": "I0",
+      "instance_generator": "toy_hub",
+      "T": 10,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/8d21618632b2af6c/attempt-0001/tails.json",
+      "tails_sha256": "df810e10674b0d3e6c8ef2e2075ee1062745a92557fea2aea816a19ccf39116d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "arm": "direct",
+      "particles": 20000
+    },
+    {
+      "instance": "I0",
+      "instance_generator": "toy_hub",
+      "T": 10,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/8d21618632b2af6c/attempt-0001/tails.json",
+      "tails_sha256": "df810e10674b0d3e6c8ef2e2075ee1062745a92557fea2aea816a19ccf39116d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "arm": "direct",
+      "particles": 50000
+    },
+    {
+      "instance": "I0",
+      "instance_generator": "toy_hub",
+      "T": 10,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/8d21618632b2af6c/attempt-0001/tails.json",
+      "tails_sha256": "df810e10674b0d3e6c8ef2e2075ee1062745a92557fea2aea816a19ccf39116d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "arm": "linked",
+      "particles": 500
+    },
+    {
+      "instance": "I0",
+      "instance_generator": "toy_hub",
+      "T": 10,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/8d21618632b2af6c/attempt-0001/tails.json",
+      "tails_sha256": "df810e10674b0d3e6c8ef2e2075ee1062745a92557fea2aea816a19ccf39116d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "arm": "linked",
+      "particles": 1000
+    },
+    {
+      "instance": "I0",
+      "instance_generator": "toy_hub",
+      "T": 10,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/8d21618632b2af6c/attempt-0001/tails.json",
+      "tails_sha256": "df810e10674b0d3e6c8ef2e2075ee1062745a92557fea2aea816a19ccf39116d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "arm": "linked",
+      "particles": 2000
+    },
+    {
+      "instance": "I0",
+      "instance_generator": "toy_hub",
+      "T": 10,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/8d21618632b2af6c/attempt-0001/tails.json",
+      "tails_sha256": "df810e10674b0d3e6c8ef2e2075ee1062745a92557fea2aea816a19ccf39116d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "arm": "linked",
+      "particles": 5000
+    },
+    {
+      "instance": "I0",
+      "instance_generator": "toy_hub",
+      "T": 10,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/8d21618632b2af6c/attempt-0001/tails.json",
+      "tails_sha256": "df810e10674b0d3e6c8ef2e2075ee1062745a92557fea2aea816a19ccf39116d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "arm": "linked",
+      "particles": 10000
+    },
+    {
+      "instance": "I0",
+      "instance_generator": "toy_hub",
+      "T": 10,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/8d21618632b2af6c/attempt-0001/tails.json",
+      "tails_sha256": "df810e10674b0d3e6c8ef2e2075ee1062745a92557fea2aea816a19ccf39116d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "arm": "linked",
+      "particles": 20000
+    },
+    {
+      "instance": "I0",
+      "instance_generator": "toy_hub",
+      "T": 10,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/8d21618632b2af6c/attempt-0001/tails.json",
+      "tails_sha256": "df810e10674b0d3e6c8ef2e2075ee1062745a92557fea2aea816a19ccf39116d",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "arm": "linked",
+      "particles": 50000
+    },
+    {
+      "instance": "I3",
+      "instance_generator": "hub_feeder_small",
+      "T": 4,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/70ef207eb062519c/attempt-0001/tails.json",
+      "tails_sha256": "7d7dee9a32fe84fc297b766f2d56f8327b38a7793bb3b62058ad55fcb3de10b4",
+      "rival": "B",
+      "joint_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "arm": "direct",
+      "particles": 500
+    },
+    {
+      "instance": "I3",
+      "instance_generator": "hub_feeder_small",
+      "T": 4,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/70ef207eb062519c/attempt-0001/tails.json",
+      "tails_sha256": "7d7dee9a32fe84fc297b766f2d56f8327b38a7793bb3b62058ad55fcb3de10b4",
+      "rival": "B",
+      "joint_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "arm": "direct",
+      "particles": 1000
+    },
+    {
+      "instance": "I3",
+      "instance_generator": "hub_feeder_small",
+      "T": 4,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/70ef207eb062519c/attempt-0001/tails.json",
+      "tails_sha256": "7d7dee9a32fe84fc297b766f2d56f8327b38a7793bb3b62058ad55fcb3de10b4",
+      "rival": "B",
+      "joint_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "arm": "direct",
+      "particles": 2000
+    },
+    {
+      "instance": "I3",
+      "instance_generator": "hub_feeder_small",
+      "T": 4,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/70ef207eb062519c/attempt-0001/tails.json",
+      "tails_sha256": "7d7dee9a32fe84fc297b766f2d56f8327b38a7793bb3b62058ad55fcb3de10b4",
+      "rival": "B",
+      "joint_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "arm": "direct",
+      "particles": 5000
+    },
+    {
+      "instance": "I3",
+      "instance_generator": "hub_feeder_small",
+      "T": 4,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/70ef207eb062519c/attempt-0001/tails.json",
+      "tails_sha256": "7d7dee9a32fe84fc297b766f2d56f8327b38a7793bb3b62058ad55fcb3de10b4",
+      "rival": "B",
+      "joint_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "arm": "direct",
+      "particles": 10000
+    },
+    {
+      "instance": "I3",
+      "instance_generator": "hub_feeder_small",
+      "T": 4,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/70ef207eb062519c/attempt-0001/tails.json",
+      "tails_sha256": "7d7dee9a32fe84fc297b766f2d56f8327b38a7793bb3b62058ad55fcb3de10b4",
+      "rival": "B",
+      "joint_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "arm": "direct",
+      "particles": 20000
+    },
+    {
+      "instance": "I3",
+      "instance_generator": "hub_feeder_small",
+      "T": 4,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/70ef207eb062519c/attempt-0001/tails.json",
+      "tails_sha256": "7d7dee9a32fe84fc297b766f2d56f8327b38a7793bb3b62058ad55fcb3de10b4",
+      "rival": "B",
+      "joint_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "arm": "direct",
+      "particles": 50000
+    },
+    {
+      "instance": "I3",
+      "instance_generator": "hub_feeder_small",
+      "T": 4,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/70ef207eb062519c/attempt-0001/tails.json",
+      "tails_sha256": "7d7dee9a32fe84fc297b766f2d56f8327b38a7793bb3b62058ad55fcb3de10b4",
+      "rival": "B",
+      "joint_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "arm": "linked",
+      "particles": 500
+    },
+    {
+      "instance": "I3",
+      "instance_generator": "hub_feeder_small",
+      "T": 4,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/70ef207eb062519c/attempt-0001/tails.json",
+      "tails_sha256": "7d7dee9a32fe84fc297b766f2d56f8327b38a7793bb3b62058ad55fcb3de10b4",
+      "rival": "B",
+      "joint_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "arm": "linked",
+      "particles": 1000
+    },
+    {
+      "instance": "I3",
+      "instance_generator": "hub_feeder_small",
+      "T": 4,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/70ef207eb062519c/attempt-0001/tails.json",
+      "tails_sha256": "7d7dee9a32fe84fc297b766f2d56f8327b38a7793bb3b62058ad55fcb3de10b4",
+      "rival": "B",
+      "joint_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "arm": "linked",
+      "particles": 2000
+    },
+    {
+      "instance": "I3",
+      "instance_generator": "hub_feeder_small",
+      "T": 4,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/70ef207eb062519c/attempt-0001/tails.json",
+      "tails_sha256": "7d7dee9a32fe84fc297b766f2d56f8327b38a7793bb3b62058ad55fcb3de10b4",
+      "rival": "B",
+      "joint_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "arm": "linked",
+      "particles": 5000
+    },
+    {
+      "instance": "I3",
+      "instance_generator": "hub_feeder_small",
+      "T": 4,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/70ef207eb062519c/attempt-0001/tails.json",
+      "tails_sha256": "7d7dee9a32fe84fc297b766f2d56f8327b38a7793bb3b62058ad55fcb3de10b4",
+      "rival": "B",
+      "joint_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "arm": "linked",
+      "particles": 10000
+    },
+    {
+      "instance": "I3",
+      "instance_generator": "hub_feeder_small",
+      "T": 4,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/70ef207eb062519c/attempt-0001/tails.json",
+      "tails_sha256": "7d7dee9a32fe84fc297b766f2d56f8327b38a7793bb3b62058ad55fcb3de10b4",
+      "rival": "B",
+      "joint_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "arm": "linked",
+      "particles": 20000
+    },
+    {
+      "instance": "I3",
+      "instance_generator": "hub_feeder_small",
+      "T": 4,
+      "actions": 18,
+      "tails_file": "results/F5_tails/20261111_indexed_v1/cells/70ef207eb062519c/attempt-0001/tails.json",
+      "tails_sha256": "7d7dee9a32fe84fc297b766f2d56f8327b38a7793bb3b62058ad55fcb3de10b4",
+      "rival": "B",
+      "joint_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "arm": "linked",
+      "particles": 50000
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1.5,
+  "limits": {
+    "seconds": 14400,
+    "rss_gb": 1.5
+  },
+  "out": "results/F4/20261111_small_exact_v1",
+  "note": "I0/I3 exact-reference block only: all periods incl initial/terminal on64 validation cohorts, both arms. Fixed train-fitted behavior; provisional128-scenario protected k2 indexed-CRN MPC decisions. I4 exact-scale corners and I5/I6 100k-particle references remain pending; no global N selected until those and final F5 decision configuration pass. Exact dummy prior tape is reused without changing any draws."
+}

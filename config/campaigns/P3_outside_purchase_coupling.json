@@ -1,0 +1,39 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "P3_outside_purchase_coupling",
+  "phase": 3,
+  "implementation_revision": "outside-purchase-resource-coupling-v1",
+  "task": "study:airline_market.experiments.outside_coupling_study:measure",
+  "design": "list",
+  "cells": [
+    {
+      "source_spec": "results/P3/20261112_behavioral_initialization_v1/cells/17802509f93cff73/attempt-0001/spec.json",
+      "source_spec_sha256": "e02dfb1cbb910fcb18235d01e98906f22bf2b15667599c9e411320d14b915ee7",
+      "source_patterns": "results/P3_background_partition/20261112_v1/patterns_external.json",
+      "source_patterns_sha256": "f561971bcbb87ea0513921bc8a67fd707d4717c44e221b23d5258674ee229b8d",
+      "core_carriers": [
+        "UA",
+        "AA"
+      ],
+      "outside_carrier": "OUTSIDE",
+      "quarter_days": 91,
+      "seed": 400002,
+      "reservation_gb": 1.5,
+      "Q2_scoped_markets": "data/processed/ord_2022_v1/markets/attempt-0001/db1b_scoped_q2.parquet",
+      "Q2_capacity_targets": "results/P3/20261111_q2_targets_v1/attempt-0001/q2_capacity_targets.csv",
+      "baseline_result": "results/P3/20261112_shared_core_load_partitioned_v3/cells/f795d0d68ff416b7/attempt-0001/results.json",
+      "Q2_scoped_markets_sha256": "b93a7eb6ec3371c480cbec75a2da967707b22205dcdb62b2aef95e61d2b5343a",
+      "Q2_capacity_targets_sha256": "3c5d7a0a5a006ad7a6fb0d4f4fb2ef58552f68c5533f4f9ddbe68f9639afbb45",
+      "baseline_result_sha256": "f7987d3f6a06b0876dbd2fca10f90f130f5e6d5f54205add80baab347e067df2"
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1.5,
+  "limits": {
+    "seconds": 900,
+    "rss_gb": 1.5,
+    "max_nodes": 1
+  },
+  "out": "results/P3/20261112_outside_purchase_coupling_v1",
+  "note": "One new matched-seed native resource-footprint sensitivity. Existing in-pool OUTSIDE passengers select a latent resource subtype drawn before utility; its entire core footprint must be feasible. One chosen outside ticket books original proxy capacity and attached core components, with one receipt/refund and no new arrival population. Q2 conditional ticket masses initialize the subtype mixture; resource-free remainder includes unidentified use. Uniform dated-route assignment remains assumed, not legal itinerary reconstruction. Reuse the completed partitioned-v3 full external-load baseline by hash, physical spec, seed, request count and event tape. No repeated baseline, residual imputation, Q3 fitting, 512-cohort calibration, net/all-carrier-profit, full marketing-share, exact/PF/MPC/training or V1/V5 claims."
+}

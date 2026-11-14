@@ -1,0 +1,61 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "V4_logit_Bertrand",
+  "phase": 2,
+  "implementation_revision": "native-cent-logit-one-active-period-v1",
+  "task": "study:airline_market.experiments.logit_bertrand_study:run",
+  "design": "list",
+  "fixed": {
+    "reservation_gb": 1.0,
+    "validation_seed_start": 200000,
+    "n_validation": 100000,
+    "analytical_points": [
+      [
+        50.0,
+        50.0
+      ],
+      [
+        100.0,
+        110.0
+      ],
+      [
+        180.0,
+        70.0
+      ],
+      [
+        30.0,
+        250.0
+      ],
+      [
+        350.0,
+        350.0
+      ]
+    ],
+    "sampling_prices": [
+      100.0,
+      110.0
+    ],
+    "max_BR_iterations": 500
+  },
+  "cells": [
+    {
+      "label": "symmetric",
+      "source_spec": "config/benchmarks/V4_logit_symmetric_v1.json",
+      "source_spec_sha256": "77d8282750a6fb6fd8a7e9b2802a3bdc4bb49a59b763c4bd3b40caed85de07aa",
+      "compiled_spec_hash": "996215b54722924e1c93c4ffc172f18f54e82801feeec8317838efeb20d2ec3e"
+    },
+    {
+      "label": "asymmetric",
+      "source_spec": "config/benchmarks/V4_logit_asymmetric_v1.json",
+      "source_spec_sha256": "6853b058a3da0232b3e5afd1b3ea302df187181dd678f060e6a09a3a0d50584d",
+      "compiled_spec_hash": "8013fcb512d07d2dbcdece89726d5417d557f0f68f34580755231e38f2894d06"
+    }
+  ],
+  "out": "results/V4_logit/20261112_slack_logit_Bertrand_v1",
+  "workers": 1,
+  "memory_budget_gb": 1.0,
+  "limits": {
+    "seconds": 14400,
+    "rss_gb": 1.0
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "F7_I3_materialized_MPC_population",
+  "phase": 1,
+  "implementation_revision": "materialized-joint-type-MPC-PSRO-v1",
+  "task": "study:airline_market.experiments.mpc_population_study:run",
+  "design": "list",
+  "fixed": {
+    "source_spec": "config/instances/I3_two_sided_T4A18_v1.json",
+    "source_spec_sha256": "01c63aa2527b1783bf326c08c6aabab3890393fa415663f391a956392be3317f",
+    "arms": {
+      "A": "direct",
+      "B": "B_own"
+    },
+    "initial_action_indices": [
+      0,
+      17
+    ],
+    "mpc": {
+      "n_scenarios": 32,
+      "n_reporting": 32,
+      "tail_index": 8,
+      "switch_standard_errors": 2.0,
+      "switch_absolute_margin": 0.0
+    },
+    "max_iters": 4,
+    "tolerance": 1e-06,
+    "payoff_seed_start": 200512,
+    "n_payoff": 256,
+    "deviation_seed_start": 200768,
+    "n_deviation": 256,
+    "max_policy_nodes": 10000,
+    "max_support": 20000,
+    "reservation_gb": 1
+  },
+  "cells": [
+    {
+      "case": "I3_two_sided_T4A18"
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1,
+  "limits": {
+    "seconds": 900,
+    "rss_gb": 1
+  },
+  "out": "results/F7_population/20261112_I3_materialized_MPC_v1",
+  "note": "Actual sampled population expansion on explicit two-sidedI3variant. Each finite response is native joint-type MPC on EVERY positive on-policy permittedhistory of currentmixture, declared engineeringtail8 elsewhere. No Bellman optimization or type-revealed strategyfusion; oldflags unchanged. Native cached pure-profile payoff means256cohorts; BOTH fresh responses paired against currentmeta on256disjoint validationcohorts/iteration with samephysicaltape/opponenttype. Conditional2000bootstrap intervals; stoptarget is procedure-specific, never exactBR/Nash/gamewide certificate. Include allnovelresponses even unfavorable; preserve limits/partialnode/payoff/cohort eventlogs. Bound900s/1GiB/10000materialized ownhistorynodes/20000jointsupport is a preliminary cost ceiling, not fullF7 failure or budget selection. No completed matchinggame/probe rerun, no finalseeds."
+}

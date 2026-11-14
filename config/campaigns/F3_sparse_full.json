@@ -1,0 +1,388 @@
+{
+  "schema": "airline-scaling-study/1",
+  "id": "F3_sparse_full",
+  "phase": 1,
+  "revision": "counted-sparse-v1",
+  "fixed": {
+    "controller_mode": "external_all",
+    "requests_per_initial_seat": 1.2
+  },
+  "n_cohorts": 64,
+  "n_profile_cohorts": 1,
+  "profile_filter": {
+    "n_spokes": 50,
+    "n_carriers": 3,
+    "periods": 60
+  },
+  "seed_start": 200000,
+  "workers": 1,
+  "limits": {
+    "seconds": 14400,
+    "rss_gb": 3
+  },
+  "cells": [
+    {
+      "n_spokes": 50,
+      "n_carriers": 3,
+      "periods": 60
+    },
+    {
+      "n_spokes": 2,
+      "n_carriers": 2,
+      "periods": 10
+    },
+    {
+      "n_spokes": 2,
+      "n_carriers": 2,
+      "periods": 20
+    },
+    {
+      "n_spokes": 2,
+      "n_carriers": 2,
+      "periods": 40
+    },
+    {
+      "n_spokes": 2,
+      "n_carriers": 2,
+      "periods": 60
+    },
+    {
+      "n_spokes": 2,
+      "n_carriers": 3,
+      "periods": 10
+    },
+    {
+      "n_spokes": 2,
+      "n_carriers": 3,
+      "periods": 20
+    },
+    {
+      "n_spokes": 2,
+      "n_carriers": 3,
+      "periods": 40
+    },
+    {
+      "n_spokes": 2,
+      "n_carriers": 3,
+      "periods": 60
+    },
+    {
+      "n_spokes": 2,
+      "n_carriers": 4,
+      "periods": 10
+    },
+    {
+      "n_spokes": 2,
+      "n_carriers": 4,
+      "periods": 20
+    },
+    {
+      "n_spokes": 2,
+      "n_carriers": 4,
+      "periods": 40
+    },
+    {
+      "n_spokes": 2,
+      "n_carriers": 4,
+      "periods": 60
+    },
+    {
+      "n_spokes": 4,
+      "n_carriers": 2,
+      "periods": 10
+    },
+    {
+      "n_spokes": 4,
+      "n_carriers": 2,
+      "periods": 20
+    },
+    {
+      "n_spokes": 4,
+      "n_carriers": 2,
+      "periods": 40
+    },
+    {
+      "n_spokes": 4,
+      "n_carriers": 2,
+      "periods": 60
+    },
+    {
+      "n_spokes": 4,
+      "n_carriers": 3,
+      "periods": 10
+    },
+    {
+      "n_spokes": 4,
+      "n_carriers": 3,
+      "periods": 20
+    },
+    {
+      "n_spokes": 4,
+      "n_carriers": 3,
+      "periods": 40
+    },
+    {
+      "n_spokes": 4,
+      "n_carriers": 3,
+      "periods": 60
+    },
+    {
+      "n_spokes": 4,
+      "n_carriers": 4,
+      "periods": 10
+    },
+    {
+      "n_spokes": 4,
+      "n_carriers": 4,
+      "periods": 20
+    },
+    {
+      "n_spokes": 4,
+      "n_carriers": 4,
+      "periods": 40
+    },
+    {
+      "n_spokes": 4,
+      "n_carriers": 4,
+      "periods": 60
+    },
+    {
+      "n_spokes": 8,
+      "n_carriers": 2,
+      "periods": 10
+    },
+    {
+      "n_spokes": 8,
+      "n_carriers": 2,
+      "periods": 20
+    },
+    {
+      "n_spokes": 8,
+      "n_carriers": 2,
+      "periods": 40
+    },
+    {
+      "n_spokes": 8,
+      "n_carriers": 2,
+      "periods": 60
+    },
+    {
+      "n_spokes": 8,
+      "n_carriers": 3,
+      "periods": 10
+    },
+    {
+      "n_spokes": 8,
+      "n_carriers": 3,
+      "periods": 20
+    },
+    {
+      "n_spokes": 8,
+      "n_carriers": 3,
+      "periods": 40
+    },
+    {
+      "n_spokes": 8,
+      "n_carriers": 3,
+      "periods": 60
+    },
+    {
+      "n_spokes": 8,
+      "n_carriers": 4,
+      "periods": 10
+    },
+    {
+      "n_spokes": 8,
+      "n_carriers": 4,
+      "periods": 20
+    },
+    {
+      "n_spokes": 8,
+      "n_carriers": 4,
+      "periods": 40
+    },
+    {
+      "n_spokes": 8,
+      "n_carriers": 4,
+      "periods": 60
+    },
+    {
+      "n_spokes": 16,
+      "n_carriers": 2,
+      "periods": 10
+    },
+    {
+      "n_spokes": 16,
+      "n_carriers": 2,
+      "periods": 20
+    },
+    {
+      "n_spokes": 16,
+      "n_carriers": 2,
+      "periods": 40
+    },
+    {
+      "n_spokes": 16,
+      "n_carriers": 2,
+      "periods": 60
+    },
+    {
+      "n_spokes": 16,
+      "n_carriers": 3,
+      "periods": 10
+    },
+    {
+      "n_spokes": 16,
+      "n_carriers": 3,
+      "periods": 20
+    },
+    {
+      "n_spokes": 16,
+      "n_carriers": 3,
+      "periods": 40
+    },
+    {
+      "n_spokes": 16,
+      "n_carriers": 3,
+      "periods": 60
+    },
+    {
+      "n_spokes": 16,
+      "n_carriers": 4,
+      "periods": 10
+    },
+    {
+      "n_spokes": 16,
+      "n_carriers": 4,
+      "periods": 20
+    },
+    {
+      "n_spokes": 16,
+      "n_carriers": 4,
+      "periods": 40
+    },
+    {
+      "n_spokes": 16,
+      "n_carriers": 4,
+      "periods": 60
+    },
+    {
+      "n_spokes": 32,
+      "n_carriers": 2,
+      "periods": 10
+    },
+    {
+      "n_spokes": 32,
+      "n_carriers": 2,
+      "periods": 20
+    },
+    {
+      "n_spokes": 32,
+      "n_carriers": 2,
+      "periods": 40
+    },
+    {
+      "n_spokes": 32,
+      "n_carriers": 2,
+      "periods": 60
+    },
+    {
+      "n_spokes": 32,
+      "n_carriers": 3,
+      "periods": 10
+    },
+    {
+      "n_spokes": 32,
+      "n_carriers": 3,
+      "periods": 20
+    },
+    {
+      "n_spokes": 32,
+      "n_carriers": 3,
+      "periods": 40
+    },
+    {
+      "n_spokes": 32,
+      "n_carriers": 3,
+      "periods": 60
+    },
+    {
+      "n_spokes": 32,
+      "n_carriers": 4,
+      "periods": 10
+    },
+    {
+      "n_spokes": 32,
+      "n_carriers": 4,
+      "periods": 20
+    },
+    {
+      "n_spokes": 32,
+      "n_carriers": 4,
+      "periods": 40
+    },
+    {
+      "n_spokes": 32,
+      "n_carriers": 4,
+      "periods": 60
+    },
+    {
+      "n_spokes": 50,
+      "n_carriers": 2,
+      "periods": 10
+    },
+    {
+      "n_spokes": 50,
+      "n_carriers": 2,
+      "periods": 20
+    },
+    {
+      "n_spokes": 50,
+      "n_carriers": 2,
+      "periods": 40
+    },
+    {
+      "n_spokes": 50,
+      "n_carriers": 2,
+      "periods": 60
+    },
+    {
+      "n_spokes": 50,
+      "n_carriers": 3,
+      "periods": 10
+    },
+    {
+      "n_spokes": 50,
+      "n_carriers": 3,
+      "periods": 20
+    },
+    {
+      "n_spokes": 50,
+      "n_carriers": 3,
+      "periods": 40
+    },
+    {
+      "n_spokes": 50,
+      "n_carriers": 4,
+      "periods": 10
+    },
+    {
+      "n_spokes": 50,
+      "n_carriers": 4,
+      "periods": 20
+    },
+    {
+      "n_spokes": 50,
+      "n_carriers": 4,
+      "periods": 40
+    },
+    {
+      "n_spokes": 50,
+      "n_carriers": 4,
+      "periods": 60
+    }
+  ],
+  "timing_scope": "Engine creation, control reset, tape generation, booking and accounting included. Compile/setup and separate profiled cohorts excluded.",
+  "out": "results/F3/20261111_counted_sparse_v1",
+  "note": "Full registered 72-cell Poisson grid (6 spoke levels x 3 carrier levels x 4 horizons), 64 validation cohorts per cell. Earlier prose saying 144 was a counting error; the catalog itself matches the plan. Exact sparse/count ledger verified against reference; all previous pilots retained. Largest three-carrier criterion cell runs first. Original F1 source unchanged."
+}

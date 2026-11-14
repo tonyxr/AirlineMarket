@@ -1,0 +1,26 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "P3_declared_net_objective",
+  "phase": 3,
+  "implementation_revision": "native_declared_fully_refundable_fee_objective_v1",
+  "generator": "toy_hub",
+  "task": "study:airline_market.experiments.net_objective_study:run",
+  "design": "list",
+  "cells": [
+    {
+      "problem": "config/benchmarks/declared_refundable_net_objective.json",
+      "problem_sha256": "d132267b665a954cd47d5616c393c62b07ebe1988bac67f1a70ad775e37cc580",
+      "design_registration": "results/NetObjective_tooling/design_registration.json",
+      "design_registration_sha256": "3973bbca1e8b7e06f14cbc6698ff5201fd0a10a34802b1bfacb0e6b0c17eb073",
+      "tolerance": 1e-10
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1.0,
+  "limits": {
+    "seconds": 3600,
+    "rss_gb": 1.0,
+    "reservation_gb": 1.0
+  },
+  "out": "results/P3/20261113_declared_refundable_net_objective_v1"
+}

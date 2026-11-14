@@ -1,0 +1,24 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "P3_national_coverage",
+  "phase": 3,
+  "implementation_revision": "national-coupon-coverage-v1",
+  "task": "study:airline_market.experiments.background_coverage_study:audit",
+  "design": "list",
+  "cells": [
+    {
+      "audit_config": "config/data/audit_national_core_q2_v1.json",
+      "audit_config_sha256": "675ab5870266e9f09ec70cf4d1309068c1ecd0d34b5827491611a2d79600e146",
+      "reservation_gb": 1
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1,
+  "limits": {
+    "seconds": 900,
+    "rss_gb": 1,
+    "max_nodes": 1
+  },
+  "out": "results/P3/20261112_national_core_coverage_v1",
+  "note": "Newcoverageoperationonexisting99MBnationalQ2marketZIP. No repeatedscopedprocessing, no Q3targets, no backgroundload imputation. Source/calendarsample differences and unknowncarrieredges explicit."
+}

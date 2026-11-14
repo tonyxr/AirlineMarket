@@ -1,0 +1,32 @@
+{
+  "schema": "airline-b1-component-draft/1",
+  "plan_id": "A.5/B0/B1/V9/R4",
+  "status": "DRAFT_COMPONENT_SUPPORT_NOT_AN_EXECUTABLE_GRID",
+  "kind": "rival_exit",
+  "reveal_days": [
+    14,
+    7,
+    3,
+    1
+  ],
+  "plan_removed_capacity_fraction": "1",
+  "permanent": true,
+  "three_magnitude_mapping": null,
+  "module": "airline_market/policy/dated_shocks.py",
+  "unresolved": [
+    "Named rival and full public dated context",
+    "Reconcile one permanent full-exit mechanism with generic three-magnitude grid statement without duplicate labels",
+    "Explicit dated stranded re-entry policy and future departure lifecycle scope"
+  ],
+  "description_sentences": [
+    "Rival exit removes all capacity of an explicitly named rival from the declared reveal onward and cancels its affected native bookings through whole-itinerary resolution.",
+    "The component retains native refunds, potential-root stranded lineages and explicitly supplied dated re-entry without restoring cancelled tickets.",
+    "Exit is permanent and the card does not define three distinct exit magnitudes, so the draft does not duplicate the same exit under three labels."
+  ],
+  "component_source_sha256": "4c4f3c91be1359a16ad0851ba08dd7c32dbd8715e8892b2ac85a840172b21eae",
+  "grid_slot_assignment": null,
+  "training_or_heldout_assignment": null,
+  "scientific_run_config": null,
+  "scientific_budget": null,
+  "full_B1_adopted": false
+}

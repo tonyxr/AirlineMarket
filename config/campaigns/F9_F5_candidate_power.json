@@ -1,0 +1,35 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "F9_F5_candidate_power",
+  "phase": 1,
+  "implementation_revision": "saved-F5-paired-dollar-power-v1",
+  "task": "study:airline_market.experiments.candidate_power_study:study",
+  "design": "list",
+  "fixed": {
+    "manifest": "results/F9_power_tooling/source_manifest.json",
+    "manifest_sha256": "a130b2e27b1d5fc60a44c9cd763ddefafc1dd5418c0283b31909411d90aad402",
+    "implementation_sha256": "8d068812f4343e30cf65fe89eae12bf4e02604f1f467ecff55dedacc033a1f81",
+    "power": {
+      "alpha": 0.05,
+      "power": 0.8,
+      "revenue_fraction": 0.005,
+      "min_n": 512,
+      "max_n": 8192,
+      "round_multiple": 256
+    },
+    "reservation_gb": 0.5
+  },
+  "cells": [
+    {
+      "snapshot": "completed25_I0_candidates"
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 0.5,
+  "limits": {
+    "seconds": 120,
+    "rss_gb": 0.5
+  },
+  "out": "results/F9/20261112_F5_candidate_power_v1",
+  "note": "Read-only reuse of all25completed256-cohort F5candidate model-profit/revenue arrays. Source/result/receipt/spec/tail/episode snapshot hashes and exact pair/aggregate checks, no new simulation/fit/validation. Candidate-specific nominal power/cap/MDE and same-full-F5-operation cost projections, not final planner choice, allPhase4primary contrasts, primaryevaluation costs or a scientific budget. Keep every sign/zero/limit; no completed matching reruns and no final seeds. Global budget.json unchanged."
+}

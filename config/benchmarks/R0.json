@@ -1,0 +1,7 @@
+{
+  "generator": "toy_hub",
+  "warmup": 1,
+  "repeats": 5,
+  "batch_size": 16,
+  "n_scenarios": 256
+}

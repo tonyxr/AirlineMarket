@@ -1,0 +1,47 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "V3_MR10_full_refund_accounting",
+  "phase": 2,
+  "implementation_revision": "native-full-refund-witness-v1",
+  "task": "study:airline_market.experiments.refund_accounting_study:run",
+  "design": "list",
+  "fixed": {
+    "reservation_gb": 1.0,
+    "variants": [
+      {
+        "penalty": 0,
+        "path": "config/benchmarks/V3_MR10_full_refund_penalty0.json",
+        "sha256": "c9d908c5acb94b36d47a3afb23cff35e0b96742e65177c2571727a63f3ff1232",
+        "compiled_spec_hash": "8cf6011098f828b58318463e4741fb608133d52fdf900c533a14b3c44dbd6f93"
+      },
+      {
+        "penalty": 17,
+        "path": "config/benchmarks/V3_MR10_full_refund_penalty17.json",
+        "sha256": "311666827b3903c6a5935e5d6d26e740a1afb34eff06894bfa1f11f59274742c",
+        "compiled_spec_hash": "ea7336fb3b5578bc91ca6c2b4faaa9629cd8300d6dff20c0a558048e33bede17"
+      }
+    ],
+    "n_cohorts": 256,
+    "seed_start": 208592,
+    "prices": [
+      100,
+      150
+    ],
+    "tolerance": 1e-10,
+    "design_registration": "results/V3_refund_tooling/design_registration.json",
+    "design_registration_sha256": "04d120acbd79b1027999cdb48c74ee86b2ceb073327dc36d2fa1f6711037a711",
+    "native_ledger_sha256": "3f47549ba6f4e2bcd1955f04c77627df6c053b889154ecf2fcd3286689d7dc40"
+  },
+  "cells": [
+    {
+      "case": "paired_full_refund_penalties"
+    }
+  ],
+  "out": "results/V3_refund/20261112_full_refund_accounting_v1",
+  "workers": 1,
+  "memory_budget_gb": 1.0,
+  "limits": {
+    "seconds": 14400,
+    "rss_gb": 1.0
+  }
+}

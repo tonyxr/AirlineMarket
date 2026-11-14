@@ -1,0 +1,317 @@
+{
+  "schema_version": "airline-market-spec/1",
+  "name": "V4_logit_Bertrand_asymmetric_v1",
+  "description": "One-active-period slack-capacity logit game embedded in native T2 with zero-demand first period; no calibration/learning.",
+  "horizon": {
+    "n_periods": 2,
+    "period_days": null,
+    "departure_date": null,
+    "booking_window_days": null
+  },
+  "airports": [
+    {
+      "code": "O",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "code": "D",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    }
+  ],
+  "carriers": [
+    {
+      "code": "A",
+      "name": "",
+      "kind": "network"
+    },
+    {
+      "code": "B",
+      "name": "",
+      "kind": "network"
+    }
+  ],
+  "legs": [
+    {
+      "id": "A_OD",
+      "carrier": "A",
+      "origin": "O",
+      "dest": "D",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          2
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": true
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "B_OD",
+      "carrier": "B",
+      "origin": "O",
+      "dest": "D",
+      "dep_time": null,
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          2
+        ],
+        "probabilities": [
+          1.0
+        ],
+        "public": true
+      },
+      "distance_mi": null,
+      "cost_per_pax": 0.0
+    }
+  ],
+  "capacity_priors": [],
+  "products": [
+    {
+      "id": "A_OD",
+      "carrier": "A",
+      "market": "OD",
+      "legs": [
+        "A_OD"
+      ],
+      "service_cost": 20.0,
+      "fare_floor": 10.0,
+      "fare_cap": 400.0,
+      "reference_fare": 100.0,
+      "priority": 0,
+      "controlled": true,
+      "attributes": {}
+    },
+    {
+      "id": "B_OD",
+      "carrier": "B",
+      "market": "OD",
+      "legs": [
+        "B_OD"
+      ],
+      "service_cost": 30.0,
+      "fare_floor": 10.0,
+      "fare_cap": 400.0,
+      "reference_fare": 100.0,
+      "priority": 0,
+      "controlled": true,
+      "attributes": {}
+    }
+  ],
+  "markets": [
+    {
+      "id": "OD",
+      "origin": "O",
+      "dest": "D",
+      "in_segment": true,
+      "label": ""
+    }
+  ],
+  "segments": [
+    {
+      "id": "single",
+      "classes": [
+        {
+          "weight": 1.0,
+          "alpha": 0.025,
+          "carrier_pref": {
+            "A": 0.0,
+            "B": -0.2
+          },
+          "market_value": {
+            "OD": 3.0
+          },
+          "connection_penalty": 0.0,
+          "product_shift": {},
+          "time_penalty_per_hour": 0.0,
+          "schedule_penalty_per_hour": 0.0,
+          "ideal_dep_hour": null
+        }
+      ],
+      "mixed": null
+    }
+  ],
+  "demand": {
+    "mode": "single_request_bernoulli",
+    "arrival_probability": {
+      "breakpoints": [
+        0,
+        1
+      ],
+      "values": [
+        0.0,
+        0.85
+      ]
+    },
+    "arrival_probability_cap": 0.85,
+    "market_weights": {
+      "breakpoints": [
+        0
+      ],
+      "values": [
+        [
+          1.0
+        ]
+      ]
+    },
+    "intensity": null,
+    "segment_weights": {
+      "breakpoints": [
+        0
+      ],
+      "values": [
+        [
+          1.0
+        ]
+      ]
+    },
+    "holiday_multiplier": 1.0,
+    "exogenous_multipliers": {},
+    "poisson_truncation": 3
+  },
+  "choice": {
+    "model": "latent_class_mnl",
+    "connection_penalty_rule": "per_connection",
+    "n_mixed_draws": 0
+  },
+  "exogenous": {
+    "states": [
+      {
+        "name": "normal",
+        "public": true,
+        "attributes": {}
+      }
+    ],
+    "initial": [
+      1.0
+    ],
+    "transitions": {},
+    "default_transition": null,
+    "forecasts": {}
+  },
+  "capacity_process": {
+    "events": []
+  },
+  "resolution": {
+    "rule": "fixed_priority_cancel_refund",
+    "refund": "full_original_fare",
+    "penalty_per_cancellation": 0.0,
+    "stranded_reentry": false
+  },
+  "quotes": {
+    "requests": []
+  },
+  "pricing": [
+    {
+      "carrier": "A",
+      "base": {
+        "A_OD": 100.0
+      },
+      "time_ramp": 0.0,
+      "fixed_features": [],
+      "controllable_features": [
+        {
+          "name": "intercept",
+          "params": {}
+        }
+      ],
+      "theta_bounds": [
+        [
+          -90.0,
+          300.0
+        ]
+      ],
+      "theta_grid": null,
+      "sharing": "carrier",
+      "update_every": 1
+    },
+    {
+      "carrier": "B",
+      "base": {
+        "B_OD": 100.0
+      },
+      "time_ramp": 0.0,
+      "fixed_features": [],
+      "controllable_features": [
+        {
+          "name": "intercept",
+          "params": {}
+        }
+      ],
+      "theta_bounds": [
+        [
+          -90.0,
+          300.0
+        ]
+      ],
+      "theta_grid": null,
+      "sharing": "carrier",
+      "update_every": 1
+    }
+  ],
+  "controllers": [
+    {
+      "carrier": "A",
+      "controller": "external",
+      "params": {}
+    },
+    {
+      "carrier": "B",
+      "controller": "external",
+      "params": {}
+    }
+  ],
+  "objectives": [
+    {
+      "carrier": "A",
+      "profit_scale": 100.0,
+      "share_weight": 0.0,
+      "share_markets": null,
+      "share_statistic": "realized_ratio"
+    },
+    {
+      "carrier": "B",
+      "profit_scale": 100.0,
+      "share_weight": 0.0,
+      "share_markets": null,
+      "share_statistic": "realized_ratio"
+    }
+  ],
+  "information": [
+    {
+      "name": "direct",
+      "observer": "A",
+      "requests": [],
+      "privileged": false,
+      "derived": false
+    },
+    {
+      "name": "direct",
+      "observer": "B",
+      "requests": [],
+      "privileged": false,
+      "derived": false
+    }
+  ],
+  "background": [],
+  "timing": {
+    "mode": "simultaneous",
+    "leaders": [],
+    "initial_previous_prices": {}
+  },
+  "metadata": {
+    "purpose": "V4logitBertrand",
+    "registration": "Parameters fixed before target/outcomes; native requiresT>=2. First period has zero demand/no changes; exactly one active period."
+  }
+}

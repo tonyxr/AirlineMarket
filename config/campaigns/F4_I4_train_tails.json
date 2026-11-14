@@ -1,0 +1,46 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "F4_I4_training_tails",
+  "phase": 1,
+  "implementation_revision": "I4-frozen-physical-particles-v1",
+  "task": "study:airline_market.experiments.i4_particle_study:fit_fixed",
+  "design": "list",
+  "fixed": {
+    "train_seed_start": 100000,
+    "n_train": 64,
+    "focal": "A",
+    "arm": "direct",
+    "reservation_gb": 1
+  },
+  "cells": [
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/1c93f8e7752595c4.json",
+      "source_spec_sha256": "1b014cb823980907b3148f44fa02ca7e2941957d7be3d66f707a0efc089aa9b6",
+      "connecting_share": 0.1,
+      "rival_capacity_prior": "narrow",
+      "lag_periods": 0,
+      "T": 5,
+      "actions": 4
+    },
+    {
+      "instance": "I4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/ce8d5b3e7d4930d5.json",
+      "source_spec_sha256": "dfce988dec46b157d3cbef5190e634610dd41a846fcb330dae520db4e07279b5",
+      "connecting_share": 0.7,
+      "rival_capacity_prior": "trimodal",
+      "lag_periods": 1,
+      "T": 5,
+      "actions": 4
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1,
+  "limits": {
+    "seconds": 14400,
+    "rss_gb": 1
+  },
+  "out": "results/F4_I4_tails/20261112_frozen_T5A4_v1",
+  "note": "Two prospectively chosen low .1/narrow/lag0 and high .7/trimodal/lag1 I4 corners at the verified feasible T5/A4 lower bound. One full4-action grid fit per corner on64 common training cohorts. Reused by both arms/allN; no fit to validation outcomes. Not final largest-scale or globalN confirmation.",
+  "generator": "hub_feeder_family"
+}

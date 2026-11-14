@@ -1,0 +1,32 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "P3_quote_route_binding",
+  "phase": 3,
+  "implementation_revision": "prepared_exact_quote_route_v1",
+  "generator": "toy_hub",
+  "task": "study:airline_market.experiments.quote_route_study:run",
+  "design": "list",
+  "cells": [
+    {
+      "quote_db": "results/V6_quote/20261112_exposure_display_v1/cells/b24d9092e0b8f875/attempt-0001/observed_exposure.sqlite",
+      "legs": "results/V1/20261111_dated_network_v1/attempt-0001/legs.parquet",
+      "products": "results/V1/20261111_dated_network_v1/attempt-0001/products.parquet",
+      "network_config": "config/data/build_ord_dated_network_v1.json",
+      "quote_db_sha256": "134562a5b8bfe550b89b6cee1c9a045b6b3472bd299c76d1f6ab2caaf2881b71",
+      "legs_sha256": "70c831abbb7446af05b20b4ddf3b3c9754c74e9007ba4ceddfacd29d2485bed2",
+      "products_sha256": "39101ba17b773c02095a929b2f659ab37f7c8757652a92c1bcbe035d9b78c41b",
+      "network_config_sha256": "f85b59df96f60a12b477754aee1fc732d59f46e5e313719e4e292fdb51bf7f59",
+      "design_registration": "results/QuoteRoute_tooling/design_registration.json",
+      "design_registration_sha256": "d7641d900b60587da885b1d059060e5032081091d344b9c21336953310980e66",
+      "batch_size": 10000
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1.0,
+  "limits": {
+    "seconds": 14400,
+    "rss_gb": 1.0,
+    "reservation_gb": 1.0
+  },
+  "out": "results/P3/20261113_exact_quote_dated_binding_v1"
+}

@@ -1,0 +1,51 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "D4_gradient_monitor_continuation",
+  "phase": 1,
+  "implementation_revision": "native-after-update32-gradient-monitor-v2",
+  "task": "study:airline_market.experiments.monitored_learning:run",
+  "design": "list",
+  "fixed": {
+    "measurement": {
+      "batch": 64,
+      "target_update": 20,
+      "diagnostic_seed_start": 150000,
+      "diagnostic_pool": 64,
+      "validation_seed_start": 200000,
+      "n_validation": 256
+    },
+    "reservation_gb": 1.5
+  },
+  "cells": [
+    {
+      "learner": "srl",
+      "parent_directory": "results/F6/20261112_structured_throughput_v1/cells/0d462c7853efbbcb/attempt-0001",
+      "parent_hashes": {
+        "config.json": "f05b7639c17d4f571feef5abb9e23f40efe3bb87bb6be62037b0fd8999b2ac68",
+        "results.json": "45f4d7acb92f7d773330ce8f016caf06990634fa23167b02f1b0e9d1d3909f39",
+        "COMPLETE.json": "8ee9544380326e1101246d3245acef5c094c409d209db6349cc6d965e83a23e2",
+        "spec.json": "710cddd637376336c2a2fbb9c381e7cc9d7741293defb66da89e69216809b4d2",
+        "last.pt": "87df30d422d4753423f0de7941181cb0249a0df80c0c08129e6bdf2ba2a412bc"
+      }
+    },
+    {
+      "learner": "srl_c",
+      "parent_directory": "results/F6/20261112_structured_throughput_v1/cells/ac2683e8bdcad890/attempt-0001",
+      "parent_hashes": {
+        "config.json": "5f722ca7b03288758856c170bed9581119d9d9d891d7c5f47334ea8fadcf7e18",
+        "results.json": "ae4b3b91a01e3636ee9186441e7c38d822275b7b9d8736c701aae8d0e239e20b",
+        "COMPLETE.json": "81623e436839624ad82a7d204521449fb5408105925bee2f1149f5f34d1a15f6",
+        "spec.json": "710cddd637376336c2a2fbb9c381e7cc9d7741293defb66da89e69216809b4d2",
+        "last.pt": "33a15b85960730848c93a490c1ce22b08713e284eaeb5addda58ea0ca5963895"
+      }
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1.5,
+  "limits": {
+    "seconds": 1800,
+    "rss_gb": 1.5
+  },
+  "out": "results/D4_gradient/20261112_native_continuation_v2",
+  "note": "New engineering continuation from already completed grid2/T20/batch64 throughput checkpoints at4updates/256cohorts. Preserve/reuse parentweights and optimizer/normalizer/RNG, collect ONLY fresh optimizercohorts100256\u2013101279(1024) perlearner to20totalupdates. No parenttraining/validation rerun. At completedupdates10/20 collect64fresh on-policy diagnosticcohorts150640\u2013150703/151280\u2013151343 using CLONED learners and originalR2collector, then32independent uniform4episode minibatches, without replacement WITHIN each and independent repeated draws ACROSS minibatches and frozenfullpool advantages. Nativepreclipping fullactorloss covariance trace primaryengineering diagnostic; sameindices/physicalseed IDs acrossSRL/C, regularization included. These128diagnosticseed IDs are not fullF9primary256coverage or32independenttrainingseeds.256finalvalidation200000\u2013200255. CSV/scalarEvent wirelogs; nativepostupdateKL20threshold/.1 and oncehalfLRrollback policy verified. No fullD4/TR5/TensorBoardUI/second-host/learner-success or scientificbudgetclaim."
+}

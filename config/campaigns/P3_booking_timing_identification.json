@@ -1,0 +1,123 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "P3_booking_timing_identification",
+  "phase": 3,
+  "implementation_revision": "same_total_demand_all_booking_orders_v1",
+  "generator": "toy_hub",
+  "task": "study:airline_market.experiments.booking_timing_study:run",
+  "design": "list",
+  "cells": [
+    {
+      "problems": [
+        {
+          "path": "config/benchmarks/booking_timing/C1_H25_HHLL.json",
+          "sha256": "ab1ab2d31df04ecfeb7bb0ca54dd91fd3c9f0aa0211aa3ff44c7e497547293b3"
+        },
+        {
+          "path": "config/benchmarks/booking_timing/C1_H25_HLHL.json",
+          "sha256": "84a98845619fd783d6b4ba808b28d646fb4ca3950a9dc1e8e30f21cb6e428d35"
+        },
+        {
+          "path": "config/benchmarks/booking_timing/C1_H25_HLLH.json",
+          "sha256": "f4c3362f08e2ba59e0d9d23cee259bcd5b8049d9f2f5cb66a9156cbf5d78e6b0"
+        },
+        {
+          "path": "config/benchmarks/booking_timing/C1_H25_LHHL.json",
+          "sha256": "1fdddf072a6f87becb5cb04d32b164dfe2a02f5a259dd2f31f6a53ee2de86ee4"
+        },
+        {
+          "path": "config/benchmarks/booking_timing/C1_H25_LHLH.json",
+          "sha256": "2c6c733643eddeb04fbea70bfa2c9362fc1e5447999d0047797f526b9168e116"
+        },
+        {
+          "path": "config/benchmarks/booking_timing/C1_H25_LLHH.json",
+          "sha256": "f8ad2e0b28306c72dde1776446858b49097d6ff07460568c89c2ccc808f9afe5"
+        },
+        {
+          "path": "config/benchmarks/booking_timing/C1_H75_HHLL.json",
+          "sha256": "3afee57038600862de5afd70b5908803ef61a4bf99d0b2a622326cec74a2ac21"
+        },
+        {
+          "path": "config/benchmarks/booking_timing/C1_H75_HLHL.json",
+          "sha256": "e1dc34be86f0e54ed158ed8a410dae67dd7fb0d868df44dc0b2df397fb4cbdc6"
+        },
+        {
+          "path": "config/benchmarks/booking_timing/C1_H75_HLLH.json",
+          "sha256": "793e5d852e4680d814d393333e83cd2e9ab6a8fbe70751894516ddf71b54a049"
+        },
+        {
+          "path": "config/benchmarks/booking_timing/C1_H75_LHHL.json",
+          "sha256": "2045b2e7e802efd3ec8a27fe8d64b0b4e0420ab55bd1928f15bc701f1b5c7465"
+        },
+        {
+          "path": "config/benchmarks/booking_timing/C1_H75_LHLH.json",
+          "sha256": "bed1b339ac640592b93f78601f4bef5b55986df085b7fcc066e60d64e581473e"
+        },
+        {
+          "path": "config/benchmarks/booking_timing/C1_H75_LLHH.json",
+          "sha256": "4bcd11b22fb00d7580d74bb278350f8fc2f3dfa646d314c0a74eafedf3c66268"
+        },
+        {
+          "path": "config/benchmarks/booking_timing/C2_H25_HHLL.json",
+          "sha256": "c6d6da784ef95b75297f0e60e29f9c4e24a87df78be65a475ea1f55c5cbf26a1"
+        },
+        {
+          "path": "config/benchmarks/booking_timing/C2_H25_HLHL.json",
+          "sha256": "0f3acdedf5e314fa3b44cce8d58fca5c5b9a84e1852ea9834803877908aaa70f"
+        },
+        {
+          "path": "config/benchmarks/booking_timing/C2_H25_HLLH.json",
+          "sha256": "bd5c0afa53de41c9bd8cc1cd53b5fc76d682cdaf30c0b0c2fa52b831acbaa0d4"
+        },
+        {
+          "path": "config/benchmarks/booking_timing/C2_H25_LHHL.json",
+          "sha256": "a83a11af58d2fbdcfc8110099e77a2b5f0799dfdc5789904b82bf8abfbd07e51"
+        },
+        {
+          "path": "config/benchmarks/booking_timing/C2_H25_LHLH.json",
+          "sha256": "b5b8fe05f4d95fa491d698700181767e046a899f8428a2388aa5d963ba95b296"
+        },
+        {
+          "path": "config/benchmarks/booking_timing/C2_H25_LLHH.json",
+          "sha256": "f75c56f286c16949b96c39889e7d1bd188381309ecb83545ffb043e36199c8e7"
+        },
+        {
+          "path": "config/benchmarks/booking_timing/C2_H75_HHLL.json",
+          "sha256": "0d7cd99029032b1e01fb9095cd0410d30bc6cc133324c8c5fd32c2b50ad52c4d"
+        },
+        {
+          "path": "config/benchmarks/booking_timing/C2_H75_HLHL.json",
+          "sha256": "fa5f401ff4dcfc4418437b9b5a976feb175dfd68ad477250bc205afd2705170d"
+        },
+        {
+          "path": "config/benchmarks/booking_timing/C2_H75_HLLH.json",
+          "sha256": "78016c334ad3faf39b0060aa86107c0ef390cd8fa9cd660b443d8fcdf24ebf16"
+        },
+        {
+          "path": "config/benchmarks/booking_timing/C2_H75_LHHL.json",
+          "sha256": "b38846cdeeec0c59f1fbca33eefd2031aed251e9912fa3acffa60e3eac50d6df"
+        },
+        {
+          "path": "config/benchmarks/booking_timing/C2_H75_LHLH.json",
+          "sha256": "931f897e68c75608d7e748b01fdd00d4d3e7d9604f35fe4316e956a166b7af19"
+        },
+        {
+          "path": "config/benchmarks/booking_timing/C2_H75_LLHH.json",
+          "sha256": "1bf903fa96ca796b5a134e1965c79b49c8998794eedbc2a75bdb1847350b7f29"
+        }
+      ],
+      "design_registration": "results/BookingTiming_tooling/design_registration.json",
+      "design_registration_sha256": "dc3aeb4b9c4ca2fbc6ea4c718070a5d36fc8145ff0d82c5fa22b173fbf4d0fe6",
+      "tolerance": 1e-10,
+      "max_nodes": 20000
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1.0,
+  "limits": {
+    "seconds": 3600,
+    "rss_gb": 1.0,
+    "reservation_gb": 1.0
+  },
+  "out": "results/P3/20261113_booking_order_identification_v1"
+}

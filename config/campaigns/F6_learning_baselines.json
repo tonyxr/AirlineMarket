@@ -1,0 +1,39 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "F6_learning_baselines",
+  "phase": 1,
+  "implementation_revision": "learning-pilot-v1",
+  "task": "study:airline_market.experiments.learning_pilot:fit_fixed",
+  "design": "list",
+  "fixed": {
+    "n_fit": 64,
+    "train_seed_start": 100000,
+    "n_validation": 256,
+    "validation_seed_start": 200000,
+    "focal": "A",
+    "arm": "direct",
+    "reservation_gb": 1
+  },
+  "cells": [
+    {
+      "instance": "I0",
+      "T": 10,
+      "actions": 18,
+      "reuse_tails": "results/F5_tails/20261111_indexed_v1/cells/8d21618632b2af6c/attempt-0001/tails.json",
+      "reuse_tails_sha256": "df810e10674b0d3e6c8ef2e2075ee1062745a92557fea2aea816a19ccf39116d"
+    },
+    {
+      "instance": "I5",
+      "spec_file": "config/instances/I5.json",
+      "spec_sha256": "0cd790a177cd2a6aa29c2c064beef0b0d310c07385bf83937a1a410a56b608cc"
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1,
+  "limits": {
+    "seconds": 14400,
+    "rss_gb": 1
+  },
+  "out": "results/F6_baselines/20261112_pilot_v1",
+  "note": "Training-fitted full18-action fixed baseline for F6 learning curves. I0 reuses the matching sealed F5 fit without rerunning its training search; I5 fits64 common training cohorts/candidate. Both use256 validation physical tapes, no selection on those outcomes. Not continuous global-optimal fixed pricing or final P1 tuning. No final seeds opened."
+}

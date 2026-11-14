@@ -1,0 +1,4237 @@
+{
+  "schema": "airline-information-experiment/1",
+  "created_utc": "2026-11-11T08:58:19.869361+00:00",
+  "config": {
+    "horizon": 10,
+    "own_capacity": [
+      2,
+      2
+    ],
+    "rival_oh_capacity": 2,
+    "rival_hd_capacities": [
+      1,
+      3
+    ],
+    "arrival_probability": 0.9,
+    "holiday_multiplier": 1.0,
+    "capacity_shock_probability": 0.0,
+    "shock_step": 5,
+    "disruption_penalty": 25.0,
+    "feeder_premium": 35.0,
+    "rival_response": 0.1,
+    "share_weight": 0.0,
+    "profit_scale": 300.0
+  },
+  "train_seeds": [
+    11,
+    12
+  ],
+  "evaluation_seeds": [
+    31,
+    32
+  ],
+  "planning_seed": 773,
+  "scenarios_per_decision": 1,
+  "action_grid": [
+    [
+      -30.0,
+      -30.0,
+      0.0
+    ],
+    [
+      -30.0,
+      -30.0,
+      15.0
+    ],
+    [
+      -30.0,
+      0.0,
+      0.0
+    ],
+    [
+      -30.0,
+      0.0,
+      15.0
+    ],
+    [
+      -30.0,
+      30.0,
+      0.0
+    ],
+    [
+      -30.0,
+      30.0,
+      15.0
+    ],
+    [
+      0.0,
+      -30.0,
+      0.0
+    ],
+    [
+      0.0,
+      -30.0,
+      15.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      15.0
+    ],
+    [
+      0.0,
+      30.0,
+      0.0
+    ],
+    [
+      0.0,
+      30.0,
+      15.0
+    ],
+    [
+      30.0,
+      -30.0,
+      0.0
+    ],
+    [
+      30.0,
+      -30.0,
+      15.0
+    ],
+    [
+      30.0,
+      0.0,
+      0.0
+    ],
+    [
+      30.0,
+      0.0,
+      15.0
+    ],
+    [
+      30.0,
+      30.0,
+      0.0
+    ],
+    [
+      30.0,
+      30.0,
+      15.0
+    ]
+  ],
+  "fixed_coefficients": [
+    30.0,
+    30.0,
+    15.0
+  ],
+  "training_grid": [
+    {
+      "coefficients": [
+        -30.0,
+        -30.0,
+        0.0
+      ],
+      "training_objective": 0.5763333333333334
+    },
+    {
+      "coefficients": [
+        -30.0,
+        -30.0,
+        15.0
+      ],
+      "training_objective": 0.639
+    },
+    {
+      "coefficients": [
+        -30.0,
+        0.0,
+        0.0
+      ],
+      "training_objective": 0.6763333333333333
+    },
+    {
+      "coefficients": [
+        -30.0,
+        0.0,
+        15.0
+      ],
+      "training_objective": 0.63185
+    },
+    {
+      "coefficients": [
+        -30.0,
+        30.0,
+        0.0
+      ],
+      "training_objective": 0.6315500000000001
+    },
+    {
+      "coefficients": [
+        -30.0,
+        30.0,
+        15.0
+      ],
+      "training_objective": 0.68185
+    },
+    {
+      "coefficients": [
+        0.0,
+        -30.0,
+        0.0
+      ],
+      "training_objective": 0.7773333333333332
+    },
+    {
+      "coefficients": [
+        0.0,
+        -30.0,
+        15.0
+      ],
+      "training_objective": 0.78335
+    },
+    {
+      "coefficients": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "training_objective": 0.7830666666666666
+    },
+    {
+      "coefficients": [
+        0.0,
+        0.0,
+        15.0
+      ],
+      "training_objective": 0.83335
+    },
+    {
+      "coefficients": [
+        0.0,
+        30.0,
+        0.0
+      ],
+      "training_objective": 0.8330666666666666
+    },
+    {
+      "coefficients": [
+        0.0,
+        30.0,
+        15.0
+      ],
+      "training_objective": 0.88335
+    },
+    {
+      "coefficients": [
+        30.0,
+        -30.0,
+        0.0
+      ],
+      "training_objective": 0.9840166666666665
+    },
+    {
+      "coefficients": [
+        30.0,
+        -30.0,
+        15.0
+      ],
+      "training_objective": 1.0424833333333332
+    },
+    {
+      "coefficients": [
+        30.0,
+        0.0,
+        0.0
+      ],
+      "training_objective": 1.0840166666666666
+    },
+    {
+      "coefficients": [
+        30.0,
+        0.0,
+        15.0
+      ],
+      "training_objective": 1.1424833333333333
+    },
+    {
+      "coefficients": [
+        30.0,
+        30.0,
+        0.0
+      ],
+      "training_objective": 1.1840166666666665
+    },
+    {
+      "coefficients": [
+        30.0,
+        30.0,
+        15.0
+      ],
+      "training_objective": 1.2535333333333334
+    }
+  ],
+  "summary": {
+    "fixed": {
+      "profit": {
+        "n": 2,
+        "mean": 370.935,
+        "standard_error": 1.5649999999999977,
+        "ci95_normal": [
+          367.8676,
+          374.0024
+        ]
+      },
+      "share": {
+        "n": 2,
+        "mean": 0.5,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.5,
+          0.5
+        ]
+      },
+      "objective": {
+        "n": 2,
+        "mean": 1.23645,
+        "standard_error": 0.005216666666666647,
+        "ci95_normal": [
+          1.2262253333333335,
+          1.2466746666666666
+        ]
+      },
+      "journeys": {
+        "n": 2,
+        "mean": 2.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          2.0,
+          2.0
+        ]
+      },
+      "refunds": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      },
+      "cancellations": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "direct": {
+      "profit": {
+        "n": 2,
+        "mean": 139.445,
+        "standard_error": 1.3550000000000182,
+        "ci95_normal": [
+          136.78919999999997,
+          142.10080000000002
+        ]
+      },
+      "share": {
+        "n": 2,
+        "mean": 0.5,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.5,
+          0.5
+        ]
+      },
+      "objective": {
+        "n": 2,
+        "mean": 0.46481666666666666,
+        "standard_error": 0.0045166666666667235,
+        "ci95_normal": [
+          0.45596399999999987,
+          0.47366933333333344
+        ]
+      },
+      "journeys": {
+        "n": 2,
+        "mean": 2.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          2.0,
+          2.0
+        ]
+      },
+      "refunds": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      },
+      "cancellations": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "linked": {
+      "profit": {
+        "n": 2,
+        "mean": 139.445,
+        "standard_error": 1.3550000000000182,
+        "ci95_normal": [
+          136.78919999999997,
+          142.10080000000002
+        ]
+      },
+      "share": {
+        "n": 2,
+        "mean": 0.5,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.5,
+          0.5
+        ]
+      },
+      "objective": {
+        "n": 2,
+        "mean": 0.46481666666666666,
+        "standard_error": 0.0045166666666667235,
+        "ci95_normal": [
+          0.45596399999999987,
+          0.47366933333333344
+        ]
+      },
+      "journeys": {
+        "n": 2,
+        "mean": 2.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          2.0,
+          2.0
+        ]
+      },
+      "refunds": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      },
+      "cancellations": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "unrelated": {
+      "profit": {
+        "n": 2,
+        "mean": 139.445,
+        "standard_error": 1.3550000000000182,
+        "ci95_normal": [
+          136.78919999999997,
+          142.10080000000002
+        ]
+      },
+      "share": {
+        "n": 2,
+        "mean": 0.5,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.5,
+          0.5
+        ]
+      },
+      "objective": {
+        "n": 2,
+        "mean": 0.46481666666666666,
+        "standard_error": 0.0045166666666667235,
+        "ci95_normal": [
+          0.45596399999999987,
+          0.47366933333333344
+        ]
+      },
+      "journeys": {
+        "n": 2,
+        "mean": 2.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          2.0,
+          2.0
+        ]
+      },
+      "refunds": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      },
+      "cancellations": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "oracle": {
+      "profit": {
+        "n": 2,
+        "mean": 139.445,
+        "standard_error": 1.3550000000000182,
+        "ci95_normal": [
+          136.78919999999997,
+          142.10080000000002
+        ]
+      },
+      "share": {
+        "n": 2,
+        "mean": 0.5,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.5,
+          0.5
+        ]
+      },
+      "objective": {
+        "n": 2,
+        "mean": 0.46481666666666666,
+        "standard_error": 0.0045166666666667235,
+        "ci95_normal": [
+          0.45596399999999987,
+          0.47366933333333344
+        ]
+      },
+      "journeys": {
+        "n": 2,
+        "mean": 2.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          2.0,
+          2.0
+        ]
+      },
+      "refunds": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      },
+      "cancellations": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "contrasts": {
+    "linked_minus_direct": {
+      "profit": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      },
+      "share": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      },
+      "objective": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      },
+      "journeys": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      },
+      "refunds": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      },
+      "cancellations": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "unrelated_minus_direct": {
+      "profit": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      },
+      "share": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      },
+      "objective": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      },
+      "journeys": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      },
+      "refunds": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      },
+      "cancellations": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "oracle_minus_direct": {
+      "profit": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      },
+      "share": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      },
+      "objective": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      },
+      "journeys": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      },
+      "refunds": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      },
+      "cancellations": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "direct_minus_fixed": {
+      "profit": {
+        "n": 2,
+        "mean": -231.49,
+        "standard_error": 2.9200000000000155,
+        "ci95_normal": [
+          -237.21320000000003,
+          -225.7668
+        ]
+      },
+      "share": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      },
+      "objective": {
+        "n": 2,
+        "mean": -0.7716333333333334,
+        "standard_error": 0.009733333333333372,
+        "ci95_normal": [
+          -0.7907106666666668,
+          -0.752556
+        ]
+      },
+      "journeys": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      },
+      "refunds": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      },
+      "cancellations": {
+        "n": 2,
+        "mean": 0.0,
+        "standard_error": 0.0,
+        "ci95_normal": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "episodes": {
+    "fixed": [
+      {
+        "seed": 31,
+        "profit": 372.5,
+        "rival_profit": 346.5,
+        "share": 0.5,
+        "objective": 1.2416666666666667,
+        "journeys": 2.0,
+        "rival_segment_journeys": 2.0,
+        "refunds": 0.0,
+        "cancellations": 0.0,
+        "decisions": [
+          {
+            "time": 0,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 125.0,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 170.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              30.0,
+              30.0,
+              15.0
+            ],
+            "belief_entropy": 0.6931471805599453,
+            "belief_mean_rival_inventory": [
+              2.0,
+              2.0
+            ],
+            "belief_states": 2,
+            "forecast_objective": null
+          },
+          {
+            "time": 1,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 143.5,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 177.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              30.0,
+              30.0,
+              15.0
+            ],
+            "belief_entropy": 0.8519273081367635,
+            "belief_mean_rival_inventory": [
+              1.0,
+              2.0
+            ],
+            "belief_states": 3,
+            "forecast_objective": null
+          },
+          {
+            "time": 2,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 143.85,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 177.24,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              30.0,
+              30.0,
+              15.0
+            ],
+            "belief_entropy": 1.117611012436345,
+            "belief_mean_rival_inventory": [
+              0.0,
+              1.8982890378684472
+            ],
+            "belief_states": 5,
+            "forecast_objective": null
+          },
+          {
+            "time": 3,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 143.83,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 177.33,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              30.0,
+              30.0,
+              15.0
+            ],
+            "belief_entropy": 1.7725577667729067,
+            "belief_mean_rival_inventory": [
+              0.0,
+              1.4624897506765038
+            ],
+            "belief_states": 9,
+            "forecast_objective": null
+          },
+          {
+            "time": 4,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 144.0,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 177.5,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              30.0,
+              30.0,
+              15.0
+            ],
+            "belief_entropy": 1.9280769333029801,
+            "belief_mean_rival_inventory": [
+              0.0,
+              1.1111909258749537
+            ],
+            "belief_states": 11,
+            "forecast_objective": null
+          },
+          {
+            "time": 5,
+            "own_inventory": [
+              1,
+              1
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 144.17,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 177.67,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              30.0,
+              30.0,
+              15.0
+            ],
+            "belief_entropy": 1.9280769333029801,
+            "belief_mean_rival_inventory": [
+              0.0,
+              1.1111909258749537
+            ],
+            "belief_states": 11,
+            "forecast_objective": null
+          },
+          {
+            "time": 6,
+            "own_inventory": [
+              0,
+              1
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 144.58,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 178.33,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              30.0,
+              30.0,
+              15.0
+            ],
+            "belief_entropy": 1.9280769333029801,
+            "belief_mean_rival_inventory": [
+              0.0,
+              1.1111909258749537
+            ],
+            "belief_states": 11,
+            "forecast_objective": null
+          },
+          {
+            "time": 7,
+            "own_inventory": [
+              0,
+              1
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 145.5,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 179.25,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              30.0,
+              30.0,
+              15.0
+            ],
+            "belief_entropy": 1.9622319287298702,
+            "belief_mean_rival_inventory": [
+              0.0,
+              1.0341927266074442
+            ],
+            "belief_states": 12,
+            "forecast_objective": null
+          },
+          {
+            "time": 8,
+            "own_inventory": [
+              0,
+              1
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 145.67,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 179.42,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              30.0,
+              30.0,
+              15.0
+            ],
+            "belief_entropy": 1.976929952950856,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.9612748130310814
+            ],
+            "belief_states": 12,
+            "forecast_objective": null
+          },
+          {
+            "time": 9,
+            "own_inventory": [
+              0,
+              1
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 145.83,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 179.58,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              30.0,
+              30.0,
+              15.0
+            ],
+            "belief_entropy": 1.981445062488497,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.892371116213564
+            ],
+            "belief_states": 12,
+            "forecast_objective": null
+          }
+        ]
+      },
+      {
+        "seed": 32,
+        "profit": 369.37,
+        "rival_profit": 496.52,
+        "share": 0.5,
+        "objective": 1.2312333333333334,
+        "journeys": 2.0,
+        "rival_segment_journeys": 2.0,
+        "refunds": 0.0,
+        "cancellations": 0.0,
+        "decisions": [
+          {
+            "time": 0,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 125.0,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 170.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              30.0,
+              30.0,
+              15.0
+            ],
+            "belief_entropy": 0.6931471805599453,
+            "belief_mean_rival_inventory": [
+              2.0,
+              2.0
+            ],
+            "belief_states": 2,
+            "forecast_objective": null
+          },
+          {
+            "time": 1,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 128.5,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 177.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              30.0,
+              30.0,
+              15.0
+            ],
+            "belief_entropy": 1.0866607358370806,
+            "belief_mean_rival_inventory": [
+              1.9999999999999998,
+              1.9568362823757595
+            ],
+            "belief_states": 3,
+            "forecast_objective": null
+          },
+          {
+            "time": 2,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 143.7,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 177.24,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              30.0,
+              30.0,
+              15.0
+            ],
+            "belief_entropy": 1.2927640016192172,
+            "belief_mean_rival_inventory": [
+              1.0,
+              1.9230161891884616
+            ],
+            "belief_states": 5,
+            "forecast_objective": null
+          },
+          {
+            "time": 3,
+            "own_inventory": [
+              1,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 144.02,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 177.41,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              30.0,
+              30.0,
+              15.0
+            ],
+            "belief_entropy": 1.2927640016192172,
+            "belief_mean_rival_inventory": [
+              1.0,
+              1.9230161891884616
+            ],
+            "belief_states": 5,
+            "forecast_objective": null
+          },
+          {
+            "time": 4,
+            "own_inventory": [
+              1,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 144.44,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 177.82,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              30.0,
+              30.0,
+              15.0
+            ],
+            "belief_entropy": 1.5338745083755123,
+            "belief_mean_rival_inventory": [
+              0.0,
+              1.823892477292503
+            ],
+            "belief_states": 8,
+            "forecast_objective": null
+          },
+          {
+            "time": 5,
+            "own_inventory": [
+              0,
+              1
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 144.42,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 177.92,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              30.0,
+              30.0,
+              15.0
+            ],
+            "belief_entropy": 1.5338745083755123,
+            "belief_mean_rival_inventory": [
+              0.0,
+              1.823892477292503
+            ],
+            "belief_states": 8,
+            "forecast_objective": null
+          },
+          {
+            "time": 6,
+            "own_inventory": [
+              0,
+              1
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 145.33,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 179.08,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              30.0,
+              30.0,
+              15.0
+            ],
+            "belief_entropy": 1.7707642340086582,
+            "belief_mean_rival_inventory": [
+              0.0,
+              1.7071786247429601
+            ],
+            "belief_states": 11,
+            "forecast_objective": null
+          },
+          {
+            "time": 7,
+            "own_inventory": [
+              0,
+              1
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 145.5,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 179.25,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              30.0,
+              30.0,
+              15.0
+            ],
+            "belief_entropy": 1.898967133255591,
+            "belief_mean_rival_inventory": [
+              0.0,
+              1.5954409234751534
+            ],
+            "belief_states": 12,
+            "forecast_objective": null
+          },
+          {
+            "time": 8,
+            "own_inventory": [
+              0,
+              1
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 145.67,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 179.42,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              30.0,
+              30.0,
+              15.0
+            ],
+            "belief_entropy": 1.984136699135796,
+            "belief_mean_rival_inventory": [
+              0.0,
+              1.4887713252628105
+            ],
+            "belief_states": 12,
+            "forecast_objective": null
+          },
+          {
+            "time": 9,
+            "own_inventory": [
+              0,
+              1
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 145.83,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 179.58,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              30.0,
+              30.0,
+              15.0
+            ],
+            "belief_entropy": 2.042148181313864,
+            "belief_mean_rival_inventory": [
+              0.0,
+              1.3872163136757847
+            ],
+            "belief_states": 12,
+            "forecast_objective": null
+          }
+        ]
+      }
+    ],
+    "direct": [
+      {
+        "seed": 31,
+        "profit": 138.08999999999997,
+        "rival_profit": 244.47000000000003,
+        "share": 0.5,
+        "objective": 0.46029999999999993,
+        "journeys": 2.0,
+        "rival_segment_journeys": 2.0,
+        "refunds": 0.0,
+        "cancellations": 0.0,
+        "decisions": [
+          {
+            "time": 0,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 125.0,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 170.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              30.0,
+              -30.0,
+              15.0
+            ],
+            "belief_entropy": 0.6931471805599453,
+            "belief_mean_rival_inventory": [
+              2.0,
+              2.0
+            ],
+            "belief_states": 2,
+            "forecast_objective": 0.9089666666666667
+          },
+          {
+            "time": 1,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 143.5,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 171.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 0.8330638871084575,
+            "belief_mean_rival_inventory": [
+              1.0,
+              2.0
+            ],
+            "belief_states": 3,
+            "forecast_objective": 1.2416666666666667
+          },
+          {
+            "time": 2,
+            "own_inventory": [
+              1,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.35,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 164.18,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              0.0,
+              0.0
+            ],
+            "belief_entropy": 0.8330638871084576,
+            "belief_mean_rival_inventory": [
+              1.0,
+              2.0
+            ],
+            "belief_states": 3,
+            "forecast_objective": 1.0145
+          },
+          {
+            "time": 3,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.46,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 167.28,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 0.8330638871084575,
+            "belief_mean_rival_inventory": [
+              1.0,
+              2.0
+            ],
+            "belief_states": 3,
+            "forecast_objective": 0.46029999999999993
+          },
+          {
+            "time": 4,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.62,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 164.47,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.2793555847472353,
+            "belief_mean_rival_inventory": [
+              1.0,
+              1.9361588505914855
+            ],
+            "belief_states": 5,
+            "forecast_objective": 0.46029999999999993
+          },
+          {
+            "time": 5,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.79,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 164.61,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.698667679872291,
+            "belief_mean_rival_inventory": [
+              0.0,
+              1.11216524492188
+            ],
+            "belief_states": 8,
+            "forecast_objective": 0.46029999999999993
+          },
+          {
+            "time": 6,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.83,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 164.83,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.835950657958659,
+            "belief_mean_rival_inventory": [
+              0.0,
+              1.0273017528225497
+            ],
+            "belief_states": 11,
+            "forecast_objective": 0.46029999999999993
+          },
+          {
+            "time": 7,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 138.0,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 165.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.9059338560674115,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.9475216910425558
+            ],
+            "belief_states": 12,
+            "forecast_objective": 0.46029999999999993
+          },
+          {
+            "time": 8,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 138.17,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 165.17,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.948546988498355,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.8727382295742383
+            ],
+            "belief_states": 12,
+            "forecast_objective": 0.46029999999999993
+          },
+          {
+            "time": 9,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 138.33,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 165.33,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.9732506267815182,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.8028229854100056
+            ],
+            "belief_states": 12,
+            "forecast_objective": 0.46029999999999993
+          }
+        ]
+      },
+      {
+        "seed": 32,
+        "profit": 140.8,
+        "rival_profit": 422.44,
+        "share": 0.5,
+        "objective": 0.4693333333333334,
+        "journeys": 2.0,
+        "rival_segment_journeys": 2.0,
+        "refunds": 0.0,
+        "cancellations": 0.0,
+        "decisions": [
+          {
+            "time": 0,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 125.0,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 170.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 0.6931471805599453,
+            "belief_mean_rival_inventory": [
+              2.0,
+              2.0
+            ],
+            "belief_states": 2,
+            "forecast_objective": 1.6
+          },
+          {
+            "time": 1,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 122.0,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 164.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.0656870082341057,
+            "belief_mean_rival_inventory": [
+              2.0,
+              1.9513940112477755
+            ],
+            "belief_states": 3,
+            "forecast_objective": 1.5889000000000002
+          },
+          {
+            "time": 2,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.14,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 164.11,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.2659638349867952,
+            "belief_mean_rival_inventory": [
+              0.9999999999999999,
+              1.9160518461063214
+            ],
+            "belief_states": 5,
+            "forecast_objective": 0.8
+          },
+          {
+            "time": 3,
+            "own_inventory": [
+              1,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.46,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 164.27,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.2659638349867952,
+            "belief_mean_rival_inventory": [
+              1.0000000000000002,
+              1.9160518461063218
+            ],
+            "belief_states": 5,
+            "forecast_objective": 0.7012666666666667
+          },
+          {
+            "time": 4,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.62,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 164.44,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.2659638349867952,
+            "belief_mean_rival_inventory": [
+              0.9999999999999998,
+              1.9160518461063214
+            ],
+            "belief_states": 5,
+            "forecast_objective": 0.4693333333333334
+          },
+          {
+            "time": 5,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.79,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 164.61,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.6794616890654,
+            "belief_mean_rival_inventory": [
+              0.0,
+              1.0920447690285875
+            ],
+            "belief_states": 8,
+            "forecast_objective": 0.4693333333333334
+          },
+          {
+            "time": 6,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.83,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 164.83,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.8350523248877526,
+            "belief_mean_rival_inventory": [
+              0.0,
+              1.0042573334417306
+            ],
+            "belief_states": 11,
+            "forecast_objective": 0.4693333333333334
+          },
+          {
+            "time": 7,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 138.0,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 165.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.9089967651635724,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.9224137234282566
+            ],
+            "belief_states": 12,
+            "forecast_objective": 0.4693333333333334
+          },
+          {
+            "time": 8,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 138.17,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 165.17,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.9513427532770296,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.8462787139716328
+            ],
+            "belief_states": 12,
+            "forecast_objective": 0.4693333333333334
+          },
+          {
+            "time": 9,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 138.33,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 165.33,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.9738417453003831,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.7755967975524094
+            ],
+            "belief_states": 12,
+            "forecast_objective": 0.4693333333333334
+          }
+        ]
+      }
+    ],
+    "linked": [
+      {
+        "seed": 31,
+        "profit": 138.08999999999997,
+        "rival_profit": 244.47000000000003,
+        "share": 0.5,
+        "objective": 0.46029999999999993,
+        "journeys": 2.0,
+        "rival_segment_journeys": 2.0,
+        "refunds": 0.0,
+        "cancellations": 0.0,
+        "decisions": [
+          {
+            "time": 0,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 125.0,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 170.0,
+                "available": true
+              },
+              {
+                "product": "HD",
+                "fare": 120.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              30.0,
+              -30.0,
+              15.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              2.0,
+              1.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 0.9089666666666667
+          },
+          {
+            "time": 1,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 143.5,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 171.0,
+                "available": true
+              },
+              {
+                "product": "HD",
+                "fare": 120.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              1.0,
+              1.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 1.2416666666666667
+          },
+          {
+            "time": 2,
+            "own_inventory": [
+              1,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.35,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 164.18,
+                "available": true
+              },
+              {
+                "product": "HD",
+                "fare": 120.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              0.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              1.0,
+              1.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 1.0145
+          },
+          {
+            "time": 3,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.46,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 167.28,
+                "available": true
+              },
+              {
+                "product": "HD",
+                "fare": 120.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              1.0,
+              1.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 0.46029999999999993
+          },
+          {
+            "time": 4,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.62,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 164.47,
+                "available": true
+              },
+              {
+                "product": "HD",
+                "fare": 120.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              1.0,
+              1.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 0.46029999999999993
+          },
+          {
+            "time": 5,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.79,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 164.61,
+                "available": false
+              },
+              {
+                "product": "HD",
+                "fare": 120.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 0.46029999999999993
+          },
+          {
+            "time": 6,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.83,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 164.83,
+                "available": false
+              },
+              {
+                "product": "HD",
+                "fare": 120.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 0.46029999999999993
+          },
+          {
+            "time": 7,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 138.0,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 165.0,
+                "available": false
+              },
+              {
+                "product": "HD",
+                "fare": 120.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 0.46029999999999993
+          },
+          {
+            "time": 8,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 138.17,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 165.17,
+                "available": false
+              },
+              {
+                "product": "HD",
+                "fare": 120.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 0.46029999999999993
+          },
+          {
+            "time": 9,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 138.33,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 165.33,
+                "available": false
+              },
+              {
+                "product": "HD",
+                "fare": 120.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 0.46029999999999993
+          }
+        ]
+      },
+      {
+        "seed": 32,
+        "profit": 140.8,
+        "rival_profit": 422.44,
+        "share": 0.5,
+        "objective": 0.4693333333333334,
+        "journeys": 2.0,
+        "rival_segment_journeys": 2.0,
+        "refunds": 0.0,
+        "cancellations": 0.0,
+        "decisions": [
+          {
+            "time": 0,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 125.0,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 170.0,
+                "available": true
+              },
+              {
+                "product": "HD",
+                "fare": 85.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              2.0,
+              3.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 1.6
+          },
+          {
+            "time": 1,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 122.0,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 164.0,
+                "available": true
+              },
+              {
+                "product": "HD",
+                "fare": 85.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 0.6503883914823501,
+            "belief_mean_rival_inventory": [
+              1.9999999999999998,
+              2.3548349471745524
+            ],
+            "belief_states": 2,
+            "forecast_objective": 1.5889000000000002
+          },
+          {
+            "time": 2,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.14,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 164.11,
+                "available": true
+              },
+              {
+                "product": "HD",
+                "fare": 85.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 0.7679796973034568,
+            "belief_mean_rival_inventory": [
+              1.0,
+              2.343891937832134
+            ],
+            "belief_states": 3,
+            "forecast_objective": 0.8
+          },
+          {
+            "time": 3,
+            "own_inventory": [
+              1,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.46,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 164.27,
+                "available": true
+              },
+              {
+                "product": "HD",
+                "fare": 85.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 0.7679796973034567,
+            "belief_mean_rival_inventory": [
+              1.0,
+              2.3438919378321343
+            ],
+            "belief_states": 3,
+            "forecast_objective": 0.7012666666666667
+          },
+          {
+            "time": 4,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.62,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 164.44,
+                "available": true
+              },
+              {
+                "product": "HD",
+                "fare": 85.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 0.7679796973034567,
+            "belief_mean_rival_inventory": [
+              1.0,
+              2.3438919378321343
+            ],
+            "belief_states": 3,
+            "forecast_objective": 0.4693333333333334
+          },
+          {
+            "time": 5,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.79,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 164.61,
+                "available": false
+              },
+              {
+                "product": "HD",
+                "fare": 120.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 0.18959743866827097,
+            "belief_mean_rival_inventory": [
+              0.0,
+              1.0
+            ],
+            "belief_states": 2,
+            "forecast_objective": 0.4693333333333334
+          },
+          {
+            "time": 6,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.83,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 164.83,
+                "available": false
+              },
+              {
+                "product": "HD",
+                "fare": 120.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 0.18959743866827097,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.0
+            ],
+            "belief_states": 2,
+            "forecast_objective": 0.4693333333333334
+          },
+          {
+            "time": 7,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 138.0,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 165.0,
+                "available": false
+              },
+              {
+                "product": "HD",
+                "fare": 120.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 0.18959743866827097,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.0
+            ],
+            "belief_states": 2,
+            "forecast_objective": 0.4693333333333334
+          },
+          {
+            "time": 8,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 138.17,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 165.17,
+                "available": false
+              },
+              {
+                "product": "HD",
+                "fare": 120.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 0.18959743866827097,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.0
+            ],
+            "belief_states": 2,
+            "forecast_objective": 0.4693333333333334
+          },
+          {
+            "time": 9,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 138.33,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 165.33,
+                "available": false
+              },
+              {
+                "product": "HD",
+                "fare": 120.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 0.18959743866827097,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.0
+            ],
+            "belief_states": 2,
+            "forecast_objective": 0.4693333333333334
+          }
+        ]
+      }
+    ],
+    "unrelated": [
+      {
+        "seed": 31,
+        "profit": 138.08999999999997,
+        "rival_profit": 244.47000000000003,
+        "share": 0.5,
+        "objective": 0.46029999999999993,
+        "journeys": 2.0,
+        "rival_segment_journeys": 2.0,
+        "refunds": 0.0,
+        "cancellations": 0.0,
+        "decisions": [
+          {
+            "time": 0,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 125.0,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 170.0,
+                "available": true
+              },
+              {
+                "product": "XY",
+                "fare": 120.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              30.0,
+              -30.0,
+              15.0
+            ],
+            "belief_entropy": 0.6931471805599453,
+            "belief_mean_rival_inventory": [
+              2.0,
+              2.0
+            ],
+            "belief_states": 2,
+            "forecast_objective": 0.9089666666666667
+          },
+          {
+            "time": 1,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 143.5,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 171.0,
+                "available": true
+              },
+              {
+                "product": "XY",
+                "fare": 120.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 0.8330638871084575,
+            "belief_mean_rival_inventory": [
+              1.0,
+              2.0
+            ],
+            "belief_states": 3,
+            "forecast_objective": 1.2416666666666667
+          },
+          {
+            "time": 2,
+            "own_inventory": [
+              1,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.35,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 164.18,
+                "available": true
+              },
+              {
+                "product": "XY",
+                "fare": 120.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              0.0,
+              0.0
+            ],
+            "belief_entropy": 0.8330638871084576,
+            "belief_mean_rival_inventory": [
+              1.0,
+              2.0
+            ],
+            "belief_states": 3,
+            "forecast_objective": 1.0145
+          },
+          {
+            "time": 3,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.46,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 167.28,
+                "available": true
+              },
+              {
+                "product": "XY",
+                "fare": 120.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 0.8330638871084575,
+            "belief_mean_rival_inventory": [
+              1.0,
+              2.0
+            ],
+            "belief_states": 3,
+            "forecast_objective": 0.46029999999999993
+          },
+          {
+            "time": 4,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.62,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 164.47,
+                "available": true
+              },
+              {
+                "product": "XY",
+                "fare": 120.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.2793555847472353,
+            "belief_mean_rival_inventory": [
+              1.0,
+              1.9361588505914855
+            ],
+            "belief_states": 5,
+            "forecast_objective": 0.46029999999999993
+          },
+          {
+            "time": 5,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.79,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 164.61,
+                "available": false
+              },
+              {
+                "product": "XY",
+                "fare": 120.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.698667679872291,
+            "belief_mean_rival_inventory": [
+              0.0,
+              1.11216524492188
+            ],
+            "belief_states": 8,
+            "forecast_objective": 0.46029999999999993
+          },
+          {
+            "time": 6,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.83,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 164.83,
+                "available": false
+              },
+              {
+                "product": "XY",
+                "fare": 120.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.835950657958659,
+            "belief_mean_rival_inventory": [
+              0.0,
+              1.0273017528225497
+            ],
+            "belief_states": 11,
+            "forecast_objective": 0.46029999999999993
+          },
+          {
+            "time": 7,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 138.0,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 165.0,
+                "available": false
+              },
+              {
+                "product": "XY",
+                "fare": 120.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.9059338560674115,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.9475216910425558
+            ],
+            "belief_states": 12,
+            "forecast_objective": 0.46029999999999993
+          },
+          {
+            "time": 8,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 138.17,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 165.17,
+                "available": false
+              },
+              {
+                "product": "XY",
+                "fare": 120.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.948546988498355,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.8727382295742383
+            ],
+            "belief_states": 12,
+            "forecast_objective": 0.46029999999999993
+          },
+          {
+            "time": 9,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 138.33,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 165.33,
+                "available": false
+              },
+              {
+                "product": "XY",
+                "fare": 120.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.9732506267815182,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.8028229854100056
+            ],
+            "belief_states": 12,
+            "forecast_objective": 0.46029999999999993
+          }
+        ]
+      },
+      {
+        "seed": 32,
+        "profit": 140.8,
+        "rival_profit": 422.44,
+        "share": 0.5,
+        "objective": 0.4693333333333334,
+        "journeys": 2.0,
+        "rival_segment_journeys": 2.0,
+        "refunds": 0.0,
+        "cancellations": 0.0,
+        "decisions": [
+          {
+            "time": 0,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 125.0,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 170.0,
+                "available": true
+              },
+              {
+                "product": "XY",
+                "fare": 85.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 0.6931471805599453,
+            "belief_mean_rival_inventory": [
+              2.0,
+              2.0
+            ],
+            "belief_states": 2,
+            "forecast_objective": 1.6
+          },
+          {
+            "time": 1,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 122.0,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 164.0,
+                "available": true
+              },
+              {
+                "product": "XY",
+                "fare": 85.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.0656870082341057,
+            "belief_mean_rival_inventory": [
+              2.0,
+              1.9513940112477755
+            ],
+            "belief_states": 3,
+            "forecast_objective": 1.5889000000000002
+          },
+          {
+            "time": 2,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.14,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 164.11,
+                "available": true
+              },
+              {
+                "product": "XY",
+                "fare": 120.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.2659638349867952,
+            "belief_mean_rival_inventory": [
+              0.9999999999999999,
+              1.9160518461063214
+            ],
+            "belief_states": 5,
+            "forecast_objective": 0.8
+          },
+          {
+            "time": 3,
+            "own_inventory": [
+              1,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.46,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 164.27,
+                "available": true
+              },
+              {
+                "product": "XY",
+                "fare": 120.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.2659638349867952,
+            "belief_mean_rival_inventory": [
+              1.0000000000000002,
+              1.9160518461063218
+            ],
+            "belief_states": 5,
+            "forecast_objective": 0.7012666666666667
+          },
+          {
+            "time": 4,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.62,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 164.44,
+                "available": true
+              },
+              {
+                "product": "XY",
+                "fare": 120.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.2659638349867952,
+            "belief_mean_rival_inventory": [
+              0.9999999999999998,
+              1.9160518461063214
+            ],
+            "belief_states": 5,
+            "forecast_objective": 0.4693333333333334
+          },
+          {
+            "time": 5,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.79,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 164.61,
+                "available": false
+              },
+              {
+                "product": "XY",
+                "fare": 120.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.6794616890654,
+            "belief_mean_rival_inventory": [
+              0.0,
+              1.0920447690285875
+            ],
+            "belief_states": 8,
+            "forecast_objective": 0.4693333333333334
+          },
+          {
+            "time": 6,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.83,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 164.83,
+                "available": false
+              },
+              {
+                "product": "XY",
+                "fare": 120.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.8350523248877526,
+            "belief_mean_rival_inventory": [
+              0.0,
+              1.0042573334417306
+            ],
+            "belief_states": 11,
+            "forecast_objective": 0.4693333333333334
+          },
+          {
+            "time": 7,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 138.0,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 165.0,
+                "available": false
+              },
+              {
+                "product": "XY",
+                "fare": 120.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.9089967651635724,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.9224137234282566
+            ],
+            "belief_states": 12,
+            "forecast_objective": 0.4693333333333334
+          },
+          {
+            "time": 8,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 138.17,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 165.17,
+                "available": false
+              },
+              {
+                "product": "XY",
+                "fare": 120.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.9513427532770296,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.8462787139716328
+            ],
+            "belief_states": 12,
+            "forecast_objective": 0.4693333333333334
+          },
+          {
+            "time": 9,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 138.33,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 165.33,
+                "available": false
+              },
+              {
+                "product": "XY",
+                "fare": 120.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": 1.9738417453003831,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.7755967975524094
+            ],
+            "belief_states": 12,
+            "forecast_objective": 0.4693333333333334
+          }
+        ]
+      }
+    ],
+    "oracle": [
+      {
+        "seed": 31,
+        "profit": 138.08999999999997,
+        "rival_profit": 244.47000000000003,
+        "share": 0.5,
+        "objective": 0.46029999999999993,
+        "journeys": 2.0,
+        "rival_segment_journeys": 2.0,
+        "refunds": 0.0,
+        "cancellations": 0.0,
+        "decisions": [
+          {
+            "time": 0,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 125.0,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 170.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              30.0,
+              -30.0,
+              15.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              2.0,
+              1.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 0.9089666666666667
+          },
+          {
+            "time": 1,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 143.5,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 171.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              1.0,
+              1.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 1.2416666666666667
+          },
+          {
+            "time": 2,
+            "own_inventory": [
+              1,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.35,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 164.18,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              0.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              1.0,
+              1.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 1.0145
+          },
+          {
+            "time": 3,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.46,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 167.28,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              1.0,
+              1.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 0.46029999999999993
+          },
+          {
+            "time": 4,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.62,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 164.47,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              1.0,
+              1.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 0.46029999999999993
+          },
+          {
+            "time": 5,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.79,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 164.61,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 0.46029999999999993
+          },
+          {
+            "time": 6,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.83,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 164.83,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 0.46029999999999993
+          },
+          {
+            "time": 7,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 138.0,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 165.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 0.46029999999999993
+          },
+          {
+            "time": 8,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 138.17,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 165.17,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 0.46029999999999993
+          },
+          {
+            "time": 9,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 138.33,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 165.33,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 0.46029999999999993
+          }
+        ]
+      },
+      {
+        "seed": 32,
+        "profit": 140.8,
+        "rival_profit": 422.44,
+        "share": 0.5,
+        "objective": 0.4693333333333334,
+        "journeys": 2.0,
+        "rival_segment_journeys": 2.0,
+        "refunds": 0.0,
+        "cancellations": 0.0,
+        "decisions": [
+          {
+            "time": 0,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 125.0,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 170.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              2.0,
+              3.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 1.6
+          },
+          {
+            "time": 1,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 122.0,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 164.0,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              2.0,
+              2.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 1.5889000000000002
+          },
+          {
+            "time": 2,
+            "own_inventory": [
+              2,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.14,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 164.11,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              1.0,
+              2.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 0.8
+          },
+          {
+            "time": 3,
+            "own_inventory": [
+              1,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.46,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 164.27,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              1.0,
+              2.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 0.7012666666666667
+          },
+          {
+            "time": 4,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.62,
+                "available": true
+              },
+              {
+                "product": "OD",
+                "fare": 164.44,
+                "available": true
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              1.0,
+              2.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 0.4693333333333334
+          },
+          {
+            "time": 5,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.79,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 164.61,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              0.0,
+              1.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 0.4693333333333334
+          },
+          {
+            "time": 6,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 137.83,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 164.83,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 0.4693333333333334
+          },
+          {
+            "time": 7,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 138.0,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 165.0,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 0.4693333333333334
+          },
+          {
+            "time": 8,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 138.17,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 165.17,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 0.4693333333333334
+          },
+          {
+            "time": 9,
+            "own_inventory": [
+              0,
+              2
+            ],
+            "quotes": [
+              {
+                "product": "OH",
+                "fare": 138.33,
+                "available": false
+              },
+              {
+                "product": "OD",
+                "fare": 165.33,
+                "available": false
+              }
+            ],
+            "coefficients": [
+              -30.0,
+              -30.0,
+              0.0
+            ],
+            "belief_entropy": -0.0,
+            "belief_mean_rival_inventory": [
+              0.0,
+              0.0
+            ],
+            "belief_states": 1,
+            "forecast_objective": 0.4693333333333334
+          }
+        ]
+      }
+    ]
+  },
+  "placebo_identical": true,
+  "elapsed_seconds": 0.511660624999422,
+  "planner_cache_hits": 31,
+  "planner_cache_misses": 49,
+  "runtime": {
+    "python": "3.10.8",
+    "numpy": "1.26.0"
+  },
+  "scope": "synthetic finite request experiment; approximate rollout, not equilibrium or optimal information value"
+}

@@ -1,0 +1,67 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "V7_single_leg_learning",
+  "phase": 2,
+  "implementation_revision": "native-cent-monopoly-five-initializations-full100k-v1",
+  "task": "study:airline_market.experiments.single_leg_ppo_study:train",
+  "design": "list",
+  "fixed": {
+    "source_spec": "config/benchmarks/V7_single_leg_T5.json",
+    "source_spec_sha256": "f0e7d41181e33b5ac71880191b31d3a5ec9e2919b634c4d8d61a23e954f68939",
+    "compiled_spec_hash": "80464bd2a37375d1b76bbead4d48f6d59a6e5d4beb38562221dee06bd1d75aa8",
+    "reference_directory": "results/V7_single_leg/20261112_reference_cent_T5_v1/cells/377edb564b4c738b/attempt-0001",
+    "reference_hashes": {
+      "results/V7_single_leg/20261112_reference_cent_T5_v1/cells/377edb564b4c738b/attempt-0001/spec.json": "f0e7d41181e33b5ac71880191b31d3a5ec9e2919b634c4d8d61a23e954f68939",
+      "results/V7_single_leg/20261112_reference_cent_T5_v1/cells/377edb564b4c738b/attempt-0001/config.json": "ed9e1d44511dc432991620e7acb15ab3db4c07ca4c4a871d9e7c4ebcf5002e88",
+      "results/V7_single_leg/20261112_reference_cent_T5_v1/cells/377edb564b4c738b/attempt-0001/reference_tree.json": "a17a2fee5698bbe04ea28457edf8c29f773d230681c261a578be0df307f7b74c",
+      "results/V7_single_leg/20261112_reference_cent_T5_v1/cells/377edb564b4c738b/attempt-0001/DP_validation.json": "2b92a92e6b0f7bb94779afe479821d6d164751c269ad249b0a8e9da7fe8fa5cd",
+      "results/V7_single_leg/20261112_reference_cent_T5_v1/cells/377edb564b4c738b/attempt-0001/results.json": "fa84a78e6215832f08105032b981412efabab95f582b1ecde9bb45cb0042c1fd",
+      "results/V7_single_leg/20261112_reference_cent_T5_v1/cells/377edb564b4c738b/attempt-0001/validation_tapes.npz": "e6a2648c85baeba1ed2942067c5a74a6e77898dbc3faa27ad328fc73232bc14f",
+      "results/V7_single_leg/20261112_reference_cent_T5_v1/cells/377edb564b4c738b/attempt-0001/COMPLETE.json": "1019c3598e36459d6eb6ca1d596125ab7457e8f1e62ab8c8f9b52df9ff0a7d27",
+      "results/V7_single_leg/20261112_reference_cent_T5_v1/cells/377edb564b4c738b/attempt-0001/dp_target.json": "7df04b730eb59b524e60b93ad866686124de42e8f0a4561b39f4f04f1bef8ebd",
+      "results/V7_single_leg/20261112_reference_cent_T5_v1/cells/377edb564b4c738b/attempt-0001/environment.json": "afaa4880d9447641eb18e15a647684a58cb33e6f607f3e09dfac6961e25aecf2"
+    },
+    "train_seed_start": 100000,
+    "n_train": 100000,
+    "cohorts_per_update": 64,
+    "audit_every_cohorts": 20000,
+    "validation_seed_start": 204288,
+    "n_validation": 1280,
+    "reservation_gb": 1.5,
+    "ppo": {
+      "hidden_dim": 128,
+      "update_epochs": 8,
+      "minibatch_episodes": 4,
+      "gamma": 1.0,
+      "gae_lambda": 0.95,
+      "clip_ratio": 0.2,
+      "entropy_coefficient": 0.01,
+      "reward_scale": 1.0
+    }
+  },
+  "cells": [
+    {
+      "network_seed": 0
+    },
+    {
+      "network_seed": 1
+    },
+    {
+      "network_seed": 2
+    },
+    {
+      "network_seed": 3
+    },
+    {
+      "network_seed": 4
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1.5,
+  "limits": {
+    "seconds": 14400,
+    "rss_gb": 1.5
+  },
+  "out": "results/V7_single_leg/20261112_five_seed_100k_v1",
+  "note": "ALLfiveNN0\u20134,full100kcohortseach/defaultnativePPO, no earlycountcut/tuning/DPactorlabels. SharedphysicaltrainingIDs100000\u2013199999 and1280actualsavedvalidationtapes204288\u2013205567;500ktrainingprofilerunsare100kuniquephysicalseedIDs,6400PPOvalidationrowsare1280physicalIDs. SavedDPbaselineisneverrerun. NativeexecutedALL28001centpriceclass, not unroundedcontinuousglobaloptimum. ALLfivefinaldeterministicexactvalues>=98%Vstar primary, retaininitialflags/firstobservedcrossings/negatives. Resource limits remainincomplete; fullV7/scientificRLbudgetNULL."
+}

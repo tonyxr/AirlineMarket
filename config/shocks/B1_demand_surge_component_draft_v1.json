@@ -1,0 +1,36 @@
+{
+  "schema": "airline-b1-component-draft/1",
+  "plan_id": "A.5/B0/B1/V9/R4",
+  "status": "DRAFT_COMPONENT_SUPPORT_NOT_AN_EXECUTABLE_GRID",
+  "kind": "demand_surge",
+  "reveal_days": [
+    14,
+    7,
+    3,
+    1
+  ],
+  "plan_fractional_increases": [
+    "0.3",
+    "1"
+  ],
+  "plan_duration_days": null,
+  "post_segment_weights": null,
+  "third_magnitude": null,
+  "module": "airline_market/policy/dated_demand.py",
+  "unresolved": [
+    "Complete post-segment mixture with supported finite-alpha ordering",
+    "Affected markets and explicit demand stop",
+    "Reconcile two named demand increases with generic three-magnitude grid statement without inventing a level"
+  ],
+  "description_sentences": [
+    "The evacuation overlay raises affected native Poisson request intensities by either 30% or 100% and shifts an explicit finite-class mixture toward lower price coefficients.",
+    "Native periods are selected on a half-open reveal-to-stop interval using explicit UTC boundaries and a 14, 7, 3 or 1 elapsed-day reference lead.",
+    "The card does not specify a demand duration, mixture vector or third surge level, so those choices remain unset."
+  ],
+  "component_source_sha256": "5f1b895f29f2d9a5054c9c0412dfbc3c424ae7fc41483751f24710a34da88052",
+  "grid_slot_assignment": null,
+  "training_or_heldout_assignment": null,
+  "scientific_run_config": null,
+  "scientific_budget": null,
+  "full_B1_adopted": false
+}

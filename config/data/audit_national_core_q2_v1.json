@@ -1,0 +1,9 @@
+{
+  "schema": "airline-national-core-coverage/1",
+  "implementation_revision": "national-coupon-coverage-v1",
+  "scope": "config/data/primary_ord_2022.json",
+  "selected_markets": "data/processed/ord_2022_v1/markets/attempt-0001/model_markets.csv",
+  "capacity_targets": "results/P3/20261111_q2_targets_v1/attempt-0001/q2_capacity_targets.csv",
+  "db1b_q2_archive": "data/raw/bts/db1b/zip/DB1BMarket_2022_2.zip",
+  "note": "Read existing nationalQ2 archive in bounded batches; retain only coupon-edge patterns on existing core routes. No new raw acquisition, no full CSV, no rescaling or fittedbackground process. Ordered Tk/Op codes retained separately; coupon edges not guaranteed flownsegments."
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "airline-b1-component-draft-index/1",
+  "plan_id": "B1/R4",
+  "authoritative_plan_sha256": "6c134a16f2bbbb850664f9bcba304caae3825ee76417ed0bef2aa81f3a0f326f",
+  "files": [
+    "config/shocks/B1_weather_component_draft_v1.json",
+    "config/shocks/B1_rival_outage_component_draft_v1.json",
+    "config/shocks/B1_demand_surge_component_draft_v1.json",
+    "config/shocks/B1_hurricane_component_draft_v1.json",
+    "config/shocks/B1_rival_exit_component_draft_v1.json"
+  ],
+  "registered_I5_cell_count": 60,
+  "registered_exact_I4_overlay_count": 24,
+  "registered_split": "half of each type, stratified, into training and held-out shocks",
+  "instantiated_run_cells": 0,
+  "training_heldout_assignment": null,
+  "full_grid_adopted": false,
+  "scientific_budget": null,
+  "unresolved": [
+    "Type-specific magnitude mapping, especially two named demand levels and single full-exit mechanism",
+    "Duration/mix/reference context and hurricane joint mapping",
+    "Explicit 60-cell and 24-overlay selections and stratified partition",
+    "E1\u2013E3 physical magnitude anchors; E3 no-report cells are not zero loss"
+  ],
+  "shared_component_scope": [
+    "Exact in-horizon UTC boundaries; no nearest-time or inserted opportunities",
+    "All public flight departures after booking horizon; no departed-flight lifecycle",
+    "Per-leg actual lead retained; reference lead not copied onto other legs",
+    "Temporary losses use installed-seat floors; recovery does not resurrect tickets, quota or deadlines",
+    "No source-bank/old-study replay, calibration fit, seed allocation, campaign or budget"
+  ]
+}

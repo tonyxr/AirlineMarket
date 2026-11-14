@@ -1,0 +1,142 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "F6_learning_pilots",
+  "phase": 1,
+  "implementation_revision": "learning-pilot-v1",
+  "task": "study:airline_market.experiments.learning_pilot:pilot",
+  "design": "list",
+  "fixed": {
+    "n_train": 20000,
+    "cohorts_per_update": 64,
+    "network_seed": 0,
+    "n_validation": 256,
+    "validation_seed_start": 200000,
+    "validate_every_cohorts": 2000,
+    "focal": "A",
+    "arm": "direct",
+    "ppo": {
+      "hidden_dim": 128,
+      "update_epochs": 8,
+      "minibatch_episodes": 4,
+      "gamma": 1.0,
+      "gae_lambda": 0.95,
+      "clip_ratio": 0.2,
+      "entropy_coefficient": 0.01,
+      "reward_scale": 1.0
+    },
+    "credit": {
+      "fraction": 0.1,
+      "K": 4,
+      "H": 5,
+      "mix": 0.5
+    },
+    "aux_weight": 0.3,
+    "reservation_gb": 1.5
+  },
+  "cells": [
+    {
+      "instance": "I0",
+      "learner": "ppo",
+      "baseline_file": "results/F6_baselines/20261112_pilot_v1/cells/e2881d662ba98342/attempt-0001/baseline.json",
+      "baseline_sha256": "eb22a886cee86dd15ace49d985f63c6c2d50bc43cabb5b2095de881d8cfdb6c0",
+      "event_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "T": 10,
+      "actions": 18
+    },
+    {
+      "instance": "I0",
+      "learner": "srl",
+      "baseline_file": "results/F6_baselines/20261112_pilot_v1/cells/e2881d662ba98342/attempt-0001/baseline.json",
+      "baseline_sha256": "eb22a886cee86dd15ace49d985f63c6c2d50bc43cabb5b2095de881d8cfdb6c0",
+      "event_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "T": 10,
+      "actions": 18
+    },
+    {
+      "instance": "I0",
+      "learner": "srl_c",
+      "baseline_file": "results/F6_baselines/20261112_pilot_v1/cells/e2881d662ba98342/attempt-0001/baseline.json",
+      "baseline_sha256": "eb22a886cee86dd15ace49d985f63c6c2d50bc43cabb5b2095de881d8cfdb6c0",
+      "event_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "T": 10,
+      "actions": 18
+    },
+    {
+      "instance": "I0",
+      "learner": "srl_ca",
+      "baseline_file": "results/F6_baselines/20261112_pilot_v1/cells/e2881d662ba98342/attempt-0001/baseline.json",
+      "baseline_sha256": "eb22a886cee86dd15ace49d985f63c6c2d50bc43cabb5b2095de881d8cfdb6c0",
+      "event_legs": [
+        "B_OH",
+        "B_HD"
+      ],
+      "T": 10,
+      "actions": 18
+    },
+    {
+      "instance": "I5",
+      "learner": "ppo",
+      "baseline_file": "results/F6_baselines/20261112_pilot_v1/cells/487c9f3c51c59148/attempt-0001/baseline.json",
+      "baseline_sha256": "0ac33573bc1b14e06df2738a228fc0cb0eece3f4d2844d4e0b3356eb515c8bd0",
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "spec_file": "config/instances/I5.json",
+      "spec_sha256": "0cd790a177cd2a6aa29c2c064beef0b0d310c07385bf83937a1a410a56b608cc"
+    },
+    {
+      "instance": "I5",
+      "learner": "srl",
+      "baseline_file": "results/F6_baselines/20261112_pilot_v1/cells/487c9f3c51c59148/attempt-0001/baseline.json",
+      "baseline_sha256": "0ac33573bc1b14e06df2738a228fc0cb0eece3f4d2844d4e0b3356eb515c8bd0",
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "spec_file": "config/instances/I5.json",
+      "spec_sha256": "0cd790a177cd2a6aa29c2c064beef0b0d310c07385bf83937a1a410a56b608cc"
+    },
+    {
+      "instance": "I5",
+      "learner": "srl_c",
+      "baseline_file": "results/F6_baselines/20261112_pilot_v1/cells/487c9f3c51c59148/attempt-0001/baseline.json",
+      "baseline_sha256": "0ac33573bc1b14e06df2738a228fc0cb0eece3f4d2844d4e0b3356eb515c8bd0",
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "spec_file": "config/instances/I5.json",
+      "spec_sha256": "0cd790a177cd2a6aa29c2c064beef0b0d310c07385bf83937a1a410a56b608cc"
+    },
+    {
+      "instance": "I5",
+      "learner": "srl_ca",
+      "baseline_file": "results/F6_baselines/20261112_pilot_v1/cells/487c9f3c51c59148/attempt-0001/baseline.json",
+      "baseline_sha256": "0ac33573bc1b14e06df2738a228fc0cb0eece3f4d2844d4e0b3356eb515c8bd0",
+      "event_legs": [
+        "B_HD0",
+        "B_HD1"
+      ],
+      "spec_file": "config/instances/I5.json",
+      "spec_sha256": "0cd790a177cd2a6aa29c2c064beef0b0d310c07385bf83937a1a410a56b608cc"
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1.5,
+  "limits": {
+    "seconds": 86400,
+    "rss_gb": 1.5
+  },
+  "out": "results/F6_pilots/20261112_matched_learning_v1",
+  "note": "Registered F6 one-training-seed20k-cohort pilots for four actual algorithms on I0/I5. Frozen training-grid fixed baselines reused, paired256 validation cohorts. Native initialized policy and every saved frame retained; final-time paired bootstrap2000, best-checkpoint contrasts descriptive. Same default hyperparameters; no tuning or arbitrary learning pass gate. Throughput and pilot configurations have distinct training budgets; no completed matching factor rerun. No final seeds opened."
+}

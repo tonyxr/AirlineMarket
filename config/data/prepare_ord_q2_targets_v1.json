@@ -1,0 +1,7 @@
+{
+  "schema": "airline-empirical-targets/1",
+  "implementation_revision": "ord-q2-targets-v1",
+  "processing_results": "results/scoped_processing/20261111_ord_v1/results.json",
+  "out": "results/P3/20261111_q2_targets_v1",
+  "note": "Q2-only target construction. No CEM fit, no Q3 target statistics or validation. All-in quoted fares, all-carrier DB1B denominators, source-attributed monthly load factors and daily weather/supply exposures."
+}

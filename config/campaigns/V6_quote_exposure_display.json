@@ -1,0 +1,41 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "V6_quote_exposure_display",
+  "phase": 2,
+  "implementation_revision": "observed-product-day-exposure-display-v1",
+  "task": "study:airline_market.experiments.quote_exposure_study:run",
+  "design": "list",
+  "fixed": {},
+  "cells": [
+    {
+      "quarter_files": {
+        "2": "data/processed/ord_2022_v1/quotes/attempt-0001/quotes_q2.parquet",
+        "3": "data/processed/ord_2022_v1/quotes/attempt-0001/quotes_q3.parquet"
+      },
+      "expected_rows": {
+        "2": 14793693,
+        "3": 35162235
+      },
+      "input_hashes": {
+        "data/processed/ord_2022_v1/quotes/attempt-0001/quotes_q2.parquet": "c774d44e2d254eb4fe878cf90ec89eb9c4a9a1586d75548f7a628e17a51ba0a0",
+        "data/processed/ord_2022_v1/quotes/attempt-0001/quotes_q3.parquet": "8fe4e5b4078c5ad23f90bb90a084f1ba4a7d4f8bfa3e5be739d0389d5236f034",
+        "results/scoped_processing/20261111_ord_v1/stages/quotes/attempt-0001/COMPLETE.json": "e4f418d6a03621f564022859758a1765c93e7884a9326a2c3e7421fc3d5e2d62",
+        "config/data/primary_ord_2022.json": "dcea4c20f73af9170061a28275ad17b25a057a7965ad7507006d992a10d3dd73"
+      },
+      "source_receipt": "results/scoped_processing/20261111_ord_v1/stages/quotes/attempt-0001/COMPLETE.json",
+      "batch_size": 20000,
+      "collection_start": "2022-04-16",
+      "prior_half_count": 0.5,
+      "bootstrap_replicates": 2000,
+      "reservation_gb": 1.5
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1.5,
+  "limits": {
+    "seconds": 14400,
+    "rss_gb": 1.5
+  },
+  "out": "results/V6_quote/20261112_exposure_display_v1",
+  "note": "NEWexisting-dataexposure/matchedfare/Q2displayforecast-Q3validationprerequisite, NOThiddeninventory/availability/V5V6pass/CEM/Q3fit. Allrawinputs/oldtargets/negativespreserved; no simulation/acquisition."
+}

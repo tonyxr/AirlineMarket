@@ -1,0 +1,25 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "P3_behavioral_prepare",
+  "phase": 3,
+  "implementation_revision": "ord-behavioral-initialization-v1",
+  "task": "study:airline_market.experiments.empirical_preflight:prepare",
+  "design": "list",
+  "cells": [
+    {
+      "initializer_config": "config/data/initialize_ord_behavioral_v1.json",
+      "initializer_sha256": "4d58449a40b1838702bba77fa49a1584b6e92b24d31cdae1814c1133d9ac19d3",
+      "date": "2022-06-15",
+      "reservation_gb": 1
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1,
+  "limits": {
+    "seconds": 900,
+    "rss_gb": 1,
+    "max_nodes": 1
+  },
+  "out": "results/P3/20261112_behavioral_initialization_v1",
+  "note": "Q2-only behavioral initialization, observed base/all-in affine proxy fit, not simulated-moment CEM. June15 is first complete60-day Q2 window. No Q3 targets or final seeds used."
+}

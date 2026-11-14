@@ -1,0 +1,244 @@
+{
+  "schema": "airline-exponential-benchmark/1",
+  "scale": 4,
+  "capacity": 16,
+  "a": 64,
+  "beta": 0.02,
+  "horizon": 1.0,
+  "physical_spec": {
+    "schema_version": "airline-market-spec/1",
+    "name": "exponential_continuous_clock_k4",
+    "description": "Public one-leg physical ledger scaffold; independent continuous-clock exponential demand declared in outer benchmark problem, MNL disabled.",
+    "horizon": {
+      "n_periods": 2,
+      "period_days": null,
+      "departure_date": null,
+      "booking_window_days": null
+    },
+    "airports": [
+      {
+        "code": "D",
+        "name": "",
+        "timezone": "UTC",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "code": "O",
+        "name": "",
+        "timezone": "UTC",
+        "lat": null,
+        "lon": null
+      }
+    ],
+    "carriers": [
+      {
+        "code": "A",
+        "name": "",
+        "kind": "network"
+      }
+    ],
+    "legs": [
+      {
+        "id": "A_0",
+        "carrier": "A",
+        "origin": "O",
+        "dest": "D",
+        "dep_time": null,
+        "arr_time": null,
+        "capacity": {
+          "support": [
+            16
+          ],
+          "probabilities": [
+            1.0
+          ],
+          "public": true
+        },
+        "distance_mi": null,
+        "cost_per_pax": 0.0
+      }
+    ],
+    "capacity_priors": [],
+    "products": [
+      {
+        "id": "SEAT",
+        "carrier": "A",
+        "market": "OD",
+        "legs": [
+          "A_0"
+        ],
+        "service_cost": 0,
+        "fare_floor": 1,
+        "fare_cap": 500,
+        "reference_fare": 100,
+        "priority": 0,
+        "controlled": true,
+        "attributes": {}
+      }
+    ],
+    "markets": [
+      {
+        "id": "OD",
+        "origin": "O",
+        "dest": "D",
+        "in_segment": true,
+        "label": ""
+      }
+    ],
+    "segments": [
+      {
+        "id": "single",
+        "classes": [
+          {
+            "weight": 1.0,
+            "alpha": 0.025,
+            "carrier_pref": {
+              "A": 0.0
+            },
+            "market_value": {
+              "OD": 0.0
+            },
+            "connection_penalty": 0.0,
+            "product_shift": {},
+            "time_penalty_per_hour": 0.0,
+            "schedule_penalty_per_hour": 0.0,
+            "ideal_dep_hour": null
+          }
+        ],
+        "mixed": null
+      }
+    ],
+    "demand": {
+      "mode": "single_request_bernoulli",
+      "arrival_probability": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          0.0
+        ]
+      },
+      "arrival_probability_cap": 0.85,
+      "market_weights": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          [
+            1.0
+          ]
+        ]
+      },
+      "intensity": null,
+      "segment_weights": {
+        "breakpoints": [
+          0
+        ],
+        "values": [
+          [
+            1.0
+          ]
+        ]
+      },
+      "holiday_multiplier": 1.0,
+      "exogenous_multipliers": {},
+      "poisson_truncation": 3
+    },
+    "choice": {
+      "model": "latent_class_mnl",
+      "connection_penalty_rule": "per_connection",
+      "n_mixed_draws": 0
+    },
+    "exogenous": {
+      "states": [
+        {
+          "name": "normal",
+          "public": true,
+          "attributes": {}
+        }
+      ],
+      "initial": [
+        1.0
+      ],
+      "transitions": {},
+      "default_transition": null,
+      "forecasts": {}
+    },
+    "capacity_process": {
+      "events": []
+    },
+    "resolution": {
+      "rule": "fixed_priority_cancel_refund",
+      "refund": "full_original_fare",
+      "penalty_per_cancellation": 0.0,
+      "stranded_reentry": false
+    },
+    "quotes": {
+      "requests": []
+    },
+    "pricing": [
+      {
+        "carrier": "A",
+        "base": {
+          "SEAT": 100
+        },
+        "time_ramp": 0.0,
+        "fixed_features": [],
+        "controllable_features": [
+          {
+            "name": "intercept",
+            "params": {}
+          }
+        ],
+        "theta_bounds": [
+          [
+            -1.0,
+            1.0
+          ]
+        ],
+        "theta_grid": [
+          [
+            0.0
+          ]
+        ],
+        "sharing": "carrier",
+        "update_every": 1
+      }
+    ],
+    "controllers": [
+      {
+        "carrier": "A",
+        "controller": "external",
+        "params": {}
+      }
+    ],
+    "objectives": [
+      {
+        "carrier": "A",
+        "profit_scale": 1.0,
+        "share_weight": 0.0,
+        "share_markets": null,
+        "share_statistic": "realized_ratio"
+      }
+    ],
+    "information": [
+      {
+        "name": "direct",
+        "observer": "A",
+        "requests": [],
+        "privileged": false,
+        "derived": false
+      }
+    ],
+    "background": [],
+    "timing": {
+      "mode": "simultaneous",
+      "leaders": [],
+      "initial_previous_prices": {}
+    },
+    "metadata": {}
+  },
+  "price_class": "continuous p>=0; original native MNL/cent-price class unchanged",
+  "mode": "Poisson potential arrivals at a; buy probability exp(-beta*p); no events/signals/servicecost"
+}

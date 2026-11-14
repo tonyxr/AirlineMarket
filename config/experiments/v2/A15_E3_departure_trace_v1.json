@@ -1,0 +1,59 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "A15_E3_departure_trace_v1",
+  "plan": "v2.0",
+  "plan_id": "A.15/V10",
+  "phase": "V",
+  "hypothesis": null,
+  "primary_contrast": "none; exact arithmetic and source-membership traces, no causal attribution",
+  "budget_key": "A.15",
+  "implementation_revision": "E3_departure_source_trace_v1",
+  "generator": "prepared_banks_only",
+  "task": "study:airline_market.experiments.event_departure_trace_study:run",
+  "design": "list",
+  "workers": 1,
+  "memory_budget_gb": 1,
+  "limits": {
+    "seconds": 7200,
+    "rss_gb": 1,
+    "reservation_gb": 1
+  },
+  "out": "results/Paper2_data/20261113_E3_departure_trace_v1",
+  "log_path": "EXPERIMENT_LOG.md",
+  "scientific_budget": null,
+  "cells": [
+    {
+      "plan_id": "A.15/V10",
+      "reservation_gb": 1,
+      "comparison": "results/Paper2_data/20261113_E3_T100_comparison_v1/cells/33478168842a4791/attempt-0001/reconciliation.json",
+      "prepared_index": "results/Paper2_data/20261113_E3_T100_comparison_v1/cells/33478168842a4791/attempt-0001/reported_counts.sqlite",
+      "T100_projection": "results/Paper2_data/20261113_E3_T100_comparison_v1/cells/33478168842a4791/attempt-0001/t100_scoped_rows.parquet",
+      "pinned_files": [
+        {
+          "path": "results/Paper2_data/20261113_E3_T100_comparison_v1/cells/33478168842a4791/attempt-0001/results.json",
+          "sha256": "a0d6112501d088084cf67d4192f6822af693baf8d6ab3d8339bc04f649e7a3d8"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_T100_comparison_v1/cells/33478168842a4791/attempt-0001/COMPLETE.json",
+          "sha256": "20d809e4c437349ce072f01a30dbc345c2ae0a212ac58f23397f35b27dd5fe7e"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_T100_comparison_v1/cells/33478168842a4791/attempt-0001/reconciliation.json",
+          "sha256": "37f068ade7ae4731457a5cf1fc4da1cd763e8ed348335e4174cccea891013d3a"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_T100_comparison_v1/cells/33478168842a4791/attempt-0001/reported_counts.sqlite",
+          "sha256": "1f832b8dfdc78c7d1a3a18cd0f99414a256c42170d2304ca8e66c4e2af4a7aef"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_T100_comparison_v1/cells/33478168842a4791/attempt-0001/t100_scoped_rows.parquet",
+          "sha256": "2337efeac49b42debbc8fed96c4abe8bd1722b93083c745cbb669865d38c2a92"
+        }
+      ],
+      "trace_scope": "All8849outerrows;all1790primarymismatches;nosignselection;noresolution/cause/capacityadoption",
+      "primary_basis": "non_cancelled_including_diversions",
+      "T100_shortfall": "signed_schedule_minus_performed_not_observed_cancellations",
+      "scientific_budget": null
+    }
+  ]
+}

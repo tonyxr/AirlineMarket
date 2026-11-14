@@ -1,0 +1,137 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "V4_DLP_exact_duals",
+  "phase": 2,
+  "implementation_revision": "exact-rational-primal-dual-v1",
+  "task": "study:airline_market.experiments.dlp_dual_study:run",
+  "design": "list",
+  "fixed": {
+    "reservation_gb": 0.75,
+    "tolerance": 1e-10,
+    "native_source": "airline_market/agents/bidprice.py",
+    "native_source_sha256": "b31bfc10445611ef9bf05c12790dd2535bbf8170d738c5de45211ccef4002ac3",
+    "design_registration": "results/V4_DLP_tooling/design_registration.json",
+    "design_registration_sha256": "ec5cd995a443d7bd27d8374d95597625c3aba00a8e1204aa5eadf64c81ac000e"
+  },
+  "cells": [
+    {
+      "name": "one_leg_unique",
+      "A": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "capacity": [
+        2
+      ],
+      "demand": [
+        1,
+        2,
+        3
+      ],
+      "revenues": [
+        100,
+        60,
+        20
+      ]
+    },
+    {
+      "name": "two_leg_connection_unique",
+      "A": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "capacity": [
+        2,
+        2
+      ],
+      "demand": [
+        3,
+        3,
+        1
+      ],
+      "revenues": [
+        40,
+        50,
+        110
+      ]
+    },
+    {
+      "name": "three_leg_joint_unique",
+      "A": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "capacity": [
+        3,
+        4,
+        5
+      ],
+      "demand": [
+        10,
+        10,
+        10,
+        2
+      ],
+      "revenues": [
+        30,
+        40,
+        50,
+        150
+      ]
+    },
+    {
+      "name": "one_leg_nonunique_control",
+      "A": [
+        [
+          1,
+          1
+        ]
+      ],
+      "capacity": [
+        5
+      ],
+      "demand": [
+        2,
+        3
+      ],
+      "revenues": [
+        80,
+        30
+      ]
+    }
+  ],
+  "out": "results/V4_DLP/20261112_exact_rational_duals_v1",
+  "workers": 1,
+  "memory_budget_gb": 0.75,
+  "limits": {
+    "seconds": 1800,
+    "rss_gb": 0.75
+  }
+}

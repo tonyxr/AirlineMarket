@@ -1,0 +1,36 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "V3_MR4_symmetric_policy",
+  "phase": 2,
+  "implementation_revision": "finite-inventory-symmetry-tost-v1",
+  "task": "study:airline_market.experiments.duopoly_symmetry_study:run",
+  "design": "list",
+  "fixed": {
+    "reservation_gb": 1.0,
+    "source_spec": "config/benchmarks/V3_MR4_symmetric_policy_T4.json",
+    "source_spec_sha256": "30a8843303e0109a97440b978b8cd4ee3c31791181b72268e3d3d0ac28ed38ec",
+    "compiled_spec_hash": "84b2451ed1ee79b0d7a99e3e90734c243009a1ef2d934ab5aac7e8ec1c96686a",
+    "design_registration": "results/V3_symmetry_tooling/design_registration.json",
+    "design_registration_sha256": "9d00d40fbb9fefe24fd18db6ff3de10f856aaa259530dbf926fb36de6d6a1a6f",
+    "seed_start": 200000,
+    "n_cohorts": 100000,
+    "bootstrap_replicates": 2000,
+    "price": 100.0,
+    "margin_revenue_fraction": 0.001,
+    "equivalence_alpha": 0.05,
+    "max_nodes": 100000,
+    "exact_tolerance": 1e-10
+  },
+  "cells": [
+    {
+      "case": "symmetric_finite_inventory"
+    }
+  ],
+  "out": "results/V3_symmetry/20261112_fixed_policy_T4_v1",
+  "workers": 1,
+  "memory_budget_gb": 1.0,
+  "limits": {
+    "seconds": 14400,
+    "rss_gb": 1.0
+  }
+}

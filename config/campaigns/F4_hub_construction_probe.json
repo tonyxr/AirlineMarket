@@ -1,0 +1,209 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "F4_hub_construction_probe",
+  "phase": 1,
+  "implementation_revision": "seed-zero-world-template-v1",
+  "task": "study:airline_market.experiments.template_particle_study:probe",
+  "design": "list",
+  "cells": [
+    {
+      "instance": "I5",
+      "source_spec": "config/instances/I5.json",
+      "source_spec_sha256": "0cd790a177cd2a6aa29c2c064beef0b0d310c07385bf83937a1a410a56b608cc",
+      "focal": "A",
+      "arm": "direct",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "validation_seed": 200256,
+      "inner_draws": 128,
+      "reservation_gb": 1,
+      "action_index": 0,
+      "particles": 500,
+      "implementation": "cached_reference",
+      "operation": "prior_reset"
+    },
+    {
+      "instance": "I5",
+      "source_spec": "config/instances/I5.json",
+      "source_spec_sha256": "0cd790a177cd2a6aa29c2c064beef0b0d310c07385bf83937a1a410a56b608cc",
+      "focal": "A",
+      "arm": "direct",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "validation_seed": 200256,
+      "inner_draws": 128,
+      "reservation_gb": 1,
+      "action_index": 0,
+      "particles": 500,
+      "implementation": "template",
+      "operation": "prior_reset"
+    },
+    {
+      "instance": "I6",
+      "source_spec": "config/instances/I6.json",
+      "source_spec_sha256": "401b2b668c7fd02acc8bc55a7765e254aceb9c8d6a4117d986d573744370c90e",
+      "focal": "A",
+      "arm": "direct",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "validation_seed": 200256,
+      "inner_draws": 128,
+      "reservation_gb": 1,
+      "action_index": 0,
+      "particles": 500,
+      "implementation": "cached_reference",
+      "operation": "prior_reset"
+    },
+    {
+      "instance": "I6",
+      "source_spec": "config/instances/I6.json",
+      "source_spec_sha256": "401b2b668c7fd02acc8bc55a7765e254aceb9c8d6a4117d986d573744370c90e",
+      "focal": "A",
+      "arm": "direct",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "validation_seed": 200256,
+      "inner_draws": 128,
+      "reservation_gb": 1,
+      "action_index": 0,
+      "particles": 500,
+      "implementation": "template",
+      "operation": "prior_reset"
+    },
+    {
+      "instance": "I5",
+      "source_spec": "config/instances/I5.json",
+      "source_spec_sha256": "0cd790a177cd2a6aa29c2c064beef0b0d310c07385bf83937a1a410a56b608cc",
+      "focal": "A",
+      "arm": "direct",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "validation_seed": 200256,
+      "inner_draws": 128,
+      "reservation_gb": 1,
+      "action_index": 0,
+      "particles": 100000,
+      "implementation": "template",
+      "operation": "prior_reset"
+    },
+    {
+      "instance": "I6",
+      "source_spec": "config/instances/I6.json",
+      "source_spec_sha256": "401b2b668c7fd02acc8bc55a7765e254aceb9c8d6a4117d986d573744370c90e",
+      "focal": "A",
+      "arm": "direct",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "validation_seed": 200256,
+      "inner_draws": 128,
+      "reservation_gb": 1,
+      "action_index": 0,
+      "particles": 100000,
+      "implementation": "template",
+      "operation": "prior_reset"
+    },
+    {
+      "instance": "I5",
+      "source_spec": "config/instances/I5.json",
+      "source_spec_sha256": "0cd790a177cd2a6aa29c2c064beef0b0d310c07385bf83937a1a410a56b608cc",
+      "focal": "A",
+      "arm": "direct",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "validation_seed": 200256,
+      "inner_draws": 128,
+      "reservation_gb": 1,
+      "action_index": 0,
+      "particles": 500,
+      "implementation": "cached_reference",
+      "operation": "one_update"
+    },
+    {
+      "instance": "I5",
+      "source_spec": "config/instances/I5.json",
+      "source_spec_sha256": "0cd790a177cd2a6aa29c2c064beef0b0d310c07385bf83937a1a410a56b608cc",
+      "focal": "A",
+      "arm": "direct",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "validation_seed": 200256,
+      "inner_draws": 128,
+      "reservation_gb": 1,
+      "action_index": 0,
+      "particles": 500,
+      "implementation": "template",
+      "operation": "one_update"
+    },
+    {
+      "instance": "I6",
+      "source_spec": "config/instances/I6.json",
+      "source_spec_sha256": "401b2b668c7fd02acc8bc55a7765e254aceb9c8d6a4117d986d573744370c90e",
+      "focal": "A",
+      "arm": "direct",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "validation_seed": 200256,
+      "inner_draws": 128,
+      "reservation_gb": 1,
+      "action_index": 0,
+      "particles": 500,
+      "implementation": "cached_reference",
+      "operation": "one_update"
+    },
+    {
+      "instance": "I6",
+      "source_spec": "config/instances/I6.json",
+      "source_spec_sha256": "401b2b668c7fd02acc8bc55a7765e254aceb9c8d6a4117d986d573744370c90e",
+      "focal": "A",
+      "arm": "direct",
+      "rival": "B",
+      "joint_legs": [
+        "B_OH0",
+        "B_HD0"
+      ],
+      "validation_seed": 200256,
+      "inner_draws": 128,
+      "reservation_gb": 1,
+      "action_index": 0,
+      "particles": 500,
+      "implementation": "template",
+      "operation": "one_update"
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1,
+  "limits": {
+    "seconds": 900,
+    "rss_gb": 1,
+    "max_nodes": 1
+  },
+  "out": "results/F4_hub_probe/20261112_template_construction_v1",
+  "note": "Ten bounded engineering operations, not the F4 sizing grid. Direct I5/I6 prior reset atN500 matches cached reference; two actualN100k template prior resets; matched N500 one-period conditional-SMC updates. Preserve strict zero-weight failures/limits, no likelihood recovery/truth substitution. Particle and RNG hashes stream without huge JSON materialization. Actual update pre-ESS from original diagnostics; initial pre-ESS remainsnull. One validation cohort200256, planning seed773. Default grid-action0 is a declared engineering trajectory, not fitted or optimized; no64-cohort/full-horizon/final-planner decision study or100k-reference accuracy claim. Global N and all full-study budgets remainnull."
+}

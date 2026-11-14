@@ -1,0 +1,60 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "V7_R3_I3_default_pilot",
+  "phase": 2,
+  "implementation_revision": "native-tplus1-exact-posterior-ECE-v1",
+  "task": "study:airline_market.experiments.event_calibration_study:run",
+  "design": "list",
+  "fixed": {
+    "source_spec": "results/F1/20261111-2232_2a95d844/cells/8a89607b84ce6e7e/attempt-0001/spec.json",
+    "source_spec_sha256": "54686d3cce9a7b4a587ccddafbee3a8851937b1191dfcc6ab5f58e865fbee25b",
+    "compiled_spec_hash": "397030ef65595ced9d5e53aafe61ec571fc58e22955ea6c9810e6493e2d5b145",
+    "actor": {
+      "learner": "srl_ca",
+      "network_seed": 0,
+      "focal": "A",
+      "arm": "direct",
+      "aux_weight": 0.3,
+      "ppo": {
+        "hidden_dim": 128,
+        "update_epochs": 8,
+        "minibatch_episodes": 4,
+        "gamma": 1.0,
+        "gae_lambda": 0.95,
+        "clip_ratio": 0.2,
+        "entropy_coefficient": 0.01,
+        "reward_scale": 1.0
+      }
+    },
+    "event_legs": [
+      "B_HD0",
+      "B_HD1"
+    ],
+    "train_seed_start": 100000,
+    "n_train": 20000,
+    "batch": 64,
+    "credit": {
+      "fraction": 0.1,
+      "K": 4,
+      "H": 5,
+      "mix": 0.5
+    },
+    "validation_seed_start": 202560,
+    "n_validation": 256,
+    "max_support": 20000,
+    "reservation_gb": 1.5
+  },
+  "cells": [
+    {
+      "instance": "I3_original_T4A4"
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1.5,
+  "limits": {
+    "seconds": 14400,
+    "rss_gb": 1.5
+  },
+  "out": "results/V7_event/20261112_I3_native_tplus1_v1",
+  "note": "NEW I3/direct20k/default SRL-CA/NN0 training and initial/final256cohort exact-posterior event-calibration study. OriginalphysicalJSON/grid/meta unchanged; continuousnative structured prices retained. All4periods includingterminal t+1 target; B_HD0/B_HD1 both<=1 after actualnextnative step. Headforecast before currentactionsampling. Exact posterior after permitted nextobs is a Rao-Blackwell bin-calibration target via tower property, not pointwise pre-actionforecast truth or no-further-sales projection. Ten equalwidthbins fixed, pooledall1024forecasts primaryECE<=.03; perperiod/realizedECE/proper binaryBrier/2000wholecohort-bootstrapCI diagnostic. NN0only/default20k not fullP2/TR or finaltrainingbudget. No bestcheckpoint/calibrationselection/retuning. ScientificRL/F9budgetsNULL; binarylastweights staylocal/Gitignored withsemanticmanifest."
+}

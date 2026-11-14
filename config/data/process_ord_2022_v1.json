@@ -1,0 +1,13 @@
+{
+  "schema": "airline-scoped-processing/1",
+  "implementation_revision": "ord-regional-2022-v1",
+  "scope": "config/data/primary_ord_2022.json",
+  "processed_output": "data/processed/ord_2022_v1",
+  "evidence_output": "results/scoped_processing/20261111_ord_v1",
+  "booking_window_days": 60,
+  "limits": {
+    "seconds": 14400,
+    "rss_gb": 3
+  },
+  "note": "Q2-only scope selection, all-carrier O&D alternatives retained, Q3 validation separated. Allocation of T100 operator totals is an estimator with conservation diagnostics, not observed marketing-carrier seat entitlements."
+}

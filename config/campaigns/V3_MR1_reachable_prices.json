@@ -1,0 +1,52 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "V3_MR1_reachable_prices",
+  "phase": 2,
+  "implementation_revision": "native-fixed-other-fares-reachable-states-v1",
+  "task": "study:airline_market.experiments.price_monotonicity_study:run",
+  "design": "list",
+  "fixed": {
+    "n_states": 500,
+    "tolerance": 1e-12,
+    "reservation_gb": 1.0,
+    "design_registration": "results/V3_price_tooling/design_registration.json",
+    "design_registration_sha256": "1ed3bbd45273e40328feb3d5cf2aedd069746a65c78206cb7a3974f9e009644d"
+  },
+  "cells": [
+    {
+      "instance": "I0_original",
+      "source_spec": "results/F1/20261111-2232_2a95d844/cells/62cdded46487d789/attempt-0001/spec.json",
+      "source_spec_sha256": "cd6f818b199bc7b79bde4449d25d066322daafe36ac18d61c1a05bbd5ca27270",
+      "compiled_spec_hash": "9a4a8992ae2b0af80effdbaa17f2553cd145e639d86f83666f6bf271dcef1b7f",
+      "seed_start": 205568
+    },
+    {
+      "instance": "I3_original",
+      "source_spec": "results/F1/20261111-2232_2a95d844/cells/8a89607b84ce6e7e/attempt-0001/spec.json",
+      "source_spec_sha256": "54686d3cce9a7b4a587ccddafbee3a8851937b1191dfcc6ab5f58e865fbee25b",
+      "compiled_spec_hash": "397030ef65595ced9d5e53aafe61ec571fc58e22955ea6c9810e6493e2d5b145",
+      "seed_start": 206068
+    },
+    {
+      "instance": "I4_low_T5A4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/1c93f8e7752595c4.json",
+      "source_spec_sha256": "1b014cb823980907b3148f44fa02ca7e2941957d7be3d66f707a0efc089aa9b6",
+      "compiled_spec_hash": "9bdd2a76f707f847b87fe0195cedc9a675403e2f3d87cc63807c043c9ac82f95",
+      "seed_start": 206568
+    },
+    {
+      "instance": "I4_high_T5A4",
+      "source_spec": "results/F1_history_tooling/T5A4_source_specs/ce8d5b3e7d4930d5.json",
+      "source_spec_sha256": "dfce988dec46b157d3cbef5190e634610dd41a846fcb330dae520db4e07279b5",
+      "compiled_spec_hash": "3857e8c74c4e3a76fd07413d0d3038b88f0fefaff789b3c1037431a1c5bd39b7",
+      "seed_start": 207068
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1.0,
+  "limits": {
+    "seconds": 14400,
+    "rss_gb": 1.0
+  },
+  "out": "results/V3_price/20261112_reachable_MR1_v1"
+}

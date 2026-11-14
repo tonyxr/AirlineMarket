@@ -1,0 +1,60 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "P2_belief_exact_pilot",
+  "phase": 3,
+  "implementation_revision": "exact-belief-ppo-precursor-v1",
+  "task": "study:airline_market.experiments.belief_ppo_study:pilot",
+  "design": "list",
+  "fixed": {
+    "source_spec": "results/F6_baselines/20261112_pilot_v1/cells/e2881d662ba98342/attempt-0001/spec.json",
+    "source_spec_sha256": "cd6f818b199bc7b79bde4449d25d066322daafe36ac18d61c1a05bbd5ca27270",
+    "baseline_file": "results/F6_baselines/20261112_pilot_v1/cells/e2881d662ba98342/attempt-0001/baseline.json",
+    "baseline_sha256": "eb22a886cee86dd15ace49d985f63c6c2d50bc43cabb5b2095de881d8cfdb6c0",
+    "instance": "I0",
+    "learner": "ppo_b_exact",
+    "n_train": 20000,
+    "train_seed_start": 100000,
+    "cohorts_per_update": 64,
+    "network_seed": 0,
+    "n_validation": 256,
+    "validation_seed_start": 200000,
+    "validate_every_cohorts": 2000,
+    "focal": "A",
+    "arm": "direct",
+    "joint_events": [
+      {
+        "id": "B_joint_le1",
+        "rival": "B",
+        "legs": [
+          "B_OH",
+          "B_HD"
+        ],
+        "k": 1
+      }
+    ],
+    "ppo": {
+      "hidden_dim": 128,
+      "update_epochs": 8,
+      "minibatch_episodes": 4,
+      "gamma": 1.0,
+      "gae_lambda": 0.95,
+      "clip_ratio": 0.2,
+      "entropy_coefficient": 0.01,
+      "reward_scale": 1.0
+    },
+    "reservation_gb": 1.5
+  },
+  "cells": [
+    {
+      "case": "I0_exact_belief_20k_seed0"
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1.5,
+  "limits": {
+    "seconds": 86400,
+    "rss_gb": 1.5
+  },
+  "out": "results/P2_belief/20261112_exact_I0_v1",
+  "note": "One actual exact-small belief-feature PPO 20k-cohort/default-parameter/network-seed0 learning precursor. Same frozen I0 physical law, fitted fixed baseline and matched256 validation as the existing flat pilot; continuous bounded coefficient actions. Event definitions are part of checkpoint compatibility. Not the registered P2 24x50k I5 hyperparameter search, a hub particle-filter certificate, a final ranking or budget selection. Initial/final paired2000-bootstrap contrasts retain all signs; selected checkpoint contrasts are descriptive. Existing live sources immutable; no final test seeds opened."
+}

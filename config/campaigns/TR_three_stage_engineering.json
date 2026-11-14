@@ -1,0 +1,50 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "TR_three_stage_domain_engineering",
+  "phase": 1,
+  "implementation_revision": "native-PPO-cohort-curriculum-v1",
+  "task": "study:airline_market.experiments.curriculum_study:run",
+  "design": "list",
+  "fixed": {
+    "manifest": "results/TR_curriculum_tooling/member_manifest.json",
+    "manifest_sha256": "dd708364289127ca0a9045ae810bc6c2b491a8673c562e9e22749279412ef117",
+    "training": {
+      "n_train": 1280,
+      "cohorts_per_update": 64,
+      "network_seed": 0,
+      "train_seed_start": 100000,
+      "n_validation": 256,
+      "validation_seed_start": 200000,
+      "validate_every_cohorts": 640,
+      "focal": "A",
+      "mpc": {
+        "n_scenarios": 8,
+        "n_reporting": 8,
+        "tail_index": 0
+      },
+      "ppo": {
+        "hidden_dim": 128,
+        "update_epochs": 8,
+        "minibatch_episodes": 4,
+        "gamma": 1.0,
+        "gae_lambda": 0.95,
+        "clip_ratio": 0.2,
+        "entropy_coefficient": 0.01
+      }
+    },
+    "reservation_gb": 1
+  },
+  "cells": [
+    {
+      "case": "three_stage_saved_micro_domains"
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1,
+  "limits": {
+    "seconds": 1800,
+    "rss_gb": 1
+  },
+  "out": "results/TR/20261112_three_stage_micro_v1",
+  "note": "Engineering precursor only:1280cohorts512/384/384, three saved synthetic training domains/one held never rolled out; stage1uniform threshold/matching/DLP, stage2actual adaptive joint-type MPC with explicitly misspecified frozen focal reference-population model, stage3per-domain frozen current finitePSROmeta. S8+8engineering planner, defaultPPO NNseed0;256fixed validationcohorts per cadence640balanced acrossstages and onlytrainingmembers. Not calibratedTR2(24+8), fullTR3/5monitor, P2tuning or full-budget/finalseed training; no scientificbudgetselection or positive-result criterion. Strict impossible-model observations propagate; no truth substitution. Sourcegames/metas reused byhash, never rerun."
+}

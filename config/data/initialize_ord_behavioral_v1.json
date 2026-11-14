@@ -1,0 +1,62 @@
+{
+  "schema": "airline-empirical-initializer/1",
+  "implementation_revision": "ord-behavioral-initialization-v1",
+  "core_carriers": [
+    "UA",
+    "AA"
+  ],
+  "periods": 60,
+  "assumed_conversion": 0.7,
+  "fare_bound_multipliers": [
+    0.25,
+    4.0
+  ],
+  "assumed_cost_per_pax_mile": 0.04,
+  "share_pseudocount": 1e-06,
+  "Q2_calendar_days": 91,
+  "outside_proxy_capacity": 1000000000,
+  "segments": [
+    {
+      "id": "leisure",
+      "mix": 0.7,
+      "alpha": 0.02,
+      "connection_penalty": 0.5,
+      "carrier_pref": {
+        "UA": -0.1,
+        "AA": 0.1
+      }
+    },
+    {
+      "id": "business",
+      "mix": 0.3,
+      "alpha": 0.008,
+      "connection_penalty": 0.2,
+      "carrier_pref": {
+        "UA": 0.3,
+        "AA": -0.1
+      }
+    }
+  ],
+  "airport_timezones": {
+    "ATL": "America/New_York",
+    "BOS": "America/New_York",
+    "CLT": "America/New_York",
+    "DEN": "America/Denver",
+    "DFW": "America/Chicago",
+    "DTW": "America/New_York",
+    "EWR": "America/New_York",
+    "IAD": "America/New_York",
+    "JFK": "America/New_York",
+    "LAX": "America/Los_Angeles",
+    "LGA": "America/New_York",
+    "MIA": "America/New_York",
+    "OAK": "America/Los_Angeles",
+    "ORD": "America/Chicago",
+    "PHL": "America/New_York",
+    "SFO": "America/Los_Angeles"
+  },
+  "dated_network": "results/V1/20261111_dated_network_v1/attempt-0001",
+  "Q2_targets": "results/P3/20261111_q2_targets_v1/attempt-0001",
+  "Q2_quotes": "data/processed/ord_2022_v1/quotes/attempt-0001/quotes_q2.parquet",
+  "notes": "Uncalibrated initialization only. Physical core IDs/priors from audited dated tables; OUTSIDE is a synthetic aggregate other-network purchase alternative, separate from nonpurchase. Uniform60-day arrivals, conversion, preferences, price sensitivities, costs and proxy capacity are assumed. No increasing fare-curve sign imposed. Gross native objective is not verified net airline profit."
+}

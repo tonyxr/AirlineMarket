@@ -1,0 +1,335 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "V3_MR3_relabeling",
+  "phase": 2,
+  "implementation_revision": "saved-original-permuted-native-v1",
+  "task": "study:airline_market.experiments.relabeling_study:run",
+  "design": "list",
+  "fixed": {
+    "reservation_gb": 1.0,
+    "max_nodes": 100000,
+    "tolerance": 1e-12,
+    "design_registration": "results/V3_relabel_tooling/design_registration.json",
+    "design_registration_sha256": "571fd84c79e82c9babc5035914d08d0646a8ab6d69c23ac1d8dd17a982f15ff8"
+  },
+  "cells": [
+    {
+      "kind": "network",
+      "case": "one_leg",
+      "original_source": "config/benchmarks/V3_network_one_leg_quality_v1_monopoly.json",
+      "original_source_sha256": "9f99d542d9d868ba2d596182fe01d52b79365460ac818535b28c3f736d19be4e",
+      "reference_variant": 1,
+      "reference_results": "results/V3_network/20261112_inventory_monopoly_v1/cells/dc876b472e5de6aa/attempt-0001/results.json",
+      "reference_classical": "results/V3_network/20261112_inventory_monopoly_v1/cells/dc876b472e5de6aa/attempt-0001/classical_1.json",
+      "reference_receipt": "results/V3_network/20261112_inventory_monopoly_v1/cells/dc876b472e5de6aa/attempt-0001/COMPLETE.json",
+      "saved_references": [
+        {
+          "path": "results/V3_network/20261112_inventory_monopoly_v1/cells/dc876b472e5de6aa/attempt-0001/COMPLETE.json",
+          "sha256": "6453a9ff94a90e52379b012feb00fe90e2ae2a1506277cb03c86d8d43eed3259"
+        },
+        {
+          "path": "results/V3_network/20261112_inventory_monopoly_v1/cells/dc876b472e5de6aa/attempt-0001/results.json",
+          "sha256": "dd40ebabdb6503bf1e123ee9ca28da8463942da2785dfb3a7c69bb82c26a1287"
+        },
+        {
+          "path": "results/V3_network/20261112_inventory_monopoly_v1/cells/dc876b472e5de6aa/attempt-0001/classical_1.json",
+          "sha256": "55d67aac8e0dfc044339f0725e804b464be82ca3cc5159a1fb46d1929c9c844c"
+        }
+      ],
+      "source_spec": "config/benchmarks/V3_MR3_one_leg_permuted.json",
+      "source_spec_sha256": "4e0be466810a231ac1aee608848a6f6169d778550aa3cc50473a90f9149fdc15",
+      "compiled_spec_hash": "5d8702e1e115f1281e309de4fd70d1ee0cc6ba8745a3a1c1ad85f665faca840a",
+      "mapping": {
+        "old_to_new": {
+          "airports": {
+            "D": "P0",
+            "O": "P1"
+          },
+          "carriers": {
+            "A": "C0"
+          },
+          "legs": {
+            "OH": "L0"
+          },
+          "products": {
+            "L": "J0",
+            "H": "J1"
+          },
+          "markets": {
+            "OD": "M0"
+          }
+        },
+        "new_to_old_products": [
+          1,
+          0
+        ],
+        "new_to_old_legs": [
+          0
+        ],
+        "new_to_old_carriers": [
+          0
+        ]
+      }
+    },
+    {
+      "kind": "network",
+      "case": "connection",
+      "original_source": "config/benchmarks/V3_network_two_leg_connection_v0_monopoly.json",
+      "original_source_sha256": "1eb660a273a1f7ecf7d6b3d015d79e066e7f9ed48fb7ca5e31abbc49c4b10d35",
+      "reference_variant": 0,
+      "reference_results": "results/V3_network/20261112_inventory_monopoly_v1/cells/14448d653e619eab/attempt-0001/results.json",
+      "reference_classical": "results/V3_network/20261112_inventory_monopoly_v1/cells/14448d653e619eab/attempt-0001/classical_0.json",
+      "reference_receipt": "results/V3_network/20261112_inventory_monopoly_v1/cells/14448d653e619eab/attempt-0001/COMPLETE.json",
+      "saved_references": [
+        {
+          "path": "results/V3_network/20261112_inventory_monopoly_v1/cells/14448d653e619eab/attempt-0001/COMPLETE.json",
+          "sha256": "8a8b6181e03f264aa544dec6c4a03a2a827fd8e46bd8e96babbac84f1768e3a1"
+        },
+        {
+          "path": "results/V3_network/20261112_inventory_monopoly_v1/cells/14448d653e619eab/attempt-0001/results.json",
+          "sha256": "36b801a5818f7a4e8aa94465c00d048efe086494c5afd1a0ceb49d36f66f9504"
+        },
+        {
+          "path": "results/V3_network/20261112_inventory_monopoly_v1/cells/14448d653e619eab/attempt-0001/classical_0.json",
+          "sha256": "f5b8aab33820df1e7e0752c8a7a41fd837d5dc37970f341699ec4e9b4d081abd"
+        }
+      ],
+      "source_spec": "config/benchmarks/V3_MR3_connection_permuted.json",
+      "source_spec_sha256": "7f049903b194664816785ddfc99df6c229bda5dc20360d51bbd5efc4ff8d04b6",
+      "compiled_spec_hash": "d8d28ad7ec15143c3c81fa3a1c2b995b9f8286cce78df23775d49d203c772cb3",
+      "mapping": {
+        "old_to_new": {
+          "airports": {
+            "D": "P0",
+            "H": "P1",
+            "O": "P2"
+          },
+          "carriers": {
+            "A": "C0"
+          },
+          "legs": {
+            "OH": "L0",
+            "HD": "L1"
+          },
+          "products": {
+            "L1": "J0",
+            "L2": "J1",
+            "C": "J2"
+          },
+          "markets": {
+            "OH": "M0",
+            "HD": "M1",
+            "OD": "M2"
+          }
+        },
+        "new_to_old_products": [
+          2,
+          1,
+          0
+        ],
+        "new_to_old_legs": [
+          1,
+          0
+        ],
+        "new_to_old_carriers": [
+          0
+        ]
+      }
+    },
+    {
+      "kind": "network",
+      "case": "cannibalization",
+      "original_source": "config/benchmarks/V3_network_finite_price_cannibalization_v3_monopoly.json",
+      "original_source_sha256": "2e61aa51371acfc2ff867094f15ab66d59753360550c05e71d179be3c5e7fd42",
+      "reference_variant": 3,
+      "reference_results": "results/V3_network/20261112_inventory_monopoly_v1/cells/c62260645b333cf1/attempt-0001/results.json",
+      "reference_classical": "results/V3_network/20261112_inventory_monopoly_v1/cells/c62260645b333cf1/attempt-0001/classical_3.json",
+      "reference_receipt": "results/V3_network/20261112_inventory_monopoly_v1/cells/c62260645b333cf1/attempt-0001/COMPLETE.json",
+      "saved_references": [
+        {
+          "path": "results/V3_network/20261112_inventory_monopoly_v1/cells/c62260645b333cf1/attempt-0001/COMPLETE.json",
+          "sha256": "59ac7b867a5c2736bccf05aed8bc9138df443bca1c3871b3a0484bd1f0f59129"
+        },
+        {
+          "path": "results/V3_network/20261112_inventory_monopoly_v1/cells/c62260645b333cf1/attempt-0001/results.json",
+          "sha256": "bd4c22105e6a4fc5cc3da02f12dbd99b02d72df716fb6f7c704b513ce3ce0d3d"
+        },
+        {
+          "path": "results/V3_network/20261112_inventory_monopoly_v1/cells/c62260645b333cf1/attempt-0001/classical_3.json",
+          "sha256": "a793ffe4c6e85176ff08324bad7532b95d8453bc7f75de55e386512634febac8"
+        }
+      ],
+      "source_spec": "config/benchmarks/V3_MR3_cannibalization_permuted.json",
+      "source_spec_sha256": "c53b97d07f4684245beff729d321f1cc9ea71d7d8a6ebaf90ab2e5626c711156",
+      "compiled_spec_hash": "9645cce2a49827dd2ad9c4ac01b8bdf741b2f6fe5302bc78a29852803ba81e3d",
+      "mapping": {
+        "old_to_new": {
+          "airports": {
+            "D": "P0",
+            "H": "P1",
+            "O": "P2",
+            "X": "P3"
+          },
+          "carriers": {
+            "A": "C0"
+          },
+          "legs": {
+            "OH": "L0",
+            "HD": "L1",
+            "HX": "L2",
+            "XD": "L3"
+          },
+          "products": {
+            "HIGH": "J0",
+            "LOW": "J1"
+          },
+          "markets": {
+            "OD": "M0"
+          }
+        },
+        "new_to_old_products": [
+          1,
+          0
+        ],
+        "new_to_old_legs": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "new_to_old_carriers": [
+          0
+        ]
+      }
+    },
+    {
+      "kind": "logit",
+      "case": "logit_symmetric",
+      "original_source": "config/benchmarks/V4_logit_symmetric_v1.json",
+      "original_source_sha256": "77d8282750a6fb6fd8a7e9b2802a3bdc4bb49a59b763c4bd3b40caed85de07aa",
+      "reference_results": "results/V4_logit/20261112_slack_logit_Bertrand_v1/cells/70d6cef8e0806794/attempt-0001/results.json",
+      "reference_analytical": "results/V4_logit/20261112_slack_logit_Bertrand_v1/cells/70d6cef8e0806794/attempt-0001/analytical.json",
+      "reference_receipt": "results/V4_logit/20261112_slack_logit_Bertrand_v1/cells/70d6cef8e0806794/attempt-0001/COMPLETE.json",
+      "saved_references": [
+        {
+          "path": "results/V4_logit/20261112_slack_logit_Bertrand_v1/cells/70d6cef8e0806794/attempt-0001/COMPLETE.json",
+          "sha256": "19fce46a95a5101d0ef4f8b2f71eb9651bf1728eb46a656aa9489b142a014e5a"
+        },
+        {
+          "path": "results/V4_logit/20261112_slack_logit_Bertrand_v1/cells/70d6cef8e0806794/attempt-0001/results.json",
+          "sha256": "acfb1bbbfbafe1f2b759fd8df3166eeb94cef0630a5328462f38d2afec877732"
+        },
+        {
+          "path": "results/V4_logit/20261112_slack_logit_Bertrand_v1/cells/70d6cef8e0806794/attempt-0001/analytical.json",
+          "sha256": "204024920fc587c23b971ec101205dfc6590c5756588669a5e3637faf2c42a32"
+        }
+      ],
+      "source_spec": "config/benchmarks/V3_MR3_logit_symmetric_permuted.json",
+      "source_spec_sha256": "cb14c5ce73ab7c41f7e9cf9f5c0251d64677293e5ed964969e819e3eb5d9902c",
+      "compiled_spec_hash": "6bef7be1795042ab519a18c7d7c6abd0ebcf1fd6e4f0f164f638dfab5cbb9bf3",
+      "mapping": {
+        "old_to_new": {
+          "airports": {
+            "O": "P0",
+            "D": "P1"
+          },
+          "carriers": {
+            "A": "C0",
+            "B": "C1"
+          },
+          "legs": {
+            "A_OD": "L0",
+            "B_OD": "L1"
+          },
+          "products": {
+            "A_OD": "J0",
+            "B_OD": "J1"
+          },
+          "markets": {
+            "OD": "M0"
+          }
+        },
+        "new_to_old_products": [
+          1,
+          0
+        ],
+        "new_to_old_legs": [
+          1,
+          0
+        ],
+        "new_to_old_carriers": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "kind": "logit",
+      "case": "logit_asymmetric",
+      "original_source": "config/benchmarks/V4_logit_asymmetric_v1.json",
+      "original_source_sha256": "6853b058a3da0232b3e5afd1b3ea302df187181dd678f060e6a09a3a0d50584d",
+      "reference_results": "results/V4_logit/20261112_slack_logit_Bertrand_v1/cells/a49c91e7298e3408/attempt-0001/results.json",
+      "reference_analytical": "results/V4_logit/20261112_slack_logit_Bertrand_v1/cells/a49c91e7298e3408/attempt-0001/analytical.json",
+      "reference_receipt": "results/V4_logit/20261112_slack_logit_Bertrand_v1/cells/a49c91e7298e3408/attempt-0001/COMPLETE.json",
+      "saved_references": [
+        {
+          "path": "results/V4_logit/20261112_slack_logit_Bertrand_v1/cells/a49c91e7298e3408/attempt-0001/COMPLETE.json",
+          "sha256": "9212dba43cd9f227eef6ecc0dc16676d0b2ca4fadc301660d2969e43385d5ac1"
+        },
+        {
+          "path": "results/V4_logit/20261112_slack_logit_Bertrand_v1/cells/a49c91e7298e3408/attempt-0001/results.json",
+          "sha256": "0e954a85948c3c1c5ccd1de9e1aa0798ed7683b3450b7187914c8a99fc7fd0ee"
+        },
+        {
+          "path": "results/V4_logit/20261112_slack_logit_Bertrand_v1/cells/a49c91e7298e3408/attempt-0001/analytical.json",
+          "sha256": "29bb6148a1fd04d44ddfd03bf8c9441e80f5b755278f215b6f486171a9c7bd7b"
+        }
+      ],
+      "source_spec": "config/benchmarks/V3_MR3_logit_asymmetric_permuted.json",
+      "source_spec_sha256": "ca2a608cad0496cec0a1aca575e67ecd6bba94ef64b46262a79688ad49f74a7f",
+      "compiled_spec_hash": "54dcf309eb118840cd3f5f6bb143f77affd11bf072af3a611e790011c24e6150",
+      "mapping": {
+        "old_to_new": {
+          "airports": {
+            "O": "P0",
+            "D": "P1"
+          },
+          "carriers": {
+            "A": "C0",
+            "B": "C1"
+          },
+          "legs": {
+            "A_OD": "L0",
+            "B_OD": "L1"
+          },
+          "products": {
+            "A_OD": "J0",
+            "B_OD": "J1"
+          },
+          "markets": {
+            "OD": "M0"
+          }
+        },
+        "new_to_old_products": [
+          1,
+          0
+        ],
+        "new_to_old_legs": [
+          1,
+          0
+        ],
+        "new_to_old_carriers": [
+          1,
+          0
+        ]
+      }
+    }
+  ],
+  "out": "results/V3_relabel/20261112_saved_original_permutations_v1",
+  "workers": 1,
+  "memory_budget_gb": 1.0,
+  "limits": {
+    "seconds": 14400,
+    "rss_gb": 1.0
+  }
+}

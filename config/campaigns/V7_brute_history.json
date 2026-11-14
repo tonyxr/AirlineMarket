@@ -1,0 +1,195 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "V7_brute_history",
+  "phase": 2,
+  "implementation_revision": "explicit-binary-history-v1",
+  "task": "study:airline_market.experiments.verification_study:enumerate_micro",
+  "design": "list",
+  "cells": [
+    {
+      "T": 3,
+      "own_capacity": 1,
+      "rival_support": [
+        1,
+        2
+      ],
+      "arrival": 0.4,
+      "share_weight": 0.0,
+      "reservation_gb": 1
+    },
+    {
+      "T": 3,
+      "own_capacity": 1,
+      "rival_support": [
+        1,
+        2
+      ],
+      "arrival": 0.4,
+      "share_weight": 0.2,
+      "reservation_gb": 1
+    },
+    {
+      "T": 3,
+      "own_capacity": 1,
+      "rival_support": [
+        1,
+        2
+      ],
+      "arrival": 0.9,
+      "share_weight": 0.0,
+      "reservation_gb": 1
+    },
+    {
+      "T": 3,
+      "own_capacity": 1,
+      "rival_support": [
+        1,
+        2
+      ],
+      "arrival": 0.9,
+      "share_weight": 0.2,
+      "reservation_gb": 1
+    },
+    {
+      "T": 3,
+      "own_capacity": 1,
+      "rival_support": [
+        0,
+        2
+      ],
+      "arrival": 0.4,
+      "share_weight": 0.0,
+      "reservation_gb": 1
+    },
+    {
+      "T": 3,
+      "own_capacity": 1,
+      "rival_support": [
+        0,
+        2
+      ],
+      "arrival": 0.4,
+      "share_weight": 0.2,
+      "reservation_gb": 1
+    },
+    {
+      "T": 3,
+      "own_capacity": 1,
+      "rival_support": [
+        0,
+        2
+      ],
+      "arrival": 0.9,
+      "share_weight": 0.0,
+      "reservation_gb": 1
+    },
+    {
+      "T": 3,
+      "own_capacity": 1,
+      "rival_support": [
+        0,
+        2
+      ],
+      "arrival": 0.9,
+      "share_weight": 0.2,
+      "reservation_gb": 1
+    },
+    {
+      "T": 3,
+      "own_capacity": 2,
+      "rival_support": [
+        1,
+        2
+      ],
+      "arrival": 0.4,
+      "share_weight": 0.0,
+      "reservation_gb": 1
+    },
+    {
+      "T": 3,
+      "own_capacity": 2,
+      "rival_support": [
+        1,
+        2
+      ],
+      "arrival": 0.4,
+      "share_weight": 0.2,
+      "reservation_gb": 1
+    },
+    {
+      "T": 3,
+      "own_capacity": 2,
+      "rival_support": [
+        1,
+        2
+      ],
+      "arrival": 0.9,
+      "share_weight": 0.0,
+      "reservation_gb": 1
+    },
+    {
+      "T": 3,
+      "own_capacity": 2,
+      "rival_support": [
+        1,
+        2
+      ],
+      "arrival": 0.9,
+      "share_weight": 0.2,
+      "reservation_gb": 1
+    },
+    {
+      "T": 3,
+      "own_capacity": 2,
+      "rival_support": [
+        0,
+        2
+      ],
+      "arrival": 0.4,
+      "share_weight": 0.0,
+      "reservation_gb": 1
+    },
+    {
+      "T": 3,
+      "own_capacity": 2,
+      "rival_support": [
+        0,
+        2
+      ],
+      "arrival": 0.4,
+      "share_weight": 0.2,
+      "reservation_gb": 1
+    },
+    {
+      "T": 3,
+      "own_capacity": 2,
+      "rival_support": [
+        0,
+        2
+      ],
+      "arrival": 0.9,
+      "share_weight": 0.0,
+      "reservation_gb": 1
+    },
+    {
+      "T": 3,
+      "own_capacity": 2,
+      "rival_support": [
+        0,
+        2
+      ],
+      "arrival": 0.9,
+      "share_weight": 0.2,
+      "reservation_gb": 1
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1,
+  "limits": {
+    "seconds": 900,
+    "rss_gb": 1,
+    "max_nodes": 20000
+  },
+  "out": "results/V7/20261112_brute_history_v1",
+  "note": "16 predeclared T3 private-rival-inventory micro instances, each128complete deterministic binary own-sale-history policies. Forward physical integration and terminal accounting, no Bellman inside enumeration; compare both reference andcompact DP to1e-10. Other V7 requirements remain separate."
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "airline-departure-reconciliation/1",
+  "revision": "diversion-diagnostic-v1",
+  "scope": "config/data/primary_ord_2022.json",
+  "reporting_files": [
+    "data/raw/bts/ontime/zip/ontime_2022_4.zip",
+    "data/raw/bts/ontime/zip/ontime_2022_5.zip",
+    "data/raw/bts/ontime/zip/ontime_2022_6.zip",
+    "data/raw/bts/ontime/zip/ontime_2022_7.zip",
+    "data/raw/bts/ontime/zip/ontime_2022_8.zip",
+    "data/raw/bts/ontime/zip/ontime_2022_9.zip"
+  ],
+  "processing_results": "results/scoped_processing/20261111_ord_v1/results.json",
+  "out": "results/V1/20261111_departure_reconciliation_v1"
+}

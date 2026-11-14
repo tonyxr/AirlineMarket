@@ -1,0 +1,51 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "V7_PPO_frozen_pair",
+  "phase": 2,
+  "implementation_revision": "frozen-last-ppo-fresh1280-v1",
+  "task": "study:airline_market.experiments.checkpoint_pair_study:run",
+  "design": "list",
+  "fixed": {},
+  "cells": [
+    {
+      "source_spec": "results/F6_pilots/20261112_matched_learning_v1/cells/cd5d2b37352f6193/attempt-0001/spec.json",
+      "checkpoint": "results/F6_pilots/20261112_matched_learning_v1/cells/cd5d2b37352f6193/attempt-0001/last.pt",
+      "checkpoint_manifest": "results/F6_pilots/20261112_matched_learning_v1/cells/cd5d2b37352f6193/attempt-0001/checkpoint_manifest.json",
+      "parent_results": "results/F6_pilots/20261112_matched_learning_v1/cells/cd5d2b37352f6193/attempt-0001/results.json",
+      "parent_receipt": "results/F6_pilots/20261112_matched_learning_v1/cells/cd5d2b37352f6193/attempt-0001/COMPLETE.json",
+      "baseline_file": "results/F6_baselines/20261112_pilot_v1/cells/e2881d662ba98342/attempt-0001/baseline.json",
+      "baseline_results": "results/F6_baselines/20261112_pilot_v1/cells/e2881d662ba98342/attempt-0001/results.json",
+      "baseline_receipt": "results/F6_baselines/20261112_pilot_v1/cells/e2881d662ba98342/attempt-0001/COMPLETE.json",
+      "compiled_spec_hash": "9a4a8992ae2b0af80effdbaa17f2553cd145e639d86f83666f6bf271dcef1b7f",
+      "focal": "A",
+      "arm": "direct",
+      "seed_start": 203008,
+      "n_cohorts": 1280,
+      "reservation_gb": 1.0,
+      "input_hashes": {
+        "results/F6_pilots/20261112_matched_learning_v1/cells/cd5d2b37352f6193/attempt-0001/spec.json": "cd6f818b199bc7b79bde4449d25d066322daafe36ac18d61c1a05bbd5ca27270",
+        "results/F6_pilots/20261112_matched_learning_v1/cells/cd5d2b37352f6193/attempt-0001/last.pt": "c5aac7020c26d269f91e93797a72047b96444254ce913c21898f64b962b055be",
+        "results/F6_pilots/20261112_matched_learning_v1/cells/cd5d2b37352f6193/attempt-0001/checkpoint_manifest.json": "e0b5dd60428e241cee773c0b2740f99fbb5a50c68c31ac4e198514aac5419be6",
+        "results/F6_pilots/20261112_matched_learning_v1/cells/cd5d2b37352f6193/attempt-0001/results.json": "125af94d9f43630242bf1431f92e25f77550efa4bd16c33b3202c8e555f84096",
+        "results/F6_pilots/20261112_matched_learning_v1/cells/cd5d2b37352f6193/attempt-0001/COMPLETE.json": "e3688477fd40c5e8101e311a619982e7f8ce18aeba75118e131ad21535ce5f9c",
+        "results/F6_baselines/20261112_pilot_v1/cells/e2881d662ba98342/attempt-0001/baseline.json": "eb22a886cee86dd15ace49d985f63c6c2d50bc43cabb5b2095de881d8cfdb6c0",
+        "results/F6_baselines/20261112_pilot_v1/cells/e2881d662ba98342/attempt-0001/results.json": "69a20e7fb59209199ab1eb6f667074f430ca551b2b0da64f0d3379bbe8efebd5",
+        "results/F6_baselines/20261112_pilot_v1/cells/e2881d662ba98342/attempt-0001/COMPLETE.json": "bf1e21502fb4e45a7a6f8d96545840e18ad242c01ac75227bb24ffd57bc00fe5",
+        "results/F6_pilots/20261112_matched_learning_v1/cells/cd5d2b37352f6193/attempt-0001/config.json": "12a89f078f4ad69a25c58247a06b09004f02fe661b3b8db0b7ac27e258d369e9",
+        "results/F6_pilots/20261112_matched_learning_v1/cells/cd5d2b37352f6193/attempt-0001/pilot.json": "d990ee5ddce5c25a60762a1d93dc048486ad7b71cda860928fbec44ef324f2b2",
+        "results/F6_pilots/20261112_matched_learning_v1/cells/cd5d2b37352f6193/attempt-0001/learning.json": "8ecccf07dcfe94420bdfcb39764e15004b36fc12a2fa2ea97170a16a493aa08d",
+        "results/F6_baselines/20261112_pilot_v1/cells/e2881d662ba98342/attempt-0001/config.json": "1678b588e2d6596c794f3abf3e09067e6d6d6441e48e23c2d5bdc290fc8530be",
+        "results/F6_baselines/20261112_pilot_v1/cells/e2881d662ba98342/attempt-0001/spec.json": "cd6f818b199bc7b79bde4449d25d066322daafe36ac18d61c1a05bbd5ca27270",
+        "results/F5_tails/20261111_indexed_v1/cells/8d21618632b2af6c/attempt-0001/tails.json": "df810e10674b0d3e6c8ef2e2075ee1062745a92557fea2aea816a19ccf39116d"
+      }
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1.0,
+  "limits": {
+    "seconds": 14400,
+    "rss_gb": 1.0
+  },
+  "out": "results/V7_ppo/20261112_frozen_last_1280_v1",
+  "note": "Final-time last checkpoint of the original I0 flatPPO default20k NN0 pilot; chosen before fresh inference, no best.pt or retuning. Comparator saved full18-grid training64-cohort winner; not P1 validation-tuned or global fixed optimum. Native deterministic-inference normalized profit-plus-share J difference PPO minus frozen fixed, all1280 pairs; point criterion mean>=0. Fixed2000 whole-pair bootstrap95% is uncertainty context, no invented CI pass rule. No matching old training/evaluation rerun or final-test seeds."
+}

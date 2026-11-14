@@ -1,0 +1,125 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "S1_saved_metrics_batch7",
+  "plan": "v2.0",
+  "plan_id": "S1/R4",
+  "phase": "S",
+  "hypothesis": null,
+  "primary_contrast": "saved-policy pairwise MI and common-prefix first posted-fare divergence",
+  "budget_key": "S1_saved_metrics",
+  "implementation_revision": "saved_policy_metrics_adapter_v2_rng_scope",
+  "generator": "pinned_saved_policies",
+  "task": "study:airline_market.experiments.screen_metrics_study_v2:run",
+  "design": "list",
+  "cells": [
+    {
+      "plan_id": "S1/R4",
+      "source_root": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2",
+      "setting_id": "r1-13-rival-lag0",
+      "source_spec_sha256": "e591369f94d6281219b6a18d27a62cf04a25feb3ffb94ed9cfccecd881017475",
+      "reservation_gb": 0.5,
+      "pinned_files": [
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/2416b9f6103529f8/attempt-0001/COMPLETE.json",
+          "sha256": "c3052ff56e401c8f984c63f260ee06b3d2b94f307ad215934375c8d1a3a0cf3f"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/2416b9f6103529f8/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "90df045cf7dd50753a373882cd6e20e8e695cfa3a97df6f0489af86c252f3153"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/2416b9f6103529f8/attempt-0001/results.json",
+          "sha256": "7f6aa1d1d2cb668d1e6c857a95aba1db22943560fe3670b046b483d597bd1d36"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/2b844149d19e4b66/attempt-0001/COMPLETE.json",
+          "sha256": "57fc60b125c454e3a31ca738f1c55c87073b48488a343636e4b640ce219b7a62"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/2b844149d19e4b66/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "71fadcace52965576e66dcd9664f787b203def03fcd437e45a894460012de44c"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/2b844149d19e4b66/attempt-0001/results.json",
+          "sha256": "e0e79b3c4ef6caa0bef31836d63248eaf71ffb1828471112156f6b738fc95c8c"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/5402bbb8206b7725/attempt-0001/COMPLETE.json",
+          "sha256": "dbec806ce3273504877831319d1cf5569c02b541c8b2b4856a0a9161fda01e99"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/5402bbb8206b7725/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "a1bf1e0884878e41a53ab37b172db95a18cd87288083a257377d8e373ec66882"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/5402bbb8206b7725/attempt-0001/results.json",
+          "sha256": "e02b4bf13c4b434e9bd69497889d100507c44c57150c00ebbd87ef9a2b1e2d4c"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/6b0596ae7b26f8d5/attempt-0001/COMPLETE.json",
+          "sha256": "094b962c90f590ebb95aeb48e03e54e65250dfae3dabea87977d19db91c564fb"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/6b0596ae7b26f8d5/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "47eeaac515d410928b3462628ffb713aee184f92833266bc7900576332f4cb47"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/6b0596ae7b26f8d5/attempt-0001/results.json",
+          "sha256": "949d8c0c818f449452db03421f6c626276cda6b2e6394fe216c7469c1b894f22"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/91d9c3e7b053fe21/attempt-0001/COMPLETE.json",
+          "sha256": "56ab20469f8896515e30320616c1b7531862100e68d14aaf59333e0a6cb9fc7c"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/91d9c3e7b053fe21/attempt-0001/optimal_policy.pkl.gz",
+          "sha256": "6521ba71132014ec18a70a86ff76203f34f2a990c2e9b7e2b20629763fb85b93"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells/91d9c3e7b053fe21/attempt-0001/results.json",
+          "sha256": "2c5427420e932e5dd67cea296a055d006bd1cd42fc1b58be0494b5b6d3e7c6e2"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/cells.json",
+          "sha256": "5f2c3adef779cf0edb1d08f614ee39609f2fc36371ff56b71f648de2745c8dcd"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/config.json",
+          "sha256": "a5f1e84f36e91c24deeeb1006bcdf5d840cf24e2eb98f3997d4a69b0b4e853a7"
+        },
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/results/S1/20261113_round1_v2/source_specs/r1-13-rival-lag0.json",
+          "sha256": "e591369f94d6281219b6a18d27a62cf04a25feb3ffb94ed9cfccecd881017475"
+        }
+      ],
+      "policy_hash_scope": "post-completion snapshots, not original transitive seals"
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 0.5,
+  "limits": {
+    "seconds": 14400,
+    "rss_gb": 0.5,
+    "reservation_gb": 0.5
+  },
+  "out": "results/S1_policy_metrics/20261113_batch7_v2",
+  "log_path": "EXPERIMENT_LOG.md",
+  "scientific_budget": null,
+  "resource_scope": "Reuse released event/analysis slot .5 GiB; S1 source 10.5 GiB + F4 1 GiB + metrics .5 GiB =12 GiB. One worker.",
+  "count_scope": "All newly ready settings in source order; all 46 prior registered IDs excluded regardless of outcome",
+  "new_physical_seed_range": null,
+  "source_validation_seed_range": [
+    220000,
+    229999
+  ],
+  "provenance_scope": "Reference-constructor RNG explicit; raw RNG-call count null; no sampled physical cohorts/Bellman optimization",
+  "prior_batch": "results/S1_policy_metrics/20261113_batch1_v1",
+  "prior_batches": [
+    "results/S1_policy_metrics/20261113_batch1_v1",
+    "results/S1_policy_metrics/20261113_batch2_v2",
+    "results/S1_policy_metrics/20261113_batch3_v2",
+    "results/S1_policy_metrics/20261113_batch4_v2",
+    "results/S1_policy_metrics/20261113_batch5_v2",
+    "results/S1_policy_metrics/20261113_batch6_v2"
+  ]
+}

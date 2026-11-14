@@ -1,0 +1,97 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "F1_reference_remaining",
+  "phase": 1,
+  "implementation_revision": "reference-check-remaining-v1",
+  "task": "exact_dp",
+  "generator": "toy_hub",
+  "design": "list",
+  "cells": [
+    {
+      "instance": "I0",
+      "T": 3,
+      "actions": 2,
+      "arm": "full_state",
+      "backend": "reference",
+      "reservation_gb": 1,
+      "expected_compact_value": 0.34896353675515596,
+      "expected_spec_hash": "7f571d6b3aa71d713d5a4396a2fc0e2204ce72c36b9fdab5b16ec951ce19465a",
+      "compact_source_cell": "results/F1/20261111-2232_2a95d844/cells/fc200f31afa42017/attempt-0001"
+    },
+    {
+      "instance": "I0",
+      "T": 3,
+      "actions": 2,
+      "arm": "oracle",
+      "backend": "reference",
+      "reservation_gb": 1,
+      "expected_compact_value": 0.34896353675515596,
+      "expected_spec_hash": "7f571d6b3aa71d713d5a4396a2fc0e2204ce72c36b9fdab5b16ec951ce19465a",
+      "compact_source_cell": "results/F1/20261111-2232_2a95d844/cells/2a05c5a8d77b5104/attempt-0001"
+    },
+    {
+      "instance": "I0",
+      "T": 3,
+      "actions": 2,
+      "arm": "unrelated",
+      "backend": "reference",
+      "reservation_gb": 1,
+      "expected_compact_value": 0.34896353675515596,
+      "expected_spec_hash": "7f571d6b3aa71d713d5a4396a2fc0e2204ce72c36b9fdab5b16ec951ce19465a",
+      "compact_source_cell": "results/F1/20261111-2232_2a95d844/cells/865ba17328041ece/attempt-0001"
+    },
+    {
+      "instance": "I0",
+      "T": 5,
+      "actions": 4,
+      "arm": "direct",
+      "backend": "reference",
+      "reservation_gb": 1,
+      "expected_compact_value": 0.7673543330199795,
+      "expected_spec_hash": "f65f117589f45453d3f109b3ad5fe0d5bbbdde7e915419aeecd15010af91ea00",
+      "compact_source_cell": "results/F1/20261111-2232_2a95d844/cells/880e3d9851586e1a/attempt-0001"
+    },
+    {
+      "instance": "I0",
+      "T": 5,
+      "actions": 4,
+      "arm": "linked",
+      "backend": "reference",
+      "reservation_gb": 1,
+      "expected_compact_value": 0.7673674158265947,
+      "expected_spec_hash": "f65f117589f45453d3f109b3ad5fe0d5bbbdde7e915419aeecd15010af91ea00",
+      "compact_source_cell": "results/F1/20261111-2232_2a95d844/cells/187429c11fb7e6b3/attempt-0001"
+    },
+    {
+      "instance": "I0",
+      "T": 5,
+      "actions": 4,
+      "arm": "oracle",
+      "backend": "reference",
+      "reservation_gb": 1,
+      "expected_compact_value": 0.7673674158265948,
+      "expected_spec_hash": "f65f117589f45453d3f109b3ad5fe0d5bbbdde7e915419aeecd15010af91ea00",
+      "compact_source_cell": "results/F1/20261111-2232_2a95d844/cells/a479eeb355b3004b/attempt-0001"
+    },
+    {
+      "instance": "I0",
+      "T": 5,
+      "actions": 4,
+      "arm": "unrelated",
+      "backend": "reference",
+      "reservation_gb": 1,
+      "expected_compact_value": 0.7673543330199795,
+      "expected_spec_hash": "f65f117589f45453d3f109b3ad5fe0d5bbbdde7e915419aeecd15010af91ea00",
+      "compact_source_cell": "results/F1/20261111-2232_2a95d844/cells/1db69cfbcd7a7961/attempt-0001"
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1,
+  "limits": {
+    "seconds": 14400,
+    "rss_gb": 1,
+    "max_nodes": 20000
+  },
+  "out": "results/F1_reference/20261111_remaining_completed_v1",
+  "note": "Remaining completed compact <=20k-node anchors, excluding two already checked cells. General reference ceiling 20k nodes, 4h and 1GiB. A reference limit cannot be counted as value agreement; primary F1 limits remain unchanged."
+}

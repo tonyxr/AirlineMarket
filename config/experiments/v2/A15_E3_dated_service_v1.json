@@ -1,0 +1,96 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "A15_E3_dated_service_v1",
+  "plan": "v2.0",
+  "plan_id": "A.15/V10",
+  "phase": "V",
+  "hypothesis": null,
+  "primary_contrast": "none; dated observed-service and cancellation preparation",
+  "budget_key": "A.15",
+  "implementation_revision": "E3_dated_marketing_v1",
+  "generator": "saved_scope_new_schedule_projection",
+  "task": "study:airline_market.experiments.event_network_study:run",
+  "design": "list",
+  "workers": 1,
+  "memory_budget_gb": 1,
+  "limits": {
+    "seconds": 7200,
+    "rss_gb": 1,
+    "reservation_gb": 1
+  },
+  "out": "results/Paper2_data/20261113_E3_dated_service_v1",
+  "log_path": "EXPERIMENT_LOG.md",
+  "scientific_budget": null,
+  "cells": [
+    {
+      "plan_id": "A.15/V10",
+      "reservation_gb": 1,
+      "marketing_sources": [
+        {
+          "path": "data/raw/bts/ontime_mkt/zip/v2_ontime_mkt_2026_1.zip",
+          "sha256": "7cd6b613cc6b15f680b640646058bfdeded4f8cd3aed261fdb9d546778fd3fa3",
+          "year": 2026,
+          "month": 1,
+          "acquisition_receipt": "results/data_acquisition/files/V2_ontime_mkt_2026_1.json"
+        },
+        {
+          "path": "data/raw/bts/ontime_mkt/zip/v2_ontime_mkt_2026_2.zip",
+          "sha256": "dd8f6b364a8800672826ac09088462ec4758263a8530e38025c3a416c402e4e1",
+          "year": 2026,
+          "month": 2,
+          "acquisition_receipt": "results/data_acquisition/files/V2_ontime_mkt_2026_2.json"
+        },
+        {
+          "path": "data/raw/bts/ontime_mkt/zip/v2_ontime_mkt_2026_3.zip",
+          "sha256": "f34549671f697eb6624c2b920b7b9b40f1e0685d3f86521f0e5dbb4685a08a85",
+          "year": 2026,
+          "month": 3,
+          "acquisition_receipt": "results/data_acquisition/files/V2_ontime_mkt_2026_3.json"
+        },
+        {
+          "path": "data/raw/bts/ontime_mkt/zip/v2_ontime_mkt_2026_4.zip",
+          "sha256": "06d280a45c22dc93730706108c26fc3c4f13867fd9ee636dba5f43b7ac6cbeb6",
+          "year": 2026,
+          "month": 4,
+          "acquisition_receipt": "results/data_acquisition/files/V2_ontime_mkt_2026_4.json"
+        },
+        {
+          "path": "data/raw/bts/ontime_mkt/zip/v2_ontime_mkt_2026_5.zip",
+          "sha256": "0994a5cf73b8a59d86783c35cd7cb9dc391ff9e473e49bbee22d5edb4794848e",
+          "year": 2026,
+          "month": 5,
+          "acquisition_receipt": "results/data_acquisition/files/V2_ontime_mkt_2026_5.json"
+        },
+        {
+          "path": "data/raw/bts/ontime_mkt/zip/v2_ontime_mkt_2026_6.zip",
+          "sha256": "f5c78f215201f0f53b9bc706cc878b4d2524bc44cc83db92f5d53bd1c5bd041d",
+          "year": 2026,
+          "month": 6,
+          "acquisition_receipt": "results/data_acquisition/files/V2_ontime_mkt_2026_6.json"
+        },
+        {
+          "path": "data/raw/bts/ontime_mkt/zip/v2_ontime_mkt_2026_7.zip",
+          "sha256": "cf919e175c05b7d542cc3a4896d367cdf32d3ede7099bea4b68edd3a1e71610e",
+          "year": 2026,
+          "month": 7,
+          "acquisition_receipt": "results/data_acquisition/files/V2_ontime_mkt_2026_7.json"
+        },
+        {
+          "path": "data/raw/bts/ontime_mkt/zip/v2_ontime_mkt_2026_8.zip",
+          "sha256": "cd06facf93947687d781626fa7377761ffe9bedc0845a56379e802516be1bceb",
+          "year": 2026,
+          "month": 8,
+          "acquisition_receipt": "results/data_acquisition/files/V2_ontime_mkt_2026_8.json"
+        }
+      ],
+      "candidate_scope": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/E3_candidate_scope.json",
+      "candidate_scope_sha256": "567ba2bf034f6f54196e8f05bb17a6325d465491f0610517fadee711a8f2a7df",
+      "candidate_scope_hash_scope": "post-completion saved candidate snapshot; not retroactive original transitive seal",
+      "timezone_config": "config/data/v2/E3_airport_timezones_v1.json",
+      "timezone_config_sha256": "207ebc8be4c6f9ed5d79af0f93802b848160386f060642f809e00977eb859cc0",
+      "physical_cohorts": null,
+      "fit": false,
+      "expected_scope_pairs": 165
+    }
+  ]
+}

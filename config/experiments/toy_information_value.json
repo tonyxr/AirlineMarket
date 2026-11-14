@@ -1,0 +1,90 @@
+{
+  "schema": "airline-experiment-config/1",
+  "name": "toy_information_value",
+  "spec": "airline_market/spec/library/toy_hub.json",
+  "focal": "A",
+  "seeds": {
+    "train": [
+      100,
+      64
+    ],
+    "validation": [
+      5000,
+      32
+    ],
+    "test": [
+      10000,
+      128
+    ],
+    "planning_master": 773
+  },
+  "methods": [
+    {
+      "name": "fixed",
+      "solver": "fixed_grid",
+      "arm": "direct"
+    },
+    {
+      "name": "direct",
+      "solver": "mpc",
+      "arm": "direct",
+      "params": {
+        "n_scenarios": 256,
+        "selection": "split"
+      }
+    },
+    {
+      "name": "linked",
+      "solver": "mpc",
+      "arm": "linked",
+      "params": {
+        "n_scenarios": 256,
+        "selection": "split"
+      }
+    },
+    {
+      "name": "unrelated",
+      "solver": "mpc",
+      "arm": "unrelated",
+      "params": {
+        "n_scenarios": 256,
+        "selection": "split"
+      }
+    },
+    {
+      "name": "oracle",
+      "solver": "mpc",
+      "arm": "oracle",
+      "params": {
+        "n_scenarios": 256,
+        "selection": "split"
+      }
+    }
+  ],
+  "contrasts": [
+    [
+      "linked",
+      "direct"
+    ],
+    [
+      "unrelated",
+      "direct"
+    ],
+    [
+      "oracle",
+      "direct"
+    ],
+    [
+      "direct",
+      "fixed"
+    ]
+  ],
+  "expect_identical": [
+    [
+      "unrelated",
+      "direct"
+    ]
+  ],
+  "workers": 4,
+  "legacy_tapes": false
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "target": "airline_market/vendor/ride_response/paired.py",
+    "source": "/Users/huali/Desktop/RideResponse/continuous_benchmarks.py",
+    "ranges": [
+      [
+        53,
+        73
+      ],
+      [
+        126,
+        142
+      ],
+      [
+        420,
+        426
+      ]
+    ],
+    "sha256": "1ea5279fa2f11ef1d88c9331eb2f0e21f84c6bedd6fb624b69c2070e4d3743cc",
+    "mode": "verbatim definitions; independent import header"
+  },
+  {
+    "target": "airline_market/vendor/ride_response/cem.py",
+    "source": "/Users/huali/Desktop/RideResponse/continuous_benchmarks.py",
+    "ranges": [
+      [
+        596,
+        612
+      ],
+      [
+        615,
+        695
+      ]
+    ],
+    "sha256": "1ea5279fa2f11ef1d88c9331eb2f0e21f84c6bedd6fb624b69c2070e4d3743cc",
+    "mode": "verbatim definitions; independent import header"
+  },
+  {
+    "target": "airline_market/vendor/ride_response/calendar.py",
+    "source": "/Users/huali/Desktop/RideResponse/market_shocks.py",
+    "ranges": [
+      [
+        73,
+        89
+      ]
+    ],
+    "sha256": "41e97204eb65de8751999b4bb6ad36566e4c7780135d2f9e2d59a09bf480e410",
+    "mode": "verbatim definitions; independent import header"
+  },
+  {
+    "target": "airline_market/vendor/ride_response/strategic.py",
+    "source": "/Users/huali/Desktop/RideResponse/rideshare_v26r_v17/strategic_benchmarks.py",
+    "ranges": [
+      [
+        1,
+        121
+      ]
+    ],
+    "sha256": "af7efd587668612e07c17d75a311656eb5c2bca0236cfbda3465a120c7d70ed5",
+    "mode": "verbatim"
+  },
+  {
+    "target": "airline_market/core/registry.py",
+    "source": "/Users/huali/Desktop/RideResponse/model_registry.py",
+    "ranges": [
+      [
+        1,
+        108
+      ]
+    ],
+    "sha256": "d161e56101cf95e28464782dda66f31e6e3155eb7ff43f84eedd22094f68bf4b",
+    "mode": "adapted: project default registry directory"
+  },
+  {
+    "target": "airline_market/core/journal.py",
+    "source": "/Users/huali/Desktop/RideResponse/rideshare_v26r_v17/diagnostic_logging.py",
+    "ranges": [
+      [
+        1,
+        137
+      ]
+    ],
+    "sha256": "49b865793287bb0e16bc4f35a4ed2306102563ae2adb5d097be6398ca911e725",
+    "mode": "adapted: training_step method name"
+  },
+  {
+    "target": "airline_market/vendor/ride_response/weather.py",
+    "source": "/Users/huali/Desktop/RideResponse/city_data_pipeline.py",
+    "ranges": [
+      [
+        78,
+        86
+      ],
+      [
+        693,
+        697
+      ],
+      [
+        749,
+        766
+      ],
+      [
+        768,
+        779
+      ]
+    ],
+    "sha256": "3d0a11f625c987ca388b0b0e7635a411823d0c27b91275b65849faa04bdd9aa1",
+    "mode": "adapted airport-neutral nearest index"
+  },
+  {
+    "target": "airline_market/vendor/ride_response/recurrent",
+    "source": "/Users/huali/Desktop/RideResponse/recurrent_ppo.py",
+    "sha256": "f40020975bddb817b157187842b8d06aa41ad85a5467a819ec9830db40724a12",
+    "mode": "adapted; exact definition ranges in REUSE.md"
+  },
+  {
+    "target": "airline_market/vendor/ride_response/recurrent",
+    "source": "/Users/huali/Desktop/RideResponse/recurrent_sac.py",
+    "sha256": "291233fbca949cbc24956f1ad059298cf99735a64014eab5498345073a102414",
+    "mode": "adapted; exact definition ranges in REUSE.md"
+  }
+]

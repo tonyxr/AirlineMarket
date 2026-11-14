@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "airline-market"
+version = "1.0.0"
+description = "Specified, reproducible airline network competition framework"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3", "scipy>=1.11"]
+
+[project.optional-dependencies]
+data = ["pandas>=2.2", "pyarrow>=14"]
+rl = ["torch>=2.2"]
+sbi = ["sbi"]
+dev = ["pytest", "hypothesis"]
+study = ["matplotlib>=3.8", "psutil>=5.9"]
+
+[project.scripts]
+airline-experiment = "airline_market.legacy_toy.experiment:main"
+airline-market = "airline_market.cli.main:main"
+
+[tool.setuptools.packages.find]
+include = ["airline_market*"]
+
+[tool.setuptools.package-data]
+airline_market = ["spec/library/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-m 'not slow'"
+markers = ["slow: expensive reference reproduction or factorial experiments"]
+
+[tool.ruff]
+target-version = "py310"
+extend-exclude = ["airline_market/legacy_toy", "airline_market/vendor", "review_2026-11-11"]

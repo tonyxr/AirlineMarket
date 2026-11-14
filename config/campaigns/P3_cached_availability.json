@@ -1,0 +1,31 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "P3_cached_availability",
+  "phase": 3,
+  "implementation_revision": "cached-binary-sellability-v1",
+  "task": "study:airline_market.experiments.availability_study:measure_cached",
+  "design": "list",
+  "cells": [
+    {
+      "prepared_attempt": "results/P3/20261112_behavioral_initialization_v1/cells/17802509f93cff73/attempt-0001",
+      "spec_sha256": "e02dfb1cbb910fcb18235d01e98906f22bf2b15667599c9e411320d14b915ee7",
+      "fee_proxy_sha256": "226e03aca8fbd4f2dd9e76c2040a83079405bb3fac0822e2cbbfbf5ea7dfa398",
+      "seed": 400001,
+      "tape_layout": "market_local_v1",
+      "engine_mode": "counted_sparse",
+      "run_cohort": true,
+      "reservation_gb": 1,
+      "baseline_result": "results/P3/20261112_market_local_resource_v1/cells/4cc9fb180fb3b2ac/attempt-0001/results.json",
+      "baseline_result_sha256": "0a5bf9e272f82f1347cb1c0ff8f3b2142de2e17b0bba967da5844d84a92ddb5e"
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1,
+  "limits": {
+    "seconds": 900,
+    "rss_gb": 1,
+    "max_nodes": 1
+  },
+  "out": "results/P3/20261112_cached_availability_v1",
+  "note": "Newexactavailabilitycache revision on samefrozenphysicalspec,localtape andcalibrationseed400001 as completedcoldbaseline. No original timingcell rerun. Full scientificaggregateoutputs mustmatch savedbaseline exactly. Full inventory remains in prices/quotes; onlybinaryincidence feasibility is cachedbyexhaustedlegmask. One cold observation under contention doesnotselect calibrationbudget orF3acceptance; keepnegativeoutcomes."
+}

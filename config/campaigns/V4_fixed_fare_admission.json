@@ -1,0 +1,51 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "V4_fixed_fare_admission",
+  "phase": 2,
+  "implementation_revision": "native_ledger_revealed_class_v1",
+  "generator": "toy_hub",
+  "task": "study:airline_market.experiments.fixed_fare_study:run",
+  "design": "list",
+  "cells": [
+    {
+      "problem": "config/benchmarks/V4_fixed_fare_single_two_class.json",
+      "problem_sha256": "c94d081d3719638d75f10da07c3857fb56530a56e139cc40fc2f05d4f980737f",
+      "design_registration": "results/fixed_fare_tooling/design_registration.json",
+      "design_registration_sha256": "b39bfc4dc77c526f54a2c3d671be7e32661694f5de3db48a2edbad0640526319",
+      "tolerance": 1e-10,
+      "max_nodes": 100000
+    },
+    {
+      "problem": "config/benchmarks/V4_fixed_fare_single_three_class.json",
+      "problem_sha256": "fe4e36f4f8e278867c47cc9a259efa5caf769dec4802b66b9dd3a3165708f0d3",
+      "design_registration": "results/fixed_fare_tooling/design_registration.json",
+      "design_registration_sha256": "b39bfc4dc77c526f54a2c3d671be7e32661694f5de3db48a2edbad0640526319",
+      "tolerance": 1e-10,
+      "max_nodes": 100000
+    },
+    {
+      "problem": "config/benchmarks/V4_fixed_fare_two_leg_network.json",
+      "problem_sha256": "43e1afaa08a5ec9eefea374d0aa1ada2c6579ea75a8ce0aa57dba43d6ba896c6",
+      "design_registration": "results/fixed_fare_tooling/design_registration.json",
+      "design_registration_sha256": "b39bfc4dc77c526f54a2c3d671be7e32661694f5de3db48a2edbad0640526319",
+      "tolerance": 1e-10,
+      "max_nodes": 100000
+    },
+    {
+      "problem": "config/benchmarks/V4_fixed_fare_reject_low_for_high.json",
+      "problem_sha256": "4301ab1b8930ab24f9c420401ea5661affd2b4a2c9656be90ac267e7c6086596",
+      "design_registration": "results/fixed_fare_tooling/design_registration.json",
+      "design_registration_sha256": "b39bfc4dc77c526f54a2c3d671be7e32661694f5de3db48a2edbad0640526319",
+      "tolerance": 1e-10,
+      "max_nodes": 100000
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1.0,
+  "limits": {
+    "seconds": 3600,
+    "rss_gb": 1.0,
+    "reservation_gb": 1.0
+  },
+  "out": "results/V4_fixed_fare/20261113_native_ledger_admission_v1"
+}

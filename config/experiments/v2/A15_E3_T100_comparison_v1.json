@@ -1,0 +1,73 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "A15_E3_T100_comparison_v1",
+  "plan": "v2.0",
+  "plan_id": "A.15/V10",
+  "phase": "V",
+  "hypothesis": null,
+  "primary_contrast": "none; source/departure/implied-seat comparison, no native model adopted",
+  "budget_key": "A.15",
+  "implementation_revision": "E3_T100_outer_join_v1",
+  "generator": "prepared_service_and_existing_T100",
+  "task": "study:airline_market.experiments.event_seats_study:run",
+  "design": "list",
+  "workers": 1,
+  "memory_budget_gb": 1,
+  "limits": {
+    "seconds": 7200,
+    "rss_gb": 1,
+    "reservation_gb": 1
+  },
+  "out": "results/Paper2_data/20261113_E3_T100_comparison_v1",
+  "log_path": "EXPERIMENT_LOG.md",
+  "scientific_budget": null,
+  "cells": [
+    {
+      "plan_id": "A.15/V10",
+      "reservation_gb": 1,
+      "T100_archive": "data/raw/bts/t100/zip/t100_segment_2026.zip",
+      "source_parquet": "results/Paper2_data/20261113_E3_dated_service_v1/cells/c7a15283d27c91a1/attempt-0001/source_rows.parquet",
+      "candidate_scope": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/E3_candidate_scope.json",
+      "coverage_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "coverage_record": "results/v2_transition/T100_month_coverage_0451.json",
+      "pinned_files": [
+        {
+          "path": "results/Paper2_data/20261113_E3_dated_service_v1/cells/c7a15283d27c91a1/attempt-0001/source_rows.parquet",
+          "sha256": "5cc0bd056cc5542de14372594f9477a1fafe4aebbbd0e643f9027ef36e002147"
+        },
+        {
+          "path": "data/raw/bts/t100/zip/t100_segment_2026.zip",
+          "sha256": "bad7f45404433b7488bb25b5c12972a208e3d0c412b93cfb5603e50882e16801"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_dated_service_v1/cells/c7a15283d27c91a1/attempt-0001/results.json",
+          "sha256": "e9d35087df8e7e7a00cd6a5bcfdd4bac8cb56d376ce53f56b9aa426d50db684d"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_dated_service_v1/cells/c7a15283d27c91a1/attempt-0001/COMPLETE.json",
+          "sha256": "d5871c4b70842f7b52af9feef89336f918ba43386f09472ec6e60818b6179cc7"
+        },
+        {
+          "path": "results/v2_transition/T100_month_coverage_0451.json",
+          "sha256": "06505817c0efcbdb236e595f64c5726852185481770e0a4b7228c92b9be78aa2"
+        },
+        {
+          "path": "results/Paper2_data/20261113_E3_scoped_v2_dates/cells/7ab70c5f5731513d/attempt-0001/E3_candidate_scope.json",
+          "sha256": "567ba2bf034f6f54196e8f05bb17a6325d465491f0610517fadee711a8f2a7df"
+        }
+      ],
+      "primary_service_class": "F",
+      "all_service_classes_retained": true,
+      "missing_August_seats": "null",
+      "native_capacity_adopted": false
+    }
+  ]
+}

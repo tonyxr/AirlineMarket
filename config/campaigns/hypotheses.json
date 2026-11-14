@@ -1,0 +1,62 @@
+{
+  "schema": "airline-hypotheses/1",
+  "source_plan_sha256": "ba19d3af61c6544df71d5f8404a42b417c360ed75520556beaff9d4ac27135be",
+  "status": "prospectively_registered_before_test_release",
+  "planning_master": 773,
+  "hypotheses": [
+    {
+      "id": "H-A1",
+      "primary": "exact linked-minus-direct value / direct revenue",
+      "region": "connecting_share>=0.3; bottleneck=rival_feeder; prior in {wide,trimodal}; private rival capacity",
+      "threshold": 0.0025,
+      "negative_control": "resource-independent exact difference <=1e-12"
+    },
+    {
+      "id": "H-A2",
+      "primary": "factorization loss vs posterior mutual information",
+      "threshold": "mean loss>=0.5% of value where MI>=0.1 nats; positive clustered slope; LCE>=Lfact in >=80% of cells"
+    },
+    {
+      "id": "H-A3",
+      "primary": "relative linked value at hub / matched exact scale",
+      "threshold": 0.5
+    },
+    {
+      "id": "H-A4",
+      "primary": "linked value under common demand and rival misspecification",
+      "threshold": "report sign and magnitude; no invented numerical rejection threshold"
+    },
+    {
+      "id": "H-A5",
+      "primary": "strategic minus naive exact best response",
+      "threshold": "positive on at least one designed family"
+    },
+    {
+      "id": "H-B1",
+      "primary": "mechanical share of weather-induced fare spike",
+      "threshold": 0.5
+    },
+    {
+      "id": "H-B2",
+      "primary": "triggered 1.5x cap: consumer-surplus gain / profit loss",
+      "threshold": ">=2; stranded served within 48h not lower; 1.0x cap misallocation higher than 1.5x"
+    },
+    {
+      "id": "H-D1",
+      "primary": "SRL-CA environment steps to 95% of MPC / PPO steps, >=8 spokes",
+      "threshold": "<=0.25"
+    },
+    {
+      "id": "H-D2",
+      "primary": "network-credit policy-gradient variance reduction",
+      "threshold": ">=0.30"
+    }
+  ],
+  "analysis": {
+    "primary_fwer": "Holm alpha=0.05 within paper",
+    "secondary_fdr": "Benjamini-Hochberg q=0.10 exploratory",
+    "equivalence_revenue_margin": 0.001,
+    "bootstrap_replicates": 2000
+  },
+  "note": "The source mentions H-A6 in a pivot sentence but does not define it in its hypothesis table; monitoring design A6 remains exploratory until explicitly specified. Null/negative findings are retained."
+}

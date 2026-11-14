@@ -1,0 +1,61 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "F1_conditional_tail_pilot",
+  "phase": 1,
+  "implementation_revision": "conditional-tail-v1",
+  "task": "study:airline_market.experiments.conditional_tail_study:solve",
+  "design": "list",
+  "cells": [
+    {
+      "instance": "I0",
+      "T": 5,
+      "actions": 4,
+      "arm": "direct",
+      "backend": "compact",
+      "reservation_gb": 1,
+      "instance_generator": "toy_hub",
+      "source_spec": "results/F1/20261111-2232_2a95d844/cells/880e3d9851586e1a/attempt-0001/spec.json",
+      "source_spec_sha256": "095c4919a9bdc2b3415b0507fe08bf8827532001d6b0f9b7709754bd7172650a",
+      "source_result": "results/F1/20261111-2232_2a95d844/cells/880e3d9851586e1a/attempt-0001/results.json",
+      "expected_original_value": 0.7673543330199795,
+      "source_status": "solved"
+    },
+    {
+      "instance": "I0",
+      "T": 5,
+      "actions": 4,
+      "arm": "linked",
+      "backend": "compact",
+      "reservation_gb": 1,
+      "instance_generator": "toy_hub",
+      "source_spec": "results/F1/20261111-2232_2a95d844/cells/187429c11fb7e6b3/attempt-0001/spec.json",
+      "source_spec_sha256": "095c4919a9bdc2b3415b0507fe08bf8827532001d6b0f9b7709754bd7172650a",
+      "source_result": "results/F1/20261111-2232_2a95d844/cells/187429c11fb7e6b3/attempt-0001/results.json",
+      "expected_original_value": 0.7673674158265947,
+      "source_status": "solved"
+    },
+    {
+      "instance": "I0",
+      "T": 10,
+      "actions": 18,
+      "arm": "direct",
+      "backend": "compact",
+      "reservation_gb": 1,
+      "instance_generator": "toy_hub",
+      "source_spec": "results/F1/20261111-2232_2a95d844/cells/62cdded46487d789/attempt-0001/spec.json",
+      "source_spec_sha256": "cd6f818b199bc7b79bde4449d25d066322daafe36ac18d61c1a05bbd5ca27270",
+      "source_result": "results/F1/20261111-2232_2a95d844/cells/62cdded46487d789/attempt-0001/results.json",
+      "expected_original_value": null,
+      "source_status": "time_limit"
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1,
+  "limits": {
+    "seconds": 900,
+    "rss_gb": 1,
+    "max_nodes": 20000000
+  },
+  "out": "results/F1_conditional_tail/20261112_pilot_v1",
+  "note": "Prospective resource-bounded pilot while original linked frontier continues. Two saved T5/4-action anchors and original T10/18-action direct model; no original solve is rerun. 900s/1GiB pilot limits are stricter than registered4h/12GiB, so failure here cannot establish failure at the full F1 budget. Counts are prefix/final Bellman entries plus conditional physical-state vectors, not old belief-node counts. Full-budget execution must be memory-serialized with the old large job; reuse this result if solved without source/config changes."
+}

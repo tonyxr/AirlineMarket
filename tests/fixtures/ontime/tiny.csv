@@ -1,0 +1,7 @@
+FlightDate,Reporting_Airline,Flight_Number_Reporting_Airline,Origin,Dest,CRSDepTime,CRSArrTime,Cancelled,CancellationCode,Diverted
+2024-08-14,AS,1,PDX,SEA,800,900,0,,0
+2024-08-14,AS,2,SEA,LAX,1000,1200,0,,0
+2024-08-14,DL,3,PDX,SEA,800,900,0,,0
+2024-08-14,DL,4,SEA,LAX,1000,1200,0,,0
+2024-08-14,DL,5,SEA,SFO,1400,1600,1,W,0
+2024-08-15,AS,1,PDX,SEA,800,900,0,,0

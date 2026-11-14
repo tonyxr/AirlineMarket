@@ -1,0 +1,29 @@
+{
+  "schema": "airline-campaign/1",
+  "id": "P3_resource_probe",
+  "phase": 3,
+  "implementation_revision": "ord-market-local-resource-v1",
+  "task": "study:airline_market.experiments.empirical_preflight:measure",
+  "design": "list",
+  "cells": [
+    {
+      "prepared_attempt": "results/P3/20261112_behavioral_initialization_v1/cells/17802509f93cff73/attempt-0001",
+      "spec_sha256": "e02dfb1cbb910fcb18235d01e98906f22bf2b15667599c9e411320d14b915ee7",
+      "fee_proxy_sha256": "226e03aca8fbd4f2dd9e76c2040a83079405bb3fac0822e2cbbfbf5ea7dfa398",
+      "seed": 400001,
+      "tape_layout": "market_local_v1",
+      "engine_mode": "counted_sparse",
+      "run_cohort": true,
+      "reservation_gb": 1
+    }
+  ],
+  "workers": 1,
+  "memory_budget_gb": 1,
+  "limits": {
+    "seconds": 900,
+    "rss_gb": 1,
+    "max_nodes": 1
+  },
+  "out": "results/P3/20261112_market_local_resource_v1",
+  "note": "One full uncalibrated June15 behavioral cohort; record actual tape timing/storage before bounded cohort. Same native math with separately cross-checked counted/sparse primitives. Taste layout is newly declared iid/CRN, not bitwise old global tastes. 900s/1GiB is a resource probe, not the full calibration budget. Preserve any limit and already written tape evidence. Native profit uses gross fares; contribution sidecar is not an optimized net-profit objective."
+}

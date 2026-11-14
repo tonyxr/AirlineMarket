@@ -1,0 +1,52 @@
+{
+  "schema": "airline-instance-catalog/1",
+  "generator": "airline_market.pipeline.scaling.scaling_network",
+  "revision": "poisson-oligopoly-v1",
+  "instances": [
+    {
+      "id": "I5",
+      "path": "config/instances/I5.json",
+      "parameters": {
+        "n_spokes": 8,
+        "n_carriers": 2,
+        "periods": 20,
+        "name": "hub_feeder_medium"
+      },
+      "spec_hash": "4add190a4c55942824b2db4037c1db108fb8d41e8bd3edaf80bd11204b6aab2d",
+      "calibrated": false
+    },
+    {
+      "id": "I6",
+      "path": "config/instances/I6.json",
+      "parameters": {
+        "n_spokes": 16,
+        "n_carriers": 3,
+        "periods": 30,
+        "name": "hub_feeder_large"
+      },
+      "spec_hash": "d4d9317db53826e01f333c934a34942beb282267146dd775c0d68e92dcd8a1b9",
+      "calibrated": false
+    }
+  ],
+  "I8": {
+    "n_spokes": [
+      2,
+      4,
+      8,
+      16,
+      32,
+      50
+    ],
+    "n_carriers": [
+      2,
+      3,
+      4
+    ],
+    "periods": [
+      10,
+      20,
+      40,
+      60
+    ]
+  }
+}

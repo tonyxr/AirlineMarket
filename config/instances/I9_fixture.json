@@ -1,0 +1,747 @@
+{
+  "schema_version": "airline-market-spec/1",
+  "name": "I9_local_fixture_uncalibrated",
+  "description": "",
+  "horizon": {
+    "n_periods": 2,
+    "period_days": [
+      60,
+      30
+    ],
+    "departure_date": "2024-08-14",
+    "booking_window_days": 60
+  },
+  "airports": [
+    {
+      "code": "LAX",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "code": "PDX",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "code": "SEA",
+      "name": "",
+      "timezone": "UTC",
+      "lat": null,
+      "lon": null
+    }
+  ],
+  "carriers": [
+    {
+      "code": "AS",
+      "name": "",
+      "kind": "network"
+    },
+    {
+      "code": "DL",
+      "name": "",
+      "kind": "network"
+    }
+  ],
+  "legs": [
+    {
+      "id": "AS_1_PDX_SEA",
+      "carrier": "AS",
+      "origin": "PDX",
+      "dest": "SEA",
+      "dep_time": "2024-08-14T08:00:00",
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          99,
+          100,
+          101
+        ],
+        "probabilities": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "public": false
+      },
+      "distance_mi": 500.0,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "AS_2_SEA_LAX",
+      "carrier": "AS",
+      "origin": "SEA",
+      "dest": "LAX",
+      "dep_time": "2024-08-14T10:00:00",
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          149,
+          150,
+          151
+        ],
+        "probabilities": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "public": false
+      },
+      "distance_mi": 500.0,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "DL_3_PDX_SEA",
+      "carrier": "DL",
+      "origin": "PDX",
+      "dest": "SEA",
+      "dep_time": "2024-08-14T08:00:00",
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          89,
+          90,
+          91
+        ],
+        "probabilities": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "public": false
+      },
+      "distance_mi": 500.0,
+      "cost_per_pax": 0.0
+    },
+    {
+      "id": "DL_4_SEA_LAX",
+      "carrier": "DL",
+      "origin": "SEA",
+      "dest": "LAX",
+      "dep_time": "2024-08-14T10:00:00",
+      "arr_time": null,
+      "capacity": {
+        "support": [
+          139,
+          140,
+          141
+        ],
+        "probabilities": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "public": false
+      },
+      "distance_mi": 500.0,
+      "cost_per_pax": 0.0
+    }
+  ],
+  "capacity_priors": [],
+  "products": [
+    {
+      "id": "AS_0",
+      "carrier": "AS",
+      "market": "PDX-SEA",
+      "legs": [
+        "AS_1_PDX_SEA"
+      ],
+      "service_cost": 20.0,
+      "fare_floor": 100.0,
+      "fare_cap": 150.0,
+      "reference_fare": 100.0,
+      "priority": 0,
+      "controlled": true,
+      "attributes": {
+        "duration_h": 1.0,
+        "dep_hour": 8.0
+      }
+    },
+    {
+      "id": "AS_1",
+      "carrier": "AS",
+      "market": "SEA-LAX",
+      "legs": [
+        "AS_2_SEA_LAX"
+      ],
+      "service_cost": 20.0,
+      "fare_floor": 180.0,
+      "fare_cap": 270.0,
+      "reference_fare": 180.0,
+      "priority": 1,
+      "controlled": true,
+      "attributes": {
+        "duration_h": 2.0,
+        "dep_hour": 10.0
+      }
+    },
+    {
+      "id": "DL_2",
+      "carrier": "DL",
+      "market": "PDX-SEA",
+      "legs": [
+        "DL_3_PDX_SEA"
+      ],
+      "service_cost": 20.0,
+      "fare_floor": 120.0,
+      "fare_cap": 180.0,
+      "reference_fare": 120.0,
+      "priority": 2,
+      "controlled": true,
+      "attributes": {
+        "duration_h": 1.0,
+        "dep_hour": 8.0
+      }
+    },
+    {
+      "id": "DL_3",
+      "carrier": "DL",
+      "market": "SEA-LAX",
+      "legs": [
+        "DL_4_SEA_LAX"
+      ],
+      "service_cost": 20.0,
+      "fare_floor": 190.0,
+      "fare_cap": 285.0,
+      "reference_fare": 190.0,
+      "priority": 3,
+      "controlled": true,
+      "attributes": {
+        "duration_h": 2.0,
+        "dep_hour": 10.0
+      }
+    },
+    {
+      "id": "AS_4",
+      "carrier": "AS",
+      "market": "PDX-LAX",
+      "legs": [
+        "AS_1_PDX_SEA",
+        "AS_2_SEA_LAX"
+      ],
+      "service_cost": 40.0,
+      "fare_floor": 200.0,
+      "fare_cap": 300.0,
+      "reference_fare": 200.0,
+      "priority": 4,
+      "controlled": true,
+      "attributes": {
+        "duration_h": 4.0,
+        "dep_hour": 8.0
+      }
+    },
+    {
+      "id": "DL_5",
+      "carrier": "DL",
+      "market": "PDX-LAX",
+      "legs": [
+        "DL_3_PDX_SEA",
+        "DL_4_SEA_LAX"
+      ],
+      "service_cost": 40.0,
+      "fare_floor": 220.0,
+      "fare_cap": 330.0,
+      "reference_fare": 220.0,
+      "priority": 5,
+      "controlled": true,
+      "attributes": {
+        "duration_h": 4.0,
+        "dep_hour": 8.0
+      }
+    }
+  ],
+  "markets": [
+    {
+      "id": "PDX-SEA",
+      "origin": "PDX",
+      "dest": "SEA",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "SEA-LAX",
+      "origin": "SEA",
+      "dest": "LAX",
+      "in_segment": true,
+      "label": ""
+    },
+    {
+      "id": "PDX-LAX",
+      "origin": "PDX",
+      "dest": "LAX",
+      "in_segment": true,
+      "label": ""
+    }
+  ],
+  "segments": [
+    {
+      "id": "leisure",
+      "classes": [
+        {
+          "weight": 1.0,
+          "alpha": 0.014623000761614623,
+          "carrier_pref": {
+            "AS": 2.972364085304452,
+            "DL": 2.972364085304452
+          },
+          "market_value": {
+            "*": 0.0
+          },
+          "connection_penalty": 0.5,
+          "product_shift": {},
+          "time_penalty_per_hour": 0.0,
+          "schedule_penalty_per_hour": 0.0,
+          "ideal_dep_hour": null
+        }
+      ],
+      "mixed": null
+    },
+    {
+      "id": "business",
+      "classes": [
+        {
+          "weight": 1.0,
+          "alpha": 0.006397562833206397,
+          "carrier_pref": {
+            "AS": 1.5877487006890676,
+            "DL": 1.5877487006890676
+          },
+          "market_value": {
+            "*": 0.0
+          },
+          "connection_penalty": 0.5,
+          "product_shift": {},
+          "time_penalty_per_hour": 0.0,
+          "schedule_penalty_per_hour": 0.0,
+          "ideal_dep_hour": null
+        }
+      ],
+      "mixed": null
+    }
+  ],
+  "demand": {
+    "mode": "poisson",
+    "arrival_probability": null,
+    "arrival_probability_cap": 0.98,
+    "market_weights": null,
+    "intensity": {
+      "PDX-SEA": {
+        "breakpoints": [
+          0,
+          1
+        ],
+        "values": [
+          9.321401087802622,
+          26.910482970168395
+        ]
+      },
+      "SEA-LAX": {
+        "breakpoints": [
+          0,
+          1
+        ],
+        "values": [
+          9.321401087802622,
+          26.910482970168395
+        ]
+      },
+      "PDX-LAX": {
+        "breakpoints": [
+          0,
+          1
+        ],
+        "values": [
+          9.321401087802622,
+          26.910482970168395
+        ]
+      }
+    },
+    "segment_weights": {
+      "breakpoints": [
+        0
+      ],
+      "values": [
+        [
+          0.7,
+          0.3
+        ]
+      ]
+    },
+    "holiday_multiplier": 1.0,
+    "exogenous_multipliers": {},
+    "poisson_truncation": 3
+  },
+  "choice": {
+    "model": "latent_class_mnl",
+    "connection_penalty_rule": "per_connection",
+    "n_mixed_draws": 0
+  },
+  "exogenous": {
+    "states": [
+      {
+        "name": "normal",
+        "public": true,
+        "attributes": {}
+      }
+    ],
+    "initial": [
+      1.0
+    ],
+    "transitions": {},
+    "default_transition": null,
+    "forecasts": {}
+  },
+  "capacity_process": {
+    "events": []
+  },
+  "resolution": {
+    "rule": "fixed_priority_cancel_refund",
+    "refund": "full_original_fare",
+    "penalty_per_cancellation": 0.0,
+    "stranded_reentry": false
+  },
+  "quotes": {
+    "requests": [
+      {
+        "id": "q_DL_2",
+        "observer": "AS",
+        "target_products": [
+          "DL_2"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_DL_3",
+        "observer": "AS",
+        "target_products": [
+          "DL_3"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      },
+      {
+        "id": "q_DL_5",
+        "observer": "AS",
+        "target_products": [
+          "DL_5"
+        ],
+        "lag_periods": 1,
+        "every_k_periods": 1,
+        "fare_bin": 0.0,
+        "fare_noise_sd": 0.0,
+        "missing_probability": 0.0,
+        "availability": "flag",
+        "seats_cap": 9
+      }
+    ]
+  },
+  "pricing": [
+    {
+      "carrier": "AS",
+      "base": {
+        "AS_0": 100.0,
+        "AS_1": 180.0,
+        "AS_4": 200.0
+      },
+      "time_ramp": 0.0,
+      "fixed_features": [],
+      "controllable_features": [
+        {
+          "name": "intercept",
+          "params": {}
+        },
+        {
+          "name": "connection_indicator",
+          "params": {}
+        },
+        {
+          "name": "scarcity_sum",
+          "params": {}
+        }
+      ],
+      "theta_bounds": [
+        [
+          -50,
+          50
+        ],
+        [
+          -50,
+          50
+        ],
+        [
+          0,
+          30
+        ]
+      ],
+      "theta_grid": [
+        [
+          -30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          30,
+          0,
+          15
+        ]
+      ],
+      "sharing": "carrier",
+      "update_every": 1
+    },
+    {
+      "carrier": "DL",
+      "base": {
+        "DL_2": 120.0,
+        "DL_3": 190.0,
+        "DL_5": 220.0
+      },
+      "time_ramp": 0.0,
+      "fixed_features": [],
+      "controllable_features": [
+        {
+          "name": "intercept",
+          "params": {}
+        },
+        {
+          "name": "connection_indicator",
+          "params": {}
+        },
+        {
+          "name": "scarcity_sum",
+          "params": {}
+        }
+      ],
+      "theta_bounds": [
+        [
+          -50,
+          50
+        ],
+        [
+          -50,
+          50
+        ],
+        [
+          0,
+          30
+        ]
+      ],
+      "theta_grid": [
+        [
+          -30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          30,
+          0,
+          15
+        ]
+      ],
+      "sharing": "carrier",
+      "update_every": 1
+    }
+  ],
+  "controllers": [
+    {
+      "carrier": "AS",
+      "controller": "external",
+      "params": {}
+    },
+    {
+      "carrier": "DL",
+      "controller": "bid_price_dlp",
+      "params": {}
+    }
+  ],
+  "objectives": [
+    {
+      "carrier": "AS",
+      "profit_scale": 10000.0,
+      "share_weight": 0.0,
+      "share_markets": null,
+      "share_statistic": "realized_ratio"
+    },
+    {
+      "carrier": "DL",
+      "profit_scale": 10000.0,
+      "share_weight": 0.0,
+      "share_markets": null,
+      "share_statistic": "realized_ratio"
+    }
+  ],
+  "information": [
+    {
+      "name": "direct",
+      "observer": "AS",
+      "requests": [
+        "q_DL_2",
+        "q_DL_3",
+        "q_DL_5"
+      ],
+      "privileged": false,
+      "derived": true
+    },
+    {
+      "name": "linked",
+      "observer": "AS",
+      "requests": [
+        "q_DL_2",
+        "q_DL_3",
+        "q_DL_5"
+      ],
+      "privileged": false,
+      "derived": true
+    },
+    {
+      "name": "unrelated",
+      "observer": "AS",
+      "requests": [
+        "q_DL_2",
+        "q_DL_3",
+        "q_DL_5"
+      ],
+      "privileged": false,
+      "derived": true
+    },
+    {
+      "name": "oracle",
+      "observer": "AS",
+      "requests": [
+        "q_DL_2",
+        "q_DL_3",
+        "q_DL_5"
+      ],
+      "privileged": true,
+      "derived": true
+    }
+  ],
+  "background": [],
+  "timing": {
+    "mode": "simultaneous",
+    "leaders": [],
+    "initial_previous_prices": {}
+  },
+  "metadata": {
+    "focal": "AS",
+    "source_hashes": {
+      "t100": [
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/tests/fixtures/t100/tiny.csv",
+          "sha256": "a6beb6be152e0df12e6dabecc3c15c4d1dbfc96cac9469ffe32cbe8ac856e9d4",
+          "headers": [
+            "YEAR",
+            "MONTH",
+            "UNIQUE_CARRIER",
+            "ORIGIN",
+            "DEST",
+            "DEPARTURES_SCHEDULED",
+            "DEPARTURES_PERFORMED",
+            "SEATS",
+            "PASSENGERS",
+            "AIRCRAFT_TYPE",
+            "DISTANCE"
+          ],
+          "rows_read": 5,
+          "rows_kept": 4
+        }
+      ],
+      "db1b": [
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/tests/fixtures/db1b/tiny.csv",
+          "sha256": "72df6a0164bf348501dea5c59f66219696cdf7fa6f4966f5b28b71141a47184c",
+          "headers": [
+            "ItinID",
+            "MktID",
+            "YEAR",
+            "QUARTER",
+            "ORIGIN",
+            "DEST",
+            "TkCarrier",
+            "OpCarrier",
+            "PASSENGERS",
+            "MktFare",
+            "MktCoupons",
+            "MktDistance",
+            "NonStopMiles"
+          ],
+          "rows_read": 6,
+          "rows_kept": 6
+        }
+      ],
+      "ontime": [
+        {
+          "path": "/Users/huali/Desktop/AirlineMarket/tests/fixtures/ontime/tiny.csv",
+          "sha256": "e185616ad8c35b625635a53d31c9ae0b06cc9a08988902aa75588c1c363c123c",
+          "headers": [
+            "FlightDate",
+            "Reporting_Airline",
+            "Flight_Number_Reporting_Airline",
+            "Origin",
+            "Dest",
+            "CRSDepTime",
+            "CRSArrTime",
+            "Cancelled",
+            "CancellationCode",
+            "Diverted"
+          ],
+          "rows_read": 6,
+          "rows_kept": 5
+        }
+      ]
+    },
+    "parameters": {
+      "periods": [
+        60,
+        30,
+        0
+      ],
+      "sample_expansion": 10,
+      "min_market_pax_per_day": 1
+    },
+    "identification": {
+      "carrier_preferences": {
+        "status": "assumed_initialization",
+        "method": "cross-market average of scoped carrier log-share inversions; not an estimated structural preference"
+      },
+      "market_value": {
+        "status": "assumed_normalization",
+        "value": 0.0
+      },
+      "outside_option": {
+        "status": "assumed",
+        "share": 0.3,
+        "scope": "DB1B market totals are filtered to scope carriers; out-of-scope airlines and nonpurchase are absorbed into the outside option"
+      },
+      "calibration": "aggregate moments alone do not identify these assumptions"
+    },
+    "warnings": [
+      "Demand conversion, booking curve, outside share, elasticities and service costs are assumed calibration parameters; aggregate data do not identify them separately."
+    ],
+    "leg_aggregation": "none",
+    "placebo_shortfall": 0
+  }
+}
