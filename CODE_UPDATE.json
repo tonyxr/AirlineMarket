@@ -1,35 +1,35 @@
 {
   "plan_id": "A.10/A.5/A.14/B0/V9/R3/R4",
-  "source_commit": "39a7e8c871d2f293acf1628c9a571e8ff14fba4b",
-  "previous_public_commit": "3029db71ebe92e62505f47a83cecdba33c84f235",
-  "scope": "Only NEW pure pre-category native source/observation binder and synthetic tests; all62 existing required source bytes match public base",
+  "source_commit": "9a30c396bcf44e4c9dae3034851d741da694c92c",
+  "previous_public_commit": "0cafc4d5b4fa8b178e61595d8c7fa3e510c96e7a",
+  "scope": "Only NEW pure declared original-choice/boundary law and synthetic tests; all56 existing required source bytes match public base",
   "source_files": [
     {
-      "path": "airline_market/sim/pretype_observation.py",
-      "bytes": 13664,
-      "sha256": "2337b9c2bf6142862ac4740b748cb323c3a06080aea1a4f084e6c0fed571cda4",
-      "git_blob": "0bf31595f3e0d5c3197c9a7e621caae81ff7c96c"
+      "path": "airline_market/sim/booking_loss_law.py",
+      "bytes": 11224,
+      "sha256": "6d23e19378d77cdc2f8b86e767a85645d6109d77bc66fce8f26f9b0e8769105c",
+      "git_blob": "dee53eea9b3728485b256da4253627d712d1ce9a"
     },
     {
-      "path": "tests/unit/test_pretype_observation.py",
-      "bytes": 19827,
-      "sha256": "2a05005fcc343a01e63f5e07b37f78b18a0e1ce0478e6ec7484fafe66eff5cdb",
-      "git_blob": "a8444b14e45b9c7e815eb5e5051825d32cd7ba77"
+      "path": "tests/unit/test_booking_loss_law.py",
+      "bytes": 16141,
+      "sha256": "5a2addd903f27a3766637d8b0dc723fa770408421aa9e20ebb27fe528f12a29f",
+      "git_blob": "352f65fb18a809fb981a1d8b9c04f45211d5f6a7"
     }
   ],
   "verification": {
-    "component_tests_passed": 31,
-    "component_scope": "ALL31 final installed component tests included in required changed-code default; no separate unchanged full-focused replay",
+    "component_tests_passed": 35,
+    "component_scope": "ALL35 final installed component tests included in required changed-code default; no separate unchanged full-focused replay",
     "default_subset": {
-      "passed": 2360,
+      "passed": 2395,
       "failed": 0,
       "deselected": 6,
-      "seconds": 356.53,
+      "seconds": 723.67,
       "normal_process_permission": true
     },
     "R0": "OPEN/unconfirmed; six exclusions retained"
   },
-  "interpretation": "Complete separately saved native baseline/category/input/source association with NEW declared pre-category X/K/G law. SAME type/mark through own outside and joint next-X/signal; zero evidence yields NULL conditional predictions. Structural source binding is not native probability/knowledge/preferences/lifecycle authentication or adoption",
-  "reuse": "Frozen pure causal/source/ownership/export/count helpers and one finite compiler delegation on NEW inputs; exact existing public bytes match. NEW native synthetic source constructor text adaptation and independent finite law reference; no old saved source/bank/science/case/review or frozen parent change.",
+  "interpretation": "Complete declared Z/K/U/G prior, ordinary likelihood and JOINT X/cancellation kernel. Distinct ordinary/later mark axes and persistent K/G; all zero/outside/uncancelled support retained. Exact-positive posterior and NULL zero-evidence conditional joint; genuine source binding, native probability/knowledge/preferences/lifecycle adoption remain open",
+  "reuse": "Frozen pure validation/ownership/export/count helpers imported; exact existing public bytes match. Typed finite pushforward/structural-bound patterns adapted with attribution, NEW literal independent full-path/tower references only. The NEW component runtime/units invoke no native source/RNG/old helper/compiler/bank/science/case/review; frozen parents unchanged.",
   "excluded": "data, results, local process/execution state at any depth, private reports/reuse details, configurations, unrelated historical source and original local research Git history"
 }
