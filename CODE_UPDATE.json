@@ -1,35 +1,37 @@
 {
   "plan_id": "A.10/A.5/A.14/B0/V9/R3/R4",
-  "source_commit": "c99b627988c77b6d8c4c19a6f67be4f6db9e117a",
-  "previous_public_commit": "9ab2878df066ebce26764804063f62987c11c340",
-  "scope": "Only NEW full conditioned-path transport and synthetic tests; all existing required source bytes match public base",
+  "source_commit": "5c56e2ddb0f6d7a344b7d87699e13bc8d634045b",
+  "previous_public_commit": "0ffa461cc8fd53179da05303bac6b46b10d92ca3",
+  "scope": "Only NEW typed transported-joint/category/stage-signal binding and synthetic tests; all existing required source bytes match public base",
   "source_files": [
     {
-      "path": "airline_market/sim/full_path_transport.py",
-      "bytes": 10087,
-      "sha256": "869cc744075cef8a0785e960ce9670313e471308cafac8ce29b7255295386050",
-      "git_blob": "14e5c775a0e04b3035b795a783f2e5c809b970f0"
+      "path": "airline_market/sim/transported_stage_signal.py",
+      "bytes": 23388,
+      "sha256": "87f6c46165de185d0a46d0e49df816c7715a7d11e638779b45d5f24c52e71b25",
+      "git_blob": "ff467c7e8200f9f14134d05b77a286e555a8d8c5"
     },
     {
-      "path": "tests/unit/test_full_path_transport.py",
-      "bytes": 19160,
-      "sha256": "4cc023ac4badecf16c910576ce8a050c58553877889c20626545953792200272",
-      "git_blob": "4648a1aa91dfb7184b51e5806cb24d95c597b83a"
+      "path": "tests/unit/test_transported_stage_signal.py",
+      "bytes": 22336,
+      "sha256": "dc03239a6161199f3379859688dd24d34c59d2aa0728d93195582e39f46a4255",
+      "git_blob": "a910c42b3a3cda227f57c08078709443d9dccf94"
     }
   ],
   "verification": {
-    "component_tests_passed": 34,
-    "component_scope": "Final v2 staged focused; installed bytes identical and all component tests included in required default",
+    "component_tests_passed": 31,
+    "component_scope": "All31 final installed component cases in required default; prior28 plus3 new references, no additional unchanged focused replay",
     "default_subset": {
-      "passed": 2460,
+      "passed": 2491,
       "failed": 0,
       "deselected": 6,
-      "seconds": 754.55,
-      "normal_process_permission": true
+      "seconds": 853.6,
+      "normal_process_permission": true,
+      "scope": "four retained closed-adapter exclusions and two repository slow tests",
+      "project_local_fixtures": true
     },
     "R0": "OPEN/unconfirmed; six exclusions retained"
   },
-  "interpretation": "Transport full original Z/K/U/G/action/X/cancellation paths through an explicit complete future kernel before marginalizing Z/U; SAME K/G retained. One NEW parent compilation or native-prefix binding, exact-positive Y/K/G joint and NULL zero evidence; no downstream choice compiler. All parent/zero/unselected support retained; native probability/knowledge/preferences/lifecycle adoption remain open",
-  "reuse": "Frozen pure native-prefix binding and original-choice/boundary backend imported; exact required public bytes match. Runtime compiles ONE NEW parent law and applies the full declared kernel; no engine/RNG/upstream producer or downstream choice compiler. New native-prefix fixtures use genuine steps/local constructor adaptation, no old helper/bank/science/case/review replay; frozen parents unchanged.",
+  "interpretation": "Full original-choice/boundary paths transported BEFORE category, then SAME K/G through own outside and explicit received signal. Full original/later native prefixes and fixed programme retained; zero upstream joint/prediction NULL/no downstream compiler; no probability/knowledge/preferences/lifecycle adoption.",
+  "reuse": "Frozen pure full-path transport, source validators and finite latent-type compiler on NEW inputs. Two pure validation adaptations have exact transformed AST equality. No engine/RNG/native producer/old helper/case/review replay; NEW synthetic June8/100974 source fixtures; frozen parents unchanged.",
   "excluded": "data, results, local process/execution state at any depth, private reports/reuse details, configurations, unrelated historical source and original local research Git history"
 }
