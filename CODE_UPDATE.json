@@ -1,37 +1,70 @@
 {
   "plan_id": "A.10/A.5/A.14/B0/V9/R3/R4",
-  "source_commit": "c5b3c786dd484e00157cf98d019a9744b39a8217",
-  "previous_public_commit": "c045eadff4ebfe95f6e131070e8af4d8e451e211",
-  "scope": "Only NEW typed paired-law/fixed-history-policy material evaluator and pure synthetic tests; all existing required public bytes match fresh base",
+  "source_commit": "6ff3d7d0f4ab49b62281234109113325df36366c",
+  "previous_public_commit": "f857a3c81db87465254ddc2313ddf18483d3ed65",
+  "scope": "Only NEW typed paired original-history/source bridge and NEW synthetic tests; all72 existing required public bytes match fresh base",
   "source_files": [
     {
-      "path": "airline_market/sim/paired_material.py",
-      "bytes": 18429,
-      "sha256": "3f0315e7bedd96a9eba77d08543d41d53504e69283cb6ec96242a101443b3d69",
-      "git_blob": "fd6180a55714f21e6d2df33557422825745af94e"
+      "path": "airline_market/sim/paired_history_binding.py",
+      "bytes": 28357,
+      "sha256": "85ca9f92e5f2af67309ad8a57bd112401929df6316abc338ded6cdf3a38d9b06",
+      "git_blob": "2524d9f58bc923b67283bba741f0b2b4564cff1a"
     },
     {
-      "path": "tests/unit/test_paired_material.py",
-      "bytes": 19130,
-      "sha256": "78c19f3d5180c0f965bc2c1c97c7e2701a745ae31692b480dba841f23e456b4b",
-      "git_blob": "d9eb106d4b141cb45cf8e8e329126983762900dd"
+      "path": "tests/unit/test_paired_history_binding.py",
+      "bytes": 30942,
+      "sha256": "7738b2e0050cf57439a883074922058e077ff29fa42f17b3b1b63c28d45c8f5d",
+      "git_blob": "443ec6afb7edc56ae67b1f3e098b3c6e7b10c171"
     }
   ],
   "verification": {
-    "component_tests_passed": 25,
-    "component_scope": "All25 final installed component cases in required changed-code default; no extra unchanged focused replay",
+    "component_tests_passed": 24,
+    "component_scope": "All24 final installed component cases included in required default; no extra unchanged focused replay",
     "default_subset": {
-      "passed": 2552,
+      "passed": 2576,
       "failed": 0,
       "deselected": 6,
-      "seconds": 733.13,
+      "seconds": 929.09,
       "normal_process_permission": true,
-      "scope": "four retained closed-adapter exclusions and two repository slow tests",
-      "project_local_fixtures": true
+      "project_local_fixtures": true,
+      "scope": "four retained closed-adapter exclusions plus two repository slow tests"
     },
     "R0": "OPEN/unconfirmed; six exclusions retained"
   },
-  "interpretation": "Complete separately DECLARED initial and transition/terminal laws evaluated under ONE unchanged history-indexed policy; SAME K/G through own outside/interline, all zero/missing/unknown/signed support. Positive missing behavior or unknown/open tail gives NULL full material. Root and selected-history criteria separate; no native source, probability/knowledge/preference/service truth or lifecycle CS adoption.",
-  "reuse": "Pure path/history arithmetic pattern adapted from prior CLOSED development prototype without importing/executing its helper or cases. Frozen ownership/export/count and explicit terminal-account arithmetic on NEW pure unit declarations, label104974 is not native key/seed/stream. No native business algorithm, RNG/source producer/default/frozen-parent edit or old case replay.",
-  "excluded": "data, results, local process/execution state at any depth, private reports/reuse details, configurations, unrelated historical source and original local research Git history"
+  "interpretation": "Each complete declared original choice/cancellation/full-path law derives its OWN pre-category Y/K/G joint from SAME supplied native history ONCE. ONE complete fixed history policy/TWO future-terminal laws; own-outside then received signal applied once. Either zero original evidence gives NULL pair/no evaluator; tiny positive unknown/open-tail material remains NULL. Restricted reached enabled interline and complete policy; no native probability/knowledge/preference/service-payment truth or lifecycle CS adoption.",
+  "reuse": "Source-only pure stage-binder AST prefix, returning before its first probability forward; pure paired validation omits ONLY absent initial-joint shape/mass checks, never inserts a prior. Independent AST checks and NEW July6 2027/seed31/named StreamRegistry106974 synthetic source units; constructor/declaration text adapted without old fixture/helper/case execution. Frozen source/default/actor/legacy/vendor unchanged; no native business algorithm copy or runtime source/RNG producer.",
+  "excluded": "data, results, local process/execution state at any depth, private reports/reuse details, configurations, unrelated historical source and original local research Git history",
+  "reuse_sources": [
+    {
+      "path": "airline_market/sim/transported_stage_signal.py",
+      "function": "bind_transported_stage_signal",
+      "range": [
+        293,
+        557
+      ],
+      "file_sha256": "87f6c46165de185d0a46d0e49df816c7715a7d11e638779b45d5f24c52e71b25",
+      "range_sha256": "d9122b2efdf85c95aae6b6303f2ff3c46d4a487a9961d1653e9aac0d7eded67a"
+    },
+    {
+      "path": "airline_market/sim/paired_material.py",
+      "function": "_validate",
+      "range": [
+        114,
+        291
+      ],
+      "file_sha256": "3f0315e7bedd96a9eba77d08543d41d53504e69283cb6ec96242a101443b3d69",
+      "range_sha256": "eb8620188c4b839506cebf2ff829dce794df02f7c7ff7d67a5508963f9278be6"
+    },
+    {
+      "path": "tests/unit/test_terminal_material.py",
+      "function": "fresh_source",
+      "range": [
+        62,
+        202
+      ],
+      "file_sha256": "7790767eef3439307db19b9a6fedc0b55cf2f03380efeea90113cc4e00d8b76c",
+      "range_sha256": "0ca1ca5e5980845a6712c4debf480a0efcd5deb3c29721d82167e2377f0fad34"
+    }
+  ],
+  "reuse_pin_scope": "Current post-test attribution of public source; genuine component/framework copies precede tests separately; no original-time/transitive authentication. Pure validation adaptations and NEW constructor text only, no old helper/case or native business-body execution."
 }
