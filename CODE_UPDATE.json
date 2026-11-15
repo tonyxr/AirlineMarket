@@ -1,34 +1,34 @@
 {
   "plan_id": "A.10/A.5/A.14/B0/V9/R3/R4",
-  "source_commit": "cba6aa92ab7950f028394f21932f89709aebcbbd",
-  "previous_public_commit": "85462957ed767ced1566eafa131906257f5fd48e",
-  "scope": "Only NEW pure native attempt/stage context binder and synthetic tests; all other required source matches public base",
+  "source_commit": "4ad737cbdb46045b39ec27729332f3d8d6045565",
+  "previous_public_commit": "06c8af2a2e420848d23cfb1123641ceb80b435cf",
+  "scope": "Only NEW pure typed declared causal-information journal and synthetic tests; all other required source matches public base",
   "source_files": [
     {
-      "path": "airline_market/sim/native_stage_contexts.py",
-      "bytes": 20058,
-      "sha256": "c57738b3125db7686c191b7d1f81d3e3021b25055c2d99bbec3763af407fe20f",
-      "git_blob": "e25b56657f15b4f3a78ac9cf5f2e6154429ee67e"
+      "path": "airline_market/sim/causal_information.py",
+      "bytes": 19309,
+      "sha256": "a6d094048026a8d8a7e123d144449ad37b55ed4715af91624ffecee7247ca9c8",
+      "git_blob": "d4464a171a53adfddefff54b137f51eb57ba38d0"
     },
     {
-      "path": "tests/unit/test_native_stage_contexts.py",
-      "bytes": 15219,
-      "sha256": "551ff2389382c55a9f36c2aeef8b817469aafb1c927ca66a74ca87df33e33d5d",
-      "git_blob": "50da2d0cb82757ab69f642b78dc44f221cc860dd"
+      "path": "tests/unit/test_causal_information.py",
+      "bytes": 15890,
+      "sha256": "b039ef094ac740b3e59ee884865243f05c39fbb680e8d36cfcdb66af98252a36",
+      "git_blob": "d12dea52852b6b27e809ab3ba9e2adb496ba18d7"
     }
   ],
   "verification": {
-    "focused_passed": 40,
+    "focused_passed": 36,
     "default_subset": {
-      "passed": 2162,
+      "passed": 2198,
       "failed": 0,
       "deselected": 6,
-      "seconds": 318.73,
+      "seconds": 526.73,
       "normal_process_permission": true
     },
     "R0": "OPEN/unconfirmed; six exclusions retained"
   },
-  "interpretation": "Binds complete new native own/proof/ordinary support and reached stage inputs/results on the same original person and attempt; computation views are not received knowledge, probability or utility adoption",
-  "reuse": "Pure supplied-source readers and owned binary64 exports; new unit constructor adapted from the existing native stage-source test pattern with NEW dates and named stream. No native business algorithm copied, producer/old source-bank/study/review replay",
+  "interpretation": "Owns typed source-order registration, separate declared message occurrence/record/receipt and exact saved decision prefixes. This pure core is not the actual native hook producer, reception/type/law authentication or utility adoption",
+  "reuse": "Frozen pure UTC/key/schema/scalar/structural-count/owned export helpers on NEW deterministic compiled declarations. No native business loop/actor/RNG/utility/producer/old bank/study/review replay. Actual hook binding remains open.",
   "excluded": "data, results, local process/execution state at any depth, private reports/reuse details, configurations, unrelated historical source and original local research Git history"
 }
