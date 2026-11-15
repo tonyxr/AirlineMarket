@@ -1,58 +1,34 @@
 {
   "plan_id": "A.10/A.5/A.14/B0/V9/R3/R4",
-  "source_commit": "f5da82af36cf7227462a57f8a568d8b113c6d4a0",
-  "previous_public_commit": "b1fd2e8e4659e239db45ebf7d1cb6f653e2e004f",
-  "scope": "Current native information-context join plus two required own/proof modules and their synthetic tests; all other required source matches public base",
+  "source_commit": "c308aa0bd9ff754b69f23b7f7ff7bc72b42464e1",
+  "previous_public_commit": "982da06e815c7679b5fe267d6ebe3a740921bdfd",
+  "scope": "Only NEW preferred native context v2 consistency reader and synthetic tests; all other required source matches public base",
   "source_files": [
     {
-      "path": "airline_market/sim/native_information_context.py",
-      "bytes": 20248,
-      "sha256": "db560f1c62a33668601fa0a964f3d85a13b2cdc6a2d65d3441461a1d26687f71",
-      "git_blob": "a03fc75658012b6ba4a7ce28a4343369656fac10"
+      "path": "airline_market/sim/native_information_context_v2.py",
+      "bytes": 21099,
+      "sha256": "135803f976c1c24d4d6007898f7f490dcad987c0a0927a5a101978e4261d8c87",
+      "git_blob": "3928706b27568e6abd2b6707c3b06967db8bbe14"
     },
     {
-      "path": "airline_market/sim/own_history_information.py",
-      "bytes": 12840,
-      "sha256": "26d972a895b1d521bba6dc150b4bcc8b985a3a56a5c7d665aa029fb9eab5f1de",
-      "git_blob": "bb322a2e29ddd8f0b4354d55b0b7d4865808ffe0"
-    },
-    {
-      "path": "airline_market/sim/proof_information.py",
-      "bytes": 10127,
-      "sha256": "ecff9b04ae64996a714c4616003f50f0a1913a719482f7809021dac9705a1426",
-      "git_blob": "fdbe938df3e71e9d832c0d878b639f1991ab10e9"
-    },
-    {
-      "path": "tests/unit/test_native_information_context.py",
-      "bytes": 15138,
-      "sha256": "593595310e034c8507d1b949c84b3814878d947da942579817f62123949d8d7f",
-      "git_blob": "8b43b894f8a07c7d673ec8b99d9997cccb087c51"
-    },
-    {
-      "path": "tests/unit/test_own_history_information.py",
-      "bytes": 14918,
-      "sha256": "7995f768188e1c4f826f4c95733488334d317bed96d9975b1f3fa343d18feaad",
-      "git_blob": "153236600b84c4e21639f029adfdfed70cc35a60"
-    },
-    {
-      "path": "tests/unit/test_proof_information.py",
-      "bytes": 18103,
-      "sha256": "bb5e416ea27ab3d755f370446543a793357c0bee82280275e713f36f7b225134",
-      "git_blob": "8a7fb813a1714b95d87c666ffb61851549ad802a"
+      "path": "tests/unit/test_native_information_context_v2.py",
+      "bytes": 13062,
+      "sha256": "e784ca9ef12e9a7b5a8e067544a68ae040d05c8435084b385d8b9512c79a9f40",
+      "git_blob": "c4cc30e2af97cc32a633854df7d858ed0a0cecf9"
     }
   ],
   "verification": {
-    "focused_passed": 24,
+    "focused_passed": 16,
     "default_subset": {
-      "passed": 2086,
+      "passed": 2102,
       "failed": 0,
       "deselected": 6,
-      "seconds": 382.78,
+      "seconds": 273.88,
       "normal_process_permission": true
     },
     "R0": "OPEN/unconfirmed; six exclusions retained"
   },
-  "interpretation": "Pure complete captured native original-person contexts; current effective reentry menu/type/actual knowledge/probability/utility/default adoption remain open",
-  "reuse": "Frozen pure received/own/proof typed views and UTC/binary64 helpers only; native fixture pattern locally adapted, no old fixture helper or saved study replay",
+  "interpretation": "Pure context revision checks same O&D/carrier-stage/offered-choice and retains actual closing-boundary cancellation facts without extra periods; no final-menu/type/actual knowledge/probability/utility adoption",
+  "reuse": "Own PURE context-join adaptation with one boundary fix and new purchase checks; no native business algorithm copy/call or old source bank/study/review replay",
   "excluded": "data, results, local process/execution state at any depth, private reports/reuse details, configurations, unrelated historical source and original local research Git history"
 }
