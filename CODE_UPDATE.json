@@ -1,35 +1,35 @@
 {
   "plan_id": "A.10/A.5/A.14/B0/V9/R3/R4",
-  "source_commit": "fab2f0879bbe64f367f7191fbafe6d7179658390",
-  "previous_public_commit": "38f33457e47a9494c895e5b2c211e9a615fc8883",
-  "scope": "Only NEW pure native original-choice/boundary association and synthetic tests; all existing required source bytes match public base",
+  "source_commit": "c99b627988c77b6d8c4c19a6f67be4f6db9e117a",
+  "previous_public_commit": "9ab2878df066ebce26764804063f62987c11c340",
+  "scope": "Only NEW full conditioned-path transport and synthetic tests; all existing required source bytes match public base",
   "source_files": [
     {
-      "path": "airline_market/sim/booking_loss_binding.py",
-      "bytes": 15530,
-      "sha256": "3ffc39844779d86346f43f4766e7afdc26411609696d72381df401aa7575eda5",
-      "git_blob": "a9bf4c8b5fc0f1a35f0555da3aa39db99512b7d8"
+      "path": "airline_market/sim/full_path_transport.py",
+      "bytes": 10087,
+      "sha256": "869cc744075cef8a0785e960ce9670313e471308cafac8ce29b7255295386050",
+      "git_blob": "14e5c775a0e04b3035b795a783f2e5c809b970f0"
     },
     {
-      "path": "tests/unit/test_booking_loss_binding.py",
-      "bytes": 16231,
-      "sha256": "1ec7193cbef57a1f20e2366c062fec275128dac3e05029f2d8e0f916b39dd1d9",
-      "git_blob": "fcb19aab90fa76857505be44639518cb0aebd051"
+      "path": "tests/unit/test_full_path_transport.py",
+      "bytes": 19160,
+      "sha256": "4cc023ac4badecf16c910576ce8a050c58553877889c20626545953792200272",
+      "git_blob": "4648a1aa91dfb7184b51e5806cb24d95c597b83a"
     }
   ],
   "verification": {
-    "component_tests_passed": 31,
-    "component_scope": "ALL31 final installed component tests included in required final-v3 changed-code default; no unchanged full-focused replay",
+    "component_tests_passed": 34,
+    "component_scope": "Final v2 staged focused; installed bytes identical and all component tests included in required default",
     "default_subset": {
-      "passed": 2426,
+      "passed": 2460,
       "failed": 0,
       "deselected": 6,
-      "seconds": 645.07,
+      "seconds": 754.55,
       "normal_process_permission": true
     },
     "R0": "OPEN/unconfirmed; six exclusions retained"
   },
-  "interpretation": "Typed association of a NEW declared joint law with complete supplied native ordinary input/last-period choice/cancellation records. Earlier view excludes current outcome; all people/periods/zero support retained; earlier close refuses future inputs. Exact-positive posterior and NULL zero-evidence joint; native probability/knowledge/preferences/lifecycle adoption remain open",
-  "reuse": "Frozen pure source/journal/ownership/export/count helpers and BookingLossLaw backend imported; exact required public bytes match. Runtime reads supplied NEW records and compiles one NEW law only; no engine/RNG/upstream producer. Synthetic units use fresh genuine native steps and local constructor adaptation, no old fixture helper/bank/science/case/review replay; frozen parents unchanged.",
+  "interpretation": "Transport full original Z/K/U/G/action/X/cancellation paths through an explicit complete future kernel before marginalizing Z/U; SAME K/G retained. One NEW parent compilation or native-prefix binding, exact-positive Y/K/G joint and NULL zero evidence; no downstream choice compiler. All parent/zero/unselected support retained; native probability/knowledge/preferences/lifecycle adoption remain open",
+  "reuse": "Frozen pure native-prefix binding and original-choice/boundary backend imported; exact required public bytes match. Runtime compiles ONE NEW parent law and applies the full declared kernel; no engine/RNG/upstream producer or downstream choice compiler. New native-prefix fixtures use genuine steps/local constructor adaptation, no old helper/bank/science/case/review replay; frozen parents unchanged.",
   "excluded": "data, results, local process/execution state at any depth, private reports/reuse details, configurations, unrelated historical source and original local research Git history"
 }
