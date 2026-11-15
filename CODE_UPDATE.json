@@ -1,35 +1,35 @@
 {
   "plan_id": "A.10/A.5/A.14/B0/V9/R3/R4",
-  "source_commit": "1c79473e119951619206c910ba099f00dea91d22",
-  "previous_public_commit": "9ca9425f0ffb5192886ee5396286ab8c67163379",
-  "scope": "Only NEW finite declared shared-mark attempt compiler and synthetic source-binding tests; all other required source matches public base",
+  "source_commit": "4e0ae1737ed2a213730112fc9e27be6816d5905f",
+  "previous_public_commit": "797917c03409ea89c3b6a8dba575234423c049e7",
+  "scope": "Only NEW actual native private-taste source and synthetic tests; all other required source matches public base",
   "source_files": [
     {
-      "path": "airline_market/sim/shared_mark_attempt.py",
-      "bytes": 23689,
-      "sha256": "b8b9a6ecb5b55b2f64a9d38635373e55dfe77fab3b04f35fd3adb6cc0713e663",
-      "git_blob": "4264c5c956ebaf7ee1245aa1b712f03e542ca0d4"
+      "path": "airline_market/sim/native_private_taste.py",
+      "bytes": 9002,
+      "sha256": "7e2ad0be373d906cf288742f2be6e551da99d9feac333ba0d497f08c18227c20",
+      "git_blob": "40168fbdedc4ef1ab430d639d21625da9070802a"
     },
     {
-      "path": "tests/unit/test_shared_mark_attempt.py",
-      "bytes": 19810,
-      "sha256": "9846ef74ad1529c9fe4a7724b4cbe93f9df41ffc052b7cf270d9a91afdc800e0",
-      "git_blob": "05fd463b72cecce3dc12795c53641d259ef67a5d"
+      "path": "tests/unit/test_native_private_taste.py",
+      "bytes": 14545,
+      "sha256": "1d0c9cae2a9a189c5fe7bdad0fbf47c7c99b366ff2abcd90e5e4cd8397236523",
+      "git_blob": "3ad7c5dc3feb8ee75ac15bd87fe96e1d62272f21"
     }
   ],
   "verification": {
-    "component_tests_passed": 37,
-    "component_scope": "all37 final installed component tests included in final required default; focused initial25 + v2affected16 + v3new1 + v4new2 + v5new4, no unchanged focused replay",
+    "component_tests_passed": 19,
+    "component_scope": "all 19 final component tests included in changed-code default; no separate unchanged focused replay",
     "default_subset": {
-      "passed": 2257,
+      "passed": 2276,
       "failed": 0,
       "deselected": 6,
-      "seconds": 313.21,
+      "seconds": 332.83,
       "normal_process_permission": true
     },
     "R0": "OPEN/unconfirmed; six exclusions retained"
   },
-  "interpretation": "One conditional fixed-known-label finite own/interline attempt: exact rational joint physical/private-mark selection, joint next-state/signal kernels, explicit feasible/visible menus and supplied-source binding. Not native probability, received knowledge, preferences or lifecycle utility adoption",
-  "reuse": "Pure finite forwards and frozen pure source-prefix/export validators only at runtime; NEW genuine native fixture sources in tests. No copied native business loop/runtime producer or old bank/science/frame/analytic-case/review replay. All frozen sources unchanged; received knowledge/native law/preferences/lifecycle utility remain open.",
+  "interpretation": "Analyst-only actual returned native re-entry taste and original booked class; one inherited marks call and native step. Private taste stays separate from declared known labels, information views and native joint probability/preferences/lifecycle utility adoption",
+  "reuse": "Cooperative native marks wrapper and parent snapshot/branch construction; NEW synthetic genuine source/control fixtures. No copied native business algorithm, extra native forward or old bank/science/frame/analytic-case/review replay. Frozen sources unchanged; native law/received knowledge/preferences/lifecycle utility remain open.",
   "excluded": "data, results, local process/execution state at any depth, private reports/reuse details, configurations, unrelated historical source and original local research Git history"
 }
