@@ -1,37 +1,37 @@
 {
   "plan_id": "A.10/A.5/A.14/B0/V9/R3/R4",
-  "source_commit": "5c56e2ddb0f6d7a344b7d87699e13bc8d634045b",
-  "previous_public_commit": "0ffa461cc8fd53179da05303bac6b46b10d92ca3",
-  "scope": "Only NEW typed transported-joint/category/stage-signal binding and synthetic tests; all existing required source bytes match public base",
+  "source_commit": "4841439bb8a8de6c9b2a4faa54cb4f983d22b75a",
+  "previous_public_commit": "097bbb13c9c1019c72716c6e9fc1e51fb0241d4f",
+  "scope": "Only NEW registered declared terminal-material interface and synthetic tests; all existing required source bytes match fresh public base",
   "source_files": [
     {
-      "path": "airline_market/sim/transported_stage_signal.py",
-      "bytes": 23388,
-      "sha256": "87f6c46165de185d0a46d0e49df816c7715a7d11e638779b45d5f24c52e71b25",
-      "git_blob": "ff467c7e8200f9f14134d05b77a286e555a8d8c5"
+      "path": "airline_market/sim/terminal_material.py",
+      "bytes": 18169,
+      "sha256": "0dfdcf24b4695ca0be416b04db7430b910223f19cfd59e158a9d2e11f9337d30",
+      "git_blob": "4f2e5285a1ad10c9a9c0dfcb0c1ac2d0fae646e1"
     },
     {
-      "path": "tests/unit/test_transported_stage_signal.py",
-      "bytes": 22336,
-      "sha256": "dc03239a6161199f3379859688dd24d34c59d2aa0728d93195582e39f46a4255",
-      "git_blob": "a910c42b3a3cda227f57c08078709443d9dccf94"
+      "path": "tests/unit/test_terminal_material.py",
+      "bytes": 28422,
+      "sha256": "7790767eef3439307db19b9a6fedc0b55cf2f03380efeea90113cc4e00d8b76c",
+      "git_blob": "8d92564a9e442d7aafef6fdc7c200edac8ce2805"
     }
   ],
   "verification": {
-    "component_tests_passed": 31,
-    "component_scope": "All31 final installed component cases in required default; prior28 plus3 new references, no additional unchanged focused replay",
+    "component_tests_passed": 36,
+    "component_scope": "All36 final installed component cases in required changed-v3 default; initial25 plus corrected8 plus3 new references, no extra unchanged focused replay",
     "default_subset": {
-      "passed": 2491,
+      "passed": 2527,
       "failed": 0,
       "deselected": 6,
-      "seconds": 853.6,
+      "seconds": 885.8,
       "normal_process_permission": true,
       "scope": "four retained closed-adapter exclusions and two repository slow tests",
       "project_local_fixtures": true
     },
     "R0": "OPEN/unconfirmed; six exclusions retained"
   },
-  "interpretation": "Full original-choice/boundary paths transported BEFORE category, then SAME K/G through own outside and explicit received signal. Full original/later native prefixes and fixed programme retained; zero upstream joint/prediction NULL/no downstream compiler; no probability/knowledge/preferences/lifecycle adoption.",
-  "reuse": "Frozen pure full-path transport, source validators and finite latent-type compiler on NEW inputs. Two pure validation adaptations have exact transformed AST equality. No engine/RNG/native producer/old helper/case/review replay; NEW synthetic June8/100974 source fixtures; frozen parents unchanged.",
+  "interpretation": "Complete immutable numerical/source-plan declaration with local digest; only two actual context views attach later. ONE fresh conditioned-path/stage binding carries SAME K/G; complete terminal FOUR-component accounts preserve zero/tiny/unknown/signed support. Positive unknown or open-tail mass gives NULL material; no native probability, actual knowledge/service/payment, preferences or lifecycle CS adoption.",
+  "reuse": "Frozen pure conditioned-path/stage binder, ownership/export/count helpers and explicit ContingentPayoff arithmetic on NEW inputs. Constructor text adapted to NEW June22/102974 synthetic fixtures, not old helper/case execution; runtime no engine/RNG/native producer/old saved loader; frozen parents unchanged.",
   "excluded": "data, results, local process/execution state at any depth, private reports/reuse details, configurations, unrelated historical source and original local research Git history"
 }
