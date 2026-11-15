@@ -1,34 +1,34 @@
 {
   "plan_id": "A.10/A.5/A.14/B0/V9/R3/R4",
-  "source_commit": "4ad737cbdb46045b39ec27729332f3d8d6045565",
-  "previous_public_commit": "06c8af2a2e420848d23cfb1123641ceb80b435cf",
-  "scope": "Only NEW pure typed declared causal-information journal and synthetic tests; all other required source matches public base",
+  "source_commit": "8c588124e110697fa0c7e1248c666187f8217095",
+  "previous_public_commit": "53fe7e6fffb4c0febb54fd23b3356f5abfa07445",
+  "scope": "Only NEW opt-in native causal-information source and synthetic tests; all other required source matches public base",
   "source_files": [
     {
-      "path": "airline_market/sim/causal_information.py",
-      "bytes": 19309,
-      "sha256": "a6d094048026a8d8a7e123d144449ad37b55ed4715af91624ffecee7247ca9c8",
-      "git_blob": "d4464a171a53adfddefff54b137f51eb57ba38d0"
+      "path": "airline_market/sim/native_causal_information.py",
+      "bytes": 19851,
+      "sha256": "1eba344c02ba6c8370fc025d55d47371406abb6ca120639158e32f06454bf002",
+      "git_blob": "107fde49a14bc472f475030c5996b8d45c6c4e62"
     },
     {
-      "path": "tests/unit/test_causal_information.py",
-      "bytes": 15890,
-      "sha256": "b039ef094ac740b3e59ee884865243f05c39fbb680e8d36cfcdb66af98252a36",
-      "git_blob": "d12dea52852b6b27e809ab3ba9e2adb496ba18d7"
+      "path": "tests/unit/test_native_causal_information.py",
+      "bytes": 16553,
+      "sha256": "861cb4cf2b634ab4cabfd9eda8011d3da2def45f4f2a6e1eed784b716a8a9cee",
+      "git_blob": "74c61b650b54bdaf6e83bc2dc6eec59c7e4e146f"
     }
   ],
   "verification": {
-    "focused_passed": 36,
+    "focused_passed": 22,
     "default_subset": {
-      "passed": 2198,
+      "passed": 2220,
       "failed": 0,
       "deselected": 6,
-      "seconds": 526.73,
+      "seconds": 598.51,
       "normal_process_permission": true
     },
     "R0": "OPEN/unconfirmed; six exclusions retained"
   },
-  "interpretation": "Owns typed source-order registration, separate declared message occurrence/record/receipt and exact saved decision prefixes. This pure core is not the actual native hook producer, reception/type/law authentication or utility adoption",
-  "reuse": "Frozen pure UTC/key/schema/scalar/structural-count/owned export helpers on NEW deterministic compiled declarations. No native business loop/actor/RNG/utility/producer/old bank/study/review replay. Actual hook binding remains open.",
+  "interpretation": "Binds actual native registration, same-call ordinary and reached re-entry inputs/results, cancellation and presentation source order. Declared schedule/type semantics do not authenticate external reception, physical law, preferences or utility",
+  "reuse": "Inherits one full native dated step and frozen final-stage hooks; no copied business loop or extra utility/choice/RNG call. NEW genuine native fixture sources only; no old bank/study/review replay. Received knowledge, complete controlled law and lifecycle utility remain open.",
   "excluded": "data, results, local process/execution state at any depth, private reports/reuse details, configurations, unrelated historical source and original local research Git history"
 }
