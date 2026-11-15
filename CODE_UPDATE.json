@@ -1,0 +1,46 @@
+{
+  "plan_id": "A.10/A.5/B0/V9/R3/R4",
+  "source_commit": "aa22a84d9f8503156fd9f5430068574aba362e02",
+  "previous_public_commit": "d9e7571fd34cd8bc2dbdb33e6e04e5a7f5fb4de8",
+  "scope": "Current typed received-information journal and two required prospective-information dependencies with their synthetic tests; no unrelated historical source synchronization",
+  "source_files": [
+    {
+      "path": "airline_market/sim/received_information.py",
+      "bytes": 16046,
+      "sha256": "a97ec5113616c922f2cefd123fb82d76c2fc192de125984c57d5f3245e1bf6b4",
+      "git_blob": "f4f7f92adbcaf00f0dd7c8aa5e6b8863ebf271e1"
+    },
+    {
+      "path": "tests/unit/test_received_information.py",
+      "bytes": 20605,
+      "sha256": "1a9856c15c6c2e490bfe13d7ffe2c898c0591be68a5d76370d4b011996d70fcc",
+      "git_blob": "8b491960b7151f6e792cabe9e4dae89ab108b8c2"
+    },
+    {
+      "path": "airline_market/sim/ordinary_information.py",
+      "bytes": 8148,
+      "sha256": "825a81e946ac171122c469d712cfe84113d1f449580831ba920638538ba225d4",
+      "git_blob": "5a3db85b0fefdb090af66a0b916700f9e7cdf36c"
+    },
+    {
+      "path": "tests/unit/test_ordinary_information.py",
+      "bytes": 16100,
+      "sha256": "8f7b7ba4f5d736b5f98ad6d72c3ad3d4e1cef6375a3f5362611fe148bbce8a7a",
+      "git_blob": "0cf48bb5c712c6661d491d2aed6e2ce011eb7332"
+    },
+    {
+      "path": "airline_market/sim/ordinary_menu.py",
+      "bytes": 7372,
+      "sha256": "df13f21b5f917054adde3b708914d97d63d33b51d9937d37196d4cfbbdd16eb6",
+      "git_blob": "a0a18933f39f8fb845ed2b5a995995370fb17f9e"
+    },
+    {
+      "path": "tests/unit/test_ordinary_menu.py",
+      "bytes": 10806,
+      "sha256": "52c73345d882880d0885c72bf2b8c1cd5e9a7ae3155d76d8f5df21b13f8b40b4",
+      "git_blob": "1e3c8d147490cea12473ceb76d8dd92b11080b5c"
+    }
+  ],
+  "verification": "Required local focused/default subset checks passed; no empirical/full-validation/readiness claim",
+  "excluded": "data, results, local execution state, private reports, original local research Git history, configurations and reuse notes outside this component update"
+}
