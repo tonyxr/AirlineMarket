@@ -1,41 +1,35 @@
 {
   "plan_id": "A.10/A.5/A.14/B0/V9/R3/R4",
-  "source_commit": "8f20e05932e416c79c5c0dfa772ea69ebacc740c",
-  "previous_public_commit": "cfa527aa62c288f32fc18a334acf6d0ae8031eab",
-  "scope": "Only NEW two-body ordinary taste executor, actual ordinary-return recorder and synthetic tests; all other required source matches public base",
+  "source_commit": "4f78705d461cb8db384876603e6e6f3f790c0ea4",
+  "previous_public_commit": "7dfc0f543fcb518ed29f7e4b72e3b0c0acafd9ea",
+  "scope": "Only NEW pure finite latent-type observation attempt compiler and synthetic tests; all56 existing required source bytes match public base",
   "source_files": [
     {
-      "path": "airline_market/sim/ordinary_taste_executor.py",
-      "bytes": 10894,
-      "sha256": "3c7f4b3bd91eafebcce2a9bd282f26cb42ac3a365666df4da6d9e64947dbe2a5",
-      "git_blob": "5b3669e9659ee758fc2062b12f57160d7dfbd0f7"
+      "path": "airline_market/sim/latent_type_attempt.py",
+      "bytes": 11997,
+      "sha256": "3fba71cbf4539fe89b6b49ab0b78e55f09aae0339d070f04feb8faeb9518f438",
+      "git_blob": "06ca1b59070b4f4f927fcca23030642822457f9e"
     },
     {
-      "path": "airline_market/sim/ordinary_private_taste.py",
-      "bytes": 10410,
-      "sha256": "1e0ab42d886999788b7e93e0f397a174110b6c63677e0a7200f7c910e1bf803a",
-      "git_blob": "9907e9c97d992742ecf48f9338c21c5ac9d7a27b"
-    },
-    {
-      "path": "tests/unit/test_ordinary_private_taste.py",
-      "bytes": 16850,
-      "sha256": "198d6f40632e9866ea943d882e582543874d92d86108fad91725bbfd1b9d14f7",
-      "git_blob": "56318f3cea608609c1ebd71aa227a9a836325478"
+      "path": "tests/unit/test_latent_type_attempt.py",
+      "bytes": 14702,
+      "sha256": "1e984de78619be16250c038efeef8a6e342a21baed321fc68fa49e050cf3046a",
+      "git_blob": "af7cd9b3e0df635f4ced1c8bc47db51ba653bf66"
     }
   ],
   "verification": {
-    "component_tests_passed": 22,
-    "component_scope": "all 22 final component tests included in final changed-code default; no separate unchanged full-focused replay",
+    "component_tests_passed": 31,
+    "component_scope": "all31 final component tests included in final changed-code default; no separate unchanged full-focused replay",
     "default_subset": {
-      "passed": 2298,
+      "passed": 2329,
       "failed": 0,
       "deselected": 6,
-      "seconds": 342.1,
+      "seconds": 343.99,
       "normal_process_permission": true
     },
     "R0": "OPEN/unconfirmed; six exclusions retained"
   },
-  "interpretation": "Actual ordinary returned taste after one native resolution and before utility on both dated routes. Two versioned real executor bodies differ only by explicit hook/name/delegation, stripped ASTs equal frozen originals. Private values stay separate from earlier input views, known-label declarations and native probability/preferences/lifecycle adoption",
-  "reuse": "Two native real step bodies adapted only with explicit return hook/name/delegation, full frozen AST equality; native source references retained for attribution. NEW synthetic genuine source/control fixtures; no observer replay, extra native forward or old scientific acceptance replay. Frozen sources unchanged; native law/knowledge/preferences/lifecycle utility remain open.",
+  "interpretation": "Complete declared joint X/K/G with deterministic observed category; own O/G and interline O/signal/G policies carry SAME type/mark through own outside and joint next-X/signal. All zero/unreachable support and NULL zero-evidence beliefs. Pure finite component, no native receipt bridge, probability/knowledge/preferences/lifecycle adoption",
+  "reuse": "Frozen pure shared-mark validation/ownership/export and received-information count helpers imported; exact existing public bytes match. New independent pure finite unit laws/full-path references; no old compiler/native/source/backend/case execution or frozen parent change.",
   "excluded": "data, results, local process/execution state at any depth, private reports/reuse details, configurations, unrelated historical source and original local research Git history"
 }
