@@ -1,35 +1,35 @@
 {
   "plan_id": "A.10/A.5/A.14/B0/V9/R3/R4",
-  "source_commit": "4f78705d461cb8db384876603e6e6f3f790c0ea4",
-  "previous_public_commit": "7dfc0f543fcb518ed29f7e4b72e3b0c0acafd9ea",
-  "scope": "Only NEW pure finite latent-type observation attempt compiler and synthetic tests; all56 existing required source bytes match public base",
+  "source_commit": "39a7e8c871d2f293acf1628c9a571e8ff14fba4b",
+  "previous_public_commit": "3029db71ebe92e62505f47a83cecdba33c84f235",
+  "scope": "Only NEW pure pre-category native source/observation binder and synthetic tests; all62 existing required source bytes match public base",
   "source_files": [
     {
-      "path": "airline_market/sim/latent_type_attempt.py",
-      "bytes": 11997,
-      "sha256": "3fba71cbf4539fe89b6b49ab0b78e55f09aae0339d070f04feb8faeb9518f438",
-      "git_blob": "06ca1b59070b4f4f927fcca23030642822457f9e"
+      "path": "airline_market/sim/pretype_observation.py",
+      "bytes": 13664,
+      "sha256": "2337b9c2bf6142862ac4740b748cb323c3a06080aea1a4f084e6c0fed571cda4",
+      "git_blob": "0bf31595f3e0d5c3197c9a7e621caae81ff7c96c"
     },
     {
-      "path": "tests/unit/test_latent_type_attempt.py",
-      "bytes": 14702,
-      "sha256": "1e984de78619be16250c038efeef8a6e342a21baed321fc68fa49e050cf3046a",
-      "git_blob": "af7cd9b3e0df635f4ced1c8bc47db51ba653bf66"
+      "path": "tests/unit/test_pretype_observation.py",
+      "bytes": 19827,
+      "sha256": "2a05005fcc343a01e63f5e07b37f78b18a0e1ce0478e6ec7484fafe66eff5cdb",
+      "git_blob": "a8444b14e45b9c7e815eb5e5051825d32cd7ba77"
     }
   ],
   "verification": {
     "component_tests_passed": 31,
-    "component_scope": "all31 final component tests included in final changed-code default; no separate unchanged full-focused replay",
+    "component_scope": "ALL31 final installed component tests included in required changed-code default; no separate unchanged full-focused replay",
     "default_subset": {
-      "passed": 2329,
+      "passed": 2360,
       "failed": 0,
       "deselected": 6,
-      "seconds": 343.99,
+      "seconds": 356.53,
       "normal_process_permission": true
     },
     "R0": "OPEN/unconfirmed; six exclusions retained"
   },
-  "interpretation": "Complete declared joint X/K/G with deterministic observed category; own O/G and interline O/signal/G policies carry SAME type/mark through own outside and joint next-X/signal. All zero/unreachable support and NULL zero-evidence beliefs. Pure finite component, no native receipt bridge, probability/knowledge/preferences/lifecycle adoption",
-  "reuse": "Frozen pure shared-mark validation/ownership/export and received-information count helpers imported; exact existing public bytes match. New independent pure finite unit laws/full-path references; no old compiler/native/source/backend/case execution or frozen parent change.",
+  "interpretation": "Complete separately saved native baseline/category/input/source association with NEW declared pre-category X/K/G law. SAME type/mark through own outside and joint next-X/signal; zero evidence yields NULL conditional predictions. Structural source binding is not native probability/knowledge/preferences/lifecycle authentication or adoption",
+  "reuse": "Frozen pure causal/source/ownership/export/count helpers and one finite compiler delegation on NEW inputs; exact existing public bytes match. NEW native synthetic source constructor text adaptation and independent finite law reference; no old saved source/bank/science/case/review or frozen parent change.",
   "excluded": "data, results, local process/execution state at any depth, private reports/reuse details, configurations, unrelated historical source and original local research Git history"
 }
