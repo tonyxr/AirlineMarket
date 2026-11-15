@@ -1,37 +1,37 @@
 {
   "plan_id": "A.10/A.5/A.14/B0/V9/R3/R4",
-  "source_commit": "4841439bb8a8de6c9b2a4faa54cb4f983d22b75a",
-  "previous_public_commit": "097bbb13c9c1019c72716c6e9fc1e51fb0241d4f",
-  "scope": "Only NEW registered declared terminal-material interface and synthetic tests; all existing required source bytes match fresh public base",
+  "source_commit": "c5b3c786dd484e00157cf98d019a9744b39a8217",
+  "previous_public_commit": "c045eadff4ebfe95f6e131070e8af4d8e451e211",
+  "scope": "Only NEW typed paired-law/fixed-history-policy material evaluator and pure synthetic tests; all existing required public bytes match fresh base",
   "source_files": [
     {
-      "path": "airline_market/sim/terminal_material.py",
-      "bytes": 18169,
-      "sha256": "0dfdcf24b4695ca0be416b04db7430b910223f19cfd59e158a9d2e11f9337d30",
-      "git_blob": "4f2e5285a1ad10c9a9c0dfcb0c1ac2d0fae646e1"
+      "path": "airline_market/sim/paired_material.py",
+      "bytes": 18429,
+      "sha256": "3f0315e7bedd96a9eba77d08543d41d53504e69283cb6ec96242a101443b3d69",
+      "git_blob": "fd6180a55714f21e6d2df33557422825745af94e"
     },
     {
-      "path": "tests/unit/test_terminal_material.py",
-      "bytes": 28422,
-      "sha256": "7790767eef3439307db19b9a6fedc0b55cf2f03380efeea90113cc4e00d8b76c",
-      "git_blob": "8d92564a9e442d7aafef6fdc7c200edac8ce2805"
+      "path": "tests/unit/test_paired_material.py",
+      "bytes": 19130,
+      "sha256": "78c19f3d5180c0f965bc2c1c97c7e2701a745ae31692b480dba841f23e456b4b",
+      "git_blob": "d9eb106d4b141cb45cf8e8e329126983762900dd"
     }
   ],
   "verification": {
-    "component_tests_passed": 36,
-    "component_scope": "All36 final installed component cases in required changed-v3 default; initial25 plus corrected8 plus3 new references, no extra unchanged focused replay",
+    "component_tests_passed": 25,
+    "component_scope": "All25 final installed component cases in required changed-code default; no extra unchanged focused replay",
     "default_subset": {
-      "passed": 2527,
+      "passed": 2552,
       "failed": 0,
       "deselected": 6,
-      "seconds": 885.8,
+      "seconds": 733.13,
       "normal_process_permission": true,
       "scope": "four retained closed-adapter exclusions and two repository slow tests",
       "project_local_fixtures": true
     },
     "R0": "OPEN/unconfirmed; six exclusions retained"
   },
-  "interpretation": "Complete immutable numerical/source-plan declaration with local digest; only two actual context views attach later. ONE fresh conditioned-path/stage binding carries SAME K/G; complete terminal FOUR-component accounts preserve zero/tiny/unknown/signed support. Positive unknown or open-tail mass gives NULL material; no native probability, actual knowledge/service/payment, preferences or lifecycle CS adoption.",
-  "reuse": "Frozen pure conditioned-path/stage binder, ownership/export/count helpers and explicit ContingentPayoff arithmetic on NEW inputs. Constructor text adapted to NEW June22/102974 synthetic fixtures, not old helper/case execution; runtime no engine/RNG/native producer/old saved loader; frozen parents unchanged.",
+  "interpretation": "Complete separately DECLARED initial and transition/terminal laws evaluated under ONE unchanged history-indexed policy; SAME K/G through own outside/interline, all zero/missing/unknown/signed support. Positive missing behavior or unknown/open tail gives NULL full material. Root and selected-history criteria separate; no native source, probability/knowledge/preference/service truth or lifecycle CS adoption.",
+  "reuse": "Pure path/history arithmetic pattern adapted from prior CLOSED development prototype without importing/executing its helper or cases. Frozen ownership/export/count and explicit terminal-account arithmetic on NEW pure unit declarations, label104974 is not native key/seed/stream. No native business algorithm, RNG/source producer/default/frozen-parent edit or old case replay.",
   "excluded": "data, results, local process/execution state at any depth, private reports/reuse details, configurations, unrelated historical source and original local research Git history"
 }
