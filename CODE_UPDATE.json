@@ -1,34 +1,58 @@
 {
-  "plan_id": "A.10/A.5/B0/V9/R3/R4",
-  "source_commit": "a19fa720102f98bd489d7fc0bafe9bd4482e5092",
-  "previous_public_commit": "a11500949293564d6c9b5e2250d5d1d4c2566cd1",
-  "scope": "Only NEW controlled-information compiler and synthetic tests; all other required source matches the public base",
+  "plan_id": "A.10/A.5/A.14/B0/V9/R3/R4",
+  "source_commit": "f5da82af36cf7227462a57f8a568d8b113c6d4a0",
+  "previous_public_commit": "b1fd2e8e4659e239db45ebf7d1cb6f653e2e004f",
+  "scope": "Current native information-context join plus two required own/proof modules and their synthetic tests; all other required source matches public base",
   "source_files": [
     {
-      "path": "airline_market/sim/controlled_information.py",
-      "bytes": 20276,
-      "sha256": "aae38a0f42e29e44725a774bb8b822e11e4a4ffb331f7df450757788b2ae8917",
-      "git_blob": "97f794bcc49108100d1d469bd43478852ab489ba"
+      "path": "airline_market/sim/native_information_context.py",
+      "bytes": 20248,
+      "sha256": "db560f1c62a33668601fa0a964f3d85a13b2cdc6a2d65d3441461a1d26687f71",
+      "git_blob": "a03fc75658012b6ba4a7ce28a4343369656fac10"
     },
     {
-      "path": "tests/unit/test_controlled_information.py",
-      "bytes": 20313,
-      "sha256": "d209d9793da92bceb96c5f50b2d6ec95fbf624d297f9553d591e1db377f7fe4f",
-      "git_blob": "29cf9dd454976f73ce7d75d3217269a201bc93e2"
+      "path": "airline_market/sim/own_history_information.py",
+      "bytes": 12840,
+      "sha256": "26d972a895b1d521bba6dc150b4bcc8b985a3a56a5c7d665aa029fb9eab5f1de",
+      "git_blob": "bb322a2e29ddd8f0b4354d55b0b7d4865808ffe0"
+    },
+    {
+      "path": "airline_market/sim/proof_information.py",
+      "bytes": 10127,
+      "sha256": "ecff9b04ae64996a714c4616003f50f0a1913a719482f7809021dac9705a1426",
+      "git_blob": "fdbe938df3e71e9d832c0d878b639f1991ab10e9"
+    },
+    {
+      "path": "tests/unit/test_native_information_context.py",
+      "bytes": 15138,
+      "sha256": "593595310e034c8507d1b949c84b3814878d947da942579817f62123949d8d7f",
+      "git_blob": "8b43b894f8a07c7d673ec8b99d9997cccb087c51"
+    },
+    {
+      "path": "tests/unit/test_own_history_information.py",
+      "bytes": 14918,
+      "sha256": "7995f768188e1c4f826f4c95733488334d317bed96d9975b1f3fa343d18feaad",
+      "git_blob": "153236600b84c4e21639f029adfdfed70cc35a60"
+    },
+    {
+      "path": "tests/unit/test_proof_information.py",
+      "bytes": 18103,
+      "sha256": "bb5e416ea27ab3d755f370446543a793357c0bee82280275e713f36f7b225134",
+      "git_blob": "8a7fb813a1714b95d87c666ffb61851549ad802a"
     }
   ],
   "verification": {
-    "focused_passed": 33,
+    "focused_passed": 24,
     "default_subset": {
-      "passed": 2062,
+      "passed": 2086,
       "failed": 0,
       "deselected": 6,
-      "seconds": 362.32,
+      "seconds": 382.78,
       "normal_process_permission": true
     },
     "R0": "OPEN/unconfirmed; six exclusions retained"
   },
-  "interpretation": "Exact arithmetic for explicit declared history/action/transition/observation/type laws; no authenticated native probability/actual knowledge/utility or default adoption",
-  "reuse": "Existing public pure received-information validation/export, owned containers and UTC/binary64 helpers only; native fixture pattern adapted locally, no prior fixture helper or saved study replay",
+  "interpretation": "Pure complete captured native original-person contexts; current effective reentry menu/type/actual knowledge/probability/utility/default adoption remain open",
+  "reuse": "Frozen pure received/own/proof typed views and UTC/binary64 helpers only; native fixture pattern locally adapted, no old fixture helper or saved study replay",
   "excluded": "data, results, local process/execution state at any depth, private reports/reuse details, configurations, unrelated historical source and original local research Git history"
 }
