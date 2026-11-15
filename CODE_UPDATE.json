@@ -1,34 +1,35 @@
 {
   "plan_id": "A.10/A.5/A.14/B0/V9/R3/R4",
-  "source_commit": "8c588124e110697fa0c7e1248c666187f8217095",
-  "previous_public_commit": "53fe7e6fffb4c0febb54fd23b3356f5abfa07445",
-  "scope": "Only NEW opt-in native causal-information source and synthetic tests; all other required source matches public base",
+  "source_commit": "1c79473e119951619206c910ba099f00dea91d22",
+  "previous_public_commit": "9ca9425f0ffb5192886ee5396286ab8c67163379",
+  "scope": "Only NEW finite declared shared-mark attempt compiler and synthetic source-binding tests; all other required source matches public base",
   "source_files": [
     {
-      "path": "airline_market/sim/native_causal_information.py",
-      "bytes": 19851,
-      "sha256": "1eba344c02ba6c8370fc025d55d47371406abb6ca120639158e32f06454bf002",
-      "git_blob": "107fde49a14bc472f475030c5996b8d45c6c4e62"
+      "path": "airline_market/sim/shared_mark_attempt.py",
+      "bytes": 23689,
+      "sha256": "b8b9a6ecb5b55b2f64a9d38635373e55dfe77fab3b04f35fd3adb6cc0713e663",
+      "git_blob": "4264c5c956ebaf7ee1245aa1b712f03e542ca0d4"
     },
     {
-      "path": "tests/unit/test_native_causal_information.py",
-      "bytes": 16553,
-      "sha256": "861cb4cf2b634ab4cabfd9eda8011d3da2def45f4f2a6e1eed784b716a8a9cee",
-      "git_blob": "74c61b650b54bdaf6e83bc2dc6eec59c7e4e146f"
+      "path": "tests/unit/test_shared_mark_attempt.py",
+      "bytes": 19810,
+      "sha256": "9846ef74ad1529c9fe4a7724b4cbe93f9df41ffc052b7cf270d9a91afdc800e0",
+      "git_blob": "05fd463b72cecce3dc12795c53641d259ef67a5d"
     }
   ],
   "verification": {
-    "focused_passed": 22,
+    "component_tests_passed": 37,
+    "component_scope": "all37 final installed component tests included in final required default; focused initial25 + v2affected16 + v3new1 + v4new2 + v5new4, no unchanged focused replay",
     "default_subset": {
-      "passed": 2220,
+      "passed": 2257,
       "failed": 0,
       "deselected": 6,
-      "seconds": 598.51,
+      "seconds": 313.21,
       "normal_process_permission": true
     },
     "R0": "OPEN/unconfirmed; six exclusions retained"
   },
-  "interpretation": "Binds actual native registration, same-call ordinary and reached re-entry inputs/results, cancellation and presentation source order. Declared schedule/type semantics do not authenticate external reception, physical law, preferences or utility",
-  "reuse": "Inherits one full native dated step and frozen final-stage hooks; no copied business loop or extra utility/choice/RNG call. NEW genuine native fixture sources only; no old bank/study/review replay. Received knowledge, complete controlled law and lifecycle utility remain open.",
+  "interpretation": "One conditional fixed-known-label finite own/interline attempt: exact rational joint physical/private-mark selection, joint next-state/signal kernels, explicit feasible/visible menus and supplied-source binding. Not native probability, received knowledge, preferences or lifecycle utility adoption",
+  "reuse": "Pure finite forwards and frozen pure source-prefix/export validators only at runtime; NEW genuine native fixture sources in tests. No copied native business loop/runtime producer or old bank/science/frame/analytic-case/review replay. All frozen sources unchanged; received knowledge/native law/preferences/lifecycle utility remain open.",
   "excluded": "data, results, local process/execution state at any depth, private reports/reuse details, configurations, unrelated historical source and original local research Git history"
 }
