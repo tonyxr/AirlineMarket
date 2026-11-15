@@ -1,34 +1,40 @@
 {
   "plan_id": "A.10/A.5/A.14/B0/V9/R3/R4",
-  "source_commit": "c308aa0bd9ff754b69f23b7f7ff7bc72b42464e1",
-  "previous_public_commit": "982da06e815c7679b5fe267d6ebe3a740921bdfd",
-  "scope": "Only NEW preferred native context v2 consistency reader and synthetic tests; all other required source matches public base",
+  "source_commit": "c9e70d529ab030c2ca71f8cf146dc278d4ab0bcb",
+  "previous_public_commit": "b3e9eb6e6305b4b13402dbe7010f24168f48c456",
+  "scope": "Only NEW versioned re-entry stage executor, prospective recorder and synthetic tests; all other required source matches public base",
   "source_files": [
     {
-      "path": "airline_market/sim/native_information_context_v2.py",
-      "bytes": 21099,
-      "sha256": "135803f976c1c24d4d6007898f7f490dcad987c0a0927a5a101978e4261d8c87",
-      "git_blob": "3928706b27568e6abd2b6707c3b06967db8bbe14"
+      "path": "airline_market/sim/reentry_stage_executor.py",
+      "bytes": 12557,
+      "sha256": "4545e9f6e54bc9b5580097f0a6754dc5e043c5f9c2892027defa0b2b796225d6",
+      "git_blob": "0a30724c1e07f9e799e628ce2163455b22eeba08"
     },
     {
-      "path": "tests/unit/test_native_information_context_v2.py",
-      "bytes": 13062,
-      "sha256": "e784ca9ef12e9a7b5a8e067544a68ae040d05c8435084b385d8b9512c79a9f40",
-      "git_blob": "c4cc30e2af97cc32a633854df7d858ed0a0cecf9"
+      "path": "airline_market/sim/reentry_stage_information.py",
+      "bytes": 14502,
+      "sha256": "2b4ace2ac1341479f4c37e9854e0bdb5f02266968d5d658bd5f4f763c68b9941",
+      "git_blob": "a77c88b00e032ec0cf20f09d43c3629838510323"
+    },
+    {
+      "path": "tests/unit/test_reentry_stage_information.py",
+      "bytes": 15467,
+      "sha256": "4f9549282991acf477300eeebb20ac1ff3a7f26dcea071ae18ffacf551603d37",
+      "git_blob": "766bfff58e45aa2ebb012d9710abe6f1e51baec7"
     }
   ],
   "verification": {
-    "focused_passed": 16,
+    "focused_passed": 20,
     "default_subset": {
-      "passed": 2102,
+      "passed": 2122,
       "failed": 0,
       "deselected": 6,
-      "seconds": 273.88,
+      "seconds": 373.78,
       "normal_process_permission": true
     },
     "R0": "OPEN/unconfirmed; six exclusions retained"
   },
-  "interpretation": "Pure context revision checks same O&D/carrier-stage/offered-choice and retains actual closing-boundary cancellation facts without extra periods; no final-menu/type/actual knowledge/probability/utility adoption",
-  "reuse": "Own PURE context-join adaptation with one boundary fix and new purchase checks; no native business algorithm copy/call or old source bank/study/review replay",
+  "interpretation": "Captures actual same-call final re-entry stage input arrays and separate reached results; model inputs are not received knowledge, probability or utility adoption",
+  "reuse": "Own native base/rescue/reserve re-entry executor bodies adapted only for hooks and route names; stripped AST matches; real prospective native primitive execution, no observer/old source bank/study/review replay",
   "excluded": "data, results, local process/execution state at any depth, private reports/reuse details, configurations, unrelated historical source and original local research Git history"
 }
