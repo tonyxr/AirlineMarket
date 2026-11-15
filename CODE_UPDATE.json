@@ -1,40 +1,34 @@
 {
   "plan_id": "A.10/A.5/A.14/B0/V9/R3/R4",
-  "source_commit": "c9e70d529ab030c2ca71f8cf146dc278d4ab0bcb",
-  "previous_public_commit": "b3e9eb6e6305b4b13402dbe7010f24168f48c456",
-  "scope": "Only NEW versioned re-entry stage executor, prospective recorder and synthetic tests; all other required source matches public base",
+  "source_commit": "cba6aa92ab7950f028394f21932f89709aebcbbd",
+  "previous_public_commit": "85462957ed767ced1566eafa131906257f5fd48e",
+  "scope": "Only NEW pure native attempt/stage context binder and synthetic tests; all other required source matches public base",
   "source_files": [
     {
-      "path": "airline_market/sim/reentry_stage_executor.py",
-      "bytes": 12557,
-      "sha256": "4545e9f6e54bc9b5580097f0a6754dc5e043c5f9c2892027defa0b2b796225d6",
-      "git_blob": "0a30724c1e07f9e799e628ce2163455b22eeba08"
+      "path": "airline_market/sim/native_stage_contexts.py",
+      "bytes": 20058,
+      "sha256": "c57738b3125db7686c191b7d1f81d3e3021b25055c2d99bbec3763af407fe20f",
+      "git_blob": "e25b56657f15b4f3a78ac9cf5f2e6154429ee67e"
     },
     {
-      "path": "airline_market/sim/reentry_stage_information.py",
-      "bytes": 14502,
-      "sha256": "2b4ace2ac1341479f4c37e9854e0bdb5f02266968d5d658bd5f4f763c68b9941",
-      "git_blob": "a77c88b00e032ec0cf20f09d43c3629838510323"
-    },
-    {
-      "path": "tests/unit/test_reentry_stage_information.py",
-      "bytes": 15467,
-      "sha256": "4f9549282991acf477300eeebb20ac1ff3a7f26dcea071ae18ffacf551603d37",
-      "git_blob": "766bfff58e45aa2ebb012d9710abe6f1e51baec7"
+      "path": "tests/unit/test_native_stage_contexts.py",
+      "bytes": 15219,
+      "sha256": "551ff2389382c55a9f36c2aeef8b817469aafb1c927ca66a74ca87df33e33d5d",
+      "git_blob": "50da2d0cb82757ab69f642b78dc44f221cc860dd"
     }
   ],
   "verification": {
-    "focused_passed": 20,
+    "focused_passed": 40,
     "default_subset": {
-      "passed": 2122,
+      "passed": 2162,
       "failed": 0,
       "deselected": 6,
-      "seconds": 373.78,
+      "seconds": 318.73,
       "normal_process_permission": true
     },
     "R0": "OPEN/unconfirmed; six exclusions retained"
   },
-  "interpretation": "Captures actual same-call final re-entry stage input arrays and separate reached results; model inputs are not received knowledge, probability or utility adoption",
-  "reuse": "Own native base/rescue/reserve re-entry executor bodies adapted only for hooks and route names; stripped AST matches; real prospective native primitive execution, no observer/old source bank/study/review replay",
+  "interpretation": "Binds complete new native own/proof/ordinary support and reached stage inputs/results on the same original person and attempt; computation views are not received knowledge, probability or utility adoption",
+  "reuse": "Pure supplied-source readers and owned binary64 exports; new unit constructor adapted from the existing native stage-source test pattern with NEW dates and named stream. No native business algorithm copied, producer/old source-bank/study/review replay",
   "excluded": "data, results, local process/execution state at any depth, private reports/reuse details, configurations, unrelated historical source and original local research Git history"
 }
