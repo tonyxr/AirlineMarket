@@ -1,114 +1,36 @@
 {
   "plan_id": "A.10/A.5/B0/V9/B4/R3/R4",
-  "source_commit": "acfd2ead6da21d1d3d78166fdb8c2152f61c5ad1",
-  "previous_public_commit": "f91170226decf86522ada76d36a34d07e465c79d",
-  "scope": "NEW typed owned registered branch material/utility module and33 synthetic tests ONLY; complete135-file absolute+relative import closure,133 existing required public bytes match",
+  "source_commit": "8b63a3d9511d751762f94be2a603920dc18084c7",
+  "previous_public_commit": "ae004699a46be59dc2cf3b8792e0866fb92b6630",
+  "scope": "Current opt-in finite declared decision/utility module and 40 synthetic tests only; all existing required dependency bytes match",
   "source_files": [
     {
-      "path": "airline_market/sim/registered_branch_utility.py",
-      "sha256": "be30f56308d9b287f53ee5021ce72c241ce984c88c71ca9ad8712ccfe9347af1",
-      "git_blob": "f5d4e0a5c1e13041625b1ee14611c5fe9618de82",
-      "bytes": 22847
+      "path": "airline_market/sim/decision_consistency.py",
+      "sha256": "67801d487b208c1b868adc5d26e1da604e28d12630f62b7a6dbd87a6e604267d",
+      "git_blob": "65dc8bbd092e5226d58b608c9518fb52bb1b2933",
+      "bytes": 21493
     },
     {
-      "path": "tests/unit/test_registered_branch_utility.py",
-      "sha256": "938584435761aa6590d9ad5af140ad4f353aaceb43b9ad3ad9d75734a0784ee6",
-      "git_blob": "68a89e470191c080b12e71c1a7a73c8766f9d853",
-      "bytes": 34914
+      "path": "tests/unit/test_decision_consistency.py",
+      "sha256": "00c780ae6071c98bf8a93d9a18713e8c6668c89ead8aa1e006cf6d57b7f42d59",
+      "git_blob": "bd568795808b40ac401c745c8b752ea51e0c92c2",
+      "bytes": 23545
     }
   ],
   "verification": {
-    "component_tests_passed": 33,
+    "component_tests": 40,
     "default_subset": {
-      "passed": 2950,
+      "passed": 2990,
       "failed": 0,
       "deselected": 6,
-      "seconds": 664.68,
+      "seconds": 781.03,
       "normal_process_permission": true
     },
     "R0": "OPEN/unconfirmed; six retained exclusions; no full-default-green/readiness"
   },
-  "interpretation": "Own complete frozen financial registration and ALL prospective original-person FOUR-component/explicit additional-utility/full outside-reference accounts, independent three tail closures, common as-of, units/non-overlap and exact joint financial-by-utility laws. Revalidate digest/rule/recomputed full named added input/output/report/person/law/event bound before ONE frozen registered financial route; only actual indices associate afterward. Source payments/refunds once; explicit P must match prospective and actual complete financial accounts. Exact signed/tiny/unknown/zero support retained; positive unknown/open or upstream public NULL keeps complete candidate integrals/ratios NULL. Declared alpha differs from native alpha; no private mark decoding, missing outside zero, product-of-marginal law, normalization/pruning/repair or candidate-preference adoption. Same-selected-path reference not outside intervention/causal value/lifecycle CS. Native choices/actors/defaults/frozen parents unchanged; separate branch service/no genuine panel or native departure engine/whole-ticket resolve after service. Named bound not every serializer node/bytes/RSS/scratch/F9/scientific scalability. All full adoptions false, budgets NULL.",
-  "reuse": "Frozen typed financial ownership, pure full prospective validator and pure payment arithmetic delegated; exactly one NEW source/service/financial route via frozen factory. New utility algebra/complete domain adapted from local design/prototype text, no old fixture/helper/source/case/review executed. Complete135-file closure/133 existing dependency bytes match; no unrelated historical synchronization.",
-  "reuse_attribution": [
-    {
-      "path": "tests/unit/test_registered_branch_financial.py",
-      "sha256": "829178787bd3bb43bf941891212072664c1ad83bd9996eb3965dc2bd3771c396",
-      "ranges": {
-        "fixture": [
-          41,
-          344
-        ]
-      },
-      "adaptation": "NEW128974 constructor text locally adapted; no old helper executed"
-    },
-    {
-      "path": "airline_market/sim/registered_branch_financial.py",
-      "sha256": "2606d2e71ab2d36b8f1685044fed78e7f902b5c2ce3342cdc7634b63ff7ea67f",
-      "ranges": {
-        "RegisteredBranchFinancial": [
-          82,
-          126
-        ],
-        "_validate": [
-          261,
-          496
-        ],
-        "execute_registered_branch_financial": [
-          569,
-          690
-        ],
-        "registered_branch_financial_record": [
-          693,
-          700
-        ]
-      },
-      "adaptation": "Frozen typed parent ownership, PURE prospective contract validation and exactly one NEW execution delegated; no business algorithm copied"
-    },
-    {
-      "path": "airline_market/sim/branch_financial.py",
-      "sha256": "3f46e19b7a6acc9528a8063ed45e3a40acd6401310ccd73d4de51d193a404ec8",
-      "ranges": {
-        "_same": [
-          26,
-          29
-        ],
-        "_payments": [
-          369,
-          415
-        ]
-      },
-      "adaptation": "Frozen PURE complete prospective payment arithmetic/lossless comparison delegated"
-    },
-    {
-      "path": "results/A10_branch_utility_contract_tooling/derive_branch_utility_20261116_1216_v3.py",
-      "sha256": "3da13abb28352e30b96f4c2e71f0949f577d7dd7b895c9144acdf9cf1aa97152",
-      "ranges": {
-        "prospective": [
-          399,
-          561
-        ],
-        "validate": [
-          564,
-          657
-        ],
-        "accounts": [
-          660,
-          695
-        ],
-        "project": [
-          698,
-          777
-        ]
-      },
-      "adaptation": "Conceptual full contingency axes/exact candidate algebra and NULL semantics adapted to new typed factory; old prototype never executed"
-    },
-    {
-      "path": "airline_market/sim/person_utility_incidence.py",
-      "sha256": "73a66e7815015f8c0005a3be1258820dafa841cf61588f78808e3c4de594911f",
-      "ranges": {},
-      "adaptation": "Conceptual reference/incidence contract only; no realized-person reader executed"
-    }
-  ],
-  "excluded": "data/results/private reports/process state/configurations/unrelated source/history/private process records"
+  "interpretation": "One original person's complete declared X/H/G subjective joint and every action/outside FOUR-component plus explicit E account, sources, independent closures and units. Separate terminal-utility and material-plus-decision-noise criteria; supplied descriptive policy claims no optimality. Fix actions using subjective information, then evaluate unchanged under a separate complete reference law without solver/score replay. Complete zero/unused/tiny/signed/unknown support retained; positive missing behavior/payoffs remain NULL. No normalization/pruning/reset/redraw/repair or outside intervention/causal value/consumer-surplus inference. Typed hashes/origin labels do not authenticate producer, native laws, received knowledge or preferences. Full structural input/output bound is not bytes/RSS/scratch/F9/scalability. Single commitment is not a native own-first/interline or dynamic policy; native actors/defaults/frozen parents unchanged, all full adoptions false and scientific budgets null.",
+  "reuse": "Finite exact criterion/Bayes/fixed-policy arithmetic concepts from project-local design and one-use reference, rewritten as typed owned complete support with pre-forward structural bounds. No old source/case/helper or native business algorithm executed/copied. Direct module dependencies are stdlib; complete absolute/relative runtime and companion-test closure verified against public bytes.",
+  "import_closure_files": 78,
+  "existing_required_public_bytes_match": 76,
+  "excluded": "Private research ancestry, data, results, reports, process state, configurations and unrelated historical source/tests"
 }
