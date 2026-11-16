@@ -1,44 +1,44 @@
 {
-  "plan_id": "A.10/A.5/A.14/B0/V9/B4/R3/R4",
-  "source_commit": "d0b3fd8d110522511e256763e51aae2a249730b1",
-  "previous_public_commit": "0820b897f88baef42b31ed478827c086c9919dba",
-  "scope": "Only NEW owned paired-utility registration/source binder and NEW synthetic tests; required public dependencies already match",
+  "plan_id": "A.10/A.5/B0/V9/B4/R3/R4",
+  "source_commit": "bfb711e0c65e2b08e60714050e7cf1885c0b0f05",
+  "previous_public_commit": "2087ccb68fbf668d036e8d29feaba176e37526e6",
+  "scope": "Only NEW typed conditional joint population service/payment evaluator and NEW synthetic tests; required public dependencies already match",
   "source_files": [
     {
-      "path": "airline_market/sim/registered_path_utility.py",
-      "sha256": "f1e438876537e10e6967313238afe2c8dcc3359fd447c83a3d38918db7be81ab",
-      "git_blob": "061fad9afd205ba40f474c4e322b5e0c9f7104b6",
-      "bytes": 18711
+      "path": "airline_market/sim/conditional_population.py",
+      "sha256": "fbb53cf32da991e3e3181c8dadaebae1fa2252d4c65e960275fc0d46a899517f",
+      "git_blob": "8eca6ac9656607a7c441f3633683e38c302713a0",
+      "bytes": 31575
     },
     {
-      "path": "tests/unit/test_registered_path_utility.py",
-      "sha256": "e54617df3538996116df687017809328b0f6b734287ca5dfb1d26ac5748d8075",
-      "git_blob": "52037bf38ba846cc7ae82464e6fdc1ce0eacf9d6",
-      "bytes": 35491
+      "path": "tests/unit/test_conditional_population.py",
+      "sha256": "bb6ddb581de2e667a0abe25b641456c42336fd285fe841eeeea5bb862d18b85d",
+      "git_blob": "5c5cec56e054bf173279b425081914de415685fc",
+      "bytes": 25627
     }
   ],
   "verification": {
-    "component_tests_passed": 36,
+    "component_tests_passed": 33,
     "default_subset": {
-      "passed": 2689,
+      "passed": 2722,
       "failed": 0,
       "deselected": 6,
-      "seconds": 1075.87,
-      "scope": "Default SUBSET, four retained closed adapters plus two slow tests excluded; R0 OPEN",
+      "seconds": 1286.35,
+      "scope": "Default SUBSET; four retained closed-adapter exclusions plus two slow tests; R0 OPEN",
       "raw_rng_calls": null
     },
     "R0": "OPEN/unconfirmed; six retained exclusions; no full-default-green"
   },
-  "interpretation": "Complete BOTH original/future/utility laws, one fixed policy, supported static/delivery contract and ALL regular postings registered as owned payload. Rule/digest and structural bounds rechecked before one new paired binding and utility projection; only three context paths attach. Zero original evidence stays NULL; tiny positive unknown utility stays NULL. No native law/knowledge/preferences/service truth or lifecycle CS adoption.",
-  "reuse": "NEW August10 2027/seed31/named StreamRegistry112974 constructor/declaration TEXT locally adapted from earlier design, fares250/375, priors4/11-7/11, alpha1/97; no old test helper/case execution. Pure paired_history_binding preflight prefix adapted into _templates with explicit parent-name qualification and shape/bound return; current source SHA/ranges recorded locally. Stripped declarative AST equality checked; no native business executor copy or default change.",
+  "interpretation": "Finite declared future law conditional on one fixed complete realized native booking prefix. ALL original people and full physical x financial cells, including zero weights and unreachable contingent terms, retained. Service executor once per physical programme; payments/material once per cell. Exact Fraction full-joint contributions, tiny positive unknown NULL, shared-seat covariance distinct from product marginals. No native arrival/selection/physical/financial/knowledge/preference/service truth or lifecycle CS adoption.",
+  "reuse": "Pure current_itinerary_service validation prefix adapted with explicit LegOperation qualification and support return BEFORE transitions; stripped prefix AST equality checked. Complete ticket arithmetic pattern adapted from service_ticket_payments lines199-246. NEW August24 2027/seed31/named StreamRegistry114974 constructor TEXT adapted locally from the registered-path unit pattern; no old helper/case/source/science/review execution. Native/service business algorithms and frozen parents unchanged.",
   "reuse_preflight_source": {
-    "source": "airline_market/sim/paired_history_binding.py",
+    "source": "airline_market/sim/current_itinerary_service.py",
     "range": [
-      602,
-      683
+      68,
+      194
     ],
-    "sha256": "85ca9f92e5f2af67309ad8a57bd112401929df6316abc338ded6cdf3a38d9b06",
-    "adaptation": "Pure declaration prefix, qualified parent names and shape-bound return; AST equality checked; no native executor copy"
+    "sha256": "78adb40756e5aaf816fc86f67701c0a71dc0669f09ddee495d5e58e95b74b97c",
+    "adaptation": "Pure validation prefix, explicit LegOperation qualification and support return; no business transition copy"
   },
   "excluded": "data/results/private reports/process state/configurations/unrelated source/history/private reuse process records"
 }
