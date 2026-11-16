@@ -1,44 +1,43 @@
 {
   "plan_id": "A.10/A.5/B0/V9/B4/R3/R4",
-  "source_commit": "bfb711e0c65e2b08e60714050e7cf1885c0b0f05",
-  "previous_public_commit": "2087ccb68fbf668d036e8d29feaba176e37526e6",
-  "scope": "Only NEW typed conditional joint population service/payment evaluator and NEW synthetic tests; required public dependencies already match",
+  "source_commit": "dfa9191a0e20c375081aaa6f2c31ff2ef030f5a4",
+  "previous_public_commit": "a847c3ec394ee67105455d88e3dc4f6997bd9690",
+  "scope": "Only NEW typed owned prospective population/source-programme registration interface and NEW synthetic tests; required existing public dependencies match",
   "source_files": [
     {
-      "path": "airline_market/sim/conditional_population.py",
-      "sha256": "fbb53cf32da991e3e3181c8dadaebae1fa2252d4c65e960275fc0d46a899517f",
-      "git_blob": "8eca6ac9656607a7c441f3633683e38c302713a0",
-      "bytes": 31575
+      "path": "airline_market/sim/registered_population.py",
+      "sha256": "6cb452aa44c8f7aff681b0f5bf61fcae5768d8132494ca5f3f381f5a1c5649cb",
+      "git_blob": "4f04ad517b80bc12da09b594f4e6e1e2f0262e6d",
+      "bytes": 28162
     },
     {
-      "path": "tests/unit/test_conditional_population.py",
-      "sha256": "bb6ddb581de2e667a0abe25b641456c42336fd285fe841eeeea5bb862d18b85d",
-      "git_blob": "5c5cec56e054bf173279b425081914de415685fc",
-      "bytes": 25627
+      "path": "tests/unit/test_registered_population.py",
+      "sha256": "ee81e790783bbbf26f384f1fa1c3adacb5a4d581857b4d37f532d6dc0c21b026",
+      "git_blob": "89c03a288c22f88302cbb40403968cc9d65fc87e",
+      "bytes": 29551
     }
   ],
   "verification": {
-    "component_tests_passed": 33,
+    "component_tests_passed": 34,
     "default_subset": {
-      "passed": 2722,
+      "passed": 2756,
       "failed": 0,
       "deselected": 6,
-      "seconds": 1286.35,
-      "scope": "Default SUBSET; four retained closed-adapter exclusions plus two slow tests; R0 OPEN",
-      "raw_rng_calls": null
+      "seconds": 879.91,
+      "normal_process_access": true,
+      "six_exclusions_retained": true
     },
-    "R0": "OPEN/unconfirmed; six retained exclusions; no full-default-green"
+    "R0": "OPEN/unconfirmed; six retained exclusions; no full-default-green/readiness"
   },
-  "interpretation": "Finite declared future law conditional on one fixed complete realized native booking prefix. ALL original people and full physical x financial cells, including zero weights and unreachable contingent terms, retained. Service executor once per physical programme; payments/material once per cell. Exact Fraction full-joint contributions, tiny positive unknown NULL, shared-seat covariance distinct from product marginals. No native arrival/selection/physical/financial/knowledge/preference/service truth or lifecycle CS adoption.",
-  "reuse": "Pure current_itinerary_service validation prefix adapted with explicit LegOperation qualification and support return BEFORE transitions; stripped prefix AST equality checked. Complete ticket arithmetic pattern adapted from service_ticket_payments lines199-246. NEW August24 2027/seed31/named StreamRegistry114974 constructor TEXT adapted locally from the registered-path unit pattern; no old helper/case/source/science/review execution. Native/service business algorithms and frozen parents unchanged.",
-  "reuse_preflight_source": {
-    "source": "airline_market/sim/current_itinerary_service.py",
-    "range": [
-      68,
-      194
+  "interpretation": "Owned complete restricted native source recipe and all future programmes/laws before narrow current-ticket attachments. Full source/model/scenario/controls/postings/people/tapes retained and structurally checked; actual all-support bound recomputed before one conditional population evaluation. All zero, signed, tiny unknown/open-tail support retained. No authenticated native arrival/physical/financial/observation law, actual knowledge/preferences, lifecycle utility/CS or external preregistration.",
+  "reuse": "Delegates frozen conditional_population pure preflight then one evaluator on NEW supplied inputs; native/service business algorithms and frozen parents unchanged. NEW September7 2027/seed field31/named StreamRegistry116974 declaration TEXT adapted locally from the standalone 0501 prepare pattern, source hash/range below; no old helper/source/case/science/review execution. Full tape field shapes from native ExogenousTape without generation.",
+  "fixture_declaration_attribution": {
+    "source_sha256": "e13140689f79fa80e16b3c49727dfc7cb1eafdfa8a299ba8033589061d493d4a",
+    "source_range": [
+      102,
+      458
     ],
-    "sha256": "78adb40756e5aaf816fc86f67701c0a71dc0669f09ddee495d5e58e95b74b97c",
-    "adaptation": "Pure validation prefix, explicit LegOperation qualification and support return; no business transition copy"
+    "adaptation": "TEXT only NEW date/namespace/fares/benefit/cost/rebate/law, negative ticket tokens and typed complete registration; old helper not imported/executed"
   },
-  "excluded": "data/results/private reports/process state/configurations/unrelated source/history/private reuse process records"
+  "excluded": "data/results/private reports/process state/configurations/unrelated source/history/private process records"
 }
