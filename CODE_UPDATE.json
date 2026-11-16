@@ -1,36 +1,36 @@
 {
   "plan_id": "A.10/A.5/B0/V9/B4/R3/R4",
-  "source_commit": "a577a75a3098eb0b603a62bcd4530a5ca365f406",
-  "previous_public_commit": "7831526fc0ad9543c34ee110af5f0ff5b3efa1bf",
-  "scope": "Current opt-in finite declared decision/utility module and 45 synthetic tests only; all existing required dependency bytes match",
+  "source_commit": "34b103e806ad4a229ef404178637ad4ccb41ab60",
+  "previous_public_commit": "f002acdf1ebf197d6edcc6eaaeb1f296cef11b45",
+  "scope": "Current pure typed native-context/compatible-label module and 50 synthetic tests only; all existing required public dependencies match",
   "source_files": [
     {
-      "path": "airline_market/sim/action_kernel_utility.py",
-      "sha256": "e74e3e152992ea66487d0976a8ec3ab478a4ef87b45168adc90e9f046614c80b",
-      "git_blob": "2551b69ce65ec689596493c2f818cb7c5ca7a0d9",
-      "bytes": 18690
+      "path": "airline_market/sim/context_compatibility.py",
+      "sha256": "293d9c222c6731ab37697db4f9898fdfb26cf2a743501ec4a927d098b65b1385",
+      "git_blob": "5a325241a2770888a34fb3f89d6e7b65cbb7e512",
+      "bytes": 18010
     },
     {
-      "path": "tests/unit/test_action_kernel_utility.py",
-      "sha256": "25ee963f749b38f71201c89a5f5fcecbc80f90fbc508976997e4a325ff240ac6",
-      "git_blob": "07e7cacfd6a491a3952c6917a1f7df9072295a86",
-      "bytes": 20100
+      "path": "tests/unit/test_context_compatibility.py",
+      "sha256": "388e2043c71d6ce1e5d70e9b14feeeda6f303622f5371c824284e19bb108baf7",
+      "git_blob": "c057ace9ce99fc098544ca74d0f9c3cc3b715650",
+      "bytes": 18174
     }
   ],
   "verification": {
-    "component_tests": 45,
+    "component_tests": 50,
     "default_subset": {
-      "passed": 3035,
+      "passed": 3085,
       "failed": 0,
       "deselected": 6,
-      "seconds": 760.15,
+      "seconds": 1759.61,
       "normal_process_permission": true
     },
-    "R0": "OPEN/unconfirmed; six retained exclusions; no full-default-green/readiness"
+    "R0": "OPEN/unconfirmed; six exclusions; no full-default-green/readiness"
   },
-  "interpretation": "One original person/fixed declared known type/full X-H-G and joint future Y support. Own BOTH role-specific pre-decision priors, EACH action conditional kernel, actual and same-path outside FOUR-component/E/three-tail accounts, units, definitions and complete descriptive policy. Each action block sums one; raw all-action mass is action count, fixed policy selects one. Solve subjective q only under separate terminal-utility or material-plus-decision-noise criterion; reference r evaluates SAME fixed actions without score or solver replay. Missing behavior counted once per prior cell, positive unknown/tiny/open tails remain NULL, zero unknown retained/algebraic zero. Outside policy uses its OWN kernel, distinct from selected-path normalization. No cross-action coupling, prior/type/shock reset, pruning, normalization, clipping, epsilon, repair or partial estimate. Structural full input/output bound not bytes/RSS/scratch/F9/scalability. Typed definitions/digests not producer/native probability/received knowledge/awareness/preference/service-financial truth or lifecycle CS authentication. Native history association NULL; native actors/defaults/frozen parents unchanged, all full adoptions false and scientific budgets null.",
-  "reuse": "Delegation to frozen project-local decision_consistency pure typed records/strict validators/account/exact export/structural-count helpers only; SHA256 67801d487b208c1b868adc5d26e1da604e28d12630f62b7a6dbd87a6e604267d, record ranges18-29/33-44/78-88, helper ranges165-280/371-399/452-471. New complete action-kernel validation/projection/criteria/fixed-policy arithmetic; NO old common-latent solver/evaluator/backend/case/helper main or native business algorithm replay. Full absolute/relative runtime and companion-test closure verified against public bytes.",
-  "import_closure_files": 79,
-  "existing_required_public_bytes_match": 77,
+  "interpretation": "Own complete supplied native source/ALL typed periods/one ordinary input from any completed period/explicit complete same-market product-outside map/compatible label-policy plan. Pure source validation retains full earlier global input-ending receipt and all original people, outside/empty/re-entry/root/ticket evidence. Classifier receives ONLY plan: same nonmissing action at EVERY compatible label gives descriptive common action; different/missing remains NULL even zero annotation. ALL zero/tiny/unknown Fraction annotations retained, not normalized or interpreted as probabilities. Earlier view is exact receipt only, excluding menu/global IDs/root/model labels/weights/policy/current result. Separate analyst action comparison fixes common action, does not classify again, agreement True/False/NULL and probability NULL. No native G/mark awareness/received knowledge/preference/lifecycle CS authentication, no guessed vector/law, no actor/default/frozen-parent changes. Full structural input/output bounds not bytes/RSS/scratch/F9/scalability. Source-time/types/digests not producer/public/empirical/legal/CRN truth. All full adoptions false/scientific budgets NULL.",
+  "reuse": "PURE project booking_loss_binding._source range78-157 adapted to ANY completed selected period, retaining every other closure/global-prefix/parent/decision check. Normalized AST matches except new function name and final selected-period guard; frozen old LAST-period scope unchanged. Pure complete-source/person/receipt/export/hash/count validators delegated on NEW inputs only. Exact source SHA/ranges retained in local attribution; no native choice/booking/lifecycle algorithm copied, no old saved case/source/bank/review or mathematical solver replay. Full absolute/relative runtime and companion-test closure verified against public bytes.",
+  "import_closure_files": 124,
+  "existing_required_public_bytes_match": 122,
   "excluded": "Private research ancestry, data, results, reports, process state, configurations and unrelated historical source/tests"
 }
