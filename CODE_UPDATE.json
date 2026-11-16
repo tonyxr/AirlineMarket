@@ -1,43 +1,63 @@
 {
   "plan_id": "A.10/A.5/B0/V9/B4/R3/R4",
-  "source_commit": "dfa9191a0e20c375081aaa6f2c31ff2ef030f5a4",
-  "previous_public_commit": "a847c3ec394ee67105455d88e3dc4f6997bd9690",
-  "scope": "Only NEW typed owned prospective population/source-programme registration interface and NEW synthetic tests; required existing public dependencies match",
+  "source_commit": "c8004634d3c23c3bbd864c9764e01d682f40634a",
+  "previous_public_commit": "9a36835cf2367fb7fa548f75978bee4536ffdbb5",
+  "scope": "NEW typed complete supplied source-history/joint-future transport plus current 36 synthetic tests and exactly four missing required runtime dependencies; all other 69 closure bytes match public",
   "source_files": [
     {
-      "path": "airline_market/sim/registered_population.py",
-      "sha256": "6cb452aa44c8f7aff681b0f5bf61fcae5768d8132494ca5f3f381f5a1c5649cb",
-      "git_blob": "4f04ad517b80bc12da09b594f4e6e1e2f0262e6d",
-      "bytes": 28162
+      "path": "airline_market/sim/bernoulli_boundary.py",
+      "sha256": "2b110d735a7a1765b1f2f5520fed5df73c59f4abf76244a44e6ee74983698a21",
+      "git_blob": "401c57324eeada5973543d5b6a7d47918ed117e6",
+      "bytes": 16159
     },
     {
-      "path": "tests/unit/test_registered_population.py",
-      "sha256": "ee81e790783bbbf26f384f1fa1c3adacb5a4d581857b4d37f532d6dc0c21b026",
-      "git_blob": "89c03a288c22f88302cbb40403968cc9d65fc87e",
-      "bytes": 29551
+      "path": "airline_market/sim/bernoulli_future.py",
+      "sha256": "c2ba2b6c45731ef88efb06fea03aa0285cd9d383fac4bf697d8089bb9c6d75d5",
+      "git_blob": "63ec0be81d615f6addd1b82a80bbafd6229eca13",
+      "bytes": 15247
+    },
+    {
+      "path": "airline_market/sim/bernoulli_person.py",
+      "sha256": "bd14b8e653c8920c2b31934a46607980b70353271e4576f602f6a8e1fd540e5d",
+      "git_blob": "2be3609f47e0bf27fbeb62de8dd35c2fa48848fd",
+      "bytes": 11653
+    },
+    {
+      "path": "airline_market/sim/class_mark_law.py",
+      "sha256": "6ecdc7e9026bc3ca9fb523ea4ca45105d472084889c99f4b6d9666a0d047f8fe",
+      "git_blob": "f15b1299baf9a0cba764e91a3e6f693aef374e2c",
+      "bytes": 6585
+    },
+    {
+      "path": "airline_market/sim/source_future_transport.py",
+      "sha256": "fd6d348d9fe9b95503c87b124da023d52ba49f7a0bce74cf1a8c057eb7713c0c",
+      "git_blob": "beabea01dc575f3ecbb755a5f992dfeabd83d710",
+      "bytes": 33252
+    },
+    {
+      "path": "tests/unit/test_source_future_transport.py",
+      "sha256": "8d15b76a94a55901ab8eea2fc8788e373229efa5f0cd746014733395f18ad7ee",
+      "git_blob": "077e70781c6fcb15810d72b10ae8db2aad2567e4",
+      "bytes": 21192
     }
   ],
   "verification": {
-    "component_tests_passed": 34,
+    "component_tests_passed": 36,
     "default_subset": {
-      "passed": 2756,
+      "passed": 2792,
       "failed": 0,
       "deselected": 6,
-      "seconds": 879.91,
-      "normal_process_access": true,
-      "six_exclusions_retained": true
+      "seconds": 578.36,
+      "normal_process_permission": true
     },
     "R0": "OPEN/unconfirmed; six retained exclusions; no full-default-green/readiness"
   },
-  "interpretation": "Owned complete restricted native source recipe and all future programmes/laws before narrow current-ticket attachments. Full source/model/scenario/controls/postings/people/tapes retained and structurally checked; actual all-support bound recomputed before one conditional population evaluation. All zero, signed, tiny unknown/open-tail support retained. No authenticated native arrival/physical/financial/observation law, actual knowledge/preferences, lifecycle utility/CS or external preregistration.",
-  "reuse": "Delegates frozen conditional_population pure preflight then one evaluator on NEW supplied inputs; native/service business algorithms and frozen parents unchanged. NEW September7 2027/seed field31/named StreamRegistry116974 declaration TEXT adapted locally from the standalone 0501 prepare pattern, source hash/range below; no old helper/source/case/science/review execution. Full tape field shapes from native ExogenousTape without generation.",
+  "interpretation": "Complete supplied Bernoulli graph and ALL original people retained before explicit analyst history/observation event evidence, then full joint future atoms and four-component material. Zero event/needed source underflow/positive tiny unknown tails stay NULL. Raw numerical source mass/residuals retained without probability repair. Service/observation/transfers/laws are declarations, not authenticated native law, reception, preferences, lifecycle utility/CS or external preregistration.",
+  "reuse": "Read-only supplied full Bernoulli graph; pure helper delegation only, no native business algorithm copied or called by runtime. Four required runtime modules are unchanged tested dependencies, not a historical source synchronization. NEW118974 fixture constructor text adapted locally; no old helper/source/case/review execution.",
   "fixture_declaration_attribution": {
-    "source_sha256": "e13140689f79fa80e16b3c49727dfc7cb1eafdfa8a299ba8033589061d493d4a",
-    "source_range": [
-      102,
-      458
-    ],
-    "adaptation": "TEXT only NEW date/namespace/fares/benefit/cost/rebate/law, negative ticket tokens and typed complete registration; old helper not imported/executed"
+    "source_sha256": "bf317e2334fc41e13691c1fb4a70678746693ec2a9b0ac18ecfbe0beab04fc84",
+    "source_range": "39-115",
+    "adaptation": "NEW local fixture constructor text only: label118974/fare60/alpha1/60/hazard1/4/changed future components; no import or execution of old helper"
   },
   "excluded": "data/results/private reports/process state/configurations/unrelated source/history/private process records"
 }
