@@ -1,39 +1,126 @@
 {
   "plan_id": "A.10/A.5/B0/V9/B4/R3/R4",
-  "source_commit": "7b256fee72532812edb3847698b22ae7b8913645",
-  "previous_public_commit": "7062e4ea7f4c4f554f41c60786f68347517e7ef5",
-  "scope": "NEW typed owned finite Bernoulli source/programme factory and current28 synthetic tests ONLY; all74 existing required bytes match the76-file import closure",
+  "source_commit": "8da480f57488ff2b4084c5cf09e84c9c0cbd4317",
+  "previous_public_commit": "5b770a5df956245ac4123ff14a2ed746a31c000a",
+  "scope": "NEW typed conditional Bernoulli direct-branch service and current32 synthetic checks ONLY; all129 existing required bytes match the131-file runtime/current-test import closure",
   "source_files": [
     {
-      "path": "airline_market/sim/registered_bernoulli.py",
-      "sha256": "cc2739ff3c58d2963765c62a429353196e2afa52142535e207a4266e5aac8402",
-      "git_blob": "48c986070dde15758612b5e4c294cd7a48b3ec26",
-      "bytes": 27917
+      "path": "airline_market/sim/bernoulli_service.py",
+      "sha256": "06b78f8f5b8721d756323ff4df6b904a28a646664d49d4e92839d1e2cb2f6c83",
+      "git_blob": "109e4915e802a3ac6423a7914df00f8d2be38d5a",
+      "bytes": 21504
     },
     {
-      "path": "tests/unit/test_registered_bernoulli.py",
-      "sha256": "7baa4c49c7a9df391292e429008232099a8d8a10cbd9c200ec56e74cd3805104",
-      "git_blob": "65b07da6afda4880ce6622367ea5aaa41b741a21",
-      "bytes": 23256
+      "path": "tests/unit/test_bernoulli_service.py",
+      "sha256": "d1f96c74baed10a95ba0f87ac48d17f8179c20a3168106e034ce6875890bf299",
+      "git_blob": "e0364c0cc346050a373f8334e261acfbf8fee93a",
+      "bytes": 23607
     }
   ],
   "verification": {
-    "component_tests_passed": 28,
+    "component_tests_passed": 32,
     "default_subset": {
-      "passed": 2820,
+      "passed": 2852,
       "failed": 0,
       "deselected": 6,
-      "seconds": 663.02,
+      "seconds": 637.83,
       "normal_process_permission": true
     },
     "R0": "OPEN/unconfirmed; six retained exclusions; no full-default-green/readiness"
   },
-  "interpretation": "Complete source recipe, ALL syntactic histories/purchase-status contingencies, signals/joint future cells/FOUR components, BOTH event masks/contracts and fixed evaluation plan are owned before one source per execute. Rule/digest/named-support bound recomputed; actual source recipe checked; only actual node,row indices attach. All zero/unused support retained. Zero event/needed-underflow/positive-tiny unknown tails stay NULL. Declared probability/service/payment/information laws do not authenticate native seed/public reception/empirical truth/preferences/lifecycle utility-CS or external preregistration. Structural limits are not bytes/RSS/F9/scientific scalability.",
-  "reuse": "Frozen native finite-source backend delegated once per execute, frozen pure source validation/transport and owned codecs on NEW inputs. No native business algorithm copied or frozen parent changed. NEW120974 prospective declaration pattern adapted locally, no old helper/source/case/review execution; all74 existing dependency bytes match public, no historical synchronization.",
-  "fixture_declaration_attribution": {
-    "source_sha256": "472bb042dd39b7108114770dd7cea3603d99b3cb5d464170c579ad42079c958b",
-    "source_range": "1-739",
-    "adaptation": "Prospective syntactic/status declaration pattern inspected and locally generalized to typed factory; NEW120974/fare100/arrival1/2/three paths/explicit future components. No old helper import/execution."
-  },
+  "interpretation": "Complete finite BASE source, ALL syntactic/status contingencies and named full-leg service programmes; all prospective inputs validated before transitions. Departure debits into airborne state; ONLY later arrival delivers. Outside/unreserved current service NULL. All zero/unused/tiny support, raw numerical mass and signed/nonfinite source context retained; no normalization/pruning/repair. Source public NULL keeps whole public service joint/count integral NULL. Structural bound not bytes/RSS/F9/scientific scalability. Financial/material/utility/CS/denial/misallocation NULL. No genuine person panel/journal fabricated, native departure horizon/default changed, or native probability/reception/empirical service truth/preferences/lifecycle adoption authenticated.",
+  "reuse": "Frozen pure supplied-source validator and owned codecs delegated on NEW inputs; LegOperation typed record only, no old executor/journal/panel or native source/probability/book/resolve producer replay. Adapted NEW direct-service model from prior private declared reference. Frozen parents unchanged; no native business algorithm copied. All129 existing dependency bytes match public; no historical synchronization.",
+  "reuse_attribution": [
+    {
+      "path": "results/A10_bernoulli_service_programme_tooling/derive_service_programmes_20261116_0855_v2.py",
+      "sha256": "b0912f999f87c266d411c01d53570244630de780f43955896dc81f5a493c5d12",
+      "ranges": {
+        "service": [
+          49,
+          158
+        ],
+        "compiled_model": [
+          161,
+          201
+        ],
+        "people_for": [
+          204,
+          223
+        ],
+        "make_program": [
+          226,
+          269
+        ]
+      },
+      "adaptation": "NEW typed ownership/complete preflight/full syntactic support/actual source association around adapted direct-service state machine; no original helper execution. NEW model/declaration text pattern122974 for synthetic units, no old fixture helper execution."
+    },
+    {
+      "path": "airline_market/sim/source_future_transport.py",
+      "sha256": "fd6d348d9fe9b95503c87b124da023d52ba49f7a0bce74cf1a8c057eb7713c0c",
+      "ranges": {
+        "_source": [
+          191,
+          530
+        ],
+        "_distribution": [
+          542,
+          547
+        ]
+      },
+      "adaptation": "Delegate pure complete supplied-source validator/distribution checks once; no probability/backend/native source replay."
+    },
+    {
+      "path": "airline_market/sim/received_information.py",
+      "sha256": "a97ec5113616c922f2cefd123fb82d76c2fc192de125984c57d5f3245e1bf6b4",
+      "ranges": {
+        "_text": [
+          36,
+          39
+        ],
+        "_units": [
+          123,
+          128
+        ]
+      },
+      "adaptation": "Delegate text validation and structural counting, not byte/RSS/F9/scientific cost."
+    },
+    {
+      "path": "airline_market/sim/shared_mark_attempt.py",
+      "sha256": "b8b9a6ecb5b55b2f64a9d38635373e55dfe77fab3b04f35fd3adb6cc0713e663",
+      "ranges": {
+        "_owned": [
+          70,
+          81
+        ],
+        "_encoded": [
+          84,
+          85
+        ]
+      },
+      "adaptation": "Delegate existing owned lossless container/binary64 codecs."
+    },
+    {
+      "path": "airline_market/sim/current_itinerary_service.py",
+      "sha256": "78adb40756e5aaf816fc86f67701c0a71dc0669f09ddee495d5e58e95b74b97c",
+      "ranges": {
+        "LegOperation": [
+          24,
+          36
+        ]
+      },
+      "adaptation": "Use immutable typed operation record only; no executor/journal/panel producer call."
+    },
+    {
+      "path": "airline_market/policy/dated_reserve.py",
+      "sha256": "a47f6d96a2bbc00879872739125de1f0687fd38e1d3ccf13fa149feb7ffa4ee6",
+      "ranges": {
+        "utc": [
+          15,
+          26
+        ]
+      },
+      "adaptation": "Delegate aware UTC normalization only."
+    }
+  ],
   "excluded": "data/results/private reports/process state/configurations/unrelated source/history/private process records"
 }
