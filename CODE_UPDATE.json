@@ -1,63 +1,39 @@
 {
   "plan_id": "A.10/A.5/B0/V9/B4/R3/R4",
-  "source_commit": "c8004634d3c23c3bbd864c9764e01d682f40634a",
-  "previous_public_commit": "9a36835cf2367fb7fa548f75978bee4536ffdbb5",
-  "scope": "NEW typed complete supplied source-history/joint-future transport plus current 36 synthetic tests and exactly four missing required runtime dependencies; all other 69 closure bytes match public",
+  "source_commit": "7b256fee72532812edb3847698b22ae7b8913645",
+  "previous_public_commit": "7062e4ea7f4c4f554f41c60786f68347517e7ef5",
+  "scope": "NEW typed owned finite Bernoulli source/programme factory and current28 synthetic tests ONLY; all74 existing required bytes match the76-file import closure",
   "source_files": [
     {
-      "path": "airline_market/sim/bernoulli_boundary.py",
-      "sha256": "2b110d735a7a1765b1f2f5520fed5df73c59f4abf76244a44e6ee74983698a21",
-      "git_blob": "401c57324eeada5973543d5b6a7d47918ed117e6",
-      "bytes": 16159
+      "path": "airline_market/sim/registered_bernoulli.py",
+      "sha256": "cc2739ff3c58d2963765c62a429353196e2afa52142535e207a4266e5aac8402",
+      "git_blob": "48c986070dde15758612b5e4c294cd7a48b3ec26",
+      "bytes": 27917
     },
     {
-      "path": "airline_market/sim/bernoulli_future.py",
-      "sha256": "c2ba2b6c45731ef88efb06fea03aa0285cd9d383fac4bf697d8089bb9c6d75d5",
-      "git_blob": "63ec0be81d615f6addd1b82a80bbafd6229eca13",
-      "bytes": 15247
-    },
-    {
-      "path": "airline_market/sim/bernoulli_person.py",
-      "sha256": "bd14b8e653c8920c2b31934a46607980b70353271e4576f602f6a8e1fd540e5d",
-      "git_blob": "2be3609f47e0bf27fbeb62de8dd35c2fa48848fd",
-      "bytes": 11653
-    },
-    {
-      "path": "airline_market/sim/class_mark_law.py",
-      "sha256": "6ecdc7e9026bc3ca9fb523ea4ca45105d472084889c99f4b6d9666a0d047f8fe",
-      "git_blob": "f15b1299baf9a0cba764e91a3e6f693aef374e2c",
-      "bytes": 6585
-    },
-    {
-      "path": "airline_market/sim/source_future_transport.py",
-      "sha256": "fd6d348d9fe9b95503c87b124da023d52ba49f7a0bce74cf1a8c057eb7713c0c",
-      "git_blob": "beabea01dc575f3ecbb755a5f992dfeabd83d710",
-      "bytes": 33252
-    },
-    {
-      "path": "tests/unit/test_source_future_transport.py",
-      "sha256": "8d15b76a94a55901ab8eea2fc8788e373229efa5f0cd746014733395f18ad7ee",
-      "git_blob": "077e70781c6fcb15810d72b10ae8db2aad2567e4",
-      "bytes": 21192
+      "path": "tests/unit/test_registered_bernoulli.py",
+      "sha256": "7baa4c49c7a9df391292e429008232099a8d8a10cbd9c200ec56e74cd3805104",
+      "git_blob": "65b07da6afda4880ce6622367ea5aaa41b741a21",
+      "bytes": 23256
     }
   ],
   "verification": {
-    "component_tests_passed": 36,
+    "component_tests_passed": 28,
     "default_subset": {
-      "passed": 2792,
+      "passed": 2820,
       "failed": 0,
       "deselected": 6,
-      "seconds": 578.36,
+      "seconds": 663.02,
       "normal_process_permission": true
     },
     "R0": "OPEN/unconfirmed; six retained exclusions; no full-default-green/readiness"
   },
-  "interpretation": "Complete supplied Bernoulli graph and ALL original people retained before explicit analyst history/observation event evidence, then full joint future atoms and four-component material. Zero event/needed source underflow/positive tiny unknown tails stay NULL. Raw numerical source mass/residuals retained without probability repair. Service/observation/transfers/laws are declarations, not authenticated native law, reception, preferences, lifecycle utility/CS or external preregistration.",
-  "reuse": "Read-only supplied full Bernoulli graph; pure helper delegation only, no native business algorithm copied or called by runtime. Four required runtime modules are unchanged tested dependencies, not a historical source synchronization. NEW118974 fixture constructor text adapted locally; no old helper/source/case/review execution.",
+  "interpretation": "Complete source recipe, ALL syntactic histories/purchase-status contingencies, signals/joint future cells/FOUR components, BOTH event masks/contracts and fixed evaluation plan are owned before one source per execute. Rule/digest/named-support bound recomputed; actual source recipe checked; only actual node,row indices attach. All zero/unused support retained. Zero event/needed-underflow/positive-tiny unknown tails stay NULL. Declared probability/service/payment/information laws do not authenticate native seed/public reception/empirical truth/preferences/lifecycle utility-CS or external preregistration. Structural limits are not bytes/RSS/F9/scientific scalability.",
+  "reuse": "Frozen native finite-source backend delegated once per execute, frozen pure source validation/transport and owned codecs on NEW inputs. No native business algorithm copied or frozen parent changed. NEW120974 prospective declaration pattern adapted locally, no old helper/source/case/review execution; all74 existing dependency bytes match public, no historical synchronization.",
   "fixture_declaration_attribution": {
-    "source_sha256": "bf317e2334fc41e13691c1fb4a70678746693ec2a9b0ac18ecfbe0beab04fc84",
-    "source_range": "39-115",
-    "adaptation": "NEW local fixture constructor text only: label118974/fare60/alpha1/60/hazard1/4/changed future components; no import or execution of old helper"
+    "source_sha256": "472bb042dd39b7108114770dd7cea3603d99b3cb5d464170c579ad42079c958b",
+    "source_range": "1-739",
+    "adaptation": "Prospective syntactic/status declaration pattern inspected and locally generalized to typed factory; NEW120974/fare100/arrival1/2/three paths/explicit future components. No old helper import/execution."
   },
   "excluded": "data/results/private reports/process state/configurations/unrelated source/history/private process records"
 }
