@@ -1,36 +1,36 @@
 {
-  "plan_id": "A.10/A.5/B0/V9/B4/R3/R4",
-  "source_commit": "34b103e806ad4a229ef404178637ad4ccb41ab60",
-  "previous_public_commit": "f002acdf1ebf197d6edcc6eaaeb1f296cef11b45",
-  "scope": "Current pure typed native-context/compatible-label module and 50 synthetic tests only; all existing required public dependencies match",
+  "plan_id": "A.10/A.5/A.14/B0/V9/B4/R3/R4",
+  "source_commit": "e26043948f0453ddd541819faaea732a45473d29",
+  "previous_public_commit": "f686627140c7bec7c35c716048514a5a37402d7b",
+  "scope": "Current pure typed role-law/context registration module and 38 synthetic tests; all existing required public dependencies match",
   "source_files": [
     {
-      "path": "airline_market/sim/context_compatibility.py",
-      "sha256": "293d9c222c6731ab37697db4f9898fdfb26cf2a743501ec4a927d098b65b1385",
-      "git_blob": "5a325241a2770888a34fb3f89d6e7b65cbb7e512",
-      "bytes": 18010
+      "path": "airline_market/sim/role_law_context.py",
+      "sha256": "15c0d291e5682a6000290ea6ebbd7d3fc996df288f1b20e9fabf08de3a9254b2",
+      "git_blob": "d1445802ccbf5606c16aa7142a607135d79ea592",
+      "bytes": 15598
     },
     {
-      "path": "tests/unit/test_context_compatibility.py",
-      "sha256": "388e2043c71d6ce1e5d70e9b14feeeda6f303622f5371c824284e19bb108baf7",
-      "git_blob": "c057ace9ce99fc098544ca74d0f9c3cc3b715650",
-      "bytes": 18174
+      "path": "tests/unit/test_role_law_context.py",
+      "sha256": "9132c61fdd6f41f0dc58eda290bc98fc955101e1c087c59f9ba24b395e1dcbfb",
+      "git_blob": "0d06b0f2809922188d65c1b620423dba0f447da9",
+      "bytes": 24796
     }
   ],
   "verification": {
-    "component_tests": 50,
+    "component_tests": 38,
     "default_subset": {
-      "passed": 3085,
+      "passed": 3123,
       "failed": 0,
       "deselected": 6,
-      "seconds": 1759.61,
+      "seconds": 1652.54,
       "normal_process_permission": true
     },
-    "R0": "OPEN/unconfirmed; six exclusions; no full-default-green/readiness"
+    "R0": "OPEN/unconfirmed; six exclusions/no full-default-green/readiness"
   },
-  "interpretation": "Own complete supplied native source/ALL typed periods/one ordinary input from any completed period/explicit complete same-market product-outside map/compatible label-policy plan. Pure source validation retains full earlier global input-ending receipt and all original people, outside/empty/re-entry/root/ticket evidence. Classifier receives ONLY plan: same nonmissing action at EVERY compatible label gives descriptive common action; different/missing remains NULL even zero annotation. ALL zero/tiny/unknown Fraction annotations retained, not normalized or interpreted as probabilities. Earlier view is exact receipt only, excluding menu/global IDs/root/model labels/weights/policy/current result. Separate analyst action comparison fixes common action, does not classify again, agreement True/False/NULL and probability NULL. No native G/mark awareness/received knowledge/preference/lifecycle CS authentication, no guessed vector/law, no actor/default/frozen-parent changes. Full structural input/output bounds not bytes/RSS/scratch/F9/scalability. Source-time/types/digests not producer/public/empirical/legal/CRN truth. All full adoptions false/scientific budgets NULL.",
-  "reuse": "PURE project booking_loss_binding._source range78-157 adapted to ANY completed selected period, retaining every other closure/global-prefix/parent/decision check. Normalized AST matches except new function name and final selected-period guard; frozen old LAST-period scope unchanged. Pure complete-source/person/receipt/export/hash/count validators delegated on NEW inputs only. Exact source SHA/ranges retained in local attribution; no native choice/booking/lifecycle algorithm copied, no old saved case/source/bank/review or mathematical solver replay. Full absolute/relative runtime and companion-test closure verified against public bytes.",
-  "import_closure_files": 124,
-  "existing_required_public_bytes_match": 122,
-  "excluded": "Private research ancestry, data, results, reports, process state, configurations and unrelated historical source/tests"
+  "interpretation": "Own BOTH complete raw pre-decision laws and every action/Y account, full descriptive policy/criterion and fixed full source programme before forwards. Attach only the complete actual source/exact GLOBAL input-ending original-person receipt/ALL periods/posting-manifest declarations. Full static contracts and all captured ordinary fare inputs agree; empty-period actual postings and manifests remain supplied declarations, not hook/external-time/transitive authentication. Each role conditions earlier H once; zero evidence leaves conditional NULL and no paired backend. Positive tiny/zero/unknown/signed support retained. Candidate solver sees q only; reference fixes SAME policy under r without re-solving. Separate G-dependent candidate from invariant descriptive compatibility plan, no weights/G chosen from observed action. FOUR B/P/W/C plus E/full outside/three independent tails/units/incidence, no fill/repair/normalization/pruning. Full owned input/proposed-output structural bounds, not bytes/rational bits/RSS/scratch/F9/scalability. Exact earlier view only; full sources/laws/menus/current results analyst-only. Native G/probability/awareness/preferences/lifecycle CS authentication NULL/false, scientific budgets NULL, full adoption false. No actor/default/frozen-parent edits or native sequential own/interline protocol substitution.",
+  "reuse": "Frozen pure action-kernel typed validators/registration/evaluation and context supplied-source binder/readers/export/count/hash helpers delegated on NEW inputs only. No copied native choice/book/resolve/lifecycle algorithm, old source/case/bank/frame/account/review replay or saved-run loader. Full absolute-relative runtime and companion-test import closure verified against existing public bytes. Source-time/types/digests do not authenticate producer/public/empirical/legal/CRN truth.",
+  "import_closure_files": 126,
+  "existing_required_public_bytes_match": 124,
+  "excluded": "Private research ancestors/history/data/results/reports/process state/configuration and unrelated historical synchronization"
 }
