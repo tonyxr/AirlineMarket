@@ -1,36 +1,38 @@
 {
   "plan_id": "A.10/A.5/A.14/B0/V9/B4/R3/R4",
-  "source_commit": "8a7b29ce0810b30c5db1e85dd4399c73ea955d12",
-  "previous_public_commit": "877b9077c4ae5bdfc7a1c888ebeefea363cd874c",
-  "scope": "Current complete-period native posting source/reader and 28 synthetic tests; all existing required public dependencies match",
+  "declaration": "NEW140974",
+  "source_commit": "0bcc1f5fb043639c4fb8e38946f07a3763c5307a",
+  "previous_public_commit": "995a98c1ab047aa552b81507b94119bf02a4961d",
+  "scope": "Current typed complete-posting/role-context association and 32 new synthetic tests only",
   "source_files": [
     {
-      "path": "airline_market/sim/period_posting.py",
-      "sha256": "914fb38d2d109b3f4de144ae3a06aaa225107f22345bcd13dff9a64ac16daa96",
-      "git_blob": "fcd6ed1fa2b6ebc88d5a1f026d5e7fe2cefedd8a",
-      "bytes": 18657
+      "path": "airline_market/sim/posting_role_binding.py",
+      "sha256": "876978d1ab96179f13d7764e57ef87a13548b0e81d49c0168dd74f0147041ad5",
+      "git_blob": "52f862c870ab5d8588f2548be39056d1cc6ef36e",
+      "bytes": 14002
     },
     {
-      "path": "tests/unit/test_period_posting.py",
-      "sha256": "bab907f1747f3d4fa74b7d33246bced40b4725038ededeb3e48d5a08340875f1",
-      "git_blob": "7aa563b4aba99c508d2fa297aa62353588836894",
-      "bytes": 17944
+      "path": "tests/unit/test_posting_role_binding.py",
+      "sha256": "e4385ef3119c023445212091ef4309492c396ee36ce091fec48606dfeb621121",
+      "git_blob": "abbe164fb3a5f9cc31c613ec4efeb59f9948c018",
+      "bytes": 25612
     }
   ],
   "verification": {
-    "component_tests": 28,
+    "component_tests": 32,
     "default_subset": {
-      "passed": 3151,
-      "failed": 0,
+      "passed": 3183,
       "deselected": 6,
-      "seconds": 2561.72,
-      "normal_process_permission": true
+      "seconds": 2884.11,
+      "failed": 0,
+      "mode": "NORMAL",
+      "scope": "Required changed-code subset; six retained exclusions, not full-default-green"
     },
-    "R0": "OPEN/unconfirmed; six exclusions/no full-default-green/readiness"
+    "R0": "OPEN/unconfirmed; six exclusions; no full-default-green/readiness"
   },
-  "interpretation": "Opt-in one-delegation native opening/post/input/step hooks read SAME-call full regular fares and cap receipts. All products, empty periods, earlier leaders and posting revisions retained; exact earlier GLOBAL journal/input-ending prefix links and inherited full source/scenario contexts. Owned source/export/pure reader, complete conservative input/proposed-output structural support, independent nested snapshots/branch/reset. Standalone openings/posts remain pending until full closure; failures preserve native mutations/prior receipts and block positive query/continuation. Snapshots between calls only, no native historical trace reconstruction. Regular computation fares not disclosure, eligibility, bookability or final rescue/reserve menus. Types/digests not original-time/transitive/native/public/empirical/legal/CRN truth. Native probability/private G awareness/knowledge/preferences/service-financial truth/lifecycle CS unadopted, scientific budgets NULL. No actor/default/frozen-parent changes, copied business loop/forced hook/global patch/old source-case-review replay. Structural support not bytes/rational bits/RSS/native snapshots/scratch/F9/scalability.",
-  "reuse": "Existing NativeCausal/CapEvidence native MRO delegated; parent branch-construction pattern adapted, frozen pure binary64 and owned scalar helpers reused. Full absolute-relative runtime/test import closure verified; no old helper main or science loader invoked.",
-  "import_closure_files": 123,
-  "existing_required_public_bytes_match": 121,
-  "excluded": "Private research Git ancestry/history/data/results/reports/process state/configuration and unrelated historical synchronization"
+  "interpretation": "Pure complete typed native-source association; ALL horizon regular postings/empty periods, exact saved GLOBAL input-ending earlier history, full registered source/scenario/controller programmes and manifest declarations checked. Lossless binary64 prices and exact integer keys/stamps. One frozen pure role attachment; each role conditions SAME H once; upstream zero stays NULL/no utility backend. Subjective candidate and SAME fixed-policy reference remain separate. Full analyst source/laws/results retained; narrow reader returns only earlier H without source/classifier/solver replay. No G realized from action/class/taste; manifest/hash/type not native probability, received knowledge, awareness, original-time/transitive/public/empirical/legal/CRN truth. No preferences/service-financial truth/lifecycle CS adoption. Full signed/zero/tiny/unknown/outside/accounts/independent tails retained. New conservative lossless numerical-slot shape fixes initial refused outer outputs; actual unknown data unchanged. Structural count not bytes/rational bits/RSS/native snapshots/scratch/F9/scalability. No frozen parent/default/actor/native business algorithm change or old source-case-review execution. Scientific budgets NULL.",
+  "reuse": "Frozen pure role/context/source readers, ownership/binary64 helpers and proposed shape delegated on NEW inputs; new outer full-source agreement and lossless shape adaptation. Complete absolute-relative runtime/test dependency closure verified; no old helper main or saved science loader called.",
+  "import_closure_files": 131,
+  "existing_required_public_bytes_match": 129,
+  "excluded": "Private research Git ancestry/data/results/reports/process state/configuration and unrelated historical synchronization"
 }
