@@ -1,88 +1,130 @@
 {
   "plan_id": "A.10/A.5/B0/V9/B4/R3/R4",
-  "source_commit": "d75ec99b53eace6c385c135fd116e5826e6d32a4",
-  "previous_public_commit": "a13b06574c619a42711be8f33c8e493c46578009",
-  "scope": "NEW typed actual-branch ticket financial reader and current 37 synthetic tests ONLY; all 130 existing required bytes match complete 132-file absolute+relative runtime/current-test import closure",
+  "source_commit": "6826fa3f056dff20d828ef8aa8425104f56a7eb3",
+  "previous_public_commit": "611576ea1bbe3d3fa77211c46efdf02d933b4217",
+  "scope": "NEW typed owned prospective branch source/service/financial registration and current28 synthetic tests ONLY; complete134-file absolute+relative import closure,132 existing required public bytes match",
   "source_files": [
     {
-      "path": "airline_market/sim/branch_financial.py",
-      "sha256": "3f46e19b7a6acc9528a8063ed45e3a40acd6401310ccd73d4de51d193a404ec8",
-      "git_blob": "36151eae2aec1ce066405742cf529883e685592e",
-      "bytes": 25007
+      "path": "airline_market/sim/registered_branch_financial.py",
+      "sha256": "2606d2e71ab2d36b8f1685044fed78e7f902b5c2ce3342cdc7634b63ff7ea67f",
+      "git_blob": "0250ce339e4e99d8ebd94860768606080f8db98e",
+      "bytes": 25918
     },
     {
-      "path": "tests/unit/test_branch_financial.py",
-      "sha256": "d4e5ac5d79c2c9b236a9e6476d024d24cd4350d03a59a749ccd68fe79c885197",
-      "git_blob": "1dea83e422ec46eab6447e225248c104efb6f0c1",
-      "bytes": 25170
+      "path": "tests/unit/test_registered_branch_financial.py",
+      "sha256": "829178787bd3bb43bf941891212072664c1ad83bd9996eb3965dc2bd3771c396",
+      "git_blob": "8ffb80895eef17e47e73dfa756a3d54306af51d9",
+      "bytes": 26244
     }
   ],
   "verification": {
-    "component_tests_passed": 37,
+    "component_tests_passed": 28,
     "default_subset": {
-      "passed": 2889,
+      "passed": 2917,
       "failed": 0,
       "deselected": 6,
-      "seconds": 642.95,
+      "seconds": 686.25,
       "normal_process_permission": true
     },
     "R0": "OPEN/unconfirmed; six retained exclusions; no full-default-green/readiness"
   },
-  "interpretation": "Pure full supplied native/source/service/clock/case validation and NEW complete service witness constraints, no producer/native probability/book/resolve/actor/tape/RNG execution. ALL actual service atoms and financial programmes/laws/events incl zeros retained. Native refunds once, explicit additional signed-binary64-or-unknown ticket settlements, independent ALL-original-person common-as-of financial follow-up. Positive unknown/open/nonfinite or upstream public NULL leaves complete public payment results NULL. Raw mass/residuals/signed-zero preserved without repair/normalization/pruning. Structural limits not bytes/RSS/F9/scientific scalability. Current actual-atom reader does not certify prospective source/contingent registration, financial-service truth, received knowledge, preferences or lifecycle utility-CS/denial/misallocation. General owned prospective factory remains OPEN; all full adoptions false/scientific budgets NULL.",
-  "reuse": "Frozen PURE parent service input preflight/owned codecs delegated on NEW inputs. New supplied-service witness validator adapts prior owned branch-service transition constraints without executing/regenerating service or copying native business algorithms. Pure NET payment arithmetic and NEW124974 declaration pattern adapted locally from prior private reference; no old helper/fixture/source/case/review executed or frozen parent changed. All 130 existing dependencies match public; no historical synchronization.",
+  "interpretation": "Registration owns full canonical finite source recipe, all prospective service cases and every Boolean contingent settlement/law/event/definition before source. Execute revalidates rule/digest/recomputed complete named input/source/service/financial/output support, delegates one frozen native finite source/book-resolve, one separate branch service and one financial forward; only three actual indices attach. Source refunds once, explicit additional transfers/ALL-person independent financial follow-up/full signed-zero-unknown support. Positive tiny unknown/open/nonfinite or upstream public NULL keeps complete public payments NULL. Raw measures/residuals retained/no normalization/pruning/repair. Named support count is not every serializer node/bytes/RSS/scratch/F9/scientific scalability. No genuine panel/native departure engine/actor/default/old transport/tape/RNG/loader or copied native business algorithms. Local order/digest does not authenticate external preregistration/native probability/received knowledge/financial-service truth/preferences/lifecycle CS. All full adoptions false/budgets NULL.",
+  "reuse": "Frozen owned source recipe and PURE canonical source-programme validator, prospective service shapes/transfer checks delegated on NEW inputs. Named source support/actual full-recipe checks/Cartesian attachment design adapted locally with exact ranges/hashes. Frozen native source/service/financial execution delegates existing algorithms, no frozen edits or old helper/fixture/source/case/review replay. Complete134-file closure/132 existing dependency bytes match; no historical synchronization.",
   "reuse_attribution": [
     {
-      "path": "results/A10_branch_finance_contract_tooling/derive_branch_finance_20261116_1001_v2.py",
-      "sha256": "3235181f4049d320589ee4f9c9297b5493c88db95b491994a8e3a99a324b2972",
+      "path": "results/A10_branch_financial_registration_tooling/derive_registration_20261116_1105.py",
+      "sha256": "722b3acdc2db4aceeb0fb30e59ce88d05895b80fef9314cc34282b12cb9bffc5",
       "ranges": {
-        "model": [
-          99,
-          139
-        ],
-        "source_recipe": [
-          142,
-          166
+        "base_people": [
+          160,
+          183
         ],
         "prepare": [
-          259,
-          335
+          270,
+          363
         ],
-        "reconcile": [
-          338,
-          433
+        "validate": [
+          425,
+          607
+        ],
+        "main": [
+          683,
+          933
         ]
       },
-      "adaptation": "Adapt pure original-ticket NET arithmetic/explicit ALL-person follow-up and NEW124974 model/recipe construction text; typed owned input, all-support limits and complete actual-atom binding are NEW. No original helper or old fixture execution."
+      "adaptation": "Adapt prospective Cartesian/Boolean outcome attachment design only; no old helper or old case executed"
+    },
+    {
+      "path": "airline_market/sim/registered_bernoulli.py",
+      "sha256": "cc2739ff3c58d2963765c62a429353196e2afa52142535e207a4266e5aac8402",
+      "ranges": {
+        "BernoulliSourceRecipe": [
+          122,
+          175
+        ],
+        "_source": [
+          246,
+          337
+        ],
+        "_bound": [
+          340,
+          403
+        ],
+        "_match_source": [
+          618,
+          642
+        ]
+      },
+      "adaptation": "Reuse owned source recipe/pure validation; adapt named source tree support and actual full-recipe checks, no old transport executor"
     },
     {
       "path": "airline_market/sim/bernoulli_service.py",
       "sha256": "06b78f8f5b8721d756323ff4df6b904a28a646664d49d4e92839d1e2cb2f6c83",
       "ranges": {
+        "_people": [
+          95,
+          115
+        ],
+        "_prepare": [
+          118,
+          211
+        ],
         "_report_shape": [
           214,
           242
         ],
-        "_execute": [
-          245,
-          328
-        ],
-        "_preflight": [
-          331,
-          532
+        "bernoulli_service_programmes": [
+          535,
+          570
         ]
       },
-      "adaptation": "Delegate frozen PURE full input preflight/report shape on NEW sources. Adapt _execute source into NEW supplied-witness validation constraints only; no service execution, generated report, native event/booking/resolve algorithm copy, or frozen edit."
+      "adaptation": "Delegate pure prospective service validation/shape before source, execute frozen branch service once per NEW successful call; no business algorithm copy"
     },
     {
-      "path": "airline_market/sim/source_future_transport.py",
-      "sha256": "fd6d348d9fe9b95503c87b124da023d52ba49f7a0bce74cf1a8c057eb7713c0c",
+      "path": "airline_market/sim/branch_financial.py",
+      "sha256": "3f46e19b7a6acc9528a8063ed45e3a40acd6401310ccd73d4de51d193a404ec8",
       "ranges": {
-        "_source": [
-          191,
-          530
+        "_prepare": [
+          325,
+          366
+        ],
+        "branch_financial_laws": [
+          418,
+          695
         ]
       },
-      "adaptation": "Frozen complete supplied-source validator delegated by parent PURE preflight; no native probability/book/resolve forward."
+      "adaptation": "Delegate pre-source transfer/follow-up validation and one NEW actual financial projection; preserve native refunds once/NULL semantics"
+    },
+    {
+      "path": "tests/unit/test_branch_financial.py",
+      "sha256": "d4e5ac5d79c2c9b236a9e6476d024d24cd4350d03a59a749ccd68fe79c885197",
+      "ranges": {
+        "fixture": [
+          38,
+          308
+        ]
+      },
+      "adaptation": "NEW126974 fixture constructor pattern adapted as local text only, no old fixture helper executed"
     }
   ],
   "excluded": "data/results/private reports/process state/configurations/unrelated source/history/private process records"
