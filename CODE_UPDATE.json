@@ -1,36 +1,36 @@
 {
   "plan_id": "A.10/A.5/B0/V9/B4/R3/R4",
-  "source_commit": "8b63a3d9511d751762f94be2a603920dc18084c7",
-  "previous_public_commit": "ae004699a46be59dc2cf3b8792e0866fb92b6630",
-  "scope": "Current opt-in finite declared decision/utility module and 40 synthetic tests only; all existing required dependency bytes match",
+  "source_commit": "a577a75a3098eb0b603a62bcd4530a5ca365f406",
+  "previous_public_commit": "7831526fc0ad9543c34ee110af5f0ff5b3efa1bf",
+  "scope": "Current opt-in finite declared decision/utility module and 45 synthetic tests only; all existing required dependency bytes match",
   "source_files": [
     {
-      "path": "airline_market/sim/decision_consistency.py",
-      "sha256": "67801d487b208c1b868adc5d26e1da604e28d12630f62b7a6dbd87a6e604267d",
-      "git_blob": "65dc8bbd092e5226d58b608c9518fb52bb1b2933",
-      "bytes": 21493
+      "path": "airline_market/sim/action_kernel_utility.py",
+      "sha256": "e74e3e152992ea66487d0976a8ec3ab478a4ef87b45168adc90e9f046614c80b",
+      "git_blob": "2551b69ce65ec689596493c2f818cb7c5ca7a0d9",
+      "bytes": 18690
     },
     {
-      "path": "tests/unit/test_decision_consistency.py",
-      "sha256": "00c780ae6071c98bf8a93d9a18713e8c6668c89ead8aa1e006cf6d57b7f42d59",
-      "git_blob": "bd568795808b40ac401c745c8b752ea51e0c92c2",
-      "bytes": 23545
+      "path": "tests/unit/test_action_kernel_utility.py",
+      "sha256": "25ee963f749b38f71201c89a5f5fcecbc80f90fbc508976997e4a325ff240ac6",
+      "git_blob": "07e7cacfd6a491a3952c6917a1f7df9072295a86",
+      "bytes": 20100
     }
   ],
   "verification": {
-    "component_tests": 40,
+    "component_tests": 45,
     "default_subset": {
-      "passed": 2990,
+      "passed": 3035,
       "failed": 0,
       "deselected": 6,
-      "seconds": 781.03,
+      "seconds": 760.15,
       "normal_process_permission": true
     },
     "R0": "OPEN/unconfirmed; six retained exclusions; no full-default-green/readiness"
   },
-  "interpretation": "One original person's complete declared X/H/G subjective joint and every action/outside FOUR-component plus explicit E account, sources, independent closures and units. Separate terminal-utility and material-plus-decision-noise criteria; supplied descriptive policy claims no optimality. Fix actions using subjective information, then evaluate unchanged under a separate complete reference law without solver/score replay. Complete zero/unused/tiny/signed/unknown support retained; positive missing behavior/payoffs remain NULL. No normalization/pruning/reset/redraw/repair or outside intervention/causal value/consumer-surplus inference. Typed hashes/origin labels do not authenticate producer, native laws, received knowledge or preferences. Full structural input/output bound is not bytes/RSS/scratch/F9/scalability. Single commitment is not a native own-first/interline or dynamic policy; native actors/defaults/frozen parents unchanged, all full adoptions false and scientific budgets null.",
-  "reuse": "Finite exact criterion/Bayes/fixed-policy arithmetic concepts from project-local design and one-use reference, rewritten as typed owned complete support with pre-forward structural bounds. No old source/case/helper or native business algorithm executed/copied. Direct module dependencies are stdlib; complete absolute/relative runtime and companion-test closure verified against public bytes.",
-  "import_closure_files": 78,
-  "existing_required_public_bytes_match": 76,
+  "interpretation": "One original person/fixed declared known type/full X-H-G and joint future Y support. Own BOTH role-specific pre-decision priors, EACH action conditional kernel, actual and same-path outside FOUR-component/E/three-tail accounts, units, definitions and complete descriptive policy. Each action block sums one; raw all-action mass is action count, fixed policy selects one. Solve subjective q only under separate terminal-utility or material-plus-decision-noise criterion; reference r evaluates SAME fixed actions without score or solver replay. Missing behavior counted once per prior cell, positive unknown/tiny/open tails remain NULL, zero unknown retained/algebraic zero. Outside policy uses its OWN kernel, distinct from selected-path normalization. No cross-action coupling, prior/type/shock reset, pruning, normalization, clipping, epsilon, repair or partial estimate. Structural full input/output bound not bytes/RSS/scratch/F9/scalability. Typed definitions/digests not producer/native probability/received knowledge/awareness/preference/service-financial truth or lifecycle CS authentication. Native history association NULL; native actors/defaults/frozen parents unchanged, all full adoptions false and scientific budgets null.",
+  "reuse": "Delegation to frozen project-local decision_consistency pure typed records/strict validators/account/exact export/structural-count helpers only; SHA256 67801d487b208c1b868adc5d26e1da604e28d12630f62b7a6dbd87a6e604267d, record ranges18-29/33-44/78-88, helper ranges165-280/371-399/452-471. New complete action-kernel validation/projection/criteria/fixed-policy arithmetic; NO old common-latent solver/evaluator/backend/case/helper main or native business algorithm replay. Full absolute/relative runtime and companion-test closure verified against public bytes.",
+  "import_closure_files": 79,
+  "existing_required_public_bytes_match": 77,
   "excluded": "Private research ancestry, data, results, reports, process state, configurations and unrelated historical source/tests"
 }
