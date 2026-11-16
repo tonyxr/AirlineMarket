@@ -1,84 +1,35 @@
 {
   "plan_id": "A.10/A.5/A.14/B0/V9/B4/R3/R4",
-  "source_commit": "567b34233c7ffb06c2a61f716f087938472a96f9",
-  "previous_public_commit": "5ec22613d37fb49c0d9e8a0c277551c511d6aff4",
-  "scope": "NEW realized person utility reader/synthetic tests plus FOUR required service/payment/material modules and companion synthetic tests absent from fresh public base. No unrelated historical synchronization.",
+  "source_commit": "8b105f95b468aa08c80576be516a4193c18487f4",
+  "previous_public_commit": "c62911dc79249b6857a69bdce04f213b9fd467dd",
+  "scope": "Only NEW pure full-path utility consumer and NEW synthetic tests; required public dependencies already match",
   "source_files": [
     {
-      "path": "airline_market/sim/current_itinerary_service.py",
-      "sha256": "78adb40756e5aaf816fc86f67701c0a71dc0669f09ddee495d5e58e95b74b97c",
-      "git_blob": "7859b70cf2d0e7303114398a1cb0be84972c15bb",
-      "bytes": 13850
+      "path": "airline_market/sim/full_path_utility.py",
+      "sha256": "a0e34acec335f697455d82a8627bb2360f0b6ca5b50d5423799f8efcfddc16ea",
+      "git_blob": "c08a3331cbd7ae609d7134664ca9f450fceb4f75",
+      "bytes": 21528
     },
     {
-      "path": "airline_market/sim/person_material_payoff.py",
-      "sha256": "31ce8b93020a72106c817d9d6553150c540519907055e155d49a1447ab3163dd",
-      "git_blob": "ac4e0b658bb60b46eab672b3dea704cd4971deeb",
-      "bytes": 13578
-    },
-    {
-      "path": "airline_market/sim/person_utility_incidence.py",
-      "sha256": "73a66e7815015f8c0005a3be1258820dafa841cf61588f78808e3c4de594911f",
-      "git_blob": "c298dfe03e29eac4add11ee7e8eae5b1811661e1",
-      "bytes": 16215
-    },
-    {
-      "path": "airline_market/sim/service_observations.py",
-      "sha256": "cde2852d6d73067d8ad18982eba98aa6ae27aae3af1ab615b750062d93c47300",
-      "git_blob": "1c24353235b4a8bcab37db4332276a6bb1fbc90f",
-      "bytes": 16806
-    },
-    {
-      "path": "airline_market/sim/service_ticket_payments.py",
-      "sha256": "058efdcb1128c081664c346f054d56e4683fef57b3b9f8c34a8b8dd8c5caa562",
-      "git_blob": "78cb1113e1373915cf050998c9b2ef83f5d02837",
-      "bytes": 14710
-    },
-    {
-      "path": "tests/unit/test_current_itinerary_service.py",
-      "sha256": "c026aff67193bd7de7c7c6923f807ce05d2594a9d0620069478fff35801a86d0",
-      "git_blob": "1981b056b6d4657201f75859377cc7f1f3a04991",
-      "bytes": 15211
-    },
-    {
-      "path": "tests/unit/test_person_material_payoff.py",
-      "sha256": "5f9d4d5eda1943b76813278d0866ed59e74276e3b82a1ec02ab020b08a15160b",
-      "git_blob": "cdbc194024242e60292904520bee74a8fcaf0024",
-      "bytes": 19716
-    },
-    {
-      "path": "tests/unit/test_person_utility_incidence.py",
-      "sha256": "dd1c07ad157a8f3b17e1ffa486b3c60c84984f7f45f307a7b1fe5beacc6cfe78",
-      "git_blob": "085f7185537075386911cefadbb2a77999e54b1e",
-      "bytes": 20776
-    },
-    {
-      "path": "tests/unit/test_service_observations.py",
-      "sha256": "7cc8a216f5c7c9e8f41604df91d0571fca3ab1c9d8bb563dee8b9824112d9e05",
-      "git_blob": "fe9b36a0e5ca3eb0652ae7e957f18a7e9e811ebd",
-      "bytes": 14832
-    },
-    {
-      "path": "tests/unit/test_service_ticket_payments.py",
-      "sha256": "8666ffe8808a6f49181e5922653fc7e2b6c2f6c24d896ef9683fd89178fba422",
-      "git_blob": "0180a251d59b3abd634abf974d492af90d33d543",
-      "bytes": 15830
+      "path": "tests/unit/test_full_path_utility.py",
+      "sha256": "edc575b06f1b92525b3c1e158c39a962eaeb273a8d37c03c5e32ba345467daf8",
+      "git_blob": "c5f1b98ac5dc470b1fd5134851978b1038c21471",
+      "bytes": 35479
     }
   ],
   "verification": {
-    "component_tests_passed": 38,
+    "component_tests_passed": 39,
     "default_subset": {
-      "passed": 2614,
+      "passed": 2653,
       "failed": 0,
       "deselected": 6,
-      "seconds": 905.88,
-      "normal_process_permission": true,
-      "project_local_fixtures": true,
-      "scope": "four retained closed-adapter exclusions plus two repository slow tests"
+      "seconds": 1120.71,
+      "scope": "Default SUBSET; four retained closed adapters plus two slow tests excluded; R0 OPEN",
+      "raw_rng_calls": null
     },
-    "R0": "OPEN/unconfirmed; six exclusions retained"
+    "R0": "OPEN/unconfirmed; six retained exclusions; no full-default-green"
   },
-  "interpretation": "Explicit additional utility, FULL outside FOUR components, sources/non-overlap/origin/units and independent closures on ALL original people. Exact realized candidate accounts; unknown/open tails stay NULL. No native private-shock interpretation, probability expectation, causal outside intervention, actor-information extension or lifecycle CS adoption.",
-  "reuse": "NEW July13 2027/seed31/named StreamRegistry108974 constructor text adapted locally from original material-payoff unit pattern, with no imported old test fixture/helper or saved case execution. Pure runtime delegates only exact/owned/source-record/UTC helpers; frozen native algorithms/defaults unchanged.",
-  "excluded": "data, results, private reports/process state at every depth, configurations, unrelated historical source, private reuse details and local research Git ancestry"
+  "interpretation": "TWO complete utility laws on supplied paired-history rows, full outside accounts/independent closures, separate root and received-history means. Exact positive unknown/open tails NULL, zero unknown rows retained. No upstream producer replay, native probability/knowledge/preferences/service truth, causal outside law or lifecycle CS adoption.",
+  "reuse": "NEW July27 2027/seed31/named StreamRegistry110974 constructor text adapted from test_paired_history_binding.py check/nested/fresh_source/register/arguments; no old test helper or saved case execution. Runtime imports frozen pure record/container helpers and checks supplied exact factors without native business executor copies or default changes.",
+  "excluded": "data/results/private reports/process state/configurations/unrelated source/history/private reuse process records"
 }
