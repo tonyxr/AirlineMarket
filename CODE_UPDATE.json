@@ -1,36 +1,36 @@
 {
   "plan_id": "A.10/A.5/A.14/B0/V9/B4/R3/R4",
-  "source_commit": "e26043948f0453ddd541819faaea732a45473d29",
-  "previous_public_commit": "f686627140c7bec7c35c716048514a5a37402d7b",
-  "scope": "Current pure typed role-law/context registration module and 38 synthetic tests; all existing required public dependencies match",
+  "source_commit": "8a7b29ce0810b30c5db1e85dd4399c73ea955d12",
+  "previous_public_commit": "877b9077c4ae5bdfc7a1c888ebeefea363cd874c",
+  "scope": "Current complete-period native posting source/reader and 28 synthetic tests; all existing required public dependencies match",
   "source_files": [
     {
-      "path": "airline_market/sim/role_law_context.py",
-      "sha256": "15c0d291e5682a6000290ea6ebbd7d3fc996df288f1b20e9fabf08de3a9254b2",
-      "git_blob": "d1445802ccbf5606c16aa7142a607135d79ea592",
-      "bytes": 15598
+      "path": "airline_market/sim/period_posting.py",
+      "sha256": "914fb38d2d109b3f4de144ae3a06aaa225107f22345bcd13dff9a64ac16daa96",
+      "git_blob": "fcd6ed1fa2b6ebc88d5a1f026d5e7fe2cefedd8a",
+      "bytes": 18657
     },
     {
-      "path": "tests/unit/test_role_law_context.py",
-      "sha256": "9132c61fdd6f41f0dc58eda290bc98fc955101e1c087c59f9ba24b395e1dcbfb",
-      "git_blob": "0d06b0f2809922188d65c1b620423dba0f447da9",
-      "bytes": 24796
+      "path": "tests/unit/test_period_posting.py",
+      "sha256": "bab907f1747f3d4fa74b7d33246bced40b4725038ededeb3e48d5a08340875f1",
+      "git_blob": "7aa563b4aba99c508d2fa297aa62353588836894",
+      "bytes": 17944
     }
   ],
   "verification": {
-    "component_tests": 38,
+    "component_tests": 28,
     "default_subset": {
-      "passed": 3123,
+      "passed": 3151,
       "failed": 0,
       "deselected": 6,
-      "seconds": 1652.54,
+      "seconds": 2561.72,
       "normal_process_permission": true
     },
     "R0": "OPEN/unconfirmed; six exclusions/no full-default-green/readiness"
   },
-  "interpretation": "Own BOTH complete raw pre-decision laws and every action/Y account, full descriptive policy/criterion and fixed full source programme before forwards. Attach only the complete actual source/exact GLOBAL input-ending original-person receipt/ALL periods/posting-manifest declarations. Full static contracts and all captured ordinary fare inputs agree; empty-period actual postings and manifests remain supplied declarations, not hook/external-time/transitive authentication. Each role conditions earlier H once; zero evidence leaves conditional NULL and no paired backend. Positive tiny/zero/unknown/signed support retained. Candidate solver sees q only; reference fixes SAME policy under r without re-solving. Separate G-dependent candidate from invariant descriptive compatibility plan, no weights/G chosen from observed action. FOUR B/P/W/C plus E/full outside/three independent tails/units/incidence, no fill/repair/normalization/pruning. Full owned input/proposed-output structural bounds, not bytes/rational bits/RSS/scratch/F9/scalability. Exact earlier view only; full sources/laws/menus/current results analyst-only. Native G/probability/awareness/preferences/lifecycle CS authentication NULL/false, scientific budgets NULL, full adoption false. No actor/default/frozen-parent edits or native sequential own/interline protocol substitution.",
-  "reuse": "Frozen pure action-kernel typed validators/registration/evaluation and context supplied-source binder/readers/export/count/hash helpers delegated on NEW inputs only. No copied native choice/book/resolve/lifecycle algorithm, old source/case/bank/frame/account/review replay or saved-run loader. Full absolute-relative runtime and companion-test import closure verified against existing public bytes. Source-time/types/digests do not authenticate producer/public/empirical/legal/CRN truth.",
-  "import_closure_files": 126,
-  "existing_required_public_bytes_match": 124,
-  "excluded": "Private research ancestors/history/data/results/reports/process state/configuration and unrelated historical synchronization"
+  "interpretation": "Opt-in one-delegation native opening/post/input/step hooks read SAME-call full regular fares and cap receipts. All products, empty periods, earlier leaders and posting revisions retained; exact earlier GLOBAL journal/input-ending prefix links and inherited full source/scenario contexts. Owned source/export/pure reader, complete conservative input/proposed-output structural support, independent nested snapshots/branch/reset. Standalone openings/posts remain pending until full closure; failures preserve native mutations/prior receipts and block positive query/continuation. Snapshots between calls only, no native historical trace reconstruction. Regular computation fares not disclosure, eligibility, bookability or final rescue/reserve menus. Types/digests not original-time/transitive/native/public/empirical/legal/CRN truth. Native probability/private G awareness/knowledge/preferences/service-financial truth/lifecycle CS unadopted, scientific budgets NULL. No actor/default/frozen-parent changes, copied business loop/forced hook/global patch/old source-case-review replay. Structural support not bytes/rational bits/RSS/native snapshots/scratch/F9/scalability.",
+  "reuse": "Existing NativeCausal/CapEvidence native MRO delegated; parent branch-construction pattern adapted, frozen pure binary64 and owned scalar helpers reused. Full absolute-relative runtime/test import closure verified; no old helper main or science loader invoked.",
+  "import_closure_files": 123,
+  "existing_required_public_bytes_match": 121,
+  "excluded": "Private research Git ancestry/history/data/results/reports/process state/configuration and unrelated historical synchronization"
 }
