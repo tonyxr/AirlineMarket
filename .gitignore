@@ -11,3 +11,4 @@ dist/
 *.pt
 .env
 .env.*
+.validation_fixtures/

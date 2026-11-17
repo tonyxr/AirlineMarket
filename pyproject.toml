@@ -28,7 +28,7 @@ airline_market = ["spec/library/*.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "-m 'not slow'"
+addopts = ""
 markers = ["slow: expensive reference reproduction or factorial experiments"]
 
 [tool.ruff]

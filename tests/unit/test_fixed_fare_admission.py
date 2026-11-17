@@ -240,12 +240,7 @@ def test_published_settled_study_adapter_two_new_cases(tmp_path):
         f"study adapter exited{result.returncode}; see retained stderr"
     )
     assert json.loads((root / "status.json").read_text())["counts"] == {"completed": 2}
-    assert (
-        json.loads((root / "publication_protocol.json").read_text())[
-            "aggregation_barrier"
-        ]
-        == "returned_cell_future"
-    )
+    assert not (root / "publication_protocol.json").exists()
     assert len(json.loads((root / "settled_cells.json").read_text())["cell_ids"]) == 2
     for p in root.glob("cells/*/attempt-*/results.json"):
         data = json.loads(p.read_text())

@@ -1,7 +1,6 @@
-"""Metadata-only publication checks and new opt-in R0.4 protocol acceptance."""
+"""W4/R0.4 immutable-result readers, resources, and real kill-resume checks."""
 
 import hashlib
-import importlib.util
 import json
 import os
 import subprocess
@@ -11,18 +10,9 @@ from pathlib import Path
 
 import pytest
 
+from airline_market.campaign import runner as module
 from airline_market.campaign.artifacts import atomic_json, file_hash
-from airline_market.campaign.runner import THREAD_ENV, aggregate
-
-if os.environ.get("SETTLED_RUNNER_SOURCE"):
-    spec = importlib.util.spec_from_file_location(
-        "airline_market.campaign._staged_settled_runner",
-        os.environ["SETTLED_RUNNER_SOURCE"],
-    )
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-else:
-    from airline_market.campaign import settled_runner as module
+from airline_market.campaign.runner import THREAD_ENV
 
 
 def metadata_fixture(tmp_path):
@@ -54,27 +44,57 @@ def metadata_fixture(tmp_path):
     return cell, directory, attempt, result, receipt
 
 
-def test_inflight_pair_is_not_read_and_settled_output_matches_native(tmp_path):
-    cell, _, attempt, result, receipt = metadata_fixture(tmp_path)
-    atomic_json(attempt / "results.json", {**result, "peak_rss_bytes": 20})
-    with pytest.raises(ValueError, match="completed result is damaged"):
-        aggregate(tmp_path)
-    assert module.aggregate_settled(tmp_path, []) == []
-    # The publisher finishes; caller may now acknowledge the future.
-    atomic_json(
-        attempt / "COMPLETE.json",
-        {**receipt, "results_sha256": file_hash(attempt / "results.json")},
-    )
-    expected = aggregate(tmp_path)
-    expected_bytes = {
-        name: (tmp_path / name).read_bytes()
-        for name in ["cells.csv", "cells.parquet", "resources.csv"]
+def test_resources_change_without_rewriting_successful_result(tmp_path):
+    cell, directory, attempt, result, _receipt = metadata_fixture(tmp_path)
+    before = {
+        name: (attempt / name).read_bytes()
+        for name in ("results.json", "COMPLETE.json")
     }
-    assert module.aggregate_settled(tmp_path, [cell["cell_id"]]) == expected
+    atomic_json(attempt / "resources.json", {"peak_rss_bytes": 20})
+    assert module.completed_attempt(directory, cell["config_hash"])[1] == result
+    assert module.aggregate(tmp_path)[0]["value"] == 17
     assert all(
-        (tmp_path / name).read_bytes() == content
-        for name, content in expected_bytes.items()
+        (attempt / name).read_bytes() == contents for name, contents in before.items()
     )
+    import csv
+
+    with (tmp_path / "resources.csv").open() as stream:
+        assert next(csv.DictReader(stream))["peak_rss_bytes"] == "20"
+
+
+def test_coordinator_never_rewrites_a_published_result(tmp_path, monkeypatch):
+    writes = []
+    publish = module.atomic_json
+
+    def watch(path, value):
+        path = Path(path)
+        if path.name in ("results.json", "COMPLETE.json"):
+            assert not path.exists(), "coordinator rewrote an already published result"
+        if path.name == "resources.json":
+            before = {
+                name: path.with_name(name).read_bytes()
+                for name in ("results.json", "COMPLETE.json")
+            }
+            # Read during the coordinator's resource publication, before its future returns.
+            assert module.aggregate(tmp_path)[0]["answer"] == 0
+            publish(path, value)
+            assert all(
+                path.with_name(name).read_bytes() == data
+                for name, data in before.items()
+            )
+            writes.append(value)
+            return
+        publish(path, value)
+
+    monkeypatch.setattr(module, "atomic_json", watch)
+    config = {
+        "schema": "airline-campaign/1",
+        "id": "W4_R04_immutable_result",
+        "task": "smoke",
+        "log_path": str(tmp_path / "log.md"),
+    }
+    assert module.CampaignRunner(config, tmp_path).run()["counts"] == {"completed": 1}
+    assert len(writes) == 1 and writes[0]["peak_rss_bytes"] > 0
 
 
 @pytest.mark.parametrize("damage", ["hash", "config", "status", "missing_result"])
@@ -91,9 +111,9 @@ def test_stable_damage_is_never_suppressed(tmp_path, damage):
             {**receipt, damage if damage == "status" else "config_hash": "wrong"},
         )
     with pytest.raises((ValueError, FileNotFoundError)):
-        module.completed_snapshot(directory, cell["config_hash"])
+        module.completed_attempt(directory, cell["config_hash"])
     with pytest.raises((ValueError, FileNotFoundError)):
-        module.aggregate_settled(tmp_path, [cell["cell_id"]])
+        module.aggregate(tmp_path)
 
 
 def test_hash_and_decoding_use_one_result_buffer(tmp_path, monkeypatch):
@@ -109,25 +129,19 @@ def test_hash_and_decoding_use_one_result_buffer(tmp_path, monkeypatch):
         return contents
 
     monkeypatch.setattr(Path, "read_bytes", replace_after_read)
-    assert module.completed_snapshot(directory, cell["config_hash"])[1] == result
+    assert module.completed_attempt(directory, cell["config_hash"])[1] == result
     assert len(counts) == 1
 
 
-def test_unknown_settled_id_is_an_error(tmp_path):
-    metadata_fixture(tmp_path)
-    with pytest.raises(ValueError, match="unknown settled"):
-        module.aggregate_settled(tmp_path, ["not_a_cell"])
-
-
-def test_legacy_root_cannot_be_adopted(tmp_path):
+def test_resume_rejects_a_different_campaign_config(tmp_path):
     config = {
         "schema": "airline-campaign/1",
-        "id": "new_protocol_only",
+        "id": "W4_config_identity",
         "task": "smoke",
     }
-    atomic_json(tmp_path / "config.json", config)
-    with pytest.raises(ValueError, match="new settled-protocol output"):
-        module.SettledCampaignRunner(config, tmp_path).run()
+    atomic_json(tmp_path / "config.json", {**config, "id": "different"})
+    with pytest.raises(ValueError, match="different campaign config"):
+        module.CampaignRunner(config, tmp_path).run()
 
 
 def invoke_recorded(command, label, directory):
@@ -159,11 +173,11 @@ def invoke_recorded(command, label, directory):
 
 
 def test_new_settled_twenty_cell_kill_resume_with_stderr_retained(tmp_path):
-    """New revision/config/output; metadata smoke only, no old acceptance replay."""
+    """Exercise the canonical runner with retained stderr across kill and resume."""
     config = {
         "schema": "airline-campaign/1",
-        "id": "R0_4_settled_protocol_2342_v1",
-        "implementation_revision": "returned_future_single_read_v1",
+        "id": "W4_R04_canonical_2342",
+        "implementation_revision": "immutable_results_separate_resources",
         "task": "smoke",
         "workers": 2,
         "factors": {"x": list(range(23420, 23440))},
@@ -176,19 +190,12 @@ def test_new_settled_twenty_cell_kill_resume_with_stderr_retained(tmp_path):
     reference, resumed = tmp_path / "new_reference", tmp_path / "new_interrupted"
 
     def command(out):
-        if os.environ.get("SETTLED_RUNNER_SOURCE"):
-            bootstrap = (
-                "import importlib.util; "
-                "s=importlib.util.spec_from_file_location('airline_market.campaign._staged_cli', "
-                + repr(os.environ["SETTLED_RUNNER_SOURCE"])
-                + "); "
-                "m=importlib.util.module_from_spec(s); s.loader.exec_module(m); m.main()"
-            )
-            return [sys.executable, "-c", bootstrap, str(path), "--out", str(out)]
         return [
             sys.executable,
             "-m",
-            "airline_market.campaign.settled_runner",
+            "airline_market",
+            "campaign",
+            "run",
             str(path),
             "--out",
             str(out),

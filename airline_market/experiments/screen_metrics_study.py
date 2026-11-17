@@ -1,10 +1,12 @@
-"""S1/R4: pinned saved-policy analysis through the existing resource runner."""
+"""S1/R4: pinned saved-policy analysis through the existing resource runner.
+Revision: 2 (Nov 16, 2026): W4/R0.4 uses the canonical immutable-result runner.
+"""
 
 import json
 from pathlib import Path
 
 from airline_market.campaign.artifacts import atomic_json, file_hash
-from airline_market.campaign.settled_runner import completed_snapshot
+from airline_market.campaign.runner import completed_attempt
 from airline_market.experiments.screen_saved_metrics import analyze_settled_setting
 
 ARMS = {"direct", "linked", "unrelated", "oracle", "full_state"}
@@ -34,7 +36,7 @@ def pin_setting(root, setting_id):
         raise ValueError("arm physical sources differ")
     files = {root / "config.json", root / "cells.json"}
     for cell in cells:
-        found = completed_snapshot(
+        found = completed_attempt(
             root / "cells" / cell["cell_id"], cell["config_hash"]
         )
         if found is None or found[1]["status"] != "solved":

@@ -1,38 +1,29 @@
 {
-  "plan_id": "A.10/A.5/A.14/B0/V9/B4/R3/R4",
-  "declaration": "NEW140974",
-  "source_commit": "0bcc1f5fb043639c4fb8e38946f07a3763c5307a",
-  "previous_public_commit": "995a98c1ab047aa552b81507b94119bf02a4961d",
-  "scope": "Current typed complete-posting/role-context association and 32 new synthetic tests only",
-  "source_files": [
-    {
-      "path": "airline_market/sim/posting_role_binding.py",
-      "sha256": "876978d1ab96179f13d7764e57ef87a13548b0e81d49c0168dd74f0147041ad5",
-      "git_blob": "52f862c870ab5d8588f2548be39056d1cc6ef36e",
-      "bytes": 14002
-    },
-    {
-      "path": "tests/unit/test_posting_role_binding.py",
-      "sha256": "e4385ef3119c023445212091ef4309492c396ee36ce091fec48606dfeb621121",
-      "git_blob": "abbe164fb3a5f9cc31c613ec4efeb59f9948c018",
-      "bytes": 25612
-    }
+  "schema": "airlinemarket-code-update/1",
+  "date": "2026-11-17",
+  "plan_ids": [
+    "W4",
+    "R0.4",
+    "R4"
   ],
-  "verification": {
-    "component_tests": 32,
-    "default_subset": {
-      "passed": 3183,
-      "deselected": 6,
-      "seconds": 2884.11,
-      "failed": 0,
-      "mode": "NORMAL",
-      "scope": "Required changed-code subset; six retained exclusions, not full-default-green"
-    },
-    "R0": "OPEN/unconfirmed; six exclusions; no full-default-green/readiness"
+  "summary": "Keep completed results immutable, store coordinator RSS separately, and use one campaign runner. Retire the unused passenger-lifecycle stack.",
+  "changes": {
+    "canonical_runner": true,
+    "separate_resources_json": true,
+    "same_buffer_result_hash_and_decode": true,
+    "default_test_exclusions_removed": 6,
+    "dead_module_check_lines": 34,
+    "retired_source_modules": 59,
+    "retired_test_files": 53,
+    "already_absent_retired_paths": 14
   },
-  "interpretation": "Pure complete typed native-source association; ALL horizon regular postings/empty periods, exact saved GLOBAL input-ending earlier history, full registered source/scenario/controller programmes and manifest declarations checked. Lossless binary64 prices and exact integer keys/stamps. One frozen pure role attachment; each role conditions SAME H once; upstream zero stays NULL/no utility backend. Subjective candidate and SAME fixed-policy reference remain separate. Full analyst source/laws/results retained; narrow reader returns only earlier H without source/classifier/solver replay. No G realized from action/class/taste; manifest/hash/type not native probability, received knowledge, awareness, original-time/transitive/public/empirical/legal/CRN truth. No preferences/service-financial truth/lifecycle CS adoption. Full signed/zero/tiny/unknown/outside/accounts/independent tails retained. New conservative lossless numerical-slot shape fixes initial refused outer outputs; actual unknown data unchanged. Structural count not bytes/rational bits/RSS/native snapshots/scratch/F9/scalability. No frozen parent/default/actor/native business algorithm change or old source-case-review execution. Scientific budgets NULL.",
-  "reuse": "Frozen pure role/context/source readers, ownership/binary64 helpers and proposed shape delegated on NEW inputs; new outer full-source agreement and lossless shape adaptation. Complete absolute-relative runtime/test dependency closure verified; no old helper main or saved science loader called.",
-  "import_closure_files": 131,
-  "existing_required_public_bytes_match": 129,
-  "excluded": "Private research Git ancestry/data/results/reports/process state/configuration and unrelated historical synchronization"
+  "verification": {
+    "local_nightly_passed": 1442,
+    "failed": 0,
+    "skipped": 0,
+    "deselected": 0,
+    "three_consecutive_kill_resume_passes": true,
+    "scope": "Current exported Python runtime and public tests match the checked source bytes. Two preexisting local monitor-only regression files are outside this incremental publication; the public suite was not executed independently."
+  },
+  "publication_scope": "Source, synthetic tests, Python tools, packaging and this metadata only. No research data, results, process state or private Git ancestry."
 }

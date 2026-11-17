@@ -1,4 +1,7 @@
-"""S1/R2: start after the large reservation; share memory with the finishing F5 cell."""
+"""S1/R2: start after the large reservation; share memory with the finishing F5 cell.
+
+Revision: 2 (Nov 16, 2026): W4/R0.4 uses the canonical campaign runner.
+"""
 
 import argparse
 import hashlib
@@ -14,7 +17,7 @@ import psutil
 from airline_market.campaign import runner
 from airline_market.campaign.artifacts import atomic_json
 from airline_market.campaign.design import load_campaign
-from airline_market.campaign.settled_runner import SettledCampaignRunner
+from airline_market.campaign.runner import CampaignRunner
 from airline_market.experiments.study_campaign import StudyProcesses
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -30,7 +33,7 @@ def available_budget(f1_status, f5_status):
     return 10.5 if f5_status == "stopped_v2" else 8.5
 
 
-class AdaptiveScreenRunner(SettledCampaignRunner):
+class AdaptiveScreenRunner(CampaignRunner):
     """Keep native worker/settled aggregation; change only admission reservation."""
 
     def update_budget(self):

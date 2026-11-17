@@ -1,4 +1,6 @@
-"""Opt-in custom-study adapter for returned-future campaign aggregation."""
+"""Opt-in custom-study adapter for returned-future campaign aggregation.
+Revision: 2 (Nov 16, 2026): W4/R0.4 uses the canonical immutable-result runner.
+"""
 
 import argparse
 import json
@@ -10,7 +12,7 @@ from pathlib import Path
 from airline_market.campaign import runner
 from airline_market.campaign.artifacts import atomic_json, utc_now
 from airline_market.campaign.design import load_campaign
-from airline_market.campaign.settled_runner import SettledCampaignRunner
+from airline_market.campaign.runner import CampaignRunner
 from airline_market.experiments.study_campaign import StudyProcesses
 
 MODULE = "airline_market.experiments.settled_study_campaign"
@@ -70,7 +72,7 @@ def main():
     # Only this coordinator's imported runner module is redirected. The shared
     # source and every other live Python process remain unchanged.
     runner.subprocess = StudyProcesses()
-    print(json.dumps(SettledCampaignRunner(config, root).run()))
+    print(json.dumps(CampaignRunner(config, root).run()))
 
 
 if __name__ == "__main__":

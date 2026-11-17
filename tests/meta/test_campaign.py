@@ -2,7 +2,6 @@
 
 import json
 import os
-from pathlib import Path
 import subprocess
 import sys
 import time
@@ -10,9 +9,9 @@ import time
 import numpy as np
 import pytest
 
+from airline_market.bench.harness import compare_baseline
 from airline_market.campaign.design import expand_campaign, fractional_design
 from airline_market.campaign.runner import THREAD_ENV
-from airline_market.bench.harness import compare_baseline
 
 
 def invoke(config, directory):
@@ -65,12 +64,13 @@ def test_full_list_hashes_and_nested_action_grids():
     )
 
 
-def test_twenty_cell_kill_resume_is_byte_identical(tmp_path):
+@pytest.mark.parametrize("repetition", [1, 2, 3])
+def test_twenty_cell_kill_resume_is_byte_identical(tmp_path, repetition):
     pytest.importorskip("pandas")
     pytest.importorskip("pyarrow")
     cfg = {
         "schema": "airline-campaign/1",
-        "id": "R0.4_acceptance",
+        "id": "W4_R0.4_acceptance_" + str(repetition),
         "task": "smoke",
         "workers": 2,
         "factors": {"x": list(range(20))},

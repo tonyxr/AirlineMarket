@@ -3,6 +3,8 @@
 Only saved, reachable optimal-policy actions are read. The native finite model
 enumerates their transitions; Bellman optimization, sampling and actor calls
 are never used. Information is in nats, separately for every rival-leg pair.
+
+Revision: 2 (Nov 16, 2026): W4/R0.4 uses the canonical immutable-result runner.
 """
 
 import gzip
@@ -44,7 +46,7 @@ def analyze_settled_setting(root, setting_id):
     from pathlib import Path
 
     from airline_market.campaign.artifacts import file_hash
-    from airline_market.campaign.settled_runner import completed_snapshot
+    from airline_market.campaign.runner import completed_attempt
     from airline_market.solvers.lagged_dp import history_dp
     from airline_market.spec import compile_market, load_spec
 
@@ -60,7 +62,7 @@ def analyze_settled_setting(root, setting_id):
         raise ValueError("arm physical sources differ")
     dps, policies, provenance, information = {}, {}, {}, {}
     for cell in cells:
-        found = completed_snapshot(root / "cells" / cell["cell_id"], cell["config_hash"])
+        found = completed_attempt(root / "cells" / cell["cell_id"], cell["config_hash"])
         if found is None:
             raise ValueError("acknowledged setting is missing its terminal receipt")
         directory, result = found

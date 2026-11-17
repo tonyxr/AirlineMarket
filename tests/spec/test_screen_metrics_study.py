@@ -162,7 +162,7 @@ def test_caller_cannot_drop_memory_controls(tmp_path, field):
 )
 def test_new_saved_metrics_adapter_and_original_rss_guard(tmp_path, monkeypatch):
     from airline_market.campaign import runner
-    from airline_market.campaign.settled_runner import SettledCampaignRunner
+    from airline_market.campaign.runner import CampaignRunner
     from airline_market.experiments.screen_study import run as produce
     from airline_market.experiments.study_campaign import StudyProcesses
     from airline_market.pipeline.screen_generators import screen_spec
@@ -240,7 +240,7 @@ def test_new_saved_metrics_adapter_and_original_rss_guard(tmp_path, monkeypatch)
     }
     monkeypatch.setattr(runner, "subprocess", StudyProcesses())
     out = tmp_path / "analysis"
-    SettledCampaignRunner(cfg, out).run()
+    CampaignRunner(cfg, out).run()
     ack = json.loads((out / "settled_cells.json").read_text())
     assert len(ack["cell_ids"]) == 1
     a = next((out / "cells").glob("*/attempt-0001"))
@@ -264,7 +264,7 @@ def test_new_saved_metrics_adapter_and_original_rss_guard(tmp_path, monkeypatch)
 
     monkeypatch.setattr(runner, "subprocess", subprocess)
     guard_out = tmp_path / "guard"
-    SettledCampaignRunner(guard, guard_out).run()
+    CampaignRunner(guard, guard_out).run()
     a = next((guard_out / "cells").glob("*/attempt-0001"))
     r = json.loads((a / "results.json").read_text())
     assert r["status"] == "memory_limit" and r["value"] is None

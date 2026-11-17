@@ -1,17 +1,18 @@
 import json
-from pathlib import Path
+
 import numpy as np
 import pytest
-from airline_market.spec import compile_market
-from airline_market.spec.library_builders import toy_hub
-from airline_market.pipeline.generators import hub_feeder_family
-from airline_market.pomdp.env import FocalCarrierEnv
+
 from airline_market.belief import ExactBelief, ParticleBelief
 from airline_market.core.types import CoefficientAction
+from airline_market.pipeline.generators import hub_feeder_family
+from airline_market.pomdp.env import FocalCarrierEnv
+from airline_market.spec import compile_market
+from airline_market.spec.library_builders import toy_hub
 
 
 @pytest.mark.slow
-def test_particle_50_episodes_two_networks():
+def test_particle_50_episodes_two_networks(tmp_path):
     reports = []
     for spec in [toy_hub(), hub_feeder_family({"n_spokes": 2, "periods": 4})]:
         c = compile_market(spec)
@@ -65,7 +66,6 @@ def test_particle_50_episodes_two_networks():
         )
         assert np.mean(tv) <= 0.02
         assert np.max(marginal) <= 0.01
-    Path("results/verification").mkdir(parents=True, exist_ok=True)
-    Path("results/verification/particle_convergence.json").write_text(
+    (tmp_path / "particle_convergence.json").write_text(
         json.dumps(reports, indent=2) + "\n"
     )

@@ -1,11 +1,10 @@
-"""Bounded subprocess campaigns with atomic resume and scientific aggregates."""
+"""Bounded subprocess campaigns with immutable results and atomic receipts.
 
-from collections import Counter
-from concurrent.futures import ThreadPoolExecutor, wait, FIRST_COMPLETED
-from datetime import datetime, timezone
-from pathlib import Path
-import csv
+Revision: 2 (Nov 16, 2026): W4/R0.4 stores coordinator RSS separately.
+"""
+
 import fcntl
+import hashlib
 import json
 import os
 import signal
@@ -13,11 +12,14 @@ import subprocess
 import sys
 import threading
 import time
+from collections import Counter
+from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait
+from datetime import datetime, timezone
+from pathlib import Path
 
 from ..core.hashing import canonical_json, config_hash
 from .artifacts import atomic_json, environment, file_hash, log_run, utc_now
 from .design import expand_campaign, load_campaign
-
 
 TERMINAL = {
     "solved",
@@ -49,9 +51,13 @@ def completed_attempt(cell_directory: Path, digest: str) -> tuple[Path, dict] | 
         receipt = json.loads(receipt_path.read_text())
         if receipt["config_hash"] != digest:
             raise ValueError(f"cell config mismatch: {attempt}")
-        if file_hash(attempt / "results.json") != receipt["results_sha256"]:
+        result_bytes = (attempt / "results.json").read_bytes()
+        if hashlib.sha256(result_bytes).hexdigest() != receipt["results_sha256"]:
             raise ValueError(f"completed result is damaged: {attempt}")
-        return attempt, json.loads((attempt / "results.json").read_text())
+        result = json.loads(result_bytes)
+        if result["config_hash"] != digest or result["status"] != receipt["status"]:
+            raise ValueError(f"completed result/receipt identity mismatch: {attempt}")
+        return attempt, result
     return None
 
 
@@ -82,6 +88,10 @@ def aggregate(directory: str | Path) -> list[dict]:
         if not found:
             continue
         attempt, result = found
+        resource_path = attempt / "resources.json"
+        measured = (
+            json.loads(resource_path.read_bytes()) if resource_path.exists() else {}
+        )
         row = {
             "cell_id": cell["cell_id"],
             "config_hash": cell["config_hash"],
@@ -109,7 +119,7 @@ def aggregate(directory: str | Path) -> list[dict]:
                 "cell_id": cell["cell_id"],
                 "attempt": attempt.name,
                 **{
-                    key: result.get(key)
+                    key: measured.get(key, result.get(key))
                     for key in [
                         "wall_seconds",
                         "cpu_seconds",
@@ -319,15 +329,9 @@ class CampaignRunner:
         found = completed_attempt(directory, cell["config_hash"])
         if found and found[0] == attempt:
             result = found[1]
-            result["peak_rss_bytes"] = max(peak_rss, result.get("peak_rss_bytes", 0))
-            atomic_json(attempt / "results.json", result)
             atomic_json(
-                attempt / "COMPLETE.json",
-                {
-                    "config_hash": cell["config_hash"],
-                    "status": result["status"],
-                    "results_sha256": file_hash(attempt / "results.json"),
-                },
+                attempt / "resources.json",
+                {"peak_rss_bytes": max(peak_rss, result.get("peak_rss_bytes", 0))},
             )
         else:
             result = {
@@ -439,27 +443,43 @@ class CampaignRunner:
             for signum in [signal.SIGTERM, signal.SIGINT]:
                 previous[signum] = signal.signal(signum, interrupt)
             self.snapshot("running")
+            settled = set()
             try:
                 with ThreadPoolExecutor(
                     max_workers=int(self.config.get("workers", 1))
                 ) as pool:
-                    pending = {pool.submit(self.run_cell, cell) for cell in self.cells}
+                    pending = {
+                        pool.submit(self.run_cell, cell): cell["cell_id"]
+                        for cell in self.cells
+                    }
                     try:
                         while pending:
-                            done, pending = wait(
+                            done, _ = wait(
                                 pending, timeout=5, return_when=FIRST_COMPLETED
                             )
                             for future in done:
                                 future.result()
+                                settled.add(pending.pop(future))
                             self.snapshot(
                                 "interrupting" if self.stop.is_set() else "running"
                             )
                             if done:
                                 aggregate(self.directory)
+                                atomic_json(
+                                    self.directory / "settled_cells.json",
+                                    {
+                                        "updated_at": utc_now(),
+                                        "cell_ids": sorted(settled),
+                                    },
+                                )
                     except BaseException:
                         self.stop.set()
                         raise
                 aggregate(self.directory)
+                atomic_json(
+                    self.directory / "settled_cells.json",
+                    {"updated_at": utc_now(), "cell_ids": sorted(settled)},
+                )
                 self.snapshot("interrupted" if self.stop.is_set() else "finished")
             except Exception:
                 self.snapshot("failed")

@@ -2,6 +2,8 @@
 
 All rows and signed outcomes survive. Missing/limited values stay null. This
 module reads returned publisher futures only; it never solves or simulates.
+
+Revision: 2 (Nov 16, 2026): W4/R0.4 uses the canonical immutable-result runner.
 """
 
 import json
@@ -13,7 +15,7 @@ import numpy as np
 
 from airline_market.campaign.artifacts import file_hash
 from airline_market.campaign.design import expand_campaign, load_campaign
-from airline_market.campaign.settled_runner import completed_snapshot
+from airline_market.campaign.runner import completed_attempt
 from airline_market.experiments.screen_design import FACTORS
 
 ARMS = ("direct", "linked", "unrelated", "oracle", "full_state")
@@ -298,7 +300,7 @@ def campaign_summary(config_path, root):
         for arm, cell in group["cells"].items():
             if cell["cell_id"] not in acknowledged:
                 continue
-            found = completed_snapshot(
+            found = completed_attempt(
                 root / "cells" / cell["cell_id"], cell["config_hash"]
             )
             if found is None:
